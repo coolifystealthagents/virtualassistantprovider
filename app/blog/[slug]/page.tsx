@@ -1,9 +1,24 @@
-import { Header, Footer, CTA } from '../../components';
-import { blogPosts, site } from '../../data';
+import { Header, Footer, CTA, JsonLd } from '../../components';
+import { blogPosts, site, services } from '../../data';
+
 export function generateStaticParams() { return blogPosts.map((p)=>({ slug: p.slug })); }
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) { const { slug } = await params; const post = blogPosts.find((p)=>p.slug===slug); return { title: post?.title || 'Guide', description: post?.excerpt }; }
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+ const { slug } = await params;
+ const post = blogPosts.find((p)=>p.slug===slug);
+ return { title: post?.title || 'Guide', description: post?.excerpt };
+}
+
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
  const { slug } = await params;
  const post = blogPosts.find((p)=>p.slug===slug) || blogPosts[0];
- return <><Header/><main className="section"><article className="container" style={{maxWidth:860}}><p className="eyebrow">{site.brand} guide</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><div className="card"><h2>The short answer</h2><p>Most teams should start with one clear assistant role, 5 to 10 recurring tasks, and a weekly review scorecard. Do not hand over everything at once.</p><h2>What to prepare first</h2><ul className="list"><li>Task examples and sample replies</li><li>Tool list, logins, and permission levels</li><li>Daily or weekly success metric</li><li>Escalation rules for anything sensitive</li><li>First-week training calls and QA checks</li></ul><h2>Common price ranges</h2><p>Overseas virtual assistants often range from $6 to $18 per hour depending on skill level, country, English fluency, schedule, and management support. Local assistants usually cost more but may fit better for in-person work.</p><h2>Questions to ask a provider</h2><ul className="list"><li>Who screens the assistant?</li><li>Who replaces the assistant if fit is poor?</li><li>How is quality checked each week?</li><li>What happens with passwords and customer data?</li><li>Can we start with a small pilot?</li></ul></div></article><CTA/></main><Footer/></>;
+ const relatedServices = services.filter((service)=>post.relatedServices.includes(service.slug));
+ const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+   { '@type': 'Article', headline: post.title, description: post.excerpt, author: { '@type': 'Organization', name: site.brand }, publisher: { '@type': 'Organization', name: site.brand, url: site.url }, mainEntityOfPage: `${site.url}/blog/${post.slug}`, citation: post.sources.map((source)=>source.url), hasPart: post.sections.map((section, index)=>({ '@type': 'WebPageElement', position: index + 1, name: section.heading })) },
+   { '@type': 'FAQPage', mainEntity: post.faq.map((item)=>({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) },
+   { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: site.url }, { '@type': 'ListItem', position: 2, name: 'Blog', item: `${site.url}/blog` }, { '@type': 'ListItem', position: 3, name: post.title, item: `${site.url}/blog/${post.slug}` }] },
+  ],
+ };
+ return <><Header/><main className="section"><JsonLd data={schema} /><article className="container" style={{maxWidth:900}}><p className="eyebrow">{site.brand} guide</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><div className="card"><h2>Key takeaways</h2><ul className="list">{post.takeaways.map((item)=><li key={item}>{item}</li>)}</ul></div>{post.sections.map((section)=><section key={section.heading} className="card" style={{marginTop:18}}><h2>{section.heading}</h2><p>{section.body}</p>{section.bullets && <ul className="list">{section.bullets.map((bullet)=><li key={bullet}>{bullet}</li>)}</ul>}</section>)}<section className="card" style={{marginTop:18}}><h2>Provider questions to copy</h2><p className="quote">“Can you show how this role is screened, trained, checked each week, and replaced if fit is poor?”</p><p className="quote">“Can we start with a small task list before we buy a larger monthly plan?”</p></section><section className="card" style={{marginTop:18}}><h2>FAQ</h2>{post.faq.map((item)=><div key={item.question}><h3>{item.question}</h3><p>{item.answer}</p></div>)}</section><section className="card" style={{marginTop:18}}><h2>Sources and notes</h2><p>These sources are included as planning references. They do not replace legal, tax, security, or HR advice.</p><ul className="list">{post.sources.map((source)=><li key={source.url}><a href={source.url}>{source.name}</a>: {source.note}</li>)}</ul></section>{relatedServices.length > 0 && <section className="card" style={{marginTop:18}}><h2>Related role guides</h2>{relatedServices.map((service)=><a className="pill" href={`/services/${service.slug}`} key={service.slug}>{service.name}</a>)}</section>}</article><CTA/></main><Footer/></>;
 }

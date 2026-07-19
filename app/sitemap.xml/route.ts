@@ -1,1 +1,16 @@
-import { blogPosts } from '../data'; export function GET() { const base='https://virtualassistantprovider.com'; const urls=['','/blog','/contact',...blogPosts.map(p=>'/blog/'+p.slug)].map(p=>`<url><loc>${base}${p}</loc></url>`).join(''); return new Response(`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls}</urlset>`, { headers: { 'content-type': 'application/xml' } }); }
+import { blogPosts, services } from '../data';
+
+export function GET() {
+  const base = 'https://virtualassistantprovider.com';
+  const urls = [
+    '',
+    '/blog',
+    '/contact',
+    '/privacy',
+    '/terms',
+    ...services.map((service) => `/services/${service.slug}`),
+    ...blogPosts.map((post) => `/blog/${post.slug}`),
+  ];
+  const body = urls.map((path) => `<url><loc>${base}${path}</loc></url>`).join('');
+  return new Response(`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${body}</urlset>`, { headers: { 'content-type': 'application/xml' } });
+}
