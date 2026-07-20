@@ -4,7 +4,7 @@ export const site = {
   brand: 'Virtual Assistant Provider',
   primary: 'virtual assistant provider',
   audience: 'business owners comparing managed virtual assistant providers',
-  angle: 'a practical buyer guide for choosing a dependable VA provider with clear screening, handoff steps, and pricing ranges',
+  angle: 'a practical buyer guide for choosing a dependable VA provider with clear screening, task handoff, management support, and launch steps',
   color: '#2563eb',
   accent: '#0f766e',
   url: 'https://virtualassistantprovider.com',
@@ -67,7 +67,7 @@ export const services: Service[] = [
     imageAlt: 'CRM follow-up assistant reviewing lead notes with a small business team',
     bestFor: ['agencies with missed follow-ups', 'real estate teams', 'home service companies', 'coaches and consultants'],
     tasks: ['clean duplicate contacts', 'send first follow-up from a script', 'book qualified calls', 'update lead stage and next task', 'flag hot replies for the owner'],
-    watchouts: ['do not promise sales results from admin follow-up alone', 'keep pricing and negotiation choices with sales owners', 'review message tone before sending at scale'],
+    watchouts: ['do not promise sales results from admin follow-up alone', 'keep staffing details and negotiation choices with sales owners', 'review message tone before sending at scale'],
     firstWeek: ['Day 1: define lead stages and no-send rules', 'Day 2: clean a small lead batch', 'Day 3: draft follow-up messages', 'Day 4: send approved reminders', 'Day 5: review replies, booked calls, and wrong-fit leads'],
     faq: [
       { question: 'Is this lead generation?', answer: 'This role is best for follow-up and CRM admin. Cold outreach and sales strategy need separate management.' },
@@ -79,7 +79,7 @@ export const services: Service[] = [
 export const roles = services.map((service) => service.name);
 export const industries = ['real estate', 'healthcare offices', 'legal teams', 'ecommerce stores', 'coaches and agencies', 'home services'] as const;
 export const stats = [
-  { label: 'Typical overseas VA range', value: '$6-$18/hr', note: 'varies by role, country, schedule, skill, and management support' },
+  { label: 'Role clarity', value: 'Scope first', note: 'the right plan depends on tasks, schedule, skill, tools, and management needs' },
   { label: 'Common ramp time', value: '7-21 days', note: 'when SOPs, tool access, examples, and QA checks are ready' },
   { label: 'Best first handoff', value: '5-10 tasks', note: 'small recurring work beats a vague all-in assistant role' },
 ];
@@ -110,18 +110,18 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: 'virtual-assistant-costs',
-    title: 'How much does a virtual assistant cost?',
-    excerpt: 'A plain guide to hourly, monthly, local, and overseas assistant pricing.',
+    slug: 'virtual-assistant-planning',
+    title: 'How much does a virtual assistant plan?',
+    excerpt: 'A plain guide to role scope, staffing models, and launch planning.',
     minutes: 7,
-    takeaways: ['Budget by role, not by a generic VA label.', 'A managed provider often costs more than a direct freelancer because screening, backup, and account help are included.', 'Start with a 20-hour pilot before moving to a larger monthly plan.'],
+    takeaways: ['Budget by role, not by a generic VA label.', 'A managed provider often needs more support than a direct freelancer because screening, backup, and account help are included.', 'Start with a 20-hour pilot before moving to a larger monthly plan.'],
     sections: [
-      { heading: 'Use a simple planning range', body: 'Many overseas assistant roles are planned around $6 to $18 per hour. Skilled work, night coverage, strong English writing, and provider management can raise the price. Local employee support usually costs more after payroll, benefits, tools, and management time.' },
-      { heading: 'Compare the full cost', body: 'Do not compare only the hourly rate. Compare recruiting time, training time, backup coverage, manager time, software seats, security setup, and the cost of slow or incorrect work.' },
+      { heading: 'Use a simple planning range', body: 'Many overseas assistant roles are planned around custom role planfor the role. Skilled work, night coverage, strong English writing, and provider management can raise the plan. Local employee support usually needs more support after payroll, benefits, tools, and management time.' },
+      { heading: 'Compare the full plan', body: 'Do not compare only the published rate. Compare recruiting time, training time, backup coverage, manager time, software seats, security setup, and the plan of slow or incorrect work.' },
       { heading: 'Start with a small paid pilot', body: 'A two-week pilot protects both sides. Give the assistant a clear task list, examples, and a weekly scorecard. If the work is clean, add more hours. If the fit is weak, fix the scope before adding more work.', bullets: ['Pick 5 to 10 repeat tasks.', 'Give examples of good and bad output.', 'Review daily for the first week.', 'Move to weekly review after quality is stable.'] },
     ],
     faq: [
-      { question: 'Is the lowest hourly rate the best deal?', answer: 'Not always. A lower rate can cost more if the work needs heavy review, missed shifts, or replacement help.' },
+      { question: 'Is the lowest published rate the best deal?', answer: 'Not always. A lower rate can create more work if the work needs heavy review, missed shifts, or replacement help.' },
       { question: 'Should I buy a full-time plan first?', answer: 'Usually no. Start part-time or with a pilot unless you already have a trained role, SOPs, and enough recurring work.' },
     ],
     sources: [
@@ -139,7 +139,7 @@ export const blogPosts: BlogPost[] = [
     sections: [
       { heading: 'Good first tasks are boring and repeatable', body: 'The safest first tasks have clear inputs, clear steps, and clear examples. Inbox labels, appointment reminders, CRM notes, basic research, and customer reply drafts are easier to train than open-ended strategy work.' },
       { heading: 'Use a one-page task brief', body: 'For each task, write the goal, steps, tool, deadline, example, and what to do when stuck. This stops the assistant from guessing and gives you a fair way to review the work.' },
-      { heading: 'Hold risky tasks until trust is earned', body: 'Do not hand off bank moves, legal advice, price negotiation, or angry customer decisions on week one. Let the assistant prepare information while the owner keeps final approval.' },
+      { heading: 'Hold risky tasks until trust is earned', body: 'Do not hand off bank moves, legal advice, plan negotiation, or angry customer decisions on week one. Let the assistant prepare information while the owner keeps final approval.' },
     ],
     faq: [
       { question: 'How many tasks should I start with?', answer: 'Five to ten recurring tasks is enough for a first pilot. More than that often creates confusion.' },
@@ -168,7 +168,7 @@ export const blogPosts: BlogPost[] = [
     ],
     sources: [
       { name: 'IRS worker classification guidance', url: 'https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-defined', note: 'Classification rules matter when comparing contractors, providers, and employees.' },
-      { name: 'U.S. Bureau of Labor Statistics', url: 'https://www.bls.gov/ooh/office-and-administrative-support/home.htm', note: 'Local labor data can help compare in-house admin costs.' },
+      { name: 'U.S. Bureau of Labor Statistics', url: 'https://www.bls.gov/ooh/office-and-administrative-support/home.htm', note: 'Local labor data can help compare in-house admin planning.' },
     ],
     relatedServices: ['executive-assistant', 'customer-support-assistant'],
   },
@@ -201,3 +201,42 @@ export const faq = [
   { question: 'How do I compare providers?', answer: 'Ask who screens the assistant, who manages quality, what replacement support is included, how access is protected, and whether you can start with a small pilot.' },
   { question: 'How fast can a VA start?', answer: 'Simple admin work can often start in 7 to 21 days when tasks, tools, and examples are ready. Complex work takes longer.' },
 ];
+
+export const stealthOffer = {
+  partner: 'Stealth Agents',
+  promise: 'Get a managed offshore staffing plan built around the work you need removed from your plate.',
+  fit: [
+    'business owners who need reliable remote staff but do not want to screen alone',
+    'teams that want trained support, backup coverage, and a clear manager path',
+    'companies that need help with admin, operations, customer support, calls, bookkeeping, development, or marketing work',
+  ],
+  included: [
+    'role planning call to turn your task list into a clear staffing scope',
+    'candidate matching based on skills, schedule, tools, and communication needs',
+    'onboarding guidance for SOPs, scorecards, reporting, and safe tool access',
+    'managed support so quality, attendance, and replacement questions do not sit only on the owner',
+  ],
+  proof: [
+    'clear task scope before hiring',
+    'weekly reporting rhythm',
+    'named accountability and escalation path',
+    'simple handoff plan for tools, SOPs, and quality checks',
+  ],
+} as const;
+
+export const leadQuestions = [
+  'What work do you want off your plate first?',
+  'Which tools, inboxes, phones, CRMs, or systems will the staff member use?',
+  'What hours, time zone, and response time do you need?',
+  'Who checks quality during the first two weeks?',
+  'What should the staff member never decide without approval?',
+] as const;
+
+export const staffingProcess = [
+  { step: '1', title: 'Map the role', body: 'We turn messy tasks into one clear role with outcomes, tools, limits, and a first-week checklist.' },
+  { step: '2', title: 'Match the staff', body: 'Stealth Agents can help match remote staff to the work, schedule, communication style, and skill level you need.' },
+  { step: '3', title: 'Launch with control', body: 'Start with SOPs, sample work, limited access, daily review, and a simple scorecard so quality is easy to see.' },
+  { step: '4', title: 'Scale what works', body: 'Once the first tasks are stable, add more work, better reporting, and stronger delegation without guessing.' },
+] as const;
+
+export const staffingFitNote = 'Every staffing plan depends on role scope, schedule, skills, tools, and management needs. Send the role details and Stealth Agents can guide the best fit.';
