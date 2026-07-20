@@ -16,6 +16,8 @@ export type Service = {
   name: string;
   h1: string;
   excerpt: string;
+  image: string;
+  imageAlt: string;
   bestFor: string[];
   tasks: string[];
   watchouts: string[];
@@ -29,6 +31,8 @@ export const services: Service[] = [
     name: 'Executive assistant',
     h1: 'Executive assistant provider guide',
     excerpt: 'Plan calendar, inbox, travel, follow-up, and simple admin support without handing over sensitive decisions too fast.',
+    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'Executive assistant planning calendar and inbox work on a laptop',
     bestFor: ['founders with busy inboxes', 'sales leaders with follow-up gaps', 'owners who need schedule help'],
     tasks: ['sort email by owner rules', 'book meetings and send reminders', 'prepare simple daily brief notes', 'track open promises after calls', 'build clean contact lists'],
     watchouts: ['do not share full inbox access on day one', 'keep money, legal, and hiring choices with the owner', 'record sample replies before asking for independent writing'],
@@ -43,6 +47,8 @@ export const services: Service[] = [
     name: 'Customer support assistant',
     h1: 'Customer support assistant provider guide',
     excerpt: 'Build a safe support role for tickets, chat, order questions, refunds that need approval, and clear escalation paths.',
+    image: 'https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'Customer support assistant answering messages from a desk setup',
     bestFor: ['ecommerce stores', 'SaaS support queues', 'local service teams with repeat questions'],
     tasks: ['answer common ticket types from saved replies', 'tag urgent customer issues', 'update order or appointment notes', 'send refund requests to a manager', 'summarize weekly support themes'],
     watchouts: ['do not let a new assistant decide refunds without rules', 'separate billing access from reply access', 'use sample replies for tone before live responses'],
@@ -57,6 +63,8 @@ export const services: Service[] = [
     name: 'CRM and lead follow-up assistant',
     h1: 'CRM and lead follow-up assistant provider guide',
     excerpt: 'Keep leads from going stale with simple CRM cleanup, reminder tasks, appointment setting, and owner-approved scripts.',
+    image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'CRM follow-up assistant reviewing lead notes with a small business team',
     bestFor: ['agencies with missed follow-ups', 'real estate teams', 'home service companies', 'coaches and consultants'],
     tasks: ['clean duplicate contacts', 'send first follow-up from a script', 'book qualified calls', 'update lead stage and next task', 'flag hot replies for the owner'],
     watchouts: ['do not promise sales results from admin follow-up alone', 'keep pricing and negotiation choices with sales owners', 'review message tone before sending at scale'],
@@ -74,6 +82,18 @@ export const stats = [
   { label: 'Typical overseas VA range', value: '$6-$18/hr', note: 'varies by role, country, schedule, skill, and management support' },
   { label: 'Common ramp time', value: '7-21 days', note: 'when SOPs, tool access, examples, and QA checks are ready' },
   { label: 'Best first handoff', value: '5-10 tasks', note: 'small recurring work beats a vague all-in assistant role' },
+];
+
+export const providerCards = [
+  { name: 'Managed VA company', rating: 'Good fit for 20+ hours/week', note: 'Ask who trains the assistant, who checks quality, and how fast a replacement can start.' },
+  { name: 'Specialist assistant team', rating: 'Good fit for support or CRM', note: 'Look for role-specific examples, saved replies, and a manager who knows the tools.' },
+  { name: 'Direct freelance VA', rating: 'Good fit for a small pilot', note: 'Lower overhead can help, but you own screening, backup, QA, and access cleanup.' },
+];
+
+export const evidenceNotes = [
+  { label: 'Admin labor baseline', source: 'U.S. Bureau of Labor Statistics', url: 'https://www.bls.gov/ooh/office-and-administrative-support/home.htm' },
+  { label: 'Remote access planning', source: 'NIST access control project', url: 'https://csrc.nist.gov/projects/access-control' },
+  { label: 'Worker classification check', source: 'IRS contractor guidance', url: 'https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-defined' },
 ];
 
 export type BlogPost = {
