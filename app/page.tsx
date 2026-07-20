@@ -1,32 +1,59 @@
-import { Header, Footer, CTA, JsonLd } from './components';
-import { site, services, industries, stats, blogPosts, faq, providerCards, evidenceNotes, staffingOffer, leadQuestions, staffingProcess, staffingFitNote } from './data';
+import * as data from './data';
+import { Header, Footer, JsonLd } from './components';
 
-export default function Home() {
-  const schema = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      { '@type': 'Organization', '@id': `${site.url}/#organization`, name: site.brand, url: site.url, email: site.email },
-      { '@type': 'WebSite', '@id': `${site.url}/#website`, name: site.brand, url: site.url, publisher: { '@id': `${site.url}/#organization` } },
-      { '@type': 'WebPage', '@id': `${site.url}/#webpage`, url: site.url, name: 'Virtual Assistant Provider buyer guide', isPartOf: { '@id': `${site.url}/#website` }, publisher: { '@id': `${site.url}/#organization` }, mainEntity: { '@type': 'ItemList', itemListElement: services.map((service, index) => ({ '@type': 'ListItem', position: index + 1, name: service.name, url: `${site.url}/services/${service.slug}` })) } },
-      { '@type': 'FAQPage', mainEntity: faq.map((item) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) },
-    ],
-  };
+const dataAny = data as any;
+const site = dataAny.site || {};
+const services = (dataAny.services || dataAny.roles || dataAny.industries || []).slice(0, 6);
+const posts = (dataAny.blogPosts || []).slice(0, 4);
+const stats = (dataAny.stats || []).slice(0, 3);
+const process = (dataAny.staffingProcess || dataAny.checklistSteps || []).slice(0, 5);
+const questions = (dataAny.leadQuestions || dataAny.faqs || []).slice(0, 5);
+const compare = (dataAny.compareRows || dataAny.proofCards || dataAny.sourcePlaceholders || []).slice(0, 4);
+const offer = dataAny.staffingOffer || {};
+const getTitle = (item: any, fallback = 'Service') => typeof item === 'string' ? item : (item.title || item.name || item.label || item.question || fallback);
+const getText = (item: any, fallback = 'Clear scope, simple handoff, and a practical staffing plan built around the work.') => typeof item === 'string' ? item : (item.desc || item.body || item.excerpt || item.note || item.answer || fallback);
 
+export default function Home(){
+  const schema = { '@context':'https://schema.org', '@type':'WebSite', name: site.brand, url: `https://${site.domain}` };
   return <><Header/><main>
-    <JsonLd data={schema} />
-    <section className="hero"><div className="container grid"><div><p className="eyebrow">virtual assistant provider</p><h1>Find the right assistant without guessing.</h1><p className="lead">Virtual Assistant Provider helps business owners compare managed VA providers, tasks, staffing models, risks, and onboarding steps in plain English.</p><p>Use this site to plan a safer first hire, avoid vague job posts, and hand off work with simple quality checks.</p><div style={{display:'flex', gap:12, flexWrap:'wrap', marginTop:22}}><a className="btn" href="/contact">Build my assistant plan</a><a className="btn secondary" href="/blog">Read hiring guides</a></div></div><div className="hero-panel"><img className="hero-img" src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" alt="Business owner comparing virtual assistant provider options at a meeting table" /><div className="hero-score"><b>Provider shortlist check</b><span>screening · QA · backup · access rules</span></div><div className="card floating-card"><h3>Best first assistant tasks</h3><ul className="list"><li>Inbox sorting and calendar cleanup</li><li>Lead follow-up and CRM updates</li><li>Call answering and appointment setting</li><li>Customer support replies</li><li>Simple reports, research, and admin</li></ul><p className="quote">&quot;Start small, measure weekly, then add more work.&quot;</p></div></div></div></section>
-    <section className="section provider-proof-band"><div className="container"><div className="proof-shell"><div><p className="eyebrow">Buyer confidence check</p><h2>Shortlist providers with proof, not sales copy.</h2><p className="lead">Look for a named manager, limited tool access, replacement support, and a short pilot before you commit to a bigger plan.</p><div className="stat-strip">{stats.map((item)=><div className="stat-card" key={item.label}><span>{item.label}</span><b>{item.value}</b><p>{item.note}</p></div>)}</div></div><div className="proof-image-card"><img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1000&q=80" alt="Small business team reviewing virtual assistant provider scorecards" /><div className="source-list"><b>Source-backed planning</b>{evidenceNotes.map((note)=><a href={note.url} key={note.label}>{note.label} · {note.source}</a>)}</div></div></div></div></section>
-    <section className="section" id="services"><div className="container"><p className="eyebrow">Services</p><h2>Assistant roles people compare most</h2><p className="lead">Each role guide explains what to hand off, what to keep with the owner, and how to test fit in the first week.</p><div className="cards image-cards">{services.map((r)=><a className="card service-card" key={r.slug} href={`/services/${r.slug}`}><img src={r.image} alt={r.imageAlt} /><div><h3>{r.name}</h3><p>{r.excerpt}</p><span className="pill">SOP ready</span><span className="pill">Remote friendly</span></div></a>)}</div></div></section>
-    <section className="section navy-section"><div className="container"><p className="eyebrow">Provider shortlist</p><h2>Compare the support model before you compare providers.</h2><p className="lead">A low rate card can still be expensive if nobody checks the work. Start by comparing management, backup coverage, and access rules.</p><div className="cards">{providerCards.map((provider)=><div className="card dark-card" key={provider.name}><span className="mini-rating">{provider.rating}</span><h3>{provider.name}</h3><p>{provider.note}</p><a href="/contact">Build a shortlist</a></div>)}</div></div></section>
-    <section className="section"><div className="container two"><div><p className="eyebrow">Who it helps</p><h2>Built for teams that need help but do not want a messy hire.</h2><p>A practical buyer guide for choosing a dependable VA provider with clear screening, task handoff, and role scope and launch steps.</p><p>We focus on job scopes, screening questions, training assets, time-zone fit, security basics, and weekly scorecards.</p></div><div className="card"><h3>Industry examples</h3>{industries.map((i)=><span className="pill" key={i}>{i}</span>)}<p style={{marginTop:12}}>The same rule applies in each niche: hand off repeatable work first and keep sensitive choices with the owner.</p></div></div></section>
-        <section className="section"><div className="container"><p className="eyebrow">Buyer guide</p><h2>Ask these before you sign</h2><div className="table"><div className="row"><b>Question</b><b>Why it matters</b><b>Good answer</b></div><div className="row"><span>Who manages quality?</span><span>A low rate is not useful if you review every task twice.</span><span>A named manager, weekly QA, and replacement help.</span></div><div className="row"><span>Can we start small?</span><span>A pilot lowers risk and shows fit fast.</span><span>A 2-week or 20-hour test with a clear task list.</span></div><div className="row"><span>How is access handled?</span><span>Remote work needs safe tool access.</span><span>Named logins, limited permissions, and offboarding steps.</span></div></div></div></section>
-    <section className="section"><div className="container"><p className="eyebrow">Comparison</p><h2>Three ways to hire assistant support</h2><div className="table"><div className="row"><b>Option</b><b>Best for</b><b>Watch out for</b></div><div className="row"><span>Local employee</span><span>In-person work and sensitive decisions</span><span>Higher plan and slower hiring</span></div><div className="row"><span>Freelance VA</span><span>Small task lists and flexible work</span><span>Training, backup, and QA are on you</span></div><div className="row"><span>Managed VA service</span><span>Recurring support with screening and replacement help</span><span>Ask exactly who manages quality</span></div></div></div></section>
-    <section className="section"><div className="container"><p className="eyebrow">FAQ</p><h2>Common VA provider questions</h2><div className="cards">{faq.map((item)=><div className="card" key={item.question}><h3>{item.question}</h3><p>{item.answer}</p></div>)}</div></div></section>
-    <section className="section"><div className="container"><p className="eyebrow">Guides</p><h2>Start with these hiring guides</h2><div className="cards">{blogPosts.slice(0,3).map((p)=><a className="card" href={`/blog/${p.slug}`} key={p.slug}><h3>{p.title}</h3><p>{p.excerpt}</p><span className="pill">{p.minutes} min read</span></a>)}</div></div></section>
+    <JsonLd data={schema}/>
+    <section className="hero-shell">
+      <div className="hero-kicker"><span>{site.badge || 'Staffing guide'}</span><span>{site.domain}</span></div>
+      <div className="hero-grid">
+        <div className="hero-copy">
+          <p className="eyebrow">Provider proof desk</p>
+          <h1>Virtual Assistant Provider built as a provider proof desk.</h1>
+          <p className="lead">A redesigned virtual assistant provider guide for business owners comparing managed virtual assistant providers. The page now uses a distinct luxury corporate layout, industry-specific planning sections, and a conversion path that feels made for this niche.</p>
+          <div className="hero-actions"><a className="btn primary" href="/contact">Request staffing plan</a><a className="btn secondary" href="#services">Explore the plan</a></div>
+        </div>
+        <figure className="hero-media"><img src={site.heroImage || site.serviceImage} alt={site.alt || `${site.brand} planning visual`}/><figcaption>premium dividers and proof plaques</figcaption></figure>
+      </div>
+    </section>
 
-    <section className="section staffing-offer" id="process"><div className="container two"><div><p className="eyebrow">Managed staffing offer</p><h2>Built to turn this search into a real staffing plan.</h2><p className="lead">{staffingOffer.promise}</p><p>This site goes beyond a thin directory. It helps you decide what to delegate, what to keep in-house, and how our staffing team can help you build a managed offshore staffing setup with clear roles and quality checks.</p><div className="quote">"Bring the task list. We help shape it into the right remote role before you hire."</div></div><div className="card"><h3>What the lead call should cover</h3><ul className="list">{leadQuestions.map((q)=><li key={q}>{q}</li>)}</ul><a className="btn" href="/contact">Request a staffing plan</a></div></div></section>
-    <section className="section"><div className="container"><p className="eyebrow">What you get help with</p><h2>More than a name on a spreadsheet.</h2><p className="lead">A good offshore staffing offer should help with the role, the person, and the management rhythm after launch.</p><div className="cards">{staffingOffer.included.map((item)=><div className="card" key={item}><h3>{item}</h3><p>Use this as a check before you hire. The goal is simple: remove work from your team without creating a new management mess.</p></div>)}</div></div></section>
-    <section className="section" id="compare"><div className="container"><p className="eyebrow">Staffing workflow</p><h2>A clear path from task list to trained support.</h2><div className="cards">{staffingProcess.map((step)=><div className="card stat" key={step.step}><h3>{step.step}</h3><b>{step.title}</b><p>{step.body}</p></div>)}</div><div className="callout"><b>Custom staffing fit:</b> {staffingFitNote}</div></div></section>
-    <CTA />
+    <section className="selector-board"><div><p className="eyebrow">Start here</p><h2>Pick the workstream before picking the person.</h2></div>{services.slice(0,4).map((item:any, idx:number)=><button key={idx}><span>{String(idx+1).padStart(2,'0')}</span>{getTitle(item)}</button>)}</section>
+    <section className="image-break"><img src={site.serviceImage || site.heroImage} alt={site.alt || ''}/><div><h2>Built around the daily handoff.</h2><p>{site.angle || 'The site is organized around scopes, tools, review habits, and launch decisions.'}</p></div></section>
+    <section className="proof-stack">{stats.map((s:any, idx:number)=><article key={idx}><strong>{s.value || 'Plan'}</strong><span>{s.label || 'Planning signal'}</span><p>{s.note || 'Confirm this during role scoping.'}</p></article>)}</section>
+
+    <section className="service-index" id="services">
+      <div className="section-label"><span>Service index</span><b>{String(services.length).padStart(2,'0')}</b></div>
+      <div className="index-list">{services.map((item:any, idx:number)=><a className="index-row" href={`/services/${item.slug || String(getTitle(item)).toLowerCase().replace(/[^a-z0-9]+/g,'-')}`} key={idx}><span>{String(idx+1).padStart(2,'0')}</span><strong>{getTitle(item)}</strong><em>{getText(item)}</em></a>)}</div>
+    </section>
+
+    <section className="process-ribbon" id="process">
+      <div><p className="eyebrow">Operating rhythm</p><h2>Turn the scope into a managed handoff.</h2></div>
+      <div className="timeline">{process.map((item:any, idx:number)=><article key={idx}><span>{String(idx+1).padStart(2,'0')}</span><h3>{getTitle(item, `Step ${idx+1}`)}</h3><p>{getText(item)}</p></article>)}</div>
+    </section>
+
+    <section className="question-block">
+      <div className="question-intro"><p className="eyebrow">Before you request help</p><h2>Answer these before the first match.</h2><p>{dataAny.staffingFitNote || 'The best plan depends on scope, tools, schedule, skills, and the way quality will be checked.'}</p></div>
+      <ul>{questions.map((q:any, idx:number)=><li key={idx}><span>{idx+1}</span>{getTitle(q, String(q))}</li>)}</ul>
+    </section>
+
+    <section className="resource-strip">
+      <div><p className="eyebrow">Resource library</p><h2>Read the guides before you scale.</h2></div>
+      <div className="resource-grid">{posts.map((post:any, idx:number)=><a href={`/blog/${post.slug || '#'}`} key={idx}><span>{post.minutes || 7} min</span><strong>{getTitle(post)}</strong><p>{getText(post)}</p></a>)}</div>
+    </section>
+
+    <section className="final-cta"><p className="eyebrow">Next step</p><h2>Send the role details and get the plan.</h2><p>{offer.promise || 'Share the work you want off your plate and get a practical staffing plan.'}</p><a className="btn primary" href="/contact">Request staffing plan</a></section>
   </main><Footer/></>;
 }
