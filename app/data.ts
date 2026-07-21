@@ -4,7 +4,7 @@ export const site = {
   brand: 'Virtual Assistant Provider',
   primary: 'virtual assistant provider',
   audience: 'business owners comparing managed virtual assistant providers',
-  angle: 'a practical buyer guide for choosing a dependable VA provider with clear screening, task handoff, management support, and launch steps',
+  angle: 'help choosing a VA provider, setting the role, and getting the first tasks live',
   color: '#2563eb',
   accent: '#0f766e',
   url: 'https://virtualassistantprovider.com',
@@ -30,7 +30,7 @@ export const services: Service[] = [
     slug: 'executive-assistant',
     name: 'Executive assistant',
     h1: 'Executive assistant provider guide',
-    excerpt: 'Plan calendar, inbox, travel, follow-up, and simple admin support without handing over sensitive decisions too fast.',
+    excerpt: 'Hand off calendar, inbox, travel, and follow-up work while the owner keeps sensitive decisions.',
     image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80',
     imageAlt: 'Executive assistant planning calendar and inbox work on a laptop',
     bestFor: ['founders with busy inboxes', 'sales leaders with follow-up gaps', 'owners who need schedule help'],
@@ -46,7 +46,7 @@ export const services: Service[] = [
     slug: 'customer-support-assistant',
     name: 'Customer support assistant',
     h1: 'Customer support assistant provider guide',
-    excerpt: 'Build a safe support role for tickets, chat, order questions, refunds that need approval, and clear escalation paths.',
+    excerpt: 'Handle tickets, chat, and order questions while a manager approves refunds and unusual requests.',
     image: 'https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&w=1200&q=80',
     imageAlt: 'Customer support assistant answering messages from a desk setup',
     bestFor: ['ecommerce stores', 'SaaS support queues', 'local service teams with repeat questions'],
@@ -79,9 +79,9 @@ export const services: Service[] = [
 export const roles = services.map((service) => service.name);
 export const industries = ['real estate', 'healthcare offices', 'legal teams', 'ecommerce stores', 'coaches and agencies', 'home services'] as const;
 export const stats = [
-  { label: 'Role clarity', value: 'Scope first', note: 'the right plan depends on tasks, schedule, skill, tools, and management needs' },
-  { label: 'Common ramp time', value: '7-21 days', note: 'when SOPs, tool access, examples, and QA checks are ready' },
-  { label: 'Best first handoff', value: '5-10 tasks', note: 'small recurring work beats a vague all-in assistant role' },
+  { label: 'Role scope', value: 'Scope first', note: 'the plan depends on the tasks, hours, tools, and skills involved' },
+  { label: 'Early review', value: '7-21 days', note: 'keep a close eye on the work while the assistant learns the role' },
+  { label: 'First handoff', value: '5-10 tasks', note: 'begin with a short list of recurring work instead of an all-purpose role' },
 ];
 
 export const providerCards = [
@@ -111,13 +111,13 @@ export type BlogPost = {
 export const blogPosts: BlogPost[] = [
   {
     slug: 'virtual-assistant-planning',
-    title: 'How much does a virtual assistant plan?',
-    excerpt: 'A plain guide to role scope, staffing models, and launch planning.',
+    title: 'How to budget for a virtual assistant',
+    excerpt: 'Compare the whole cost of the role, including setup, software, and review time.',
     minutes: 7,
-    takeaways: ['Budget by role, not by a generic VA label.', 'A managed provider often needs more support than a direct freelancer because screening, backup, and account help are included.', 'Start with a 20-hour pilot before moving to a larger monthly plan.'],
+    takeaways: ['Budget for the work and skill level, not the VA label.', 'Ask what the provider fee covers, including screening, backup, and account help.', 'Test the role with a small paid pilot before buying more hours.'],
     sections: [
-      { heading: 'Use a simple planning range', body: 'Many overseas assistant roles are planned around custom role planfor the role. Skilled work, night coverage, strong English writing, and provider management can raise the plan. Local employee support usually needs more support after payroll, benefits, tools, and management time.' },
-      { heading: 'Compare the full plan', body: 'Do not compare only the published rate. Compare recruiting time, training time, backup coverage, manager time, software seats, security setup, and the plan of slow or incorrect work.' },
+      { heading: 'Price the actual role', body: 'A general admin assistant and an experienced bookkeeper should not have the same budget. Hours, working schedule, writing skill, software knowledge, and the amount of provider help all affect the quote.' },
+      { heading: 'Count the costs around the hourly rate', body: 'The published rate is only one line. Add recruiting and training time, software seats, security setup, manager review, and the cost of redoing weak work. Ask which of those costs the provider covers.' },
       { heading: 'Start with a small paid pilot', body: 'A two-week pilot protects both sides. Give the assistant a clear task list, examples, and a weekly scorecard. If the work is clean, add more hours. If the fit is weak, fix the scope before adding more work.', bullets: ['Pick 5 to 10 repeat tasks.', 'Give examples of good and bad output.', 'Review daily for the first week.', 'Move to weekly review after quality is stable.'] },
     ],
     faq: [
@@ -177,7 +177,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Assistant onboarding checklist',
     excerpt: 'A simple first-week checklist for logins, SOPs, calls, QA, and scorecards.',
     minutes: 9,
-    takeaways: ['Prepare access before day one.', 'Train with real examples, not only written rules.', 'Review daily in week one, then weekly once quality is stable.'],
+    takeaways: ['Prepare access before day one.', 'Train with real examples instead of relying on written rules.', 'Review daily in week one, then weekly once quality is stable.'],
     sections: [
       { heading: 'Before day one', body: 'Create named accounts, limit permissions, gather sample work, record one task video, and write the top escalation rules. This makes the first day practical instead of chaotic.' },
       { heading: 'First-week plan', body: 'Start with shadowing, then drafts, then low-risk live work. Review the work each day. Keep notes on unclear steps so the SOP improves while the assistant learns.', bullets: ['Day 1: tools, rules, sample work.', 'Day 2: shadow and ask questions.', 'Day 3: draft work for approval.', 'Day 4: do low-risk work live.', 'Day 5: review the scorecard and next tasks.'] },
@@ -204,17 +204,17 @@ export const faq = [
 
 export const staffingOffer = {
   partner: 'our staffing team',
-  promise: 'Get a managed offshore staffing plan built around the work you need removed from your plate.',
+  promise: 'Get an offshore staffing plan based on the work you want to hand off.',
   fit: [
-    'business owners who need reliable remote staff but do not want to screen alone',
-    'teams that want trained support, backup coverage, and a clear manager path',
+    'business owners who need remote staff but do not want to screen candidates alone',
+    'teams that want help with training, backup coverage, and day-to-day questions',
     'companies that need help with admin, operations, customer support, calls, bookkeeping, development, or marketing work',
   ],
   included: [
-    'role planning call to turn your task list into a clear staffing scope',
-    'candidate matching based on skills, schedule, tools, and communication needs',
-    'onboarding guidance for SOPs, scorecards, reporting, and safe tool access',
-    'managed support so quality, attendance, and replacement questions do not sit only on the owner',
+    'a role planning call that turns your task list into a job scope',
+    'candidate matching based on the skills, hours, tools, and communication the job requires',
+    'help preparing task instructions, review notes, reports, and tool access',
+    'a manager to contact about attendance, weak work, or a replacement',
   ],
   proof: [
     'clear task scope before hiring',
@@ -233,10 +233,10 @@ export const leadQuestions = [
 ] as const;
 
 export const staffingProcess = [
-  { step: '1', title: 'Map the role', body: 'We turn messy tasks into one clear role with outcomes, tools, limits, and a first-week checklist.' },
-  { step: '2', title: 'Match the staff', body: 'our staffing team can help match remote staff to the work, schedule, communication style, and skill level you need.' },
-  { step: '3', title: 'Launch with control', body: 'Start with SOPs, sample work, limited access, daily review, and a simple scorecard so quality is easy to see.' },
-  { step: '4', title: 'Scale what works', body: 'Once the first tasks are stable, add more work, better reporting, and stronger delegation without guessing.' },
+  { step: '1', title: 'Map the role', body: 'Turn the task list into one job with set hours, tools, limits, and a first-week checklist.' },
+  { step: '2', title: 'Meet candidates', body: 'Our staffing team can look for people whose skills and working hours fit the job.' },
+  { step: '3', title: 'Start with close review', body: 'Give examples, limit tool access, and check the work each day during the first week.' },
+  { step: '4', title: 'Add work carefully', body: 'Once the first tasks are going well, add new duties one at a time.' },
 ] as const;
 
-export const staffingFitNote = 'Every staffing plan depends on role scope, schedule, skills, tools, and management needs. Send the role details and our staffing team can guide the best fit.';
+export const staffingFitNote = 'The right hire depends on the work, hours, tools, and skill level. Send those details so our staffing team can narrow the search.';
