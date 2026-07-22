@@ -85,9 +85,9 @@ export const stats = [
 ];
 
 export const providerCards = [
-  { name: 'Managed VA company', rating: 'Good fit for 20+ hours/week', note: 'Ask who trains the assistant, who checks quality, and how fast a replacement can start.' },
-  { name: 'Specialist assistant team', rating: 'Good fit for support or CRM', note: 'Look for role-specific examples, saved replies, and a manager who knows the tools.' },
-  { name: 'Direct freelance VA', rating: 'Good fit for a small pilot', note: 'Lower overhead can help, but you own screening, backup, QA, and access cleanup.' },
+  { name: 'Managed Philippines VA company', rating: 'Good fit for 20+ hours/week', note: 'Ask who trains the Filipino assistant, who checks quality, and how fast a Philippines-based replacement can start.' },
+  { name: 'Filipino specialist team', rating: 'Good fit for support or CRM', note: 'Look for role-specific examples, saved replies, and a Philippines team manager who knows the tools.' },
+  { name: 'Direct Filipino freelance VA', rating: 'Good fit for a small pilot', note: 'Lower overhead can help, but you own screening, backup, quality checks, and access cleanup.' },
 ];
 
 export const evidenceNotes = [
@@ -204,15 +204,15 @@ export const faq = [
 
 export const staffingOffer = {
   partner: 'our staffing team',
-  promise: 'Get an offshore staffing plan based on the work you want to hand off.',
+  promise: 'Get a Philippines staffing plan based on the work you want to hand off.',
   fit: [
-    'business owners who need remote staff but do not want to screen candidates alone',
+    'business owners who need Filipino remote staff but do not want to screen candidates alone',
     'teams that want help with training, backup coverage, and day-to-day questions',
     'companies that need help with admin, operations, customer support, calls, bookkeeping, development, or marketing work',
   ],
   included: [
     'a role planning call that turns your task list into a job scope',
-    'candidate matching based on the skills, hours, tools, and communication the job requires',
+    'Philippines-based candidate matching based on the skills, hours, tools, and communication the job requires',
     'help preparing task instructions, review notes, reports, and tool access',
     'a manager to contact about attendance, weak work, or a replacement',
   ],
