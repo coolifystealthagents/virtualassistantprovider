@@ -166,6 +166,7 @@ export default async function ResearchArticle({ params }: PageProps) {
                 <h2 id="evidence-table-heading">How to use the evidence without overclaiming it</h2>
                 <p>Each signal can improve a buyer’s questions, but none replaces candidate-level proof. Read the final column before turning a national number into a hiring assumption.</p>
               </div>
+              <span className="research-table-cue" aria-hidden="true">Swipe to compare all columns.</span>
               <div className="research-table-scroll" role="region" aria-label="Philippines virtual assistant hiring evidence table" tabIndex={0}>
                 <table>
                   <caption>Philippines evidence, buyer use, and limits</caption>
