@@ -193,6 +193,17 @@ export const blogPosts: BlogPost[] = [
     ],
     relatedServices: ['executive-assistant', 'crm-lead-follow-up', 'customer-support-assistant'],
   },
+  {
+    slug: 'real-estate-virtual-assistant-philippines',
+    title: 'Real estate virtual assistant Philippines: a safe role plan',
+    excerpt: 'Plan the tasks, owner controls, work sample, access, and first week for a Philippines-based real estate assistant.',
+    minutes: 12,
+    takeaways: [],
+    sections: [],
+    faq: [],
+    sources: [],
+    relatedServices: [],
+  },
 ];
 
 export const faq = [
