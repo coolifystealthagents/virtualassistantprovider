@@ -141,6 +141,17 @@ export const blogPosts: BlogPost[] = [
     faq: [],
     sources: [],
     relatedServices: [],
+  },
+  {
+    slug: 'bookkeeping-virtual-assistant-philippines',
+    title: 'Bookkeeping virtual assistant Philippines: safe hiring guide',
+    excerpt: 'Plan the records, work sample, access limits, review steps, and first month for a Philippines-based bookkeeping virtual assistant.',
+    minutes: 14,
+    takeaways: [],
+    sections: [],
+    faq: [],
+    sources: [],
+    relatedServices: [],
   },];
 
 export const faq = [
