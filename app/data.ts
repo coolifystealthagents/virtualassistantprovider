@@ -130,6 +130,17 @@ export const blogPosts: BlogPost[] = [
     faq: [],
     sources: [],
     relatedServices: [],
+  },
+  {
+    slug: 'customer-service-virtual-assistant-philippines',
+    title: 'Customer service virtual assistant Philippines: hiring and QA guide',
+    excerpt: 'Plan the ticket lanes, work sample, access limits, quality checks, and first week for a Philippines-based customer service virtual assistant.',
+    minutes: 13,
+    takeaways: [],
+    sections: [],
+    faq: [],
+    sources: [],
+    relatedServices: [],
   },];
 
 export const faq = [
