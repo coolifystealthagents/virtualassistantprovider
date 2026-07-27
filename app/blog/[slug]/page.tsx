@@ -6,6 +6,7 @@ import { ExecutiveAssistantPhilippinesArticle, executiveAssistantArticleSlug } f
 import { CustomerServicePhilippinesArticle, customerServiceArticleSlug } from './customer-service-philippines-article';
 import { BookkeepingPhilippinesArticle, bookkeepingArticleSlug } from './bookkeeping-philippines-article';
 import { RecruitingPhilippinesArticle, recruitingArticleSlug } from './recruiting-philippines-article';
+import { HealthcarePhilippinesArticle, healthcareArticleSlug } from './healthcare-philippines-article';
 
 export function generateStaticParams() { return blogPosts.map((p) => ({ slug: p.slug })); }
 
@@ -57,6 +58,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       openGraph: { title: post?.title, description: post?.excerpt, url, type: 'article' },
     };
   }
+  if (slug === healthcareArticleSlug) {
+    const url = `${site.url}/blog/${slug}`;
+    return {
+      title: post?.title,
+      description: post?.excerpt,
+      alternates: { canonical: url },
+      openGraph: { title: post?.title, description: post?.excerpt, url, type: 'article' },
+    };
+  }
   return { title: post?.title || 'Guide', description: post?.excerpt };
 }
 
@@ -67,6 +77,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   if (slug === customerServiceArticleSlug) return <CustomerServicePhilippinesArticle />;
   if (slug === bookkeepingArticleSlug) return <BookkeepingPhilippinesArticle />;
   if (slug === recruitingArticleSlug) return <RecruitingPhilippinesArticle />;
+  if (slug === healthcareArticleSlug) return <HealthcarePhilippinesArticle />;
 
   const post = blogPosts.find((p) => p.slug === slug);
   if (!post) notFound();

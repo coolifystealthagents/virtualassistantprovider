@@ -163,6 +163,17 @@ export const blogPosts: BlogPost[] = [
     faq: [],
     sources: [],
     relatedServices: [],
+  },
+  {
+    slug: 'healthcare-virtual-assistant-philippines',
+    title: 'Healthcare virtual assistant Philippines: safe admin hiring guide',
+    excerpt: 'Plan the nonclinical tasks, patient-data limits, work sample, quality checks, and first month for a Philippines-based healthcare virtual assistant.',
+    minutes: 15,
+    takeaways: [],
+    sections: [],
+    faq: [],
+    sources: [],
+    relatedServices: [],
   },];
 
 export const faq = [
