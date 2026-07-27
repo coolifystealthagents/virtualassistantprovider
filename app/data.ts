@@ -152,6 +152,17 @@ export const blogPosts: BlogPost[] = [
     faq: [],
     sources: [],
     relatedServices: [],
+  },
+  {
+    slug: 'recruiting-virtual-assistant-philippines',
+    title: 'Recruiting virtual assistant Philippines: safe hiring guide',
+    excerpt: 'Plan the job posts, applicant records, interview steps, access limits, and first month for a Philippines-based recruiting virtual assistant.',
+    minutes: 14,
+    takeaways: [],
+    sections: [],
+    faq: [],
+    sources: [],
+    relatedServices: [],
   },];
 
 export const faq = [
