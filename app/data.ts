@@ -119,6 +119,17 @@ export const blogPosts: BlogPost[] = [
     faq: [],
     sources: [],
     relatedServices: [],
+  },
+  {
+    slug: 'executive-assistant-philippines-hiring-guide',
+    title: 'Executive assistant Philippines: a safe hiring guide',
+    excerpt: 'Build a clear role, work sample, access plan, and first-week launch for a Philippines-based executive assistant.',
+    minutes: 13,
+    takeaways: [],
+    sections: [],
+    faq: [],
+    sources: [],
+    relatedServices: [],
   },];
 
 export const faq = [
