@@ -353,8 +353,8 @@ export const researchPosts: readonly ResearchPost[] = [
       { id: 9, name: 'NIST SP 800-63-4: Digital Identity Guidelines', organization: 'National Institute of Standards and Technology', url: 'https://pages.nist.gov/800-63-4/', published: '2025-08-01', accessed: '2026-07-22' }
     ],
     related: [
-      { title: 'How to budget for a virtual assistant', href: '/blog/virtual-assistant-planning', description: 'Build the whole-role budget before comparing hourly plans. Include tools, management time, and paid leave in the estimate.' },
-      { title: 'Assistant onboarding checklist', href: '/blog/assistant-onboarding-checklist', description: 'Turn the selected hire into a safe first-week launch. Set access limits and review points before live work begins.' },
+      { title: 'How to budget for a virtual assistant', href: '/blog', description: 'Build the whole-role budget before comparing hourly plans. Include tools, management time, and paid leave in the estimate.' },
+      { title: 'Assistant onboarding checklist', href: '/blog', description: 'Turn the selected hire into a safe first-week launch. Set access limits and review points before live work begins.' },
       { title: 'Philippines-based staffing services', href: '/services', description: 'Compare role lanes for executive, operations, support, sales, bookkeeping, and more. All talent offered by the site is based in the Philippines.' },
       { title: 'Current public pricing', href: '/pricing', description: 'Review the site’s $10, $15, and $18 per hour Philippines-based tiers. Check what each tier includes before choosing a plan.' }
     ]

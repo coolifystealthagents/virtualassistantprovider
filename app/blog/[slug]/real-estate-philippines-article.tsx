@@ -141,7 +141,7 @@ export function RealEstatePhilippinesArticle() {
 
         <section>
           <h2>Helpful next steps</h2>
-          <p>Start with the <a href="/services/real-estate-assistants">real estate assistant service guide</a> if you need a simple role outline. The <a href="/blog/tasks-to-delegate-first">first tasks guide</a> helps narrow a messy list, while the <a href="/blog/assistant-onboarding-checklist">assistant onboarding checklist</a> turns the chosen role into a safe first week.</p>
+          <p>Start with the <a href="/services/real-estate-assistants">real estate assistant service guide</a> if you need a simple role outline. The <a href="/blog">first tasks guide</a> helps narrow a messy list, while the <a href="/blog">assistant onboarding checklist</a> turns the chosen role into a safe first week.</p>
           <p>For a wider look at the country setting, read the <a href="/research/hire-virtual-assistant-philippines-evidence-guide">Philippines hiring evidence guide</a>. Use the sources as background, then judge the actual candidate with a paid sample and clear owner controls.</p>
         </section>
 

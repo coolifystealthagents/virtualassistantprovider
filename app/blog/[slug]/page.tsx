@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation';
 import { Header, Footer, CTA, JsonLd } from '../../components';
 import { blogPosts, site, services } from '../../data';
 import { RealEstatePhilippinesArticle, realEstateArticleSlug } from './real-estate-philippines-article';
@@ -23,7 +24,8 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const { slug } = await params;
   if (slug === realEstateArticleSlug) return <RealEstatePhilippinesArticle />;
 
-  const post = blogPosts.find((p) => p.slug === slug) || blogPosts[0];
+  const post = blogPosts.find((p) => p.slug === slug);
+  if (!post) notFound();
   const relatedServices = services.filter((service) => post.relatedServices.includes(service.slug));
   const schema = {
     '@context': 'https://schema.org',

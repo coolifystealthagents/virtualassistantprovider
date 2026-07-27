@@ -110,90 +110,6 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: 'virtual-assistant-planning',
-    title: 'How to budget for a virtual assistant',
-    excerpt: 'Compare the whole cost of the role, including setup, software, and review time.',
-    minutes: 7,
-    takeaways: ['Budget for the work and skill level, not the VA label.', 'Ask what the provider fee covers, including screening, backup, and account help.', 'Test the role with a small paid pilot before buying more hours.'],
-    sections: [
-      { heading: 'Price the actual role', body: 'A general admin assistant and an experienced bookkeeper should not have the same budget. Hours, working schedule, writing skill, software knowledge, and the amount of provider help all affect the quote.' },
-      { heading: 'Count the costs around the hourly rate', body: 'The published rate is only one line. Add recruiting and training time, software seats, security setup, manager review, and the cost of redoing weak work. Ask which of those costs the provider covers.' },
-      { heading: 'Start with a small paid pilot', body: 'A two-week pilot protects both sides. Give the assistant a clear task list, examples, and a weekly scorecard. If the work is clean, add more hours. If the fit is weak, fix the scope before adding more work.', bullets: ['Pick 5 to 10 repeat tasks.', 'Give examples of good and bad output.', 'Review daily for the first week.', 'Move to weekly review after quality is stable.'] },
-    ],
-    faq: [
-      { question: 'Is the lowest published rate the best deal?', answer: 'Not always. A lower rate can create more work if the work needs heavy review, missed shifts, or replacement help.' },
-      { question: 'Should I buy a full-time plan first?', answer: 'Usually no. Start part-time or with a pilot unless you already have a trained role, SOPs, and enough recurring work.' },
-    ],
-    sources: [
-      { name: 'U.S. Bureau of Labor Statistics', url: 'https://www.bls.gov/ooh/office-and-administrative-support/home.htm', note: 'Useful baseline for local office and admin labor categories.' },
-      { name: 'NIST access control guidance', url: 'https://csrc.nist.gov/projects/access-control', note: 'Use least-privilege access when sharing tools with remote staff.' },
-    ],
-    relatedServices: ['executive-assistant', 'crm-lead-follow-up'],
-  },
-  {
-    slug: 'tasks-to-delegate-first',
-    title: 'What tasks should you delegate first?',
-    excerpt: 'Start with repeatable admin, follow-up, inbox, CRM, and scheduling work.',
-    minutes: 6,
-    takeaways: ['Pick tasks that repeat every day or week.', 'Keep judgment-heavy work with the owner at first.', 'Give examples before you expect speed.'],
-    sections: [
-      { heading: 'Good first tasks are boring and repeatable', body: 'The safest first tasks have clear inputs, clear steps, and clear examples. Inbox labels, appointment reminders, CRM notes, basic research, and customer reply drafts are easier to train than open-ended strategy work.' },
-      { heading: 'Use a one-page task brief', body: 'For each task, write the goal, steps, tool, deadline, example, and what to do when stuck. This stops the assistant from guessing and gives you a fair way to review the work.' },
-      { heading: 'Hold risky tasks until trust is earned', body: 'Do not hand off bank moves, legal advice, plan negotiation, or angry customer decisions on week one. Let the assistant prepare information while the owner keeps final approval.' },
-    ],
-    faq: [
-      { question: 'How many tasks should I start with?', answer: 'Five to ten recurring tasks is enough for a first pilot. More than that often creates confusion.' },
-      { question: 'What if I do not have SOPs?', answer: 'Record yourself doing the task once. A rough screen recording is better than a blank handoff.' },
-    ],
-    sources: [
-      { name: 'SBA hiring guidance', url: 'https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees', note: 'Helpful reminder to define roles and expectations before hiring help.' },
-      { name: 'NIST access control guidance', url: 'https://csrc.nist.gov/projects/access-control', note: 'Supports limited tool access for new remote staff.' },
-    ],
-    relatedServices: ['executive-assistant', 'customer-support-assistant'],
-  },
-  {
-    slug: 'virtual-assistant-vs-employee',
-    title: 'Virtual assistant vs employee: which is better?',
-    excerpt: 'When to hire in-house and when a managed assistant is the safer first step.',
-    minutes: 8,
-    takeaways: ['Use employees for deep company judgment or in-person work.', 'Use VA support for repeatable remote work with clear rules.', 'Managed providers help when you need screening and replacement support.'],
-    sections: [
-      { heading: 'Choose based on control and risk', body: 'An employee may be better when the work needs daily in-person judgment, private business decisions, or tight cross-team work. A virtual assistant can fit when the work is remote, repeatable, and easy to check.' },
-      { heading: 'A provider can reduce hiring friction', body: 'A managed VA provider may help with screening, attendance, backup, and replacement. Ask what is included. Some services only introduce a worker. Others actively manage quality.' },
-      { heading: 'Use the same scorecard either way', body: 'Track accuracy, speed, communication, attendance, and owner time saved. If those numbers improve, the role is working. If they do not, the scope or hire needs repair.' },
-    ],
-    faq: [
-      { question: 'Is a VA a replacement for a manager?', answer: 'No. A VA can take work off a manager. The manager still owns priorities, quality rules, and final decisions.' },
-      { question: 'When should I hire locally?', answer: 'Hire locally when the work needs in-person coverage, local licensing, sensitive judgment, or close team supervision.' },
-    ],
-    sources: [
-      { name: 'IRS worker classification guidance', url: 'https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-defined', note: 'Classification rules matter when comparing contractors, providers, and employees.' },
-      { name: 'U.S. Bureau of Labor Statistics', url: 'https://www.bls.gov/ooh/office-and-administrative-support/home.htm', note: 'Local labor data can help compare in-house admin planning.' },
-    ],
-    relatedServices: ['executive-assistant', 'customer-support-assistant'],
-  },
-  {
-    slug: 'assistant-onboarding-checklist',
-    title: 'Assistant onboarding checklist',
-    excerpt: 'A simple first-week checklist for logins, SOPs, calls, QA, and scorecards.',
-    minutes: 9,
-    takeaways: ['Prepare access before day one.', 'Train with real examples instead of relying on written rules.', 'Review daily in week one, then weekly once quality is stable.'],
-    sections: [
-      { heading: 'Before day one', body: 'Create named accounts, limit permissions, gather sample work, record one task video, and write the top escalation rules. This makes the first day practical instead of chaotic.' },
-      { heading: 'First-week plan', body: 'Start with shadowing, then drafts, then low-risk live work. Review the work each day. Keep notes on unclear steps so the SOP improves while the assistant learns.', bullets: ['Day 1: tools, rules, sample work.', 'Day 2: shadow and ask questions.', 'Day 3: draft work for approval.', 'Day 4: do low-risk work live.', 'Day 5: review the scorecard and next tasks.'] },
-      { heading: 'Weekly scorecard', body: 'Use a short scorecard with accuracy, speed, communication, attendance, and owner review time. Plain numbers make the provider conversation easier if you need coaching or replacement.' },
-    ],
-    faq: [
-      { question: 'How long does onboarding take?', answer: 'Simple admin roles can start in a week. More complex roles often need two to three weeks of close review.' },
-      { question: 'What should the first scorecard include?', answer: 'Track accuracy, time to finish, questions asked, missed rules, and work the owner had to redo.' },
-    ],
-    sources: [
-      { name: 'NIST digital identity guidance', url: 'https://pages.nist.gov/800-63-3/', note: 'Supports named account and authentication planning.' },
-      { name: 'SBA hire and manage employees', url: 'https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees', note: 'Useful baseline for role setup and expectations.' },
-    ],
-    relatedServices: ['executive-assistant', 'crm-lead-follow-up', 'customer-support-assistant'],
-  },
-  {
     slug: 'real-estate-virtual-assistant-philippines',
     title: 'Real estate virtual assistant Philippines: a safe role plan',
     excerpt: 'Plan the tasks, owner controls, work sample, access, and first week for a Philippines-based real estate assistant.',
@@ -203,8 +119,7 @@ export const blogPosts: BlogPost[] = [
     faq: [],
     sources: [],
     relatedServices: [],
-  },
-];
+  },];
 
 export const faq = [
   { question: 'Is Virtual Assistant Provider a staffing agency?', answer: 'This first version is an independent buyer-guide site. It helps visitors plan the role and request a quote-style hiring plan. Replace this note if the site becomes a direct staffing offer.' },
