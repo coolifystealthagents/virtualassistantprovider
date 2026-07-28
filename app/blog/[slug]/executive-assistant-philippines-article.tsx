@@ -35,7 +35,8 @@ export function ExecutiveAssistantPhilippinesArticle() {
     <main className="rich-article-shell"><JsonLd data={schema} />
       <article className="rich-evidence-article" data-article-marker="executive-assistant-philippines-v1">
         <span className="article-kicker">Philippines role guide</span>
-        <h1>Executive assistant Philippines: a safe hiring guide</h1>
+          <h1>Executive assistant Philippines: a safe hiring guide</h1>
+          <img src="/featured/executive-assistant-philippines-hiring-guide.png" alt="" width="1200" height="675" />
         <p className="article-deck">A Philippines-based executive assistant can protect time, keep promises visible, and prepare the next step before a busy leader asks. The role works best when the assistant owns clear repeat tasks and knows which choices must go back to the executive.</p>
 
         <aside className="article-banner article-banner-top"><div><span>Start with a real executive support brief</span><p>List the inbox, calendar, meeting, travel, and follow-up work that needs an owner. Add the hours, tools, examples, and decisions the assistant must never make alone.</p></div><a className="btn primary" href="/contact">Plan the role</a></aside>

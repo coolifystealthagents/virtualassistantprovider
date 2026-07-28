@@ -36,7 +36,8 @@ export function BookkeepingPhilippinesArticle() {
     <main className="rich-article-shell"><JsonLd data={schema} />
       <article className="rich-evidence-article" data-article-marker="bookkeeping-philippines-v1">
         <span className="article-kicker">Philippines role guide</span>
-        <h1>Bookkeeping virtual assistant Philippines: safe hiring guide</h1>
+          <h1>Bookkeeping virtual assistant Philippines: safe hiring guide</h1>
+          <img src="/featured/bookkeeping-virtual-assistant-philippines.png" alt="" width="1200" height="675" />
         <p className="article-deck">A Philippines-based bookkeeping assistant can clean records and prepare a close. The role works best when the owner draws a hard line between preparing the books and moving money, approving entries, or making tax choices.</p>
 
         <aside className="article-banner article-banner-top"><div><span>Start with one clean record lane</span><p>Choose one account, one month, and one source folder. Write who prepares the work, who reviews it, and which choices stay with the owner.</p></div><a className="btn primary" href="/contact">Plan the role</a></aside>

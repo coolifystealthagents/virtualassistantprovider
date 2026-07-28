@@ -35,7 +35,8 @@ export function HealthcarePhilippinesArticle() {
     <main className="rich-article-shell"><JsonLd data={schema} />
       <article className="rich-evidence-article" data-article-marker="healthcare-philippines-v1">
         <span className="article-kicker">Philippines role guide</span>
-        <h1>Healthcare virtual assistant Philippines: safe admin hiring guide</h1>
+          <h1>Healthcare virtual assistant Philippines: safe admin hiring guide</h1>
+          <img src="/featured/healthcare-virtual-assistant-philippines.png" alt="" width="1200" height="675" />
         <p className="article-deck">A Philippines-based healthcare virtual assistant can help a clinic clear repeat office work without making medical choices. The safest role has a narrow task list, named clinic owners, limited access, and a clear stop rule for anything urgent or unclear.</p>
 
         <aside className="article-banner article-banner-top"><div><span>Start with one admin lane</span><p>Choose a repeat job such as appointment reminders or referral tracking. Write down the allowed steps, patient-data fields, stop reasons, and clinic reviewer before access opens.</p></div><a className="btn primary" href="/contact">Plan the role</a></aside>

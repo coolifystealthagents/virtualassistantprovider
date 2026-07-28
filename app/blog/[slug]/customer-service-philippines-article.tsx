@@ -36,7 +36,8 @@ export function CustomerServicePhilippinesArticle() {
     <main className="rich-article-shell"><JsonLd data={schema} />
       <article className="rich-evidence-article" data-article-marker="customer-service-philippines-v1">
         <span className="article-kicker">Philippines role guide</span>
-        <h1>Customer service virtual assistant Philippines: hiring and QA guide</h1>
+          <h1>Customer service virtual assistant Philippines: hiring and QA guide</h1>
+          <img src="/featured/customer-service-virtual-assistant-philippines.png" alt="" width="1200" height="675" />
         <p className="article-deck">A Philippines-based customer service assistant can clear repeat questions and keep the queue tidy. The job needs firm answer rules, safe account access, and a manager who reviews real tickets instead of trusting a friendly voice alone.</p>
 
         <aside className="article-banner article-banner-top"><div><span>Start with a real support queue</span><p>List the five ticket types that take the most time. Add the approved answer, tool, private fields, stop rule, and manager for each one.</p></div><a className="btn primary" href="/contact">Plan the role</a></aside>

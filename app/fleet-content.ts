@@ -221,6 +221,7 @@ export type ResearchSource = {
 
 export type ResearchPost = {
   slug: string;
+  featuredImage: string;
   primaryKeyword: string;
   title: string;
   metaTitle: string;
@@ -243,6 +244,7 @@ export type ResearchPost = {
 export const researchPosts: readonly ResearchPost[] = [
   {
     slug: 'hire-virtual-assistant-philippines-evidence-guide',
+    featuredImage: '/featured/hire-virtual-assistant-philippines-evidence-guide.png',
     primaryKeyword: 'hire virtual assistant philippines',
     title: 'Hire virtual assistant Philippines: an evidence guide for 2026',
     metaTitle: 'Hire virtual assistant Philippines: 2026 evidence guide',

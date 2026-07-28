@@ -20,7 +20,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: post?.title,
       description: post?.excerpt,
       alternates: { canonical: url },
-      openGraph: { title: post?.title, description: post?.excerpt, url, type: 'article' },
+      openGraph: { title: post?.title, description: post?.excerpt, url, type: 'article', images: [{ url: `${site.url}${post?.featuredImage}`, alt: post?.title }] },
+      twitter: { card: 'summary_large_image', images: [`${site.url}${post?.featuredImage}`] },
     };
   }
   if (slug === executiveAssistantArticleSlug) {
@@ -29,7 +30,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: post?.title,
       description: post?.excerpt,
       alternates: { canonical: url },
-      openGraph: { title: post?.title, description: post?.excerpt, url, type: 'article' },
+      openGraph: { title: post?.title, description: post?.excerpt, url, type: 'article', images: [{ url: `${site.url}${post?.featuredImage}`, alt: post?.title }] },
+      twitter: { card: 'summary_large_image', images: [`${site.url}${post?.featuredImage}`] },
     };
   }
   if (slug === customerServiceArticleSlug) {
@@ -38,7 +40,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: post?.title,
       description: post?.excerpt,
       alternates: { canonical: url },
-      openGraph: { title: post?.title, description: post?.excerpt, url, type: 'article' },
+      openGraph: { title: post?.title, description: post?.excerpt, url, type: 'article', images: [{ url: `${site.url}${post?.featuredImage}`, alt: post?.title }] },
+      twitter: { card: 'summary_large_image', images: [`${site.url}${post?.featuredImage}`] },
     };
   }
   if (slug === bookkeepingArticleSlug) {
@@ -47,7 +50,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: post?.title,
       description: post?.excerpt,
       alternates: { canonical: url },
-      openGraph: { title: post?.title, description: post?.excerpt, url, type: 'article' },
+      openGraph: { title: post?.title, description: post?.excerpt, url, type: 'article', images: [{ url: `${site.url}${post?.featuredImage}`, alt: post?.title }] },
+      twitter: { card: 'summary_large_image', images: [`${site.url}${post?.featuredImage}`] },
     };
   }
   if (slug === recruitingArticleSlug) {
@@ -56,7 +60,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: post?.title,
       description: post?.excerpt,
       alternates: { canonical: url },
-      openGraph: { title: post?.title, description: post?.excerpt, url, type: 'article' },
+      openGraph: { title: post?.title, description: post?.excerpt, url, type: 'article', images: [{ url: `${site.url}${post?.featuredImage}`, alt: post?.title }] },
+      twitter: { card: 'summary_large_image', images: [`${site.url}${post?.featuredImage}`] },
     };
   }
   if (slug === healthcareArticleSlug) {
@@ -65,7 +70,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: post?.title,
       description: post?.excerpt,
       alternates: { canonical: url },
-      openGraph: { title: post?.title, description: post?.excerpt, url, type: 'article' },
+      openGraph: { title: post?.title, description: post?.excerpt, url, type: 'article', images: [{ url: `${site.url}${post?.featuredImage}`, alt: post?.title }] },
+      twitter: { card: 'summary_large_image', images: [`${site.url}${post?.featuredImage}`] },
     };
   }
   if (slug === ecommerceArticleSlug) {
@@ -74,7 +80,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: post?.title,
       description: post?.excerpt,
       alternates: { canonical: url },
-      openGraph: { title: post?.title, description: post?.excerpt, url, type: 'article' },
+      openGraph: { title: post?.title, description: post?.excerpt, url, type: 'article', images: [{ url: `${site.url}${post?.featuredImage}`, alt: post?.title }] },
+      twitter: { card: 'summary_large_image', images: [`${site.url}${post?.featuredImage}`] },
     };
   }
   return { title: post?.title || 'Guide', description: post?.excerpt };

@@ -34,7 +34,8 @@ export function RecruitingPhilippinesArticle() {
     <main className="rich-article-shell"><JsonLd data={schema} />
       <article className="rich-evidence-article" data-article-marker="recruiting-philippines-v1">
         <span className="article-kicker">Philippines role guide</span>
-        <h1>Recruiting virtual assistant Philippines: safe hiring guide</h1>
+          <h1>Recruiting virtual assistant Philippines: safe hiring guide</h1>
+          <img src="/featured/recruiting-virtual-assistant-philippines.png" alt="" width="1200" height="675" />
         <p className="article-deck">A Philippines-based recruiting assistant can keep a busy hiring queue neat and moving. The role works best when one person handles the repeat steps while a named manager keeps selection choices, sensitive records, and final approval.</p>
 
         <aside className="article-banner article-banner-top"><div><span>Start with one open role</span><p>Write the must-have skills, the proof you will accept, the interview steps, and who makes each choice. A small, clear queue is easier to test than a company-wide hiring inbox.</p></div><a className="btn primary" href="/contact">Plan the role</a></aside>

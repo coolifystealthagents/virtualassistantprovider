@@ -34,7 +34,8 @@ export function RealEstatePhilippinesArticle() {
     <main className="rich-article-shell"><JsonLd data={schema} />
       <article className="rich-evidence-article" data-article-marker="real-estate-va-philippines-v1">
         <span className="article-kicker">Philippines role guide</span>
-        <h1>Real estate virtual assistant Philippines: a safe role plan</h1>
+          <h1>Real estate virtual assistant Philippines: a safe role plan</h1>
+          <img src="/featured/real-estate-virtual-assistant-philippines.png" alt="" width="1200" height="675" />
         <p className="article-deck">A real estate virtual assistant in the Philippines can keep records, follow-ups, listing files, and transaction checklists moving. The role works best when the assistant owns repeat work while a licensed local professional keeps advice, negotiation, signatures, and final decisions.</p>
 
         <aside className="article-banner article-banner-top"><div><span>Start with the job, not a vague title</span><p>Send the task list, tools, hours, and approval limits. A clear brief gives the staffing team something real to match.</p></div><a className="btn primary" href="/contact">Plan the role</a></aside>

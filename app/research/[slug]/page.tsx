@@ -29,11 +29,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       publishedTime: post.published,
       modifiedTime: post.updated,
       siteName: 'Virtual Assistant Provider',
+      images: [{ url: `${baseUrl}${post.featuredImage}`, alt: post.title }],
     },
     twitter: {
       card: 'summary_large_image',
       title: post.metaTitle,
       description: post.excerpt,
+      images: [`${baseUrl}${post.featuredImage}`],
     },
   };
 }
@@ -80,6 +82,7 @@ export default async function ResearchArticle({ params }: PageProps) {
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
     author: { '@type': 'Organization', name: 'Virtual Assistant Provider', url: baseUrl },
     publisher: { '@type': 'Organization', name: 'Virtual Assistant Provider', url: baseUrl },
+    image: `${baseUrl}${post.featuredImage}`,
     about: [
       { '@type': 'Thing', name: 'Philippines-based virtual assistant hiring' },
       { '@type': 'Country', name: 'Philippines' },
@@ -115,6 +118,7 @@ export default async function ResearchArticle({ params }: PageProps) {
             <div className="research-wrap">
               <p className="eyebrow">Philippines staffing research</p>
               <h1>{post.title}</h1>
+              <img src={post.featuredImage} alt="" width="1200" height="675" />
               <p className="lead">{post.excerpt}</p>
               <div className="research-meta" aria-label="Article details">
                 <span>Published <time dateTime={post.published}>July 22, 2026</time></span>

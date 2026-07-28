@@ -34,7 +34,8 @@ export function EcommercePhilippinesArticle() {
     <main className="rich-article-shell"><JsonLd data={schema} />
       <article className="rich-evidence-article" data-article-marker="ecommerce-philippines-v1">
         <span className="article-kicker">Philippines role guide</span>
-        <h1>Ecommerce virtual assistant Philippines: store operations guide</h1>
+          <h1>Ecommerce virtual assistant Philippines: store operations guide</h1>
+          <img src="/featured/ecommerce-virtual-assistant-philippines.png" alt="" width="1200" height="675" />
         <p className="article-deck">A Philippines-based ecommerce assistant can keep product, order, and customer records moving each day. The safest setup gives the assistant a small task lane while a store manager keeps money, policy, claims, and account control.</p>
 
         <aside className="article-banner article-banner-top"><div><span>Start with one store queue</span><p>Choose one repeat job, such as product checks or order notes, and write the finish line. Add the stop reasons and name the manager who answers each exception.</p></div><a className="btn primary" href="/contact">Plan the role</a></aside>

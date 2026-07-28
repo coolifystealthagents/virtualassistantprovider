@@ -98,6 +98,7 @@ export const evidenceNotes = [
 
 export type BlogPost = {
   slug: string;
+  featuredImage: string;
   title: string;
   excerpt: string;
   minutes: number;
@@ -111,6 +112,7 @@ export type BlogPost = {
 export const blogPosts: BlogPost[] = [
   {
     slug: 'ecommerce-virtual-assistant-philippines',
+    featuredImage: '/featured/ecommerce-virtual-assistant-philippines.png',
     title: 'Ecommerce virtual assistant Philippines: store operations guide',
     excerpt: 'Plan product updates, order checks, customer messages, access limits, and first-month review for a Philippines-based ecommerce virtual assistant.',
     minutes: 14,
@@ -122,6 +124,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'real-estate-virtual-assistant-philippines',
+    featuredImage: '/featured/real-estate-virtual-assistant-philippines.png',
     title: 'Real estate virtual assistant Philippines: a safe role plan',
     excerpt: 'Plan the tasks, owner controls, work sample, access, and first week for a Philippines-based real estate assistant.',
     minutes: 12,
@@ -133,6 +136,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'executive-assistant-philippines-hiring-guide',
+    featuredImage: '/featured/executive-assistant-philippines-hiring-guide.png',
     title: 'Executive assistant Philippines: a safe hiring guide',
     excerpt: 'Build a clear role, work sample, access plan, and first-week launch for a Philippines-based executive assistant.',
     minutes: 13,
@@ -144,6 +148,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'customer-service-virtual-assistant-philippines',
+    featuredImage: '/featured/customer-service-virtual-assistant-philippines.png',
     title: 'Customer service virtual assistant Philippines: hiring and QA guide',
     excerpt: 'Plan the ticket lanes, work sample, access limits, quality checks, and first week for a Philippines-based customer service virtual assistant.',
     minutes: 13,
@@ -155,6 +160,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'bookkeeping-virtual-assistant-philippines',
+    featuredImage: '/featured/bookkeeping-virtual-assistant-philippines.png',
     title: 'Bookkeeping virtual assistant Philippines: safe hiring guide',
     excerpt: 'Plan the records, work sample, access limits, review steps, and first month for a Philippines-based bookkeeping virtual assistant.',
     minutes: 14,
@@ -166,6 +172,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'recruiting-virtual-assistant-philippines',
+    featuredImage: '/featured/recruiting-virtual-assistant-philippines.png',
     title: 'Recruiting virtual assistant Philippines: safe hiring guide',
     excerpt: 'Plan the job posts, applicant records, interview steps, access limits, and first month for a Philippines-based recruiting virtual assistant.',
     minutes: 14,
@@ -177,6 +184,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'healthcare-virtual-assistant-philippines',
+    featuredImage: '/featured/healthcare-virtual-assistant-philippines.png',
     title: 'Healthcare virtual assistant Philippines: safe admin hiring guide',
     excerpt: 'Plan the nonclinical tasks, patient-data limits, work sample, quality checks, and first month for a Philippines-based healthcare virtual assistant.',
     minutes: 15,

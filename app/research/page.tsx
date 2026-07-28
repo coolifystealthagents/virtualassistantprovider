@@ -58,6 +58,7 @@ export default function Research() {
           <div className="container fleet-card-grid">
             {researchPosts.map((post) => (
               <a className="fleet-card research-index-card" href={`/research/${post.slug}`} key={post.slug}>
+                <img src={post.featuredImage} alt="" width="1200" height="675" />
                 <span>Published {post.published} · {post.sources.length} sources</span>
                 <h2>{post.title}</h2>
                 <p>{post.excerpt}</p>
