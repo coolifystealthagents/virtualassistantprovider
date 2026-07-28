@@ -5,15 +5,15 @@ Scope: site-wide marketing and editorial copy
 
 ## Reviewed
 
-- `app/page.tsx` — homepage hero, task cards, provider-support section, guide rail, and final CTA
-- `app/data.ts` — site positioning, service copy, provider notes, article data, FAQs, staffing offer, intake questions, and staffing process
-- `app/components.tsx` — header, footer description and disclosure, and shared CTA
-- `app/services/[slug]/page.tsx` — service-page headings, guidance, provider script, FAQs, and related-guide copy
-- `app/blog/page.tsx` — guide index metadata, heading, and introduction
-- `app/blog/[slug]/page.tsx` — article labels, source note, provider questions, related roles, and shared CTA placement
-- `app/contact/page.tsx` — metadata, intake introduction, form labels, option copy, and callout
-- `app/thank-you/page.tsx` — confirmation and next-step cards
-- `app/layout.tsx` — default and Open Graph metadata
+- `app/page.tsx` - homepage hero, task cards, provider-support section, guide rail, and final CTA
+- `app/data.ts` - site positioning, service copy, provider notes, article data, FAQs, staffing offer, intake questions, and staffing process
+- `app/components.tsx` - header, footer description and disclosure, and shared CTA
+- `app/services/[slug]/page.tsx` - service-page headings, guidance, provider script, FAQs, and related-guide copy
+- `app/blog/page.tsx` - guide index metadata, heading, and introduction
+- `app/blog/[slug]/page.tsx` - article labels, source note, provider questions, related roles, and shared CTA placement
+- `app/contact/page.tsx` - metadata, intake introduction, form labels, option copy, and callout
+- `app/thank-you/page.tsx` - confirmation and next-step cards
+- `app/layout.tsx` - default and Open Graph metadata
 
 ## What changed
 
