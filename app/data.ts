@@ -110,6 +110,17 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'ecommerce-virtual-assistant-philippines',
+    title: 'Ecommerce virtual assistant Philippines: store operations guide',
+    excerpt: 'Plan product updates, order checks, customer messages, access limits, and first-month review for a Philippines-based ecommerce virtual assistant.',
+    minutes: 14,
+    takeaways: [],
+    sections: [],
+    faq: [],
+    sources: [],
+    relatedServices: [],
+  },
+  {
     slug: 'real-estate-virtual-assistant-philippines',
     title: 'Real estate virtual assistant Philippines: a safe role plan',
     excerpt: 'Plan the tasks, owner controls, work sample, access, and first week for a Philippines-based real estate assistant.',
