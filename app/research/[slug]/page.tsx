@@ -4,6 +4,12 @@ import { Header, Footer } from '../../components';
 import { researchPosts, type ResearchPost } from '../../fleet-content';
 
 const baseUrl = 'https://virtualassistantprovider.com';
+const formatDate = (value: string) => new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  timeZone: 'UTC',
+}).format(new Date(`${value}T00:00:00Z`));
 
 type PageProps = { params: Promise<{ slug: string }> };
 
@@ -84,7 +90,7 @@ export default async function ResearchArticle({ params }: PageProps) {
     publisher: { '@type': 'Organization', name: 'Virtual Assistant Provider', url: baseUrl },
     image: `${baseUrl}${post.featuredImage}`,
     about: [
-      { '@type': 'Thing', name: 'Philippines-based virtual assistant hiring' },
+      { '@type': 'Thing', name: post.primaryKeyword },
       { '@type': 'Country', name: 'Philippines' },
     ],
     citation: post.sources.map((source) => source.url),
@@ -116,13 +122,13 @@ export default async function ResearchArticle({ params }: PageProps) {
         <article>
           <header className="research-hero">
             <div className="research-wrap">
-              <p className="eyebrow">Philippines staffing research</p>
+              <p className="eyebrow">Virtual Assistant Provider research</p>
               <h1>{post.title}</h1>
               <img src={post.featuredImage} alt="" width="1200" height="675" />
               <p className="lead">{post.excerpt}</p>
               <div className="research-meta" aria-label="Article details">
-                <span>Published <time dateTime={post.published}>July 22, 2026</time></span>
-                <span>Updated <time dateTime={post.updated}>July 22, 2026</time></span>
+                <span>Published <time dateTime={post.published}>{formatDate(post.published)}</time></span>
+                <span>Updated <time dateTime={post.updated}>{formatDate(post.updated)}</time></span>
                 <span>{post.readingMinutes} minute read</span>
                 <span>{post.sources.length} direct sources</span>
               </div>

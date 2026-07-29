@@ -360,6 +360,126 @@ export const researchPosts: readonly ResearchPost[] = [
       { title: 'Philippines-based staffing services', href: '/services', description: 'Compare role lanes for executive, operations, support, sales, bookkeeping, and more. All talent offered by the site is based in the Philippines.' },
       { title: 'Current public pricing', href: '/pricing', description: 'Review the site’s $10, $15, and $18 per hour Philippines-based tiers. Check what each tier includes before choosing a plan.' }
     ]
+  },
+  {
+    slug: 'virtual-assistant-onboarding-30-day-routine',
+    featuredImage: '/featured/virtual-assistant-onboarding-30-day-routine.png',
+    primaryKeyword: 'virtual assistant onboarding',
+    title: 'Virtual assistant onboarding: a practical 30-day routine',
+    metaTitle: 'Virtual assistant onboarding: 30-day routine',
+    excerpt: 'A staged 30-day routine for onboarding a Philippines-based virtual assistant: define outcomes, grant minimum access, rehearse real work safely, and widen ownership only after evidence.',
+    published: '2026-07-28',
+    updated: '2026-07-28',
+    readingMinutes: 12,
+    revision: '2026-07-28-va-onboarding-routine-v1',
+    takeaways: [
+      'Start with outcomes, decision limits, and one named manager before creating accounts.',
+      'Use a dedicated identity, multi-factor authentication, and the least access needed for the first task.',
+      'Move from observation to a safe work sample, supervised production, and then bounded ownership.',
+      'Review quality, cycle time, reliability, and escalation behavior instead of relying on invasive activity monitoring.',
+      'Treat the 30-day sequence as a Virtual Assistant Provider operating framework, not a research-proven universal timetable.'
+    ],
+    headlineStats: [
+      { value: '4 phases', label: 'Access, observe, execute, own', context: 'The article groups onboarding into four operational phases. This is our framework, not a benchmark.', sourceIds: [1, 2] },
+      { value: '1 owner', label: 'One accountable manager', context: 'A named owner resolves ambiguity, reviews evidence, and approves wider access.', sourceIds: [1, 10] },
+      { value: 'Minimum', label: 'Access needed for each task', context: 'NIST defines least privilege as restricting access to the minimum needed for assigned work.', sourceIds: [3, 4] },
+      { value: 'MFA', label: 'Protect every work identity', context: 'CISA recommends stronger, phishing-resistant MFA, especially for privileged accounts.', sourceIds: [5] },
+      { value: 'Daily', label: 'Short written handoff', context: 'A consistent update surfaces completed work, next actions, blockers, and decisions.', sourceIds: [1, 2] },
+      { value: 'Day 30', label: 'Review before expansion', context: 'The final review should decide what to widen, retrain, retain, or remove.', sourceIds: [4, 6] }
+    ],
+    sections: [
+      {
+        heading: 'Before day one: define the lane',
+        paragraphs: [
+          'Onboarding begins before the assistant receives a login. Write five recurring tasks, the expected output for each task, the tools involved, the response window, and the decision that still belongs to the manager. CIPD describes induction as the process that helps a new recruit gain the knowledge and support needed to perform the role.[1]',
+          'Assign one manager to answer questions and approve exceptions. A shared list of unnamed stakeholders creates conflicting instructions; a named owner can sequence work, resolve uncertainty, and give consistent feedback.',
+          'Prepare a safe practice packet with invented contacts, redacted records, a good example, a deliberately ambiguous case, and a scorecard. The sample should resemble the first live task without exposing customer data or production credentials.'
+        ]
+      },
+      {
+        heading: 'Days 1–3: access and orientation',
+        paragraphs: [
+          'Create a named account for the assistant instead of sharing an owner login. NIST defines least privilege as limiting users to the minimum resources and authorizations needed for their function.[3] Its current controls also call for reviewing and removing privileges when they are no longer needed.[4]',
+          'Require multi-factor authentication and record who owns account recovery. CISA guidance prioritizes phishing-resistant MFA for privileged users and notes that centralized login can improve lifecycle management and auditability.[5]',
+          'Walk through the business context, task lane, quality standard, prohibited actions, escalation path, working hours, outage procedure, and daily update. Confirm understanding by asking the assistant to restate the workflow and identify what would trigger an escalation.'
+        ]
+      },
+      {
+        heading: 'Days 4–10: observe, rehearse, and correct',
+        paragraphs: [
+          'Demonstrate one complete workflow while narrating the reason behind each decision. The assistant then repeats the task with the safe practice packet, records questions, and compares the result with the approved example.',
+          'Score accuracy, completeness, tone, judgment, and documentation. Correct the process, not only the latest output: update the checklist when a missing rule causes a predictable error.',
+          'Remote work does not reduce the need for respectful privacy boundaries. The UK Information Commissioner says monitoring should have a clear purpose and use the least intrusive means; exact obligations vary by jurisdiction, worker relationship, and data involved.[7]'
+        ]
+      },
+      {
+        heading: 'Days 11–20: supervised production',
+        paragraphs: [
+          'Open one low-risk live workflow and review every output before it reaches a customer, changes a system of record, or commits money. Keep refunds, bank activity, legal judgment, hiring decisions, and policy exceptions with the named owner.',
+          'Use a short daily handoff: completed, next, blocked, and decision needed. The routine creates a visible queue without requiring constant meetings or screenshots.',
+          'For Philippines-based work involving personal information, the Data Privacy Act provides the national legal framework.[8] The Telecommuting Act also recognizes remote arrangements for covered private-sector employees.[9] These sources are context, not legal advice; obtain qualified review for the actual contract, worker model, and data flows.'
+        ]
+      },
+      {
+        heading: 'Days 21–30: bounded ownership',
+        paragraphs: [
+          'Let the assistant own a defined queue while the manager samples completed work and reviews exceptions. Expand access only when the new responsibility requires it and the previous phase shows reliable execution.',
+          'Measure outcomes that match the role: calendar conflict rate and briefing completeness for executive support; first-response time and quality review for customer support; record accuracy and exception notes for operations work.',
+          'At day 30, hold a decision review. Keep what is working, retrain unclear steps, narrow risky access, and choose the next task lane deliberately. Offboarding readiness belongs in onboarding: maintain an account inventory, file ownership map, and revocation checklist from the start.[4][6]'
+        ]
+      },
+      {
+        heading: 'What this routine can and cannot do',
+        paragraphs: [
+          'The four phases are a practical Virtual Assistant Provider framework assembled from onboarding, identity, access, privacy, and remote-work guidance. The cited sources support the underlying controls; they do not prove that every assistant will become independent in 30 days.',
+          'Regulated work, complex customer environments, and roles requiring professional judgment may need longer supervised periods or may not be appropriate to delegate. Change the schedule when risk and evidence require it.',
+          'A routine reduces avoidable ambiguity, but it does not replace role-specific training, qualified legal or security advice, candidate verification, or ongoing management.'
+        ]
+      }
+    ],
+    evidenceTable: [
+      { signal: 'Clear role', finding: 'Induction should provide the knowledge and support needed to perform the role.', buyerUse: 'Write outputs, limits, tools, and one owner before launch.', limit: 'General onboarding guidance does not validate a specific 30-day schedule.', sourceIds: [1] },
+      { signal: 'Least privilege', finding: 'Access should be limited to what assigned tasks require and reviewed over time.', buyerUse: 'Grant one task lane first; add permissions only for proven needs.', limit: 'The correct controls depend on the system and sensitivity of the data.', sourceIds: [3, 4] },
+      { signal: 'Identity security', finding: 'Stronger MFA and centralized identity controls reduce credential risk and aid auditing.', buyerUse: 'Use named accounts, MFA, recovery ownership, and access logs.', limit: 'MFA does not prevent every phishing, device, or insider risk.', sourceIds: [5, 6] },
+      { signal: 'Worker privacy', finding: 'Monitoring should be necessary, proportionate, transparent, and as unintrusive as practical.', buyerUse: 'Prefer work outcomes and quality checks over screenshots or keystrokes.', limit: 'The linked ICO guidance is UK-specific; verify each applicable jurisdiction.', sourceIds: [7] },
+      { signal: 'Philippines context', finding: 'Philippine law addresses personal data and covered telecommuting arrangements.', buyerUse: 'Document data duties, work terms, records, and offboarding with counsel.', limit: 'Applicability varies by worker classification, contract, data, and location.', sourceIds: [8, 9] }
+    ],
+    implications: [
+      { title: 'Executive assistance', body: 'Start with a redacted calendar and draft brief. Score conflicts found, questions asked, and whether owner-only decisions are escalated.' },
+      { title: 'Customer support', body: 'Use a small ticket queue with one policy exception. Review accuracy and tone before any reply is sent.' },
+      { title: 'Marketing operations', body: 'Begin with asset naming, scheduling drafts, and reporting. Keep campaign spend and final claims with the manager.' },
+      { title: 'Bookkeeping support', body: 'Use redacted documents and exception notes. Keep money movement, tax judgment, and final sign-off with qualified owners.' }
+    ],
+    methodology: [
+      'This report reviewed ten direct sources from professional bodies, standards organizations, cybersecurity agencies, privacy regulators, and Philippine legal texts. Sources were accessed on July 28, 2026. Vendor materials were excluded from factual claims.',
+      'The 30-day sequence is an editorial operating framework. No source in this review establishes 30 days as a universal time-to-independence benchmark, so the article makes no guaranteed productivity, retention, savings, or security claim.',
+      'Legal and security references are general planning inputs. Buyers should verify worker classification, contract terms, privacy duties, monitoring rules, tax, employment, licensing, and system-specific controls with qualified advisers.'
+    ],
+    faq: [
+      { question: 'How long does virtual assistant onboarding take?', answer: 'There is no universal evidence-based duration. Use 30 days as a review window, then widen, retrain, narrow, or extend the supervised period based on the work and observed evidence.' },
+      { question: 'What should a virtual assistant receive on day one?', answer: 'Provide a clear task lane, one manager, working hours, a safe practice packet, named accounts, minimum required access, multi-factor authentication, quality criteria, and an escalation path.' },
+      { question: 'Should I share my main email or password?', answer: 'No. Prefer a named account, delegated access, a password manager, multi-factor authentication, and permissions limited to the assigned task. Keep account recovery and administrator rights with an authorized owner.' },
+      { question: 'How should I measure the first month?', answer: 'Measure role outcomes such as accuracy, completeness, cycle time, reliability, questions, and escalation behavior. Avoid treating screenshots, keystrokes, or online status as proof of quality.' },
+      { question: 'When can the assistant own a workflow?', answer: 'Transfer bounded ownership after the assistant can complete the workflow reliably, document exceptions, protect data, and escalate owner-only decisions. Expand access only when the wider role requires it.' }
+    ],
+    sources: [
+      { id: 1, name: 'Induction factsheet', organization: 'Chartered Institute of Personnel and Development', url: 'https://www.cipd.org/en/knowledge/factsheets/induction-factsheet/', published: '2026-07-21', accessed: '2026-07-28' },
+      { id: 2, name: 'New employee onboarding guide', organization: 'U.S. Office of Personnel Management', url: 'https://www.opm.gov/policy-data-oversight/training-and-development/reference-materials/new-employee-onboarding-guide.pdf', accessed: '2026-07-28' },
+      { id: 3, name: 'Least privilege glossary', organization: 'National Institute of Standards and Technology', url: 'https://csrc.nist.gov/glossary/term/least_privilege', accessed: '2026-07-28' },
+      { id: 4, name: 'NIST SP 800-171 Rev. 3: Protecting Controlled Unclassified Information', organization: 'National Institute of Standards and Technology', url: 'https://csrc.nist.gov/pubs/sp/800/171/r3/final', published: '2024-05-14', accessed: '2026-07-28' },
+      { id: 5, name: 'Phishing Guidance: Stopping the Attack Cycle at Phase One', organization: 'Cybersecurity and Infrastructure Security Agency', url: 'https://www.cisa.gov/sites/default/files/2025-03/Phishing%20Guidance%20-%20Stopping%20the%20Attack%20Cycle%20at%20Phase%20One%20508.pdf', published: '2025-03', accessed: '2026-07-28' },
+      { id: 6, name: 'Identity and Access Management: Recommended Best Practices for Administrators', organization: 'Cybersecurity and Infrastructure Security Agency', url: 'https://www.cisa.gov/sites/default/files/2023-03/identity-and-access-management-recommended-best-practices-administrators.pdf', accessed: '2026-07-28' },
+      { id: 7, name: 'Data protection and monitoring workers', organization: 'UK Information Commissioner’s Office', url: 'https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/employment/monitoring-workers/data-protection-and-monitoring-workers/', accessed: '2026-07-28' },
+      { id: 8, name: 'Republic Act No. 10173: Data Privacy Act of 2012', organization: 'The Lawphil Project', url: 'https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html', published: '2012-08-15', accessed: '2026-07-28' },
+      { id: 9, name: 'Republic Act No. 11165: Telecommuting Act', organization: 'The Lawphil Project', url: 'https://lawphil.net/statutes/repacts/ra2018/ra_11165_2018.html', published: '2018-12-20', accessed: '2026-07-28' },
+      { id: 10, name: 'NICE Workforce Framework for Cybersecurity', organization: 'National Institute of Standards and Technology', url: 'https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center', accessed: '2026-07-28' }
+    ],
+    related: [
+      { title: 'Philippines VA hiring evidence guide', href: '/research/hire-virtual-assistant-philippines-evidence-guide', description: 'Use country context, paid work samples, and access checks to choose a candidate or provider.' },
+      { title: 'Philippines-based staffing services', href: '/services', description: 'Compare role lanes for executive, operations, customer support, sales, bookkeeping, and more.' },
+      { title: 'Current public pricing', href: '/pricing', description: 'Review the site’s public Philippines-based tiers and confirm what each plan includes.' },
+      { title: 'Request a role plan', href: '/contact', description: 'Bring the tasks, hours, tools, and owner-only decisions you already know.' }
+    ]
   }
 ];
 export const publicTiers = [
