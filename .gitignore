@@ -1,4 +1,6 @@
 node_modules
+.daily-blog-batch.json
+deployment-result.json
 .next
 out
 .env*

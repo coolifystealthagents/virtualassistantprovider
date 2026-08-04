@@ -1,0 +1,26 @@
+{
+  "batchId": "2026-08-03",
+  "complete": true,
+  "validated": true,
+  "buildPassed": true,
+  "excludedContentChecked": true,
+  "quantity": 10,
+  "randomSelection": true,
+  "randomSeed": "2026-08-03T06:00:00-04:00",
+  "blogs": [
+    { "slug": "research-topic-01", "complete": true, "thumbnailReady": true, "sourceCount": 4 },
+    { "slug": "research-topic-02", "complete": true, "thumbnailReady": true, "sourceCount": 5 },
+    { "slug": "research-topic-03", "complete": true, "thumbnailReady": true, "sourceCount": 4 },
+    { "slug": "research-topic-04", "complete": true, "thumbnailReady": true, "sourceCount": 6 },
+    { "slug": "research-topic-05", "complete": true, "thumbnailReady": true, "sourceCount": 4 },
+    { "slug": "research-topic-06", "complete": true, "thumbnailReady": true, "sourceCount": 5 },
+    { "slug": "research-topic-07", "complete": true, "thumbnailReady": true, "sourceCount": 4 },
+    { "slug": "research-topic-08", "complete": true, "thumbnailReady": true, "sourceCount": 5 },
+    { "slug": "research-topic-09", "complete": true, "thumbnailReady": true, "sourceCount": 4 },
+    { "slug": "research-topic-10", "complete": true, "thumbnailReady": true, "sourceCount": 5 }
+  ],
+  "files": [
+    "app/blog/example-blog-slug/page.tsx",
+    "public/featured/example-blog-slug.png"
+  ]
+}

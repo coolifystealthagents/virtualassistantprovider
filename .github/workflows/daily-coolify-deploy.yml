@@ -1,0 +1,49 @@
+name: Daily batched Coolify deployment
+
+on:
+  schedule:
+    # Run hourly; the script gates the actual run at 06:00 in SITE_TIMEZONE.
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-coolify-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - name: Run daily batch gate and deployment
+        env:
+          COOLIFY_API_URL: ${{ secrets.COOLIFY_API_URL }}
+          COOLIFY_API_TOKEN: ${{ secrets.COOLIFY_API_TOKEN }}
+          COOLIFY_APPLICATION_UUID: ${{ secrets.COOLIFY_APPLICATION_UUID }}
+          WEBSITE_DOMAIN: ${{ vars.WEBSITE_DOMAIN }}
+          WEBSITE_URL: ${{ vars.WEBSITE_URL }}
+          SITE_TIMEZONE: ${{ vars.SITE_TIMEZONE || 'UTC' }}
+          DAILY_RUN_HOUR: '6'
+          DAILY_RUN_MINUTE: '0'
+          PAPERCLIP_PROJECT: VirtualAssistantProvider
+          PRODUCTION_BRANCH: main
+        run: node scripts/daily-coolify-deploy.mjs | tee deployment-result.json
+
+      - name: Publish routine result
+        if: always()
+        run: |
+          echo '### Daily Coolify deployment result' >> "$GITHUB_STEP_SUMMARY"
+          if [ -f deployment-result.json ]; then cat deployment-result.json >> "$GITHUB_STEP_SUMMARY"; fi
+          echo 'All timestamps are UTC.' >> "$GITHUB_STEP_SUMMARY"
