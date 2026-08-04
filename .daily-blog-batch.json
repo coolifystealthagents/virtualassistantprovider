@@ -1,0 +1,38 @@
+{
+  "runDate": "2026-08-04",
+  "selectionMethod": "randomized topic draw from validated publishing-research candidates",
+  "selectionSeed": "2026-08-04-virtualassistantprovider-research-brief",
+  "requestedRange": "10-15",
+  "quantity": 10,
+  "publishFewerReason": null,
+  "scope": "research only; no alternatives content or standalone excluded routines",
+  "slugs": [
+    "daily-research-brief-routine",
+    "research-source-freshness-check",
+    "verify-statistics-before-publishing",
+    "research-evidence-table-guide",
+    "research-citation-inventory",
+    "article-schema-publishing-checklist",
+    "accessible-research-tables",
+    "research-thumbnail-workflow",
+    "publishing-contingency-routine",
+    "mfa-for-publishing-workflows"
+  ],
+  "validation": {
+    "topicOverlapChecked": true,
+    "existingBlogAndResearchCompared": true,
+    "authoritativeSourcesVerified": true,
+    "statisticsVerified": true,
+    "keyStatsPresent": true,
+    "keyTakeawaysPresent": true,
+    "consolidatedTablesPresent": true,
+    "visibleSourcesPresent": true,
+    "metadataAndSchemaPresent": true,
+    "humanizerPass": "complete official humanizer skill applied; facts and citations preserved",
+    "thumbnailAssets": "generated and tracked per slug",
+    "build": "passed: npm run build"
+  },
+  "commitSha": null,
+  "remoteBranch": "main",
+  "deployment": "not performed; owned by Daily Batched Coolify Deployment routine"
+}
