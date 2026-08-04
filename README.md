@@ -11,7 +11,7 @@ SEO lead generation site for `virtualassistantprovider.com`. Built with Next.js,
 
 ## Daily research publishing
 
-The scheduled workflow runs hourly and the deployment gate proceeds only at 06:00 in `SITE_TIMEZONE` (a GitHub Actions repository variable). A completed `.daily-blog-batch.json` must record the random selection, quantity, validation state, exclusion check, thumbnail readiness, and direct-source count for every article. The normal batch contains 10 to 15 non-overlapping research articles. A smaller batch must include a non-empty `publishFewerReason`.
+The scheduled workflow runs hourly and the deployment gate proceeds only at 09:00 on weekdays in `SITE_TIMEZONE` (a GitHub Actions repository variable). A completed `.daily-blog-batch.json` must record the random selection and quantity, validate each topic against the repository and live content, and provide research, thumbnail, structure, humanizer, and link evidence for every article. Each article must contain exactly two internal article-body links and one authoritative external article-body link. The normal batch contains 20 to 25 non-overlapping research articles. A smaller batch is allowed only when validated non-overlap or reliable sources are unavailable, and must include a specific `publishFewerReason`.
 
 Set these GitHub repository values before enabling the routine:
 

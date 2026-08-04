@@ -2,7 +2,7 @@ name: Daily batched Coolify deployment
 
 on:
   schedule:
-    # Run hourly; the script gates the actual run at 06:00 in SITE_TIMEZONE.
+    # Run hourly; the script gates the actual run at 09:00 on weekdays in SITE_TIMEZONE.
     - cron: '0 * * * *'
   workflow_dispatch:
 
@@ -35,7 +35,7 @@ jobs:
           WEBSITE_DOMAIN: ${{ vars.WEBSITE_DOMAIN }}
           WEBSITE_URL: ${{ vars.WEBSITE_URL }}
           SITE_TIMEZONE: ${{ vars.SITE_TIMEZONE || 'UTC' }}
-          DAILY_RUN_HOUR: '6'
+          DAILY_RUN_HOUR: '9'
           DAILY_RUN_MINUTE: '0'
           PAPERCLIP_PROJECT: VirtualAssistantProvider
           PRODUCTION_BRANCH: main

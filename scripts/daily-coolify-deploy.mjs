@@ -54,14 +54,22 @@ function localClock(date, timeZone) {
   }).formatToParts(date).reduce((parts, item) => ({ ...parts, [item.type]: item.value }), {});
 }
 
+function localWeekday(date, timeZone) {
+  return new Intl.DateTimeFormat('en-US', { timeZone, weekday: 'short' }).format(date);
+}
+
 const siteTimeZone = process.env.SITE_TIMEZONE || 'UTC';
-const runHour = Number(process.env.DAILY_RUN_HOUR || 6);
+const runHour = Number(process.env.DAILY_RUN_HOUR || 9);
 const runMinute = Number(process.env.DAILY_RUN_MINUTE || 0);
 if (!Number.isInteger(runHour) || runHour < 0 || runHour > 23 || !Number.isInteger(runMinute) || runMinute < 0 || runMinute > 59) {
   fail('DAILY_RUN_HOUR must be 0-23 and DAILY_RUN_MINUTE must be 0-59.');
 }
 try {
   const clock = localClock(new Date(), siteTimeZone);
+  const weekday = localWeekday(new Date(), siteTimeZone);
+  if (!['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].includes(weekday)) {
+    emit(OUTCOMES.waiting, `Waiting for the next weekday run in ${siteTimeZone}.`, { siteTimeZone, weekday, localTime: `${clock.hour}:${clock.minute}` });
+  }
   if (Number(clock.hour) !== runHour || Number(clock.minute) !== runMinute) {
     emit(OUTCOMES.waiting, `Waiting for ${String(runHour).padStart(2, '0')}:${String(runMinute).padStart(2, '0')} in ${siteTimeZone}.`, { siteTimeZone, localTime: `${clock.hour}:${clock.minute}` });
   }
@@ -127,12 +135,16 @@ async function verifyLive(manifest) {
 const manifest = readManifest();
 if (!manifest || manifest.complete !== true || manifest.validated !== true || manifest.buildPassed !== true ||
     manifest.excludedContentChecked !== true || !Array.isArray(manifest.blogs) || manifest.blogs.length === 0 ||
-    manifest.blogs.some((blog) => blog.complete !== true || blog.thumbnailReady !== true || !Number.isInteger(blog.sourceCount) || blog.sourceCount < 1)) {
+    manifest.blogs.some((blog) => blog.complete !== true || blog.humanized !== true || blog.structureValid !== true ||
+      blog.thumbnailReady !== true || blog.internalArticleBodyLinks !== 2 || blog.externalArticleBodyLinks !== 1 ||
+      !Number.isInteger(blog.sourceCount) || blog.sourceCount < 1)) {
   emit(OUTCOMES.incomplete, 'Daily blog production is not complete.');
 }
 const batchSize = manifest.blogs.length;
-if ((batchSize < 10 || batchSize > 15) && !(batchSize < 10 && typeof manifest.publishFewerReason === 'string' && manifest.publishFewerReason.trim())) {
-  emit(OUTCOMES.incomplete, 'Batch must contain 10-15 validated articles, or a smaller batch with publishFewerReason.');
+const fewerReason = typeof manifest.publishFewerReason === 'string' ? manifest.publishFewerReason.trim() : '';
+const validFewerReason = /validated non[- ]overlap|reliable source/i.test(fewerReason);
+if ((batchSize < 20 || batchSize > 25) && !(batchSize < 20 && validFewerReason)) {
+  emit(OUTCOMES.incomplete, 'Batch must contain 20-25 validated articles, or fewer only with a reason citing validated non-overlap or reliable sources.');
 }
 if (manifest.quantity !== batchSize || !manifest.randomSelection || typeof manifest.randomSeed !== 'string') {
   emit(OUTCOMES.incomplete, 'Manifest must record quantity, randomSelection, and randomSeed for the selected batch.');
