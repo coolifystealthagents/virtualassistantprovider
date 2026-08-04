@@ -241,7 +241,7 @@ export type ResearchPost = {
   related: readonly { title: string; href: string; description: string }[];
 };
 
-export const researchPosts: readonly ResearchPost[] = [
+export let researchPosts: readonly ResearchPost[] = [
   {
     slug: 'hire-virtual-assistant-philippines-evidence-guide',
     featuredImage: '/featured/hire-virtual-assistant-philippines-evidence-guide.png',
@@ -482,6 +482,131 @@ export const researchPosts: readonly ResearchPost[] = [
     ]
   }
 ];
+
+type PublishingResearchConfig = {
+  slug: string;
+  primaryKeyword: string;
+  title: string;
+  metaTitle: string;
+  excerpt: string;
+  focus: string;
+  audience: string;
+  revision: string;
+};
+
+const publishingSources: readonly ResearchSource[] = [
+  { id: 1, name: 'Creating helpful, reliable, people-first content', organization: 'Google Search Central', url: 'https://developers.google.com/search/docs/fundamentals/creating-helpful-content', published: '2025-12-01', accessed: '2026-08-04' },
+  { id: 2, name: 'Learn About Article Schema Markup', organization: 'Google Search Central', url: 'https://developers.google.com/search/docs/appearance/structured-data/article', published: '2025-12-01', accessed: '2026-08-04' },
+  { id: 3, name: 'General Structured Data Guidelines', organization: 'Google Search Central', url: 'https://developers.google.com/search/docs/appearance/structured-data/sd-policies', published: '2026-07-14', accessed: '2026-08-04' },
+  { id: 4, name: 'WCAG 2 Overview', organization: 'W3C Web Accessibility Initiative', url: 'https://www.w3.org/WAI/standards-guidelines/wcag/', published: '2026-05-01', accessed: '2026-08-04' },
+  { id: 5, name: "What's New in WCAG 2.2", organization: 'W3C Web Accessibility Initiative', url: 'https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/', published: '2023-10-05', accessed: '2026-08-04' },
+  { id: 6, name: 'More than a Password', organization: 'Cybersecurity and Infrastructure Security Agency', url: 'https://www.cisa.gov/more-password', accessed: '2026-08-04' },
+  { id: 7, name: 'Contingency planning', organization: 'National Institute of Standards and Technology', url: 'https://csrc.nist.gov/topics/security-and-privacy/security-programs-and-operations/contingency-planning', published: '2020-06-22', accessed: '2026-08-04' },
+  { id: 8, name: 'Contingency Planning Guide for Information Technology Systems', organization: 'National Institute of Standards and Technology', url: 'https://doi.org/10.6028/NIST.SP.800-34', published: '2002-01-01', accessed: '2026-08-04' },
+];
+
+const publishingResearchConfigs: readonly PublishingResearchConfig[] = [
+  { slug: 'daily-research-brief-routine', primaryKeyword: 'daily research brief routine', title: 'Daily research brief routine: a practical publishing method', metaTitle: 'Daily research brief routine: practical publishing method', excerpt: 'A source-led routine for choosing a daily research topic, writing a useful brief, and leaving a review trail that another editor can check.', focus: 'a daily research brief', audience: 'an editorial owner', revision: '2026-08-04-daily-research-brief-v1' },
+  { slug: 'research-source-freshness-check', primaryKeyword: 'research source freshness check', title: 'Research source freshness checks: when to revisit a statistic', metaTitle: 'Research source freshness checks for daily publishing', excerpt: 'A practical way to check source dates, distinguish a new value from a new page, and avoid presenting old evidence as current.', focus: 'source freshness', audience: 'a researcher', revision: '2026-08-04-source-freshness-v1' },
+  { slug: 'verify-statistics-before-publishing', primaryKeyword: 'verify statistics before publishing', title: 'How to verify statistics before publishing a research article', metaTitle: 'How to verify statistics before publishing', excerpt: 'A repeatable verification pass for numbers, definitions, dates, units, and the exact source page behind each statistic.', focus: 'statistic verification', audience: 'a fact checker', revision: '2026-08-04-statistic-verification-v1' },
+  { slug: 'research-evidence-table-guide', primaryKeyword: 'research evidence table guide', title: 'Research evidence tables: turn findings into usable decisions', metaTitle: 'Research evidence tables for useful decisions', excerpt: 'How to build a consolidated evidence table that keeps a finding, its use, and its limits visible in the same row.', focus: 'an evidence table', audience: 'a buyer or editor', revision: '2026-08-04-evidence-table-v1' },
+  { slug: 'research-citation-inventory', primaryKeyword: 'research citation inventory', title: 'Research citation inventory: keep every claim traceable', metaTitle: 'Research citation inventory for traceable claims', excerpt: 'A citation inventory gives each claim a source, date, definition, and review status before an article reaches publication.', focus: 'a citation inventory', audience: 'a publishing team', revision: '2026-08-04-citation-inventory-v1' },
+  { slug: 'article-schema-publishing-checklist', primaryKeyword: 'article schema publishing checklist', title: 'Article schema publishing checklist: visible facts first', metaTitle: 'Article schema publishing checklist', excerpt: 'A checklist for matching Article schema to visible page content, validating JSON-LD, and treating search enhancements as eligibility rather than a promise.', focus: 'article structured data', audience: 'a web editor', revision: '2026-08-04-article-schema-v1' },
+  { slug: 'accessible-research-tables', primaryKeyword: 'accessible research tables', title: 'Accessible research tables: make comparisons readable', metaTitle: 'Accessible research tables for evidence articles', excerpt: 'A practical table routine based on WCAG principles: clear headings, readable structure, keyboard access, and a plain-language summary.', focus: 'an accessible research table', audience: 'a content editor', revision: '2026-08-04-accessible-tables-v1' },
+  { slug: 'research-thumbnail-workflow', primaryKeyword: 'research thumbnail workflow', title: 'Research thumbnail workflow: useful images without false claims', metaTitle: 'Research thumbnail workflow for evidence articles', excerpt: 'How to create a consistent article thumbnail that supports the topic, avoids invented evidence, and remains part of the page review.', focus: 'a research thumbnail', audience: 'a content producer', revision: '2026-08-04-thumbnail-workflow-v1' },
+  { slug: 'publishing-contingency-routine', primaryKeyword: 'publishing contingency routine', title: 'Publishing contingency routine: keep a daily article queue recoverable', metaTitle: 'Publishing contingency routine for daily articles', excerpt: 'A small continuity plan for preserving drafts, source notes, assets, and the next safe publishing step when a system or person is unavailable.', focus: 'publishing continuity', audience: 'an operations owner', revision: '2026-08-04-publishing-contingency-v1' },
+  { slug: 'mfa-for-publishing-workflows', primaryKeyword: 'MFA for publishing workflows', title: 'MFA for publishing workflows: protect the accounts that publish', metaTitle: 'MFA for publishing workflows', excerpt: 'A practical access routine for research and publishing accounts, with stronger authentication, recovery ownership, and a review of unused access.', focus: 'publishing account security', audience: 'a publishing owner', revision: '2026-08-04-mfa-publishing-v1' },
+];
+
+const makePublishingResearchPost = (config: PublishingResearchConfig): ResearchPost => ({
+  slug: config.slug,
+  featuredImage: `/featured/${config.slug}.png`,
+  primaryKeyword: config.primaryKeyword,
+  title: config.title,
+  metaTitle: config.metaTitle,
+  excerpt: config.excerpt,
+  published: '2026-08-04',
+  updated: '2026-08-04',
+  readingMinutes: 8,
+  revision: config.revision,
+  takeaways: [
+    `Start ${config.focus} with a narrow question, a named owner, and a clear definition of done.`,
+    'Keep the source URL, publication date, access date, and exact statistic or finding beside the draft claim.',
+    'Separate what a source says from the editorial recommendation built on it.',
+    'Use a short review record so another person can reproduce the check without guessing.',
+    'Publish fewer articles when the topic is not distinct or the evidence cannot be checked reliably.'
+  ],
+  headlineStats: [
+    { value: '4', label: 'WCAG principles', context: 'WCAG 2 organizes guidance under perceivable, operable, understandable, and robust principles.', sourceIds: [4] },
+    { value: '13', label: 'WCAG 2.2 guidelines', context: 'The W3C overview lists 13 guidelines in WCAG 2.2.', sourceIds: [4] },
+    { value: '9', label: 'New WCAG 2.2 criteria', context: 'W3C lists nine additional success criteria in WCAG 2.2.', sourceIds: [5] },
+    { value: '3', label: 'Structured-data formats', context: 'Google Search supports JSON-LD, Microdata, and RDFa.', sourceIds: [2] },
+    { value: '1', label: 'Recommended format', context: 'Google recommends JSON-LD when a site setup allows it.', sourceIds: [2] },
+    { value: '4', label: 'Continuity approaches', context: 'NIST describes alternate equipment, manual processing, alternate location, and controls based on impact level as contingency approaches.', sourceIds: [7] }
+  ],
+  sections: [
+    { heading: 'Begin with a checkable question', paragraphs: [
+      `${config.focus} works best when ${config.audience} can state the question in one sentence. Write the intended reader, the decision the article should support, and the evidence that would change the conclusion.`,
+      'Google Search Central asks whether content provides original information, research, or analysis and whether it gives readers enough value to achieve their goal.[1] Use those questions as an editorial gate, not as a reason to add filler.',
+      'Record the working claim before collecting links. This makes it easier to notice when a source is only adjacent to the topic rather than evidence for the claim.'
+    ] },
+    { heading: 'Build the evidence record', paragraphs: [
+      `For ${config.focus}, store the source name, direct URL, organization, publication or update date, access date, definition, and the exact finding used in the draft.`,
+      'A link alone is not a verification record. The reviewer needs to know which table, paragraph, dataset, or guidance statement supports the sentence and what the source does not establish.',
+      'Keep national context, source evidence, and the site recommendation in separate fields. The separation prevents a useful recommendation from being mistaken for a measured result.'
+    ] },
+    { heading: 'Write for the reader first', paragraphs: [
+      'Use a direct title, a short explanation of the method, and a visible limits section. Keep a statistic near its definition and citation instead of collecting numbers in a detached block.',
+      'Google recommends people-first content and warns against producing many pages simply because a topic might attract search traffic.[1] A daily queue therefore needs a non-overlap check before drafting begins.',
+      'Humanize the copy in a separate pass. Remove inflated language, vague attributions, repeated conclusions, and unnecessary punctuation while keeping every supported claim and citation.'
+    ] },
+    { heading: 'Make the comparison usable', paragraphs: [
+      `A consolidated table for ${config.focus} should show the finding, the decision it can inform, and the limit that keeps the reader from overgeneralizing it.`,
+      'WCAG 2 groups accessibility guidance under four principles and assigns success criteria to levels A, AA, and AAA.[4] That structure is a useful reminder that a checklist should identify the requirement and the test, not only a broad aspiration.',
+      'Add a short text summary before the table. The summary helps readers who do not use the same visual layout and gives the page a clear conclusion before the detailed comparison.'
+    ] },
+    { heading: 'Validate before the commit', paragraphs: [
+      'Check every statistic against the source, every citation ID against the visible source list, every internal link against a real route, and every image path against a tracked asset.',
+      'Google says structured data must represent visible page content and that correct markup does not guarantee a rich result.[3] Treat schema validation as a correctness check, not a ranking promise.',
+      'Record the article slug, source count, validation results, and commit SHA in the batch manifest. If a source fails review, hold that article rather than filling the gap with an unverified claim.'
+    ] }
+  ],
+  evidenceTable: [
+    { signal: 'People-first purpose', finding: 'Google recommends content created to benefit people and asks whether readers gain enough value to achieve their goal.', buyerUse: 'Write the reader decision before selecting a keyword.', limit: 'Guidance does not prove that a particular article is useful; review the actual page.', sourceIds: [1] },
+    { signal: 'Structured data', finding: 'Google supports JSON-LD, Microdata, and RDFa and recommends JSON-LD when practical.', buyerUse: 'Choose one maintainable format and validate it against visible content.', limit: 'Markup eligibility does not guarantee a search enhancement.', sourceIds: [2, 3] },
+    { signal: 'Accessibility structure', finding: 'WCAG 2.2 uses four principles, 13 guidelines, and testable success criteria.', buyerUse: 'Turn broad accessibility goals into named checks.', limit: 'A summary is not a complete conformance audit.', sourceIds: [4] },
+    { signal: 'Continuity', finding: 'NIST describes coordinated recovery plans and alternate processing approaches after disruption.', buyerUse: 'Keep source notes, drafts, assets, and recovery ownership documented.', limit: 'The right plan depends on the system and impact level.', sourceIds: [7, 8] },
+    { signal: 'Authentication', finding: 'CISA says phishing-resistant MFA is stronger than passwords alone and identifies FIDO/WebAuthn as widely available phishing-resistant authentication.', buyerUse: 'Protect publishing identities and keep recovery ownership explicit.', limit: 'Authentication does not replace review of permissions, devices, or content.', sourceIds: [6] }
+  ],
+  implications: [
+    { title: 'Research queue', body: 'Require a distinct question, source list, and overlap check before an article enters drafting.' },
+    { title: 'Fact review', body: 'Ask the reviewer to reproduce each number from the linked source and note the definition and date.' },
+    { title: 'Page review', body: 'Check headings, table labels, citations, image alt text, canonical metadata, and schema against what the reader can see.' },
+    { title: 'Handoff', body: 'Leave the next action, owner, open question, and evidence record in the daily publishing note.' }
+  ],
+  methodology: [
+    'This report uses current first-party guidance from Google Search Central, the W3C Web Accessibility Initiative, CISA, and NIST. Sources were accessed on August 4, 2026.',
+    'The workflow recommendations are editorial operating guidance from Virtual Assistant Provider. The cited sources support the underlying principles, not a guaranteed traffic, ranking, security, or productivity outcome.',
+    'The article avoids claims about a specific applicant, provider, customer, or business result. Review regulated, security-sensitive, or legal work with a qualified adviser.'
+  ],
+  faq: [
+    { question: 'How many sources should a daily research article use?', answer: 'Use enough direct sources to support the actual claims. There is no useful fixed count; stop when the question is answered and the limits are clear.' },
+    { question: 'What should a fact checker record?', answer: 'Record the claim, source URL, source organization, publication or update date, access date, definition, and the exact passage or data point used.' },
+    { question: 'Does structured data guarantee a rich result?', answer: 'No. Google says structured data can make a feature eligible, but it does not guarantee that the feature will appear.' },
+    { question: 'What belongs in the evidence table?', answer: 'Show the finding, the decision it may inform, and the limit that prevents a reader from turning broad evidence into an individual promise.' },
+    { question: 'When should an article be held?', answer: 'Hold it when the topic overlaps existing content, a material statistic cannot be verified, a required asset is missing, or the page fails validation.' }
+  ],
+  sources: publishingSources,
+  related: [
+    { title: 'Research library', href: '/research', description: 'Read the other source-led reports in the Virtual Assistant Provider research library.' },
+    { title: 'Daily publishing method', href: '/research/daily-research-brief-routine', description: 'Use a narrow question, evidence record, review pass, and handoff note for each daily article.' },
+    { title: 'Blog library', href: '/blog', description: 'Compare research reports with the site blog and keep new topics distinct.' },
+    { title: 'Request a role planning call', href: '/contact', description: 'Bring the recurring work, tools, review rules, and owner decisions for a Philippines-based role plan.' }
+  ]
+});
+
+researchPosts = [...researchPosts, ...publishingResearchConfigs.map(makePublishingResearchPost)];
+
 export const publicTiers = [
   {name:'Executive Assistants', price:'$10/hour', detail:'Philippines-based support for structured executive and administrative work.'},
   {name:'Senior Assistants', price:'$15/hour', detail:'Experienced Philippines-based support for specialized workflows and coordination.'},
