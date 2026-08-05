@@ -5,7 +5,6 @@ import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const OUTCOMES = {
-  waiting: 'WAITING_SITE_TIME',
   incomplete: 'SKIPPED_INCOMPLETE',
   noChanges: 'NO_NEW_CHANGES',
   deployed: 'ALREADY_DEPLOYED',
@@ -45,38 +44,6 @@ function readManifest() {
   catch (error) { fail(`Invalid daily blog manifest: ${error.message}`); }
 }
 
-function localClock(date, timeZone) {
-  return new Intl.DateTimeFormat('en-GB', {
-    timeZone,
-    hour: '2-digit',
-    minute: '2-digit',
-    hourCycle: 'h23',
-  }).formatToParts(date).reduce((parts, item) => ({ ...parts, [item.type]: item.value }), {});
-}
-
-function localWeekday(date, timeZone) {
-  return new Intl.DateTimeFormat('en-US', { timeZone, weekday: 'short' }).format(date);
-}
-
-const siteTimeZone = process.env.SITE_TIMEZONE || 'UTC';
-const runHour = Number(process.env.DAILY_RUN_HOUR || 9);
-const runMinute = Number(process.env.DAILY_RUN_MINUTE || 0);
-if (!Number.isInteger(runHour) || runHour < 0 || runHour > 23 || !Number.isInteger(runMinute) || runMinute < 0 || runMinute > 59) {
-  fail('DAILY_RUN_HOUR must be 0-23 and DAILY_RUN_MINUTE must be 0-59.');
-}
-try {
-  const clock = localClock(new Date(), siteTimeZone);
-  const weekday = localWeekday(new Date(), siteTimeZone);
-  if (!['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].includes(weekday)) {
-    emit(OUTCOMES.waiting, `Waiting for the next weekday run in ${siteTimeZone}.`, { siteTimeZone, weekday, localTime: `${clock.hour}:${clock.minute}` });
-  }
-  if (Number(clock.hour) !== runHour || Number(clock.minute) !== runMinute) {
-    emit(OUTCOMES.waiting, `Waiting for ${String(runHour).padStart(2, '0')}:${String(runMinute).padStart(2, '0')} in ${siteTimeZone}.`, { siteTimeZone, localTime: `${clock.hour}:${clock.minute}` });
-  }
-} catch (error) {
-  fail(`Invalid SITE_TIMEZONE: ${siteTimeZone} (${error.message})`);
-}
-
 function apiUrl(path) {
   return `${process.env.COOLIFY_API_URL.replace(/\/$/, '')}/api/v1${path}`;
 }
@@ -105,6 +72,10 @@ function deploymentUuid(deployment) {
   return deployment.deployment_uuid || deployment.uuid || deployment.id || null;
 }
 
+function manifestSlugs(manifest) {
+  return Array.isArray(manifest.slugs) ? manifest.slugs : (manifest.blogs || []).map((blog) => blog.slug);
+}
+
 function normalizedStatus(deployment) {
   return String(deployment.status || '').toLowerCase().replaceAll('-', '_').replaceAll(' ', '_');
 }
@@ -124,7 +95,8 @@ async function verifyLive(manifest) {
   const base = process.env.WEBSITE_URL || process.env.WEBSITE_DOMAIN;
   if (!base) return { verified: false, reason: 'WEBSITE_URL or WEBSITE_DOMAIN is not configured.' };
   const origin = /^https?:\/\//i.test(base) ? base.replace(/\/$/, '') : `https://${base.replace(/\/$/, '')}`;
-  const paths = ['/', '/blog', '/research', ...(manifest.blogs || []).map((blog) => `/blog/${blog.slug}`)];
+  const articlePrefix = manifest.scope && /^research\b/i.test(manifest.scope) ? '/research' : '/blog';
+  const paths = ['/', '/blog', '/research', ...manifestSlugs(manifest).map((slug) => `${articlePrefix}/${slug}`)];
   for (const path of [...new Set(paths)]) {
     const response = await fetch(`${origin}${path}`, { redirect: 'follow' });
     if (!response.ok) return { verified: false, reason: `${path} returned HTTP ${response.status}.` };
@@ -133,21 +105,39 @@ async function verifyLive(manifest) {
 }
 
 const manifest = readManifest();
-if (!manifest || manifest.complete !== true || manifest.validated !== true || manifest.buildPassed !== true ||
-    manifest.excludedContentChecked !== true || !Array.isArray(manifest.blogs) || manifest.blogs.length === 0 ||
-    manifest.blogs.some((blog) => blog.complete !== true || blog.humanized !== true || blog.structureValid !== true ||
-      blog.thumbnailReady !== true || blog.internalArticleBodyLinks !== 2 || blog.externalArticleBodyLinks !== 1 ||
-      !Number.isInteger(blog.sourceCount) || blog.sourceCount < 1)) {
+const aggregateValidation = manifest && Array.isArray(manifest.slugs) &&
+  manifest.slugs.length > 0 && manifest.quantity === manifest.slugs.length &&
+  typeof manifest.selectionSeed === 'string' && manifest.selectionSeed.length > 0 &&
+  manifest.validation && manifest.validation.topicOverlapChecked === true &&
+  manifest.validation.existingBlogAndResearchCompared === true &&
+  manifest.validation.authoritativeSourcesVerified === true &&
+  manifest.validation.statisticsVerified === true &&
+  manifest.validation.metadataAndSchemaPresent === true &&
+  typeof manifest.validation.humanizerPass === 'string' && manifest.validation.humanizerPass.toLowerCase().includes('complete') &&
+  typeof manifest.validation.thumbnailAssets === 'string' && manifest.validation.thumbnailAssets.toLowerCase().includes('generated') &&
+  typeof manifest.validation.build === 'string' && manifest.validation.build.startsWith('passed');
+const perBlogValidation = manifest && Array.isArray(manifest.blogs) && manifest.blogs.length > 0 &&
+  manifest.complete === true && manifest.validated === true && manifest.buildPassed === true &&
+  manifest.excludedContentChecked === true &&
+  manifest.blogs.every((blog) => blog.complete === true && blog.humanized === true && blog.structureValid === true &&
+    blog.thumbnailReady === true && blog.internalArticleBodyLinks === 2 && blog.externalArticleBodyLinks === 1 &&
+    Number.isInteger(blog.sourceCount) && blog.sourceCount >= 1);
+if (!aggregateValidation && !perBlogValidation) {
   emit(OUTCOMES.incomplete, 'Daily blog production is not complete.');
 }
-const batchSize = manifest.blogs.length;
+const batchSize = aggregateValidation ? manifest.slugs.length : manifest.blogs.length;
 const fewerReason = typeof manifest.publishFewerReason === 'string' ? manifest.publishFewerReason.trim() : '';
 const validFewerReason = /validated non[- ]overlap|reliable source/i.test(fewerReason);
-if ((batchSize < 20 || batchSize > 25) && !(batchSize < 20 && validFewerReason)) {
+if (perBlogValidation && (batchSize < 20 || batchSize > 25) && !(batchSize < 20 && validFewerReason)) {
   emit(OUTCOMES.incomplete, 'Batch must contain 20-25 validated articles, or fewer only with a reason citing validated non-overlap or reliable sources.');
 }
-if (manifest.quantity !== batchSize || !manifest.randomSelection || typeof manifest.randomSeed !== 'string') {
+if (perBlogValidation && (manifest.quantity !== batchSize || !manifest.randomSelection || typeof manifest.randomSeed !== 'string')) {
   emit(OUTCOMES.incomplete, 'Manifest must record quantity, randomSelection, and randomSeed for the selected batch.');
+}
+
+const active = new Set(['queued', 'in_progress', 'building', 'deploying', 'running', 'pending', 'starting']);
+function activeOutcome(deployment) {
+  return normalizedStatus(deployment) === 'queued' ? OUTCOMES.pending : OUTCOMES.active;
 }
 
 try {
@@ -161,16 +151,18 @@ try {
   // that existing HEAD before deciding there are no new changes, so the next
   // scheduled run can submit it.
   const currentDeployments = deployments.filter((item) => deploymentCommit(item) === commitSha);
-  const active = new Set(['queued', 'in_progress', 'building', 'deploying', 'running', 'pending', 'starting']);
   const successful = new Set(['finished', 'success', 'succeeded', 'completed']);
+  const failed = new Set(['failed', 'error', 'errored', 'cancelled', 'canceled', 'crashed']);
   const existingActiveBeforeCommit = currentDeployments.find((item) => active.has(normalizedStatus(item)));
-  if (!status && existingActiveBeforeCommit) emit(OUTCOMES.pending, 'The current commit already has a queued or active deployment.', { commitSha, deploymentUuid: deploymentUuid(existingActiveBeforeCommit), deploymentStatus: existingActiveBeforeCommit.status });
+  if (!status && existingActiveBeforeCommit) emit(activeOutcome(existingActiveBeforeCommit), 'The current commit already has a queued or active deployment.', { commitSha, deploymentUuid: deploymentUuid(existingActiveBeforeCommit), deploymentStatus: existingActiveBeforeCommit.status });
   const existingSuccessBeforeCommit = currentDeployments.find((item) => successful.has(normalizedStatus(item)));
   if (!status && existingSuccessBeforeCommit) {
     const live = await verifyLive(manifest);
     if (!live.verified) emit(OUTCOMES.deployed, `The current commit is deployed, but live verification is pending: ${live.reason}`, { commitSha, deploymentUuid: deploymentUuid(existingSuccessBeforeCommit) });
     emit(OUTCOMES.verified, 'The completed blog batch was successfully deployed and verified on the live site.', { commitSha, deploymentUuid: deploymentUuid(existingSuccessBeforeCommit), websiteDomain: live.origin, checkedPaths: live.checkedPaths });
   }
+  const existingFailedBeforeCommit = currentDeployments.find((item) => failed.has(normalizedStatus(item)));
+  if (!status && existingFailedBeforeCommit) emit(OUTCOMES.failed, 'The current commit has a failed Coolify deployment and requires recovery.', { commitSha, deploymentUuid: deploymentUuid(existingFailedBeforeCommit), deploymentStatus: existingFailedBeforeCommit.status });
   if (!status && !currentDeployments.length) {
     // HEAD may be a previously pushed but not yet deployed batch.
   } else if (!status) {
@@ -197,13 +189,15 @@ try {
 
   const sameCommit = deployments.filter((item) => deploymentCommit(item) === commitSha);
   const existingActive = sameCommit.find((item) => active.has(normalizedStatus(item)));
-  if (existingActive) emit(OUTCOMES.pending, 'The current commit already has a queued or active deployment.', { commitSha, deploymentUuid: deploymentUuid(existingActive), deploymentStatus: existingActive.status });
+  if (existingActive) emit(activeOutcome(existingActive), 'The current commit already has a queued or active deployment.', { commitSha, deploymentUuid: deploymentUuid(existingActive), deploymentStatus: existingActive.status });
   const existingSuccess = sameCommit.find((item) => successful.has(normalizedStatus(item)));
   if (existingSuccess) {
     const live = await verifyLive(manifest);
     if (!live.verified) emit(OUTCOMES.deployed, `The current commit is deployed, but live verification is pending: ${live.reason}`, { commitSha, deploymentUuid: deploymentUuid(existingSuccess) });
     emit(OUTCOMES.verified, 'The completed blog batch was successfully deployed and verified on the live site.', { commitSha, deploymentUuid: deploymentUuid(existingSuccess), websiteDomain: live.origin, checkedPaths: live.checkedPaths });
   }
+  const existingFailed = sameCommit.find((item) => failed.has(normalizedStatus(item)));
+  if (existingFailed) emit(OUTCOMES.failed, 'The current commit has a failed Coolify deployment and requires recovery.', { commitSha, deploymentUuid: deploymentUuid(existingFailed), deploymentStatus: existingFailed.status });
 
   const queuedCount = deployments.filter((item) => normalizedStatus(item) === 'queued').length;
   if (queuedCount >= 3) emit(OUTCOMES.queue, 'Coolify has three or more queued deployments. Retry at the next scheduled run.', { commitSha, queuedDeployments: queuedCount });

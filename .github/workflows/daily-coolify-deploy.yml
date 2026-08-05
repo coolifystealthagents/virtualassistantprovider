@@ -2,8 +2,7 @@ name: Daily batched Coolify deployment
 
 on:
   schedule:
-    # Run hourly; the script gates the actual run at 09:00 on weekdays in SITE_TIMEZONE.
-    - cron: '0 * * * *'
+    - cron: '40 9 * * *'
   workflow_dispatch:
 
 permissions:
@@ -34,9 +33,8 @@ jobs:
           COOLIFY_APPLICATION_UUID: ${{ secrets.COOLIFY_APPLICATION_UUID }}
           WEBSITE_DOMAIN: ${{ vars.WEBSITE_DOMAIN }}
           WEBSITE_URL: ${{ vars.WEBSITE_URL }}
-          SITE_TIMEZONE: ${{ vars.SITE_TIMEZONE || 'UTC' }}
           DAILY_RUN_HOUR: '9'
-          DAILY_RUN_MINUTE: '0'
+          DAILY_RUN_MINUTE: '40'
           PAPERCLIP_PROJECT: VirtualAssistantProvider
           PRODUCTION_BRANCH: main
         run: node scripts/daily-coolify-deploy.mjs | tee deployment-result.json
