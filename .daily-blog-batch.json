@@ -1,20 +1,20 @@
 {
-  "batchId": "2026-08-05-research-ops-10",
+  "batchId": "2026-08-07-research-ops-10",
   "scope": "research",
   "quantity": 10,
   "randomSelection": true,
-  "selectionSeed": "2026-08-05T06:00:00Z-research-ops-shuffle-7f4c",
+  "selectionSeed": "2026-08-07T06:00:00Z-research-ops-shuffle-9a2e",
   "slugs": [
-    "research-topic-overlap-check",
-    "research-statistic-definition-check",
-    "research-source-access-log",
-    "research-claim-evidence-map",
-    "research-related-content-links",
-    "research-article-metadata-review",
-    "research-table-summary-method",
-    "research-source-reliability-review",
-    "research-article-handoff-note",
-    "research-publishing-exception-log"
+    "research-source-version-check",
+    "research-methodology-limitations",
+    "research-data-definition-audit",
+    "research-internal-link-review",
+    "research-citation-count-audit",
+    "research-question-design",
+    "research-editorial-qa",
+    "research-source-date-audit",
+    "research-evidence-gap-log",
+    "research-article-revision-log"
   ],
   "validation": {
     "topicOverlapChecked": true,
@@ -22,7 +22,7 @@
     "authoritativeSourcesVerified": true,
     "statisticsVerified": true,
     "metadataAndSchemaPresent": true,
-    "humanizerPass": "complete: official humanizer 2.9.1 audit applied; facts, numbers, dates, and citations preserved",
+    "humanizerPass": "complete: official humanizer audit applied; facts, numbers, dates, and citations preserved",
     "thumbnailAssets": "generated: ten project-local raster thumbnails",
     "build": "passed: npm run build"
   },
@@ -33,15 +33,15 @@
   "files": [
     ".daily-blog-batch.json",
     "app/fleet-content.ts",
-    "public/featured/research-topic-overlap-check.png",
-    "public/featured/research-statistic-definition-check.png",
-    "public/featured/research-source-access-log.png",
-    "public/featured/research-claim-evidence-map.png",
-    "public/featured/research-related-content-links.png",
-    "public/featured/research-article-metadata-review.png",
-    "public/featured/research-table-summary-method.png",
-    "public/featured/research-source-reliability-review.png",
-    "public/featured/research-article-handoff-note.png",
-    "public/featured/research-publishing-exception-log.png"
+    "public/featured/research-source-version-check.png",
+    "public/featured/research-methodology-limitations.png",
+    "public/featured/research-data-definition-audit.png",
+    "public/featured/research-internal-link-review.png",
+    "public/featured/research-citation-count-audit.png",
+    "public/featured/research-question-design.png",
+    "public/featured/research-editorial-qa.png",
+    "public/featured/research-source-date-audit.png",
+    "public/featured/research-evidence-gap-log.png",
+    "public/featured/research-article-revision-log.png"
   ]
 }
