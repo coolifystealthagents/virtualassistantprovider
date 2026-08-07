@@ -76,6 +76,12 @@ function manifestSlugs(manifest) {
   return Array.isArray(manifest.slugs) ? manifest.slugs : (manifest.blogs || []).map((blog) => blog.slug);
 }
 
+function manifestRoutes(manifest) {
+  if (manifest.routes && typeof manifest.routes === 'object') return Object.entries(manifest.routes).flatMap(([prefix, slugs]) => (Array.isArray(slugs) ? slugs.map((slug) => `${prefix}/${slug}`) : []));
+  const articlePrefix = manifest.scope && /^research\b/i.test(manifest.scope) ? '/research' : '/blog';
+  return manifestSlugs(manifest).map((slug) => `${articlePrefix}/${slug}`);
+}
+
 function normalizedStatus(deployment) {
   return String(deployment.status || '').toLowerCase().replaceAll('-', '_').replaceAll(' ', '_');
 }
@@ -95,8 +101,7 @@ async function verifyLive(manifest) {
   const base = process.env.WEBSITE_URL || process.env.WEBSITE_DOMAIN;
   if (!base) return { verified: false, reason: 'WEBSITE_URL or WEBSITE_DOMAIN is not configured.' };
   const origin = /^https?:\/\//i.test(base) ? base.replace(/\/$/, '') : `https://${base.replace(/\/$/, '')}`;
-  const articlePrefix = manifest.scope && /^research\b/i.test(manifest.scope) ? '/research' : '/blog';
-  const paths = ['/', '/blog', '/research', ...manifestSlugs(manifest).map((slug) => `${articlePrefix}/${slug}`)];
+  const paths = ['/', '/blog', '/research', ...manifestRoutes(manifest)];
   for (const path of [...new Set(paths)]) {
     const response = await fetch(`${origin}${path}`, { redirect: 'follow' });
     if (!response.ok) return { verified: false, reason: `${path} returned HTTP ${response.status}.` };
@@ -126,6 +131,9 @@ if (!aggregateValidation && !perBlogValidation) {
   emit(OUTCOMES.incomplete, 'Daily blog production is not complete.');
 }
 const batchSize = aggregateValidation ? manifest.slugs.length : manifest.blogs.length;
+if (aggregateValidation && manifest.scope === 'combined' && (manifest.blogQuantity < 20 || manifest.researchQuantity < 10)) {
+  emit(OUTCOMES.incomplete, 'Combined batch must contain at least 20 Blog and 10 Research articles.');
+}
 const fewerReason = typeof manifest.publishFewerReason === 'string' ? manifest.publishFewerReason.trim() : '';
 const validFewerReason = /validated non[- ]overlap|reliable source/i.test(fewerReason);
 if (perBlogValidation && (batchSize < 20 || batchSize > 25) && !(batchSize < 20 && validFewerReason)) {
@@ -200,7 +208,9 @@ try {
   if (existingFailed) emit(OUTCOMES.failed, 'The current commit has a failed Coolify deployment and requires recovery.', { commitSha, deploymentUuid: deploymentUuid(existingFailed), deploymentStatus: existingFailed.status });
 
   const queuedCount = deployments.filter((item) => normalizedStatus(item) === 'queued').length;
-  if (queuedCount >= 3) emit(OUTCOMES.queue, 'Coolify has three or more queued deployments. Retry at the next scheduled run.', { commitSha, queuedDeployments: queuedCount });
+  const activeCount = deployments.filter((item) => active.has(normalizedStatus(item))).length;
+  const queuedOrActiveCount = deployments.filter((item) => active.has(normalizedStatus(item))).length;
+  if (queuedOrActiveCount >= 3) emit(OUTCOMES.queue, 'Coolify has three or more queued or active deployments globally. Retry at the next scheduled run.', { commitSha, queuedDeployments: queuedCount, activeDeployments: activeCount, queuedOrActiveDeployments: queuedOrActiveCount });
 
   let request;
   try {
@@ -221,6 +231,8 @@ try {
     deploymentUuid: deploymentUuid(deployment),
     deploymentStatus: deployment?.status || 'queued',
     queuedDeployments: queuedCount,
+    activeDeployments: activeCount,
+    queuedOrActiveDeployments: queuedOrActiveCount,
     previousCommitSha: currentShaBeforeCommit,
   });
 } catch (error) {

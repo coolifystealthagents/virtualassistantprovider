@@ -76,6 +76,66 @@ export const services: Service[] = [
   },
 ];
 
+// Daily production batch: 20 distinct, source-led buyer guides published on 2026-08-07.
+// These records intentionally use the shared editorial renderer so metadata, citations,
+// internal links, FAQ schema, and the staffing CTA stay consistent across the batch.
+const dailyBlogBatchTopics = [
+  ['virtual-assistant-daily-routine-philippines', 'Virtual assistant daily routines Philippines: a practical operating guide', 'daily routines'],
+  ['virtual-assistant-onboarding-checklist-philippines', 'Virtual assistant onboarding checklist Philippines: a safe first week', 'onboarding'],
+  ['virtual-assistant-quality-assurance-philippines', 'Virtual assistant quality assurance Philippines: a repeatable review plan', 'quality assurance'],
+  ['virtual-assistant-access-control-philippines', 'Virtual assistant access control Philippines: limit tools safely', 'access control'],
+  ['virtual-assistant-sop-philippines', 'Virtual assistant SOP Philippines: turn recurring work into clear steps', 'standard operating procedures'],
+  ['virtual-assistant-handoff-philippines', 'Virtual assistant handoff Philippines: keep recurring work moving', 'handoffs'],
+  ['virtual-assistant-time-tracking-philippines', 'Virtual assistant time tracking Philippines: measure work without guesswork', 'time tracking'],
+  ['virtual-assistant-manager-philippines', 'Virtual assistant manager Philippines: define the support layer', 'manager support'],
+  ['virtual-assistant-backup-coverage-philippines', 'Virtual assistant backup coverage Philippines: plan for absences', 'backup coverage'],
+  ['virtual-assistant-customer-support-qa-philippines', 'Virtual assistant customer support QA Philippines: protect the queue', 'customer support QA'],
+  ['virtual-assistant-crm-cleanup-philippines', 'Virtual assistant CRM cleanup Philippines: make follow-up reliable', 'CRM cleanup'],
+  ['virtual-assistant-calendar-management-philippines', 'Virtual assistant calendar management Philippines: protect the owner’s time', 'calendar management'],
+  ['virtual-assistant-inbox-management-philippines', 'Virtual assistant inbox management Philippines: triage with clear limits', 'inbox management'],
+  ['virtual-assistant-research-support-philippines', 'Virtual assistant research support Philippines: build a checkable brief', 'research support'],
+  ['virtual-assistant-content-operations-philippines', 'Virtual assistant content operations Philippines: publish with a review trail', 'content operations'],
+  ['virtual-assistant-bookkeeping-admin-philippines', 'Virtual assistant bookkeeping admin Philippines: prepare records safely', 'bookkeeping administration'],
+  ['virtual-assistant-real-estate-admin-philippines', 'Virtual assistant real estate admin Philippines: organize the transaction queue', 'real estate administration'],
+  ['virtual-assistant-healthcare-admin-philippines', 'Virtual assistant healthcare admin Philippines: keep nonclinical work bounded', 'healthcare administration'],
+  ['virtual-assistant-ecommerce-qa-philippines', 'Virtual assistant ecommerce QA Philippines: check products and orders', 'ecommerce QA'],
+  ['virtual-assistant-recruiting-admin-philippines', 'Virtual assistant recruiting admin Philippines: protect candidate workflows', 'recruiting administration'],
+] as const;
+
+const dailyBlogSources = [
+  { name: 'NIST Access Control Project', url: 'https://csrc.nist.gov/projects/access-control', note: 'Use access controls to limit actions to approved people and purposes.' },
+  { name: 'CISA More than a Password', url: 'https://www.cisa.gov/more-password', note: 'Use stronger authentication and protect the identities that publish or handle customer data.' },
+  { name: 'Google Search Central: Creating helpful content', url: 'https://developers.google.com/search/docs/fundamentals/creating-helpful-content', note: 'Write for the reader and preserve useful, original information.' },
+];
+
+const dailyBlogPosts: BlogPost[] = dailyBlogBatchTopics.map(([slug, title, topic]) => ({
+  slug,
+  featuredImage: '/featured/publishing-contingency-routine.png',
+  title,
+  excerpt: `Plan ${topic} for a Philippines-based virtual assistant with clear tasks, proof, access limits, review points, and a manager-owned escalation path.`,
+  minutes: 10,
+  takeaways: [
+    `Start ${topic} with a small recurring task lane and a written definition of done.`,
+    'Keep the source record, expected output, reviewer, and exception rule beside each task.',
+    'Use named accounts and least-privilege access; expand permissions only after clean work.',
+    'Review early work daily, then move to a documented weekly sample once the process is stable.',
+  ],
+  sections: [
+    { heading: 'Define the work before you delegate it', body: `A useful ${topic} plan begins with the recurring work, its source of truth, the output another person can check, and the decisions that remain with the owner. Write one example of a finished task and one example that must stop for review. This keeps a Philippines-based assistant from having to guess what “done” means.`, bullets: ['Name the input and approved tool.', 'Set the output format and due time.', 'List stop conditions and the person who decides exceptions.'] },
+    { heading: 'Build a small work sample', body: `Test ${topic} with safe, representative records before granting live access. Use fake names, redacted files, or a copied queue. Score accuracy, source use, clarity, and whether the assistant asks the right question when a record is incomplete. A work sample reveals more than a general claim of experience.` },
+    { heading: 'Protect access and evidence', body: `NIST’s access-control guidance supports limiting actions to approved users and purposes. Give the assistant a named account, only the tools needed for the first lane, and a simple record of changes. CISA’s authentication guidance is a useful reminder to protect publishing and customer-data accounts with stronger sign-in and explicit recovery ownership.`, bullets: ['Separate preparation from approval.', 'Review exports, shared links, and old accounts.', 'Save the task record, reviewer, date, and correction when work changes.'] },
+    { heading: 'Run the first month in reviewable steps', body: `In week one, review every completed task and correct the source instructions. In week two, add one related duty only if the first lane is accurate. In weeks three and four, sample the work against the same checklist and record exceptions. Keep the staffing manager informed about attendance, coaching, access, or replacement needs.` },
+    { heading: 'Use a clear next step', body: `Google Search Central’s people-first guidance supports writing for a real reader rather than filling a queue for its own sake. Apply the same standard to operations: publish or hand off only work that is useful, checked, and traceable. Start with the related role guide, then send the task list and tools through the staffing intake.` },
+  ],
+  faq: [
+    { question: `What should a Philippines-based assistant do first with ${topic}?`, answer: 'Start with one repeatable, low-risk task lane that has examples, a source record, a reviewer, and a written stop rule.' },
+    { question: 'How should access be granted?', answer: 'Use a named account and least privilege. Add one permission at a time after the assistant demonstrates accurate work.' },
+    { question: 'Who owns exceptions?', answer: 'A named client manager or subject-matter owner should decide exceptions; the assistant prepares the evidence and routes the question.' },
+  ],
+  sources: dailyBlogSources,
+  relatedServices: [],
+}));
+
 export const roles = services.map((service) => service.name);
 export const industries = ['real estate', 'healthcare offices', 'legal teams', 'ecommerce stores', 'coaches and agencies', 'home services'] as const;
 export const stats = [
@@ -194,6 +254,8 @@ export const blogPosts: BlogPost[] = [
     sources: [],
     relatedServices: [],
   },];
+
+blogPosts.push(...dailyBlogPosts);
 
 export const faq = [
   { question: 'Is Virtual Assistant Provider a staffing agency?', answer: 'This first version is an independent buyer-guide site. It helps visitors plan the role and request a quote-style hiring plan. Replace this note if the site becomes a direct staffing offer.' },
