@@ -325,6 +325,67 @@ const currentBlogPosts: BlogPost[] = currentBlogBatchTopics.map(([slug, title, t
 
 blogPosts.push(...currentBlogPosts);
 
+// Blog publication batch selected for the 2026-08-10 continuation run.
+const continuationBlogBatchTopics = [
+  ['virtual-assistant-work-instructions-philippines', 'Virtual assistant work instructions Philippines: write steps people can check', 'work instructions'],
+  ['virtual-assistant-daily-planning-philippines', 'Virtual assistant daily planning Philippines: set a manageable queue', 'daily planning'],
+  ['virtual-assistant-escalation-rules-philippines', 'Virtual assistant escalation rules Philippines: decide what must stop', 'escalation rules'],
+  ['virtual-assistant-client-onboarding-philippines', 'Virtual assistant client onboarding Philippines: prepare the first handoff', 'client onboarding'],
+  ['virtual-assistant-work-sample-philippines', 'Virtual assistant work sample Philippines: test the actual role', 'work samples'],
+  ['virtual-assistant-permission-review-philippines', 'Virtual assistant permission review Philippines: clean up access', 'permission reviews'],
+  ['virtual-assistant-absence-plan-philippines', 'Virtual assistant absence plan Philippines: keep routine work covered', 'absence planning'],
+  ['virtual-assistant-task-queue-philippines', 'Virtual assistant task queue Philippines: make priorities visible', 'task queues'],
+  ['virtual-assistant-error-log-philippines', 'Virtual assistant error log Philippines: turn corrections into better instructions', 'error logs'],
+  ['virtual-assistant-weekly-one-on-one-philippines', 'Virtual assistant weekly one on one Philippines: coach from real work', 'weekly one on ones'],
+  ['virtual-assistant-file-naming-philippines', 'Virtual assistant file naming Philippines: keep shared work findable', 'file naming'],
+  ['virtual-assistant-calendar-delegation-philippines', 'Virtual assistant calendar delegation Philippines: protect meeting decisions', 'calendar delegation'],
+  ['virtual-assistant-email-triage-philippines', 'Virtual assistant email triage Philippines: sort messages by owner rules', 'email triage'],
+  ['virtual-assistant-reporting-template-philippines', 'Virtual assistant reporting template Philippines: share useful work evidence', 'reporting templates'],
+  ['virtual-assistant-approval-workflow-philippines', 'Virtual assistant approval workflow Philippines: separate drafts from decisions', 'approval workflows'],
+  ['virtual-assistant-data-cleanup-philippines', 'Virtual assistant data cleanup Philippines: repair records without guessing', 'data cleanup'],
+  ['virtual-assistant-research-citations-philippines', 'Virtual assistant research citations Philippines: keep sources attached to claims', 'research citations'],
+  ['virtual-assistant-content-brief-philippines', 'Virtual assistant content brief Philippines: turn a topic into an assigned article', 'content briefs'],
+  ['virtual-assistant-podcast-admin-philippines', 'Virtual assistant podcast admin Philippines: organize production follow-up', 'podcast administration'],
+  ['virtual-assistant-property-listing-philippines', 'Virtual assistant property listing Philippines: check details before publishing', 'property listings'],
+  ['virtual-assistant-patient-scheduling-philippines', 'Virtual assistant patient scheduling Philippines: keep nonclinical work bounded', 'patient scheduling'],
+  ['virtual-assistant-payment-reminders-philippines', 'Virtual assistant payment reminders Philippines: prepare follow-up with approval limits', 'payment reminders'],
+] as const;
+
+const continuationBlogPosts: BlogPost[] = continuationBlogBatchTopics.map(([slug, title, topic]) => ({
+  slug,
+  featuredImage: `/featured/${slug}.png`,
+  title,
+  excerpt: `Plan ${topic} for a Philippines-based virtual assistant with examples, a small task lane, access limits, and a manager-owned escalation path.`,
+  minutes: 9,
+  takeaways: [
+    `Start ${topic} with one recurring task lane and a written definition of done.`,
+    'Keep the source record, expected output, reviewer, and stop rule beside each task.',
+    'Use named accounts and least-privilege access; add permissions after accurate work.',
+    'Review early work closely, then keep a weekly sample and correction record.',
+  ],
+  sections: [
+    { heading: 'Define the queue before delegation', body: `A useful ${topic} plan names the input, the output another person can check, the due time, and the decisions that stay with the owner. Add one finished example and one example that must stop for review. That gives a Philippines-based assistant a clear finish line.`, bullets: ['Name the source of truth and approved tool.', 'Set the output format and due time.', 'List exceptions and the person who decides them.'] },
+    { heading: 'Test the smallest safe lane', body: `Use copied, redacted, or low-risk records for a work sample. Score accuracy, source use, clarity, and the questions asked when a record is incomplete. A small sample shows how the assistant handles the actual workflow better than a broad claim of experience.` },
+    { heading: 'Keep access and corrections visible', body: `Give the assistant a named account and only the tools needed for the first lane. Record the task, reviewer, date, and correction when work changes. Separate preparation from approval, and protect accounts with stronger sign-in and clear recovery ownership.`, bullets: ['Review shared links and exports.', 'Keep financial, legal, and sensitive personnel choices with the owner.', 'Add access one permission at a time.'] },
+    { heading: 'Review the first month', body: `Review every completed task in week one and fix the source instructions. Add one related duty only if the first lane is accurate. By weeks three and four, sample the work against the same rubric and record exceptions for the staffing manager.` },
+    { heading: 'Keep the next step concrete', body: `A work lane is ready to expand when its inputs, examples, reviewer, stop rules, and access are documented. Keep useful outputs, discard guesses, and send the role brief through the staffing intake when the owner is ready.` },
+  ],
+  faq: [
+    { question: `What should a Philippines-based assistant do first with ${topic}?`, answer: 'Start with one repeatable, low-risk task lane that has examples, a source record, a reviewer, and a written stop rule.' },
+    { question: 'How should access be granted?', answer: 'Use a named account and least privilege. Add one permission at a time after the assistant demonstrates accurate work.' },
+    { question: 'Who owns exceptions?', answer: 'A named client manager or subject-matter owner should decide exceptions; the assistant prepares the evidence and routes the question.' },
+  ],
+  sources: currentBlogSources,
+  relatedServices: [],
+  articleLinks: [
+    { label: 'daily routine guide', href: '/blog/virtual-assistant-daily-routine-philippines' },
+    { label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' },
+    { label: 'NIST access control guidance', href: 'https://csrc.nist.gov/projects/access-control', external: true },
+  ],
+}));
+
+blogPosts.push(...continuationBlogPosts);
+
 export const faq = [
   { question: 'Is Virtual Assistant Provider a staffing agency?', answer: 'This first version is an independent buyer-guide site. It helps visitors plan the role and request a quote-style hiring plan. Replace this note if the site becomes a direct staffing offer.' },
   { question: 'What kind of assistant should I hire first?', answer: 'Start with the work that repeats, has examples, and does not require sensitive judgment. Inbox cleanup, scheduling, CRM updates, and support drafts are common first choices.' },
