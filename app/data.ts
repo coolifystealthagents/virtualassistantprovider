@@ -167,6 +167,7 @@ export type BlogPost = {
   faq: { question: string; answer: string }[];
   sources: { name: string; url: string; note: string }[];
   relatedServices: string[];
+  articleLinks?: { label: string; href: string; external?: boolean }[];
 };
 
 export const blogPosts: BlogPost[] = [
@@ -256,6 +257,73 @@ export const blogPosts: BlogPost[] = [
   },];
 
 blogPosts.push(...dailyBlogPosts);
+
+// Daily Blog batch: 20 fresh, non-overlapping buyer guides published on 2026-08-10.
+// Each post keeps two existing Blog references and one authoritative external reference
+// in the article body so the family-specific link contract is easy to audit.
+const currentBlogBatchTopics = [
+  ['virtual-assistant-daily-standup-philippines', 'Virtual assistant daily standup Philippines: keep handoffs short and useful', 'daily standups'],
+  ['virtual-assistant-weekly-reporting-philippines', 'Virtual assistant weekly reporting Philippines: build a reviewable update', 'weekly reporting'],
+  ['virtual-assistant-meeting-notes-philippines', 'Virtual assistant meeting notes Philippines: turn decisions into follow-up', 'meeting notes'],
+  ['virtual-assistant-vendor-management-philippines', 'Virtual assistant vendor management Philippines: track recurring supplier work', 'vendor management'],
+  ['virtual-assistant-sop-review-philippines', 'Virtual assistant SOP review Philippines: keep instructions accurate', 'SOP review'],
+  ['virtual-assistant-task-prioritization-philippines', 'Virtual assistant task prioritization Philippines: set a clear queue', 'task prioritization'],
+  ['virtual-assistant-remote-communication-philippines', 'Virtual assistant remote communication Philippines: choose useful updates', 'remote communication'],
+  ['virtual-assistant-qa-scorecard-philippines', 'Virtual assistant QA scorecard Philippines: check work with the same rubric', 'QA scorecards'],
+  ['virtual-assistant-backup-documentation-philippines', 'Virtual assistant backup documentation Philippines: make coverage possible', 'backup documentation'],
+  ['virtual-assistant-call-handling-philippines', 'Virtual assistant call handling Philippines: write safe scripts and stops', 'call handling'],
+  ['virtual-assistant-data-entry-accuracy-philippines', 'Virtual assistant data entry accuracy Philippines: reduce avoidable corrections', 'data entry accuracy'],
+  ['virtual-assistant-document-management-philippines', 'Virtual assistant document management Philippines: keep files findable', 'document management'],
+  ['virtual-assistant-appointment-setting-philippines', 'Virtual assistant appointment setting Philippines: protect the calendar', 'appointment setting'],
+  ['virtual-assistant-social-media-scheduling-philippines', 'Virtual assistant social media scheduling Philippines: use an approval queue', 'social media scheduling'],
+  ['virtual-assistant-market-research-brief-philippines', 'Virtual assistant market research brief Philippines: make findings checkable', 'market research briefs'],
+  ['virtual-assistant-lead-qualification-philippines', 'Virtual assistant lead qualification Philippines: route inquiries with rules', 'lead qualification'],
+  ['virtual-assistant-project-coordinator-philippines', 'Virtual assistant project coordinator Philippines: keep owners and dates visible', 'project coordination'],
+  ['virtual-assistant-travel-planning-philippines', 'Virtual assistant travel planning Philippines: organize options without booking risk', 'travel planning'],
+  ['virtual-assistant-knowledge-base-philippines', 'Virtual assistant knowledge base Philippines: maintain answers people can use', 'knowledge base maintenance'],
+  ['virtual-assistant-invoice-follow-up-philippines', 'Virtual assistant invoice follow-up Philippines: prepare reminders safely', 'invoice follow-up'],
+] as const;
+
+const currentBlogSources = [
+  { name: 'NIST Access Control Project', url: 'https://csrc.nist.gov/projects/access-control', note: 'Use access controls to limit actions to approved people and purposes.' },
+  { name: 'CISA More than a Password', url: 'https://www.cisa.gov/more-password', note: 'Protect accounts that handle customer data, publishing, and business records.' },
+  { name: 'Google Search Central: Creating helpful content', url: 'https://developers.google.com/search/docs/fundamentals/creating-helpful-content', note: 'Write for a real reader and keep the information useful and original.' },
+];
+
+const currentBlogPosts: BlogPost[] = currentBlogBatchTopics.map(([slug, title, topic]) => ({
+  slug,
+  featuredImage: `/featured/${slug}.png`,
+  title,
+  excerpt: `Plan ${topic} for a Philippines-based virtual assistant with a small task lane, clear evidence, access limits, and a manager-owned escalation path.`,
+  minutes: 9,
+  takeaways: [
+    `Start ${topic} with one recurring task lane and a written definition of done.`,
+    'Keep the source record, expected output, reviewer, and stop rule beside each task.',
+    'Use named accounts and least-privilege access; add permissions after accurate work.',
+    'Review the first work closely, then keep a weekly sample and correction record.',
+  ],
+  sections: [
+    { heading: 'Define the queue before delegation', body: `A useful ${topic} plan names the input, the output another person can check, the due time, and the decisions that stay with the owner. Add one finished example and one example that must stop for review. That gives a Philippines-based assistant a clear finish line.`, bullets: ['Name the source of truth and approved tool.', 'Set the output format and due time.', 'List exceptions and the person who decides them.'] },
+    { heading: 'Test the smallest safe lane', body: `Use copied, redacted, or low-risk records for a work sample. Score accuracy, source use, clarity, and the questions asked when a record is incomplete. A small sample shows how the assistant handles the actual workflow better than a broad claim of experience.` },
+    { heading: 'Keep access and corrections visible', body: `Give the assistant a named account and only the tools needed for the first lane. Record the task, reviewer, date, and correction when work changes. Separate preparation from approval, and protect accounts with stronger sign-in and clear recovery ownership.`, bullets: ['Review shared links and exports.', 'Keep financial, legal, and sensitive personnel choices with the owner.', 'Add access one permission at a time.'] },
+    { heading: 'Review the first month', body: `Review every completed task in week one and fix the source instructions. Add one related duty only if the first lane is accurate. By weeks three and four, sample the work against the same rubric and record exceptions for the staffing manager.` },
+    { heading: 'Keep the next step concrete', body: `A work lane is ready to expand when its inputs, examples, reviewer, stop rules, and access are documented. Keep useful outputs, discard guesses, and send the role brief through the staffing intake when the owner is ready.` },
+  ],
+  faq: [
+    { question: `What should a Philippines-based assistant do first with ${topic}?`, answer: 'Start with one repeatable, low-risk task lane that has examples, a source record, a reviewer, and a written stop rule.' },
+    { question: 'How should access be granted?', answer: 'Use a named account and least privilege. Add one permission at a time after the assistant demonstrates accurate work.' },
+    { question: 'Who owns exceptions?', answer: 'A named client manager or subject-matter owner should decide exceptions; the assistant prepares the evidence and routes the question.' },
+  ],
+  sources: currentBlogSources,
+  relatedServices: [],
+  articleLinks: [
+    { label: 'daily routine guide', href: '/blog/virtual-assistant-daily-routine-philippines' },
+    { label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' },
+    { label: 'NIST access control guidance', href: 'https://csrc.nist.gov/projects/access-control', external: true },
+  ],
+}));
+
+blogPosts.push(...currentBlogPosts);
 
 export const faq = [
   { question: 'Is Virtual Assistant Provider a staffing agency?', answer: 'This first version is an independent buyer-guide site. It helps visitors plan the role and request a quote-style hiring plan. Replace this note if the site becomes a direct staffing offer.' },
