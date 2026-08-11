@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "contract": "sites3-aug10-public-date-v6",
+  "targetDate": "2026-08-10",
+  "family": "research",
+  "domain": "virtualassistantprovider.com",
+  "repository": "coolifystealthagents/virtualassistantprovider",
+  "branch": "main",
+  "minimum": 10,
+  "priorRunId": "b0d46d22-47f8-4412-a160-b40a7abaaea1",
+  "priorIssueId": "7b8e5907-2a61-41a0-a21b-8bcdc9b78921",
+  "validationCommands": [
+    "npx tsc --noEmit",
+    "npm run build",
+    "node scripts/validate-aug10-research.mjs",
+    "git fetch origin main",
+    "git rev-parse origin/main"
+  ],
+  "cleanBuildPassed": true,
+  "existingCompliancePassed": true,
+  "indexNewestFirstPassed": true,
+  "entries": [
+    {
+      "slug": "research-owner-handoff-note",
+      "route": "/research/research-owner-handoff-note",
+      "sourcePath": "app/fleet-content.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "efa43ec343bf9eaea37758948cf6cee9ce2e80ec",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": ["datePublished", "time[datetime]", "visible date"],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "research-source-access-log",
+      "route": "/research/research-source-access-log",
+      "sourcePath": "app/fleet-content.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "efa43ec343bf9eaea37758948cf6cee9ce2e80ec",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": ["datePublished", "time[datetime]", "visible date"],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "research-claim-source-map",
+      "route": "/research/research-claim-source-map",
+      "sourcePath": "app/fleet-content.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "efa43ec343bf9eaea37758948cf6cee9ce2e80ec",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": ["datePublished", "time[datetime]", "visible date"],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "research-evidence-table-review",
+      "route": "/research/research-evidence-table-review",
+      "sourcePath": "app/fleet-content.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "efa43ec343bf9eaea37758948cf6cee9ce2e80ec",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": ["datePublished", "time[datetime]", "visible date"],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "research-reading-level-check",
+      "route": "/research/research-reading-level-check",
+      "sourcePath": "app/fleet-content.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "efa43ec343bf9eaea37758948cf6cee9ce2e80ec",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": ["datePublished", "time[datetime]", "visible date"],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "research-external-link-health-check",
+      "route": "/research/research-external-link-health-check",
+      "sourcePath": "app/fleet-content.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "efa43ec343bf9eaea37758948cf6cee9ce2e80ec",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": ["datePublished", "time[datetime]", "visible date"],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "research-faq-answerability-check",
+      "route": "/research/research-faq-answerability-check",
+      "sourcePath": "app/fleet-content.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "efa43ec343bf9eaea37758948cf6cee9ce2e80ec",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": ["datePublished", "time[datetime]", "visible date"],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "research-date-stamp-review",
+      "route": "/research/research-date-stamp-review",
+      "sourcePath": "app/fleet-content.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "efa43ec343bf9eaea37758948cf6cee9ce2e80ec",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": ["datePublished", "time[datetime]", "visible date"],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "research-batch-scope-review",
+      "route": "/research/research-batch-scope-review",
+      "sourcePath": "app/fleet-content.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "efa43ec343bf9eaea37758948cf6cee9ce2e80ec",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": ["datePublished", "time[datetime]", "visible date"],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "research-source-authority-check",
+      "route": "/research/research-source-authority-check",
+      "sourcePath": "app/fleet-content.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "efa43ec343bf9eaea37758948cf6cee9ce2e80ec",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": ["datePublished", "time[datetime]", "visible date"],
+      "renderedDate": "2026-08-10"
+    }
+  ]
+}

@@ -4,6 +4,7 @@
     "build": "next build",
     "start": "next start -H 0.0.0.0 -p 3000",
     "lint": "next lint",
+    "validate:aug10-research": "node scripts/validate-aug10-research.mjs",
     "deploy:daily": "node scripts/daily-coolify-deploy.mjs"
   },
   "dependencies": {
