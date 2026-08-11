@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "contract": "sites3-aug10-public-date-v6",
+  "targetDate": "2026-08-10",
+  "family": "blog",
+  "domain": "virtualassistantprovider.com",
+  "repository": "coolifystealthagents/virtualassistantprovider",
+  "branch": "main",
+  "minimum": 22,
+  "priorRunId": "91a88eb5-95d4-4fc2-ab4e-545a9a46dc6b",
+  "priorIssueId": "4df8b79c-99b1-4e20-ad4a-645f9c4efd21",
+  "validationCommands": [
+    "npm run build"
+  ],
+  "cleanBuildPassed": true,
+  "existingCompliancePassed": true,
+  "indexNewestFirstPassed": true,
+  "entries": [
+    {
+      "slug": "virtual-assistant-absence-plan-philippines",
+      "route": "/blog/virtual-assistant-absence-plan-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "virtual-assistant-approval-workflow-philippines",
+      "route": "/blog/virtual-assistant-approval-workflow-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "virtual-assistant-calendar-delegation-philippines",
+      "route": "/blog/virtual-assistant-calendar-delegation-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "virtual-assistant-client-onboarding-philippines",
+      "route": "/blog/virtual-assistant-client-onboarding-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "virtual-assistant-content-brief-philippines",
+      "route": "/blog/virtual-assistant-content-brief-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "virtual-assistant-daily-planning-philippines",
+      "route": "/blog/virtual-assistant-daily-planning-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "virtual-assistant-data-cleanup-philippines",
+      "route": "/blog/virtual-assistant-data-cleanup-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "virtual-assistant-email-triage-philippines",
+      "route": "/blog/virtual-assistant-email-triage-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "virtual-assistant-error-log-philippines",
+      "route": "/blog/virtual-assistant-error-log-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "virtual-assistant-escalation-rules-philippines",
+      "route": "/blog/virtual-assistant-escalation-rules-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "virtual-assistant-file-naming-philippines",
+      "route": "/blog/virtual-assistant-file-naming-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "virtual-assistant-patient-scheduling-philippines",
+      "route": "/blog/virtual-assistant-patient-scheduling-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "virtual-assistant-payment-reminders-philippines",
+      "route": "/blog/virtual-assistant-payment-reminders-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "virtual-assistant-permission-review-philippines",
+      "route": "/blog/virtual-assistant-permission-review-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "virtual-assistant-podcast-admin-philippines",
+      "route": "/blog/virtual-assistant-podcast-admin-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "virtual-assistant-property-listing-philippines",
+      "route": "/blog/virtual-assistant-property-listing-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "virtual-assistant-reporting-template-philippines",
+      "route": "/blog/virtual-assistant-reporting-template-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "virtual-assistant-research-citations-philippines",
+      "route": "/blog/virtual-assistant-research-citations-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "virtual-assistant-task-queue-philippines",
+      "route": "/blog/virtual-assistant-task-queue-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "virtual-assistant-weekly-one-on-one-philippines",
+      "route": "/blog/virtual-assistant-weekly-one-on-one-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "virtual-assistant-work-instructions-philippines",
+      "route": "/blog/virtual-assistant-work-instructions-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "virtual-assistant-work-sample-philippines",
+      "route": "/blog/virtual-assistant-work-sample-philippines",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished"
+      ],
+      "renderedDate": "2026-08-10"
+    }
+  ]
+}
