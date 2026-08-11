@@ -167,6 +167,8 @@ export type BlogPost = {
   faq: { question: string; answer: string }[];
   sources: { name: string; url: string; note: string }[];
   relatedServices: string[];
+  published?: string;
+  updated?: string;
   articleLinks?: { label: string; href: string; external?: boolean }[];
 };
 
@@ -353,6 +355,8 @@ const continuationBlogBatchTopics = [
 
 const continuationBlogPosts: BlogPost[] = continuationBlogBatchTopics.map(([slug, title, topic]) => ({
   slug,
+  published: '2026-08-10',
+  updated: '2026-08-10',
   featuredImage: `/featured/${slug}.png`,
   title,
   excerpt: `Plan ${topic} for a Philippines-based virtual assistant with examples, a small task lane, access limits, and a manager-owned escalation path.`,
@@ -385,6 +389,9 @@ const continuationBlogPosts: BlogPost[] = continuationBlogBatchTopics.map(([slug
 }));
 
 blogPosts.push(...continuationBlogPosts);
+
+// Keep dated articles newest-first while preserving source order for equal dates.
+blogPosts.sort((a, b) => (b.published ?? '').localeCompare(a.published ?? ''));
 
 export const faq = [
   { question: 'Is Virtual Assistant Provider a staffing agency?', answer: 'This first version is an independent buyer-guide site. It helps visitors plan the role and request a quote-style hiring plan. Replace this note if the site becomes a direct staffing offer.' },

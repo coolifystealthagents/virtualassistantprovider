@@ -84,7 +84,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       twitter: { card: 'summary_large_image', images: [`${site.url}${post?.featuredImage}`] },
     };
   }
-  return { title: post?.title || 'Guide', description: post?.excerpt };
+  return { title: post?.title || 'Guide', description: post?.excerpt, openGraph: post?.published ? { type: 'article', publishedTime: post.published, modifiedTime: post.updated ?? post.published } : undefined };
 }
 
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
@@ -103,7 +103,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
-      { '@type': 'Article', headline: post.title, description: post.excerpt, author: { '@type': 'Organization', name: site.brand }, publisher: { '@type': 'Organization', name: site.brand, url: site.url }, mainEntityOfPage: `${site.url}/blog/${post.slug}`, citation: post.sources.map((source) => source.url), hasPart: post.sections.map((section, index) => ({ '@type': 'WebPageElement', position: index + 1, name: section.heading })) },
+      { '@type': 'Article', headline: post.title, description: post.excerpt, datePublished: post.published, dateModified: post.updated ?? post.published, author: { '@type': 'Organization', name: site.brand }, publisher: { '@type': 'Organization', name: site.brand, url: site.url }, mainEntityOfPage: `${site.url}/blog/${post.slug}`, citation: post.sources.map((source) => source.url), hasPart: post.sections.map((section, index) => ({ '@type': 'WebPageElement', position: index + 1, name: section.heading })) },
       { '@type': 'FAQPage', mainEntity: post.faq.map((item) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) },
       { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: site.url }, { '@type': 'ListItem', position: 2, name: 'Blog', item: `${site.url}/blog` }, { '@type': 'ListItem', position: 3, name: post.title, item: `${site.url}/blog/${post.slug}` }] },
     ],
