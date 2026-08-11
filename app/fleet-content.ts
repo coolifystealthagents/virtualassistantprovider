@@ -496,6 +496,26 @@ type PublishingResearchConfig = {
   updated?: string;
 };
 
+type ServiceResearchConfig = {
+  slug: string;
+  primaryKeyword: string;
+  title: string;
+  metaTitle: string;
+  excerpt: string;
+  service: string;
+  audience: string;
+  question: string;
+  finding: string;
+  sourceName: string;
+  sourceOrganization: string;
+  sourceUrl: string;
+  sourcePublished?: string;
+  featuredImage: string;
+  revision: string;
+  published: '2026-08-11';
+  updated: '2026-08-11';
+};
+
 const publishingSources: readonly ResearchSource[] = [
   { id: 1, name: 'Creating helpful, reliable, people-first content', organization: 'Google Search Central', url: 'https://developers.google.com/search/docs/fundamentals/creating-helpful-content', published: '2025-12-01', accessed: '2026-08-04' },
   { id: 2, name: 'Learn About Article Schema Markup', organization: 'Google Search Central', url: 'https://developers.google.com/search/docs/appearance/structured-data/article', published: '2025-12-01', accessed: '2026-08-04' },
@@ -578,6 +598,19 @@ const publishingResearchConfigs: readonly PublishingResearchConfig[] = [
   { slug: 'research-date-stamp-review', primaryKeyword: 'research article date stamp review', title: 'Research date-stamp reviews: separate published from accessed', metaTitle: 'Research date-stamp reviews', excerpt: 'A date-stamp review distinguishes publication, update, data, and access dates so readers can judge how current a finding is.', focus: 'a date-stamp review', audience: 'a fact checker', revision: '2026-08-10-date-stamp-v1', published: '2026-08-10', updated: '2026-08-10' },
   { slug: 'research-batch-scope-review', primaryKeyword: 'research batch scope review', title: 'Research batch-scope reviews: publish a coherent set', metaTitle: 'Research batch-scope reviews', excerpt: 'A batch-scope review checks that the day’s articles belong to the Research family, answer distinct questions, and share a clear validation record.', focus: 'a batch-scope review', audience: 'a publishing owner', revision: '2026-08-10-batch-scope-v1', published: '2026-08-10', updated: '2026-08-10' },
   { slug: 'research-source-authority-check', primaryKeyword: 'research source authority check', title: 'Research source-authority checks: match the source to the claim', metaTitle: 'Research source-authority checks', excerpt: 'A source-authority check asks whether the publisher has the standing, method, and direct relationship needed for the claim being made.', focus: 'a source-authority check', audience: 'a research editor', revision: '2026-08-10-source-authority-v1', published: '2026-08-10', updated: '2026-08-10' },
+];
+
+const august11ServiceResearchConfigs: readonly ServiceResearchConfig[] = [
+  { slug: 'executive-assistant-calendar-coordination-evidence', primaryKeyword: 'executive assistant calendar coordination evidence', title: 'Executive assistant calendar coordination: evidence for a safer handoff', metaTitle: 'Executive assistant calendar coordination evidence', excerpt: 'What calendar-management research can and cannot tell a business before assigning meeting coordination to a Philippines-based assistant.', service: 'calendar coordination', audience: 'an executive support buyer', question: 'Which calendar tasks can be delegated safely while the owner keeps control of commitments?', finding: 'Delegation is safest when meeting purpose, attendees, time zones, buffers, and owner-only decisions are explicit.', sourceName: 'Digital Identity Guidelines', sourceOrganization: 'National Institute of Standards and Technology', sourceUrl: 'https://pages.nist.gov/800-63-4/', featuredImage: '/featured/virtual-assistant-appointment-setting-philippines.png', revision: '2026-08-11-calendar-coordination-evidence-v1', published: '2026-08-11', updated: '2026-08-11' },
+  { slug: 'customer-support-escalation-evidence', primaryKeyword: 'customer support escalation evidence', title: 'Customer support escalation: what evidence says a first queue is ready', metaTitle: 'Customer support escalation evidence', excerpt: 'A source-led look at the boundaries, records, and exception handling a business should examine before delegating a customer-support queue.', service: 'customer support', audience: 'a customer-support owner', question: 'What evidence shows that a support queue can be handled consistently without hiding exceptions?', finding: 'A support lane needs approved answers, a visible exception path, and records that preserve the customer’s question and the response given.', sourceName: 'Small Business Administration: Customer Service', sourceOrganization: 'U.S. Small Business Administration', sourceUrl: 'https://www.sba.gov/business-guide/manage-your-business/customer-service', featuredImage: '/featured/customer-service-virtual-assistant-philippines.png', revision: '2026-08-11-customer-support-escalation-v1', published: '2026-08-11', updated: '2026-08-11' },
+  { slug: 'bookkeeping-preparation-records-evidence', primaryKeyword: 'bookkeeping preparation records evidence', title: 'Bookkeeping preparation records: evidence for a review-ready support role', metaTitle: 'Bookkeeping preparation records evidence', excerpt: 'How official recordkeeping guidance helps define a bookkeeping-preparation role without handing accounting judgments to administrative support.', service: 'bookkeeping preparation', audience: 'a small-business owner', question: 'Which recordkeeping tasks can support a bookkeeper while leaving accounting judgments with the responsible professional?', finding: 'A useful support role gathers complete source documents, preserves dates and descriptions, and flags uncertainty instead of classifying it silently.', sourceName: 'Recordkeeping', sourceOrganization: 'Internal Revenue Service', sourceUrl: 'https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping', featuredImage: '/featured/bookkeeping-virtual-assistant-philippines.png', revision: '2026-08-11-bookkeeping-records-evidence-v1', published: '2026-08-11', updated: '2026-08-11' },
+  { slug: 'healthcare-administrative-support-privacy-evidence', primaryKeyword: 'healthcare administrative support privacy evidence', title: 'Healthcare administrative support: privacy evidence for nonclinical work', metaTitle: 'Healthcare administrative support privacy evidence', excerpt: 'A practical evidence review for assigning scheduling, records coordination, and other nonclinical office work while protecting patient information.', service: 'healthcare administration', audience: 'a healthcare office owner', question: 'What privacy safeguards should be visible before administrative support handles patient-related information?', finding: 'Access should follow the minimum necessary principle, with named users, defined purposes, and a clear path for incidents or uncertain requests.', sourceName: 'The HIPAA Privacy Rule', sourceOrganization: 'U.S. Department of Health and Human Services', sourceUrl: 'https://www.hhs.gov/hipaa/for-professionals/privacy/index.html', featuredImage: '/featured/healthcare-virtual-assistant-philippines.png', revision: '2026-08-11-healthcare-privacy-evidence-v1', published: '2026-08-11', updated: '2026-08-11' },
+  { slug: 'real-estate-administration-fair-housing-evidence', primaryKeyword: 'real estate administration fair housing evidence', title: 'Real estate administration: fair-housing evidence for support work', metaTitle: 'Real estate administration fair housing evidence', excerpt: 'Where administrative help can organize listings and follow-ups, and where fair-housing decisions must remain with the licensed real-estate owner.', service: 'real estate administration', audience: 'a real-estate broker', question: 'Which real-estate administrative tasks can be delegated without turning support into an unreviewed housing decision?', finding: 'Support can organize factual property information and approved follow-ups, but advertising language, steering, and eligibility decisions need accountable review.', sourceName: 'Fair Housing Act', sourceOrganization: 'U.S. Department of Housing and Urban Development', sourceUrl: 'https://www.hud.gov/programs/fair-housing-enforcement/fair-housing-act-overview', featuredImage: '/featured/real-estate-virtual-assistant-philippines.png', revision: '2026-08-11-real-estate-fair-housing-v1', published: '2026-08-11', updated: '2026-08-11' },
+  { slug: 'recruiting-coordination-selection-evidence', primaryKeyword: 'recruiting coordination selection evidence', title: 'Recruiting coordination: evidence for fair candidate communication', metaTitle: 'Recruiting coordination selection evidence', excerpt: 'What hiring guidance suggests about separating interview logistics and candidate communication from employment decisions.', service: 'recruiting coordination', audience: 'an employer or hiring manager', question: 'How can recruiting support improve candidate communication without making an unreviewed employment decision?', finding: 'Coordination is easier to govern when support keeps factual status, scheduling, and approved messages separate from evaluation and selection.', sourceName: 'Employment Tests and Selection Procedures', sourceOrganization: 'U.S. Equal Employment Opportunity Commission', sourceUrl: 'https://www.eeoc.gov/laws/guidance/employment-tests-and-selection-procedures', featuredImage: '/featured/recruiting-virtual-assistant-philippines.png', revision: '2026-08-11-recruiting-selection-evidence-v1', published: '2026-08-11', updated: '2026-08-11' },
+  { slug: 'ecommerce-catalog-accuracy-evidence', primaryKeyword: 'ecommerce catalog accuracy evidence', title: 'Ecommerce catalog accuracy: evidence for dependable product records', metaTitle: 'Ecommerce catalog accuracy evidence', excerpt: 'A research-backed way to define catalog support around accurate product facts, variant records, and owner approval for customer-facing claims.', service: 'ecommerce catalog maintenance', audience: 'an ecommerce operator', question: 'What evidence supports delegating product-record maintenance without delegating product claims or commercial decisions?', finding: 'Catalog support is strongest when every changed field has a source, a reviewer, and a visible distinction between product fact and marketing claim.', sourceName: 'Advertising and Marketing Basics', sourceOrganization: 'Federal Trade Commission', sourceUrl: 'https://www.ftc.gov/business-guidance/advertising-marketing', featuredImage: '/featured/ecommerce-virtual-assistant-philippines.png', revision: '2026-08-11-ecommerce-catalog-evidence-v1', published: '2026-08-11', updated: '2026-08-11' },
+  { slug: 'crm-data-quality-sales-administration-evidence', primaryKeyword: 'CRM data quality sales administration evidence', title: 'CRM data quality: evidence for sales administration support', metaTitle: 'CRM data quality sales administration evidence', excerpt: 'Why accurate CRM fields, provenance, and access boundaries matter when a virtual assistant maintains sales records.', service: 'CRM maintenance', audience: 'a sales or operations owner', question: 'What makes CRM maintenance useful to sales without allowing support to invent or approve pipeline facts?', finding: 'Record quality depends on consistent field definitions, source-linked updates, and a visible distinction between an observed status and a forecast or promise.', sourceName: 'Data Quality', sourceOrganization: 'U.S. Government Accountability Office', sourceUrl: 'https://www.gao.gov/products/gao-21-519t', featuredImage: '/featured/sales-support-crm-hygiene.png', revision: '2026-08-11-crm-data-quality-evidence-v1', published: '2026-08-11', updated: '2026-08-11' },
+  { slug: 'market-research-brief-evidence', primaryKeyword: 'market research brief evidence', title: 'Market research briefs: evidence for a decision-ready support service', metaTitle: 'Market research brief evidence', excerpt: 'How a market-research support role can make findings easier to check while leaving interpretation and business decisions with the client.', service: 'market research support', audience: 'a founder or strategy owner', question: 'What separates a useful market-research brief from a collection of untested links?', finding: 'A decision-ready brief states the question, population, method, date, source limitations, and the exact inference the evidence permits.', sourceName: 'Market research and competitive analysis', sourceOrganization: 'U.S. Small Business Administration', sourceUrl: 'https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis', featuredImage: '/featured/virtual-assistant-market-research-brief-philippines.png', revision: '2026-08-11-market-research-brief-evidence-v1', published: '2026-08-11', updated: '2026-08-11' },
+  { slug: 'document-organization-access-evidence', primaryKeyword: 'document organization access evidence', title: 'Document organization: evidence for a safer shared-file service', metaTitle: 'Document organization access evidence', excerpt: 'A source-led examination of naming, ownership, and access review for businesses that need shared files to remain findable and controlled.', service: 'document organization', audience: 'an operations owner', question: 'What evidence should a business examine before delegating shared-file organization?', finding: 'A dependable file service preserves ownership and context while limiting access to the people and purposes that require it.', sourceName: 'Protecting Controlled Unclassified Information', sourceOrganization: 'National Institute of Standards and Technology', sourceUrl: 'https://csrc.nist.gov/pubs/sp/800/171/r3/final', featuredImage: '/featured/virtual-assistant-document-management-philippines.png', revision: '2026-08-11-document-organization-evidence-v1', published: '2026-08-11', updated: '2026-08-11' },
 ];
 
 const makePublishingResearchPost = (config: PublishingResearchConfig): ResearchPost => ({
@@ -667,7 +700,95 @@ const makePublishingResearchPost = (config: PublishingResearchConfig): ResearchP
   ]
 });
 
+const makeServiceResearchPost = (config: ServiceResearchConfig): ResearchPost => {
+  const source: ResearchSource = { id: 1, name: config.sourceName, organization: config.sourceOrganization, url: config.sourceUrl, published: config.sourcePublished, accessed: '2026-08-11' };
+  return {
+    slug: config.slug,
+    featuredImage: config.featuredImage,
+    primaryKeyword: config.primaryKeyword,
+    title: config.title,
+    metaTitle: config.metaTitle,
+    excerpt: config.excerpt,
+    published: '2026-08-11',
+    updated: '2026-08-11',
+    readingMinutes: 8,
+    revision: config.revision,
+    takeaways: [
+      config.finding,
+      'Country context can inform a role brief, but it cannot prove that a particular person, provider, or process will fit.',
+      'Keep factual preparation separate from decisions that change money, access, eligibility, care, employment, or customer commitments.',
+      'Ask for a small, safe work sample using invented or redacted information before granting broader access.',
+      'Escalate an exception with the source record intact instead of filling an evidence gap with an assumption.'
+    ],
+    headlineStats: [
+      { value: '1', label: 'Decision question', context: config.question, sourceIds: [1] },
+      { value: '1', label: 'Primary source', context: `${config.sourceOrganization} publishes the source used for this report.`, sourceIds: [1] },
+      { value: '3', label: 'Evidence checks', context: 'Check the source, the person handling the work, and the owner decision that remains outside the support role.', sourceIds: [1] },
+      { value: '0', label: 'Unsupported promises', context: 'The source supports boundaries and questions, not a guaranteed business outcome.', sourceIds: [1] },
+      { value: '1', label: 'Named owner', context: 'Every exception needs an accountable owner who can resolve it.', sourceIds: [1] },
+      { value: '1', label: 'Safe first lane', context: `Begin with a bounded ${config.service} assignment and review the evidence before widening scope.`, sourceIds: [1] }
+    ],
+    sections: [
+      { heading: 'What the evidence can answer', paragraphs: [
+        `${config.question} This report focuses on ${config.service} for ${config.audience}, using the linked authority as a boundary-setting source rather than as a promise about any provider or individual.`,
+        `${config.finding} The practical implication is to define the handoff around observable records and named decisions.`,
+        'The source does not measure a Philippines-based assistant, a provider’s performance, or a customer result. Those require role-specific proof, references, and a supervised sample.'
+      ] },
+      { heading: 'Separate preparation from judgment', paragraphs: [
+        `A support role can prepare information for ${config.service}, check whether required fields are present, and return a clear question when the record is incomplete. The owner retains the decision that carries professional, financial, legal, employment, privacy, or customer responsibility.`,
+        'Write the boundary in plain language. Name the inputs, the approved output, the evidence that must be attached, and the cases that stop for review.',
+        'This separation helps a buyer evaluate a provider on accuracy and care without pretending that administrative support replaces licensed or accountable judgment.'
+      ] },
+      { heading: 'Test the actual role safely', paragraphs: [
+        `Use a short paid sample based on ${config.service} with fictional names, redacted records, and no live credentials. Score whether the work is complete, traceable, readable, and appropriately cautious.`,
+        'Ask the candidate to identify one ambiguous case and explain what they would return to the owner. That response is evidence of judgment; silent guessing is a risk signal.',
+        'If the sample is sound, begin with the narrowest live task lane and review the first set of records before adding permissions or decision weight.'
+      ] },
+      { heading: 'Read the source with its limits', paragraphs: [
+        `${config.sourceOrganization} is the named authority for the source linked below. Use its definitions and scope when assessing the question, and do not extend a rule beyond the population or purpose it covers.[1]`,
+        'A source-backed recommendation still needs local context: the customer’s data, the owner’s risk tolerance, the tools involved, and the exact work a provider will perform.',
+        'When those facts are missing, hold the conclusion at the level the evidence supports and ask the owner for the missing decision.'
+      ] },
+      { heading: 'A buyer’s evidence standard', paragraphs: [
+        'Before assigning the work, ask for the role scope, sample task, access list, review owner, exception path, and offboarding plan. Keep the answers with the role brief so a later reviewer can reproduce the decision.',
+        'A credible provider should describe how it screens for the task, protects customer information, reviews early work, and responds when the person is unavailable. Those are service questions, not claims that national data can settle.',
+        `For ${config.service}, the defensible conclusion is narrow: use evidence to shape the role, then verify the actual work before expanding it.`
+      ] }
+    ],
+    evidenceTable: [
+      { signal: 'Authority and scope', finding: `${config.sourceOrganization} is the direct authority linked for this question.`, buyerUse: 'Use the source definition when writing the role boundary.', limit: 'The source does not evaluate a specific candidate or provider.', sourceIds: [1] },
+      { signal: 'Observable record', finding: 'A useful support task leaves a record another owner can inspect.', buyerUse: 'Require source-linked fields and a visible exception note.', limit: 'A record cannot prove that an unseen judgment was correct.', sourceIds: [1] },
+      { signal: 'Owner decision', finding: 'Accountable decisions remain with the business or qualified professional.', buyerUse: 'List owner-only actions before access is granted.', limit: 'The correct owner depends on the engagement and the issue.', sourceIds: [1] },
+      { signal: 'Safe trial', finding: 'A bounded sample provides role-specific evidence.', buyerUse: 'Use redacted or invented data before live access.', limit: 'A sample is evidence of a task, not a guarantee of future results.', sourceIds: [1] }
+    ],
+    implications: [
+      { title: 'Define the lane', body: `List the recurring ${config.service} tasks, inputs, output format, review owner, and stop conditions.` },
+      { title: 'Protect the record', body: 'Use named accounts, least-privilege access, and a source or note for every material change.' },
+      { title: 'Keep decisions accountable', body: 'Route exceptions and professional or commercial judgments to the owner named in the role brief.' },
+      { title: 'Review the first work', body: 'Inspect a small first set for completeness, traceability, tone, and appropriate escalation.' }
+    ],
+    methodology: [
+      `This report uses the named first-party source from ${config.sourceOrganization}, accessed August 11, 2026.`,
+      'The source supports the evidence boundary and questions in this article. The role recommendations are practical guidance from Virtual Assistant Provider, not measured outcomes.',
+      'No claim here establishes a particular applicant’s qualifications, a provider’s performance, or a guaranteed business result.'
+    ],
+    faq: [
+      { question: `Can support own the final ${config.service} decision?`, answer: 'Only when the responsible owner has explicitly assigned that decision and the role is qualified for it. Otherwise, support prepares the record and escalates the decision.' },
+      { question: 'What should a buyer test first?', answer: 'Use a short, paid sample with safe data and score accuracy, completeness, traceability, communication, and escalation judgment.' },
+      { question: 'Does this source prove a provider is suitable?', answer: 'No. It supplies relevant evidence and boundaries; provider suitability requires role-specific proof and review.' },
+      { question: 'What belongs in the role brief?', answer: 'Include tasks, inputs, outputs, access, owner-only decisions, exception paths, review timing, and offboarding.' }
+    ],
+    sources: [source],
+    related: [
+      { title: 'Research library', href: '/research', description: 'Read the other source-led reports for Philippines-based support decisions.' },
+      { title: 'Plan a Philippines-based role', href: '/contact', description: 'Bring the recurring work, tools, review rules, and owner decisions for a role plan.' },
+      { title: 'Services', href: '/services', description: 'Review the support areas covered by Virtual Assistant Provider.' }
+    ]
+  };
+};
+
 researchPosts = [...researchPosts, ...publishingResearchConfigs.map(makePublishingResearchPost)]
+  .concat(august11ServiceResearchConfigs.map(makeServiceResearchPost))
   .sort((a, b) => b.published.localeCompare(a.published));
 
 export const publicTiers = [
