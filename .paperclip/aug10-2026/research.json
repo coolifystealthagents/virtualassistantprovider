@@ -28,7 +28,7 @@
       "introducedByCommit": "efa43ec343bf9eaea37758948cf6cee9ce2e80ec",
       "sourceDateField": "published",
       "sourceDate": "2026-08-10",
-      "renderedDateFields": ["datePublished", "time[datetime]", "visible date"],
+      "renderedDateFields": ["datePublished", "time[datetime]"],
       "renderedDate": "2026-08-10"
     },
     {
@@ -39,7 +39,7 @@
       "introducedByCommit": "efa43ec343bf9eaea37758948cf6cee9ce2e80ec",
       "sourceDateField": "published",
       "sourceDate": "2026-08-10",
-      "renderedDateFields": ["datePublished", "time[datetime]", "visible date"],
+      "renderedDateFields": ["datePublished", "time[datetime]"],
       "renderedDate": "2026-08-10"
     },
     {
@@ -50,7 +50,7 @@
       "introducedByCommit": "efa43ec343bf9eaea37758948cf6cee9ce2e80ec",
       "sourceDateField": "published",
       "sourceDate": "2026-08-10",
-      "renderedDateFields": ["datePublished", "time[datetime]", "visible date"],
+      "renderedDateFields": ["datePublished", "time[datetime]"],
       "renderedDate": "2026-08-10"
     },
     {
@@ -61,7 +61,7 @@
       "introducedByCommit": "efa43ec343bf9eaea37758948cf6cee9ce2e80ec",
       "sourceDateField": "published",
       "sourceDate": "2026-08-10",
-      "renderedDateFields": ["datePublished", "time[datetime]", "visible date"],
+      "renderedDateFields": ["datePublished", "time[datetime]"],
       "renderedDate": "2026-08-10"
     },
     {
@@ -72,7 +72,7 @@
       "introducedByCommit": "efa43ec343bf9eaea37758948cf6cee9ce2e80ec",
       "sourceDateField": "published",
       "sourceDate": "2026-08-10",
-      "renderedDateFields": ["datePublished", "time[datetime]", "visible date"],
+      "renderedDateFields": ["datePublished", "time[datetime]"],
       "renderedDate": "2026-08-10"
     },
     {
@@ -83,7 +83,7 @@
       "introducedByCommit": "efa43ec343bf9eaea37758948cf6cee9ce2e80ec",
       "sourceDateField": "published",
       "sourceDate": "2026-08-10",
-      "renderedDateFields": ["datePublished", "time[datetime]", "visible date"],
+      "renderedDateFields": ["datePublished", "time[datetime]"],
       "renderedDate": "2026-08-10"
     },
     {
@@ -94,7 +94,7 @@
       "introducedByCommit": "efa43ec343bf9eaea37758948cf6cee9ce2e80ec",
       "sourceDateField": "published",
       "sourceDate": "2026-08-10",
-      "renderedDateFields": ["datePublished", "time[datetime]", "visible date"],
+      "renderedDateFields": ["datePublished", "time[datetime]"],
       "renderedDate": "2026-08-10"
     },
     {
@@ -105,7 +105,7 @@
       "introducedByCommit": "efa43ec343bf9eaea37758948cf6cee9ce2e80ec",
       "sourceDateField": "published",
       "sourceDate": "2026-08-10",
-      "renderedDateFields": ["datePublished", "time[datetime]", "visible date"],
+      "renderedDateFields": ["datePublished", "time[datetime]"],
       "renderedDate": "2026-08-10"
     },
     {
@@ -116,7 +116,7 @@
       "introducedByCommit": "efa43ec343bf9eaea37758948cf6cee9ce2e80ec",
       "sourceDateField": "published",
       "sourceDate": "2026-08-10",
-      "renderedDateFields": ["datePublished", "time[datetime]", "visible date"],
+      "renderedDateFields": ["datePublished", "time[datetime]"],
       "renderedDate": "2026-08-10"
     },
     {
@@ -127,7 +127,7 @@
       "introducedByCommit": "efa43ec343bf9eaea37758948cf6cee9ce2e80ec",
       "sourceDateField": "published",
       "sourceDate": "2026-08-10",
-      "renderedDateFields": ["datePublished", "time[datetime]", "visible date"],
+      "renderedDateFields": ["datePublished", "time[datetime]"],
       "renderedDate": "2026-08-10"
     }
   ]
