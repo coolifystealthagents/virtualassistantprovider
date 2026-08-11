@@ -14,7 +14,8 @@
     "npm run build",
     "node scripts/validate-aug10-research.mjs",
     "git fetch origin main",
-    "git rev-parse origin/main"
+    "git rev-parse origin/main",
+    "git rev-parse HEAD"
   ],
   "cleanBuildPassed": true,
   "existingCompliancePassed": true,
