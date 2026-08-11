@@ -353,10 +353,36 @@ const continuationBlogBatchTopics = [
   ['virtual-assistant-payment-reminders-philippines', 'Virtual assistant payment reminders Philippines: prepare follow-up with approval limits', 'payment reminders'],
 ] as const;
 
+// Exact source binding for the frozen August 10 batch. Each slug owns its date.
+const continuationBlogPublicationDates: Record<string, string> = {
+  'virtual-assistant-absence-plan-philippines': '2026-08-10',
+  'virtual-assistant-approval-workflow-philippines': '2026-08-10',
+  'virtual-assistant-calendar-delegation-philippines': '2026-08-10',
+  'virtual-assistant-client-onboarding-philippines': '2026-08-10',
+  'virtual-assistant-content-brief-philippines': '2026-08-10',
+  'virtual-assistant-daily-planning-philippines': '2026-08-10',
+  'virtual-assistant-data-cleanup-philippines': '2026-08-10',
+  'virtual-assistant-email-triage-philippines': '2026-08-10',
+  'virtual-assistant-error-log-philippines': '2026-08-10',
+  'virtual-assistant-escalation-rules-philippines': '2026-08-10',
+  'virtual-assistant-file-naming-philippines': '2026-08-10',
+  'virtual-assistant-patient-scheduling-philippines': '2026-08-10',
+  'virtual-assistant-payment-reminders-philippines': '2026-08-10',
+  'virtual-assistant-permission-review-philippines': '2026-08-10',
+  'virtual-assistant-podcast-admin-philippines': '2026-08-10',
+  'virtual-assistant-property-listing-philippines': '2026-08-10',
+  'virtual-assistant-reporting-template-philippines': '2026-08-10',
+  'virtual-assistant-research-citations-philippines': '2026-08-10',
+  'virtual-assistant-task-queue-philippines': '2026-08-10',
+  'virtual-assistant-weekly-one-on-one-philippines': '2026-08-10',
+  'virtual-assistant-work-instructions-philippines': '2026-08-10',
+  'virtual-assistant-work-sample-philippines': '2026-08-10',
+};
+
 const continuationBlogPosts: BlogPost[] = continuationBlogBatchTopics.map(([slug, title, topic]) => ({
   slug,
-  published: '2026-08-10',
-  updated: '2026-08-10',
+  published: continuationBlogPublicationDates[slug],
+  updated: continuationBlogPublicationDates[slug],
   featuredImage: `/featured/${slug}.png`,
   title,
   excerpt: `Plan ${topic} for a Philippines-based virtual assistant with examples, a small task lane, access limits, and a manager-owned escalation path.`,

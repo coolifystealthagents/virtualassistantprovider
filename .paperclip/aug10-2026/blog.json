@@ -10,7 +10,11 @@
   "priorRunId": "91a88eb5-95d4-4fc2-ab4e-545a9a46dc6b",
   "priorIssueId": "4df8b79c-99b1-4e20-ad4a-645f9c4efd21",
   "validationCommands": [
-    "npm run build"
+    "npm run build",
+    "source-date audit: exact slug map and 2026-08-10 values",
+    "rendered-date audit: datePublished and article:published_time",
+    "exact-count/identity audit: frozen 22 slugs",
+    "index-order audit: newest-first with stable August 10 batch order"
   ],
   "cleanBuildPassed": true,
   "existingCompliancePassed": true,
@@ -22,10 +26,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-absence-plan-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     },
@@ -35,10 +40,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-approval-workflow-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     },
@@ -48,10 +54,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-calendar-delegation-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     },
@@ -61,10 +68,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-client-onboarding-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     },
@@ -74,10 +82,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-content-brief-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     },
@@ -87,10 +96,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-daily-planning-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     },
@@ -100,10 +110,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-data-cleanup-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     },
@@ -113,10 +124,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-email-triage-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     },
@@ -126,10 +138,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-error-log-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     },
@@ -139,10 +152,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-escalation-rules-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     },
@@ -152,10 +166,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-file-naming-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     },
@@ -165,10 +180,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-patient-scheduling-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     },
@@ -178,10 +194,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-payment-reminders-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     },
@@ -191,10 +208,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-permission-review-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     },
@@ -204,10 +222,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-podcast-admin-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     },
@@ -217,10 +236,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-property-listing-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     },
@@ -230,10 +250,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-reporting-template-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     },
@@ -243,10 +264,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-research-citations-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     },
@@ -256,10 +278,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-task-queue-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     },
@@ -269,10 +292,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-weekly-one-on-one-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     },
@@ -282,10 +306,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-work-instructions-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     },
@@ -295,10 +320,11 @@
       "sourcePath": "app/data.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "e069760aa6d58948f2009b18bc0ece8aa4b423ae",
-      "sourceDateField": "published",
+      "sourceDateField": "continuationBlogPublicationDates['virtual-assistant-work-sample-philippines']",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
-        "datePublished"
+        "datePublished",
+        "article:published_time"
       ],
       "renderedDate": "2026-08-10"
     }
