@@ -1,3 +1,5 @@
+import { august13ResearchPosts } from './article-research-aug13-2026';
+
 export const fleetServices = [
   {
     "slug": "executive-assistant-staffing",
@@ -789,6 +791,7 @@ const makeServiceResearchPost = (config: ServiceResearchConfig): ResearchPost =>
 
 researchPosts = [...researchPosts, ...publishingResearchConfigs.map(makePublishingResearchPost)]
   .concat(august11ServiceResearchConfigs.map(makeServiceResearchPost))
+  .concat(august13ResearchPosts)
   .sort((a, b) => b.published.localeCompare(a.published));
 
 export const publicTiers = [
