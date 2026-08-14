@@ -1,4 +1,4 @@
-import { august13ResearchPosts } from './article-research-aug13-2026';
+import { august13ReplacementResearchPosts as august13ResearchPosts } from './article-research-aug13-replacements';
 
 export const fleetServices = [
   {
