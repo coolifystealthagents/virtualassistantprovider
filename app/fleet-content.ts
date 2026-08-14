@@ -1,4 +1,5 @@
 import { august13ReplacementResearchPosts as august13ResearchPosts } from './article-research-aug13-replacements';
+import { august14ResearchPosts } from './article-research-aug14-2026';
 
 export const fleetServices = [
   {
@@ -792,6 +793,7 @@ const makeServiceResearchPost = (config: ServiceResearchConfig): ResearchPost =>
 researchPosts = [...researchPosts, ...publishingResearchConfigs.map(makePublishingResearchPost)]
   .concat(august11ServiceResearchConfigs.map(makeServiceResearchPost))
   .concat(august13ResearchPosts)
+  .concat(august14ResearchPosts)
   .sort((a, b) => b.published.localeCompare(a.published));
 
 export const publicTiers = [
