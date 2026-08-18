@@ -2,7 +2,7 @@ import type { ResearchPost, ResearchSource } from './fleet-content';
 
 type August14Topic = {
   slug: string;
-  published: '2026-08-14';
+  published: '2026-08-17';
   primaryKeyword: string;
   title: string;
   metaTitle: string;
@@ -24,7 +24,7 @@ const access: ResearchSource = { id: 6, name: 'Access Control', organization: 'N
 
 const topics: August14Topic[] = [
   {
-    slug: 'subscription-cancellation-research-philippines', published: '2026-08-14', primaryKeyword: 'subscription cancellation research virtual assistant Philippines',
+    slug: 'subscription-cancellation-research-philippines', published: '2026-08-17', primaryKeyword: 'subscription cancellation research virtual assistant Philippines',
     title: 'Subscription-cancellation research: separate customer signals from retention decisions', metaTitle: 'Subscription-cancellation research: evidence guide', image: '/featured/research-evidence-table-guide.png',
     excerpt: 'A bounded study of cancellation reasons, missing context, and handoff evidence for a Philippines-based support research role.', question: 'What can a cancellation sample reveal about friction, and what must remain a product or account-owner decision?', finding: 'Cancellation research is useful when the event, stated reason, cohort, and missing evidence remain separate from a claim about why customers leave.', audience: 'a customer-success or product owner', sources: [sba, nist],
     sections: [
@@ -37,7 +37,7 @@ const topics: August14Topic[] = [
     ]
   },
   {
-    slug: 'event-venue-accessibility-research-philippines', published: '2026-08-14', primaryKeyword: 'event venue accessibility research virtual assistant Philippines',
+    slug: 'event-venue-accessibility-research-philippines', published: '2026-08-17', primaryKeyword: 'event venue accessibility research virtual assistant Philippines',
     title: 'Event-venue accessibility research: compare published information without certifying access', metaTitle: 'Event-venue accessibility research: evidence guide', image: '/featured/research-source-authority-check.png',
     excerpt: 'How to prepare a venue comparison from published evidence while leaving current confirmation and accessibility judgment with the organizer.', question: 'Which venue details can be compared remotely, and where does a desk review stop?', finding: 'A venue brief is credible when each observation names the route, date, source, and unanswered access question instead of implying a complete accessibility audit.', audience: 'an event organizer', sources: [wcag, sba],
     sections: [
@@ -120,14 +120,14 @@ const reusableSections = (topic: string, owner: string, evidence: string): Augus
 ];
 
 const august14DateBindings = [
-  { slug: 'supplier-shipment-status-research-philippines', published: '2026-08-14' },
-  { slug: 'grant-eligibility-research-philippines', published: '2026-08-14' },
-  { slug: 'local-regulation-change-research-philippines', published: '2026-08-14' },
-  { slug: 'customer-knowledge-search-research-philippines', published: '2026-08-14' },
-  { slug: 'professional-event-speaker-research-philippines', published: '2026-08-14' },
-  { slug: 'remote-workspace-connectivity-research-philippines', published: '2026-08-14' },
-  { slug: 'customer-survey-question-research-philippines', published: '2026-08-14' },
-  { slug: 'document-retention-research-philippines', published: '2026-08-14' },
+  { slug: 'supplier-shipment-status-research-philippines', published: '2026-08-17' },
+  { slug: 'grant-eligibility-research-philippines', published: '2026-08-17' },
+  { slug: 'local-regulation-change-research-philippines', published: '2026-08-17' },
+  { slug: 'customer-knowledge-search-research-philippines', published: '2026-08-17' },
+  { slug: 'professional-event-speaker-research-philippines', published: '2026-08-17' },
+  { slug: 'remote-workspace-connectivity-research-philippines', published: '2026-08-17' },
+  { slug: 'customer-survey-question-research-philippines', published: '2026-08-17' },
+  { slug: 'document-retention-research-philippines', published: '2026-08-17' },
 ] as const;
 
 const generatedTopics: August14Topic[] = extraTopics.map((extra, index) => expandTopic({ ...extra, published: august14DateBindings[index].published, sections: [] }, reusableSections(extra.title.toLowerCase(), extra.audience, extra.finding)));
