@@ -22,7 +22,7 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the support or finance owner decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   },
   {
     slug: "virtual-assistant-customer-complaint-log-philippines", published: '2026-08-17', updated: '2026-08-17', displayDate: 'August 17, 2026',
@@ -39,7 +39,7 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the service owner decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   },
   {
     slug: "virtual-assistant-sales-call-prep-philippines", published: '2026-08-17', updated: '2026-08-17', displayDate: 'August 17, 2026',
@@ -56,7 +56,7 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the sales owner decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   },
   {
     slug: "virtual-assistant-demo-follow-up-philippines", published: '2026-08-17', updated: '2026-08-17', displayDate: 'August 17, 2026',
@@ -73,7 +73,7 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the account owner decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   },
   {
     slug: "virtual-assistant-recruiting-interview-scheduling-philippines", published: '2026-08-17', updated: '2026-08-17', displayDate: 'August 17, 2026',
@@ -90,7 +90,7 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the hiring manager decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   },
   {
     slug: "virtual-assistant-candidate-record-hygiene-philippines", published: '2026-08-17', updated: '2026-08-17', displayDate: 'August 17, 2026',
@@ -107,7 +107,7 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the hiring manager decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   },
   {
     slug: "virtual-assistant-subscription-renewal-tracking-philippines", published: '2026-08-17', updated: '2026-08-17', displayDate: 'August 17, 2026',
@@ -124,7 +124,7 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the budget or procurement owner decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   },
   {
     slug: "virtual-assistant-website-content-inventory-philippines", published: '2026-08-17', updated: '2026-08-17', displayDate: 'August 17, 2026',
@@ -141,7 +141,7 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the content owner decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   },
   {
     slug: "virtual-assistant-newsletter-draft-review-philippines", published: '2026-08-17', updated: '2026-08-17', displayDate: 'August 17, 2026',
@@ -158,7 +158,7 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the publisher or marketing owner decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   },
   {
     slug: "virtual-assistant-webinar-registration-admin-philippines", published: '2026-08-17', updated: '2026-08-17', displayDate: 'August 17, 2026',
@@ -175,7 +175,7 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the event owner decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   },
   {
     slug: "virtual-assistant-community-moderation-philippines", published: '2026-08-17', updated: '2026-08-17', displayDate: 'August 17, 2026',
@@ -192,7 +192,7 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the community owner decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   },
   {
     slug: "virtual-assistant-podcast-guest-coordination-philippines", published: '2026-08-17', updated: '2026-08-17', displayDate: 'August 17, 2026',
@@ -209,7 +209,7 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the host or producer decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   },
   {
     slug: "virtual-assistant-course-enrollment-records-philippines", published: '2026-08-17', updated: '2026-08-17', displayDate: 'August 17, 2026',
@@ -226,7 +226,7 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the course owner decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   },
   {
     slug: "virtual-assistant-product-feedback-synthesis-philippines", published: '2026-08-17', updated: '2026-08-17', displayDate: 'August 17, 2026',
@@ -243,7 +243,7 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the product owner decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   },
   {
     slug: "virtual-assistant-competitor-research-table-philippines", published: '2026-08-17', updated: '2026-08-17', displayDate: 'August 17, 2026',
@@ -260,7 +260,7 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the strategy or business owner decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   },
   {
     slug: "virtual-assistant-market-survey-cleanup-philippines", published: '2026-08-17', updated: '2026-08-17', displayDate: 'August 17, 2026',
@@ -277,7 +277,7 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the research owner decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   },
   {
     slug: "virtual-assistant-operations-calendar-philippines", published: '2026-08-17', updated: '2026-08-17', displayDate: 'August 17, 2026',
@@ -294,7 +294,7 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the operations owner decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   },
   {
     slug: "virtual-assistant-process-mapping-philippines", published: '2026-08-17', updated: '2026-08-17', displayDate: 'August 17, 2026',
@@ -311,7 +311,7 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the process owner decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   },
   {
     slug: "virtual-assistant-workload-review-philippines", published: '2026-08-17', updated: '2026-08-17', displayDate: 'August 17, 2026',
@@ -328,7 +328,7 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the manager or role owner decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   },
   {
     slug: "virtual-assistant-approval-matrix-philippines", published: '2026-08-17', updated: '2026-08-17', displayDate: 'August 17, 2026',
@@ -345,7 +345,7 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the accountable business owner decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   },
   {
     slug: "virtual-assistant-business-continuity-notes-philippines", published: '2026-08-17', updated: '2026-08-17', displayDate: 'August 17, 2026',
@@ -362,7 +362,7 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the business continuity owner decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   },
   {
     slug: "virtual-assistant-workflow-handover-philippines", published: '2026-08-17', updated: '2026-08-17', displayDate: 'August 17, 2026',
@@ -379,6 +379,6 @@ export const august17BlogPosts: BlogPost[] = [
       { question: 'Who decides an exception?', answer: "the role owner decides exceptions. The assistant should attach the record, explain what was checked, and identify the decision needed." },
     ],
     sources: [references[0], references[2]], relatedServices: [],
-    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }],
+    articleLinks: [{ label: 'onboarding checklist', href: '/blog/virtual-assistant-onboarding-checklist-philippines' }, { label: 'access control guide', href: '/blog/virtual-assistant-access-control-philippines' }, { label: 'NIST access control guidance', href: references[0].url, external: true }],
   }
 ];
