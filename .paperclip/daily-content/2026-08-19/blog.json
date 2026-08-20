@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-19",
+  "articles": [
+    {
+      "route": "/blog/assistant-service-intake-source-register",
+      "source": "content/blog/assistant-service-intake-source-register.md"
+    },
+    {
+      "route": "/blog/assistant-service-approval-evidence-matrix",
+      "source": "content/blog/assistant-service-approval-evidence-matrix.md"
+    },
+    {
+      "route": "/blog/assistant-service-exception-queue-triage",
+      "source": "content/blog/assistant-service-exception-queue-triage.md"
+    },
+    {
+      "route": "/blog/assistant-service-quality-review-cadence",
+      "source": "content/blog/assistant-service-quality-review-cadence.md"
+    },
+    {
+      "route": "/blog/assistant-service-handoff-acceptance-log",
+      "source": "content/blog/assistant-service-handoff-acceptance-log.md"
+    },
+    {
+      "route": "/blog/assistant-service-access-recertification-review",
+      "source": "content/blog/assistant-service-access-recertification-review.md"
+    },
+    {
+      "route": "/blog/assistant-service-weekly-decision-brief",
+      "source": "content/blog/assistant-service-weekly-decision-brief.md"
+    },
+    {
+      "route": "/blog/assistant-service-source-of-truth-map",
+      "source": "content/blog/assistant-service-source-of-truth-map.md"
+    },
+    {
+      "route": "/blog/assistant-service-change-control-record",
+      "source": "content/blog/assistant-service-change-control-record.md"
+    },
+    {
+      "route": "/blog/assistant-service-work-queue-ownership",
+      "source": "content/blog/assistant-service-work-queue-ownership.md"
+    },
+    {
+      "route": "/blog/assistant-service-escalation-path-design",
+      "source": "content/blog/assistant-service-escalation-path-design.md"
+    },
+    {
+      "route": "/blog/assistant-service-launch-readiness-review",
+      "source": "content/blog/assistant-service-launch-readiness-review.md"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "assistant-service-intake-source-register": {
+    "family": "blog",
+    "title": "Virtual Assistant Service Operations: Intake Source Register",
+    "description": "Virtual Assistant Service Operations: Intake Source Register: evidence-led guidance for Virtual Assistant Provider.",
+    "hero": "/aug19-heroes/assistant-service-intake-source-register.webp"
+  },
+  "assistant-service-approval-evidence-matrix": {
+    "family": "blog",
+    "title": "Virtual Assistant Service Operations: Approval Evidence Matrix",
+    "description": "Virtual Assistant Service Operations: Approval Evidence Matrix: evidence-led guidance for Virtual Assistant Provider.",
+    "hero": "/aug19-heroes/assistant-service-approval-evidence-matrix.webp"
+  },
+  "assistant-service-exception-queue-triage": {
+    "family": "blog",
+    "title": "Virtual Assistant Service Operations: Exception Queue Triage",
+    "description": "Virtual Assistant Service Operations: Exception Queue Triage: evidence-led guidance for Virtual Assistant Provider.",
+    "hero": "/aug19-heroes/assistant-service-exception-queue-triage.webp"
+  },
+  "assistant-service-quality-review-cadence": {
+    "family": "blog",
+    "title": "Virtual Assistant Service Operations: Quality Review Cadence",
+    "description": "Virtual Assistant Service Operations: Quality Review Cadence: evidence-led guidance for Virtual Assistant Provider.",
+    "hero": "/aug19-heroes/assistant-service-quality-review-cadence.webp"
+  },
+  "assistant-service-handoff-acceptance-log": {
+    "family": "blog",
+    "title": "Virtual Assistant Service Operations: Handoff Acceptance Log",
+    "description": "Virtual Assistant Service Operations: Handoff Acceptance Log: evidence-led guidance for Virtual Assistant Provider.",
+    "hero": "/aug19-heroes/assistant-service-handoff-acceptance-log.webp"
+  },
+  "assistant-service-access-recertification-review": {
+    "family": "blog",
+    "title": "Virtual Assistant Service Operations: Access Recertification Review",
+    "description": "Virtual Assistant Service Operations: Access Recertification Review: evidence-led guidance for Virtual Assistant Provider.",
+    "hero": "/aug19-heroes/assistant-service-access-recertification-review.webp"
+  },
+  "assistant-service-weekly-decision-brief": {
+    "family": "blog",
+    "title": "Virtual Assistant Service Operations: Weekly Decision Brief",
+    "description": "Virtual Assistant Service Operations: Weekly Decision Brief: evidence-led guidance for Virtual Assistant Provider.",
+    "hero": "/aug19-heroes/assistant-service-weekly-decision-brief.webp"
+  },
+  "assistant-service-source-of-truth-map": {
+    "family": "blog",
+    "title": "Virtual Assistant Service Operations: Source of Truth Map",
+    "description": "Virtual Assistant Service Operations: Source of Truth Map: evidence-led guidance for Virtual Assistant Provider.",
+    "hero": "/aug19-heroes/assistant-service-source-of-truth-map.webp"
+  },
+  "assistant-service-change-control-record": {
+    "family": "blog",
+    "title": "Virtual Assistant Service Operations: Change Control Record",
+    "description": "Virtual Assistant Service Operations: Change Control Record: evidence-led guidance for Virtual Assistant Provider.",
+    "hero": "/aug19-heroes/assistant-service-change-control-record.webp"
+  },
+  "assistant-service-work-queue-ownership": {
+    "family": "blog",
+    "title": "Virtual Assistant Service Operations: Work Queue Ownership",
+    "description": "Virtual Assistant Service Operations: Work Queue Ownership: evidence-led guidance for Virtual Assistant Provider.",
+    "hero": "/aug19-heroes/assistant-service-work-queue-ownership.webp"
+  },
+  "assistant-service-escalation-path-design": {
+    "family": "blog",
+    "title": "Virtual Assistant Service Operations: Escalation Path Design",
+    "description": "Virtual Assistant Service Operations: Escalation Path Design: evidence-led guidance for Virtual Assistant Provider.",
+    "hero": "/aug19-heroes/assistant-service-escalation-path-design.webp"
+  },
+  "assistant-service-launch-readiness-review": {
+    "family": "blog",
+    "title": "Virtual Assistant Service Operations: Launch Readiness Review",
+    "description": "Virtual Assistant Service Operations: Launch Readiness Review: evidence-led guidance for Virtual Assistant Provider.",
+    "hero": "/aug19-heroes/assistant-service-launch-readiness-review.webp"
+  },
+  "assistant-service-source-quality-evidence-research": {
+    "family": "research",
+    "title": "Research Brief: Virtual Assistant Service Operations Source Quality Evidence",
+    "description": "Research Brief: Virtual Assistant Service Operations Source Quality Evidence: evidence-led guidance for Virtual Assistant Provider.",
+    "hero": "/aug19-heroes/assistant-service-source-quality-evidence-research.webp"
+  },
+  "assistant-service-exception-aging-patterns-research": {
+    "family": "research",
+    "title": "Research Brief: Virtual Assistant Service Operations Exception Aging Patterns",
+    "description": "Research Brief: Virtual Assistant Service Operations Exception Aging Patterns: evidence-led guidance for Virtual Assistant Provider.",
+    "hero": "/aug19-heroes/assistant-service-exception-aging-patterns-research.webp"
+  },
+  "assistant-service-review-consistency-research": {
+    "family": "research",
+    "title": "Research Brief: Virtual Assistant Service Operations Review Consistency",
+    "description": "Research Brief: Virtual Assistant Service Operations Review Consistency: evidence-led guidance for Virtual Assistant Provider.",
+    "hero": "/aug19-heroes/assistant-service-review-consistency-research.webp"
+  },
+  "assistant-service-access-governance-research": {
+    "family": "research",
+    "title": "Research Brief: Virtual Assistant Service Operations Access Governance",
+    "description": "Research Brief: Virtual Assistant Service Operations Access Governance: evidence-led guidance for Virtual Assistant Provider.",
+    "hero": "/aug19-heroes/assistant-service-access-governance-research.webp"
+  },
+  "assistant-service-handoff-reliability-research": {
+    "family": "research",
+    "title": "Research Brief: Virtual Assistant Service Operations Handoff Reliability",
+    "description": "Research Brief: Virtual Assistant Service Operations Handoff Reliability: evidence-led guidance for Virtual Assistant Provider.",
+    "hero": "/aug19-heroes/assistant-service-handoff-reliability-research.webp"
+  }
+}
