@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-20",
+  "articles": [
+    {
+      "route": "/blog/implement-zero-inbox-strategy-virtual-assistant",
+      "source": "app/article-blog-aug20-2026.ts"
+    },
+    {
+      "route": "/blog/from-one-blog-post-to-30-days-of-content-delegating-to-a-va",
+      "source": "app/article-blog-aug20-2026.ts"
+    },
+    {
+      "route": "/blog/end-of-month-financial-prep-virtual-assistant",
+      "source": "app/article-blog-aug20-2026.ts"
+    },
+    {
+      "route": "/blog/stop-wasting-time-unqualified-calls-virtual-assistant",
+      "source": "app/article-blog-aug20-2026.ts"
+    },
+    {
+      "route": "/blog/hidden-cost-dirty-data-crm-management-virtual-assistant",
+      "source": "app/article-blog-aug20-2026.ts"
+    },
+    {
+      "route": "/blog/time-blocking-ceos-delegating-calendar-tetris-virtual-assistant",
+      "source": "app/article-blog-aug20-2026.ts"
+    },
+    {
+      "route": "/blog/creating-tier-1-help-desk-virtual-assistant",
+      "source": "app/article-blog-aug20-2026.ts"
+    },
+    {
+      "route": "/blog/automating-ecommerce-operations-va-shopify-amazon",
+      "source": "app/article-blog-aug20-2026.ts"
+    },
+    {
+      "route": "/blog/behind-the-mic-delegating-podcast-guest-management-virtual-assistant",
+      "source": "app/article-blog-aug20-2026.ts"
+    },
+    {
+      "route": "/blog/executive-travel-virtual-assistant-coordination",
+      "source": "app/article-blog-aug20-2026.ts"
+    },
+    {
+      "route": "/blog/outsourcing-competitor-intelligence-virtual-assistant",
+      "source": "app/article-blog-aug20-2026.ts"
+    },
+    {
+      "route": "/blog/streamlining-new-hire-onboarding-virtual-assistant",
+      "source": "app/article-blog-aug20-2026.ts"
+    }
+  ]
+}

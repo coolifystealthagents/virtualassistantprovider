@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-20",
+  "articles": [
+    {
+      "route": "/research/crm-data-decay-rates-va-hygiene-analysis",
+      "source": "app/article-research-aug20-2026.ts"
+    },
+    {
+      "route": "/research/ecommerce-catalog-integrity-virtual-assistants",
+      "source": "app/article-research-aug20-2026.ts"
+    },
+    {
+      "route": "/research/first-reply-time-optimization-in-house-vs-asynchronous-va-saas",
+      "source": "app/article-research-aug20-2026.ts"
+    },
+    {
+      "route": "/research/accounts-receivable-efficiency-dso-reduction-va-protocols",
+      "source": "app/article-research-aug20-2026.ts"
+    },
+    {
+      "route": "/research/pipeline-velocity-recruitment-offshore-vas",
+      "source": "app/article-research-aug20-2026.ts"
+    },
+    {
+      "route": "/research/va-driven-nap-audits-local-seo-correlation",
+      "source": "app/article-research-aug20-2026.ts"
+    },
+    {
+      "route": "/research/outbound-lead-enrichment-va-vs-automated-scraping",
+      "source": "app/article-research-aug20-2026.ts"
+    },
+    {
+      "route": "/research/inventory-reconciliation-accuracy-va-financial-impact",
+      "source": "app/article-research-aug20-2026.ts"
+    },
+    {
+      "route": "/research/contract-metadata-extraction-precision-study",
+      "source": "app/article-research-aug20-2026.ts"
+    },
+    {
+      "route": "/research/executive-calendar-optimization-deep-work-va-managed-triage",
+      "source": "app/article-research-aug20-2026.ts"
+    },
+    {
+      "route": "/research/community-moderation-sentiment-analysis-va-vs-chatbots",
+      "source": "app/article-research-aug20-2026.ts"
+    },
+    {
+      "route": "/research/unstructured-data-normalization-time-motion-study",
+      "source": "app/article-research-aug20-2026.ts"
+    }
+  ]
+}
