@@ -62,6 +62,7 @@ export const post: ResearchPost = {
       heading: 'What a buyer should require before signing: approval boundaries and owner decisions',
       paragraphs: [
         'Require a written cost breakdown by the six categories above before comparing providers. If a proposal will not name what is included, treat the missing line as a risk to cost separately, not as zero cost.',
+        'Write the role and scope assumptions before any figure is compared. State which tasks the assistant owns, which stay with the named owner, which tools and accounts are in scope, and which decisions are explicitly out of scope. An assumption that is written and dated can be challenged and corrected; an unstated assumption surfaces later as variance that no one can trace back to a decision, which is the most common source of budget overruns.',
         'Keep owner-only decisions explicit: money movement, legal judgment, hiring choices, refunds outside policy, and sensitive client decisions stay with the named owner. A proposal that implies the assistant owns these is not transparent about responsibility, and that gap is a cost the buyer pays later.',
         'Define approval boundaries in writing. State who approves new software spend, who signs off on paid trial work, and what spending limit the assistant may authorize without escalation. Without those boundaries, variance appears silently and the budget governance the buyer expected never materializes.'
       ]
