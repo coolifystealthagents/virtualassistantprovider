@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-21",
+  "articles": [
+    {
+      "route": "/blog/virtual-assistant-performance-metrics",
+      "source": "app/blog-2026-08-21-virtual-assistant-performance-metrics.ts"
+    },
+    {
+      "route": "/blog/secure-document-handling-virtual-assistant",
+      "source": "app/blog-2026-08-21-secure-document-handling.ts"
+    },
+    {
+      "route": "/blog/va-onboarding-30-day-framework",
+      "source": "app/blog-2026-08-21-va-onboarding-framework.ts"
+    },
+    {
+      "route": "/blog/cross-timezone-communication-best-practices",
+      "source": "app/blog-2026-08-21-remote-communication.ts"
+    },
+    {
+      "route": "/blog/va-budget-planning-cost-transparency",
+      "source": "app/blog-2026-08-21-budget-planning.ts"
+    },
+    {
+      "route": "/blog/employment-law-compliance-virtual-assistant",
+      "source": "app/blog-2026-08-21-compliance-legal.ts"
+    },
+    {
+      "route": "/blog/va-skill-development-bridging-knowledge-gaps",
+      "source": "app/blog-2026-08-21-va-training-skills.ts"
+    },
+    {
+      "route": "/blog/customer-escalations-remote-teams",
+      "source": "app/blog-2026-08-21-customer-escalations.ts"
+    },
+    {
+      "route": "/blog/scaling-virtual-assistant-team-effectively",
+      "source": "app/blog-2026-08-21-scaling-virtual-assistant-team-effectively.ts"
+    },
+    {
+      "route": "/blog/cultural-competence-philippines-va-teams",
+      "source": "app/blog-2026-08-21-cultural-integration.ts"
+    },
+    {
+      "route": "/blog/data-privacy-virtual-assistant-operations",
+      "source": "app/blog-2026-08-21-data-security.ts"
+    },
+    {
+      "route": "/blog/performance-reviews-remote-workforce",
+      "source": "app/blog-2026-08-21-performance-reviews.ts"
+    }
+  ]
+}
