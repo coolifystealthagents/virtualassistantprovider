@@ -1,0 +1,10 @@
+{
+  "date": "2026-08-21",
+  "articles": [
+    {"route": "/research/virtual-assistant-performance-metrics-evidence-research", "source": "app/research-2026-08-21-virtual-assistant-performance-metrics-evidence-research.ts"},
+    {"route": "/research/virtual-assistant-cross-timezone-communication-evidence-research", "source": "app/research-2026-08-21-cross-timezone-communication-evidence-research.ts"},
+    {"route": "/research/virtual-assistant-budget-transparency-evidence-research", "source": "app/research-2026-08-21-budget-transparency-evidence-research.ts"},
+    {"route": "/research/virtual-assistant-employment-law-compliance-evidence-research", "source": "app/research-2026-08-21-employment-law-compliance-evidence-research.ts"},
+    {"route": "/research/virtual-assistant-data-privacy-evidence-research", "source": "app/research-2026-08-21-data-privacy-evidence-research.ts"}
+  ]
+}
