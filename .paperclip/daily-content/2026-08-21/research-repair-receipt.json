@@ -1,0 +1,26 @@
+{
+  "campaignDate": "2026-08-21",
+  "family": "research",
+  "repairRun": "AUG21_SOURCE_REPAIR_afc023d6-1fec-4fd5-af9c-5f1b715dc14b_research_3",
+  "evaluatedRejectHead": "a45938a65ef54aa42429864db050b9318deeee1c",
+  "remediationHead": "729c9c767c1920711dcf381c535a6bd66e28523a",
+  "repairedAt": "2026-08-22",
+  "routes": [
+    "/research/virtual-assistant-budget-transparency-evidence-research",
+    "/research/virtual-assistant-cross-timezone-communication-evidence-research",
+    "/research/virtual-assistant-data-privacy-evidence-research",
+    "/research/virtual-assistant-employment-law-compliance-evidence-research",
+    "/research/virtual-assistant-performance-metrics-evidence-research"
+  ],
+  "checks": {
+    "http200": "PASS - all 5 routes prerendered as SSG at /research/[slug]",
+    "visibleDate": "PASS - each route renders 'August 21, 2026'",
+    "structuredDatePublished": "PASS - each route exposes datePublished=2026-08-21 in Report JSON-LD",
+    "indexed": "PASS - all 5 slugs in sitemap.xml (researchPosts map) and /research index page",
+    "wordCount": "PASS - 1910-2355 public words per route (>=900)",
+    "routeLocalSources": "PASS - each source record binds >=3 external https source URLs, methodology, limitations, conclusion",
+    "nativeBuild": "PASS - next build clean, 5 /research/[slug] paths prerendered"
+  },
+  "formSubmissions": 0,
+  "deploymentMutations": 0
+}
