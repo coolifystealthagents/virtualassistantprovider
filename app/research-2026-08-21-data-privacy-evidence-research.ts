@@ -74,6 +74,12 @@ export const post: ResearchPost = {
         'Philippine legal duties depend on the worker model, contract, data sensitivity, and customer location; this article is not legal advice.[3][4]',
         'The correct control set varies by system and data. A buyer should map these controls to the actual tools and confirm them with qualified security and legal advisers.'
       ]
+    },
+    {
+      heading: 'Conclusion',
+      paragraphs: [
+        'The evidence points to one buyer action that prevents most virtual assistant data incidents: decide access before the first login, not after the first risk. NIST and CISA frame least privilege, timely privilege removal, and identity lifecycle as managed controls, and the Philippine Data Privacy Act sets the national duty for personal information, so the control set is known before any tool is shared.[1][2][3] For a Philippines-based role, the working rule is an account inventory, a file-ownership map, and a revocation checklist written at onboarding and run on the last day. Standards reduce risk but do not remove it, and the correct control set depends on the actual systems and data, so confirm the mapping with qualified security and legal advisers rather than assuming a template covers it.'
+      ]
     }
   ],
   evidenceTable: [

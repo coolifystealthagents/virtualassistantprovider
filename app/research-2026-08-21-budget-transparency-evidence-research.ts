@@ -74,6 +74,12 @@ export const post: ResearchPost = {
         'Published rates change. The $10, $15, and $18 per hour tiers reflect the site on August 21, 2026, and a buyer should confirm the current public plan rather than relying on this report for pricing.[1]',
         'Legal, tax, and employment duties depend on the worker model, the data handled, and the customer location. This article does not give legal or tax advice; verify those obligations with qualified counsel before signing.'
       ]
+    },
+    {
+      heading: 'Conclusion',
+      paragraphs: [
+        'The evidence supports a single working rule for buying Philippines-based assistant support: price the whole role, not the hourly line. The five proposals reviewed showed a consistent habit of opening with the rate and deferring the categories that actually decide cost, while SBA guidance treats total cost of ownership as the buying input rather than the sticker price.[2] A buyer who requires a written breakdown across recruitment, software seats, management, paid sample work, schedule coverage, and replacement support removes the asymmetry that makes a low headline rate the expensive option. Transparency is therefore the mechanism that makes any comparison real, and the site published $10, $15, and $18 per hour tiers are only a starting point once those categories are named.[1] None of this is legal or tax advice; confirm the worker-model duties with qualified counsel before signing.'
+      ]
     }
   ],
   evidenceTable: [

@@ -74,6 +74,12 @@ export const post: ResearchPost = {
         'Overlap needs vary by task, seniority, and customer expectation, so any single schedule here is an example, not a rule. The buyer should set the window from the role.',
         'Legal, tax, and employment duties differ by worker model and location. This article is not legal or tax advice; confirm those with qualified counsel.'
       ]
+    },
+    {
+      heading: 'Conclusion',
+      paragraphs: [
+        'The evidence does not favor a single overlap number; it favors a written overlap rule tied to the role. Distributed-work research points to a deliberate, less-is-more overlap window rather than full coverage, and the connection matters as much as the clock: a named backup link, device, and power plan turn a time-zone gap into a managed handoff.[1][4] For a Philippines-based assistant, the practical decision is to set the overlap from the task, document the outage procedure, and require named accounts with phishing-resistant MFA so cross-zone logins keep an audit trail. The habit that protects the schedule is the same habit that protects the data, and both are decisions the buyer makes before launch, not corrections after a miss.'
+      ]
     }
   ],
   evidenceTable: [

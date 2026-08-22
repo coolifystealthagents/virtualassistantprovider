@@ -74,6 +74,12 @@ export const post: ResearchPost = {
         'Privacy rules around monitoring differ by jurisdiction and worker model; the ICO guidance is UK-specific and should be checked against the applicable law.[2]',
         'No metric removes the need for role-specific training, qualified advice, and ongoing management. Measurement supports the work; it does not replace the owner.'
       ]
+    },
+    {
+      heading: 'Conclusion',
+      paragraphs: [
+        'The evidence favors outcome-linked measurement over activity counts, applied through a written scorecard that changes the next task. Outcome metrics predict role fit better than hours logged, and CISA managed-identity and auditability emphasis makes reliability and escalation observable through named accounts and access logs without invading the person.[1][3] For a Philippines-based assistant, the working rule is a small set of decision-relevant metrics, a fair scorecard, a defined stop rule for retraining versus replacement, and ongoing management that acts on the result. No metric removes the need for role-specific training or qualified advice, and monitoring rules differ by jurisdiction and worker model, so check the applicable law before scoring behavior.[2]'
+      ]
     }
   ],
   evidenceTable: [

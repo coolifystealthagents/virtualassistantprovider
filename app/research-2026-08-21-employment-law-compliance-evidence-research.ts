@@ -74,6 +74,12 @@ export const post: ResearchPost = {
         'The cited laws are Philippine; the buyer\'s home-country duties may also apply, especially for tax, data export, and employment. Both sides should be checked.',
         'Standards such as CISA guidance are general controls, not a legal compliance program.[5] Use them as the security layer under the legal layer, not as a replacement.'
       ]
+    },
+    {
+      heading: 'Conclusion',
+      paragraphs: [
+        'The evidence shows that compliance for a Philippines-based assistant is a set of written boundaries decided up front, not a clause added after a problem. The Telecommuting Act recognizes covered remote arrangements, the Data Privacy Act sets the personal-information duty, and CISA and NIST supply the security controls that sit under the legal layer, so the framework is clear before hiring.[1][2][3][5] The buyer job is to put ownership, offboarding, IP, and confidentiality in writing, and to keep money movement, legal judgment, hiring, refunds, and sensitive client choices with the named owner. Status, tax, and termination duties depend on the worker model and may carry home-country duties too, so confirm both sides with qualified counsel; standards are the security layer, not a substitute for legal review.'
+      ]
     }
   ],
   evidenceTable: [
