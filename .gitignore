@@ -2,6 +2,7 @@ node_modules
 .daily-blog-batch.json
 deployment-result.json
 .next
+tsconfig.tsbuildinfo
 out
 .env*
 .DS_Store
