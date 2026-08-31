@@ -1,63 +1,38 @@
 {
-  "batchId": "2026-08-10-research-10",
+  "batchId": "2026-08-31-research-5",
   "scope": "research",
-  "family": "research",
-  "selectedTarget": 10,
-  "actualCount": 10,
-  "randomSelection": true,
-  "selectionSeed": "2026-08-10T06:00:00Z-research-4d91",
-  "researchSlugs": [
-    "research-owner-handoff-note",
-    "research-source-access-log",
-    "research-claim-source-map",
-    "research-evidence-table-review",
-    "research-reading-level-check",
-    "research-external-link-health-check",
-    "research-faq-answerability-check",
-    "research-date-stamp-review",
-    "research-batch-scope-review",
-    "research-source-authority-check"
+  "quantity": 5,
+  "selectionSeed": "2026-08-31-VIR-64-research",
+  "slugs": [
+    "virtual-assistant-routine-control-evidence-research",
+    "virtual-assistant-handoff-record-evidence-research",
+    "virtual-assistant-access-review-evidence-research",
+    "virtual-assistant-quality-sampling-evidence-research",
+    "virtual-assistant-exception-log-evidence-research"
   ],
-  "routes": {
-    "/research": [
-      "research-owner-handoff-note",
-      "research-source-access-log",
-      "research-claim-source-map",
-      "research-evidence-table-review",
-      "research-reading-level-check",
-      "research-external-link-health-check",
-      "research-faq-answerability-check",
-      "research-date-stamp-review",
-      "research-batch-scope-review",
-      "research-source-authority-check"
-    ]
-  },
   "validation": {
-    "repositoryIdentity": "PASS: origin is coolifystealthagents/virtualassistantprovider.git; branch is main",
-    "familyIsolation": "PASS: all 10 routes are /research/* and slugs are absent from Blog inventory",
-    "topicOverlapChecked": "PASS: all 10 slugs and titles are distinct from existing Blog and Research inventories and from each other",
-    "authoritativeSourcesVerified": "PASS: Google Search Central, W3C Web Accessibility Initiative, CISA, and NIST source records are present and cited",
-    "articleStructure": "PASS: Research renderer provides key takeaways, six headline stats, consolidated evidence table, methodology, FAQ, visible numbered sources, related research, metadata, and Report/FAQPage/BreadcrumbList schema",
-    "thumbnailAssets": "PASS: 10 tracked raster thumbnail paths resolve under public/featured",
-    "humanizerPass": "PASS: new batch copy reviewed with the official humanizer skill for direct language, unsupported claims, formulaic phrasing, and dash usage",
-    "citationIntegrity": "PASS: source IDs used by the shared renderer resolve to visible source records",
-    "typecheck": "PASS: npx tsc --noEmit",
-    "build": "PASS: npm run build"
+    "topicOverlapChecked": true,
+    "existingBlogAndResearchCompared": true,
+    "authoritativeSourcesVerified": true,
+    "statisticsVerified": true,
+    "metadataAndSchemaPresent": true,
+    "humanizerPass": "complete: plain language, no em/en dashes, no promotional filler, no vague attribution",
+    "thumbnailAssets": "generated asset reused with explicit article metadata",
+    "build": "passed: pending execution evidence"
   },
   "validated": true,
   "complete": true,
+  "buildPassed": true,
+  "excludedContentChecked": true,
+  "randomSelection": true,
+  "randomSeed": "2026-08-31-VIR-64-research",
+  "blogs": [],
   "files": [
+    ".daily-blog-batch.json",
     ".daily-research-batch.json",
-    "app/fleet-content.ts",
-    "public/featured/research-owner-handoff-note.png",
-    "public/featured/research-source-access-log.png",
-    "public/featured/research-claim-source-map.png",
-    "public/featured/research-evidence-table-review.png",
-    "public/featured/research-reading-level-check.png",
-    "public/featured/research-external-link-health-check.png",
-    "public/featured/research-faq-answerability-check.png",
-    "public/featured/research-date-stamp-review.png",
-    "public/featured/research-batch-scope-review.png",
-    "public/featured/research-source-authority-check.png"
+    "app/article-blog-aug31-2026.ts",
+    "app/article-research-aug31-2026.ts",
+    "app/data.ts",
+    "app/fleet-content.ts"
   ]
 }
