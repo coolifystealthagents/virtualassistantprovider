@@ -1,0 +1,11 @@
+{
+  "campaignDate": "2026-09-03",
+  "family": "research",
+  "entries": [
+    {"route":"/research/virtual-assistant-calendar-commitment-boundary-study","sourcePaths":["app/article-research-sep3-2026.ts"]},
+    {"route":"/research/virtual-assistant-crm-duplicate-merge-reversibility-study","sourcePaths":["app/article-research-sep3-2026.ts"]},
+    {"route":"/research/virtual-assistant-support-reopen-cause-coding-study","sourcePaths":["app/article-research-sep3-2026.ts"]},
+    {"route":"/research/virtual-assistant-ecommerce-inventory-adjustment-evidence-study","sourcePaths":["app/article-research-sep3-2026.ts"]},
+    {"route":"/research/virtual-assistant-candidate-scheduling-friction-study","sourcePaths":["app/article-research-sep3-2026.ts"]}
+  ]
+}
