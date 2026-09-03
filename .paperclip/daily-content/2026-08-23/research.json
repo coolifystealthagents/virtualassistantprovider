@@ -1,0 +1,36 @@
+{
+  "campaignDate": "2026-08-23",
+  "family": "research",
+  "entries": [
+    {
+      "route": "/research/virtual-assistant-work-resumption-state-study",
+      "sourcePaths": [
+        "app/article-research-aug23-2026.ts"
+      ]
+    },
+    {
+      "route": "/research/virtual-assistant-brief-interpretation-divergence-study",
+      "sourcePaths": [
+        "app/article-research-aug23-2026.ts"
+      ]
+    },
+    {
+      "route": "/research/virtual-assistant-permission-provisioning-stage-study",
+      "sourcePaths": [
+        "app/article-research-aug23-2026.ts"
+      ]
+    },
+    {
+      "route": "/research/virtual-assistant-support-guidance-validity-study",
+      "sourcePaths": [
+        "app/article-research-aug23-2026.ts"
+      ]
+    },
+    {
+      "route": "/research/virtual-assistant-exception-routing-agreement-study",
+      "sourcePaths": [
+        "app/article-research-aug23-2026.ts"
+      ]
+    }
+  ]
+}
