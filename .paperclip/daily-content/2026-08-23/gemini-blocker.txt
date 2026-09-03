@@ -1,0 +1,1 @@
+Gemini image generation unavailable: configured credential was rejected as invalid. Text-complete fallback used under contract v8. Existing shared route imagery retained; no stock substitute added.

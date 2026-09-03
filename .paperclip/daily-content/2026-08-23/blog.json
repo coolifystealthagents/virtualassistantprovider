@@ -1,0 +1,54 @@
+{
+  "campaignDate": "2026-08-23",
+  "family": "blog",
+  "entries": [
+    {
+      "route": "/blog/virtual-assistant-august-23-inbox-authority-ladder",
+      "sourcePath": "app/article-blog-aug23-2026.ts"
+    },
+    {
+      "route": "/blog/virtual-assistant-august-23-refund-evidence-packet",
+      "sourcePath": "app/article-blog-aug23-2026.ts"
+    },
+    {
+      "route": "/blog/virtual-assistant-august-23-catalog-change-preview",
+      "sourcePath": "app/article-blog-aug23-2026.ts"
+    },
+    {
+      "route": "/blog/virtual-assistant-august-23-crm-field-retirement-audit",
+      "sourcePath": "app/article-blog-aug23-2026.ts"
+    },
+    {
+      "route": "/blog/virtual-assistant-august-23-candidate-interview-log",
+      "sourcePath": "app/article-blog-aug23-2026.ts"
+    },
+    {
+      "route": "/blog/virtual-assistant-august-23-vendor-renewal-brief",
+      "sourcePath": "app/article-blog-aug23-2026.ts"
+    },
+    {
+      "route": "/blog/virtual-assistant-august-23-travel-disruption-desk",
+      "sourcePath": "app/article-blog-aug23-2026.ts"
+    },
+    {
+      "route": "/blog/virtual-assistant-august-23-referral-intake-boundary",
+      "sourcePath": "app/article-blog-aug23-2026.ts"
+    },
+    {
+      "route": "/blog/virtual-assistant-august-23-content-correction-register",
+      "sourcePath": "app/article-blog-aug23-2026.ts"
+    },
+    {
+      "route": "/blog/virtual-assistant-august-23-bookkeeping-exception-queue",
+      "sourcePath": "app/article-blog-aug23-2026.ts"
+    },
+    {
+      "route": "/blog/virtual-assistant-august-23-customer-voice-tags",
+      "sourcePath": "app/article-blog-aug23-2026.ts"
+    },
+    {
+      "route": "/blog/virtual-assistant-august-23-access-exit-rehearsal",
+      "sourcePath": "app/article-blog-aug23-2026.ts"
+    }
+  ]
+}
