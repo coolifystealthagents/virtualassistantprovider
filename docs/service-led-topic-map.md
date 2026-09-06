@@ -22,3 +22,9 @@ This is an execution ledger for existing Virtual Assistant Provider routes. It d
 ## Execution rule
 
 Work one verified-absent pair at a time. Before editing, build the route and inspect only its `<main>` or `<article>` for the exact service href; navigation links do not count. A completed source handoff is marked delivered locally and is not recreated while deployment or public verification is pending.
+
+## Release status — 2026-09-06
+
+- Rendered source: b3a4407e1d02ab0297aae633221bac0f5be89bfd added the customer-support QA handoff. The local production artifact has the expected H1, one `data-route-next-action` section, one `/services/customer-support-assistants` link inside `<main>`, canonical URL, Article and Open Graph modified date `2026-09-06`, and sitemap location (this sitemap has no `<lastmod>` by repository contract).
+- Cache-busted apex and www responses both returned HTTP 200 with the expected H1 and canonical URL, but neither rendered the new section, exact service link, or modified metadata. The GitHub deployment workflow could not be dispatched from this operator because approved GitHub authentication was unavailable; no direct provider target was inferred or triggered.
+- Classification: `deployment_pending_public_verification / public_stale`. Preserve rendered-source commit b3a4407e1d02ab0297aae633221bac0f5be89bfd while the approved deployment routine catches up; do not add a duplicate handoff.
