@@ -1,6 +1,6 @@
 # Service-led topic map
 
-Updated: 2026-09-05
+Updated: 2026-09-06
 
 This is an execution ledger for existing Virtual Assistant Provider routes. It does not authorize new pages or duplicate calls to action. Each row has one buyer question, one existing service pillar, and one source route that must be checked in built route-local content before a handoff is added.
 
@@ -9,7 +9,7 @@ This is an execution ledger for existing Virtual Assistant Provider routes. It d
 | Service pillar | Buyer question | Existing supporting route | Route-local service link | Next action |
 | --- | --- | --- | --- | --- |
 | `/services/executive-assistant-staffing` | How can an owner set up calendar support without handing over travel, spending, or final commitments? | `/research/executive-assistant-calendar-coordination-evidence` | Delivered locally | The typed research record and its shared renderer already emit one route-local service link. Preserve this delivery and add no duplicate CTA while public rollout remains separately pending. |
-| `/services/customer-support-assistants` | How can a manager give a Philippines-based assistant a safe first customer-support queue? | `/blog/virtual-assistant-customer-support-qa-philippines` | Verify absent | First verified-absent candidate: add one route-local handoff only if a fresh generated article still has no link to this service. Keep refunds and unusual requests with the manager. |
+| `/services/customer-support-assistants` | How can a manager give a Philippines-based assistant a safe first customer-support queue? | `/blog/virtual-assistant-customer-support-qa-philippines` | Delivered locally | The typed blog record and shared renderer now emit one route-local service link. Preserve this delivery and add no duplicate CTA while public rollout remains separately pending. |
 | `/services/sales-support-assistants` | How can a team keep CRM follow-up moving without giving away sales decisions? | `/blog/virtual-assistant-crm-cleanup-philippines` | Verify absent | Second candidate: add one route-local handoff only if absent. Keep qualification, promises, and negotiation with the sales owner. |
 | `/services/bookkeeping-assistants` | What records can an assistant prepare before an owner reviews money decisions? | `/blog/virtual-assistant-bookkeeping-admin-philippines` | Verify absent | Third candidate: add one route-local handoff only if absent. Do not imply payment approval or accounting advice. |
 | `/services/ecommerce-assistants` | How can an owner test order and catalog support before giving wider access? | `/blog/virtual-assistant-ecommerce-qa-philippines` | Verify absent | Candidate after the first three. Keep refunds, pricing, and customer exceptions with the owner. |

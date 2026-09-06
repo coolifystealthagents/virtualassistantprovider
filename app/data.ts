@@ -145,6 +145,16 @@ const dailyBlogPosts: BlogPost[] = dailyBlogBatchTopics.map(([slug, title, topic
   ],
   sources: dailyBlogSources,
   relatedServices: [],
+  ...(slug === 'virtual-assistant-customer-support-qa-philippines' ? {
+    published: '2026-08-07',
+    updated: '2026-09-06',
+    nextAction: {
+      heading: 'Set up the first support lane',
+      href: '/services/customer-support-assistants',
+      label: 'Plan customer support assistant staffing',
+      description: 'Use the role guide to turn the ticket types, approved answers, stop rules, and manager review into a Philippines-based support brief. The manager keeps refunds, unusual requests, and customer promises.',
+    },
+  } : {}),
 }));
 
 export const roles = services.map((service) => service.name);
@@ -182,6 +192,7 @@ export type BlogPost = {
   updated?: string;
   displayDate?: string;
   articleLinks?: { label: string; href: string; external?: boolean }[];
+  nextAction?: { heading: string; href: string; label: string; description: string };
 };
 
 export const blogPosts: BlogPost[] = [
