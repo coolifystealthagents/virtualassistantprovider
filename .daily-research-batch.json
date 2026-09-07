@@ -1,14 +1,14 @@
 {
-  "batchId": "2026-08-31-research-5",
+  "batchId": "2026-09-07-research-5",
   "scope": "research",
   "quantity": 5,
-  "selectionSeed": "2026-08-31-VIR-64-research",
+  "selectionSeed": "2026-09-07-VIR-70-research",
   "slugs": [
-    "virtual-assistant-routine-control-evidence-research",
-    "virtual-assistant-handoff-record-evidence-research",
-    "virtual-assistant-access-review-evidence-research",
-    "virtual-assistant-quality-sampling-evidence-research",
-    "virtual-assistant-exception-log-evidence-research"
+    "virtual-assistant-interruption-cost-observation-study",
+    "virtual-assistant-source-freshness-verification-study",
+    "virtual-assistant-redaction-quality-sampling-study",
+    "virtual-assistant-instruction-change-adoption-study",
+    "virtual-assistant-rework-rate-denominator-study"
   ],
   "validation": {
     "topicOverlapChecked": true,
@@ -16,22 +16,22 @@
     "authoritativeSourcesVerified": true,
     "statisticsVerified": true,
     "metadataAndSchemaPresent": true,
-    "humanizerPass": "complete: plain language, no em/en dashes, no promotional filler, no vague attribution",
-    "thumbnailAssets": "generated asset reused with explicit article metadata",
-    "build": "passed: pending execution evidence"
+    "humanizerPass": "complete: plain language and niche-specific review",
+    "thumbnailAssets": "generated approved inventory asset reused with explicit metadata",
+    "build": "passed: npm run build, 451 static pages generated"
   },
   "validated": true,
   "complete": true,
   "buildPassed": true,
   "excludedContentChecked": true,
-  "randomSelection": true,
-  "randomSeed": "2026-08-31-VIR-64-research",
+  "randomSelection": false,
+  "randomSeed": "2026-09-07-VIR-70-research",
   "blogs": [],
   "files": [
     ".daily-blog-batch.json",
     ".daily-research-batch.json",
-    "app/article-blog-aug31-2026.ts",
-    "app/article-research-aug31-2026.ts",
+    "app/article-blog-sep7-2026.ts",
+    "app/article-research-sep7-2026.ts",
     "app/data.ts",
     "app/fleet-content.ts"
   ]
