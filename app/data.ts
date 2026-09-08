@@ -147,6 +147,16 @@ const dailyBlogPosts: BlogPost[] = dailyBlogBatchTopics.map(([slug, title, topic
   ],
   sources: dailyBlogSources,
   relatedServices: [],
+  ...(slug === 'virtual-assistant-crm-cleanup-philippines' ? {
+    published: '2026-08-07',
+    updated: '2026-09-08',
+    nextAction: {
+      heading: 'Set up a sales support work lane',
+      href: '/services/sales-support-assistants',
+      label: 'Plan sales support assistant staffing',
+      description: 'Use the role guide to set the CRM fields, approved sources, review steps, and stop rules for a Philippines-based assistant. The sales owner keeps lead qualification, promises, negotiation, and pipeline decisions.',
+    },
+  } : {}),
   ...(slug === 'virtual-assistant-customer-support-qa-philippines' ? {
     published: '2026-08-07',
     updated: '2026-09-06',
