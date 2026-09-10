@@ -13,6 +13,7 @@ import { september4BlogPosts } from './article-blog-sep4-2026';
 import { september7BlogPosts } from './article-blog-sep7-2026';
 import { september8BlogPosts } from './article-blog-sep8-2026';
 import { september9BlogPosts } from './article-blog-sep9-2026';
+import { september10BlogPosts } from './article-blog-sep10-2026';
 
 export const site = {
   domain: 'VirtualAssistantProvider.com',
@@ -491,7 +492,7 @@ const august11BlogPosts: BlogPost[] = [
   sources: [{ name: 'NIST Access Control Project', url: 'https://csrc.nist.gov/projects/access-control', note: 'Limit actions to approved users and purposes.' }, { name: 'CISA More than a Password', url: 'https://www.cisa.gov/more-password', note: 'Protect accounts that handle business and customer records.' }], relatedServices: [],
 }));
 
-blogPosts.push(...august11BlogPosts, ...august12ReplacementBlogPosts, ...august13BlogPosts, ...august14BlogPosts, ...august17BlogPosts, ...august20BlogPosts, ...august21BlogPosts, ...august23BlogPosts, ...august31BlogPosts, ...september1BlogPosts, ...september2BlogPosts, ...september4BlogPosts, ...september7BlogPosts, ...september8BlogPosts, ...september9BlogPosts);
+blogPosts.push(...august11BlogPosts, ...august12ReplacementBlogPosts, ...august13BlogPosts, ...august14BlogPosts, ...august17BlogPosts, ...august20BlogPosts, ...august21BlogPosts, ...august23BlogPosts, ...august31BlogPosts, ...september1BlogPosts, ...september2BlogPosts, ...september4BlogPosts, ...september7BlogPosts, ...september8BlogPosts, ...september9BlogPosts, ...september10BlogPosts);
 
 // Keep dated articles newest-first while preserving source order for equal dates.
 blogPosts.sort((a, b) => (b.published ?? '').localeCompare(a.published ?? ''));
