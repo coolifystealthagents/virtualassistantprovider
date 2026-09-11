@@ -127,7 +127,7 @@ export default async function ResearchArticle({ params }: PageProps) {
               <img src={post.featuredImage} alt="" width="1200" height="675" />
               <p className="lead">{post.excerpt}</p>
               <div className="research-meta" aria-label="Article details">
-                <span>Published <time dateTime={post.published}>{formatDate(post.published)}</time></span>
+                <span>Published: <time dateTime={post.published}>{formatDate(post.published)}</time></span>
                 <span>Updated <time dateTime={post.updated}>{formatDate(post.updated)}</time></span>
                 <span>{post.readingMinutes} minute read</span>
                 <span>{post.sources.length} direct sources</span>
