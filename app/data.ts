@@ -171,6 +171,16 @@ const dailyBlogPosts: BlogPost[] = dailyBlogBatchTopics.map(([slug, title, topic
       description: 'Use the role guide to turn the ticket types, approved answers, stop rules, and manager review into a Philippines-based support brief. The manager keeps refunds, unusual requests, and customer promises.',
     },
   } : {}),
+  ...(slug === 'virtual-assistant-bookkeeping-admin-philippines' ? {
+    published: '2026-08-07',
+    updated: '2026-09-13',
+    nextAction: {
+      heading: 'Set up a bookkeeping preparation lane',
+      href: '/services/bookkeeping-assistants',
+      label: 'Plan bookkeeping assistant staffing',
+      description: 'Use the role guide to set the source records, approved coding rules, review steps, and stop rules for a Philippines-based assistant. The accountable owner keeps payment approval, tax choices, bank movement, and final close sign-off.',
+    },
+  } : {}),
 }));
 
 export const roles = services.map((service) => service.name);
