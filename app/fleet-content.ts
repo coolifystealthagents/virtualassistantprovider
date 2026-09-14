@@ -13,6 +13,7 @@ import { september8ResearchPosts } from './article-research-sep8-2026';
 import { september9ResearchPosts } from './article-research-sep9-2026';
 import { september10ResearchPosts } from './article-research-sep10-2026';
 import { september11ResearchPosts } from './article-research-sep11-2026';
+import { september14ResearchPosts } from './article-research-sep14-2026';
 import { august23ResearchPosts } from './article-research-aug23-2026';
 
 export const fleetServices = [
@@ -823,6 +824,7 @@ researchPosts = [...researchPosts, ...publishingResearchConfigs.map(makePublishi
   .concat(september9ResearchPosts)
   .concat(september10ResearchPosts)
   .concat(september11ResearchPosts)
+  .concat(september14ResearchPosts)
   .concat(september3ResearchPosts)
   .concat(september1ResearchPosts)
   .sort((a, b) => b.published.localeCompare(a.published));
