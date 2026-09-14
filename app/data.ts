@@ -181,6 +181,16 @@ const dailyBlogPosts: BlogPost[] = dailyBlogBatchTopics.map(([slug, title, topic
       description: 'Use the role guide to set the source records, approved coding rules, review steps, and stop rules for a Philippines-based assistant. The accountable owner keeps payment approval, tax choices, bank movement, and final close sign-off.',
     },
   } : {}),
+  ...(slug === 'virtual-assistant-ecommerce-qa-philippines' ? {
+    published: '2026-08-07',
+    updated: '2026-09-14',
+    nextAction: {
+      heading: 'Set up an ecommerce quality-check lane',
+      href: '/services/ecommerce-assistants',
+      label: 'Plan ecommerce assistant staffing',
+      description: 'Use the role guide to choose the product or order checks, approved source records, and first review steps for a Philippines-based assistant. The store owner keeps pricing, refunds, payment changes, and customer exceptions.',
+    },
+  } : {}),
 }));
 
 export const roles = services.map((service) => service.name);
