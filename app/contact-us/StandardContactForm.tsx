@@ -76,8 +76,8 @@ export default function StandardContactForm({ endpoint = "/api/submit-lead", enc
   return (
     <div className="sa-form-card">
       <h2>Find Growth In Your Business By Hiring Industry Experienced Virtual Assistants</h2>
-      <form onSubmit={submit} id="contactPageForm">
-        <input className="sa-hp" name="website_url" tabIndex={-1} autoComplete="off" aria-hidden="true" />
+      <form onSubmit={submit} id="contact-form" action={endpoint} method="post">
+        <input className="sa-hp" name="website_url" tabIndex={-1} autoComplete="off" aria-hidden="true" aria-label="Leave this field empty" />
         <div className="sa-grid">
           <label>First Name *<input name="firstName" required autoComplete="given-name" /></label>
           <label>Last Name *<input name="lastName" required autoComplete="family-name" /></label>
