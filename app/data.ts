@@ -192,6 +192,16 @@ const dailyBlogPosts: BlogPost[] = dailyBlogBatchTopics.map(([slug, title, topic
       description: 'Use the role guide to choose the product or order checks, approved source records, and first review steps for a Philippines-based assistant. The store owner keeps pricing, refunds, payment changes, and customer exceptions.',
     },
   } : {}),
+  ...(slug === 'virtual-assistant-content-operations-philippines' ? {
+    published: '2026-08-07',
+    updated: '2026-09-17',
+    nextAction: {
+      heading: 'Set up a content preparation lane',
+      href: '/services/marketing-assistants',
+      label: 'Plan marketing assistant staffing',
+      description: 'Use the role guide to define the brief, approved sources, review queue, and stop rules for a Philippines-based assistant. The owner approves claims, publishing, spending, and any change to the campaign plan.',
+    },
+  } : {}),
 }));
 
 export const roles = services.map((service) => service.name);
