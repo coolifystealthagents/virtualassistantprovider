@@ -1,14 +1,14 @@
 {
-  "batchId": "2026-09-08-research-5",
+  "batchId": "2026-09-18-research-5",
   "scope": "research",
   "quantity": 5,
-  "selectionSeed": "2026-09-08-VIR-71-research",
+  "selectionSeed": "2026-09-18-VIR-78-research",
   "slugs": [
-    "virtual-assistant-evidence-packet-completeness-study",
-    "virtual-assistant-backup-coverage-handoff-study",
-    "virtual-assistant-least-privilege-role-review-study",
-    "virtual-assistant-knowledge-article-task-test-study",
-    "virtual-assistant-escalation-rate-denominator-study"
+    "executive-assistant-travel-change-verification-study",
+    "customer-support-identity-verification-boundary-study",
+    "sales-support-lead-source-permission-evidence-study",
+    "bookkeeping-assistant-duplicate-invoice-review-study",
+    "ecommerce-return-reason-coding-reliability-study"
   ],
   "validation": {
     "topicOverlapChecked": true,
@@ -18,21 +18,18 @@
     "metadataAndSchemaPresent": true,
     "humanizerPass": "complete: plain language and niche-specific review",
     "thumbnailAssets": "generated approved inventory asset reused with explicit metadata",
-    "build": "passed: npm run build, passed: npm run build, 469 static pages generated"
+    "build": "passed: npm run build, 545 static pages generated"
   },
   "validated": true,
-  "complete": true,
+  "complete": false,
   "buildPassed": true,
   "excludedContentChecked": true,
   "randomSelection": false,
-  "randomSeed": "2026-09-08-VIR-71-research",
+  "randomSeed": "2026-09-18-VIR-78-research",
   "blogs": [],
   "files": [
-    ".daily-blog-batch.json",
     ".daily-research-batch.json",
-    "app/article-blog-sep8-2026.ts",
-    "app/article-research-sep8-2026.ts",
-    "app/data.ts",
+    "app/article-research-sep18-2026.ts",
     "app/fleet-content.ts"
   ]
 }
