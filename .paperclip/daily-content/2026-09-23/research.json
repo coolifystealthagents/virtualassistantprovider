@@ -1,0 +1,103 @@
+{
+  "batchId": "2026-09-23-research-5",
+  "scope": "research",
+  "quantity": 5,
+  "selectionSeed": "2026-09-23-VIR-82-live-service-pillar-gap-audit",
+  "publicationTimezone": "UTC",
+  "requiredCount": 5,
+  "verifiedCount": 0,
+  "productionBranch": "main",
+  "baseProductionSha": "e97a7090fcfd963740e2adda84012cee2713430e",
+  "validated": true,
+  "complete": false,
+  "buildPassed": true,
+  "slugs": [
+    "executive-calendar-invite-verification-study",
+    "bookkeeping-receipt-evidence-chain-study",
+    "ecommerce-product-recall-routing-study",
+    "employee-offboarding-access-removal-study",
+    "customer-support-account-recovery-escalation-study"
+  ],
+  "articles": [
+    {
+      "family": "research",
+      "topic": "External calendar invite verification for executive assistant teams",
+      "slug": "executive-calendar-invite-verification-study",
+      "sources": "recorded in article source list; checked 2026-09-23",
+      "contentHash": "5ef2a2e16e6ee8a1e5002b814e9b6abd164bfca2583af2b571b1152db6c27faf",
+      "publicationDate": "2026-09-23",
+      "commitSha": "82337b96f41229303244adb97d2ded22e4035b91",
+      "deploymentEvidence": null,
+      "liveUrl": "https://virtualassistantprovider.com/research/executive-calendar-invite-verification-study",
+      "verificationTime": null,
+      "wordCount": 2241
+    },
+    {
+      "family": "research",
+      "topic": "Receipt evidence chains for bookkeeping virtual assistant support",
+      "slug": "bookkeeping-receipt-evidence-chain-study",
+      "sources": "recorded in article source list; checked 2026-09-23",
+      "contentHash": "cfa5f2bbf32739d52d0e4d8144d62cfd609179edc408a6d815e47874642c9805",
+      "publicationDate": "2026-09-23",
+      "commitSha": "82337b96f41229303244adb97d2ded22e4035b91",
+      "deploymentEvidence": null,
+      "liveUrl": "https://virtualassistantprovider.com/research/bookkeeping-receipt-evidence-chain-study",
+      "verificationTime": null,
+      "wordCount": 2189
+    },
+    {
+      "family": "research",
+      "topic": "Product recall routing for ecommerce virtual assistant teams",
+      "slug": "ecommerce-product-recall-routing-study",
+      "sources": "recorded in article source list; checked 2026-09-23",
+      "contentHash": "162452184cd82b38d9356dbba662a8e2a5ab9fb0248ce3fb27b942a532345fa3",
+      "publicationDate": "2026-09-23",
+      "commitSha": "82337b96f41229303244adb97d2ded22e4035b91",
+      "deploymentEvidence": null,
+      "liveUrl": "https://virtualassistantprovider.com/research/ecommerce-product-recall-routing-study",
+      "verificationTime": null,
+      "wordCount": 2193
+    },
+    {
+      "family": "research",
+      "topic": "Employee offboarding access removal for administrative assistant support",
+      "slug": "employee-offboarding-access-removal-study",
+      "sources": "recorded in article source list; checked 2026-09-23",
+      "contentHash": "ff5fc2f3ab5abba89f024f200d957181c070b6d94f983aabf3b37a0e5d29be6a",
+      "publicationDate": "2026-09-23",
+      "commitSha": "82337b96f41229303244adb97d2ded22e4035b91",
+      "deploymentEvidence": null,
+      "liveUrl": "https://virtualassistantprovider.com/research/employee-offboarding-access-removal-study",
+      "verificationTime": null,
+      "wordCount": 2204
+    },
+    {
+      "family": "research",
+      "topic": "Account recovery escalation boundaries for customer support assistants",
+      "slug": "customer-support-account-recovery-escalation-study",
+      "sources": "recorded in article source list; checked 2026-09-23",
+      "contentHash": "64cd74f3328848319c20946536432589771ee725ff11a052e6891e8a55ecff91",
+      "publicationDate": "2026-09-23",
+      "commitSha": "82337b96f41229303244adb97d2ded22e4035b91",
+      "deploymentEvidence": null,
+      "liveUrl": "https://virtualassistantprovider.com/research/customer-support-account-recovery-escalation-study",
+      "verificationTime": null,
+      "wordCount": 2246
+    }
+  ],
+  "validation": {
+    "topicOverlapChecked": true,
+    "existingBlogAndResearchCompared": true,
+    "authoritativeSourcesVerified": true,
+    "metadataAndSchemaPresent": true,
+    "lint": "passed",
+    "build": "passed: 568 static pages generated",
+    "renderedWordCounts": {
+      "executive-calendar-invite-verification-study": 2241,
+      "bookkeeping-receipt-evidence-chain-study": 2189,
+      "ecommerce-product-recall-routing-study": 2193,
+      "employee-offboarding-access-removal-study": 2204,
+      "customer-support-account-recovery-escalation-study": 2246
+    }
+  }
+}
