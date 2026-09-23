@@ -25,3 +25,7 @@ This is a source-only planning record. It connects existing Philippines-based se
 4. Add two short, original sentences in plain language. The link should help with the next decision, not repeat a navigation link.
 5. Refresh the source page's actual `updated` field and verify the rendered schema, canonical route, and sitemap after the build.
 6. A public handoff needs a commit, deployment, and cache-busted apex and `www` verification before this ledger may call it verified.
+
+## 2026-09-23 buyer-decision batch
+
+Twelve new Blog guides strengthen provider-selection and operating-model conversion paths. Public verification is pending deployment.
