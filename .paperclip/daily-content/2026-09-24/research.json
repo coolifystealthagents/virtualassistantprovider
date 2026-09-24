@@ -163,6 +163,17 @@
       "healthcare-record-access-request-intake-study": 6244,
       "recruiting-assessment-accommodation-handoff-study": 6108,
       "marketing-testimonial-evidence-handoff-study": 6180
-    }
-  }
+    },
+    "statisticsVerified": true,
+    "humanizerPass": "complete: plain-language, source-boundary, and non-promotional review",
+    "thumbnailAssets": "generated existing editorial asset reused consistently with established media treatment"
+  },
+  "excludedContentChecked": true,
+  "files": [
+    ".daily-research-batch.json",
+    ".paperclip/daily-content/2026-09-24/research.json",
+    "app/article-research-sep24-2026.ts",
+    "app/fleet-content.ts",
+    "scripts/generate_sep24_research.mjs"
+  ]
 }
