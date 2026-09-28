@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const checkpointDetailsBySlug = require('./sep28-browser-checkpoint-2.json');
 
 const topics = [
@@ -124,7 +125,7 @@ The eight sections together must contain 1,050-1,300 substantive words. Each sec
   }
   const clean = articles.map(({ _family, ...article }) => article);
   fs.writeFileSync(path.join(__dirname, '..', 'app', 'article-blog-sep28-2026.ts'), `import type { BlogPost } from './data';\n\nexport const september28BlogPosts: BlogPost[] = ${JSON.stringify(clean, null, 2)};\n`);
-  fs.writeFileSync(path.join(__dirname, '..', '.paperclip', 'daily-content', '2026-09-28-blog-draft.json'), JSON.stringify({ batchId: '2026-09-28-vir-93-blog-12', taskId: process.env.PAPERCLIP_TASK_ID, runId: process.env.PAPERCLIP_RUN_ID, baselineSha: '3dfd6b8ffe68045ef009ac5edbf08fbc1652ba3d', timezone: 'UTC', publicationDate: '2026-09-28', quantity: 12, blogs: articles.map((a) => ({ family: a._family, topic: a.title, slug: a.slug, sources: a.sources.map((s) => s.url), liveUrl: `https://virtualassistantprovider.com/blog/${a.slug}` })) }, null, 2));
+  fs.writeFileSync(path.join(__dirname, '..', '.paperclip', 'daily-content', '2026-09-28-blog-draft.json'), JSON.stringify({ batchId: '2026-09-28-vir-93-blog-12', taskId: process.env.PAPERCLIP_TASK_ID, runId: process.env.PAPERCLIP_RUN_ID, baselineSha: '3dfd6b8ffe68045ef009ac5edbf08fbc1652ba3d', timezone: 'UTC', publicationDate: '2026-09-28', quantity: 12, blogs: articles.map((a) => { const body = a.sections.map((section) => section.body).join(" "); return { family: a._family, topic: a.title, slug: a.slug, sources: a.sources.map((s) => s.url), publicationDate: a.published, contentHash: crypto.createHash("sha256").update(body).digest("hex"), wordCount: body.trim().split(/\s+/).length, liveUrl: `https://virtualassistantprovider.com/blog/${a.slug}`, deploymentEvidence: null, verificationTime: null }; }) }, null, 2));
 }
 
 main().catch((error) => { console.error(error.stack || error); process.exit(1); });

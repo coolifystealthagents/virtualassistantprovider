@@ -17,15 +17,15 @@
   ],
   "validation": {
     "lint": "passed",
-    "build": "passed: 620 static pages",
+    "build": "passed: 633 static pages (combined release)",
     "renderedBodyWordCounts": {
-      "executive-calendar-delegated-access-review-study": 3030,
-      "bookkeeping-receipt-source-lineage-study": 3072,
-      "ecommerce-return-receipt-reconciliation-study": 3094,
-      "customer-support-security-escalation-study": 3085,
-      "property-maintenance-vendor-credential-expiry-study": 3151
+      "executive-calendar-delegated-access-review-study": 2439,
+      "bookkeeping-receipt-source-lineage-study": 2481,
+      "ecommerce-return-receipt-reconciliation-study": 2496,
+      "customer-support-security-escalation-study": 2485,
+      "property-maintenance-vendor-credential-expiry-study": 2526
     },
-    "maximumPairwiseFiveWordShingleJaccard": 0.468,
+    "maximumPairwiseFiveWordShingleJaccard": 0.42070275403608737,
     "overlapThreshold": 0.5
   },
   "articles": [
@@ -33,56 +33,56 @@
       "family": "research",
       "slug": "executive-calendar-delegated-access-review-study",
       "publicationDate": "2026-09-28",
-      "contentHash": "e63480ebdda46bc0256ebe90f54515b29f16616cf769586274761420553045a7",
+      "contentHash": "b294ea7b2006f9e20a42f2b9201de46ffe76be1eeb29eccda20f06f44d674af0",
       "commitSha": "3118bb14c15438e6ba7324b14a2edae4853ec436",
       "liveUrl": "https://virtualassistantprovider.com/research/executive-calendar-delegated-access-review-study",
       "deploymentEvidence": null,
       "verificationTime": null,
-      "wordCount": 3030
+      "wordCount": 2439
     },
     {
       "family": "research",
       "slug": "bookkeeping-receipt-source-lineage-study",
       "publicationDate": "2026-09-28",
-      "contentHash": "e63480ebdda46bc0256ebe90f54515b29f16616cf769586274761420553045a7",
+      "contentHash": "44843e40eb8020652f2eab05d5d5b7f82c4ee7f3326ca1733715f4822d9469ce",
       "commitSha": "3118bb14c15438e6ba7324b14a2edae4853ec436",
       "liveUrl": "https://virtualassistantprovider.com/research/bookkeeping-receipt-source-lineage-study",
       "deploymentEvidence": null,
       "verificationTime": null,
-      "wordCount": 3072
+      "wordCount": 2481
     },
     {
       "family": "research",
       "slug": "ecommerce-return-receipt-reconciliation-study",
       "publicationDate": "2026-09-28",
-      "contentHash": "e63480ebdda46bc0256ebe90f54515b29f16616cf769586274761420553045a7",
+      "contentHash": "8237617d14fcdedf2083319208b7177d5962d57bdec8673c87e1c6f8315966c9",
       "commitSha": "3118bb14c15438e6ba7324b14a2edae4853ec436",
       "liveUrl": "https://virtualassistantprovider.com/research/ecommerce-return-receipt-reconciliation-study",
       "deploymentEvidence": null,
       "verificationTime": null,
-      "wordCount": 3094
+      "wordCount": 2496
     },
     {
       "family": "research",
       "slug": "customer-support-security-escalation-study",
       "publicationDate": "2026-09-28",
-      "contentHash": "e63480ebdda46bc0256ebe90f54515b29f16616cf769586274761420553045a7",
+      "contentHash": "d5e4c37c51804dd5825e4365c24cfcaf2b7bcd64291db38835cc2544c1dddde3",
       "commitSha": "3118bb14c15438e6ba7324b14a2edae4853ec436",
       "liveUrl": "https://virtualassistantprovider.com/research/customer-support-security-escalation-study",
       "deploymentEvidence": null,
       "verificationTime": null,
-      "wordCount": 3085
+      "wordCount": 2485
     },
     {
       "family": "research",
       "slug": "property-maintenance-vendor-credential-expiry-study",
       "publicationDate": "2026-09-28",
-      "contentHash": "e63480ebdda46bc0256ebe90f54515b29f16616cf769586274761420553045a7",
+      "contentHash": "e60ac7a1c31637e183bc2ae29be0a59090e31e003add7bc4cb5c8e0054617785",
       "commitSha": "3118bb14c15438e6ba7324b14a2edae4853ec436",
       "liveUrl": "https://virtualassistantprovider.com/research/property-maintenance-vendor-credential-expiry-study",
       "deploymentEvidence": null,
       "verificationTime": null,
-      "wordCount": 3151
+      "wordCount": 2526
     }
   ]
 }

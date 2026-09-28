@@ -1,7 +1,7 @@
 {
   "batchId": "2026-09-28-vir-93-blog-12",
   "taskId": "be739316-400d-425e-bb37-48fec94e3e6e",
-  "runId": "fd06a505-472a-4b26-946c-a8db666bfd0d",
+  "runId": "339bad71-197d-42cd-8d1c-9ecd813c8d60",
   "baselineSha": "3dfd6b8ffe68045ef009ac5edbf08fbc1652ba3d",
   "timezone": "UTC",
   "publicationDate": "2026-09-28",
@@ -16,7 +16,12 @@
         "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
         "https://www.plainlanguage.gov/guidelines/"
       ],
-      "liveUrl": "https://virtualassistantprovider.com/blog/executive-assistant-meeting-pre-read-workflow"
+      "publicationDate": "2026-09-28",
+      "contentHash": "ff6dab0b332bc0a6362fdcfd77a91302a5862806c581f7412b1ca2d098a33105",
+      "wordCount": 1397,
+      "liveUrl": "https://virtualassistantprovider.com/blog/executive-assistant-meeting-pre-read-workflow",
+      "deploymentEvidence": null,
+      "verificationTime": null
     },
     {
       "family": "customer-support",
@@ -27,7 +32,12 @@
         "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
         "https://www.plainlanguage.gov/guidelines/"
       ],
-      "liveUrl": "https://virtualassistantprovider.com/blog/customer-support-ticket-reopen-analysis"
+      "publicationDate": "2026-09-28",
+      "contentHash": "fafb4fffbcdc1a5274d8eafb6f6d554296e743fe98d7332f6074ee82b9e10317",
+      "wordCount": 1407,
+      "liveUrl": "https://virtualassistantprovider.com/blog/customer-support-ticket-reopen-analysis",
+      "deploymentEvidence": null,
+      "verificationTime": null
     },
     {
       "family": "sales-support",
@@ -38,7 +48,12 @@
         "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
         "https://www.plainlanguage.gov/guidelines/"
       ],
-      "liveUrl": "https://virtualassistantprovider.com/blog/sales-assistant-lead-source-reconciliation"
+      "publicationDate": "2026-09-28",
+      "contentHash": "d5ad37bc6f3cc7f2599422b2fef1d8c7cbb4b3f0ff5fc9a0feed1a0cb74ec5b3",
+      "wordCount": 1388,
+      "liveUrl": "https://virtualassistantprovider.com/blog/sales-assistant-lead-source-reconciliation",
+      "deploymentEvidence": null,
+      "verificationTime": null
     },
     {
       "family": "bookkeeping",
@@ -49,7 +64,12 @@
         "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
         "https://www.plainlanguage.gov/guidelines/"
       ],
-      "liveUrl": "https://virtualassistantprovider.com/blog/bookkeeping-assistant-vendor-statement-reconciliation"
+      "publicationDate": "2026-09-28",
+      "contentHash": "ce533844b55ed7ab7e60629755271effae920a51b6f04522ba2c8280931d69f6",
+      "wordCount": 1036,
+      "liveUrl": "https://virtualassistantprovider.com/blog/bookkeeping-assistant-vendor-statement-reconciliation",
+      "deploymentEvidence": null,
+      "verificationTime": null
     },
     {
       "family": "ecommerce",
@@ -60,7 +80,12 @@
         "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
         "https://www.plainlanguage.gov/guidelines/"
       ],
-      "liveUrl": "https://virtualassistantprovider.com/blog/ecommerce-assistant-product-data-change-control"
+      "publicationDate": "2026-09-28",
+      "contentHash": "0665bf8ed4772b73dd963079ae3455e918d31d88286ff8eb24f342291ba08d0e",
+      "wordCount": 1038,
+      "liveUrl": "https://virtualassistantprovider.com/blog/ecommerce-assistant-product-data-change-control",
+      "deploymentEvidence": null,
+      "verificationTime": null
     },
     {
       "family": "real-estate",
@@ -71,7 +96,12 @@
         "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
         "https://www.plainlanguage.gov/guidelines/"
       ],
-      "liveUrl": "https://virtualassistantprovider.com/blog/real-estate-assistant-showing-feedback-routing"
+      "publicationDate": "2026-09-28",
+      "contentHash": "d43d4d088a0f716bf0ddda6ecf61398913315485ea895cb4363256b795a2d8cd",
+      "wordCount": 998,
+      "liveUrl": "https://virtualassistantprovider.com/blog/real-estate-assistant-showing-feedback-routing",
+      "deploymentEvidence": null,
+      "verificationTime": null
     },
     {
       "family": "healthcare-admin",
@@ -82,7 +112,12 @@
         "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
         "https://www.plainlanguage.gov/guidelines/"
       ],
-      "liveUrl": "https://virtualassistantprovider.com/blog/healthcare-admin-assistant-record-request-tracker"
+      "publicationDate": "2026-09-28",
+      "contentHash": "413bb92af69720b63f0a52283e12a911ae8f903dac8d8557359e0502f58d5304",
+      "wordCount": 1041,
+      "liveUrl": "https://virtualassistantprovider.com/blog/healthcare-admin-assistant-record-request-tracker",
+      "deploymentEvidence": null,
+      "verificationTime": null
     },
     {
       "family": "marketing",
@@ -93,7 +128,12 @@
         "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
         "https://www.plainlanguage.gov/guidelines/"
       ],
-      "liveUrl": "https://virtualassistantprovider.com/blog/marketing-assistant-content-approval-register"
+      "publicationDate": "2026-09-28",
+      "contentHash": "a43f1eed2f982faf0b6b0f521f8eba2af5aa16bda3d944ec018b5e590c551e8d",
+      "wordCount": 1003,
+      "liveUrl": "https://virtualassistantprovider.com/blog/marketing-assistant-content-approval-register",
+      "deploymentEvidence": null,
+      "verificationTime": null
     },
     {
       "family": "recruiting",
@@ -104,7 +144,12 @@
         "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
         "https://www.plainlanguage.gov/guidelines/"
       ],
-      "liveUrl": "https://virtualassistantprovider.com/blog/recruiting-assistant-interview-scheduling-accessibility"
+      "publicationDate": "2026-09-28",
+      "contentHash": "68966309c1c5112c25173aa732ea9790f84ca3e3064aa2aab2451de13a702c6e",
+      "wordCount": 992,
+      "liveUrl": "https://virtualassistantprovider.com/blog/recruiting-assistant-interview-scheduling-accessibility",
+      "deploymentEvidence": null,
+      "verificationTime": null
     },
     {
       "family": "operations",
@@ -115,7 +160,12 @@
         "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
         "https://www.plainlanguage.gov/guidelines/"
       ],
-      "liveUrl": "https://virtualassistantprovider.com/blog/operations-assistant-recurring-report-close-checklist"
+      "publicationDate": "2026-09-28",
+      "contentHash": "0f16dc7b55356e73f8c5da3f0a460b110ebab3a2f2ad191d22467d8ee644ab6c",
+      "wordCount": 997,
+      "liveUrl": "https://virtualassistantprovider.com/blog/operations-assistant-recurring-report-close-checklist",
+      "deploymentEvidence": null,
+      "verificationTime": null
     },
     {
       "family": "legal-admin",
@@ -126,7 +176,12 @@
         "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
         "https://www.plainlanguage.gov/guidelines/"
       ],
-      "liveUrl": "https://virtualassistantprovider.com/blog/virtual-assistant-contract-renewal-notice-calendar"
+      "publicationDate": "2026-09-28",
+      "contentHash": "8a23c93967d4a979ffa5517d65b7332d97e302b57c5b4be419fae83f84cd967c",
+      "wordCount": 997,
+      "liveUrl": "https://virtualassistantprovider.com/blog/virtual-assistant-contract-renewal-notice-calendar",
+      "deploymentEvidence": null,
+      "verificationTime": null
     },
     {
       "family": "provider-selection",
@@ -137,7 +192,12 @@
         "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
         "https://www.plainlanguage.gov/guidelines/"
       ],
-      "liveUrl": "https://virtualassistantprovider.com/blog/virtual-assistant-backup-coverage-drill"
+      "publicationDate": "2026-09-28",
+      "contentHash": "08aac1e3c1ee8466be7ba4242b7a613f9ab47a0fbf76b356567931c9bd5a5df3",
+      "wordCount": 999,
+      "liveUrl": "https://virtualassistantprovider.com/blog/virtual-assistant-backup-coverage-drill",
+      "deploymentEvidence": null,
+      "verificationTime": null
     }
   ]
 }
