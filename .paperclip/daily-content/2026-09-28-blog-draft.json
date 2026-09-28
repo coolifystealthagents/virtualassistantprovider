@@ -1,0 +1,143 @@
+{
+  "batchId": "2026-09-28-vir-93-blog-12",
+  "taskId": "be739316-400d-425e-bb37-48fec94e3e6e",
+  "runId": "554cf4d6-dc4d-428a-a46c-8823bda1ca48",
+  "baselineSha": "3dfd6b8ffe68045ef009ac5edbf08fbc1652ba3d",
+  "timezone": "UTC",
+  "publicationDate": "2026-09-28",
+  "quantity": 12,
+  "blogs": [
+    {
+      "family": "executive-assistant",
+      "topic": "How an Executive Assistant Can Build a Decision-Ready Meeting Pre-Read",
+      "slug": "executive-assistant-meeting-pre-read-workflow",
+      "sources": [
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
+        "https://www.plainlanguage.gov/guidelines/"
+      ],
+      "liveUrl": "https://virtualassistantprovider.com/blog/executive-assistant-meeting-pre-read-workflow"
+    },
+    {
+      "family": "customer-support",
+      "topic": "How to Review Reopened Support Tickets Before Changing a Help Process",
+      "slug": "customer-support-ticket-reopen-analysis",
+      "sources": [
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
+        "https://www.plainlanguage.gov/guidelines/"
+      ],
+      "liveUrl": "https://virtualassistantprovider.com/blog/customer-support-ticket-reopen-analysis"
+    },
+    {
+      "family": "sales-support",
+      "topic": "A Lead-Source Reconciliation Workflow for a Sales Virtual Assistant",
+      "slug": "sales-assistant-lead-source-reconciliation",
+      "sources": [
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
+        "https://www.plainlanguage.gov/guidelines/"
+      ],
+      "liveUrl": "https://virtualassistantprovider.com/blog/sales-assistant-lead-source-reconciliation"
+    },
+    {
+      "family": "bookkeeping",
+      "topic": "How a Bookkeeping Assistant Can Prepare Vendor Statement Reconciliation",
+      "slug": "bookkeeping-assistant-vendor-statement-reconciliation",
+      "sources": [
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
+        "https://www.plainlanguage.gov/guidelines/"
+      ],
+      "liveUrl": "https://virtualassistantprovider.com/blog/bookkeeping-assistant-vendor-statement-reconciliation"
+    },
+    {
+      "family": "ecommerce",
+      "topic": "Product Data Change Control for an Ecommerce Virtual Assistant",
+      "slug": "ecommerce-assistant-product-data-change-control",
+      "sources": [
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
+        "https://www.plainlanguage.gov/guidelines/"
+      ],
+      "liveUrl": "https://virtualassistantprovider.com/blog/ecommerce-assistant-product-data-change-control"
+    },
+    {
+      "family": "real-estate",
+      "topic": "A Showing-Feedback Routing System for a Real Estate Virtual Assistant",
+      "slug": "real-estate-assistant-showing-feedback-routing",
+      "sources": [
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
+        "https://www.plainlanguage.gov/guidelines/"
+      ],
+      "liveUrl": "https://virtualassistantprovider.com/blog/real-estate-assistant-showing-feedback-routing"
+    },
+    {
+      "family": "healthcare-admin",
+      "topic": "Build a Medical Record Request Tracker Without Delegating Clinical Judgment",
+      "slug": "healthcare-admin-assistant-record-request-tracker",
+      "sources": [
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
+        "https://www.plainlanguage.gov/guidelines/"
+      ],
+      "liveUrl": "https://virtualassistantprovider.com/blog/healthcare-admin-assistant-record-request-tracker"
+    },
+    {
+      "family": "marketing",
+      "topic": "A Content Approval Register for a Marketing Virtual Assistant",
+      "slug": "marketing-assistant-content-approval-register",
+      "sources": [
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
+        "https://www.plainlanguage.gov/guidelines/"
+      ],
+      "liveUrl": "https://virtualassistantprovider.com/blog/marketing-assistant-content-approval-register"
+    },
+    {
+      "family": "recruiting",
+      "topic": "Accessible Interview Scheduling for a Recruiting Virtual Assistant",
+      "slug": "recruiting-assistant-interview-scheduling-accessibility",
+      "sources": [
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
+        "https://www.plainlanguage.gov/guidelines/"
+      ],
+      "liveUrl": "https://virtualassistantprovider.com/blog/recruiting-assistant-interview-scheduling-accessibility"
+    },
+    {
+      "family": "operations",
+      "topic": "How to Close a Recurring Operations Report Without Silent Data Gaps",
+      "slug": "operations-assistant-recurring-report-close-checklist",
+      "sources": [
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
+        "https://www.plainlanguage.gov/guidelines/"
+      ],
+      "liveUrl": "https://virtualassistantprovider.com/blog/operations-assistant-recurring-report-close-checklist"
+    },
+    {
+      "family": "legal-admin",
+      "topic": "A Contract Renewal Notice Calendar a Virtual Assistant Can Maintain Safely",
+      "slug": "virtual-assistant-contract-renewal-notice-calendar",
+      "sources": [
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
+        "https://www.plainlanguage.gov/guidelines/"
+      ],
+      "liveUrl": "https://virtualassistantprovider.com/blog/virtual-assistant-contract-renewal-notice-calendar"
+    },
+    {
+      "family": "provider-selection",
+      "topic": "How to Test a Virtual Assistant Provider’s Backup Coverage Before an Absence",
+      "slug": "virtual-assistant-backup-coverage-drill",
+      "sources": [
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+        "https://www.cisa.gov/secure-our-world/require-multifactor-authentication",
+        "https://www.plainlanguage.gov/guidelines/"
+      ],
+      "liveUrl": "https://virtualassistantprovider.com/blog/virtual-assistant-backup-coverage-drill"
+    }
+  ]
+}
