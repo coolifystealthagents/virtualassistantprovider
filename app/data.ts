@@ -1,3 +1,4 @@
+import { october2BlogPosts } from './article-blog-oct2-2026';
 import { august12ReplacementBlogPosts } from './article-blog-replacements-2026-08-12';
 import { august13BlogPosts } from './article-blog-aug13-2026';
 import { august14BlogPosts } from './article-blog-aug14-2026';
@@ -529,7 +530,7 @@ const august11BlogPosts: BlogPost[] = [
   sources: [{ name: 'NIST Access Control Project', url: 'https://csrc.nist.gov/projects/access-control', note: 'Limit actions to approved users and purposes.' }, { name: 'CISA More than a Password', url: 'https://www.cisa.gov/more-password', note: 'Protect accounts that handle business and customer records.' }], relatedServices: [],
 }));
 
-blogPosts.push(...august11BlogPosts, ...august12ReplacementBlogPosts, ...august13BlogPosts, ...august14BlogPosts, ...august17BlogPosts, ...august20BlogPosts, ...august21BlogPosts, ...august23BlogPosts, ...august31BlogPosts, ...september1BlogPosts, ...september2BlogPosts, ...september4BlogPosts, ...september7BlogPosts, ...september8BlogPosts, ...september9BlogPosts, ...september10BlogPosts, ...september11BlogPosts, ...september14BlogPosts, ...september22BlogPosts, ...september23BlogPosts, ...september24BlogPosts, ...september25BlogPosts, ...september28BlogPosts);
+blogPosts.push(...august11BlogPosts, ...august12ReplacementBlogPosts, ...august13BlogPosts, ...august14BlogPosts, ...august17BlogPosts, ...august20BlogPosts, ...august21BlogPosts, ...august23BlogPosts, ...august31BlogPosts, ...september1BlogPosts, ...september2BlogPosts, ...september4BlogPosts, ...september7BlogPosts, ...september8BlogPosts, ...september9BlogPosts, ...september10BlogPosts, ...september11BlogPosts, ...september14BlogPosts, ...september22BlogPosts, ...september23BlogPosts, ...september24BlogPosts, ...september25BlogPosts, ...september28BlogPosts, ...october2BlogPosts);
 
 // Keep dated articles newest-first while preserving source order for equal dates.
 blogPosts.sort((a, b) => (b.published ?? '').localeCompare(a.published ?? ''));
