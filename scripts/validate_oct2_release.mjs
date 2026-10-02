@@ -52,6 +52,16 @@ const repeatedParagraphs = (items) => {
     .map(([paragraph, slugs]) => ({ paragraph: paragraph.slice(0, 120), slugs: [...slugs] }));
 };
 
+const collectStrings = (value, path = "\$", result = []) => {
+  if (typeof value === "string") result.push({ path, value });
+  else if (Array.isArray(value)) value.forEach((item, index) => collectStrings(item, path + "[" + index + "]", result));
+  else if (value && typeof value === "object") Object.entries(value).forEach(([key, item]) => collectStrings(item, path + "." + key, result));
+  return result;
+};
+const completeBody = (post) => collectStrings(post)
+  .filter(({ path }) => !/\.(?:slug|published|updated|revision|url|href|featuredImage)$/.test(path))
+  .map(({ value }) => value).join(" ");
+
 const blogPosts = loadExport('app/article-blog-oct2-2026.ts', 'october2BlogPosts');
 const researchPosts = loadExport('app/article-research-oct2-2026.ts', 'october2ResearchPosts');
 const blogs = blogPosts.map((post) => {
@@ -62,12 +72,8 @@ const blogs = blogPosts.map((post) => {
 });
 const research = researchPosts.map((post) => {
   const paragraphs = post.sections.flatMap((section) => section.paragraphs);
-  const commonHeadings = new Set(['Methodology', 'Limitations']);
-  const originalityParagraphs = post.sections
-    .filter((section) => !commonHeadings.has(section.heading))
-    .flatMap((section) => section.paragraphs);
   return { family: 'research', slug: post.slug, title: post.title, published: post.published,
-    body: paragraphs.join(' '), originalityBody: originalityParagraphs.join(' '), paragraphs,
+    body: paragraphs.join(' '), originalityBody: completeBody(post), paragraphs: collectStrings(post).filter(({ path }) => !/\.(?:slug|published|updated|revision|url|href|featuredImage)$/.test(path)).map(({ value }) => value),
     image: post.featuredImage, sources: post.sources, related: post.related };
 });
 
@@ -103,7 +109,7 @@ const output = {
   sourceSha256: sha256(fs.readFileSync(new URL('app/article-blog-oct2-2026.ts', root))),
   blog: { quantity: blogs.length, maximumPairwiseFiveWordShingleJaccard: maximumOverlap(blogs),
     repeatedParagraphs: repeatedParagraphs(blogs), articles: blogs.map(({ slug, wordCount, contentHash }) => ({ slug, wordCount, contentHash })) },
-  research: { quantity: research.length, originalityScope: 'topic-specific sections; shared Methodology and Limitations prose excluded',
+  research: { quantity: research.length, originalityScope: 'complete recursive imported object; no rendered field exclusions',
     maximumPairwiseFiveWordShingleJaccard: maximumOverlap(research), repeatedParagraphs: repeatedParagraphs(research),
     articles: research.map(({ slug, wordCount, contentHash }) => ({ slug, wordCount, contentHash })) },
 };
