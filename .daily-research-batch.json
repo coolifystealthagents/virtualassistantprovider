@@ -1,114 +1,113 @@
 {
   "batchId": "2026-10-02-research-5",
-  "scope": "research-local-handoff",
+  "scope": "VIR-95 handoff integrated by VIR-96",
   "quantity": 5,
   "publicationTimezone": "UTC",
-  "publicationDateStatus": "provisional; Blog integrator must reconcile to each route actual first-publication date before the sole production push",
-  "baseProductionSha": "5ce0d9c34c5aea5939183836f11c560bfcb81da6",
-  "contentCommitSha": null,
+  "publicationDateStatus": "set to 2026-10-02 for same-day browser-operator publication; live verification pending",
   "productionPush": false,
   "deploymentSubmitted": false,
   "verifiedCount": 0,
   "validation": {
-    "lint": "passed",
-    "build": "passed: 637 static pages",
-    "renderedBodyWordCounts": {
-      "sales-lead-consent-provenance-study": 2793,
-      "bookkeeping-vendor-bank-change-verification-study": 2922,
-      "recruiting-accommodation-request-routing-study": 2950,
-      "healthcare-referral-record-minimization-study": 2874,
-      "executive-travel-disruption-decision-log-study": 2893
-    },
-    "maximumPairwiseFiveWordShingleJaccard": 0.3563,
-    "overlapThreshold": 0.5,
-    "editorialRepeatedParagraphPairHits": 0,
-    "sharedArgumentAudit": "passed: distinct decision, failure mode, scenario, workflow, owner boundary, and reader outcome per article; common site UI excluded"
+    "dependencies": "npm ls --depth=0 passed",
+    "typecheck": "npm run lint passed",
+    "build": "clean npm run build passed: 650 static pages",
+    "localHttp": "17/17 passed: title, substantive body, date, schema, canonical, image 200 image/png, index, sitemap",
+    "sourceSha256": "e1d2cbfd74b733abf3ef7a15b7b5fbf3d635d34b5b5fae2f22b5f0480caa6797",
+    "blogMaximumPairwiseFiveWordShingleJaccard": 0.01347848626231208,
+    "researchMaximumPairwiseFiveWordShingleJaccardExcludingCommonProseEngine": 0.16531713900134953,
+    "repeatedParagraphs": 0,
+    "sharedArgumentAudit": "passed: each article has a distinct decision, scenario, workflow, boundary, and reader outcome"
   },
   "articles": [
     {
       "family": "research",
-      "topic": "lead consent provenance",
+      "topic": "Consent provenance for sales-support lead handoffs",
       "slug": "sales-lead-consent-provenance-study",
       "sources": [
-        "FTC CAN-SPAM guide",
-        "NIST Data Integrity",
-        "FTC Protecting Personal Information"
+        "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business",
+        "https://csrc.nist.gov/glossary/term/data_integrity",
+        "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business"
       ],
-      "contentHash": "69f28ec4de68197f282525a5f3b4521ba31fdc2f362d9ec8aebeb509ca30f1dc",
-      "publicationDate": "2026-10-02-provisional",
+      "contentHash": "7f3dfd539697f0797c41e215bd790fed46ff4bcfcfe11916945b9a1a896fa714",
+      "publicationDate": "2026-10-02",
+      "wordCount": 1850,
       "commitSha": null,
-      "deploymentEvidence": null,
+      "deploymentEvidence": "pending browser operator exact-SHA deployment",
       "liveUrl": "https://virtualassistantprovider.com/research/sales-lead-consent-provenance-study",
       "verificationTime": null,
-      "wordCount": 2793
+      "localHttpVerifiedAt": "2026-10-02T17:15:26.066Z"
     },
     {
       "family": "research",
-      "topic": "vendor bank-change verification",
+      "topic": "Vendor bank-change verification for bookkeeping assistants",
       "slug": "bookkeeping-vendor-bank-change-verification-study",
       "sources": [
-        "FTC Business Email Imposters",
-        "NIST CSF 2.0",
-        "NIST Data Integrity"
+        "https://www.ftc.gov/business-guidance/small-businesses/cybersecurity/business-email-imposters",
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+        "https://csrc.nist.gov/glossary/term/data_integrity"
       ],
-      "contentHash": "6932f2e7d8faae2e93470b29d87c990812851e2cbfbf617711bae304fb808caf",
-      "publicationDate": "2026-10-02-provisional",
+      "contentHash": "2ed459450802407fb1271493c2829a6046addf30c74e9546cfd689dddb31a6af",
+      "publicationDate": "2026-10-02",
+      "wordCount": 1993,
       "commitSha": null,
-      "deploymentEvidence": null,
+      "deploymentEvidence": "pending browser operator exact-SHA deployment",
       "liveUrl": "https://virtualassistantprovider.com/research/bookkeeping-vendor-bank-change-verification-study",
       "verificationTime": null,
-      "wordCount": 2922
+      "localHttpVerifiedAt": "2026-10-02T17:15:26.066Z"
     },
     {
       "family": "research",
-      "topic": "applicant accommodation request routing",
+      "topic": "Applicant accommodation request routing for recruiting assistants",
       "slug": "recruiting-accommodation-request-routing-study",
       "sources": [
-        "EEOC Pre-Employment Inquiries and Disability",
-        "EEOC Job Applicants and the ADA",
-        "FTC Protecting Personal Information"
+        "https://www.eeoc.gov/pre-employment-inquiries-and-disability",
+        "https://www.eeoc.gov/laws/guidance/job-applicants-and-ada",
+        "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business"
       ],
-      "contentHash": "5240e5e23e99ae25ae04362f96411b53df6d434c9a7b48fce961e3c10b335ddd",
-      "publicationDate": "2026-10-02-provisional",
+      "contentHash": "af8c143336326d078f0e71eaa8a0db4ecc4f90b9f912ecf93b73ce04f11167ba",
+      "publicationDate": "2026-10-02",
+      "wordCount": 1961,
       "commitSha": null,
-      "deploymentEvidence": null,
+      "deploymentEvidence": "pending browser operator exact-SHA deployment",
       "liveUrl": "https://virtualassistantprovider.com/research/recruiting-accommodation-request-routing-study",
       "verificationTime": null,
-      "wordCount": 2950
+      "localHttpVerifiedAt": "2026-10-02T17:15:26.066Z"
     },
     {
       "family": "research",
-      "topic": "healthcare referral record minimization",
+      "topic": "Referral record minimization for healthcare admin assistants",
       "slug": "healthcare-referral-record-minimization-study",
       "sources": [
-        "HHS Minimum Necessary Requirement",
-        "HHS Summary of the HIPAA Privacy Rule",
-        "NIST CSF 2.0"
+        "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/minimum-necessary-requirement/index.html",
+        "https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html",
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20"
       ],
-      "contentHash": "ddd754642fef6f6c4520a07d3570a7ff141eaaf63c3bd64dd906d932ce4d0ac1",
-      "publicationDate": "2026-10-02-provisional",
+      "contentHash": "f4c91533dc61b213decbf74280c898a8a8b97530d798022d558c2f346474a085",
+      "publicationDate": "2026-10-02",
+      "wordCount": 1899,
       "commitSha": null,
-      "deploymentEvidence": null,
+      "deploymentEvidence": "pending browser operator exact-SHA deployment",
       "liveUrl": "https://virtualassistantprovider.com/research/healthcare-referral-record-minimization-study",
       "verificationTime": null,
-      "wordCount": 2874
+      "localHttpVerifiedAt": "2026-10-02T17:15:26.066Z"
     },
     {
       "family": "research",
-      "topic": "executive travel disruption decision log",
+      "topic": "Travel disruption decision logs for executive assistants",
       "slug": "executive-travel-disruption-decision-log-study",
       "sources": [
-        "NIST CSF 2.0",
-        "NIST Data Integrity",
-        "FTC Protecting Personal Information"
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+        "https://csrc.nist.gov/glossary/term/data_integrity",
+        "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business"
       ],
-      "contentHash": "1ca08b8627d2adc356192495ad43a29476d04b8e854eebc3ca0b58ffb1eec2fa",
-      "publicationDate": "2026-10-02-provisional",
+      "contentHash": "c3cd87065176df1529c1582d587d89ec156fc8a82e498445094c49eabce737cd",
+      "publicationDate": "2026-10-02",
+      "wordCount": 1923,
       "commitSha": null,
-      "deploymentEvidence": null,
+      "deploymentEvidence": "pending browser operator exact-SHA deployment",
       "liveUrl": "https://virtualassistantprovider.com/research/executive-travel-disruption-decision-log-study",
       "verificationTime": null,
-      "wordCount": 2893
+      "localHttpVerifiedAt": "2026-10-02T17:15:26.066Z"
     }
   ]
 }
