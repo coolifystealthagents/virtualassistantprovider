@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { Header, Footer, CTA, JsonLd } from '../../components';
 import { blogPosts, site, services } from '../../data';
+import { fleetServices } from '../../fleet-content';
 import { RealEstatePhilippinesArticle, realEstateArticleSlug } from './real-estate-philippines-article';
 import { ExecutiveAssistantPhilippinesArticle, executiveAssistantArticleSlug } from './executive-assistant-philippines-article';
 import { CustomerServicePhilippinesArticle, customerServiceArticleSlug } from './customer-service-philippines-article';
@@ -117,8 +118,13 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const post = blogPosts.find((p) => p.slug === slug);
   if (!post) notFound();
   const october2ServiceSlug = october2ServiceRelationships[post.slug];
-  const relatedServices = services.filter((service) =>
-    october2ServiceSlug ? service.slug === october2ServiceSlug : post.relatedServices.includes(service.slug));
+  const relatedServices = october2ServiceSlug
+    ? fleetServices
+        .filter((service) => service.slug === october2ServiceSlug)
+        .map((service) => ({ slug: service.slug, name: service.title }))
+    : services
+        .filter((service) => post.relatedServices.includes(service.slug))
+        .map((service) => ({ slug: service.slug, name: service.name }));
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
