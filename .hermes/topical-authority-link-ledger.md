@@ -1,6 +1,6 @@
 # Philippines service-led topical authority ledger
 
-Updated: 2026-09-24
+Updated: 2026-10-03
 
 This is a source-only planning record. It connects existing Philippines-based service pillars to existing research pages that answer the reader question just before a role-planning decision. It does not claim that a link is already visible unless the status says `verified`.
 
@@ -33,3 +33,17 @@ A fresh production build checked every source and service route in this ledger b
 ## 2026-09-23 buyer-decision batch
 
 Twelve new Blog guides strengthen provider-selection and operating-model conversion paths. Public verification is pending deployment.
+
+## 2026-10-03 October research relationship reconciliation
+
+The October 2 research batch already supplies five route-local, service-led next steps. A fresh production artifact check selected each research page by its exact canonical link, confirmed its H1 and sitemap location, then counted the matching service anchor inside `<main>`. Each pair has exactly one existing service path, so none is a candidate for another CTA.
+
+| Service pillar | Existing supporting page | Reader question | Current status | Next bounded action |
+| --- | --- | --- | --- | --- |
+| `/services/sales-support-assistants` | `/research/sales-lead-consent-provenance-study` | What evidence shows a sales lead may enter an approved outreach lane? | delivered locally | Preserve the single service guide link; a sales, privacy, or legal owner decides consent and release. |
+| `/services/bookkeeping-assistants` | `/research/bookkeeping-vendor-bank-change-verification-study` | How should a bank-detail change be checked before an approved update? | delivered locally | Preserve the single service guide link; an authorized owner approves master-data and payment decisions. |
+| `/services/recruiting-assistants` | `/research/recruiting-accommodation-request-routing-study` | How can interview logistics change without spreading unnecessary personal information? | delivered locally | Preserve the single service guide link; the employer owns accommodation and employment decisions. |
+| `/services/healthcare-admin-assistants` | `/research/healthcare-referral-record-minimization-study` | Which referral fields belong in the admin queue, and which stay in the approved record? | delivered locally | Preserve the single service guide link; clinical and privacy decisions stay with their authorized owners. |
+| `/services/executive-assistant-staffing` | `/research/executive-travel-disruption-decision-log-study` | How can a disrupted trip be coordinated while the traveler keeps booking authority? | delivered locally | Preserve the single service guide link; the traveler or authorized owner chooses changes outside standing rules. |
+
+This is a source-only reconciliation. It records local artifact facts and does not assert deployment or public rollout.
