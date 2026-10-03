@@ -64,6 +64,13 @@ const completeBody = (post) => collectStrings(post)
 
 const blogPosts = loadExport('app/article-blog-oct2-2026.ts', 'october2BlogPosts');
 const researchPosts = loadExport('app/article-research-oct2-2026.ts', 'october2ResearchPosts');
+const october2ServiceRelationships = loadExport(
+  'app/october2-service-relationships.ts',
+  'october2ServiceRelationships',
+);
+const fleetServices = loadExport('app/fleet-content.ts', 'fleetServices');
+const fleetServiceSlugs = new Set(fleetServices.map((service) => service.slug));
+const markdownServiceLinkPattern = /\[([^\]]+)\]\(\/services\/([^\s)#?]+)[^\s)]*\)/g;
 const blogs = blogPosts.map((post) => {
   const paragraphs = post.sections.map((section) => section.body);
   return { family: 'blog', slug: post.slug, title: post.title, published: post.published,
@@ -78,6 +85,54 @@ const research = researchPosts.map((post) => {
 });
 
 const failures = [];
+const mappedBlogSlugs = Object.keys(october2ServiceRelationships);
+if (mappedBlogSlugs.length !== 12) {
+  failures.push(`expected 12 October 2 service mappings, found ${mappedBlogSlugs.length}`);
+}
+for (const post of blogPosts) {
+  const mappedSlug = october2ServiceRelationships[post.slug];
+  if (!mappedSlug) {
+    failures.push(`${post.slug} has no October 2 service mapping`);
+    continue;
+  }
+  if (!fleetServiceSlugs.has(mappedSlug)) {
+    failures.push(`${post.slug} maps to missing fleet service ${mappedSlug}`);
+  }
+  const serviceAnchors = post.sections.flatMap((section) =>
+    [...section.body.matchAll(markdownServiceLinkPattern)]
+      .map((match) => ({ text: match[1], sourceSlug: match[2] })));
+  if (serviceAnchors.length === 0) {
+    failures.push(`${post.slug} has no Markdown service anchor`);
+  }
+  for (const anchor of serviceAnchors) {
+    const renderedHref = `/services/${mappedSlug}`;
+    if (renderedHref !== `/services/${october2ServiceRelationships[post.slug]}`) {
+      failures.push(`${post.slug} did not preserve its mapped rendered service href`);
+    }
+    if (!anchor.text || anchor.text !== anchor.text.trim()) {
+      failures.push(`${post.slug} has an invalid service anchor label`);
+    }
+  }
+}
+for (const mappedSlug of mappedBlogSlugs) {
+  if (!blogPosts.some((post) => post.slug === mappedSlug)) {
+    failures.push(`service mapping has no October 2 Blog article: ${mappedSlug}`);
+  }
+}
+for (const post of researchPosts) {
+  const serviceLinks = post.related
+    .map((item) => item.href)
+    .filter((href) => href.startsWith('/services/'));
+  if (serviceLinks.length === 0) {
+    failures.push(`${post.slug} has no related service href`);
+  }
+  for (const href of serviceLinks) {
+    const serviceSlug = href.slice('/services/'.length);
+    if (!fleetServiceSlugs.has(serviceSlug)) {
+      failures.push(`${post.slug} links to missing fleet service ${serviceSlug}`);
+    }
+  }
+}
 if (blogs.length !== 12) failures.push(`expected 12 blogs, found ${blogs.length}`);
 if (research.length !== 5) failures.push(`expected 5 research posts, found ${research.length}`);
 const all = [...blogs, ...research];
