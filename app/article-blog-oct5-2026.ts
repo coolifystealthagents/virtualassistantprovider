@@ -129,6 +129,10 @@ When possible, offer concise feedback anchored to the rubric: the escalation cho
 
 Review whether trial performance predicts onboarding outcomes. After a hire's first month, compare the sample dimensions with supervised work. Remove criteria that add burden but no useful signal. A trial is a selection tool, not a rite of passage.
 
+Before reusing the exercise, audit whether its inputs or expected answer have gone stale. A calendar sample built around an old meeting policy may reward the wrong choice after scheduling rules change. A CRM sample can become misleading when required fields, ownership rules, or consent handling change. Give the task and rubric an owner, version, and review date. Keep a clean master copy, then record which version each candidate received so reviewers do not compare submissions against different standards.
+
+Also inspect the exercise from the candidate.s side. Confirm that every linked file opens without requesting personal accounts, every instruction is accessible in the promised format, and the submission route does not expose one candidate.s work to another. Test the time box with someone who understands the role but has not seen the sample. If they spend most of the allotted time deciphering the setup, the exercise is measuring familiarity with the test designer rather than readiness for the job.
+
 For a broader view of fair assessment, consult the US Office of Personnel Management's [assessment and selection resources](https://www.opm.gov/policy-data-oversight/assessment-and-selection/) alongside the EEOC guidance. If you want help defining a safely scoped assistant role before testing candidates, [contact us](/contact) or review our [operations assistant services](/services/operations-assistant).`
       }
     ],
