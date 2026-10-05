@@ -1,20 +1,43 @@
 {
-  "cycleLabel": "2026-10-05",
   "generatedAt": "2026-10-05T21:39:23.610Z",
-  "publicationTimezone": "UTC",
-  "repository": "coolifystealthagents/virtualassistantprovider",
-  "productionBranch": "main",
-  "fetchedProductionSha": "832cc16e53f0ddc2aa2d1097ba9f2e97cc4a8ac4",
-  "blogBranch": "vir-98-blog-2026-10-05",
-  "researchHandoffContentSha": "fbd886e8fe8d9e2c3ea3314e604a586e92da2d35",
+  "contentCommitSha": "fbd886e8fe8d9e2c3ea3314e604a586e92da2d35",
   "counts": {
-    "requiredBlog": 12,
-    "stagedBlog": 12,
-    "requiredResearch": 5,
-    "stagedResearch": 5,
-    "totalStaged": 17,
-    "liveVerified": 0
+    "blog": 12,
+    "research": 5,
+    "total": 17
   },
+  "researchResults": [
+    {
+      "slug": "operations-incident-status-source-of-truth-study",
+      "renderedBodyWords": 2236,
+      "strictIndependentSectionWords": 1241,
+      "contentHash": "f8c4934b31c185b4419b438fc164fc590dd069ed1ba12dc2c9a6756ae40ff54a"
+    },
+    {
+      "slug": "ecommerce-chargeback-evidence-packet-study",
+      "renderedBodyWords": 2231,
+      "strictIndependentSectionWords": 1236,
+      "contentHash": "60333d99625993f96d5cfb84be6a0e9ad260b0e52001b05c43ebc01fe413a7c1"
+    },
+    {
+      "slug": "recruiting-automated-screening-change-log-study",
+      "renderedBodyWords": 2219,
+      "strictIndependentSectionWords": 1230,
+      "contentHash": "83adfb4d5aa306f3d77584b86a7f810e80b243217ace9015244a14d06e8571ae"
+    },
+    {
+      "slug": "marketing-influencer-disclosure-version-control-study",
+      "renderedBodyWords": 2195,
+      "strictIndependentSectionWords": 1216,
+      "contentHash": "892660eb6587cf2e9ea89cdf5d7a8dcfa38c269d04ca66fc0af55229630e1098"
+    },
+    {
+      "slug": "executive-assistant-account-recovery-identity-study",
+      "renderedBodyWords": 2209,
+      "strictIndependentSectionWords": 1209,
+      "contentHash": "fcee1166ddb53afc45d1a7d33beae9ee2083936c7997b98b90eacac3ad2bd1ed"
+    }
+  ],
   "gates": {
     "typecheck": "npm run lint passed after final repair",
     "cleanProductionBuild": "passed after final repair: 666 static pages",
@@ -48,10 +71,23 @@
     "externalLinks": "30 unique October 5 URLs; zero 404; exact FTC and OPM restricted content independently verified",
     "priorRegressions": "validate:aug10-research, validate:healthcare-privacy-handoff, validate_oct2_release.mjs and validate_sep28_release.mjs passed"
   },
-  "production": {
-    "push": false,
-    "deployment": false,
-    "liveVerification": false,
-    "nextOwner": "Reviewer may inspect local final SHA; no push, deploy or new task performed."
-  }
+  "sourceRepairs": [
+    {
+      "from": "https://csrc.nist.gov/projects/data-integrity",
+      "to": "https://csrc.nist.gov/glossary/term/data_integrity"
+    },
+    {
+      "from": "https://www.eeoc.gov/employers/small-business/7-employment-tests-and-selection-procedures",
+      "to": "https://www.eeoc.gov/laws/guidance/employment-tests-and-selection-procedures"
+    },
+    {
+      "from": "https://www.eeoc.gov/laws/guidance/americans-disabilities-act-and-use-software-algorithms-and-artificial-intelligence",
+      "to": "https://www.eeoc.gov/eeoc-disability-related-resources/artificial-intelligence-and-ada"
+    },
+    {
+      "from": "https://www.eeoc.gov/laws/guidance/uniform-guidelines-employee-selection-procedures",
+      "to": "https://www.eeoc.gov/regulations-and-guidelines"
+    }
+  ],
+  "productionMutation": false
 }

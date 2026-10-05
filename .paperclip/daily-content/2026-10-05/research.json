@@ -12,15 +12,16 @@
   "deploymentSubmitted": false,
   "verifiedCount": 0,
   "validation": {
-    "dependencies": "npm audit passed: 0 vulnerabilities across 62 dependencies",
+    "dependencies": "npm audit: 0 vulnerabilities across 62 dependencies",
     "typecheck": "npm run lint passed",
     "build": "clean npm run build passed: 666 static pages",
-    "localHttp": "17/17 routes and 32/32 emitted internal destinations passed; full titles, substantive bodies, dates, canonicals, datePublished, indexes, sitemap, and featured image HTTP/MIME/signature/pixel decode",
-    "maximumPairwiseFiveWordShingleJaccard": 0.2835164835164835,
-    "maximumOverlapPair": "recruiting-automated-screening-change-log-study <> marketing-influencer-disclosure-version-control-study",
-    "maximumCrossFamilyFiveWordShingleJaccard": 0.0010003334444814939,
-    "repeatedParagraphAudit": "0 exact repeated Research section paragraphs",
-    "sharedArgumentAudit": "passed after prior claim withdrawal: five literal objects with distinct structures, examples, counterarguments, boundaries, and reader outcomes"
+    "localHttp": "17/17 routes, 32/32 internal destinations, titles, dates, canonicals, indexes, sitemap and featured PNG transport/signature/full IDAT inflate passed",
+    "externalLinks": "30 unique October 5 URLs: 23 returned 200; seven FTC/OPM destinations returned access-restricted 403 and were independently verified from official indexed content; zero 404",
+    "maximumPairwiseFiveWordShingleJaccard": 0.1433370660694289,
+    "maximumOverlapPair": "ecommerce-chargeback-evidence-packet-study <> marketing-influencer-disclosure-version-control-study",
+    "repeatedParagraphAudit": "0 exact repeated substantive Research section paragraphs",
+    "sharedArgumentAudit": "passed: incident chronology, transaction relevance, screening population/configuration join, rendered disclosure chain, and identity recovery each use a distinct analysis sequence, case, failure test and outcome",
+    "strictWordCounting": "section paragraphs only; excludes methodology, FAQ, source/date text, implications/CTA, related links and publication controls"
   },
   "articles": [
     {
@@ -32,13 +33,14 @@
         "https://csrc.nist.gov/pubs/sp/800/61/r2/final",
         "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
       ],
-      "contentHash": "1141f1c0fec4a83636f78956e93e0441e4c0465bc6d26a16fa2049a3d09a16cb",
+      "contentHash": "f8c4934b31c185b4419b438fc164fc590dd069ed1ba12dc2c9a6756ae40ff54a",
       "publicationDate": "2026-10-05",
-      "renderedBodyWords": 2455,
-      "commitSha": "8210b9a651dc0879a6985b25abfd69d214fec7ef",
+      "renderedBodyWords": 2236,
+      "commitSha": "fbd886e8fe8d9e2c3ea3314e604a586e92da2d35",
       "deploymentEvidence": "local repair only; production push and deployment prohibited pending explicit user approval",
       "liveUrl": "https://virtualassistantprovider.com/research/operations-incident-status-source-of-truth-study",
-      "verificationTime": null
+      "verificationTime": null,
+      "strictIndependentSectionWords": 1241
     },
     {
       "family": "research",
@@ -49,13 +51,14 @@
         "https://www.ftc.gov/legal-library/browse/rules/mail-internet-or-telephone-order-merchandise-rule",
         "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business"
       ],
-      "contentHash": "e0ea45c7c8fec07640b9e2bfe81ccee72d4011cad59360ccb11ca04887ebbee7",
+      "contentHash": "60333d99625993f96d5cfb84be6a0e9ad260b0e52001b05c43ebc01fe413a7c1",
       "publicationDate": "2026-10-05",
-      "renderedBodyWords": 2457,
-      "commitSha": "8210b9a651dc0879a6985b25abfd69d214fec7ef",
+      "renderedBodyWords": 2231,
+      "commitSha": "fbd886e8fe8d9e2c3ea3314e604a586e92da2d35",
       "deploymentEvidence": "local repair only; production push and deployment prohibited pending explicit user approval",
       "liveUrl": "https://virtualassistantprovider.com/research/ecommerce-chargeback-evidence-packet-study",
-      "verificationTime": null
+      "verificationTime": null,
+      "strictIndependentSectionWords": 1236
     },
     {
       "family": "research",
@@ -63,16 +66,17 @@
       "slug": "recruiting-automated-screening-change-log-study",
       "sources": [
         "https://www.eeoc.gov/strategic-enforcement-plan-fiscal-years-2024-2028",
-        "https://www.eeoc.gov/laws/guidance/americans-disabilities-act-and-use-software-algorithms-and-artificial-intelligence",
-        "https://www.eeoc.gov/laws/guidance/uniform-guidelines-employee-selection-procedures"
+        "https://www.eeoc.gov/eeoc-disability-related-resources/artificial-intelligence-and-ada",
+        "https://www.eeoc.gov/regulations-and-guidelines"
       ],
-      "contentHash": "17df44f44624f17886361eaa5f56bdc8b67155e71742adc00ef914528cdbcdfb",
+      "contentHash": "83adfb4d5aa306f3d77584b86a7f810e80b243217ace9015244a14d06e8571ae",
       "publicationDate": "2026-10-05",
-      "renderedBodyWords": 2415,
-      "commitSha": "8210b9a651dc0879a6985b25abfd69d214fec7ef",
+      "renderedBodyWords": 2219,
+      "commitSha": "fbd886e8fe8d9e2c3ea3314e604a586e92da2d35",
       "deploymentEvidence": "local repair only; production push and deployment prohibited pending explicit user approval",
       "liveUrl": "https://virtualassistantprovider.com/research/recruiting-automated-screening-change-log-study",
-      "verificationTime": null
+      "verificationTime": null,
+      "strictIndependentSectionWords": 1230
     },
     {
       "family": "research",
@@ -83,13 +87,14 @@
         "https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers",
         "https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking"
       ],
-      "contentHash": "fdf26b5de2e7e3084e953347bb7fe7cf3b7ceec32d28a2dad8b443f0ef0329fb",
+      "contentHash": "892660eb6587cf2e9ea89cdf5d7a8dcfa38c269d04ca66fc0af55229630e1098",
       "publicationDate": "2026-10-05",
-      "renderedBodyWords": 2467,
-      "commitSha": "8210b9a651dc0879a6985b25abfd69d214fec7ef",
+      "renderedBodyWords": 2195,
+      "commitSha": "fbd886e8fe8d9e2c3ea3314e604a586e92da2d35",
       "deploymentEvidence": "local repair only; production push and deployment prohibited pending explicit user approval",
       "liveUrl": "https://virtualassistantprovider.com/research/marketing-influencer-disclosure-version-control-study",
-      "verificationTime": null
+      "verificationTime": null,
+      "strictIndependentSectionWords": 1216
     },
     {
       "family": "research",
@@ -100,14 +105,15 @@
         "https://www.cisa.gov/sites/default/files/2023-01/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf",
         "https://pages.nist.gov/800-63-4/"
       ],
-      "contentHash": "ca46a0852c4a8821898995536bdd008b3464dbcdd18fbfb51e5e77343412669f",
+      "contentHash": "fcee1166ddb53afc45d1a7d33beae9ee2083936c7997b98b90eacac3ad2bd1ed",
       "publicationDate": "2026-10-05",
-      "renderedBodyWords": 2459,
-      "commitSha": "8210b9a651dc0879a6985b25abfd69d214fec7ef",
+      "renderedBodyWords": 2209,
+      "commitSha": "fbd886e8fe8d9e2c3ea3314e604a586e92da2d35",
       "deploymentEvidence": "local repair only; production push and deployment prohibited pending explicit user approval",
       "liveUrl": "https://virtualassistantprovider.com/research/executive-assistant-account-recovery-identity-study",
-      "verificationTime": null
+      "verificationTime": null,
+      "strictIndependentSectionWords": 1209
     }
   ],
-  "contentCommitSha": "8210b9a651dc0879a6985b25abfd69d214fec7ef"
+  "contentCommitSha": "fbd886e8fe8d9e2c3ea3314e604a586e92da2d35"
 }
