@@ -60,7 +60,7 @@ At the end, compare results with the original map. A successful split reduces qu
 
 The US National Institute of Standards and Technology explains the principle of granting access according to role in its [role-based access control resources](https://csrc.nist.gov/projects/role-based-access-control). The UK Health and Safety Executive's [workload guidance](https://www.hse.gov.uk/stress/standards/demands.htm) also offers a useful lens for matching demands to available capacity.
 
-If your role map points to separate executive and operational lanes, review our [executive assistant services](/services/executive-assistant) and [operations assistant services](/services/operations-assistant), or [contact us](/contact) to discuss a workable staffing boundary.`
+If your role map points to separate executive and operational lanes, review our [executive assistant services](/services/executive-assistant-staffing) and [operations assistant services](/services/operations-assistant-staffing), or [contact us](/contact) to discuss a workable staffing boundary.`
       }
     ],
     faq: [
@@ -133,7 +133,7 @@ Before reusing the exercise, audit whether its inputs or expected answer have go
 
 Also inspect the exercise from the candidate.s side. Confirm that every linked file opens without requesting personal accounts, every instruction is accessible in the promised format, and the submission route does not expose one candidate.s work to another. Test the time box with someone who understands the role but has not seen the sample. If they spend most of the allotted time deciphering the setup, the exercise is measuring familiarity with the test designer rather than readiness for the job.
 
-For a broader view of fair assessment, consult the US Office of Personnel Management's [assessment and selection resources](https://www.opm.gov/policy-data-oversight/assessment-and-selection/) alongside the EEOC guidance. If you want help defining a safely scoped assistant role before testing candidates, [contact us](/contact) or review our [operations assistant services](/services/operations-assistant).`
+For a broader view of fair assessment, consult the US Office of Personnel Management's [assessment and selection resources](https://www.opm.gov/policy-data-oversight/assessment-and-selection/) alongside the EEOC guidance. If you want help defining a safely scoped assistant role before testing candidates, [contact us](/contact) or review our [operations assistant services](/services/operations-assistant-staffing).`
       }
     ],
     faq: [

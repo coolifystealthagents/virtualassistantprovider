@@ -45,7 +45,7 @@ Measure what the design is meant to improve: important messages found on time, a
 
 The US Cybersecurity and Infrastructure Security Agency recommends strong account protections such as multifactor authentication in its [account security guidance](https://www.cisa.gov/secure-our-world/use-strong-passwords). The US National Archives also provides [email management guidance](https://www.archives.gov/records-mgmt/email-management) that is useful when defining official records and retention. Apply the rules appropriate to your contracts, location, and industry.
 
-If you need an operating design before handing over a founder mailbox, review our [executive assistant services](/services/executive-assistant) or [contact us](/contact) to map a bounded delegation workflow.` },
+If you need an operating design before handing over a founder mailbox, review our [executive assistant services](/services/executive-assistant-staffing) or [contact us](/contact) to map a bounded delegation workflow.` },
     ],
     faq: [
       { question: 'Should a virtual assistant answer every routine email?', answer: 'Only when the message class, facts, and requested action fall within a documented authority rule. Otherwise the assistant should prepare or escalate it.' },
