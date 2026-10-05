@@ -59,7 +59,7 @@ If the numbers support a controlled operations handoff, review our [operations a
   },
   {
     slug: 'virtual-assistant-source-record-conflict-protocol',
-    featuredImage: '/featured/crm-data-enrichment-virtual-assistant.png',
+    featuredImage: '/featured/sales-support-crm-hygiene.png',
     title: 'What Should a Virtual Assistant Do When the Source Record Is Wrong?',
     excerpt: 'Give assistants a conflict protocol that preserves evidence, limits corrections, and keeps an uncertain record from spreading through connected systems.',
     minutes: 10,

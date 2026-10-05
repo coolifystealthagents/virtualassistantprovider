@@ -4,7 +4,7 @@ import type { BlogPost } from './data';
 export const october5BlogPostsB: BlogPost[] = [
   {
     slug: 'virtual-assistant-inbox-delegation-authority-matrix',
-    featuredImage: '/featured/email-management-virtual-assistant-philippines.png',
+    featuredImage: '/featured/executive-assistant-calendar-delegation.png',
     title: 'Build an Inbox Authority Matrix Before Delegating Executive Email',
     excerpt: 'Turn vague inbox access into explicit rules for reading, drafting, sending, escalating, and retaining executive correspondence.',
     minutes: 9,

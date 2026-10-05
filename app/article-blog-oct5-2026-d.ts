@@ -4,7 +4,7 @@ import type { BlogPost } from './data';
 export const october5BlogPostsD: BlogPost[] = [
   {
     slug: 'virtual-assistant-founder-vacation-coverage-plan',
-    featuredImage: '/featured/executive-assistant-daily-brief.png',
+    featuredImage: '/featured/virtual-assistant-calendar-delegation-philippines.png',
     title: 'Virtual Assistant Coverage During a Founder’s Vacation: A Seven-Day Control Plan',
     excerpt: 'Prepare decisions, queues, emergency routes, and a return-day reconciliation so a founder can step away without granting vague authority.',
     minutes: 9,
@@ -70,6 +70,8 @@ Keep rollback practical. If permissions fail or the receiver becomes unavailable
       { heading: 'Audit outcomes after the transfer', body: `After several days, compare the transfer list with current case states. Check every promised update due during the window, a sample of ordinary closures, all escalations, and all reopened cases. Separate defects caused by missing handoff context from policy ambiguity, system behavior, customer changes, or reviewer delay. That distinction determines whether to repair records, training, permissions, or management response.
 
 Useful measures include unaccepted cases, overdue promises, repeat explanations requested from customers, duplicate responses, reassignment count, escalation turnaround, and receiver questions that exposed undocumented rules. Speed alone can reward premature closure. Include evidence that the customer’s requested outcome or next step was actually addressed.
+
+Run one reconstruction exercise after the transfer. Give a reviewer the case record without the outgoing assistant’s private explanation and ask them to identify the latest customer request, the controlling policy, the promised time, the next authorized action, and the escalation owner. A wrong answer exposes a record defect even when no deadline was missed. Repair the source case rather than adding another private checklist. Then compare the queue snapshot, assignment history, and current owner list to find tickets that moved but were never accepted. Keep this exercise focused on evidence quality, not on blaming the person who inherited incomplete work. The result should be a shorter exception list, clearer fields, and a named owner for every remaining ambiguity.
 
 The FTC’s [Protecting Personal Information guide](https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business) is a useful baseline for limiting copied customer data. NIST’s [Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework) supports defined responsibilities and controlled information handling. For a managed queue with explicit ownership and escalation, review our [customer support assistant services](/services/customer-support-assistant) or [contact us](/contact).` },
     ],

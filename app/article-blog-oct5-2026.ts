@@ -76,7 +76,7 @@ If your role map points to separate executive and operational lanes, review our 
   },
   {
     slug: 'virtual-assistant-trial-project-real-job-test',
-    featuredImage: '/featured/virtual-assistant-onboarding-checklist-philippines.png',
+    featuredImage: '/featured/virtual-assistant-client-onboarding-philippines.png',
     title: 'Virtual Assistant Trial Projects: Test the Real Job Without Live Risk',
     excerpt: 'Design a bounded, paid work sample that reflects the role, protects live systems, and produces evidence a hiring team can score consistently.',
     minutes: 9,
