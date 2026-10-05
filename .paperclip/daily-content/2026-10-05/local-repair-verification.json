@@ -1,0 +1,666 @@
+{
+  "generatedAt": "2026-10-05T21:16:24.366Z",
+  "gates": {
+    "fullDependencyAudit": "npm audit: 0 vulnerabilities across 62 dependencies",
+    "typecheck": "npm run lint passed",
+    "cleanBuild": "final npm run build passed: 666 pages after link repair",
+    "pngDecode": "PNG signature, IDAT zlib inflate, scanline-length and dimensions verified"
+  },
+  "counts": {
+    "routes": 17,
+    "passed": 17,
+    "internalLinks": 32,
+    "badInternalLinks": 0
+  },
+  "orderedRenderedBodyHashes": [
+    {
+      "family": "blog",
+      "slug": "when-to-split-one-virtual-assistant-role-into-two",
+      "renderedBodySha256": "ac0205310c2f39c61c41130eb7f365125f63df0916c5a030c8c380dfde88f780"
+    },
+    {
+      "family": "blog",
+      "slug": "virtual-assistant-trial-project-real-job-test",
+      "renderedBodySha256": "d16c49a1a7e8287ba663d42bcfde6842fa803cacd412433a81f6f66537c88079"
+    },
+    {
+      "family": "blog",
+      "slug": "virtual-assistant-inbox-delegation-authority-matrix",
+      "renderedBodySha256": "169c50e7e8809dff31fe22dcc6a0489875866cab6dfb627b2965c913a8d2e84f"
+    },
+    {
+      "family": "blog",
+      "slug": "customer-support-virtual-assistant-refund-escalation-ladder",
+      "renderedBodySha256": "355576c749acc21161385bca3c85d33d687bf238f5d26b022dc581ddc17bfbfb"
+    },
+    {
+      "family": "blog",
+      "slug": "ecommerce-virtual-assistant-catalog-change-approval",
+      "renderedBodySha256": "1f70cbeab9092fd13f7f3dbdd0cbdb6078991057e7f11164302913efc95404f5"
+    },
+    {
+      "family": "blog",
+      "slug": "calculate-virtual-assistant-handoff-cost",
+      "renderedBodySha256": "53684812a4d7c4e868a2750b73c4c72a5461c2ce3f4310dc4004ab24a8a8af4d"
+    },
+    {
+      "family": "blog",
+      "slug": "virtual-assistant-source-record-conflict-protocol",
+      "renderedBodySha256": "8121c194dd5ee5fc785407dac1ca7fec861fbf2d8d3ea2f913946f28afbf091a"
+    },
+    {
+      "family": "blog",
+      "slug": "virtual-assistant-founder-vacation-coverage-plan",
+      "renderedBodySha256": "d1b2c87583ac294db64ab59aeaa1bf83008b30e38e9b9b664d0faaf2348f0f21"
+    },
+    {
+      "family": "blog",
+      "slug": "transfer-customer-support-queue-between-virtual-assistants",
+      "renderedBodySha256": "152c719a7a0f3a93ca5944993f44da30653503be2549b64a0d0e146ef499aab5"
+    },
+    {
+      "family": "blog",
+      "slug": "bookkeeping-assistant-month-end-ready-for-review",
+      "renderedBodySha256": "f01baf2b590bcf6b317e300cedc46f56eeeba33d641826a338510fd2f9e48552"
+    },
+    {
+      "family": "blog",
+      "slug": "ecommerce-assistant-catalog-change-rollback-plan",
+      "renderedBodySha256": "593e768022bd8bd940406f2878791fb5bfa85b2af21f41dfe25f728ce5aeab11"
+    },
+    {
+      "family": "blog",
+      "slug": "recruiting-assistant-candidate-record-corrections",
+      "renderedBodySha256": "805b49cb94eb3fd771e6b71dfff3387da762304530f67f5815dda706e0d26809"
+    },
+    {
+      "family": "research",
+      "slug": "operations-incident-status-source-of-truth-study",
+      "renderedBodySha256": "1141f1c0fec4a83636f78956e93e0441e4c0465bc6d26a16fa2049a3d09a16cb"
+    },
+    {
+      "family": "research",
+      "slug": "ecommerce-chargeback-evidence-packet-study",
+      "renderedBodySha256": "e0ea45c7c8fec07640b9e2bfe81ccee72d4011cad59360ccb11ca04887ebbee7"
+    },
+    {
+      "family": "research",
+      "slug": "recruiting-automated-screening-change-log-study",
+      "renderedBodySha256": "17df44f44624f17886361eaa5f56bdc8b67155e71742adc00ef914528cdbcdfb"
+    },
+    {
+      "family": "research",
+      "slug": "marketing-influencer-disclosure-version-control-study",
+      "renderedBodySha256": "fdf26b5de2e7e3084e953347bb7fe7cf3b7ceec32d28a2dad8b443f0ef0329fb"
+    },
+    {
+      "family": "research",
+      "slug": "executive-assistant-account-recovery-identity-study",
+      "renderedBodySha256": "ca46a0852c4a8821898995536bdd008b3464dbcdd18fbfb51e5e77343412669f"
+    }
+  ],
+  "routes": [
+    {
+      "family": "blog",
+      "slug": "when-to-split-one-virtual-assistant-role-into-two",
+      "status": 200,
+      "h1": "When Should a Founder Split One Virtual Assistant Role Into Two?",
+      "words": 1395,
+      "floor": 900,
+      "canonical": "https://virtualassistantprovider.com/blog/when-to-split-one-virtual-assistant-role-into-two",
+      "dateVisible": true,
+      "datePublished": true,
+      "indexed": true,
+      "sitemap": true,
+      "image": {
+        "url": "/featured/operations-assistant-daily-workflow.png",
+        "status": 200,
+        "mime": "image/png",
+        "bytes": 1343244,
+        "width": 1672,
+        "height": 941,
+        "decodedBytes": 4720997
+      },
+      "renderedBodySha256": "ac0205310c2f39c61c41130eb7f365125f63df0916c5a030c8c380dfde88f780"
+    },
+    {
+      "family": "blog",
+      "slug": "virtual-assistant-trial-project-real-job-test",
+      "status": 200,
+      "h1": "Virtual Assistant Trial Projects: Test the Real Job Without Live Risk",
+      "words": 1365,
+      "floor": 900,
+      "canonical": "https://virtualassistantprovider.com/blog/virtual-assistant-trial-project-real-job-test",
+      "dateVisible": true,
+      "datePublished": true,
+      "indexed": true,
+      "sitemap": true,
+      "image": {
+        "url": "/featured/virtual-assistant-client-onboarding-philippines.png",
+        "status": 200,
+        "mime": "image/png",
+        "bytes": 2456399,
+        "width": 1672,
+        "height": 941,
+        "decodedBytes": 4720997
+      },
+      "renderedBodySha256": "d16c49a1a7e8287ba663d42bcfde6842fa803cacd412433a81f6f66537c88079"
+    },
+    {
+      "family": "blog",
+      "slug": "virtual-assistant-inbox-delegation-authority-matrix",
+      "status": 200,
+      "h1": "Build an Inbox Authority Matrix Before Delegating Executive Email",
+      "words": 1310,
+      "floor": 900,
+      "canonical": "https://virtualassistantprovider.com/blog/virtual-assistant-inbox-delegation-authority-matrix",
+      "dateVisible": true,
+      "datePublished": true,
+      "indexed": true,
+      "sitemap": true,
+      "image": {
+        "url": "/featured/executive-assistant-calendar-delegation.png",
+        "status": 200,
+        "mime": "image/png",
+        "bytes": 1158540,
+        "width": 1672,
+        "height": 941,
+        "decodedBytes": 4720997
+      },
+      "renderedBodySha256": "169c50e7e8809dff31fe22dcc6a0489875866cab6dfb627b2965c913a8d2e84f"
+    },
+    {
+      "family": "blog",
+      "slug": "customer-support-virtual-assistant-refund-escalation-ladder",
+      "status": 200,
+      "h1": "Design a Refund Escalation Ladder for a Customer Support Virtual Assistant",
+      "words": 1340,
+      "floor": 900,
+      "canonical": "https://virtualassistantprovider.com/blog/customer-support-virtual-assistant-refund-escalation-ladder",
+      "dateVisible": true,
+      "datePublished": true,
+      "indexed": true,
+      "sitemap": true,
+      "image": {
+        "url": "/featured/customer-service-virtual-assistant-philippines.png",
+        "status": 200,
+        "mime": "image/png",
+        "bytes": 1859376,
+        "width": 1672,
+        "height": 941,
+        "decodedBytes": 4720997
+      },
+      "renderedBodySha256": "355576c749acc21161385bca3c85d33d687bf238f5d26b022dc581ddc17bfbfb"
+    },
+    {
+      "family": "blog",
+      "slug": "ecommerce-virtual-assistant-catalog-change-approval",
+      "status": 200,
+      "h1": "Control Product Catalog Changes Without Slowing an Ecommerce Assistant",
+      "words": 1252,
+      "floor": 900,
+      "canonical": "https://virtualassistantprovider.com/blog/ecommerce-virtual-assistant-catalog-change-approval",
+      "dateVisible": true,
+      "datePublished": true,
+      "indexed": true,
+      "sitemap": true,
+      "image": {
+        "url": "/featured/ecommerce-virtual-assistant-philippines.png",
+        "status": 200,
+        "mime": "image/png",
+        "bytes": 1578186,
+        "width": 1672,
+        "height": 941,
+        "decodedBytes": 4720997
+      },
+      "renderedBodySha256": "1f70cbeab9092fd13f7f3dbdd0cbdb6078991057e7f11164302913efc95404f5"
+    },
+    {
+      "family": "blog",
+      "slug": "calculate-virtual-assistant-handoff-cost",
+      "status": 200,
+      "h1": "How to Calculate the True Handoff Cost Before Hiring a Virtual Assistant",
+      "words": 1269,
+      "floor": 900,
+      "canonical": "https://virtualassistantprovider.com/blog/calculate-virtual-assistant-handoff-cost",
+      "dateVisible": true,
+      "datePublished": true,
+      "indexed": true,
+      "sitemap": true,
+      "image": {
+        "url": "/featured/operations-assistant-daily-workflow.png",
+        "status": 200,
+        "mime": "image/png",
+        "bytes": 1343244,
+        "width": 1672,
+        "height": 941,
+        "decodedBytes": 4720997
+      },
+      "renderedBodySha256": "53684812a4d7c4e868a2750b73c4c72a5461c2ce3f4310dc4004ab24a8a8af4d"
+    },
+    {
+      "family": "blog",
+      "slug": "virtual-assistant-source-record-conflict-protocol",
+      "status": 200,
+      "h1": "What Should a Virtual Assistant Do When the Source Record Is Wrong?",
+      "words": 1310,
+      "floor": 900,
+      "canonical": "https://virtualassistantprovider.com/blog/virtual-assistant-source-record-conflict-protocol",
+      "dateVisible": true,
+      "datePublished": true,
+      "indexed": true,
+      "sitemap": true,
+      "image": {
+        "url": "/featured/sales-support-crm-hygiene.png",
+        "status": 200,
+        "mime": "image/png",
+        "bytes": 1544618,
+        "width": 1672,
+        "height": 941,
+        "decodedBytes": 4720997
+      },
+      "renderedBodySha256": "8121c194dd5ee5fc785407dac1ca7fec861fbf2d8d3ea2f913946f28afbf091a"
+    },
+    {
+      "family": "blog",
+      "slug": "virtual-assistant-founder-vacation-coverage-plan",
+      "status": 200,
+      "h1": "Virtual Assistant Coverage During a Founder’s Vacation: A Seven-Day Control Plan",
+      "words": 1259,
+      "floor": 900,
+      "canonical": "https://virtualassistantprovider.com/blog/virtual-assistant-founder-vacation-coverage-plan",
+      "dateVisible": true,
+      "datePublished": true,
+      "indexed": true,
+      "sitemap": true,
+      "image": {
+        "url": "/featured/virtual-assistant-calendar-delegation-philippines.png",
+        "status": 200,
+        "mime": "image/png",
+        "bytes": 2456399,
+        "width": 1672,
+        "height": 941,
+        "decodedBytes": 4720997
+      },
+      "renderedBodySha256": "d1b2c87583ac294db64ab59aeaa1bf83008b30e38e9b9b664d0faaf2348f0f21"
+    },
+    {
+      "family": "blog",
+      "slug": "transfer-customer-support-queue-between-virtual-assistants",
+      "status": 200,
+      "h1": "How to Transfer a Customer Support Queue Between Virtual Assistants Without Losing Context",
+      "words": 1220,
+      "floor": 900,
+      "canonical": "https://virtualassistantprovider.com/blog/transfer-customer-support-queue-between-virtual-assistants",
+      "dateVisible": true,
+      "datePublished": true,
+      "indexed": true,
+      "sitemap": true,
+      "image": {
+        "url": "/featured/customer-service-virtual-assistant-philippines.png",
+        "status": 200,
+        "mime": "image/png",
+        "bytes": 1859376,
+        "width": 1672,
+        "height": 941,
+        "decodedBytes": 4720997
+      },
+      "renderedBodySha256": "152c719a7a0f3a93ca5944993f44da30653503be2549b64a0d0e146ef499aab5"
+    },
+    {
+      "family": "blog",
+      "slug": "bookkeeping-assistant-month-end-ready-for-review",
+      "status": 200,
+      "h1": "Bookkeeping Assistant Month-End Evidence: What “Ready for Review” Actually Means",
+      "words": 1235,
+      "floor": 900,
+      "canonical": "https://virtualassistantprovider.com/blog/bookkeeping-assistant-month-end-ready-for-review",
+      "dateVisible": true,
+      "datePublished": true,
+      "indexed": true,
+      "sitemap": true,
+      "image": {
+        "url": "/featured/bookkeeping-assistant-control-checklist.png",
+        "status": 200,
+        "mime": "image/png",
+        "bytes": 1421025,
+        "width": 1672,
+        "height": 941,
+        "decodedBytes": 4720997
+      },
+      "renderedBodySha256": "f01baf2b590bcf6b317e300cedc46f56eeeba33d641826a338510fd2f9e48552"
+    },
+    {
+      "family": "blog",
+      "slug": "ecommerce-assistant-catalog-change-rollback-plan",
+      "status": 200,
+      "h1": "Ecommerce Assistant Catalog Rollback Plan for High-Risk Product Changes",
+      "words": 1199,
+      "floor": 900,
+      "canonical": "https://virtualassistantprovider.com/blog/ecommerce-assistant-catalog-change-rollback-plan",
+      "dateVisible": true,
+      "datePublished": true,
+      "indexed": true,
+      "sitemap": true,
+      "image": {
+        "url": "/featured/ecommerce-order-exception-workflow.png",
+        "status": 200,
+        "mime": "image/png",
+        "bytes": 1294122,
+        "width": 1672,
+        "height": 941,
+        "decodedBytes": 4720997
+      },
+      "renderedBodySha256": "593e768022bd8bd940406f2878791fb5bfa85b2af21f41dfe25f728ce5aeab11"
+    },
+    {
+      "family": "blog",
+      "slug": "recruiting-assistant-candidate-record-corrections",
+      "status": 200,
+      "h1": "Recruiting Assistant Candidate-Record Corrections Without Rewriting History",
+      "words": 1222,
+      "floor": 900,
+      "canonical": "https://virtualassistantprovider.com/blog/recruiting-assistant-candidate-record-corrections",
+      "dateVisible": true,
+      "datePublished": true,
+      "indexed": true,
+      "sitemap": true,
+      "image": {
+        "url": "/featured/recruiting-assistant-sourcing-workflow.png",
+        "status": 200,
+        "mime": "image/png",
+        "bytes": 1269890,
+        "width": 1672,
+        "height": 941,
+        "decodedBytes": 4720997
+      },
+      "renderedBodySha256": "805b49cb94eb3fd771e6b71dfff3387da762304530f67f5815dda706e0d26809"
+    },
+    {
+      "family": "research",
+      "slug": "operations-incident-status-source-of-truth-study",
+      "status": 200,
+      "h1": "Incident status source-of-truth design for operations assistants",
+      "words": 2455,
+      "floor": 1200,
+      "canonical": "https://virtualassistantprovider.com/research/operations-incident-status-source-of-truth-study",
+      "dateVisible": true,
+      "datePublished": true,
+      "indexed": true,
+      "sitemap": true,
+      "image": {
+        "url": "/featured/daily-research-brief-routine.png",
+        "status": 200,
+        "mime": "image/png",
+        "bytes": 2349280,
+        "width": 1672,
+        "height": 941,
+        "decodedBytes": 4720997
+      },
+      "renderedBodySha256": "1141f1c0fec4a83636f78956e93e0441e4c0465bc6d26a16fa2049a3d09a16cb"
+    },
+    {
+      "family": "research",
+      "slug": "ecommerce-chargeback-evidence-packet-study",
+      "status": 200,
+      "h1": "Chargeback evidence packet design for ecommerce assistants",
+      "words": 2457,
+      "floor": 1200,
+      "canonical": "https://virtualassistantprovider.com/research/ecommerce-chargeback-evidence-packet-study",
+      "dateVisible": true,
+      "datePublished": true,
+      "indexed": true,
+      "sitemap": true,
+      "image": {
+        "url": "/featured/daily-research-brief-routine.png",
+        "status": 200,
+        "mime": "image/png",
+        "bytes": 2349280,
+        "width": 1672,
+        "height": 941,
+        "decodedBytes": 4720997
+      },
+      "renderedBodySha256": "e0ea45c7c8fec07640b9e2bfe81ccee72d4011cad59360ccb11ca04887ebbee7"
+    },
+    {
+      "family": "research",
+      "slug": "recruiting-automated-screening-change-log-study",
+      "status": 200,
+      "h1": "Automated screening change logs for recruiting assistants",
+      "words": 2415,
+      "floor": 1200,
+      "canonical": "https://virtualassistantprovider.com/research/recruiting-automated-screening-change-log-study",
+      "dateVisible": true,
+      "datePublished": true,
+      "indexed": true,
+      "sitemap": true,
+      "image": {
+        "url": "/featured/daily-research-brief-routine.png",
+        "status": 200,
+        "mime": "image/png",
+        "bytes": 2349280,
+        "width": 1672,
+        "height": 941,
+        "decodedBytes": 4720997
+      },
+      "renderedBodySha256": "17df44f44624f17886361eaa5f56bdc8b67155e71742adc00ef914528cdbcdfb"
+    },
+    {
+      "family": "research",
+      "slug": "marketing-influencer-disclosure-version-control-study",
+      "status": 200,
+      "h1": "Influencer disclosure version control for marketing assistants",
+      "words": 2467,
+      "floor": 1200,
+      "canonical": "https://virtualassistantprovider.com/research/marketing-influencer-disclosure-version-control-study",
+      "dateVisible": true,
+      "datePublished": true,
+      "indexed": true,
+      "sitemap": true,
+      "image": {
+        "url": "/featured/daily-research-brief-routine.png",
+        "status": 200,
+        "mime": "image/png",
+        "bytes": 2349280,
+        "width": 1672,
+        "height": 941,
+        "decodedBytes": 4720997
+      },
+      "renderedBodySha256": "fdf26b5de2e7e3084e953347bb7fe7cf3b7ceec32d28a2dad8b443f0ef0329fb"
+    },
+    {
+      "family": "research",
+      "slug": "executive-assistant-account-recovery-identity-study",
+      "status": 200,
+      "h1": "Account recovery identity checks for executive assistants",
+      "words": 2459,
+      "floor": 1200,
+      "canonical": "https://virtualassistantprovider.com/research/executive-assistant-account-recovery-identity-study",
+      "dateVisible": true,
+      "datePublished": true,
+      "indexed": true,
+      "sitemap": true,
+      "image": {
+        "url": "/featured/daily-research-brief-routine.png",
+        "status": 200,
+        "mime": "image/png",
+        "bytes": 2349280,
+        "width": 1672,
+        "height": 941,
+        "decodedBytes": 4720997
+      },
+      "renderedBodySha256": "ca46a0852c4a8821898995536bdd008b3464dbcdd18fbfb51e5e77343412669f"
+    }
+  ],
+  "internalLinks": [
+    {
+      "url": "/",
+      "status": 200
+    },
+    {
+      "url": "/_next/static/chunks/2-xwlmnlyaeq1.js",
+      "status": 200
+    },
+    {
+      "url": "/_next/static/chunks/313uibascs4mj.css",
+      "status": 200
+    },
+    {
+      "url": "/blog",
+      "status": 200
+    },
+    {
+      "url": "/cancellation-policy",
+      "status": 200
+    },
+    {
+      "url": "/contact",
+      "status": 200
+    },
+    {
+      "url": "/contact?utm_source=blog&utm_medium=banner&utm_campaign=weekly_cta&utm_content=bottom_staff-task-list&utm_term=week_41",
+      "status": 200
+    },
+    {
+      "url": "/contact?utm_source=blog&utm_medium=banner&utm_campaign=weekly_cta&utm_content=middle_handoff-check&utm_term=week_41",
+      "status": 200
+    },
+    {
+      "url": "/contact?utm_source=blog&utm_medium=banner&utm_campaign=weekly_cta&utm_content=top_role-plan&utm_term=week_41",
+      "status": 200
+    },
+    {
+      "url": "/featured/bookkeeping-assistant-control-checklist.png",
+      "status": 200
+    },
+    {
+      "url": "/featured/customer-service-virtual-assistant-philippines.png",
+      "status": 200
+    },
+    {
+      "url": "/featured/daily-research-brief-routine.png",
+      "status": 200
+    },
+    {
+      "url": "/featured/ecommerce-order-exception-workflow.png",
+      "status": 200
+    },
+    {
+      "url": "/featured/ecommerce-virtual-assistant-philippines.png",
+      "status": 200
+    },
+    {
+      "url": "/featured/executive-assistant-calendar-delegation.png",
+      "status": 200
+    },
+    {
+      "url": "/featured/operations-assistant-daily-workflow.png",
+      "status": 200
+    },
+    {
+      "url": "/featured/recruiting-assistant-sourcing-workflow.png",
+      "status": 200
+    },
+    {
+      "url": "/featured/sales-support-crm-hygiene.png",
+      "status": 200
+    },
+    {
+      "url": "/featured/virtual-assistant-calendar-delegation-philippines.png",
+      "status": 200
+    },
+    {
+      "url": "/featured/virtual-assistant-client-onboarding-philippines.png",
+      "status": 200
+    },
+    {
+      "url": "/logo.svg",
+      "status": 200
+    },
+    {
+      "url": "/pricing",
+      "status": 200
+    },
+    {
+      "url": "/privacy",
+      "status": 200
+    },
+    {
+      "url": "/research",
+      "status": 200
+    },
+    {
+      "url": "/services",
+      "status": 200
+    },
+    {
+      "url": "/services/customer-support-assistants",
+      "status": 200
+    },
+    {
+      "url": "/services/ecommerce-assistants",
+      "status": 200
+    },
+    {
+      "url": "/services/executive-assistant-staffing",
+      "status": 200
+    },
+    {
+      "url": "/services/marketing-assistants",
+      "status": 200
+    },
+    {
+      "url": "/services/operations-assistant-staffing",
+      "status": 200
+    },
+    {
+      "url": "/services/recruiting-assistants",
+      "status": 200
+    },
+    {
+      "url": "/terms",
+      "status": 200
+    }
+  ],
+  "originality": {
+    "maximumOverall": {
+      "a": "recruiting-automated-screening-change-log-study",
+      "b": "marketing-influencer-disclosure-version-control-study",
+      "families": "research-research",
+      "jaccard": 0.2835164835164835
+    },
+    "maximumBlog": {
+      "a": "bookkeeping-assistant-month-end-ready-for-review",
+      "b": "recruiting-assistant-candidate-record-corrections",
+      "families": "blog-blog",
+      "jaccard": 0.04139344262295082
+    },
+    "maximumResearch": {
+      "a": "recruiting-automated-screening-change-log-study",
+      "b": "marketing-influencer-disclosure-version-control-study",
+      "families": "research-research",
+      "jaccard": 0.2835164835164835
+    },
+    "maximumCrossFamily": {
+      "a": "ecommerce-assistant-catalog-change-rollback-plan",
+      "b": "ecommerce-chargeback-evidence-packet-study",
+      "families": "blog-research",
+      "jaccard": 0.0010003334444814939
+    },
+    "exactRepeatedResearchSectionParagraphs": []
+  },
+  "qualitative": {
+    "priorClaimWithdrawn": true,
+    "research": "Five literal post objects; distinct incident authority, chargeback reconstruction, screening version lineage, sponsorship rendering, and identity recovery structures, examples, counterarguments, boundaries, and outcomes.",
+    "crossFamily": "Research reports use evidence tables, methodology, source citations and bounded findings; Blog articles use operational buyer guides, checklists and decision tools. No shared argument sequence identified."
+  },
+  "failures": [],
+  "badLinks": [],
+  "localContentCommitSha": "8210b9a651dc0879a6985b25abfd69d214fec7ef",
+  "production": {
+    "push": false,
+    "deployment": false,
+    "liveVerification": false,
+    "note": "No second production push absent explicit user approval."
+  }
+}

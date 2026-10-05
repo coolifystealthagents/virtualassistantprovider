@@ -1,12 +1,12 @@
 {
   "cycleLabel": "2026-10-05",
-  "generatedAt": "2026-10-05T21:03:02Z",
+  "generatedAt": "2026-10-05T21:16:24.366Z",
   "publicationTimezone": "UTC",
   "repository": "coolifystealthagents/virtualassistantprovider",
   "productionBranch": "main",
   "fetchedProductionSha": "832cc16e53f0ddc2aa2d1097ba9f2e97cc4a8ac4",
   "blogBranch": "vir-98-blog-2026-10-05",
-  "researchHandoffContentSha": "5889074223a0b85fbaa47a5ce8f38794e87f91c6",
+  "researchHandoffContentSha": "8210b9a651dc0879a6985b25abfd69d214fec7ef",
   "counts": {
     "requiredBlog": 12,
     "stagedBlog": 12,
@@ -16,12 +16,12 @@
     "liveVerified": 0
   },
   "gates": {
-    "typecheck": "passed",
-    "cleanProductionBuild": "passed: 666 static pages",
-    "renderedRoutes": "17/17 passed locally",
+    "typecheck": "passed after local repair",
+    "cleanProductionBuild": "passed after local repair: 666 static pages",
+    "renderedRoutes": "17/17 passed locally; 32/32 emitted internal links passed",
     "dates": "17/17 use 2026-10-05 consistently in source, visible output and datePublished; UTC date still current",
     "canonicalsIndexesSitemap": "17/17 passed",
-    "featuredImages": "17/17 returned 200 image/png with valid PNG signature",
+    "featuredImages": "17/17 returned 200 image/png; signature and IDAT pixel stream decoded",
     "blogOriginality": {
       "dependencies": "Existing locked dependency tree; npm run lint passed",
       "typecheck": "npm run lint passed",
@@ -33,20 +33,21 @@
       "sharedArgumentAudit": "Passed qualitative review: every article uses a distinct decision, structure, scenario, control model, and reader outcome."
     },
     "researchOriginality": {
-      "dependencies": "npm ci --ignore-scripts --include=dev and npm ls --depth=0 passed; 0 vulnerabilities",
+      "dependencies": "npm audit passed: 0 vulnerabilities across 62 dependencies",
       "typecheck": "npm run lint passed",
-      "build": "clean npm run build passed: 654 static pages",
-      "localHttp": "5/5 routes returned 200 with full bodies, full h1 titles, 2026-10-05 visible dates, canonical URLs, datePublished structured data, index entries, sitemap entries, and featured image responses 200 image/png (2,349,280 bytes)",
-      "maximumPairwiseFiveWordShingleJaccard": 0.3801217038539554,
+      "build": "clean npm run build passed: 666 static pages",
+      "localHttp": "17/17 routes and 32/32 emitted internal destinations passed; full titles, substantive bodies, dates, canonicals, datePublished, indexes, sitemap, and featured image HTTP/MIME/signature/pixel decode",
+      "maximumPairwiseFiveWordShingleJaccard": 0.2835164835164835,
       "maximumOverlapPair": "recruiting-automated-screening-change-log-study <> marketing-influencer-disclosure-version-control-study",
-      "repeatedParagraphAudit": "No repeated topic-specific argument, example, workflow, or conclusion across articles. Shared rendered paragraphs are repository UI copy or explicitly reusable methodology/date-control language; each article has a distinct decision, evidence model, counterexample, owner boundary, and reader outcome.",
-      "sharedArgumentAudit": "passed: incident state authority; transaction-dispute reconstruction; screening configuration lineage; live sponsorship disclosure continuity; and identity recovery are separate problems with independent examples and outcomes"
+      "maximumCrossFamilyFiveWordShingleJaccard": 0.0010003334444814939,
+      "repeatedParagraphAudit": "0 exact repeated Research section paragraphs",
+      "sharedArgumentAudit": "passed after prior claim withdrawal: five literal objects with distinct structures, examples, counterarguments, boundaries, and reader outcomes"
     }
   },
   "production": {
     "push": false,
     "deployment": false,
     "liveVerification": false,
-    "nextOwner": "Blog integrator must commit/rebase/push once; browser operator then deploys exact combined SHA; existing company agent verifies all 17 live routes."
+    "nextOwner": "User must explicitly approve any second production push; browser operator deployment remains prohibited."
   }
 }
