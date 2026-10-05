@@ -100,7 +100,7 @@ Set a deadline for unresolved conflicts based on consequence, and define an inte
 
 Sample conflicts monthly. Look for recurring sources, fields, integrations, and reviewers. If assistants repeatedly find the same wrong region code, repair the intake or mapping rather than praising a growing correction queue. Track unauthorized edits and missed conflicts, but also track appropriate pauses. A low escalation count can mean a clean process or hidden uncertainty.
 
-The US Federal Trade Commission's [Protecting Personal Information guide](https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business) advises businesses to keep only needed personal information and restrict access. NIST's [data integrity resources](https://csrc.nist.gov/projects/data-integrity) discuss protections against unauthorized changes and the ability to recover from corruption. Use rules suited to your systems and obligations.
+The US Federal Trade Commission's [Protecting Personal Information guide](https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business) advises businesses to keep only needed personal information and restrict access. NIST's [data integrity definition](https://csrc.nist.gov/glossary/term/data_integrity) describes data that has not been altered without authorization since creation, transmission, or storage. Use rules suited to your systems and obligations.
 
 For a controlled CRM correction lane with a named review owner, see our [sales support assistant services](/services/sales-support-assistant) or [contact us](/contact).` },
     ],
@@ -111,7 +111,7 @@ For a controlled CRM correction lane with a named review owner, see our [sales s
     ],
     sources: [
       { name: 'FTC Protecting Personal Information', url: 'https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business', note: 'Official guidance on minimizing and restricting access to personal information.' },
-      { name: 'NIST Data Integrity', url: 'https://csrc.nist.gov/projects/data-integrity', note: 'Official resources concerning protection from unauthorized data modification and recovery.' },
+      { name: 'NIST Data Integrity Definition', url: 'https://csrc.nist.gov/glossary/term/data_integrity', note: 'Official definitions and source publications concerning unauthorized alteration of data.' },
     ],
     relatedServices: ['sales-support-assistant'],
   },

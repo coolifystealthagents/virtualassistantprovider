@@ -136,7 +136,7 @@ Sample corrections by class and consequence. Look for wrong-person merges, unexp
 
 Reconstruct a sample from the unedited source evidence during each audit. A reviewer should be able to see the former value, corrected value, authority, effective time, and every downstream record checked. If the current profile looks accurate but the change cannot be reproduced, treat the correction control as incomplete. Track recurrent causes separately: candidate self-service confusion, integration mapping, recruiter entry error, duplicate imports, or unclear ownership each calls for a different repair.
 
-The US Equal Employment Opportunity Commission’s [guidance on employment tests and selection procedures](https://www.eeoc.gov/employers/small-business/7-employment-tests-and-selection-procedures) explains that selection procedures must comply with federal anti-discrimination law. The Federal Trade Commission’s [Protecting Personal Information guide](https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business) supports retaining only needed information and limiting access. Obtain qualified advice for employment, privacy, record-access, and retention duties in the relevant jurisdictions.
+The US Equal Employment Opportunity Commission’s [guidance on employment tests and selection procedures](https://www.eeoc.gov/laws/guidance/employment-tests-and-selection-procedures) explains that selection procedures must comply with federal anti-discrimination law. The Federal Trade Commission’s [Protecting Personal Information guide](https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business) supports retaining only needed information and limiting access. Obtain qualified advice for employment, privacy, record-access, and retention duties in the relevant jurisdictions.
 
 For a bounded recruiting administration lane with consequential decisions retained by the hiring team, see our [recruiting virtual assistant services](/services/recruiting-virtual-assistant-philippines) or [contact us](/contact).` },
     ],
@@ -146,7 +146,7 @@ For a bounded recruiting administration lane with consequential decisions retain
       { question: 'What makes a candidate-record correction complete?', answer: 'The change has evidence and authority, history remains traceable, and all affected calendars, messages, queues, reports, and integrations have been checked.' },
     ],
     sources: [
-      { name: 'EEOC Employment Tests and Selection Procedures', url: 'https://www.eeoc.gov/employers/small-business/7-employment-tests-and-selection-procedures', note: 'Official US guidance on lawful employment selection procedures.' },
+      { name: 'EEOC Employment Tests and Selection Procedures', url: 'https://www.eeoc.gov/laws/guidance/employment-tests-and-selection-procedures', note: 'Official US guidance on employment tests and other selection procedures.' },
       { name: 'FTC Protecting Personal Information', url: 'https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business', note: 'Official guidance on minimizing retained information and restricting access.' },
     ],
     relatedServices: ['recruiting-virtual-assistant-philippines'],

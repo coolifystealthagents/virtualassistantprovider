@@ -108,23 +108,25 @@ export const october5ResearchPosts: readonly ResearchPost[] = [
         ]
       },
       {
-        "heading": "Test declarations, restoration claims and quiet checkpoints",
+        "heading": "What the incident exercise must try to break",
         "paragraphs": [
-          "Observe every update during the first incident exercise and first live event, then sample transitions that carry the most risk: declaration, severity change, workaround, claimed restoration, recurrence and closure. Include quiet checkpoints and contradictory evidence, because a review of polished final notices cannot show whether uncertainty was handled safely.",
-          "Before attributing an outcome to the operations assistant, consider source quality, unclear instructions, permission limits, tool defaults, queue mix, novelty, volume, owner delay and changed decisions. Report numerator, denominator, window, exclusions and unresolved cases for every rate.",
-          "Test the favored incident story against alternative explanations such as a stale dashboard, partial regional recovery, cached success, a vendor dependency, delayed telemetry or an owner who has not acknowledged the handoff. Measure drafting time separately from technical confirmation and approval latency so the assistant is not blamed for—or credited with—decisions outside the role."
+                "A useful exercise does not reward the team for producing a smooth final notice. It introduces evidence that arrives out of order: an alert fires before customer reports, an engineer proposes a cause and retracts it, a vendor reports recovery while one region still fails, and a quiet checkpoint arrives with no confirmed change. Review whether each update preserves what was observed, who confirmed it and when the next communication is due.",
+                "Timing needs separate clocks. Record observation-to-draft time, draft-to-approval time, approval-to-publication time and publication-to-correction time. Combining them into “response time” would make administrative speed appear to compensate for slow diagnosis or would blame the assistant for an owner who did not approve a statement. The register should expose those queues without assigning causal credit.",
+                "The hardest closure test is residual work. A functioning checkout may coexist with duplicate orders, delayed receipts, abandoned carts, support backlog or an unresolved vendor dependency. The exercise should require explicit states for those consequences and should fail if the word resolved erases them. This tests communication control, not the technical skill of the response team."
         ]
-      },
+},
       {
-        "heading": "Worked checkout outage: disagreement before recovery",
+        "heading": "Checkout outage case: preserve disagreement until the owner resolves it",
         "paragraphs": [
-          "A checkout alert remains red while team chat says the service is restored. The assistant records both observations, marks restoration unverified, asks the incident commander for the authoritative state and holds the customer draft until the owner supplies a tested checkpoint.",
-          "Begin with Create separate fields for observed symptom, known impact, working hypothesis, confirmed cause, action underway, owner and next update. Preserve disagreement instead of compressing it into a false consensus. In the worked case, A checkout alert remains red while team chat says the service is restored. The assistant records both observations, marks restoration unverified, asks the incident commander for the authoritative state and holds the customer draft until the owner supplies a tested checkpoint. The buyer tests source lineage: Every claim retains an observation and time. This can detect stale or ungrounded status language, although a cited observation can still be wrong. The decision is whether this evidence is sufficient for the named owner to proceed or whether the item must remain open.",
-          "Next, Timestamp the source observation separately from the status entry. Retain prior states and label each as observed, corroborated, owner-confirmed or superseded so a correction does not destroy its history. In the worked case, A checkout alert remains red while team chat says the service is restored. The assistant records both observations, marks restoration unverified, asks the incident commander for the authoritative state and holds the customer draft until the owner supplies a tested checkpoint. The buyer tests confidence state: Observation and hypothesis remain distinct. This can review how uncertainty changes, although labels need owner calibration. The decision is whether this evidence is sufficient for the named owner to proceed or whether the item must remain open.",
-          "The review then Prepare audience-specific drafts only after the communication owner is named. Keep sensitive logs, personal data, exploit detail and unsupported estimates in authorized systems; use a scheduled checkpoint even when no new fact is confirmed. In the worked case, A checkout alert remains red while team chat says the service is restored. The assistant records both observations, marks restoration unverified, asks the incident commander for the authoritative state and holds the customer draft until the owner supplies a tested checkpoint. The buyer tests audience authority: Each outbound draft names its approver. This can prevent accidental public claims, although approval does not guarantee correctness. The decision is whether this evidence is sufficient for the named owner to proceed or whether the item must remain open.",
-          "Before closure, At restoration, reconcile monitoring, customer tests, vendors, workarounds, calendars and unresolved data repair. A green health check is evidence about one state, not proof that every operational dependency recovered. In the worked case, A checkout alert remains red while team chat says the service is restored. The assistant records both observations, marks restoration unverified, asks the incident commander for the authoritative state and holds the customer draft until the owner supplies a tested checkpoint. The buyer tests recovery reconciliation: Dependencies receive final states. This can find incomplete restoration work, although some effects surface later. The decision is whether this evidence is sufficient for the named owner to proceed or whether the item must remain open."
+                "A payment monitor turns red at 09:04. At 09:11 an engineer writes in team chat that a rollback worked, but the external synthetic check still fails and two customers report rejected cards. The assistant creates three observations rather than one status: internal rollback reported, external check failing and customer failures received. The draft says investigation continues and gives the approved next checkpoint; it does not call the service restored.",
+                "At 09:19 the incident commander confirms that one region recovered while another remains impaired. The prior draft stays in history, the impact field changes to partial, and the public wording names only the verified scope. The technical owner owns the restoration claim. The communications owner owns the audience and release decision. The assistant makes that chain legible and records when each approval arrived.",
+                "After monitors turn green, the register still carries two residual items: delayed receipts and a queue of orders requiring reconciliation. The customer update can distinguish service availability from cleanup. Closure waits for the commander’s defined state, and the record links the later correction to the earlier observation instead of rewriting the event into an uninterrupted recovery story.",
+                "The exercise should test audience divergence. Staff may need operational detail while customers need confirmed impact, available workarounds and the next checkpoint. Build both drafts from the same claim register, then verify that confidential diagnostics do not leak outward and the shorter version does not overstate certainty.",
+                "Corrections require more than editing the latest message. Identify every active destination: status page, support macro, pinned chat message, leadership brief and scheduled update. When a claim changes, record which destinations were corrected and which historical artifacts intentionally remain.",
+                "After the exercise, review where uncertainty accumulated. Repeated missing owners suggest a governance problem; conflicting clocks suggest an integration problem; long approval waits suggest coverage risk. These are different from writing defects and require different owner decisions.",
+                "The final review should replay one status claim from source observation to every audience destination and back to the closure decision. If a reviewer cannot identify who supplied the fact, who authorized the wording, what changed and which residual work remained, the chronology is not decision-ready. That reconstruction is more demanding than counting updates, but it directly tests the failure this design is meant to prevent: an uncertain fragment becoming an authoritative operational statement merely because it was copied into polished prose."
         ]
-      },
+},
       {
         "heading": "Boundary, limitations and conclusion",
         "paragraphs": [
@@ -192,34 +194,29 @@ export const october5ResearchPosts: readonly ResearchPost[] = [
       }
     ],
     "methodology": [
-      "Research question: How can an operations assistant coordinate incident updates without turning an unconfirmed report into an operational fact?",
-      "Evidence scope: 3 primary or authoritative public sources checked October 5, 2026.",
-      "Method: map source principles to a workflow-specific observation unit, evidence trail, role boundary, counterexample and falsifiable stop rule.",
-      "Fact/inference separation: source-backed statements carry numbered citations; workflow design and buyer conclusions are identified as analysis.",
-      "Limitations: No incident records or systems were inspected. This qualitative design cannot estimate reliability, response time or causal impact, and the cited federal guidance may require adaptation to the organization.",
-      "Publication-date control: October 5 is the intended UTC release date; the sole Blog integrator must reconcile every date field to the actual first-live date before the combined push if publication crosses midnight."
+          "Incident-specific inquiry: test how a status statement changes as alerts, engineers, vendors and customer observations disagree over time.",
+          "Record design: treat each outbound update as a versioned claim with an observation time, authority state, audience, approver and promised checkpoint.",
+          "Failure test: seed a stale dashboard, a partial regional recovery and a retracted cause; the register passes only if none silently becomes a confirmed public statement.",
+          "Measurement caution: separate drafting latency from technical confirmation and approval latency, and retain quiet checkpoints rather than studying polished closure notices alone.",
+          "Scope limit: the design was derived from NIST governance sources and a constructed checkout outage; it estimates neither incident-response performance nor provider quality."
     ],
     "faq": [
-      {
-        "question": "Does this report prove an assistant or provider is qualified?",
-        "answer": "No. Buyers still need role-specific work samples, references, access review and observed production evidence."
-      },
-      {
-        "question": "Who makes the consequential decision?",
-        "answer": "The assistant may maintain the update register, compare approved sources, prepare drafts, record acknowledgments and escalate overdue decisions. Engineering, security, legal, safety, privacy and executive owners decide severity, cause, containment, reportability, restoration and public claims."
-      },
-      {
-        "question": "What should a buyer inspect first?",
-        "answer": "Inspect one ordinary record, one exception, one correction and the final destination evidence."
-      },
-      {
-        "question": "Is a low error rate enough?",
-        "answer": "No. Definitions, denominator, sample selection, missing records, risk mix and owner delays must accompany any rate."
-      },
-      {
-        "question": "When should the procedure change?",
-        "answer": "Review it after material changes to law, policy, tools, access, work type or observed failure, with approval from the accountable owner."
-      }
+          {
+                "question": "What is the first record to inspect after an incident exercise?",
+                "answer": "Inspect the earliest customer-facing status beside the alert, technical acknowledgment and approval timestamp. That comparison shows whether the update reported an observation, repeated a hypothesis or waited for owner confirmation."
+          },
+          {
+                "question": "Can a recovered monitor close the incident?",
+                "answer": "No. It can support one restoration claim. The incident commander must decide whether customer tests, dependent services, queued work and data repair have reached the organization’s closure state."
+          },
+          {
+                "question": "How should a correction appear?",
+                "answer": "Keep the original wording and timestamp, add the corrected statement and its authority, then link both versions. Overwriting the first claim hides how long an inaccurate status remained active."
+          },
+          {
+                "question": "Which delay belongs to the assistant?",
+                "answer": "Measure preparation and routing separately. Technical diagnosis, severity judgment and approval waiting time belong to their named owners and should not be folded into an assistant productivity rate."
+          }
     ],
     "sources": [
       {
@@ -369,23 +366,25 @@ export const october5ResearchPosts: readonly ResearchPost[] = [
         ]
       },
       {
-        "heading": "Evaluate the whole dispute denominator",
+        "heading": "Build a dispute denominator that cannot flatter itself",
         "paragraphs": [
-          "For a new dispute lane, review the first packets across physical goods, digital access, subscriptions, refunds and no-response cases. Later sampling should deliberately include missed deadlines, partial credits, descriptor confusion, multi-shipment orders and packets the merchant chose not to submit; successful representments alone create a distorted denominator.",
-          "Before attributing an outcome to the ecommerce assistant, consider source quality, unclear instructions, permission limits, tool defaults, queue mix, novelty, volume, owner delay and changed decisions. Report numerator, denominator, window, exclusions and unresolved cases for every rate.",
-          "Challenge a proposed packet with competing accounts: the checkout capture may be incomplete, carrier delivery may not identify the recipient, login activity may be automated, or the current refund policy may postdate the sale. Track assistant assembly time apart from merchant decisions, acquirer delay and network disposition, none of which is a clean performance score."
+                "Start the review before selection. Count every dispute received during the window, then retain mutually exclusive states for submitted, intentionally conceded, ineligible, withdrawn, missed, pending and decided. A win rate based only on submitted and decided cases can hide deadlines the team missed and difficult packets the merchant chose not to pursue.",
+                "Segment only where a business question justifies it: physical delivery, digital access, subscription renewal, refund processing or fraud classification may require different evidence. Keep reason-code changes and acquirer instruction changes visible. Otherwise a shift in case mix can look like improved packet quality even when the preparation process did not change.",
+                "Review rejected exhibits as well as accepted ones. The useful finding may be that current policy screenshots were routinely proposed for older transactions, that fulfillment events lacked timestamps or that broad account exports contained unrelated data. Those are correctable evidence defects. The network’s financial disposition is important, but it is not a clean label for whether the assistant performed each preparation step correctly."
         ]
-      },
+},
       {
-        "heading": "Worked subscription dispute: relevance without accusation",
+        "heading": "Subscription dispute case: assemble relevance without accusing the buyer",
         "paragraphs": [
-          "A customer disputes a digital subscription after two months of use. The assistant assembles checkout terms, permitted login evidence, cancellation contact and refund activity, but flags a descriptor mismatch and does not characterize the customer as dishonest.",
-          "Begin with Capture the exact dispute condition, network deadline, acquirer instruction and eligible evidence types before gathering files. Keep each transaction in a separate evidence record. In the worked case, A customer disputes a digital subscription after two months of use. The assistant assembles checkout terms, permitted login evidence, cancellation contact and refund activity, but flags a descriptor mismatch and does not characterize the customer as dishonest. The buyer tests condition fit: The packet follows the stated dispute condition. This can avoid irrelevant document dumps, although acquirer instructions vary. The decision is whether this evidence is sufficient for the named owner to proceed or whether the item must remain open.",
-          "Next, Reconstruct the offer, price, renewal or delivery terms, checkout acknowledgment, receipt, descriptor and policy version in effect at purchase. A current page is not proof of an earlier representation. In the worked case, A customer disputes a digital subscription after two months of use. The assistant assembles checkout terms, permitted login evidence, cancellation contact and refund activity, but flags a descriptor mismatch and does not characterize the customer as dishonest. The buyer tests terms at transaction: The applicable offer and policy version are retained. This can compare promise with fulfillment, although archived pages can be incomplete. The decision is whether this evidence is sufficient for the named owner to proceed or whether the item must remain open.",
-          "The review then Build a neutral chronology using evidence verbs such as ordered, shipped, accessed, contacted and refunded. Redact unrelated orders, other customers, full credentials and internal commentary not required for review. In the worked case, A customer disputes a digital subscription after two months of use. The assistant assembles checkout terms, permitted login evidence, cancellation contact and refund activity, but flags a descriptor mismatch and does not characterize the customer as dishonest. The buyer tests evidence minimization: Unrelated personal data stays out. This can review disclosure discipline, although owners define required fields. The decision is whether this evidence is sufficient for the named owner to proceed or whether the item must remain open.",
-          "Before closure, Index each item by source, date, proposition and limitation. Route liability, concessions, response theory and submission to the authorized merchant owner, then retain the final network disposition without relabeling it as an employee error. In the worked case, A customer disputes a digital subscription after two months of use. The assistant assembles checkout terms, permitted login evidence, cancellation contact and refund activity, but flags a descriptor mismatch and does not characterize the customer as dishonest. The buyer tests outcome denominator: Submitted and unsubmitted cases remain visible. This can interpret results honestly, although network decisions are not error labels. The decision is whether this evidence is sufficient for the named owner to proceed or whether the item must remain open."
+                "A buyer disputes the second renewal of a digital subscription. The order system shows access events, but the statement descriptor differs from the storefront name and the cancellation message arrived shortly after renewal. The assistant preserves the checkout offer and renewal wording that applied at purchase, the dated descriptor record, permitted access evidence, the customer message and the refund history.",
+                "The acquirer’s stated dispute condition becomes the packet index. Each exhibit receives a one-line proposition and limitation. A current pricing page is excluded because it cannot show the earlier offer. A broad account export is reduced to the permitted fields for this transaction. The descriptor mismatch is highlighted for merchant review rather than buried or framed as proof of customer intent.",
+                "The merchant owner chooses whether to concede or submit and approves the response theory. The assistant records that choice, the deadline and the final network disposition. Later review can ask whether relevant terms were retained, privacy limits were followed and the packet met the deadline without treating either a win or loss as proof that the buyer or employee acted improperly.",
+                "A packet-quality review should reconstruct cases from the index back to source systems. Confirm that the cited policy version existed at transaction time, timestamps share a stated zone, redactions survive export and the final file matches the approved set. This catches a polished index pointing to stale or broader evidence.",
+                "Deadlines deserve an exception path. Record when notice arrived, the response deadline, the internal review cutoff and any acquirer extension. If the owner cannot decide in time, preserve that owner-delay state rather than submitting an unapproved theory or marking preparation incomplete.",
+                "For privacy, evaluate selection and transport. An exhibit can be relevant yet unsafe if emailed to an unapproved recipient, stored in a shared folder or retained past the merchant rule. Identify the approved submission channel and retention instruction without duplicating sensitive material.",
+                "A buyer evaluating this lane should ask for a redacted packet map rather than a claimed recovery rate. The map should show where transaction terms came from, how the dispute condition controlled exhibit selection, who approved the theory, which fields were removed, when the deadline was met and where the disposition returned. It reveals whether the service can keep evidence relevant and bounded even when the commercial result is unfavorable or still pending."
         ]
-      },
+},
       {
         "heading": "Boundary, limitations and conclusion",
         "paragraphs": [
@@ -452,34 +451,29 @@ export const october5ResearchPosts: readonly ResearchPost[] = [
       }
     ],
     "methodology": [
-      "Research question: What can an ecommerce assistant assemble for a transaction dispute without deciding that the buyer or merchant is right?",
-      "Evidence scope: 3 primary or authoritative public sources checked October 5, 2026.",
-      "Method: map source principles to a workflow-specific observation unit, evidence trail, role boundary, counterexample and falsifiable stop rule.",
-      "Fact/inference separation: source-backed statements carry numbered citations; workflow design and buyer conclusions are identified as analysis.",
-      "Limitations: Card-network rules, acquirer instructions, law, contract terms and evidence eligibility vary. No merchant, order, customer or payment records were examined, and an organized packet cannot guarantee recovery.",
-      "Publication-date control: October 5 is the intended UTC release date; the sole Blog integrator must reconcile every date field to the actual first-live date before the combined push if publication crosses midnight."
+          "Transaction reconstruction: assemble the promise, checkout acceptance, fulfillment events, customer contact and refund activity as they existed for one disputed purchase.",
+          "Relevance review: map every proposed exhibit to the acquirer-supplied dispute condition; reject volume that does not answer that condition.",
+          "Privacy test: compare the submission set with the wider order record and identify unrelated customer, credential and behavioral data before export.",
+          "Denominator design: retain submitted, declined, late, withdrawn and unresolved packets so a recovery percentage is not built only from favorable cases.",
+          "Scope limit: the scenario is a constructed subscription dispute; Visa and FTC material inform evidence discipline but do not determine liability or a live network outcome."
     ],
     "faq": [
-      {
-        "question": "Does this report prove an assistant or provider is qualified?",
-        "answer": "No. Buyers still need role-specific work samples, references, access review and observed production evidence."
-      },
-      {
-        "question": "Who makes the consequential decision?",
-        "answer": "The assistant may collect approved records, normalize a timeline, identify missing fields, redact unrelated information and stage an evidence index. The merchant, acquirer, payment specialist, privacy owner, legal adviser and approver decide liability, representment, concessions, disclosures and submission."
-      },
-      {
-        "question": "What should a buyer inspect first?",
-        "answer": "Inspect one ordinary record, one exception, one correction and the final destination evidence."
-      },
-      {
-        "question": "Is a low error rate enough?",
-        "answer": "No. Definitions, denominator, sample selection, missing records, risk mix and owner delays must accompany any rate."
-      },
-      {
-        "question": "When should the procedure change?",
-        "answer": "Review it after material changes to law, policy, tools, access, work type or observed failure, with approval from the accountable owner."
-      }
+          {
+                "question": "Should the packet contain every record about the customer?",
+                "answer": "No. Include only permitted material that answers the stated dispute condition. A larger file can expose unrelated data, obscure the chronology and make the reviewer’s task harder."
+          },
+          {
+                "question": "What terms matter for a recurring purchase?",
+                "answer": "Preserve the offer, renewal language, cancellation route, descriptor and policy version presented at the transaction. A current webpage cannot establish what the buyer saw earlier."
+          },
+          {
+                "question": "How should a descriptor mismatch be handled?",
+                "answer": "Flag it as a fact requiring merchant review. Do not resolve it by labeling the buyer dishonest or by editing the chronology to fit a representment theory."
+          },
+          {
+                "question": "What outcome should the operations record retain?",
+                "answer": "Retain whether the merchant submitted, the network disposition, any concession and the reason a packet was withheld. Those states support later process review without turning the result into an employee-error label."
+          }
     ],
     "sources": [
       {
@@ -630,23 +624,26 @@ export const october5ResearchPosts: readonly ResearchPost[] = [
         ]
       },
       {
-        "heading": "Compare periods without assigning false causation",
+        "heading": "Analyze a screening change without inventing causation",
         "paragraphs": [
-          "Review the complete population through at least one requisition launch and every early configuration change. Subsequent samples should oversample technical failures, accommodation requests, human overrides, vendor updates, reruns and candidates near a threshold, while retaining withdrawals and missing results in the denominator.",
-          "Before attributing an outcome to the recruiting assistant, consider source quality, unclear instructions, permission limits, tool defaults, queue mix, novelty, volume, owner delay and changed decisions. Report numerator, denominator, window, exclusions and unresolved cases for every rate.",
-          "Before treating a period-to-period difference as a tool or assistant effect, test changes in job requirements, recruiting source, applicant mix, missing data, time in market, accommodation handling and reviewer behavior. Report administrative handling time separately from vendor processing and hiring-owner decisions; the log enables inquiry but does not establish fairness or causation."
+                "Choose the population boundary before reading outcomes. For each applicant, identify the requisition, stage-entry time, tool version, threshold, completion state, technical interruption, requested accommodation path, human override and final stage state. Reconcile entrants to exits so withdrawals and missing dispositions cannot silently leave the denominator.",
+                "A before-and-after difference is descriptive, not an explanation. Applicant mix, recruiting source, job requirements, labor-market conditions, recruiter behavior, test completion and another simultaneous configuration change may differ between periods. Report those changes beside the counts and ask the qualified owner whether a different design or further analysis is required.",
+                "Configuration evidence also has layers. A vendor release date, tenant enablement time, administrator save event and approval can be four different moments. The change log should preserve all four when available. If the effective state for a candidate cannot be reconstructed, classify that record as unknown rather than assigning it to the cleaner comparison group."
         ]
-      },
+},
       {
-        "heading": "Worked threshold change during an active requisition",
+        "heading": "Threshold-change case: stop a mixed candidate population",
         "paragraphs": [
-          "A vendor changes its default ranking threshold during an active requisition. The assistant freezes the prior record, identifies candidates processed under each version, pauses unapproved bulk disposition and routes the split population to hiring and compliance owners.",
-          "Begin with Record the requisition, job-analysis reference, approved criteria, tool and vendor-supplied version, threshold, effective timestamp and change approver. Do not claim visibility into undocumented vendor internals. In the worked case, A vendor changes its default ranking threshold during an active requisition. The assistant freezes the prior record, identifies candidates processed under each version, pauses unapproved bulk disposition and routes the split population to hiring and compliance owners. The buyer tests version boundary: Every processed record maps to an effective configuration. This can reconstruct before-and-after populations, although vendor internals can remain opaque. The decision is whether this evidence is sufficient for the named owner to proceed or whether the item must remain open.",
-          "Next, Map each candidate to the configuration period that processed the record. Preserve reruns, errors, overrides and the difference between an automated recommendation and the final human decision. In the worked case, A vendor changes its default ranking threshold during an active requisition. The assistant freezes the prior record, identifies candidates processed under each version, pauses unapproved bulk disposition and routes the split population to hiring and compliance owners. The buyer tests complete denominator: Errors, withdrawals and accommodations remain visible. This can challenge selective summaries, although counts do not establish causation. The decision is whether this evidence is sufficient for the named owner to proceed or whether the item must remain open.",
-          "The review then Reconcile the populations entering the stage, receiving a score, failing technically, requesting accommodation, withdrawing, receiving human review, advancing and receiving disposition. Keep restricted details out of general reports. In the worked case, A vendor changes its default ranking threshold during an active requisition. The assistant freezes the prior record, identifies candidates processed under each version, pauses unapproved bulk disposition and routes the split population to hiring and compliance owners. The buyer tests accommodation route: Tool barriers reach a restricted human owner. This can test accessible process design, although routing does not prove sufficiency. The decision is whether this evidence is sufficient for the named owner to proceed or whether the item must remain open.",
-          "Before closure, Compare periods only after considering job, recruiting channel, applicant mix, missingness, timing and accommodation handling. Route job relatedness, validation, adverse impact and candidate decisions to qualified owners. In the worked case, A vendor changes its default ranking threshold during an active requisition. The assistant freezes the prior record, identifies candidates processed under each version, pauses unapproved bulk disposition and routes the split population to hiring and compliance owners. The buyer tests approval lineage: Criteria and threshold changes name an owner. This can find silent configuration drift, although approval does not validate a tool. The decision is whether this evidence is sufficient for the named owner to proceed or whether the item must remain open."
+                "A vendor changes a default ranking threshold while applications remain open. The release notice lacks the tenant’s effective time, and the administrator log shows a save event two days later. The assistant freezes both records, identifies the last known candidate under the earlier state and the first known candidate under the later state, and marks the interval between them unresolved.",
+                "Candidates are separated by observed configuration rather than forced into calendar-week groups. Technical failures, withdrawals, requests routed through the restricted accommodation process and human overrides remain visible. The assistant pauses an unapproved bulk disposition because the hiring team has not decided how to handle people who may have encountered different rules.",
+                "Employment and accessibility owners decide whether review, reprocessing or another action is appropriate. The change log records their instruction and the affected population. It does not store disability details in the general project sheet or describe a stage-rate difference as discrimination, fairness or validity. Those conclusions require qualified analysis beyond an administrative history.",
+                "To test the join, take an authorized sample from each configuration state and reconstruct the path without looking at the final hiring outcome first. Verify stage-entry time, assessment completion, score availability, threshold applied, human action and disposition. A record that cannot be joined belongs in an unknown bucket; silently dropping it can change the denominator.",
+                "Restricted information needs a different governance path from ordinary configuration data. The project register may show that an accommodation route was invoked and whether the candidate returned to the selection flow, but the request and supporting information stay with authorized personnel.",
+                "When owners approve remediation, preserve its scope. Reprocessing all candidates, reviewing only the unresolved interval, changing a threshold prospectively and offering an alternative assessment produce different populations. The assistant records the instruction and evidence; qualified owners retain candidate decisions and legal interpretation.",
+                "A review deliverable should make uncertainty countable. Report applicants with confirmed old configuration, confirmed new configuration, unresolved version, technical non-completion, accommodation routing, withdrawal and missing disposition. Do not combine unknown with either outcome group. This layout lets qualified reviewers decide what further analysis or candidate action is warranted while preventing an administrative dashboard from presenting an unexplained stage difference as a finding about job relatedness, validity or discrimination.",
+                "The change log must also preserve manual exceptions made before and after the configuration change. An override may reflect a documented review, a technical workaround or an unexplained intervention; those states should not be merged. Showing their timing and authority helps the qualified reviewer distinguish tool behavior from later human action without asking the assistant to judge whether either was proper."
         ]
-      },
+},
       {
         "heading": "Boundary, limitations and conclusion",
         "paragraphs": [
@@ -715,34 +712,29 @@ export const october5ResearchPosts: readonly ResearchPost[] = [
       }
     ],
     "methodology": [
-      "Research question: How can a recruiting assistant preserve evidence needed to review changes in an automated candidate-screening workflow?",
-      "Evidence scope: 3 primary or authoritative public sources checked October 5, 2026.",
-      "Method: map source principles to a workflow-specific observation unit, evidence trail, role boundary, counterexample and falsifiable stop rule.",
-      "Fact/inference separation: source-backed statements carry numbered citations; workflow design and buyer conclusions are identified as analysis.",
-      "Limitations: No applicant data, employer procedure or vendor model was examined. Counts alone cannot establish causation, fairness, validity or legal compliance; applicable duties depend on the role, employer, tool, population and jurisdiction.",
-      "Publication-date control: October 5 is the intended UTC release date; the sole Blog integrator must reconcile every date field to the actual first-live date before the combined push if publication crosses midnight."
+          "Population split: identify which applicants encountered each model, threshold, question set, accommodation route and human-review rule during the requisition.",
+          "Configuration lineage: preserve vendor notice, effective time, administrator action and approval separately; a release announcement does not prove when a tenant changed.",
+          "Join test: connect candidate stage history to configuration history using authorized identifiers while keeping disability and demographic material in restricted systems.",
+          "Interpretation rule: report stage counts, technical failures, missing outcomes and overlapping changes before asking a qualified employment owner to evaluate any disparity.",
+          "Scope limit: the study uses a hypothetical mid-requisition threshold change and EEOC materials; it does not audit a tool, calculate adverse impact or decide legal compliance."
     ],
     "faq": [
-      {
-        "question": "Does this report prove an assistant or provider is qualified?",
-        "answer": "No. Buyers still need role-specific work samples, references, access review and observed production evidence."
-      },
-      {
-        "question": "Who makes the consequential decision?",
-        "answer": "The assistant may inventory versions, preserve approved criteria, reconcile notices, route accommodation requests, assemble aggregate counts and flag missing approvals. Employment, legal, accessibility, data-science, HR and hiring owners decide job relatedness, validation, adverse impact, accommodation, vendor suitability and candidate outcomes."
-      },
-      {
-        "question": "What should a buyer inspect first?",
-        "answer": "Inspect one ordinary record, one exception, one correction and the final destination evidence."
-      },
-      {
-        "question": "Is a low error rate enough?",
-        "answer": "No. Definitions, denominator, sample selection, missing records, risk mix and owner delays must accompany any rate."
-      },
-      {
-        "question": "When should the procedure change?",
-        "answer": "Review it after material changes to law, policy, tools, access, work type or observed failure, with approval from the accountable owner."
-      }
+          {
+                "question": "Why is the vendor release date insufficient?",
+                "answer": "A vendor may announce a feature before or after a tenant enables it. Review needs the tenant’s effective configuration, approval and affected candidate population, not only the product release note."
+          },
+          {
+                "question": "Where should accommodation details live?",
+                "answer": "Keep them in the approved restricted process. The general change log needs only the operational state needed to route the applicant and explain which selection path applied."
+          },
+          {
+                "question": "Can the assistant calculate whether a tool discriminates?",
+                "answer": "The assistant can prepare validated populations, counts and configuration history. Qualified employment, accessibility and legal owners must choose the analysis and interpret its consequences."
+          },
+          {
+                "question": "What happens when a threshold changes mid-requisition?",
+                "answer": "Freeze the prior state, split candidates by the version they encountered, pause unapproved bulk disposition and obtain an owner decision on review or reprocessing."
+          }
     ],
     "sources": [
       {
@@ -756,14 +748,14 @@ export const october5ResearchPosts: readonly ResearchPost[] = [
         "id": 8,
         "name": "The ADA and Software, Algorithms, and Artificial Intelligence",
         "organization": "U.S. Equal Employment Opportunity Commission",
-        "url": "https://www.eeoc.gov/laws/guidance/americans-disabilities-act-and-use-software-algorithms-and-artificial-intelligence",
+        "url": "https://www.eeoc.gov/eeoc-disability-related-resources/artificial-intelligence-and-ada",
         "accessed": "2026-10-05"
       },
       {
         "id": 9,
         "name": "Uniform Guidelines on Employee Selection Procedures",
         "organization": "U.S. Equal Employment Opportunity Commission",
-        "url": "https://www.eeoc.gov/laws/guidance/uniform-guidelines-employee-selection-procedures",
+        "url": "https://www.eeoc.gov/regulations-and-guidelines",
         "accessed": "2026-10-05"
       }
     ],
@@ -892,23 +884,25 @@ export const october5ResearchPosts: readonly ResearchPost[] = [
         ]
       },
       {
-        "heading": "Inspect viewer contexts and later edits",
+        "heading": "Test the disclosure where a viewer actually encounters it",
         "paragraphs": [
-          "Inspect every item for a creator’s first sponsored campaign and every new platform or format. A mature sample should still include stories, clipped reposts, translated captions, muted autoplay, small-screen views, affiliate links, edited posts and expired content, because a folder of approved drafts says nothing about what audiences received.",
-          "Before attributing an outcome to the marketing assistant, consider source quality, unclear instructions, permission limits, tool defaults, queue mix, novelty, volume, owner delay and changed decisions. Report numerator, denominator, window, exclusions and unresolved cases for every rate.",
-          "Investigate alternatives before assigning a disclosure miss to the assistant: the creator may upload an older cut, the platform may collapse text, a translation may change meaning, an edit may occur after approval, or the relationship instruction may be incomplete. Separate review time from creator correction and legal approval latency, and assess disclosure continuity independently from claim substantiation."
+                "Review the public item on the formats the campaign actually uses. For video, inspect the opening seconds with sound on and off, captions, overlay duration, contrast and cropped previews. For text, open the collapsed caption and the unexpanded feed view. For a live stream, story or repost, record what survives after the original asset leaves its planned context.",
+                "Treat language and audience variants as their own rendered objects. A translated disclosure may change meaning, while a regional edit may move it below a fold or replace an audio statement. The assistant can compare each object with its approved instruction and preserve the discrepancy; the campaign owner decides whether the language and placement are adequate.",
+                "Later edits need a small exposure history. Capture the first observed public version, the time and reason for correction, the corrected rendering and any derivative posts that still contain the earlier defect. A dashboard that displays only the latest green state cannot answer how long viewers encountered the defect or whether syndication carried it elsewhere."
         ]
-      },
+},
       {
-        "heading": "Worked video defect: approved source, failed rendering",
+        "heading": "Sponsored-video case: the source passed and the live post failed",
         "paragraphs": [
-          "An approved video opens with a spoken sponsorship disclosure, but the uploaded clip begins after that frame and its caption places “partner” below a collapsed section. The assistant captures the live rendering and routes the mismatch instead of marking the campaign complete from the script.",
-          "Begin with Link the approved instruction to the owner-identified relationship or benefit, such as payment, free product, affiliate arrangement or employment. Do not ask the assistant to decide materiality. In the worked case, An approved video opens with a spoken sponsorship disclosure, but the uploaded clip begins after that frame and its caption places “partner” below a collapsed section. The assistant captures the live rendering and routes the mismatch instead of marking the campaign complete from the script. The buyer tests relationship record: The approved disclosure traces to a supplied benefit. This can check that the brief has a factual basis, although owners decide materiality. The decision is whether this evidence is sufficient for the named owner to proceed or whether the item must remain open.",
-          "Next, Record language, format, placement, duration, contrast, audio treatment and platform disclosure tool. Test the rendered experience rather than checking only whether a hashtag exists. In the worked case, An approved video opens with a spoken sponsorship disclosure, but the uploaded clip begins after that frame and its caption places “partner” below a collapsed section. The assistant captures the live rendering and routes the mismatch instead of marking the campaign complete from the script. The buyer tests rendered visibility: The live format is checked, not only source copy. This can find truncation and placement defects, although viewer contexts differ. The decision is whether this evidence is sufficient for the named owner to proceed or whether the item must remain open.",
-          "The review then Assign versions to script, caption, art, audio and subtitles. Compare draft, preview and public post; capture the URL, time and viewing context, then retain later edits and corrections. In the worked case, An approved video opens with a spoken sponsorship disclosure, but the uploaded clip begins after that frame and its caption places “partner” below a collapsed section. The assistant captures the live rendering and routes the mismatch instead of marking the campaign complete from the script. The buyer tests version continuity: Draft, preview, live item and edits stay linked. This can locate where language changed, although some platform edits are hard to archive. The decision is whether this evidence is sufficient for the named owner to proceed or whether the item must remain open.",
-          "Before closure, Maintain separate statuses for sponsorship disclosure and claim substantiation. Route missing, hidden, unclear, translated, truncated or altered material to its owner rather than improvising public wording. In the worked case, An approved video opens with a spoken sponsorship disclosure, but the uploaded clip begins after that frame and its caption places “partner” below a collapsed section. The assistant captures the live rendering and routes the mismatch instead of marking the campaign complete from the script. The buyer tests claim separation: Disclosure and substantiation have different statuses. This can prevent one approval masking another risk, although qualified owners assess claims. The decision is whether this evidence is sufficient for the named owner to proceed or whether the item must remain open."
+                "The approved script opens with a spoken sponsorship statement. During editing, the first seconds are cut, and the uploaded caption places “partner” below the platform’s collapsed text. The source documents therefore look correct while a feed viewer receives neither element without taking an extra action. The assistant records the public URL, time, device context, sound state and screenshots.",
+                "The discrepancy is routed with two separate statuses: disclosure rendering failed review; product-claim substantiation remains pending its own owner. The assistant does not invent replacement wording or mark both controls green because the creator used a platform partnership toggle. Marketing and legal owners choose the correction and whether the post should remain available.",
+                "After correction, the live capture is repeated in the same viewing contexts. The defective version remains in the internal evidence trail with its exposure window, and reposts are checked separately because they may retain the old media or caption. The result is a version history of what audiences encountered, not merely a checklist attached to the approved brief.",
+                "A second test should start with a compliant original and introduce a derivative failure: a retailer reposts only the product demonstration, a creator pins a shortened caption, or a paid amplification unit crops the first line. Record which publishing path produced each object so the owner can correct the affected distribution rather than assuming an edit to the source post propagates everywhere.",
+                "The audit sample should include ordinary posts, not only known exceptions. Select by campaign, creator, format and benefit type, then preserve the number reviewed and the number unavailable. If deleted stories or expired live content cannot be reconstructed, report that missing evidence instead of awarding a pass.",
+                "The most useful dashboard is a queue of concrete objects: public identifier, relationship instruction, required languages, approved version, observed rendering, review time, discrepancy and correction state. It should not contain a generic legal-compliance field that collapses the contextual judgment reserved for the campaign owner.",
+                "For procurement, ask the provider to demonstrate a real rendered review using a harmless test campaign. The demonstration should catch a disclosure removed from opening frames, a caption hidden by truncation and a stale repost after correction, while keeping claim substantiation separate. That work sample reveals whether the process observes audience experience and version propagation. A promise that every post receives a checklist cannot show either capability and should not substitute for inspected evidence."
         ]
-      },
+},
       {
         "heading": "Boundary, limitations and conclusion",
         "paragraphs": [
@@ -977,34 +971,29 @@ export const october5ResearchPosts: readonly ResearchPost[] = [
       }
     ],
     "methodology": [
-      "Research question: How can a marketing assistant verify that an approved sponsorship disclosure survives from brief to published post?",
-      "Evidence scope: 3 primary or authoritative public sources checked October 5, 2026.",
-      "Method: map source principles to a workflow-specific observation unit, evidence trail, role boundary, counterexample and falsifiable stop rule.",
-      "Fact/inference separation: source-backed statements carry numbered citations; workflow design and buyer conclusions are identified as analysis.",
-      "Limitations: Disclosure adequacy depends on the full communication, audience, format, language, jurisdiction and facts. No campaign or creator content was audited, and this workflow cannot guarantee that viewers notice or understand a disclosure.",
-      "Publication-date control: October 5 is the intended UTC release date; the sole Blog integrator must reconcile every date field to the actual first-live date before the combined push if publication crosses midnight."
+          "Render-chain review: follow one approved sponsorship instruction through brief, script, media edit, caption, platform preview, public post and later edits.",
+          "Viewer-context test: inspect the opening frames, sound-off state, caption truncation, mobile crop, language version and repost rather than searching source files for a disclosure token.",
+          "Dual-control design: track sponsorship disclosure and objective-claim substantiation as separate approvals so one green status cannot conceal failure of the other.",
+          "Correction evidence: preserve the defective capture, correction decision, revised public rendering and elapsed exposure window.",
+          "Scope limit: FTC materials establish U.S. disclosure principles, while the worked video is hypothetical and cannot resolve materiality, wording or compliance for a campaign."
     ],
     "faq": [
-      {
-        "question": "Does this report prove an assistant or provider is qualified?",
-        "answer": "No. Buyers still need role-specific work samples, references, access review and observed production evidence."
-      },
-      {
-        "question": "Who makes the consequential decision?",
-        "answer": "The assistant may maintain the relationship register, apply approved checklists, compare versions, capture public evidence and route exceptions. Marketing, legal, regulatory, claims, product and creator owners decide materiality, adequate wording, substantiation and correction or withdrawal."
-      },
-      {
-        "question": "What should a buyer inspect first?",
-        "answer": "Inspect one ordinary record, one exception, one correction and the final destination evidence."
-      },
-      {
-        "question": "Is a low error rate enough?",
-        "answer": "No. Definitions, denominator, sample selection, missing records, risk mix and owner delays must accompany any rate."
-      },
-      {
-        "question": "When should the procedure change?",
-        "answer": "Review it after material changes to law, policy, tools, access, work type or observed failure, with approval from the accountable owner."
-      }
+          {
+                "question": "Is an approved script enough evidence?",
+                "answer": "No. Approval shows intended language. The control must also show what viewers could see or hear after editing, upload, platform treatment and any later revision."
+          },
+          {
+                "question": "Does a platform paid-partnership label settle disclosure?",
+                "answer": "Not automatically. The campaign owner must decide what the specific relationship, message and format require; the assistant records the tool state and the surrounding rendered disclosure."
+          },
+          {
+                "question": "How should translated posts be checked?",
+                "answer": "Link each language version to an owner-approved instruction, then inspect placement and meaning in the actual format. Do not infer that an English approval covers altered or truncated wording."
+          },
+          {
+                "question": "What evidence supports a correction?",
+                "answer": "Retain a timestamped defective rendering, the owner’s instruction, the corrected public version and any reposts still carrying the defect. Deleting the first capture destroys the exposure history."
+          }
     ],
     "sources": [
       {
@@ -1154,23 +1143,25 @@ export const october5ResearchPosts: readonly ResearchPost[] = [
         ]
       },
       {
-        "heading": "Exercise fallback owners and post-recovery states",
+        "heading": "Stress the recovery route before an executive is locked out",
         "paragraphs": [
-          "Exercise the runbook before an emergency, then review every early recovery and all high-risk variants: a new device, lost factor, travel, executive impersonation, repeated push prompts, changed contact details, vendor outage and after-hours request. Routine successes cannot demonstrate whether the team resists urgency and secrecy.",
-          "Before attributing an outcome to the executive assistant, consider source quality, unclear instructions, permission limits, tool defaults, queue mix, novelty, volume, owner delay and changed decisions. Report numerator, denominator, window, exclusions and unresolved cases for every rate.",
-          "Treat familiarity as a hypothesis, not proof. A convincing request may come from a compromised mailbox, spoofed number, delegated calendar or attacker with travel context; a failed login may also be a provider outage rather than compromise. Measure assistant coordination separately from identity proofing, security investigation and platform response."
+                "Run the exercise with the primary security owner unavailable and the executive using an unfamiliar channel while traveling. The assistant should locate the declared backup, refuse to relay a password or recovery code, and keep the urgent requester outside factor approval. If the process depends on personal familiarity or instant messaging alone, the fallback is not a control.",
+                "Give each participant only the permissions needed for the exercise. Coordination, identity verification, factor reset and security review should produce separate events even if a small team assigns more than one duty to the same qualified person. The record should show which capacity that person exercised and which approved channel supplied the evidence.",
+                "Test beyond the first successful login. The reviewer should inspect enrolled factors, recovery contacts, active sessions, application passwords, mail-forwarding rules and delegates, then decide what must be revoked or retained. A working session proves access, not exclusive control. Close the exercise only after the security owner records the intended destination state."
         ]
-      },
+},
       {
-        "heading": "Worked push-fatigue request from a traveling executive",
+        "heading": "Travel recovery case: urgency arrives through an untrusted channel",
         "paragraphs": [
-          "A message appearing to come from a traveling executive asks the assistant to approve repeated push notifications because a new phone cannot sign in. The assistant refuses, uses the stored escalation path and records the security ticket rather than calling a number supplied in the message.",
-          "Begin with Document the identity team, approved ticket channel, out-of-band contact path, executive coverage, vendor route and stop conditions before lockout. Keep recovery secrets out of shared handbooks. In the worked case, A message appearing to come from a traveling executive asks the assistant to approve repeated push notifications because a new phone cannot sign in. The assistant refuses, uses the stored escalation path and records the security ticket rather than calling a number supplied in the message. The buyer tests approved route: The request enters a predeclared recovery channel. This can detect social-engineering shortcuts, although the route can become unavailable. The decision is whether this evidence is sufficient for the named owner to proceed or whether the item must remain open.",
-          "Next, Separate coordination from verification. The assistant may report system messages and arrange availability; the designated verifier applies approved proofing and decides whether to reset credentials or replace factors. In the worked case, A message appearing to come from a traveling executive asks the assistant to approve repeated push notifications because a new phone cannot sign in. The assistant refuses, uses the stored escalation path and records the security ticket rather than calling a number supplied in the message. The buyer tests factor strength: Recovery preserves or restores strong authentication. This can review downgrade risk, although platform support varies. The decision is whether this evidence is sufficient for the named owner to proceed or whether the item must remain open.",
-          "The review then Treat unexpected prompts, repeated pushes, changed contact details, concurrent sessions and secrecy demands as possible incident signals. Preserve timestamps and use the security route instead of engaging beyond the approved script. In the worked case, A message appearing to come from a traveling executive asks the assistant to approve repeated push notifications because a new phone cannot sign in. The assistant refuses, uses the stored escalation path and records the security ticket rather than calling a number supplied in the message. The buyer tests role separation: Coordination and verification have different owners. This can prevent trust becoming proof, although small teams need alternatives. The decision is whether this evidence is sufficient for the named owner to proceed or whether the item must remain open.",
-          "Before closure, After restoration, reconcile enrolled factors, temporary methods, sessions, tokens, forwarding, delegation and connected applications. Keep sensitive detail in the authorized ticket and close every temporary state. In the worked case, A message appearing to come from a traveling executive asks the assistant to approve repeated push notifications because a new phone cannot sign in. The assistant refuses, uses the stored escalation path and records the security ticket rather than calling a number supplied in the message. The buyer tests post-recovery closure: Temporary factors and sessions receive final states. This can find access left behind, although connected systems may be missed. The decision is whether this evidence is sufficient for the named owner to proceed or whether the item must remain open."
+                "An executive messages from a new number after receiving repeated authentication prompts and asks the assistant to approve the next one. The assistant treats the combination as a possible compromise signal, does not approve or ask for a recovery code, and contacts the declared security owner through the organization’s known route. The original request is preserved without copying secrets into the coordination record.",
+                "The security owner invokes the approved identity-verification process and decides whether recovery may proceed. The assistant schedules the verified session, records non-secret milestones and keeps calendar pressure from changing the evidence requirement. A backup owner is used because the primary administrator is unavailable; that substitution is visible rather than improvised through personal contacts.",
+                "Once access returns, the owner reviews factors, sessions, recovery contacts, forwarding rules and delegates. An unfamiliar session and new forwarding rule are revoked before closure. The record distinguishes access restored from account secured, and it identifies who made each security decision. The assistant coordinated continuity without becoming the verifier or a conduit for authentication material.",
+                "A separate exercise should begin with no compromise at all: an expired device, a lost security key or a legitimate number change. The same recovery route should still resist shortcuts. Comparing benign and hostile-looking cases tests whether pressure, seniority or familiarity changes the required verification.",
+                "Logs should minimize sensitive content while remaining useful. Record the initiating channel, procedure invoked, owners contacted, non-secret state transitions and final review identifier. Do not paste identity documents, factor seeds, backup codes or password-reset links into the timeline. Review permissions for the recovery record itself.",
+                "Metrics need to distinguish availability from security. Time to reach an owner, time to begin verified recovery and time to restore approved access can support staffing decisions. Counts of rejected shortcuts and incomplete closure checks reveal control pressure. None proves identity or absence of compromise.",
+                "A buyer should therefore inspect a recovery tabletop rather than accept a statement that senior assistants can handle emergencies. The tabletop should show that an urgent executive cannot collapse verification, factor administration and closure review into one informal exchange. It should also show a working backup-owner route and a record that contains useful milestones without secrets. Failure to recover in the exercise may expose a real continuity gap; bypassing controls to make the exercise look fast would conceal it."
         ]
-      },
+},
       {
         "heading": "Boundary, limitations and conclusion",
         "paragraphs": [
@@ -1239,34 +1230,29 @@ export const october5ResearchPosts: readonly ResearchPost[] = [
       }
     ],
     "methodology": [
-      "Research question: How should an executive assistant coordinate urgent account recovery without becoming a shortcut around strong authentication?",
-      "Evidence scope: 3 primary or authoritative public sources checked October 5, 2026.",
-      "Method: map source principles to a workflow-specific observation unit, evidence trail, role boundary, counterexample and falsifiable stop rule.",
-      "Fact/inference separation: source-backed statements carry numbered citations; workflow design and buyer conclusions are identified as analysis.",
-      "Limitations: Authentication capability, company risk, platform support and recovery evidence vary. No account or security event was examined; this workflow cannot establish identity or guarantee that compromise is absent.",
-      "Publication-date control: October 5 is the intended UTC release date; the sole Blog integrator must reconcile every date field to the actual first-live date before the combined push if publication crosses midnight."
+          "Recovery-path exercise: simulate a traveling executive who cannot use the normal factor and sends an urgent request through a channel that could be impersonated.",
+          "Channel separation: record who coordinates, who verifies identity, who changes factors and who reviews active sessions; no single urgent message should perform all four functions.",
+          "Secret-handling inspection: verify that passwords, recovery codes, identity documents and factor seeds never enter assistant notes, chat exports or a shadow checklist.",
+          "Closure test: require the security owner to review new factors, old-factor removal, sessions, forwarding rules, delegates and recovery contacts before declaring access restored.",
+          "Scope limit: the design interprets CISA and NIST identity guidance for a hypothetical workflow; it neither authenticates a person nor certifies an organization’s recovery controls."
     ],
     "faq": [
-      {
-        "question": "Does this report prove an assistant or provider is qualified?",
-        "answer": "No. Buyers still need role-specific work samples, references, access review and observed production evidence."
-      },
-      {
-        "question": "Who makes the consequential decision?",
-        "answer": "The assistant may preserve the request, contact the approved recovery owner, coordinate availability, document system messages and reconcile follow-up tasks. Identity, IT, security, platform, legal and executive owners verify identity, reset credentials, change factors, revoke sessions, assess compromise and accept residual risk."
-      },
-      {
-        "question": "What should a buyer inspect first?",
-        "answer": "Inspect one ordinary record, one exception, one correction and the final destination evidence."
-      },
-      {
-        "question": "Is a low error rate enough?",
-        "answer": "No. Definitions, denominator, sample selection, missing records, risk mix and owner delays must accompany any rate."
-      },
-      {
-        "question": "When should the procedure change?",
-        "answer": "Review it after material changes to law, policy, tools, access, work type or observed failure, with approval from the accountable owner."
-      }
+          {
+                "question": "May an assistant approve a surprise MFA prompt for an executive?",
+                "answer": "No. Repeated or unexpected prompts are a warning condition. Stop, contact the security owner through the declared route and preserve the initiating message without forwarding secrets."
+          },
+          {
+                "question": "What can the assistant safely coordinate?",
+                "answer": "The assistant can locate the approved recovery procedure, contact named owners, schedule a verified session, record non-secret milestones and confirm that required post-recovery checks were assigned."
+          },
+          {
+                "question": "Why not send a recovery code in chat when travel is urgent?",
+                "answer": "Urgency does not make an unapproved channel trustworthy. A copied recovery secret can bypass the factor the process is meant to restore and can persist in exports or notifications."
+          },
+          {
+                "question": "When is recovery complete?",
+                "answer": "Not merely when login succeeds. The security owner should confirm intended factors and recovery contacts, revoke inappropriate sessions, inspect forwarding or delegate changes and record the final authorized state."
+          }
     ],
     "sources": [
       {
