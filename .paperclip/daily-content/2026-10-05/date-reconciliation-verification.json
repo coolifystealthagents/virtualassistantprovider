@@ -1,0 +1,786 @@
+{
+  "generatedAt": "2026-10-06T08:24:22.451Z",
+  "scope": "VIR-98 local-only October 6 publication-date reconciliation; no push, deployment, deployment API, or public polling performed",
+  "cycleLabel": "2026-10-05",
+  "publicationTimezone": "UTC",
+  "intendedFirstPublicationDate": "2026-10-06",
+  "repository": "coolifystealthagents/virtualassistantprovider",
+  "branch": "vir-98-blog-2026-10-05",
+  "fetchedOriginMainSha": "849ee427f1d3a1d1defa928b3c274ed5d9a6b714",
+  "preservedReviewedSha": "a5c1ecc414243f10ebdbbdd3a98ec47e0a7a614e",
+  "dateCommitSha": "56c35b421547d03d2eea4d7e4934ba8793deae03",
+  "safeRebase": "branch was already based on current origin/main; rebase reported up to date",
+  "counts": {
+    "blog": 12,
+    "research": 5,
+    "total": 17,
+    "orderedBodiesUnchanged": 17
+  },
+  "dateScope": {
+    "changed": [
+      "12 Blog published fields",
+      "12 Blog displayDate fields",
+      "5 Research published fields",
+      "5 Research updated/dateModified fields",
+      "17 manifest publicationDate fields",
+      "2 manifest publicationDateStatus fields"
+    ],
+    "preserved": [
+      "cycleLabel 2026-10-05",
+      "batch IDs",
+      "Research revision IDs",
+      "source accessed dates",
+      "source checked-date prose",
+      "all prior-cycle files and dates",
+      "all article prose, headings, examples, slugs and assets"
+    ]
+  },
+  "articles": [
+    {
+      "order": 1,
+      "family": "blog",
+      "slug": "when-to-split-one-virtual-assistant-role-into-two",
+      "bodySha256Before": "e466c8ee75e44ac4b0bb3ff3ad8c86dddec1b079afd7e633d161b644a77630a0",
+      "bodySha256After": "e466c8ee75e44ac4b0bb3ff3ad8c86dddec1b079afd7e633d161b644a77630a0",
+      "bodyUnchanged": true,
+      "publicationDate": "2026-10-06",
+      "visibleDate": "October 6, 2026",
+      "canonical": "https://virtualassistantprovider.com/blog/when-to-split-one-virtual-assistant-role-into-two",
+      "renderedChecks": {
+        "http200": true,
+        "title": true,
+        "visibleDate": true,
+        "datePublished": true,
+        "dateModified": true,
+        "canonical": true,
+        "index": true,
+        "sitemap": true,
+        "bodyFloor": true
+      },
+      "featuredImage": {
+        "url": "/featured/operations-assistant-daily-workflow.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "encodedSha256": "38bcbdd7b2e2ae6f7c1bfda377536a83cd28d695db82fc06f302b644798ea2a5",
+        "sharpRawPixelSha256": "bd8bcd8db1b4f7888fc152c7722fe3e212c56aad3a23a9877adb28877a84ebc2",
+        "width": 1672,
+        "height": 941,
+        "channels": 3
+      }
+    },
+    {
+      "order": 2,
+      "family": "blog",
+      "slug": "virtual-assistant-trial-project-real-job-test",
+      "bodySha256Before": "bc594c9f0a940e0b6085385f61dda436fa6dbff34b070f8d9361091ea1616c56",
+      "bodySha256After": "bc594c9f0a940e0b6085385f61dda436fa6dbff34b070f8d9361091ea1616c56",
+      "bodyUnchanged": true,
+      "publicationDate": "2026-10-06",
+      "visibleDate": "October 6, 2026",
+      "canonical": "https://virtualassistantprovider.com/blog/virtual-assistant-trial-project-real-job-test",
+      "renderedChecks": {
+        "http200": true,
+        "title": true,
+        "visibleDate": true,
+        "datePublished": true,
+        "dateModified": true,
+        "canonical": true,
+        "index": true,
+        "sitemap": true,
+        "bodyFloor": true
+      },
+      "featuredImage": {
+        "url": "/featured/virtual-assistant-client-onboarding-philippines.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "encodedSha256": "cffc1f6f6e5bcebc059be9550eb812a98c9b4382561912afa5e1541c6a49faf7",
+        "sharpRawPixelSha256": "2bac92d80b35de5246d6169d1867e7e63e4d55b5ba5a18642776d09e10401992",
+        "width": 1672,
+        "height": 941,
+        "channels": 3
+      }
+    },
+    {
+      "order": 3,
+      "family": "blog",
+      "slug": "virtual-assistant-inbox-delegation-authority-matrix",
+      "bodySha256Before": "cc89301eac6c199ed7434d89bf59ba6a6c02d94d171169e4b534d6c7859f4599",
+      "bodySha256After": "cc89301eac6c199ed7434d89bf59ba6a6c02d94d171169e4b534d6c7859f4599",
+      "bodyUnchanged": true,
+      "publicationDate": "2026-10-06",
+      "visibleDate": "October 6, 2026",
+      "canonical": "https://virtualassistantprovider.com/blog/virtual-assistant-inbox-delegation-authority-matrix",
+      "renderedChecks": {
+        "http200": true,
+        "title": true,
+        "visibleDate": true,
+        "datePublished": true,
+        "dateModified": true,
+        "canonical": true,
+        "index": true,
+        "sitemap": true,
+        "bodyFloor": true
+      },
+      "featuredImage": {
+        "url": "/featured/executive-assistant-calendar-delegation.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "encodedSha256": "12d200576df474fcf47de3062835a079ee9d2e9785579dc040124e3e96024662",
+        "sharpRawPixelSha256": "797344eeb6d08a10962edb4a526ad997a5d1d83467e735cd0728dd12e860dad0",
+        "width": 1672,
+        "height": 941,
+        "channels": 3
+      }
+    },
+    {
+      "order": 4,
+      "family": "blog",
+      "slug": "customer-support-virtual-assistant-refund-escalation-ladder",
+      "bodySha256Before": "9d50411cbd0e16f03e4d749525bf9e8baa130de36b76761eb98eab0b648b738b",
+      "bodySha256After": "9d50411cbd0e16f03e4d749525bf9e8baa130de36b76761eb98eab0b648b738b",
+      "bodyUnchanged": true,
+      "publicationDate": "2026-10-06",
+      "visibleDate": "October 6, 2026",
+      "canonical": "https://virtualassistantprovider.com/blog/customer-support-virtual-assistant-refund-escalation-ladder",
+      "renderedChecks": {
+        "http200": true,
+        "title": true,
+        "visibleDate": true,
+        "datePublished": true,
+        "dateModified": true,
+        "canonical": true,
+        "index": true,
+        "sitemap": true,
+        "bodyFloor": true
+      },
+      "featuredImage": {
+        "url": "/featured/customer-service-virtual-assistant-philippines.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "encodedSha256": "567a8da70a768ffc4c56b452b8d1c588f99f993082626867561a0119620eed74",
+        "sharpRawPixelSha256": "469adbc007cf04a1e79dd6d57dc29b0666dc238ac7af8b1f95f5b924892f1544",
+        "width": 1672,
+        "height": 941,
+        "channels": 3
+      }
+    },
+    {
+      "order": 5,
+      "family": "blog",
+      "slug": "ecommerce-virtual-assistant-catalog-change-approval",
+      "bodySha256Before": "05167d02bb3c61d817b03ec86dbabd3014cd27f94dcdb78eef74be5595f8e175",
+      "bodySha256After": "05167d02bb3c61d817b03ec86dbabd3014cd27f94dcdb78eef74be5595f8e175",
+      "bodyUnchanged": true,
+      "publicationDate": "2026-10-06",
+      "visibleDate": "October 6, 2026",
+      "canonical": "https://virtualassistantprovider.com/blog/ecommerce-virtual-assistant-catalog-change-approval",
+      "renderedChecks": {
+        "http200": true,
+        "title": true,
+        "visibleDate": true,
+        "datePublished": true,
+        "dateModified": true,
+        "canonical": true,
+        "index": true,
+        "sitemap": true,
+        "bodyFloor": true
+      },
+      "featuredImage": {
+        "url": "/featured/ecommerce-virtual-assistant-philippines.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "encodedSha256": "15a1b2fac4dbd8bc587f50c3c04a43e46fc52e33b04a0a2c0f68f0c676200057",
+        "sharpRawPixelSha256": "f7f4e6836b4599f888f966f2ddd1b5c203dd9c3a0a67dea0d9d95de6e4c22c32",
+        "width": 1672,
+        "height": 941,
+        "channels": 3
+      }
+    },
+    {
+      "order": 6,
+      "family": "blog",
+      "slug": "calculate-virtual-assistant-handoff-cost",
+      "bodySha256Before": "33ab8fa7b68aef17bae94d3c70b8974064d1a70504816b548a88f62e2dda923d",
+      "bodySha256After": "33ab8fa7b68aef17bae94d3c70b8974064d1a70504816b548a88f62e2dda923d",
+      "bodyUnchanged": true,
+      "publicationDate": "2026-10-06",
+      "visibleDate": "October 6, 2026",
+      "canonical": "https://virtualassistantprovider.com/blog/calculate-virtual-assistant-handoff-cost",
+      "renderedChecks": {
+        "http200": true,
+        "title": true,
+        "visibleDate": true,
+        "datePublished": true,
+        "dateModified": true,
+        "canonical": true,
+        "index": true,
+        "sitemap": true,
+        "bodyFloor": true
+      },
+      "featuredImage": {
+        "url": "/featured/operations-assistant-daily-workflow.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "encodedSha256": "38bcbdd7b2e2ae6f7c1bfda377536a83cd28d695db82fc06f302b644798ea2a5",
+        "sharpRawPixelSha256": "bd8bcd8db1b4f7888fc152c7722fe3e212c56aad3a23a9877adb28877a84ebc2",
+        "width": 1672,
+        "height": 941,
+        "channels": 3
+      }
+    },
+    {
+      "order": 7,
+      "family": "blog",
+      "slug": "virtual-assistant-source-record-conflict-protocol",
+      "bodySha256Before": "7df7ae5d0bb93cd5714caec2b2dc7c7b74516b3a0201848b05c5db9649633b48",
+      "bodySha256After": "7df7ae5d0bb93cd5714caec2b2dc7c7b74516b3a0201848b05c5db9649633b48",
+      "bodyUnchanged": true,
+      "publicationDate": "2026-10-06",
+      "visibleDate": "October 6, 2026",
+      "canonical": "https://virtualassistantprovider.com/blog/virtual-assistant-source-record-conflict-protocol",
+      "renderedChecks": {
+        "http200": true,
+        "title": true,
+        "visibleDate": true,
+        "datePublished": true,
+        "dateModified": true,
+        "canonical": true,
+        "index": true,
+        "sitemap": true,
+        "bodyFloor": true
+      },
+      "featuredImage": {
+        "url": "/featured/sales-support-crm-hygiene.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "encodedSha256": "07db776c79337948a817df110003e58be9c130d338e16171d2ad8a7bf723794b",
+        "sharpRawPixelSha256": "4745a10e589d881d8cd6457b1ba8690db603df58d36cf9bad6a53479a4d8a7b9",
+        "width": 1672,
+        "height": 941,
+        "channels": 3
+      }
+    },
+    {
+      "order": 8,
+      "family": "blog",
+      "slug": "virtual-assistant-founder-vacation-coverage-plan",
+      "bodySha256Before": "3d4cc0ea393b53e4b9587344d67b721fe8113359f8559d7db32ea8e366df7ace",
+      "bodySha256After": "3d4cc0ea393b53e4b9587344d67b721fe8113359f8559d7db32ea8e366df7ace",
+      "bodyUnchanged": true,
+      "publicationDate": "2026-10-06",
+      "visibleDate": "October 6, 2026",
+      "canonical": "https://virtualassistantprovider.com/blog/virtual-assistant-founder-vacation-coverage-plan",
+      "renderedChecks": {
+        "http200": true,
+        "title": true,
+        "visibleDate": true,
+        "datePublished": true,
+        "dateModified": true,
+        "canonical": true,
+        "index": true,
+        "sitemap": true,
+        "bodyFloor": true
+      },
+      "featuredImage": {
+        "url": "/featured/virtual-assistant-calendar-delegation-philippines.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "encodedSha256": "cffc1f6f6e5bcebc059be9550eb812a98c9b4382561912afa5e1541c6a49faf7",
+        "sharpRawPixelSha256": "2bac92d80b35de5246d6169d1867e7e63e4d55b5ba5a18642776d09e10401992",
+        "width": 1672,
+        "height": 941,
+        "channels": 3
+      }
+    },
+    {
+      "order": 9,
+      "family": "blog",
+      "slug": "transfer-customer-support-queue-between-virtual-assistants",
+      "bodySha256Before": "eafd9571de89f23bfa5c66df99f43123e6b9cf9ded0a9b6b9c73baada441840d",
+      "bodySha256After": "eafd9571de89f23bfa5c66df99f43123e6b9cf9ded0a9b6b9c73baada441840d",
+      "bodyUnchanged": true,
+      "publicationDate": "2026-10-06",
+      "visibleDate": "October 6, 2026",
+      "canonical": "https://virtualassistantprovider.com/blog/transfer-customer-support-queue-between-virtual-assistants",
+      "renderedChecks": {
+        "http200": true,
+        "title": true,
+        "visibleDate": true,
+        "datePublished": true,
+        "dateModified": true,
+        "canonical": true,
+        "index": true,
+        "sitemap": true,
+        "bodyFloor": true
+      },
+      "featuredImage": {
+        "url": "/featured/customer-service-virtual-assistant-philippines.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "encodedSha256": "567a8da70a768ffc4c56b452b8d1c588f99f993082626867561a0119620eed74",
+        "sharpRawPixelSha256": "469adbc007cf04a1e79dd6d57dc29b0666dc238ac7af8b1f95f5b924892f1544",
+        "width": 1672,
+        "height": 941,
+        "channels": 3
+      }
+    },
+    {
+      "order": 10,
+      "family": "blog",
+      "slug": "bookkeeping-assistant-month-end-ready-for-review",
+      "bodySha256Before": "367040e9d165d6d0c08992fe944806390e93d13d682e84699eb065f4c388ae25",
+      "bodySha256After": "367040e9d165d6d0c08992fe944806390e93d13d682e84699eb065f4c388ae25",
+      "bodyUnchanged": true,
+      "publicationDate": "2026-10-06",
+      "visibleDate": "October 6, 2026",
+      "canonical": "https://virtualassistantprovider.com/blog/bookkeeping-assistant-month-end-ready-for-review",
+      "renderedChecks": {
+        "http200": true,
+        "title": true,
+        "visibleDate": true,
+        "datePublished": true,
+        "dateModified": true,
+        "canonical": true,
+        "index": true,
+        "sitemap": true,
+        "bodyFloor": true
+      },
+      "featuredImage": {
+        "url": "/featured/bookkeeping-assistant-control-checklist.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "encodedSha256": "0f5645b62a0dbc289db54dc391a4e6db972c192a1b515e8def1d1d8875ed8dad",
+        "sharpRawPixelSha256": "0d85340f534f8a757c0680e7a63048035a3168628c91a20bb88d7d1e25ed7a73",
+        "width": 1672,
+        "height": 941,
+        "channels": 3
+      }
+    },
+    {
+      "order": 11,
+      "family": "blog",
+      "slug": "ecommerce-assistant-catalog-change-rollback-plan",
+      "bodySha256Before": "074e90f17eb0866a0dc2d53419227ecd8d315646c9c0464392282a9351352319",
+      "bodySha256After": "074e90f17eb0866a0dc2d53419227ecd8d315646c9c0464392282a9351352319",
+      "bodyUnchanged": true,
+      "publicationDate": "2026-10-06",
+      "visibleDate": "October 6, 2026",
+      "canonical": "https://virtualassistantprovider.com/blog/ecommerce-assistant-catalog-change-rollback-plan",
+      "renderedChecks": {
+        "http200": true,
+        "title": true,
+        "visibleDate": true,
+        "datePublished": true,
+        "dateModified": true,
+        "canonical": true,
+        "index": true,
+        "sitemap": true,
+        "bodyFloor": true
+      },
+      "featuredImage": {
+        "url": "/featured/ecommerce-order-exception-workflow.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "encodedSha256": "7d9c0b911ee0da855d38776cadcff58e73c8b595e53eb858534f3ad78699b890",
+        "sharpRawPixelSha256": "0c1609ae85a642f14061967478a100f165c34d3727beeca450f0efe91332b4a8",
+        "width": 1672,
+        "height": 941,
+        "channels": 3
+      }
+    },
+    {
+      "order": 12,
+      "family": "blog",
+      "slug": "recruiting-assistant-candidate-record-corrections",
+      "bodySha256Before": "20f4d2feb6ac2d8700b94990a836784832faa5bcc568c5f5e50d01317725f3fb",
+      "bodySha256After": "20f4d2feb6ac2d8700b94990a836784832faa5bcc568c5f5e50d01317725f3fb",
+      "bodyUnchanged": true,
+      "publicationDate": "2026-10-06",
+      "visibleDate": "October 6, 2026",
+      "canonical": "https://virtualassistantprovider.com/blog/recruiting-assistant-candidate-record-corrections",
+      "renderedChecks": {
+        "http200": true,
+        "title": true,
+        "visibleDate": true,
+        "datePublished": true,
+        "dateModified": true,
+        "canonical": true,
+        "index": true,
+        "sitemap": true,
+        "bodyFloor": true
+      },
+      "featuredImage": {
+        "url": "/featured/recruiting-assistant-sourcing-workflow.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "encodedSha256": "e7ee70075654cf76cae2e22a2cf20ef87d17d91f0729d9044d4c0a2481f6fb0c",
+        "sharpRawPixelSha256": "199ff96a6b6ceaef1290498accc7714f0047544c7c4f23b1ea39f03be6a3986c",
+        "width": 1672,
+        "height": 941,
+        "channels": 3
+      }
+    },
+    {
+      "order": 13,
+      "family": "research",
+      "slug": "operations-incident-status-source-of-truth-study",
+      "bodySha256Before": "7d9f86340c5fdce6b75d103a430a0c8bd9619707a9e3752e932793ff419d5b8d",
+      "bodySha256After": "7d9f86340c5fdce6b75d103a430a0c8bd9619707a9e3752e932793ff419d5b8d",
+      "bodyUnchanged": true,
+      "publicationDate": "2026-10-06",
+      "visibleDate": "October 6, 2026",
+      "canonical": "https://virtualassistantprovider.com/research/operations-incident-status-source-of-truth-study",
+      "renderedChecks": {
+        "http200": true,
+        "title": true,
+        "visibleDate": true,
+        "datePublished": true,
+        "dateModified": true,
+        "canonical": true,
+        "index": true,
+        "sitemap": true,
+        "bodyFloor": true
+      },
+      "featuredImage": {
+        "url": "/featured/daily-research-brief-routine.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "encodedSha256": "ffdd018c95fe569910fb89bdbe460e5aaf4e57e905901f3242081b39c302fc54",
+        "sharpRawPixelSha256": "a0a22a378613e15874d5a25aa5d15bf43d8121ae20a722224e547a35a3008316",
+        "width": 1672,
+        "height": 941,
+        "channels": 3
+      }
+    },
+    {
+      "order": 14,
+      "family": "research",
+      "slug": "ecommerce-chargeback-evidence-packet-study",
+      "bodySha256Before": "d5639716c8fa117d3be29971456275971165e54be39449062b3f7fef3202d193",
+      "bodySha256After": "d5639716c8fa117d3be29971456275971165e54be39449062b3f7fef3202d193",
+      "bodyUnchanged": true,
+      "publicationDate": "2026-10-06",
+      "visibleDate": "October 6, 2026",
+      "canonical": "https://virtualassistantprovider.com/research/ecommerce-chargeback-evidence-packet-study",
+      "renderedChecks": {
+        "http200": true,
+        "title": true,
+        "visibleDate": true,
+        "datePublished": true,
+        "dateModified": true,
+        "canonical": true,
+        "index": true,
+        "sitemap": true,
+        "bodyFloor": true
+      },
+      "featuredImage": {
+        "url": "/featured/daily-research-brief-routine.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "encodedSha256": "ffdd018c95fe569910fb89bdbe460e5aaf4e57e905901f3242081b39c302fc54",
+        "sharpRawPixelSha256": "a0a22a378613e15874d5a25aa5d15bf43d8121ae20a722224e547a35a3008316",
+        "width": 1672,
+        "height": 941,
+        "channels": 3
+      }
+    },
+    {
+      "order": 15,
+      "family": "research",
+      "slug": "recruiting-automated-screening-change-log-study",
+      "bodySha256Before": "6e825de614397b9f755de67f081b925821ec691203e64aa7a1bef90f56317f4c",
+      "bodySha256After": "6e825de614397b9f755de67f081b925821ec691203e64aa7a1bef90f56317f4c",
+      "bodyUnchanged": true,
+      "publicationDate": "2026-10-06",
+      "visibleDate": "October 6, 2026",
+      "canonical": "https://virtualassistantprovider.com/research/recruiting-automated-screening-change-log-study",
+      "renderedChecks": {
+        "http200": true,
+        "title": true,
+        "visibleDate": true,
+        "datePublished": true,
+        "dateModified": true,
+        "canonical": true,
+        "index": true,
+        "sitemap": true,
+        "bodyFloor": true
+      },
+      "featuredImage": {
+        "url": "/featured/daily-research-brief-routine.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "encodedSha256": "ffdd018c95fe569910fb89bdbe460e5aaf4e57e905901f3242081b39c302fc54",
+        "sharpRawPixelSha256": "a0a22a378613e15874d5a25aa5d15bf43d8121ae20a722224e547a35a3008316",
+        "width": 1672,
+        "height": 941,
+        "channels": 3
+      }
+    },
+    {
+      "order": 16,
+      "family": "research",
+      "slug": "marketing-influencer-disclosure-version-control-study",
+      "bodySha256Before": "507450888d90a5aa452ee0dce20753118b03463872002b9db5684c9455ce9a86",
+      "bodySha256After": "507450888d90a5aa452ee0dce20753118b03463872002b9db5684c9455ce9a86",
+      "bodyUnchanged": true,
+      "publicationDate": "2026-10-06",
+      "visibleDate": "October 6, 2026",
+      "canonical": "https://virtualassistantprovider.com/research/marketing-influencer-disclosure-version-control-study",
+      "renderedChecks": {
+        "http200": true,
+        "title": true,
+        "visibleDate": true,
+        "datePublished": true,
+        "dateModified": true,
+        "canonical": true,
+        "index": true,
+        "sitemap": true,
+        "bodyFloor": true
+      },
+      "featuredImage": {
+        "url": "/featured/daily-research-brief-routine.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "encodedSha256": "ffdd018c95fe569910fb89bdbe460e5aaf4e57e905901f3242081b39c302fc54",
+        "sharpRawPixelSha256": "a0a22a378613e15874d5a25aa5d15bf43d8121ae20a722224e547a35a3008316",
+        "width": 1672,
+        "height": 941,
+        "channels": 3
+      }
+    },
+    {
+      "order": 17,
+      "family": "research",
+      "slug": "executive-assistant-account-recovery-identity-study",
+      "bodySha256Before": "4df3dc46070e8b7be68e121f47e1c22dd0fad19e13e53f3c13c42491bd02364f",
+      "bodySha256After": "4df3dc46070e8b7be68e121f47e1c22dd0fad19e13e53f3c13c42491bd02364f",
+      "bodyUnchanged": true,
+      "publicationDate": "2026-10-06",
+      "visibleDate": "October 6, 2026",
+      "canonical": "https://virtualassistantprovider.com/research/executive-assistant-account-recovery-identity-study",
+      "renderedChecks": {
+        "http200": true,
+        "title": true,
+        "visibleDate": true,
+        "datePublished": true,
+        "dateModified": true,
+        "canonical": true,
+        "index": true,
+        "sitemap": true,
+        "bodyFloor": true
+      },
+      "featuredImage": {
+        "url": "/featured/daily-research-brief-routine.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "encodedSha256": "ffdd018c95fe569910fb89bdbe460e5aaf4e57e905901f3242081b39c302fc54",
+        "sharpRawPixelSha256": "a0a22a378613e15874d5a25aa5d15bf43d8121ae20a722224e547a35a3008316",
+        "width": 1672,
+        "height": 941,
+        "channels": 3
+      }
+    }
+  ],
+  "localHttp": {
+    "valid": true,
+    "internalDestinations": "10/10 HTTP 200",
+    "indexes": "17/17",
+    "sitemap": "17/17",
+    "featuredImages": "17/17 HTTP 200 image/png and Sharp raw-pixel decode passed"
+  },
+  "researchOutlines": {
+    "operations-incident-status-source-of-truth-study": [
+      "Research question: How can an operations assistant coordinate incident updates without turning an unconfirmed report into an operational fact?",
+      "Authority and limits of the incident-response evidence",
+      "From conflicting signal to approved status",
+      "An append-only incident chronology",
+      "What the incident exercise must try to break",
+      "Checkout outage case: preserve disagreement until the owner resolves it",
+      "Boundary, limitations and conclusion"
+    ],
+    "ecommerce-chargeback-evidence-packet-study": [
+      "Research question: What can an ecommerce assistant assemble for a transaction dispute without deciding that the buyer or merchant is right?",
+      "What merchant and consumer-protection sources can support",
+      "Reconstruct the transaction before selecting evidence",
+      "Packet index, minimization and disposition",
+      "Build a dispute denominator that cannot flatter itself",
+      "Subscription dispute case: assemble relevance without accusing the buyer",
+      "Boundary, limitations and conclusion"
+    ],
+    "recruiting-automated-screening-change-log-study": [
+      "Research question: How can a recruiting assistant preserve evidence needed to review changes in an automated candidate-screening workflow?",
+      "Employment guidance and the limits of configuration evidence",
+      "Separate populations at the configuration boundary",
+      "Join candidate history to tool-version history",
+      "Analyze a screening change without inventing causation",
+      "Threshold-change case: stop a mixed candidate population",
+      "Boundary, limitations and conclusion"
+    ],
+    "marketing-influencer-disclosure-version-control-study": [
+      "Research question: How can a marketing assistant verify that an approved sponsorship disclosure survives from brief to published post?",
+      "Endorsement guidance and owner judgment",
+      "Follow disclosure from instruction to public rendering",
+      "Link script, media, caption and live versions",
+      "Test the disclosure where a viewer actually encounters it",
+      "Sponsored-video case: the source passed and the live post failed",
+      "Boundary, limitations and conclusion"
+    ],
+    "executive-assistant-account-recovery-identity-study": [
+      "Research question: How should an executive assistant coordinate urgent account recovery without becoming a shortcut around strong authentication?",
+      "Authentication guidance and the boundary of assistant work",
+      "Route urgency through a predeclared recovery path",
+      "Separate coordination, verification and secret handling",
+      "Stress the recovery route before an executive is locked out",
+      "Travel recovery case: urgency arrives through an untrusted channel",
+      "Boundary, limitations and conclusion"
+    ]
+  },
+  "nearestPriorReceipts": {
+    "operations-incident-status-source-of-truth-study": {
+      "nearestPrior": {
+        "slug": "operations-vendor-payment-detail-change-study",
+        "fiveWordShingleJaccard": 0.023427331887201735
+      },
+      "argumentReceipt": "Current article preserves an append-only chronology across conflicting observations; prior article verifies a high-risk payment-detail change request.",
+      "exampleReceipt": "Current checkout outage keeps regional impairment and residual order cleanup separate; prior example centers on vendor bank-detail substitution.",
+      "decisionReceipt": "Current named owners decide cause, restoration and public claims; prior owners decide whether verified payment details may be released."
+    },
+    "ecommerce-chargeback-evidence-packet-study": {
+      "nearestPrior": {
+        "slug": "ecommerce-product-recall-routing-study",
+        "fiveWordShingleJaccard": 0.024830699774266364
+      },
+      "argumentReceipt": "Current article reconstructs transaction relevance without deciding who is right; prior article routes product-recall evidence and affected inventory.",
+      "exampleReceipt": "Current subscription dispute tests recurring-charge evidence; prior example tests a recalled-product population.",
+      "decisionReceipt": "Current owner decides evidence submission and dispute position; prior owner decides recall action, listing disposition and customer response."
+    },
+    "recruiting-automated-screening-change-log-study": {
+      "nearestPrior": {
+        "slug": "recruiting-accommodation-request-routing-study",
+        "fiveWordShingleJaccard": 0.024709302325581394
+      },
+      "argumentReceipt": "Current article joins candidate history to tool/configuration versions; prior article routes accommodation requests with confidentiality boundaries.",
+      "exampleReceipt": "Current threshold-change case stops a mixed candidate population; prior example centers on an applicant accommodation request.",
+      "decisionReceipt": "Current hiring/compliance owners decide causation and candidate disposition; prior owners decide accommodation feasibility and implementation."
+    },
+    "marketing-influencer-disclosure-version-control-study": {
+      "nearestPrior": {
+        "slug": "marketing-ad-approval-version-study",
+        "fiveWordShingleJaccard": 0.024578971324533454
+      },
+      "argumentReceipt": "Current article traces sponsorship disclosure from brief through live rendering; prior article preserves approval lineage for advertising versions.",
+      "exampleReceipt": "Current sponsored-video case passes source review but fails in the live placement; prior example centers on a changed ad creative/version.",
+      "decisionReceipt": "Current legal/marketing owner decides disclosure adequacy and corrective release; prior owner decides whether the approved ad version may publish."
+    },
+    "executive-assistant-account-recovery-identity-study": {
+      "nearestPrior": {
+        "slug": "executive-travel-disruption-decision-log-study",
+        "fiveWordShingleJaccard": 0.025123152709359605
+      },
+      "argumentReceipt": "Current article routes urgency through a predeclared authentication recovery path; prior article preserves options and approvals during travel disruption.",
+      "exampleReceipt": "Current travel recovery case begins with an urgent request over an untrusted channel; prior example concerns disrupted travel choices.",
+      "decisionReceipt": "Current security/account owner verifies identity and authorizes recovery; prior executive/travel owner chooses and approves itinerary action."
+    }
+  },
+  "sourceRepairs": [
+    {
+      "from": "https://csrc.nist.gov/projects/data-integrity",
+      "to": "https://csrc.nist.gov/glossary/term/data_integrity"
+    },
+    {
+      "from": "https://www.eeoc.gov/employers/small-business/7-employment-tests-and-selection-procedures",
+      "to": "https://www.eeoc.gov/laws/guidance/employment-tests-and-selection-procedures"
+    },
+    {
+      "from": "https://www.eeoc.gov/laws/guidance/americans-disabilities-act-and-use-software-algorithms-and-artificial-intelligence",
+      "to": "https://www.eeoc.gov/eeoc-disability-related-resources/artificial-intelligence-and-ada"
+    },
+    {
+      "from": "https://www.eeoc.gov/laws/guidance/uniform-guidelines-employee-selection-procedures",
+      "to": "https://www.eeoc.gov/regulations-and-guidelines"
+    }
+  ],
+  "officialTitleClaimEvidence": [
+    {
+      "publisher": "U.S. Office of Personnel Management",
+      "title": "Assessment and Selection",
+      "url": "https://www.opm.gov/policy-data-oversight/assessment-and-selection/",
+      "boundedClaim": "Official resources on structured employment assessment; used alongside EEOC guidance, not as provider certification."
+    },
+    {
+      "publisher": "Federal Trade Commission",
+      "title": "Mail, Internet, or Telephone Order Merchandise Rule",
+      "url": "https://www.ftc.gov/legal-library/browse/rules/mail-internet-or-telephone-order-merchandise-rule",
+      "boundedClaim": "Relevant to covered sellers shipment, delay, and refund practices; article directs readers to qualified advice for applicable rules."
+    },
+    {
+      "publisher": "Federal Trade Commission",
+      "title": "Protecting Personal Information: A Guide for Business",
+      "url": "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business",
+      "boundedClaim": "Supports limiting retained personal information and restricting access; does not certify the workflow or provider."
+    },
+    {
+      "publisher": "Federal Trade Commission",
+      "title": "Advertisement Endorsements",
+      "url": "https://www.ftc.gov/news-events/topics/truth-advertising/advertisement-endorsements",
+      "boundedClaim": "Official endorsement topic material supporting disclosure review."
+    },
+    {
+      "publisher": "Federal Trade Commission",
+      "title": "Disclosures 101 for Social Media Influencers",
+      "url": "https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers",
+      "boundedClaim": "Official influencer disclosure guidance used to test whether disclosure survives into the live placement."
+    },
+    {
+      "publisher": "Federal Trade Commission",
+      "title": "Endorsement Guides: What People Are Asking",
+      "url": "https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking",
+      "boundedClaim": "Official question-and-answer material on endorsement disclosures; no provider or outcome claim is made."
+    }
+  ],
+  "commands": [
+    {
+      "command": "git fetch origin main --prune; git rebase origin/main",
+      "result": "PASS; fetched 849ee427f1d3a1d1defa928b3c274ed5d9a6b714; branch up to date"
+    },
+    {
+      "command": "npm audit --package-lock-only",
+      "result": "PASS; 0 vulnerabilities"
+    },
+    {
+      "command": "npm run lint",
+      "result": "PASS; tsc --noEmit"
+    },
+    {
+      "command": "npm run validate:aug10-research",
+      "result": "PASS"
+    },
+    {
+      "command": "npm run validate:healthcare-privacy-handoff",
+      "result": "PASS"
+    },
+    {
+      "command": "node scripts/validate_oct2_release.mjs",
+      "result": "PASS; valid true, no failures"
+    },
+    {
+      "command": "node scripts/validate_sep28_release.mjs",
+      "result": "PASS; valid true, no failures"
+    },
+    {
+      "command": "node --test tests/homepage-auditor-regression.test.mjs",
+      "result": "PASS; 1 test, 0 failures"
+    },
+    {
+      "command": "rm -rf .next && npm run build",
+      "result": "PASS; Next.js 16.3.8, 666/666 static pages"
+    },
+    {
+      "command": "local HTTP verification against npm run start",
+      "result": "PASS; 17/17 routes, 10/10 unique contextual internal destinations, indexes, sitemap, metadata, and Sharp raw-pixel image decode"
+    }
+  ],
+  "productionMutation": false,
+  "pushAuthorized": false,
+  "nextAction": "Reviewer may inspect this local packet and explicitly approve or reject a corrective second-push exception. No push should occur without that approval."
+}
