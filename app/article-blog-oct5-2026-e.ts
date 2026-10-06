@@ -8,8 +8,8 @@ export const october5BlogPostsE: BlogPost[] = [
     title: 'Bookkeeping Assistant Month-End Evidence: What “Ready for Review” Actually Means',
     excerpt: 'Define month-end readiness through reconciled evidence, visible differences, reviewer questions, and approvals instead of a folder full of documents.',
     minutes: 10,
-    published: '2026-10-05',
-    displayDate: 'October 5, 2026',
+    published: '2026-10-06',
+    displayDate: 'October 6, 2026',
     takeaways: ['Define readiness account by account and output by output.', 'Keep unresolved differences visible instead of forcing balances.', 'Package evidence so a reviewer can retrace each conclusion.', 'Separate preparation, review, approval, and posting authority.'],
     sections: [
       { heading: 'Ready for review is a testable state', body: `A bookkeeping assistant can collect every statement in a checklist and still leave the month unready. Files may cover the wrong period, transactions may remain duplicated, a reconciliation may balance only because an unexplained adjustment was added, or the reviewer may have no way to connect a total to its source. Document count measures activity. Review readiness describes whether a qualified reviewer can evaluate the work without reconstructing it from scratch.
@@ -57,8 +57,8 @@ For help defining a bounded preparation lane with review kept in the right hands
     title: 'Ecommerce Assistant Catalog Rollback Plan for High-Risk Product Changes',
     excerpt: 'Treat bulk catalog edits as controlled releases with a captured before-state, representative checks, pause thresholds, and verified recovery.',
     minutes: 10,
-    published: '2026-10-05',
-    displayDate: 'October 5, 2026',
+    published: '2026-10-06',
+    displayDate: 'October 6, 2026',
     takeaways: ['Define the exact change population and exclusions.', 'Capture a recoverable before-state before editing.', 'Test variants, channels, and downstream behavior.', 'Pause and roll back against written thresholds.'],
     sections: [
       { heading: 'A catalog edit can behave like a software release', body: `Changing hundreds of product records is not ordinary data entry. One import can alter prices, availability, tax categories, shipping attributes, variant relationships, marketplace listings, search filters, feeds, and customer-facing claims. The storefront may look normal while a downstream channel rejects items or a subset of variants inherits the wrong value. A safe assistant workflow treats the change as a bounded release with an owner, a tested population, and a recovery path.
@@ -106,8 +106,8 @@ For controlled catalog operations with escalation kept with the business owner, 
     title: 'Recruiting Assistant Candidate-Record Corrections Without Rewriting History',
     excerpt: 'Correct duplicates, scheduling errors, names, consent states, and interview records through an additive, reviewable history.',
     minutes: 10,
-    published: '2026-10-05',
-    displayDate: 'October 5, 2026',
+    published: '2026-10-06',
+    displayDate: 'October 6, 2026',
     takeaways: ['Preserve the original record and the reason for change.', 'Separate administrative correction from hiring judgment.', 'Verify identity and consent before merging profiles.', 'Trace downstream schedules, reports, and integrations after correction.'],
     sections: [
       { heading: 'Correction should improve accuracy without erasing the process', body: `Applicant tracking systems accumulate duplicate profiles, mistyped names, stale contact details, incorrect interview times, imported stage errors, and notes attached to the wrong record. Leaving those defects in place can confuse candidates and reviewers. Quietly replacing history creates a different problem: nobody can tell what information a decision relied on, when it changed, or whether the editor had authority.

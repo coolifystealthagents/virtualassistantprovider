@@ -4,7 +4,7 @@
   "scope": "VIR-98 local repair for combined 12 Blog + 5 Research release; no second production push authorized",
   "quantity": 5,
   "publicationTimezone": "UTC",
-  "publicationDateStatus": "intended 2026-10-05; Blog integrator must reconcile all date fields to each route's actual first-live UTC date before the sole combined push if publication crosses midnight",
+  "publicationDateStatus": "reconciled locally to intended actual first-publication date 2026-10-06 UTC; pending explicit second-push exception, deployment, and live verification",
   "repository": "coolifystealthagents/virtualassistantprovider",
   "branch": "vir-98-blog-2026-10-05",
   "baselineSha": "832cc16e53f0ddc2aa2d1097ba9f2e97cc4a8ac4",
@@ -34,7 +34,7 @@
         "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
       ],
       "contentHash": "f8c4934b31c185b4419b438fc164fc590dd069ed1ba12dc2c9a6756ae40ff54a",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "renderedBodyWords": 2236,
       "commitSha": "fbd886e8fe8d9e2c3ea3314e604a586e92da2d35",
       "deploymentEvidence": "local repair only; production push and deployment prohibited pending explicit user approval",
@@ -52,7 +52,7 @@
         "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business"
       ],
       "contentHash": "60333d99625993f96d5cfb84be6a0e9ad260b0e52001b05c43ebc01fe413a7c1",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "renderedBodyWords": 2231,
       "commitSha": "fbd886e8fe8d9e2c3ea3314e604a586e92da2d35",
       "deploymentEvidence": "local repair only; production push and deployment prohibited pending explicit user approval",
@@ -70,7 +70,7 @@
         "https://www.eeoc.gov/regulations-and-guidelines"
       ],
       "contentHash": "83adfb4d5aa306f3d77584b86a7f810e80b243217ace9015244a14d06e8571ae",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "renderedBodyWords": 2219,
       "commitSha": "fbd886e8fe8d9e2c3ea3314e604a586e92da2d35",
       "deploymentEvidence": "local repair only; production push and deployment prohibited pending explicit user approval",
@@ -88,7 +88,7 @@
         "https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking"
       ],
       "contentHash": "892660eb6587cf2e9ea89cdf5d7a8dcfa38c269d04ca66fc0af55229630e1098",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "renderedBodyWords": 2195,
       "commitSha": "fbd886e8fe8d9e2c3ea3314e604a586e92da2d35",
       "deploymentEvidence": "local repair only; production push and deployment prohibited pending explicit user approval",
@@ -106,7 +106,7 @@
         "https://pages.nist.gov/800-63-4/"
       ],
       "contentHash": "fcee1166ddb53afc45d1a7d33beae9ee2083936c7997b98b90eacac3ad2bd1ed",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "renderedBodyWords": 2209,
       "commitSha": "fbd886e8fe8d9e2c3ea3314e604a586e92da2d35",
       "deploymentEvidence": "local repair only; production push and deployment prohibited pending explicit user approval",

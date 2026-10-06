@@ -8,8 +8,8 @@ export const october5BlogPostsB: BlogPost[] = [
     title: 'Build an Inbox Authority Matrix Before Delegating Executive Email',
     excerpt: 'Turn vague inbox access into explicit rules for reading, drafting, sending, escalating, and retaining executive correspondence.',
     minutes: 9,
-    published: '2026-10-05',
-    displayDate: 'October 5, 2026',
+    published: '2026-10-06',
+    displayDate: 'October 6, 2026',
     takeaways: [
       'Separate permission to view a message from authority to answer or commit.',
       'Define rules by message class, sender, sensitivity, and requested action.',
@@ -64,8 +64,8 @@ If you need an operating design before handing over a founder mailbox, review ou
     title: 'Design a Refund Escalation Ladder for a Customer Support Virtual Assistant',
     excerpt: 'Give support assistants a clear path from factual review to approved resolution without hiding exceptions or overstepping refund authority.',
     minutes: 9,
-    published: '2026-10-05',
-    displayDate: 'October 5, 2026',
+    published: '2026-10-06',
+    displayDate: 'October 6, 2026',
     takeaways: [
       'Separate evidence collection, policy matching, recommendation, and final approval.',
       'Route by exception type and consequence instead of forwarding every difficult ticket to one person.',
@@ -122,8 +122,8 @@ For help defining a support queue with explicit authority and escalation, explor
     title: 'Control Product Catalog Changes Without Slowing an Ecommerce Assistant',
     excerpt: 'Use source fields, risk tiers, previews, and rollback evidence to let an ecommerce assistant maintain listings safely.',
     minutes: 9,
-    published: '2026-10-05',
-    displayDate: 'October 5, 2026',
+    published: '2026-10-06',
+    displayDate: 'October 6, 2026',
     takeaways: [
       'Treat price, claims, variants, inventory, and imagery as different risk classes.',
       'Require an authoritative request and a before-and-after preview for consequential fields.',

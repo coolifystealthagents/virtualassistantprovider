@@ -8,7 +8,7 @@ export const october5BlogPostsD: BlogPost[] = [
     title: 'Virtual Assistant Coverage During a Founder’s Vacation: A Seven-Day Control Plan',
     excerpt: 'Prepare decisions, queues, emergency routes, and a return-day reconciliation so a founder can step away without granting vague authority.',
     minutes: 9,
-    published: '2026-10-05', displayDate: 'October 5, 2026',
+    published: '2026-10-06', displayDate: 'October 6, 2026',
     takeaways: ['Design coverage around decisions, not a larger task list.', 'Give every live queue an owner, backup, and stop rule.', 'Use one short daily brief instead of continuous interruption.', 'Reconcile promises, money, access, and exceptions when the founder returns.'],
     sections: [
       { heading: 'Start with the decisions that normally return to the founder', body: `Vacation coverage often fails before the founder leaves. A long task list is handed to an assistant, but the decisions embedded in those tasks remain unstated. A calendar request can commit executive time. A customer message can imply a refund or contract change. An invoice can require verification rather than forwarding. The useful planning question is therefore not “What does the founder do?” but “Which events normally wait for the founder, and what should happen to each one during these seven days?”
@@ -44,7 +44,7 @@ CISA’s [account security guidance](https://www.cisa.gov/secure-our-world) supp
     slug: 'transfer-customer-support-queue-between-virtual-assistants', featuredImage: '/featured/customer-service-virtual-assistant-philippines.png',
     title: 'How to Transfer a Customer Support Queue Between Virtual Assistants Without Losing Context',
     excerpt: 'Move active cases with promises, clocks, restrictions, and acceptance evidence intact instead of treating reassignment as a bulk status change.', minutes: 9,
-    published: '2026-10-05', displayDate: 'October 5, 2026',
+    published: '2026-10-06', displayDate: 'October 6, 2026',
     takeaways: ['Inventory active cases before changing ownership.', 'Preserve customer promises and service clocks.', 'Use paired review for exceptions, not just easy tickets.', 'Require the receiving assistant to accept a reconciled queue.'],
     sections: [
       { heading: 'A queue transfer is a custody change, not an export', body: `Changing the assignee field does not transfer understanding. Active support cases contain promises, elapsed clocks, attachments, identity checks, internal decisions, restricted notes, and customer expectations. If a departing assistant explains only the unusual tickets from memory, quiet commitments disappear. If every case is copied into a handoff document, the team creates an incomplete and less protected second system.

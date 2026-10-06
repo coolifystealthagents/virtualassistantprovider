@@ -4,7 +4,7 @@
   "scope": "VIR-98 Blog contribution to combined 12 Blog + 5 Research release",
   "quantity": 12,
   "publicationTimezone": "UTC",
-  "publicationDateStatus": "intended 2026-10-05; actual first-publication date must be reconciled if deployment crosses UTC midnight",
+  "publicationDateStatus": "reconciled locally to intended actual first-publication date 2026-10-06 UTC; pending explicit second-push exception, deployment, and live verification",
   "repository": "coolifystealthagents/virtualassistantprovider",
   "branch": "vir-98-blog-2026-10-05",
   "baselineSha": "832cc16e53f0ddc2aa2d1097ba9f2e97cc4a8ac4",
@@ -31,7 +31,7 @@
         "https://www.hse.gov.uk/stress/standards/demands.htm"
       ],
       "contentHash": "530537ebc375f95de380fb40058e64e3f44a6251359cc2a129155143b4a432c8",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "substantiveBodyWords": 1058,
       "commitSha": "df618aad3426cf7dc16fecade30bf2166879f7d0",
       "deploymentEvidence": "pending sole combined production push and browser-operator exact-SHA deployment",
@@ -47,7 +47,7 @@
         "https://www.opm.gov/policy-data-oversight/assessment-and-selection/"
       ],
       "contentHash": "04b7208bc0154b8665a6bb29b59967eadfbad3441dd7f7252a1edf0d417cfdc5",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "substantiveBodyWords": 1035,
       "commitSha": "df618aad3426cf7dc16fecade30bf2166879f7d0",
       "deploymentEvidence": "pending sole combined production push and browser-operator exact-SHA deployment",
@@ -63,7 +63,7 @@
         "https://www.archives.gov/records-mgmt/email-management"
       ],
       "contentHash": "bfb5e9661743284c20006bd1d566a16af26fc57fd5794d6fbbe240b320129036",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "substantiveBodyWords": 1002,
       "commitSha": "efa263dd50ce22f468aad793c3018863c349d49a",
       "deploymentEvidence": "pending sole combined production push and browser-operator exact-SHA deployment",
@@ -79,7 +79,7 @@
         "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business"
       ],
       "contentHash": "8b13b6d87b027c5f772c621a7308f0a942a625ca35a8b3392bd915895882a604",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "substantiveBodyWords": 1026,
       "commitSha": "efa263dd50ce22f468aad793c3018863c349d49a",
       "deploymentEvidence": "pending sole combined production push and browser-operator exact-SHA deployment",
@@ -95,7 +95,7 @@
         "https://www.cpsc.gov/Business--Manufacturing/Business-Education"
       ],
       "contentHash": "37575aa8e899cda59710c07227daf82ffde06bfd6bcd63ac2c99b32f298e152d",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "substantiveBodyWords": 962,
       "commitSha": "efa263dd50ce22f468aad793c3018863c349d49a",
       "deploymentEvidence": "pending sole combined production push and browser-operator exact-SHA deployment",
@@ -111,7 +111,7 @@
         "https://www.sba.gov/business-guide/manage-your-business/manage-your-finances"
       ],
       "contentHash": "ab10c2710ee182b287207a7bb6861607b57ab6c5b9badab043ed5ded72b2f1e6",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "substantiveBodyWords": 948,
       "commitSha": "bbee1f0b32fe892af1e71ca893bf383088d3cc3e",
       "deploymentEvidence": "pending sole combined production push and browser-operator exact-SHA deployment",
@@ -127,7 +127,7 @@
         "https://csrc.nist.gov/projects/data-integrity"
       ],
       "contentHash": "bba554b0d64186d541b6602055bd4e6885db8a62d661b87cf10351cac69c3de4",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "substantiveBodyWords": 998,
       "commitSha": "bbee1f0b32fe892af1e71ca893bf383088d3cc3e",
       "deploymentEvidence": "pending sole combined production push and browser-operator exact-SHA deployment",
@@ -143,7 +143,7 @@
         "https://www.ready.gov/business-continuity-plan"
       ],
       "contentHash": "2fd74fb2765cdb087c180ccb509f4e2fb878322e109a04a4319cdc817c0349e0",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "substantiveBodyWords": 970,
       "commitSha": "61b90a0f513db3cbc20295c82d76c9fd76de6848",
       "deploymentEvidence": "pending sole combined production push and browser-operator exact-SHA deployment",
@@ -159,7 +159,7 @@
         "https://www.nist.gov/cyberframework"
       ],
       "contentHash": "f1e0e8e754272fcfcccb2b8ddf79a643a4b7b41580fe084527a6b6672087a445",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "substantiveBodyWords": 948,
       "commitSha": "61b90a0f513db3cbc20295c82d76c9fd76de6848",
       "deploymentEvidence": "pending sole combined production push and browser-operator exact-SHA deployment",
@@ -175,7 +175,7 @@
         "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business"
       ],
       "contentHash": "437299a11be9b5a007ebca7559cdfa2f8083e8c4e40e6c1604cbb3a04ec50fe7",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "substantiveBodyWords": 943,
       "commitSha": "a78a5097f226df2fea5177f83e0358af5cd335fa",
       "deploymentEvidence": "pending sole combined production push and browser-operator exact-SHA deployment",
@@ -191,7 +191,7 @@
         "https://www.ftc.gov/legal-library/browse/rules/mail-internet-or-telephone-order-merchandise-rule"
       ],
       "contentHash": "d03f72889e9d4f61492048a65d2b708e5cdfab227ff1c2ce763b6eb6e738e825",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "substantiveBodyWords": 909,
       "commitSha": "a78a5097f226df2fea5177f83e0358af5cd335fa",
       "deploymentEvidence": "pending sole combined production push and browser-operator exact-SHA deployment",
@@ -207,7 +207,7 @@
         "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business"
       ],
       "contentHash": "9e45318700548d973b462e4392436232f80092e523afdc9e01b12a2664f9c389",
-      "publicationDate": "2026-10-05",
+      "publicationDate": "2026-10-06",
       "substantiveBodyWords": 942,
       "commitSha": "a78a5097f226df2fea5177f83e0358af5cd335fa",
       "deploymentEvidence": "pending sole combined production push and browser-operator exact-SHA deployment",

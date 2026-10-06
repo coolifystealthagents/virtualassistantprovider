@@ -9,8 +9,8 @@ export const october5BlogPostsC: BlogPost[] = [
     title: 'How to Calculate the True Handoff Cost Before Hiring a Virtual Assistant',
     excerpt: 'Estimate preparation, training, review, rework, and access setup before deciding whether a recurring workflow is ready to delegate.',
     minutes: 10,
-    published: '2026-10-05',
-    displayDate: 'October 5, 2026',
+    published: '2026-10-06',
+    displayDate: 'October 6, 2026',
     takeaways: [
       'Measure the owner time required to make work transferable, not only the assistant hours after launch.',
       'Separate one-time setup from recurring review and exception costs.',
@@ -63,8 +63,8 @@ If the numbers support a controlled operations handoff, review our [operations a
     title: 'What Should a Virtual Assistant Do When the Source Record Is Wrong?',
     excerpt: 'Give assistants a conflict protocol that preserves evidence, limits corrections, and keeps an uncertain record from spreading through connected systems.',
     minutes: 10,
-    published: '2026-10-05',
-    displayDate: 'October 5, 2026',
+    published: '2026-10-06',
+    displayDate: 'October 6, 2026',
     takeaways: [
       'Name the authoritative source for each field before conflicts appear.',
       'Pause the affected action while unrelated, safe work continues.',

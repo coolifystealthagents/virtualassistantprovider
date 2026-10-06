@@ -9,8 +9,8 @@ export const october5BlogPosts: BlogPost[] = [
     title: 'When Should a Founder Split One Virtual Assistant Role Into Two?',
     excerpt: 'Use queue pressure, permission conflicts, and review needs to decide whether one broad virtual assistant role has become two real jobs.',
     minutes: 9,
-    published: '2026-10-05',
-    displayDate: 'October 5, 2026',
+    published: '2026-10-06',
+    displayDate: 'October 6, 2026',
     takeaways: [
       'Split a role when work streams compete structurally, not merely because one week is busy.',
       'Map demand, access, judgment, and service expectations before choosing a staffing shape.',
@@ -80,8 +80,8 @@ If your role map points to separate executive and operational lanes, review our 
     title: 'Virtual Assistant Trial Projects: Test the Real Job Without Live Risk',
     excerpt: 'Design a bounded, paid work sample that reflects the role, protects live systems, and produces evidence a hiring team can score consistently.',
     minutes: 9,
-    published: '2026-10-05',
-    displayDate: 'October 5, 2026',
+    published: '2026-10-06',
+    displayDate: 'October 6, 2026',
     takeaways: [
       'A useful trial samples the actual decisions and artifacts of the role without becoming free production work.',
       'Use synthetic or redacted inputs and a sandbox wherever the live task contains customer, financial, or candidate data.',
