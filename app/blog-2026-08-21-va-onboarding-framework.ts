@@ -56,7 +56,7 @@ export const post: BlogPost = {
         "answer": "Only after the first lane is dependable. Add one related task at a time with an example and a review before the next appears."
       }
     ],
-    "featuredImage": "/aug21-heroes/va-onboarding-30-day-framework.jpeg",
+    "featuredImage": "/featured/virtual-assistant-onboarding-30-day-routine.png",
     published: '2026-08-21',
     updated: '2026-08-21',
     "displayDate": "August 21, 2026",

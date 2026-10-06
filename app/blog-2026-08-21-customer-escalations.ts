@@ -56,7 +56,7 @@ export const post: BlogPost = {
         "answer": "Weekly is a sensible cadence. Look for recurring categories and unclear thresholds, then update the playbook so the same issue does not keep escalating."
       }
     ],
-    "featuredImage": "/aug21-heroes/customer-escalations-remote-teams.jpeg",
+    "featuredImage": "/featured/customer-support-qa-workflow.png",
     published: '2026-08-21',
     updated: '2026-08-21',
     "displayDate": "August 21, 2026",

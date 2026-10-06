@@ -97,7 +97,7 @@ export const september22BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines VA hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "assistant escalation rules guide",
@@ -213,7 +213,7 @@ export const september22BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines VA hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "assistant handoff guide",
@@ -329,7 +329,7 @@ export const september22BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines VA hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "assistant escalation rules guide",
@@ -445,7 +445,7 @@ export const september22BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines VA hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "assistant handoff guide",
@@ -561,7 +561,7 @@ export const september22BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines VA hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "assistant escalation rules guide",
@@ -677,7 +677,7 @@ export const september22BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines VA hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "assistant handoff guide",
@@ -793,7 +793,7 @@ export const september22BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines VA hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "assistant escalation rules guide",
@@ -909,7 +909,7 @@ export const september22BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines VA hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "assistant handoff guide",
@@ -1025,7 +1025,7 @@ export const september22BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines VA hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "assistant escalation rules guide",
@@ -1141,7 +1141,7 @@ export const september22BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines VA hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "assistant handoff guide",
@@ -1257,7 +1257,7 @@ export const september22BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines VA hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "assistant escalation rules guide",
@@ -1373,7 +1373,7 @@ export const september22BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines VA hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "assistant handoff guide",

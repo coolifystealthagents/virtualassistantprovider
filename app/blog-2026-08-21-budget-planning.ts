@@ -52,7 +52,7 @@ export const post: BlogPost = {
         "answer": "A short weekly check on what landed and what slipped, plus a monthly conversation about scope and capacity. Increase the frequency if the role is changing quickly or if work is missing its definition of done."
       }
     ],
-    "featuredImage": "/aug21-heroes/va-budget-planning-cost-transparency.jpeg",
+    "featuredImage": "/featured/virtual-assistant-task-prioritization-philippines.png",
     published: '2026-08-21',
     updated: '2026-08-21',
     "displayDate": "August 21, 2026",

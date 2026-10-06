@@ -86,7 +86,7 @@ export const september28BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines virtual assistant hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "virtual assistant escalation rules guide",
@@ -190,7 +190,7 @@ export const september28BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines virtual assistant hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "virtual assistant escalation rules guide",
@@ -294,7 +294,7 @@ export const september28BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines virtual assistant hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "virtual assistant escalation rules guide",
@@ -398,7 +398,7 @@ export const september28BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines virtual assistant hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "virtual assistant escalation rules guide",
@@ -502,7 +502,7 @@ export const september28BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines virtual assistant hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "virtual assistant escalation rules guide",
@@ -606,7 +606,7 @@ export const september28BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines virtual assistant hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "virtual assistant escalation rules guide",
@@ -710,7 +710,7 @@ export const september28BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines virtual assistant hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "virtual assistant escalation rules guide",
@@ -814,7 +814,7 @@ export const september28BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines virtual assistant hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "virtual assistant escalation rules guide",
@@ -918,7 +918,7 @@ export const september28BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines virtual assistant hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "virtual assistant escalation rules guide",
@@ -1022,7 +1022,7 @@ export const september28BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines virtual assistant hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "virtual assistant escalation rules guide",
@@ -1126,7 +1126,7 @@ export const september28BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines virtual assistant hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "virtual assistant escalation rules guide",
@@ -1230,7 +1230,7 @@ export const september28BlogPosts: BlogPost[] = [
     "articleLinks": [
       {
         "label": "Philippines virtual assistant hiring guide",
-        "href": "/blog/virtual-assistant-hiring-guide-philippines"
+        "href": "/research/hire-virtual-assistant-philippines-evidence-guide"
       },
       {
         "label": "virtual assistant escalation rules guide",

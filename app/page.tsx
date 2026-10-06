@@ -1,6 +1,7 @@
 import * as data from './data';
 import { Header, Footer, JsonLd } from './components';
 import { fleetServices } from './fleet-content';
+export const metadata={title:'Virtual Assistant Provider',description:'Philippines virtual assistant staffing with clear roles, access boundaries, and practical launch plans.',alternates:{canonical:'/'}};
 const d=data as any;
 const site=d.site||{};
 const posts=(d.blogPosts||[]).slice(0,3);

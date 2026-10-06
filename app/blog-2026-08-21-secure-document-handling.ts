@@ -56,7 +56,7 @@ export const post: BlogPost = {
         "answer": "Review and reset sharing permissions on every file the assistant could reach, and rotate any credentials involved, so lingering access does not remain."
       }
     ],
-    "featuredImage": "/aug21-heroes/secure-document-handling-virtual-assistant.jpeg",
+    "featuredImage": "/featured/virtual-assistant-document-management-philippines.png",
     published: '2026-08-21',
     updated: '2026-08-21',
     "displayDate": "August 21, 2026",

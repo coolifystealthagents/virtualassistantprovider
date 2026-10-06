@@ -56,7 +56,7 @@ export const post: BlogPost = {
         "answer": "Consistency. Give context before requests, review work with specific comments, and keep a predictable feedback rhythm so the assistant can plan and self-correct."
       }
     ],
-    "featuredImage": "/aug21-heroes/cultural-competence-philippines-va-teams.jpeg",
+    "featuredImage": "/featured/virtual-assistant-client-onboarding-philippines.png",
     published: '2026-08-21',
     updated: '2026-08-21',
     "displayDate": "August 21, 2026",

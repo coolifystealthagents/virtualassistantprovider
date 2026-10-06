@@ -56,7 +56,7 @@ export const post: BlogPost = {
         "answer": "Revoke or rotate every credential the assistant could reach, and reset sharing permissions on documents. Treat offboarding as a security procedure, not just a farewell."
       }
     ],
-    "featuredImage": "/aug21-heroes/data-privacy-virtual-assistant-operations.jpeg",
+    "featuredImage": "/featured/virtual-assistant-permission-review-philippines.png",
     published: '2026-08-21',
     updated: '2026-08-21',
     "displayDate": "August 21, 2026",

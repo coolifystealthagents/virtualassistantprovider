@@ -56,7 +56,7 @@ export const post: BlogPost = {
         "answer": "Keep the note short, focus on the work product, invite the assistant's view of blockers, and end with one or two concrete next steps plus a date to revisit them."
       }
     ],
-    "featuredImage": "/aug21-heroes/performance-reviews-remote-workforce.jpeg",
+    "featuredImage": "/featured/virtual-assistant-weekly-one-on-one-philippines.png",
     published: '2026-08-21',
     updated: '2026-08-21',
     "displayDate": "August 21, 2026",

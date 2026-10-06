@@ -56,7 +56,7 @@ export const post: BlogPost = {
         "answer": "Make status visible by default through the workflow, review on a steady cadence, and use dips to improve the system rather than to score the person."
       }
     ],
-    "featuredImage": "/aug21-heroes/virtual-assistant-performance-metrics.jpeg",
+    "featuredImage": "/featured/virtual-assistant-qa-scorecard-philippines.png",
     published: '2026-08-21',
     updated: '2026-08-21',
     "displayDate": "August 21, 2026",

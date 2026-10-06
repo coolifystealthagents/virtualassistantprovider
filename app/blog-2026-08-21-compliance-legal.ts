@@ -56,7 +56,7 @@ export const post: BlogPost = {
         "answer": "Classify the data, grant only the minimum access needed for the task, use approved tools with named accounts, and keep an inventory so offboarding is clean."
       }
     ],
-    "featuredImage": "/aug21-heroes/employment-law-compliance-virtual-assistant.jpeg",
+    "featuredImage": "/featured/virtual-assistant-permission-review-philippines.png",
     published: '2026-08-21',
     updated: '2026-08-21',
     "displayDate": "August 21, 2026",

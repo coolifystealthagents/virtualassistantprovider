@@ -52,7 +52,7 @@ export const post: BlogPost = {
         "answer": "You need enough to define the roles and the rhythm. The playbook can mature as the team grows, but the key standards should be written before the owner can no longer recall them from memory."
       }
     ],
-    "featuredImage": "/aug21-heroes/scaling-virtual-assistant-team-effectively.jpeg",
+    "featuredImage": "/featured/virtual-assistant-project-coordinator-philippines.png",
     published: '2026-08-21',
     updated: '2026-08-21',
     "displayDate": "August 21, 2026",

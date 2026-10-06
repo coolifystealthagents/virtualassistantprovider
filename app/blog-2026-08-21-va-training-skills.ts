@@ -56,7 +56,7 @@ export const post: BlogPost = {
         "answer": "Capture each mastered task as a written standard with steps, definition of done, common errors, and escalation rules, so the assistant can self-teach and the knowledge persists."
       }
     ],
-    "featuredImage": "/aug21-heroes/va-skill-development-bridging-knowledge-gaps.jpeg",
+    "featuredImage": "/featured/virtual-assistant-work-sample-philippines.png",
     published: '2026-08-21',
     updated: '2026-08-21',
     "displayDate": "August 21, 2026",

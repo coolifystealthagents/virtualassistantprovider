@@ -4,6 +4,7 @@
     "build": "next build",
     "start": "next start -H 0.0.0.0 -p 3000",
     "lint": "tsc --noEmit",
+    "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test tests/*.test.mjs",
     "validate:aug10-research": "node scripts/validate-aug10-research.mjs",
     "validate:healthcare-privacy-handoff": "node scripts/validate-healthcare-privacy-handoff.mjs",
     "deploy:daily": "node scripts/daily-coolify-deploy.mjs"

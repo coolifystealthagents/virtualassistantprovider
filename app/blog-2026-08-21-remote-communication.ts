@@ -56,7 +56,7 @@ export const post: BlogPost = {
         "answer": "A customer-impacting issue, a security event, or a hard-deadline decision. Define urgency up front so the urgent channel stays meaningful and is used rarely."
       }
     ],
-    "featuredImage": "/aug21-heroes/cross-timezone-communication-best-practices.jpeg",
+    "featuredImage": "/featured/virtual-assistant-remote-communication-philippines.png",
     published: '2026-08-21',
     updated: '2026-08-21',
     "displayDate": "August 21, 2026",

@@ -28,211 +28,231 @@ export const fleetServices = [
   {
     "slug": "executive-assistant-staffing",
     "title": "Executive Assistant Staffing",
-    "summary": "Executive Assistant Staffing delivered by Philippines-based specialists with a documented scope, review path, and owner approval rules.",
+    "summary": "Philippines-based executive support for calendar coordination, inbox triage, travel research, and follow-through, with commitments, spending, and sensitive judgment kept with the executive.",
+    "heroImage": "/featured/executive-assistant-calendar-delegation.png",
+    "heroImageAlt": "Executive calendar delegation workflow with scheduling rules and approval boundaries",
     "tasks": [
-      "executive assistant staffing queue preparation",
-      "source-record checks and updates",
-      "exception logging for manager review",
-      "daily handoff notes and follow-up"
+      "Triage inbox messages using approved labels and escalation rules",
+      "Coordinate meetings, time zones, buffers, and attendee details",
+      "Compare travel options and prepare itineraries for approval",
+      "Maintain meeting notes, decisions, and follow-up reminders"
     ],
     "controls": [
-      "Named owner for approvals and exceptions",
-      "Role-based access to required tools",
-      "Sample review before the work lane expands"
+      "Define private-message categories and messages that must go directly to the executive",
+      "Require approval before accepting commitments, booking travel, or spending funds",
+      "Use delegated access and named accounts rather than shared executive credentials"
     ],
     "launch": [
-      "Share current examples and source records",
-      "Document the finish line and escalation rule",
-      "Review the first work batch together"
+      "Review a redacted calendar, inbox examples, priorities, and no-book rules",
+      "Rehearse scheduling conflicts, draft replies, and one travel-change scenario",
+      "Review the first live week for accuracy, tone, conflicts, and correct escalation"
     ]
   },
   {
     "slug": "operations-assistant-staffing",
     "title": "Operations Assistant Staffing",
-    "summary": "Operations Assistant Staffing delivered by Philippines-based specialists with a documented scope, review path, and owner approval rules.",
+    "summary": "Philippines-based operations support for recurring queues, project trackers, vendor follow-up, and SOP upkeep, while the operations owner retains priorities, process changes, and spending decisions.",
+    "heroImage": "/featured/operations-assistant-daily-workflow.png",
+    "heroImageAlt": "Operations assistant workflow showing queues, owners, blockers, and daily handoff",
     "tasks": [
-      "operations assistant staffing queue preparation",
-      "source-record checks and updates",
-      "exception logging for manager review",
-      "daily handoff notes and follow-up"
+      "Update recurring work queues, owners, due dates, and dependencies",
+      "Maintain project or service trackers from approved source systems",
+      "Coordinate routine vendor, team, or customer follow-ups",
+      "Document completed steps, blockers, and SOP corrections"
     ],
     "controls": [
-      "Named owner for approvals and exceptions",
-      "Role-based access to required tools",
-      "Sample review before the work lane expands"
+      "Name the system of record for each status and prohibit unsupported updates",
+      "Route priority conflicts, process changes, safety issues, and spend to the operations owner",
+      "Limit access by workflow and record material changes in the task history"
     ],
     "launch": [
-      "Share current examples and source records",
-      "Document the finish line and escalation rule",
-      "Review the first work batch together"
+      "Select one recurring workflow and map its inputs, owners, deadlines, and exceptions",
+      "Run a copied or low-risk queue with missing-data and priority-conflict cases",
+      "Compare the first live handoffs with source records before adding another workflow"
     ]
   },
   {
     "slug": "customer-support-assistants",
     "title": "Customer Support Assistants",
-    "summary": "Customer Support Assistants delivered by Philippines-based specialists with a documented scope, review path, and owner approval rules.",
+    "summary": "Philippines-based customer support for approved ticket types, account questions, and status updates, with refunds, policy exceptions, and sensitive cases routed to a support manager.",
+    "heroImage": "/featured/customer-support-qa-workflow.png",
+    "heroImageAlt": "Customer support quality review workflow for routine tickets and escalations",
     "tasks": [
-      "customer support assistants queue preparation",
-      "source-record checks and updates",
-      "exception logging for manager review",
-      "daily handoff notes and follow-up"
+      "Answer repeat ticket types using current knowledge-base guidance",
+      "Verify order, subscription, or appointment status in approved systems",
+      "Tag urgency, preserve customer context, and route specialist issues",
+      "Summarize recurring questions and knowledge-base gaps"
     ],
     "controls": [
-      "Named owner for approvals and exceptions",
-      "Role-based access to required tools",
-      "Sample review before the work lane expands"
+      "Publish approved answers, tone examples, and explicit no-answer conditions",
+      "Keep refunds, credits, account-security issues, and policy exceptions with a manager",
+      "Separate reply access from billing, administrative, and export permissions"
     ],
     "launch": [
-      "Share current examples and source records",
-      "Document the finish line and escalation rule",
-      "Review the first work batch together"
+      "Build a practice queue with common questions, an upset customer, and an exception",
+      "Review drafts for accuracy, tone, privacy, and escalation before sending",
+      "Open a narrow live queue and sample every reply until quality is stable"
     ]
   },
   {
     "slug": "sales-support-assistants",
     "title": "Sales Support Assistants",
-    "summary": "Sales Support Assistants delivered by Philippines-based specialists with a documented scope, review path, and owner approval rules.",
+    "summary": "Philippines-based sales administration for CRM upkeep, approved follow-up, meeting coordination, and proposal preparation, while sales owners retain qualification, pricing, promises, and negotiation.",
+    "heroImage": "/featured/sales-support-crm-hygiene.png",
+    "heroImageAlt": "Sales support CRM workflow for source-backed updates and owner review",
     "tasks": [
-      "sales support assistants queue preparation",
-      "source-record checks and updates",
-      "exception logging for manager review",
-      "daily handoff notes and follow-up"
+      "Update CRM stages, notes, next actions, and required fields from source evidence",
+      "Research or enrich contact records using approved sources",
+      "Send approved follow-up messages and schedule sales meetings",
+      "Prepare meeting briefs and collect proposal inputs for seller review"
     ],
     "controls": [
-      "Named owner for approvals and exceptions",
-      "Role-based access to required tools",
-      "Sample review before the work lane expands"
+      "Define required CRM fields and distinguish observed facts from forecasts",
+      "Prohibit independent changes to pricing, terms, qualification, or customer promises",
+      "Review scripts, consent requirements, and no-contact rules before outreach"
     ],
     "launch": [
-      "Share current examples and source records",
-      "Document the finish line and escalation rule",
-      "Review the first work batch together"
+      "Clean a small CRM batch with duplicates, missing fields, and conflicting evidence",
+      "Rehearse approved follow-up and a reply that requires seller judgment",
+      "Review record accuracy, message tone, booked meetings, and escalations"
     ]
   },
   {
     "slug": "bookkeeping-assistants",
     "title": "Bookkeeping Assistants",
-    "summary": "Bookkeeping Assistants delivered by Philippines-based specialists with a documented scope, review path, and owner approval rules.",
+    "summary": "Philippines-based bookkeeping preparation for source documents, transaction records, reconciliation support, and approved reminders, with payments, tax judgment, and final sign-off retained by accountable finance owners.",
+    "heroImage": "/featured/bookkeeping-assistant-control-checklist.png",
+    "heroImageAlt": "Bookkeeping preparation controls for source records, exceptions, and owner approval",
     "tasks": [
-      "bookkeeping assistants queue preparation",
-      "source-record checks and updates",
-      "exception logging for manager review",
-      "daily handoff notes and follow-up"
+      "Collect, name, and organize invoices, receipts, statements, and supporting records",
+      "Enter or propose transaction details using documented coding rules",
+      "Match records and flag missing, duplicate, or unreconciled items",
+      "Prepare approved invoice reminders and month-end exception lists"
     ],
     "controls": [
-      "Named owner for approvals and exceptions",
-      "Role-based access to required tools",
-      "Sample review before the work lane expands"
+      "Separate record preparation from payment release and bank administration",
+      "Route uncertain classifications, tax questions, adjustments, and final reconciliations for review",
+      "Use limited accounts and preserve source documents for every material entry"
     ],
     "launch": [
-      "Share current examples and source records",
-      "Document the finish line and escalation rule",
-      "Review the first work batch together"
+      "Provide redacted sample records, the chart of accounts, and coding examples",
+      "Test matching, duplicate detection, and treatment of an ambiguous transaction",
+      "Review the first live batch with the bookkeeper or finance owner before widening access"
     ]
   },
   {
     "slug": "ecommerce-assistants",
     "title": "Ecommerce Assistants",
-    "summary": "Ecommerce Assistants delivered by Philippines-based specialists with a documented scope, review path, and owner approval rules.",
+    "summary": "Philippines-based ecommerce support for product records, routine order checks, customer updates, and inventory exceptions, while store owners retain pricing, refunds, fraud decisions, and product claims.",
+    "heroImage": "/featured/ecommerce-order-exception-workflow.png",
+    "heroImageAlt": "Ecommerce order workflow separating routine updates from refund and fraud exceptions",
     "tasks": [
-      "ecommerce assistants queue preparation",
-      "source-record checks and updates",
-      "exception logging for manager review",
-      "daily handoff notes and follow-up"
+      "Update product facts, variants, images, and availability from approved source records",
+      "Check order status and coordinate routine fulfillment follow-up",
+      "Answer approved shipping, return-process, and product-information questions",
+      "Flag inventory discrepancies, damaged orders, fraud signals, and stalled fulfillment"
     ],
     "controls": [
-      "Named owner for approvals and exceptions",
-      "Role-based access to required tools",
-      "Sample review before the work lane expands"
+      "Require a source and review state for customer-facing product changes",
+      "Keep pricing, discounts, refunds, claims, and fraud decisions with the store owner",
+      "Separate catalog and support permissions from payment and store-administrator access"
     ],
     "launch": [
-      "Share current examples and source records",
-      "Document the finish line and escalation rule",
-      "Review the first work batch together"
+      "Test a small catalog batch containing variant and source-data discrepancies",
+      "Rehearse routine order updates plus one refund or fraud exception",
+      "Review the first live product changes and order notes before adding volume"
     ]
   },
   {
     "slug": "real-estate-assistants",
     "title": "Real Estate Assistants",
-    "summary": "Real Estate Assistants delivered by Philippines-based specialists with a documented scope, review path, and owner approval rules.",
+    "summary": "Philippines-based real estate administration for lead records, listing coordination, showing logistics, and transaction checklists, while licensed professionals retain advice, negotiation, eligibility, and contract decisions.",
+    "heroImage": "/featured/real-estate-assistant-lead-follow-up.png",
+    "heroImageAlt": "Real estate lead follow-up workflow with factual updates and licensed-agent escalation",
     "tasks": [
-      "real estate assistants queue preparation",
-      "source-record checks and updates",
-      "exception logging for manager review",
-      "daily handoff notes and follow-up"
+      "Update lead records and send approved factual follow-up",
+      "Maintain listing details and asset checklists from broker-approved sources",
+      "Coordinate showing requests, calendars, and confirmation messages",
+      "Track transaction documents, deadlines, and missing administrative items"
     ],
     "controls": [
-      "Named owner for approvals and exceptions",
-      "Role-based access to required tools",
-      "Sample review before the work lane expands"
+      "Require licensed review of advertising language, advice, offers, and negotiations",
+      "Prohibit steering, eligibility judgments, and invented property or neighborhood claims",
+      "Limit document and CRM access by transaction and preserve the source of each update"
     ],
     "launch": [
-      "Share current examples and source records",
-      "Document the finish line and escalation rule",
-      "Review the first work batch together"
+      "Test listing and lead records containing missing or conflicting details",
+      "Rehearse showing coordination and a question requiring a licensed response",
+      "Review the first live listings and follow-ups with the broker or agent owner"
     ]
   },
   {
     "slug": "healthcare-admin-assistants",
     "title": "Healthcare Admin Assistants",
-    "summary": "Healthcare Admin Assistants delivered by Philippines-based specialists with a documented scope, review path, and owner approval rules.",
+    "summary": "Philippines-based nonclinical healthcare administration for scheduling, reminders, records coordination, and status follow-up, under the healthcare organization's privacy, access, and escalation rules.",
+    "heroImage": "/featured/healthcare-admin-assistant-scheduling.png",
+    "heroImageAlt": "Healthcare administrative scheduling workflow with access and escalation boundaries",
     "tasks": [
-      "healthcare admin assistants queue preparation",
-      "source-record checks and updates",
-      "exception logging for manager review",
-      "daily handoff notes and follow-up"
+      "Schedule or reschedule appointments using approved rules and visit types",
+      "Send approved reminders and record patient responses",
+      "Route records, referral, or authorization-status requests to the designated team",
+      "Flag incomplete information, urgent language, and requests requiring clinical review"
     ],
     "controls": [
-      "Named owner for approvals and exceptions",
-      "Role-based access to required tools",
-      "Sample review before the work lane expands"
+      "Use named accounts, approved communication channels, and minimum necessary access",
+      "Prohibit diagnosis, clinical advice, urgency assessment, and unsupported record changes",
+      "Route privacy incidents, uncertain identity, and sensitive requests to the designated owner"
     ],
     "launch": [
-      "Share current examples and source records",
-      "Document the finish line and escalation rule",
-      "Review the first work batch together"
+      "Use fictional or properly de-identified scheduling cases before patient-data access",
+      "Rehearse identity checks, appointment exceptions, and a clinical-sounding request",
+      "Review early work with the privacy or operations owner before widening access"
     ]
   },
   {
     "slug": "marketing-assistants",
     "title": "Marketing Assistants",
-    "summary": "Marketing Assistants delivered by Philippines-based specialists with a documented scope, review path, and owner approval rules.",
+    "summary": "Philippines-based marketing operations for content calendars, asset preparation, approved publishing, and reporting, while marketing owners retain strategy, claims, spend, and sensitive public responses.",
+    "heroImage": "/featured/marketing-assistant-content-calendar.png",
+    "heroImageAlt": "Marketing content calendar workflow with draft, review, and approval stages",
     "tasks": [
-      "marketing assistants queue preparation",
-      "source-record checks and updates",
-      "exception logging for manager review",
-      "daily handoff notes and follow-up"
+      "Maintain campaign calendars, briefs, owners, assets, and approval status",
+      "Prepare draft copy and creative variations from approved source material",
+      "Schedule approved content and verify links, tags, dates, and destinations",
+      "Compile channel metrics and identify missing or inconsistent data"
     ],
     "controls": [
-      "Named owner for approvals and exceptions",
-      "Role-based access to required tools",
-      "Sample review before the work lane expands"
+      "Require approval for factual claims, testimonials, offers, and final publishing",
+      "Keep budget, targeting, campaign strategy, and sensitive responses with the marketing owner",
+      "Separate draft and analytics access from billing and account-administrator rights"
     ],
     "launch": [
-      "Share current examples and source records",
-      "Document the finish line and escalation rule",
-      "Review the first work batch together"
+      "Build one campaign calendar from existing briefs and approved assets",
+      "Rehearse the draft-review-publish flow with a deliberately unsupported claim",
+      "Review the first scheduled items and report against the source systems"
     ]
   },
   {
     "slug": "recruiting-assistants",
     "title": "Recruiting Assistants",
-    "summary": "Recruiting Assistants delivered by Philippines-based specialists with a documented scope, review path, and owner approval rules.",
+    "summary": "Philippines-based recruiting coordination for approved job posts, candidate records, sourcing support, and interview logistics, while employers retain evaluation, selection, offers, and sensitive personnel decisions.",
+    "heroImage": "/featured/recruiting-assistant-sourcing-workflow.png",
+    "heroImageAlt": "Recruiting sourcing workflow for candidate records, interview coordination, and manager review",
     "tasks": [
-      "recruiting assistants queue preparation",
-      "source-record checks and updates",
-      "exception logging for manager review",
-      "daily handoff notes and follow-up"
+      "Publish approved job descriptions and maintain posting status",
+      "Source candidates against written job-related criteria",
+      "Keep applicant records, consent status, and next steps current",
+      "Coordinate interviews and send approved factual status messages"
     ],
     "controls": [
-      "Named owner for approvals and exceptions",
-      "Role-based access to required tools",
-      "Sample review before the work lane expands"
+      "Keep evaluation, rejection rationale, selection, compensation, and offers with the hiring owner",
+      "Restrict candidate-data access and define retention, sharing, and deletion procedures",
+      "Use consistent job-related criteria and route accommodation or sensitive questions to HR"
     ],
     "launch": [
-      "Share current examples and source records",
-      "Document the finish line and escalation rule",
-      "Review the first work batch together"
+      "Test ATS updates and sourcing with fictional candidate records",
+      "Rehearse scheduling changes, a candidate status request, and a sensitive question",
+      "Review the first candidate batch for record accuracy, consistent handling, and escalation"
     ]
   }
 ] as const;
