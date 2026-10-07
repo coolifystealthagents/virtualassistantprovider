@@ -1,6 +1,6 @@
 # Philippines service-led topical authority ledger
 
-Updated: 2026-10-03
+Updated: 2026-10-07
 
 This is a source-only planning record. It connects existing Philippines-based service pillars to existing research pages that answer the reader question just before a role-planning decision. It does not claim that a link is already visible unless the status says `verified`.
 
@@ -13,7 +13,7 @@ This is a source-only planning record. It connects existing Philippines-based se
 | `/services/bookkeeping-assistants` | `/research/bookkeeping-preparation-records-evidence` | Which record-preparation tasks support a bookkeeper while accounting judgment stays with the responsible professional? | verified absent | The built research main has no matching service link. Keep accounting and payment decisions out of the support scope. |
 | `/services/ecommerce-assistants` | `/research/ecommerce-catalog-accuracy-evidence` | How can product records be maintained without delegating product claims or commercial decisions? | verified absent | The built research main has no matching service link. Keep product claims, pricing, refunds, and commercial decisions with the owner. |
 | `/services/real-estate-assistants` | `/research/real-estate-administration-fair-housing-evidence` | Which factual listing and follow-up tasks can support a broker without becoming a housing decision? | verified absent | The built research main has no matching service link. Preserve licensed-owner review for advertising, steering, and eligibility. |
-| `/services/healthcare-admin-assistants` | `/research/healthcare-administrative-support-privacy-evidence` | What privacy safeguards should be checked before administrative support handles patient-related information? | delivered locally; public verification pending | Rendered-source commit `5d60f3546c24196fe6d4a2bc039b5e4472484f37` has one route-local service link and the owner boundary. Cache-busted apex and www still serve the prior route body, so do not add a duplicate CTA. |
+| `/services/healthcare-admin-assistants` | `/research/healthcare-administrative-support-privacy-evidence` | What privacy safeguards should be checked before administrative support handles patient-related information? | verified | Rendered-source commit `5d60f3546c24196fe6d4a2bc039b5e4472484f37` was verified on 2026-10-06: cache-busted apex and www each served the route-local service link and owner boundary. Preserve the one handoff. |
 | `/services/marketing-assistants` | `/research/market-research-brief-evidence` | What makes a research brief useful before a founder makes a marketing choice? | verified absent | The built research main has no matching service link. Keep interpretation and business decisions with the client. |
 | `/services/recruiting-assistants` | `/research/recruiting-coordination-selection-evidence` | How can recruiting support improve scheduling and candidate updates without making hiring decisions? | verified absent | The built research main has no matching service link. Keep evaluation, selection, and employment decisions with the employer. |
 
