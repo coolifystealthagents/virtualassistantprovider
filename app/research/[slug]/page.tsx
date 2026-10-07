@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Header, Footer } from '../../components';
 import { researchPosts, type ResearchPost } from '../../fleet-content';
+import { articleImageAlt, resolveArticleImage } from '../../article-image';
 
 const baseUrl = 'https://virtualassistantprovider.com';
 const formatDate = (value: string) => new Intl.DateTimeFormat('en-US', {
@@ -23,6 +24,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!post) return {};
 
   const canonical = `${baseUrl}/research/${post.slug}`;
+  const featuredImage = resolveArticleImage(post);
   return {
     title: post.metaTitle,
     description: post.excerpt,
@@ -35,13 +37,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       publishedTime: post.published,
       modifiedTime: post.updated,
       siteName: 'Virtual Assistant Provider',
-      images: [{ url: `${baseUrl}${post.featuredImage}`, alt: post.title }],
+      images: [{ url: `${baseUrl}${featuredImage}`, alt: articleImageAlt(featuredImage, post.title) }],
     },
     twitter: {
       card: 'summary_large_image',
       title: post.metaTitle,
       description: post.excerpt,
-      images: [`${baseUrl}${post.featuredImage}`],
+      images: [`${baseUrl}${featuredImage}`],
     },
   };
 }
@@ -75,6 +77,7 @@ export default async function ResearchArticle({ params }: PageProps) {
   if (!post) notFound();
 
   const canonical = `${baseUrl}/research/${post.slug}`;
+  const featuredImage = resolveArticleImage(post);
   const reportSchema = {
     '@context': 'https://schema.org',
     '@type': 'Report',
@@ -88,7 +91,7 @@ export default async function ResearchArticle({ params }: PageProps) {
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
     author: { '@type': 'Organization', name: 'Virtual Assistant Provider', url: baseUrl },
     publisher: { '@type': 'Organization', name: 'Virtual Assistant Provider', url: baseUrl },
-    image: `${baseUrl}${post.featuredImage}`,
+    image: `${baseUrl}${featuredImage}`,
     about: [
       { '@type': 'Thing', name: post.primaryKeyword },
       { '@type': 'Country', name: 'Philippines' },
@@ -124,7 +127,7 @@ export default async function ResearchArticle({ params }: PageProps) {
             <div className="research-wrap">
               <p className="eyebrow">Virtual Assistant Provider research</p>
               <h1>{post.title}</h1>
-              <img src={post.featuredImage} alt="" width="1200" height="675" />
+              <img src={featuredImage} alt={articleImageAlt(featuredImage, post.title)} width="1200" height="675" />
               <p className="lead">{post.excerpt}</p>
               <div className="research-meta" aria-label="Article details">
                 <span>Published: <time dateTime={post.published}>{formatDate(post.published)}</time></span>

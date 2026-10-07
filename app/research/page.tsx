@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Header, Footer } from '../components';
 import { researchPosts } from '../fleet-content';
+import { articleImageAlt, resolveArticleImage } from '../article-image';
 
 const baseUrl = 'https://virtualassistantprovider.com';
 
@@ -56,15 +57,18 @@ export default function Research() {
         </section>
         <section className="section">
           <div className="container fleet-card-grid">
-            {researchPosts.map((post) => (
+            {researchPosts.map((post) => {
+              const image = resolveArticleImage(post);
+              return (
               <a className="fleet-card research-index-card" href={`/research/${post.slug}`} key={post.slug}>
-                <img src={post.featuredImage} alt="" width="1200" height="675" />
+                <img src={image} alt={articleImageAlt(image, post.title)} width="1200" height="675" />
                 <span>Published {post.published} · {post.sources.length} sources</span>
                 <h2>{post.title}</h2>
                 <p>{post.excerpt}</p>
                 <b>Read the evidence guide →</b>
               </a>
-            ))}
+              );
+            })}
           </div>
         </section>
       </main>
