@@ -414,5 +414,10 @@ export const articleImageManifest = {
   "virtual-assistant-workflow-handover-philippines": { src: "/aug19-heroes/assistant-service-work-queue-ownership.webp", alt: "Work queue with priorities, ownership, and completion status" },
   "virtual-assistant-workload-review-philippines": { src: "/illustrations/getillustrations/grain-teamwork/role-planning-workflow.svg", alt: "Role-planning workflow for workload, ownership, and staffing" },
   "virtual-assistant-written-communication-assessment": { src: "/aug19-heroes/assistant-service-work-queue-ownership.webp", alt: "Work queue with priorities, ownership, and completion status" },
+  "virtual-assistant-provider-absence-coverage-test": { src: "/featured/marketing-assistant-content-calendar.png", alt: "Marketing content calendar workflow with draft, review, and approval stages" },
+  "virtual-assistant-provider-first-thirty-days-reliability-study": { src: "/featured/research-source-reliability-review.png", alt: "Research workflow for reviewing source reliability and limitations" },
+  "virtual-assistant-provider-first-week-launch-plan": { src: "/featured/research-claim-evidence-map.png", alt: "Research workflow connecting claims with supporting evidence" },
+  "virtual-assistant-provider-replacement-transition-control": { src: "/featured/marketing-assistant-content-calendar.png", alt: "Marketing content calendar workflow with draft, review, and approval stages" },
+  "virtual-assistant-provider-scope-expansion-gate": { src: "/featured/research-claim-evidence-map.png", alt: "Research workflow connecting claims with supporting evidence" },
   "when-to-split-one-virtual-assistant-role-into-two": { src: "/illustrations/getillustrations/grain-teamwork/role-planning-workflow.svg", alt: "Role-planning workflow for workload, ownership, and staffing" },
 };
