@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-09",
+  "kind": "blog",
+  "count": 12,
+  "publicationDateVisible": true,
+  "items": [
+    {
+      "slug": "virtualassistantprovider-priority-intake-triage",
+      "title": "Virtual Assistant Provider Priority Intake Triage",
+      "excerpt": "A practical guide to sequence new requests by evidence, impact, and accepted ownership.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/virtualassistantprovider-priority-intake-triage"
+    },
+    {
+      "slug": "virtualassistantprovider-exception-owner-map",
+      "title": "Virtual Assistant Provider Exception Owner Map",
+      "excerpt": "A practical guide to route ambiguous work to an authorized decision owner.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/virtualassistantprovider-exception-owner-map"
+    },
+    {
+      "slug": "virtualassistantprovider-source-record-verification",
+      "title": "Virtual Assistant Provider Source Record Verification",
+      "excerpt": "A practical guide to confirm the governing record before work begins.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/virtualassistantprovider-source-record-verification"
+    },
+    {
+      "slug": "virtualassistantprovider-handoff-acceptance-receipt",
+      "title": "Virtual Assistant Provider Handoff Acceptance Receipt",
+      "excerpt": "A practical guide to prove the receiving team accepted the next action.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/virtualassistantprovider-handoff-acceptance-receipt"
+    },
+    {
+      "slug": "virtualassistantprovider-backlog-aging-review",
+      "title": "Virtual Assistant Provider Backlog Aging Review",
+      "excerpt": "A practical guide to separate active handling from documented waiting states.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/virtualassistantprovider-backlog-aging-review"
+    },
+    {
+      "slug": "virtualassistantprovider-quality-sample-calibration",
+      "title": "Virtual Assistant Provider Quality Sample Calibration",
+      "excerpt": "A practical guide to align reviewers on observable acceptance evidence.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/virtualassistantprovider-quality-sample-calibration"
+    },
+    {
+      "slug": "virtualassistantprovider-access-scope-recertification",
+      "title": "Virtual Assistant Provider Access Scope Recertification",
+      "excerpt": "A practical guide to keep permissions aligned with current duties.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/virtualassistantprovider-access-scope-recertification"
+    },
+    {
+      "slug": "virtualassistantprovider-change-control-release-note",
+      "title": "Virtual Assistant Provider Change Control Release Note",
+      "excerpt": "A practical guide to publish a dated rule change with rollback context.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/virtualassistantprovider-change-control-release-note"
+    },
+    {
+      "slug": "virtualassistantprovider-capacity-overflow-trigger",
+      "title": "Virtual Assistant Provider Capacity Overflow Trigger",
+      "excerpt": "A practical guide to surface demand that exceeds the safe service window.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/virtualassistantprovider-capacity-overflow-trigger"
+    },
+    {
+      "slug": "virtualassistantprovider-client-decision-packet",
+      "title": "Virtual Assistant Provider Client Decision Packet",
+      "excerpt": "A practical guide to prepare facts without transferring client authority.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/virtualassistantprovider-client-decision-packet"
+    },
+    {
+      "slug": "virtualassistantprovider-correction-propagation-check",
+      "title": "Virtual Assistant Provider Correction Propagation Check",
+      "excerpt": "A practical guide to reconcile corrected facts across dependent systems.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/virtualassistantprovider-correction-propagation-check"
+    },
+    {
+      "slug": "virtualassistantprovider-monthly-control-closeout",
+      "title": "Virtual Assistant Provider Monthly Control Closeout",
+      "excerpt": "A practical guide to close open exceptions and preserve review evidence.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/virtualassistantprovider-monthly-control-closeout"
+    }
+  ]
+}

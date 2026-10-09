@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-09",
+  "kind": "research",
+  "count": 5,
+  "publicationDateVisible": true,
+  "items": [
+    {
+      "slug": "virtualassistantprovider-queue-wait-state-evidence-study",
+      "title": "Virtual Assistant Provider Queue Wait-State Evidence Study",
+      "excerpt": "A source-backed study of whether waiting reasons explain queue age.",
+      "publishedAt": "2026-10-09",
+      "route": "/research/virtualassistantprovider-queue-wait-state-evidence-study"
+    },
+    {
+      "slug": "virtualassistantprovider-reviewer-agreement-reliability-study",
+      "title": "Virtual Assistant Provider Reviewer Agreement Reliability Study",
+      "excerpt": "A source-backed study of whether reviewers reproduce the same conclusion.",
+      "publishedAt": "2026-10-09",
+      "route": "/research/virtualassistantprovider-reviewer-agreement-reliability-study"
+    },
+    {
+      "slug": "virtualassistantprovider-minimum-access-effectiveness-study",
+      "title": "Virtual Assistant Provider Minimum Access Effectiveness Study",
+      "excerpt": "A source-backed study of whether permissions are sufficient but bounded.",
+      "publishedAt": "2026-10-09",
+      "route": "/research/virtualassistantprovider-minimum-access-effectiveness-study"
+    },
+    {
+      "slug": "virtualassistantprovider-handoff-completeness-observation",
+      "title": "Virtual Assistant Provider Handoff Completeness Observation",
+      "excerpt": "A source-backed study of whether a receiving team can continue without private clarification.",
+      "publishedAt": "2026-10-09",
+      "route": "/research/virtualassistantprovider-handoff-completeness-observation"
+    },
+    {
+      "slug": "virtualassistantprovider-control-change-traceability-research",
+      "title": "Virtual Assistant Provider Control Change Traceability Research",
+      "excerpt": "A source-backed study of whether operating changes remain attributable and reversible.",
+      "publishedAt": "2026-10-09",
+      "route": "/research/virtualassistantprovider-control-change-traceability-research"
+    }
+  ]
+}
