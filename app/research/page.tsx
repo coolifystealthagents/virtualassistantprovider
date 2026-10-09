@@ -1,34 +1,37 @@
-import type { Metadata } from 'next';
-import { Header, Footer } from '../components';
-import { researchPosts } from '../fleet-content';
-import { articleImageAlt, resolveArticleImage } from '../article-image';
+import type { Metadata } from "next";
+import { Header, Footer } from "../components";
+import { researchPosts } from "../fleet-content";
+import { articleImageAlt, resolveArticleImage } from "../article-image";
+const formatDate = (date: string) => new Intl.DateTimeFormat("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" }).format(new Date(`${date}T00:00:00Z`));
 
-const baseUrl = 'https://virtualassistantprovider.com';
+const baseUrl = "https://virtualassistantprovider.com";
 
 export const metadata: Metadata = {
-  title: 'Philippines virtual assistant research',
-  description: 'Source-led reports for planning Philippines-based virtual assistant roles, hiring checks, access, and launch decisions.',
+  title: "Philippines virtual assistant research",
+  description:
+    "Source-led reports for planning Philippines-based virtual assistant roles, hiring checks, access, and launch decisions.",
   alternates: { canonical: `${baseUrl}/research` },
   openGraph: {
-    title: 'Philippines virtual assistant research',
-    description: 'Source-led reports for planning Philippines-based virtual assistant roles and hiring decisions.',
+    title: "Philippines virtual assistant research",
+    description:
+      "Source-led reports for planning Philippines-based virtual assistant roles and hiring decisions.",
     url: `${baseUrl}/research`,
-    type: 'website',
+    type: "website",
   },
 };
 
 export default function Research() {
   const collectionSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'CollectionPage',
-    name: 'Philippines virtual assistant research',
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Philippines virtual assistant research",
     description: metadata.description,
     url: `${baseUrl}/research`,
     mainEntity: {
-      '@type': 'ItemList',
+      "@type": "ItemList",
       numberOfItems: researchPosts.length,
       itemListElement: researchPosts.map((post, index) => ({
-        '@type': 'ListItem',
+        "@type": "ListItem",
         position: index + 1,
         name: post.title,
         url: `${baseUrl}/research/${post.slug}`,
@@ -36,11 +39,16 @@ export default function Research() {
     },
   };
   const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl },
-      { '@type': 'ListItem', position: 2, name: 'Research', item: `${baseUrl}/research` },
+      { "@type": "ListItem", position: 1, name: "Home", item: baseUrl },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Research",
+        item: `${baseUrl}/research`,
+      },
     ],
   };
 
@@ -52,7 +60,11 @@ export default function Research() {
           <div className="container">
             <p className="eyebrow">Research library</p>
             <h1>Research for planning Philippines-based teams</h1>
-            <p className="lead">Read source-led reports about role design, hiring checks, access controls, and staffing decisions. Each report separates country evidence from the candidate-level proof a buyer still needs.</p>
+            <p className="lead">
+              Read source-led reports about role design, hiring checks, access
+              controls, and staffing decisions. Each report separates country
+              evidence from the candidate-level proof a buyer still needs.
+            </p>
           </div>
         </section>
         <section className="section">
@@ -60,21 +72,38 @@ export default function Research() {
             {researchPosts.map((post) => {
               const image = resolveArticleImage(post);
               return (
-              <a className="fleet-card research-index-card" href={`/research/${post.slug}`} key={post.slug}>
-                <img src={image} alt={articleImageAlt(image, post.title)} width="1200" height="675" />
-                <span>Published {post.published} · {post.sources.length} sources</span>
-                <h2>{post.title}</h2>
-                <p>{post.excerpt}</p>
-                <b>Read the evidence guide →</b>
-              </a>
+                <a
+                  className="fleet-card research-index-card"
+                  href={`/research/${post.slug}`}
+                  key={post.slug}
+                >
+                  <img
+                    src={image}
+                    alt={articleImageAlt(image, post.title)}
+                    width="1200"
+                    height="675"
+                  />
+                  <span>
+                    Published <time dateTime={post.published}>{formatDate(post.published)}</time> · {post.sources.length} sources
+                  </span>
+                  <h2>{post.title}</h2>
+                  <p>{post.excerpt}</p>
+                  <b>Read the evidence guide →</b>
+                </a>
               );
             })}
           </div>
         </section>
       </main>
       <Footer />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
     </>
   );
 }
