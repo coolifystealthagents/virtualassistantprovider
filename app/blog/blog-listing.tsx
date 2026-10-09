@@ -29,7 +29,7 @@ export function BlogListing({ page = 1 }: { page?: number }) {
                 <a className="fleet-card" href={`/blog/${p.slug}`} key={p.slug}>
                   <h2>{p.title}</h2>
                   <p>{p.excerpt}</p>
-                  {"published" in p && p.published && <time dateTime={p.published}>Published {formatDate(p.published)}</time>}
+                  {"published" in p && typeof p.published === "string" ? <time dateTime={p.published}>Published {formatDate(p.published)}</time> : null}
                   <b>{p.minutes} min read</b>
                 </a>
               ))}
