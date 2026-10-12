@@ -1,0 +1,115 @@
+{
+  "site": "VirtualAssistantProvider.com",
+  "date": "2026-10-12",
+  "blog": [
+    {
+      "slug": "provider-discovery-call-agenda",
+      "title": "Run a Provider Discovery Call That Produces Verifiable Answers",
+      "route": "/blog/provider-discovery-call-agenda",
+      "thumbnail": "/featured/oct12-provider-discovery-call-agenda.png"
+    },
+    {
+      "slug": "role-brief-assumption-register",
+      "title": "Add an Assumption Register to Every Virtual Assistant Role Brief",
+      "route": "/blog/role-brief-assumption-register",
+      "thumbnail": "/featured/oct12-role-brief-assumption-register.png"
+    },
+    {
+      "slug": "candidate-shortlist-evidence-packet",
+      "title": "Require an Evidence Packet With Every Assistant Shortlist",
+      "route": "/blog/candidate-shortlist-evidence-packet",
+      "thumbnail": "/featured/oct12-candidate-shortlist-evidence-packet.png"
+    },
+    {
+      "slug": "provider-replacement-process-review",
+      "title": "Review a Provider Replacement Process Before You Need It",
+      "route": "/blog/provider-replacement-process-review",
+      "thumbnail": "/featured/oct12-provider-replacement-process-review.png"
+    },
+    {
+      "slug": "managed-va-coaching-visibility",
+      "title": "Make Managed Virtual Assistant Coaching Visible to the Client",
+      "route": "/blog/managed-va-coaching-visibility",
+      "thumbnail": "/featured/oct12-managed-va-coaching-visibility.png"
+    },
+    {
+      "slug": "backup-coverage-readiness-test",
+      "title": "Test Backup Coverage Before a Virtual Assistant Is Unavailable",
+      "route": "/blog/backup-coverage-readiness-test",
+      "thumbnail": "/featured/oct12-backup-coverage-readiness-test.png"
+    },
+    {
+      "slug": "pricing-scope-comparison-normalization",
+      "title": "Normalize Provider Pricing Without Flattening the Service Scope",
+      "route": "/blog/pricing-scope-comparison-normalization",
+      "thumbnail": "/featured/oct12-pricing-scope-comparison-normalization.png"
+    },
+    {
+      "slug": "trial-task-data-sanitization",
+      "title": "Sanitize Trial-Task Data Before a Candidate Receives It",
+      "route": "/blog/trial-task-data-sanitization",
+      "thumbnail": "/featured/oct12-trial-task-data-sanitization.png"
+    },
+    {
+      "slug": "provider-account-manager-weekly-brief",
+      "title": "Use a Weekly Brief With Your Virtual Assistant Account Manager",
+      "route": "/blog/provider-account-manager-weekly-brief",
+      "thumbnail": "/featured/oct12-provider-account-manager-weekly-brief.png"
+    },
+    {
+      "slug": "service-credit-incident-log",
+      "title": "Separate Service-Credit Questions From Incident Recovery Work",
+      "route": "/blog/service-credit-incident-log",
+      "thumbnail": "/featured/oct12-service-credit-incident-log.png"
+    },
+    {
+      "slug": "multilingual-support-language-routing",
+      "title": "Design Language Routing for Multilingual Assistant Support",
+      "route": "/blog/multilingual-support-language-routing",
+      "thumbnail": "/featured/oct12-multilingual-support-language-routing.png"
+    },
+    {
+      "slug": "vendor-exit-access-reconciliation",
+      "title": "Reconcile Access and Work Records When a Provider Engagement Ends",
+      "route": "/blog/vendor-exit-access-reconciliation",
+      "thumbnail": "/featured/oct12-vendor-exit-access-reconciliation.png"
+    }
+  ],
+  "research": [
+    {
+      "slug": "provider-pricing-comparability-study",
+      "title": "Virtual Assistant Provider Pricing: A Comparability Study Protocol",
+      "route": "/research/provider-pricing-comparability-study",
+      "thumbnail": "/featured/oct12-provider-pricing-comparability-study.png"
+    },
+    {
+      "slug": "replacement-support-time-to-recovery-study",
+      "title": "Assistant Replacement Support: Measuring Time to Stable Recovery",
+      "route": "/research/replacement-support-time-to-recovery-study",
+      "thumbnail": "/featured/oct12-replacement-support-time-to-recovery-study.png"
+    },
+    {
+      "slug": "managed-supervision-evidence-reliability",
+      "title": "Managed Virtual Assistant Supervision: An Evidence-Reliability Study",
+      "route": "/research/managed-supervision-evidence-reliability",
+      "thumbnail": "/featured/oct12-managed-supervision-evidence-reliability.png"
+    },
+    {
+      "slug": "provider-security-claim-verification",
+      "title": "Virtual Assistant Provider Security Claims: A Verification Framework",
+      "route": "/research/provider-security-claim-verification",
+      "thumbnail": "/featured/oct12-provider-security-claim-verification.png"
+    },
+    {
+      "slug": "buyer-provider-governance-change-control",
+      "title": "Buyer–Provider Governance: Studying Change-Control Reliability",
+      "route": "/research/buyer-provider-governance-change-control",
+      "thumbnail": "/featured/oct12-buyer-provider-governance-change-control.png"
+    }
+  ],
+  "expected": {
+    "blog": 12,
+    "research": 5,
+    "thumbnails": 17
+  }
+}
