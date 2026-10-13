@@ -8,6 +8,7 @@ type TrackerWindow = Window & { acrTracker?: { trackLead?: (payload: Record<stri
 const companySizes = ["1-5", "5-10", "11-50", "51-250", "251-1k", "1k+"];
 const positions = ["Just 1 Position", "2-5 Positions", "6-10 Positions", "11-50 Positions", "51-100 Positions", "101-500 Positions", "501-1,000 Positions", "Over 1,000 Positions"];
 const referrals = ["Google", "Email", "LinkedIn", "Reddit", "X / Twitter", "Referral", "ChatGPT / AI", "Outbound Outreach", "Other"];
+const personalDomains = new Set(["gmail.com", "yahoo.com", "hotmail.com", "outlook.com", "icloud.com", "aol.com", "proton.me", "protonmail.com"]);
 const countryCodes = [
   ["🇺🇸", "+1"], ["🇨🇦", "+1"], ["🇮🇩", "+62"], ["🇵🇭", "+63"], ["🇬🇧", "+44"],
   ["🇦🇺", "+61"], ["🇳🇿", "+64"], ["🇸🇬", "+65"], ["🇮🇳", "+91"], ["🇦🇪", "+971"],
@@ -38,14 +39,19 @@ export default function StandardContactForm({ endpoint = "/api/submit-lead", enc
     if (String(data.get("website_url") || "").trim()) return;
     const firstName = String(data.get("firstName") || "").trim();
     const lastName = String(data.get("lastName") || "").trim();
+    const email = String(data.get("email") || "").trim().toLowerCase();
+    if (personalDomains.has(email.split("@")[1] || "")) {
+      setError("Please use a business or organization email address.");
+      return;
+    }
     const phone = `${countryCode} ${String(data.get("phoneLocal") || "").trim()}`.trim();
     const payload: Record<string, string> = {
       firstName, lastName, name: `${firstName} ${lastName}`.trim(), fullName: `${firstName} ${lastName}`.trim(),
-      email: String(data.get("email") || ""), businessEmail: String(data.get("email") || ""), phone,
+      email, businessEmail: email, phone,
       companyName: String(data.get("companyName") || ""), company: String(data.get("companyName") || ""),
       website: String(data.get("website") || ""), companySize: String(data.get("companySize") || ""),
       positions: String(data.get("positions") || ""), positionsToFill: String(data.get("positions") || ""),
-      referral: String(data.get("referral") || ""), howTheyHeard: String(data.get("referral") || ""),
+      referral: String(data.get("referral") || ""), referral_source: String(data.get("referral") || ""), howTheyHeard: String(data.get("referral") || ""),
       referralSpecify: String(data.get("referralSpecify") || ""), message: String(data.get("message") || ""),
       source: "contact-form", formId: "contactPageForm",
     };
@@ -60,14 +66,6 @@ export default function StandardContactForm({ endpoint = "/api/submit-lead", enc
       try { (window as TrackerWindow).acrTracker?.trackLead?.(payload); } catch {}
       window.location.assign("/thank-you");
     } catch {
-      try {
-        const tracker = (window as TrackerWindow).acrTracker?.trackLead;
-        if (tracker) {
-          tracker(payload);
-          window.location.assign("/thank-you");
-          return;
-        }
-      } catch {}
       setError("We could not submit your request. Please try again.");
       setSubmitting(false);
     }
@@ -75,7 +73,7 @@ export default function StandardContactForm({ endpoint = "/api/submit-lead", enc
 
   return (
     <div className="sa-form-card">
-      <h2>Find Growth In Your Business By Hiring Industry Experienced Virtual Assistants</h2>
+      <h2>Tell us about your support needs</h2>
       <form onSubmit={submit} id="contact-form" action={endpoint} method="post">
         <input className="sa-hp" name="website_url" tabIndex={-1} autoComplete="off" aria-hidden="true" aria-label="Leave this field empty" />
         <div className="sa-grid">
@@ -83,7 +81,7 @@ export default function StandardContactForm({ endpoint = "/api/submit-lead", enc
           <label>Last Name *<input name="lastName" required autoComplete="family-name" /></label>
         </div>
         <label>Business Email *<input name="email" type="email" required autoComplete="email" /><small>Not Accepting Personal Email</small></label>
-        <label>Phone Number *<span className="sa-phone"><select aria-label="Country code" value={countryCode} onChange={(e) => setCountryCode(e.target.value)}>{countryCodes.map(([flag, code], i) => <option value={code} key={`${code}-${i}`}>{flag} {code}</option>)}</select><input name="phoneLocal" type="tel" required autoComplete="tel-national" placeholder="Phone number" /></span></label>
+        <label>Phone Number *<span className="sa-phone"><select name="countryCode" aria-label="Country code" value={countryCode} onChange={(e) => setCountryCode(e.target.value)}>{countryCodes.map(([flag, code], i) => <option value={code} key={`${code}-${i}`}>{flag} {code}</option>)}</select><input name="phoneLocal" type="tel" required autoComplete="tel-national" placeholder="Phone number" /></span></label>
         <div className="sa-grid">
           <label>Company Name *<input name="companyName" required autoComplete="organization" /></label>
           <label>Website / URL<input name="website" placeholder="example.com" autoComplete="url" /></label>
