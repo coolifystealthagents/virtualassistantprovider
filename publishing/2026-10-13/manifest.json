@@ -1,0 +1,194 @@
+{
+  "site": "VirtualAssistantProvider.com",
+  "canonicalDomain": "https://virtualassistantprovider.com",
+  "repository": "coolifystealthagents/virtualassistantprovider",
+  "branch": "main",
+  "baseSha": "712310df946a193ac0f00bf410d9a3cd0d116603",
+  "publicationDate": "2026-10-13",
+  "counts": {
+    "blog": 12,
+    "research": 5,
+    "total": 17,
+    "thumbnails": 17
+  },
+  "registryPaths": [
+    "app/data.ts",
+    "app/fleet-content.ts"
+  ],
+  "routePaths": [
+    "app/blog/[slug]/page.tsx",
+    "app/research/[slug]/page.tsx"
+  ],
+  "articles": [
+    {
+      "section": "Blog",
+      "title": "Build a Provider SLA Definition Register",
+      "slug": "provider-sla-definition-register",
+      "sourcePath": "app/article-blog-oct13-2026.ts",
+      "thumbnailPath": "public/featured/oct13-provider-sla-definition-register.png",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2061,
+      "sha256": "be353e25a15b4a87065fb66ec8296e9de50f6f71f5c3031bcb0bb474eb9e0378"
+    },
+    {
+      "section": "Blog",
+      "title": "Preserve Candidate Consent Evidence in Provider Handoffs",
+      "slug": "candidate-consent-evidence-handoff",
+      "sourcePath": "app/article-blog-oct13-2026.ts",
+      "thumbnailPath": "public/featured/oct13-candidate-consent-evidence-handoff.png",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2089,
+      "sha256": "be353e25a15b4a87065fb66ec8296e9de50f6f71f5c3031bcb0bb474eb9e0378"
+    },
+    {
+      "section": "Blog",
+      "title": "Reconcile Provider Invoices to Authorized Assistant Headcount",
+      "slug": "provider-invoice-headcount-reconciliation",
+      "sourcePath": "app/article-blog-oct13-2026.ts",
+      "thumbnailPath": "public/featured/oct13-provider-invoice-headcount-reconciliation.png",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2110,
+      "sha256": "be353e25a15b4a87065fb66ec8296e9de50f6f71f5c3031bcb0bb474eb9e0378"
+    },
+    {
+      "section": "Blog",
+      "title": "Maintain an Assistant Tool License Ownership Register",
+      "slug": "assistant-tool-license-ownership-register",
+      "sourcePath": "app/article-blog-oct13-2026.ts",
+      "thumbnailPath": "public/featured/oct13-assistant-tool-license-ownership-register.png",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2096,
+      "sha256": "be353e25a15b4a87065fb66ec8296e9de50f6f71f5c3031bcb0bb474eb9e0378"
+    },
+    {
+      "section": "Blog",
+      "title": "Calibrate a Provider Escalation Severity Rubric",
+      "slug": "escalation-severity-rubric-calibration",
+      "sourcePath": "app/article-blog-oct13-2026.ts",
+      "thumbnailPath": "public/featured/oct13-escalation-severity-rubric-calibration.png",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2068,
+      "sha256": "be353e25a15b4a87065fb66ec8296e9de50f6f71f5c3031bcb0bb474eb9e0378"
+    },
+    {
+      "section": "Blog",
+      "title": "Control Provider Subcontractor Disclosure Intake",
+      "slug": "provider-subcontractor-disclosure-intake",
+      "sourcePath": "app/article-blog-oct13-2026.ts",
+      "thumbnailPath": "public/featured/oct13-provider-subcontractor-disclosure-intake.png",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2068,
+      "sha256": "be353e25a15b4a87065fb66ec8296e9de50f6f71f5c3031bcb0bb474eb9e0378"
+    },
+    {
+      "section": "Blog",
+      "title": "Run a Client-Managed Credential Recovery Drill",
+      "slug": "client-credential-recovery-drill",
+      "sourcePath": "app/article-blog-oct13-2026.ts",
+      "thumbnailPath": "public/featured/oct13-client-credential-recovery-drill.png",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2089,
+      "sha256": "be353e25a15b4a87065fb66ec8296e9de50f6f71f5c3031bcb0bb474eb9e0378"
+    },
+    {
+      "section": "Blog",
+      "title": "Map Coverage Overlap Without Hiding Time-Zone Gaps",
+      "slug": "coverage-overlap-time-zone-map",
+      "sourcePath": "app/article-blog-oct13-2026.ts",
+      "thumbnailPath": "public/featured/oct13-coverage-overlap-time-zone-map.png",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2082,
+      "sha256": "be353e25a15b4a87065fb66ec8296e9de50f6f71f5c3031bcb0bb474eb9e0378"
+    },
+    {
+      "section": "Blog",
+      "title": "Verify Knowledge Base Freshness Before Assistant Use",
+      "slug": "knowledge-base-freshness-attestation",
+      "sourcePath": "app/article-blog-oct13-2026.ts",
+      "thumbnailPath": "public/featured/oct13-knowledge-base-freshness-attestation.png",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2096,
+      "sha256": "be353e25a15b4a87065fb66ec8296e9de50f6f71f5c3031bcb0bb474eb9e0378"
+    },
+    {
+      "section": "Blog",
+      "title": "Document Every Assistant Role Scope Amendment",
+      "slug": "assistant-role-scope-amendment-log",
+      "sourcePath": "app/article-blog-oct13-2026.ts",
+      "thumbnailPath": "public/featured/oct13-assistant-role-scope-amendment-log.png",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2096,
+      "sha256": "be353e25a15b4a87065fb66ec8296e9de50f6f71f5c3031bcb0bb474eb9e0378"
+    },
+    {
+      "section": "Blog",
+      "title": "Require a Data Return and Disposal Receipt at Provider Offboarding",
+      "slug": "provider-offboarding-data-return-receipt",
+      "sourcePath": "app/article-blog-oct13-2026.ts",
+      "thumbnailPath": "public/featured/oct13-provider-offboarding-data-return-receipt.png",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2138,
+      "sha256": "be353e25a15b4a87065fb66ec8296e9de50f6f71f5c3031bcb0bb474eb9e0378"
+    },
+    {
+      "section": "Blog",
+      "title": "Control an Account Manager Decision Backlog",
+      "slug": "account-manager-decision-backlog",
+      "sourcePath": "app/article-blog-oct13-2026.ts",
+      "thumbnailPath": "public/featured/oct13-account-manager-decision-backlog.png",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2089,
+      "sha256": "be353e25a15b4a87065fb66ec8296e9de50f6f71f5c3031bcb0bb474eb9e0378"
+    },
+    {
+      "section": "Research",
+      "title": "Candidate Profile Evidence Provenance Study",
+      "slug": "candidate-profile-evidence-provenance-study",
+      "sourcePath": "app/article-research-oct13-2026.ts",
+      "thumbnailPath": "public/featured/oct13-candidate-profile-evidence-provenance-study.png",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2098,
+      "sha256": "8b306078b789468682d8d96bb53d32311bfba047e3ee3baac7873182fadaa7c9"
+    },
+    {
+      "section": "Research",
+      "title": "Provider Response-Time Measurement Validity Study",
+      "slug": "provider-response-time-measurement-validity-study",
+      "sourcePath": "app/article-research-oct13-2026.ts",
+      "thumbnailPath": "public/featured/oct13-provider-response-time-measurement-validity-study.png",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2066,
+      "sha256": "8b306078b789468682d8d96bb53d32311bfba047e3ee3baac7873182fadaa7c9"
+    },
+    {
+      "section": "Research",
+      "title": "Managed Service Span of Control Evidence Study",
+      "slug": "managed-service-span-of-control-study",
+      "sourcePath": "app/article-research-oct13-2026.ts",
+      "thumbnailPath": "public/featured/oct13-managed-service-span-of-control-study.png",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2122,
+      "sha256": "8b306078b789468682d8d96bb53d32311bfba047e3ee3baac7873182fadaa7c9"
+    },
+    {
+      "section": "Research",
+      "title": "Replacement Candidate Comparability Protocol",
+      "slug": "replacement-candidate-comparability-study",
+      "sourcePath": "app/article-research-oct13-2026.ts",
+      "thumbnailPath": "public/featured/oct13-replacement-candidate-comparability-study.png",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2074,
+      "sha256": "8b306078b789468682d8d96bb53d32311bfba047e3ee3baac7873182fadaa7c9"
+    },
+    {
+      "section": "Research",
+      "title": "Client-Provider Access Incident Notification Latency Study",
+      "slug": "access-incident-notification-latency-study",
+      "sourcePath": "app/article-research-oct13-2026.ts",
+      "thumbnailPath": "public/featured/oct13-access-incident-notification-latency-study.png",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2098,
+      "sha256": "8b306078b789468682d8d96bb53d32311bfba047e3ee3baac7873182fadaa7c9"
+    }
+  ]
+}
