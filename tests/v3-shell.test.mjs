@@ -111,4 +111,10 @@ test('canonical redirects cover protocol, hostname, and legacy contact', async (
   assert.ok(redirects.some((rule) => rule.source === '/contact' && rule.destination === '/contact-us' && rule.permanent));
   assert.ok(redirects.some((rule) => rule.has?.some((item) => item.type === 'host' && item.value === 'www.virtualassistantprovider.com')));
   assert.ok(redirects.some((rule) => rule.has?.some((item) => item.type === 'header' && item.key === 'x-forwarded-proto' && item.value === 'http')));
+  const cfVisitor = redirects.find((rule) => rule.has?.some((item) => item.type === 'header' && item.key === 'cf-visitor'));
+  assert.ok(cfVisitor);
+  const cfVisitorPattern = new RegExp(cfVisitor.has.find((item) => item.key === 'cf-visitor').value);
+  assert.equal(cfVisitorPattern.test('{"scheme":"http"}'), true);
+  assert.equal(cfVisitorPattern.test('{"scheme": "http"}'), true);
+  assert.equal(cfVisitorPattern.test('{"scheme":"https"}'), false);
 });
