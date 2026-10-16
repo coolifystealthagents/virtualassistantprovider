@@ -1,32 +1,39 @@
 {
-  "version": 1,
+  "version": 3,
   "updated": "2026-10-16",
   "sites": [
     {
-      "domain": "virtualassistantprovider.com",
-      "designFamily": "editorial staffing field guide",
-      "dominantFirstFoldComposition": "asymmetric role-planning split with illustrated workflow",
-      "sectionOrder": [
-        "offer and role-match hero",
-        "role lanes",
-        "provider model comparison",
-        "buyer scorecard",
-        "editorial guides",
-        "final role-planning CTA"
-      ],
-      "recurringMotifs": [
-        "warm paper backgrounds",
-        "navy decision surfaces",
-        "teal control cues",
-        "orange conversion actions",
-        "editorial serif display type"
-      ],
-      "ctaStyle": "rounded high-contrast action paired with a quieter evidence link",
-      "imageStrategy": "licensed workflow illustrations for planning concepts; official Stealth Agents assets only for parent-brand proof",
-      "mobileBehavior": "single compact sticky header, full-width menu panel, one-column reading flow, horizontally scrollable evidence tables",
-      "rationale": "The site is a practical Philippines staffing guide, so its visual system emphasizes role definition, controls, and readable evidence rather than a generic agency portfolio.",
-      "comparedWithRecentRecords": [],
-      "similarityDecision": "First registry record; no recent records were available for a similarity comparison."
+      "site": "virtualassistantprovider.com",
+      "industry": "Philippines virtual assistant staffing and managed support",
+      "audience": "Owners and operations leaders defining a controlled remote support role",
+      "heroComposition": "Compact editorial proposition beside a photographic workflow frame and task rail",
+      "typeCharacter": "Humanist editorial display with plain operational body copy",
+      "paletteFamily": "Warm paper, oxblood, mineral blue, and dark ink",
+      "shapeGrammar": "Clipped corners, ruled edges, and restrained rectangular fields",
+      "imageTreatment": "Documentary work imagery with inset captions and color wash",
+      "sectionRhythm": "Dense opening, broad reading bands, narrow decision rails, and quiet pauses",
+      "navigationTreatment": "Compact sticky utility bar with one solid conversion action",
+      "motionSignature": "Slow image reveal and subtle link shifts with reduced motion fallback",
+      "density": "Medium high editorial density with generous reading measure",
+      "signatureElement": "Role boundary map connecting work, evidence, and owner decisions",
+      "comparisons": [
+        {
+          "site": "prior portfolio baseline: generic managed services",
+          "scores": {
+            "heroComposition": 4,
+            "typeCharacter": 6,
+            "paletteFamily": 3,
+            "shapeGrammar": 5,
+            "imageTreatment": 4,
+            "sectionRhythm": 6,
+            "navigationTreatment": 7,
+            "motionSignature": 5,
+            "density": 6,
+            "signatureElement": 3
+          },
+          "decision": "Approved. No dimension scores 8 or higher, and the operating boundary map creates a distinct business specific device."
+        }
+      ]
     }
   ]
 }

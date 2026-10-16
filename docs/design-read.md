@@ -1,22 +1,30 @@
-# Design read: virtualassistantprovider.com
+# V3 design read: virtualassistantprovider.com
 
-## Required design read
+Reading this as: a Philippines virtual assistant staffing field guide for owners and operations leaders, with a candid, controlled, human visual language, leaning toward documentary editorial design with operational diagrams.
 
-The site currently presents a warm, editorial staffing field guide: cream paper-like backgrounds, deep navy evidence sections, teal control cues, orange conversion actions, serif display headings, compact sans-serif body copy, and workflow illustrations. The strongest pages use asymmetric compositions, readable long-form sections, and practical decision aids. Earlier templates drifted into repetitive cards, formulaic provider copy, and inconsistent article navigation; the optimization removes or normalizes those patterns while preserving the site’s route library and Philippines-focused positioning.
+## Direction settings
 
-No existing project design registry was available when this site was assessed, so there were no recent records to compare. This release creates the initial registry entry. Future site work can use it to enforce the required similarity check.
+- DESIGN_VARIANCE: 8
+- MOTION_INTENSITY: 3
+- VISUAL_DENSITY: 6
+- Redesign mode: overhaul
+- Primary theme: light
+- Accent decision: oxblood is reserved for commitments and conversion, while mineral blue identifies evidence and controls.
+- Shape decision: clipped corners, ruled edges, and mostly square editorial frames replace generic rounded card walls.
+- Typography decision: a confident editorial display voice is paired with direct humanist body copy at 16px or larger.
+- Image decision: high resolution, role relevant workflow imagery uses deliberate crops, captions, and a restrained warm wash.
+- Motion decision: only quiet reveal and link feedback support orientation. Reduced motion removes all nonessential movement.
 
-## Fingerprint
+## Design fingerprint
 
-- **Design family:** Editorial staffing field guide
-- **Dominant first-fold composition:** Asymmetric role-planning split with illustrated workflow
-- **Section rhythm:** Offer, role lanes, provider model, scorecard, editorial guides, conversion close
-- **Recurring motifs:** Warm paper, navy evidence panels, teal control markers, orange CTAs, restrained rounded surfaces
-- **CTA treatment:** One high-contrast primary action paired with a quieter evidence or browse link
-- **Image strategy:** Licensed workflow illustrations for concepts; official Stealth Agents logo and Bacolod team mosaic for parent-brand proof
-- **Mobile behavior:** One compact sticky header and menu, linear reading flow, collapsed grids, scroll affordances for wide evidence
-- **Why it fits:** Buyers need to define work and risk boundaries before hiring, so the visual hierarchy foregrounds decisions and proof instead of generic agency spectacle
+The opening behaves like the cover and contents rail of a useful field manual. It states the offer without an eyebrow, keeps the primary action visible, and shows real operational work rather than a vague technology surface. Long pages alternate full width reading bands, boundary maps, task led lists, image led pauses, and concise decision panels. The signature element is a role boundary map that makes three states visible: work the assistant can own, evidence a reviewer checks, and decisions that stay with the client.
 
-## Acceptance notes
+The palette combines warm paper, dark ink, oxblood, and mineral blue. Its typography and ruled geometry feel deliberate rather than fashionable. Images are embedded as evidence with descriptive captions. Motion remains low because buyers need to read and compare detailed operating boundaries.
 
-The homepage retains multiple layout families and avoids a page made entirely of equal cards. Service details use a shared reading system without reducing every role to identical filler. Contact uses the required balanced conversion opening and follows with official parent-brand proof. The provider directory is explicitly unranked and sends readers to first-party provider sources rather than publishing unsupported comparative claims.
+## Governance comparison
+
+The registry compares this direction with the prior generic managed services baseline across all ten required dimensions: heroComposition, typeCharacter, paletteFamily, shapeGrammar, imageTreatment, sectionRhythm, navigationTreatment, motionSignature, density, and signatureElement. Every score is recorded on a 1 to 10 scale. No dimension scores 8 or higher, so the direction is clearly distinct and stays below the rejection threshold of four high similarity scores.
+
+## Acceptance intent
+
+At 1366 by 768 and 1440 by 800, the sticky header plus the complete homepage opening must fit: headline, lead, primary CTA, support cue, and visual. Body text remains at least 16px. Service pages use one coherent editorial system, but their imagery, examples, inputs, deliverables, controls, launch advice, and FAQs remain specific to the role. Long pages use fewer, stronger surfaces instead of repetitive equal cards.
