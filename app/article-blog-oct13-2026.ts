@@ -98,7 +98,7 @@ export const october13BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Pilot one bounded provider workflow",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the evidence and owner review",
       "description": "Bring one representative provider SLA definitions case, its systems, evidence, and unresolved decisions."
     }
@@ -201,7 +201,7 @@ export const october13BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Pilot one bounded provider workflow",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the evidence and owner review",
       "description": "Bring one representative candidate consent evidence case, its systems, evidence, and unresolved decisions."
     }
@@ -304,7 +304,7 @@ export const october13BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Pilot one bounded provider workflow",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the evidence and owner review",
       "description": "Bring one representative provider invoice headcount case, its systems, evidence, and unresolved decisions."
     }
@@ -407,7 +407,7 @@ export const october13BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Pilot one bounded provider workflow",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the evidence and owner review",
       "description": "Bring one representative assistant tool licenses case, its systems, evidence, and unresolved decisions."
     }
@@ -510,7 +510,7 @@ export const october13BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Pilot one bounded provider workflow",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the evidence and owner review",
       "description": "Bring one representative provider escalation severity case, its systems, evidence, and unresolved decisions."
     }
@@ -613,7 +613,7 @@ export const october13BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Pilot one bounded provider workflow",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the evidence and owner review",
       "description": "Bring one representative provider subcontractor disclosures case, its systems, evidence, and unresolved decisions."
     }
@@ -716,7 +716,7 @@ export const october13BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Pilot one bounded provider workflow",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the evidence and owner review",
       "description": "Bring one representative credential recovery drills case, its systems, evidence, and unresolved decisions."
     }
@@ -819,7 +819,7 @@ export const october13BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Pilot one bounded provider workflow",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the evidence and owner review",
       "description": "Bring one representative coverage overlap maps case, its systems, evidence, and unresolved decisions."
     }
@@ -922,7 +922,7 @@ export const october13BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Pilot one bounded provider workflow",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the evidence and owner review",
       "description": "Bring one representative knowledge base freshness case, its systems, evidence, and unresolved decisions."
     }
@@ -1025,7 +1025,7 @@ export const october13BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Pilot one bounded provider workflow",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the evidence and owner review",
       "description": "Bring one representative assistant role scope amendments case, its systems, evidence, and unresolved decisions."
     }
@@ -1128,7 +1128,7 @@ export const october13BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Pilot one bounded provider workflow",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the evidence and owner review",
       "description": "Bring one representative provider offboarding evidence case, its systems, evidence, and unresolved decisions."
     }
@@ -1231,7 +1231,7 @@ export const october13BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Pilot one bounded provider workflow",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the evidence and owner review",
       "description": "Bring one representative account manager decision backlogs case, its systems, evidence, and unresolved decisions."
     }

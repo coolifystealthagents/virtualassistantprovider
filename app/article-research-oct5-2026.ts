@@ -254,7 +254,7 @@ export const october5ResearchPosts: readonly ResearchPost[] = [
       },
       {
         "title": "Plan a Philippines-based role",
-        "href": "/contact",
+        "href": "/contact-us",
         "description": "Bring tasks, tools, hours, access limits and owner-only decisions."
       }
     ]
@@ -512,7 +512,7 @@ export const october5ResearchPosts: readonly ResearchPost[] = [
       },
       {
         "title": "Plan a Philippines-based role",
-        "href": "/contact",
+        "href": "/contact-us",
         "description": "Bring tasks, tools, hours, access limits and owner-only decisions."
       }
     ]
@@ -739,7 +739,7 @@ export const october5ResearchPosts: readonly ResearchPost[] = [
     "sources": [
       {
         "id": 7,
-        "name": "Strategic Enforcement Plan Fiscal Years 2024–2028",
+        "name": "Strategic Enforcement Plan Fiscal Years 2024 - 2028",
         "organization": "U.S. Equal Employment Opportunity Commission",
         "url": "https://www.eeoc.gov/strategic-enforcement-plan-fiscal-years-2024-2028",
         "accessed": "2026-10-05"
@@ -772,7 +772,7 @@ export const october5ResearchPosts: readonly ResearchPost[] = [
       },
       {
         "title": "Plan a Philippines-based role",
-        "href": "/contact",
+        "href": "/contact-us",
         "description": "Bring tasks, tools, hours, access limits and owner-only decisions."
       }
     ]
@@ -1031,7 +1031,7 @@ export const october5ResearchPosts: readonly ResearchPost[] = [
       },
       {
         "title": "Plan a Philippines-based role",
-        "href": "/contact",
+        "href": "/contact-us",
         "description": "Bring tasks, tools, hours, access limits and owner-only decisions."
       }
     ]
@@ -1291,7 +1291,7 @@ export const october5ResearchPosts: readonly ResearchPost[] = [
       },
       {
         "title": "Plan a Philippines-based role",
-        "href": "/contact",
+        "href": "/contact-us",
         "description": "Bring tasks, tools, hours, access limits and owner-only decisions."
       }
     ]

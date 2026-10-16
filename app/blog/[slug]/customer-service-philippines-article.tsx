@@ -32,7 +32,7 @@ export function CustomerServicePhilippinesArticle() {
   };
 
   return <>
-    <header className="article-only-nav"><a href="/" className="article-only-logo">Virtual Assistant Provider</a><nav aria-label="Article navigation"><a href="/">Home</a><a href="/services">Services</a><a href="/contact">Contact Us</a></nav></header>
+    <header className="article-only-nav"><a href="/" className="article-only-logo">Virtual Assistant Provider</a><nav aria-label="Article navigation"><a href="/">Home</a><a href="/services">Services</a><a href="/contact-us">Contact Us</a></nav></header>
     <main className="rich-article-shell"><JsonLd data={schema} />
       <article className="rich-evidence-article" data-article-marker="customer-service-philippines-v1">
         <span className="article-kicker">Philippines role guide</span>
@@ -40,7 +40,7 @@ export function CustomerServicePhilippinesArticle() {
           <img src="/featured/customer-service-virtual-assistant-philippines.png" alt="Customer service virtual assistant managing a support queue" width="1200" height="675" />
         <p className="article-deck">A Philippines-based customer service assistant can clear repeat questions and keep the queue tidy. The job needs firm answer rules, safe account access, and a manager who reviews real tickets instead of trusting a friendly voice alone.</p>
 
-        <aside className="article-banner article-banner-top"><div><span>Start with a real support queue</span><p>List the five ticket types that take the most time. Add the approved answer, tool, private fields, stop rule, and manager for each one.</p></div><a className="btn primary" href="/contact">Plan the role</a></aside>
+        <aside className="article-banner article-banner-top"><div><span>Start with a real support queue</span><p>List the five ticket types that take the most time. Add the approved answer, tool, private fields, stop rule, and manager for each one.</p></div><a className="btn primary" href="/contact-us">Plan the role</a></aside>
 
         <section>
           <h2>Build the job from ticket types</h2>
@@ -105,7 +105,7 @@ export function CustomerServicePhilippinesArticle() {
           <p className="method-note"><strong>Process note:</strong> This is a suggested hiring and training path, not a measured result. Open a wider ticket lane only after the current work meets the written check and the manager can review it.</p>
         </section>
 
-        <aside className="article-banner article-banner-middle"><div><span>Need a ticket test and score sheet?</span><p>Share the common questions, source pages, stop rules, and manager-only choices. The staffing team can turn them into a clear Philippines hiring brief.</p></div><a className="btn secondary" href="/contact">Map the test</a></aside>
+        <aside className="article-banner article-banner-middle"><div><span>Need a ticket test and score sheet?</span><p>Share the common questions, source pages, stop rules, and manager-only choices. The staffing team can turn them into a clear Philippines hiring brief.</p></div><a className="btn secondary" href="/contact-us">Map the test</a></aside>
 
         <section>
           <h2>Write an answer bank that stays current</h2>
@@ -153,7 +153,7 @@ export function CustomerServicePhilippinesArticle() {
         <section>
           <h2>Helpful next steps</h2>
           <p>Use the <a href="/services/customer-support-assistants">customer support assistant service guide</a> for a short role outline. The <a href="/services">Philippines staffing services page</a> shows other lanes when the work belongs with operations, sales support, or bookkeeping.</p>
-          <p>The <a href="/research/hire-virtual-assistant-philippines-evidence-guide">Philippines hiring evidence guide</a> explains the limits of national data. When the queue is mapped, use the <a href="/contact">staffing intake</a> to share ticket types, tools, hours, and manager-only choices.</p>
+          <p>The <a href="/research/hire-virtual-assistant-philippines-evidence-guide">Philippines hiring evidence guide</a> explains the limits of national data. When the queue is mapped, use the <a href="/contact-us">staffing intake</a> to share ticket types, tools, hours, and manager-only choices.</p>
         </section>
 
         <section>
@@ -167,9 +167,9 @@ export function CustomerServicePhilippinesArticle() {
           <p>World Bank values were checked through the official indicator API on July 27, 2026. The NIST quote was checked on the official release page, and each Philippine law link points to the full act text.</p>
         </section>
 
-        <aside className="article-banner article-banner-bottom"><div><span>Turn the queue into a hiring brief</span><p>Bring the ticket types, answer sources, schedule, tools, access limits, and manager-only choices. The staffing team can use them to look for a Philippines-based support fit.</p></div><a className="btn primary" href="/contact">Send the brief</a></aside>
+        <aside className="article-banner article-banner-bottom"><div><span>Turn the queue into a hiring brief</span><p>Bring the ticket types, answer sources, schedule, tools, access limits, and manager-only choices. The staffing team can use them to look for a Philippines-based support fit.</p></div><a className="btn primary" href="/contact-us">Send the brief</a></aside>
       </article>
     </main>
-    <footer className="article-only-footer"><p>Virtual Assistant Provider helps businesses plan work for Philippines-based specialists.</p><nav aria-label="Article footer"><a href="/services">Services</a><a href="/blog">Blog</a><a href="/research">Research</a><a href="/privacy">Privacy</a><a href="/contact">Contact</a></nav></footer>
+    <footer className="article-only-footer"><p>Virtual Assistant Provider helps businesses plan work for Philippines-based specialists.</p><nav aria-label="Article footer"><a href="/services">Services</a><a href="/blog">Blog</a><a href="/research">Research</a><a href="/privacy">Privacy</a><a href="/contact-us">Contact</a></nav></footer>
   </>;
 }

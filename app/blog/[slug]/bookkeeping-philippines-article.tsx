@@ -32,7 +32,7 @@ export function BookkeepingPhilippinesArticle() {
   };
 
   return <>
-    <header className="article-only-nav"><a href="/" className="article-only-logo">Virtual Assistant Provider</a><nav aria-label="Article navigation"><a href="/">Home</a><a href="/services">Services</a><a href="/contact">Contact Us</a></nav></header>
+    <header className="article-only-nav"><a href="/" className="article-only-logo">Virtual Assistant Provider</a><nav aria-label="Article navigation"><a href="/">Home</a><a href="/services">Services</a><a href="/contact-us">Contact Us</a></nav></header>
     <main className="rich-article-shell"><JsonLd data={schema} />
       <article className="rich-evidence-article" data-article-marker="bookkeeping-philippines-v1">
         <span className="article-kicker">Philippines role guide</span>
@@ -40,7 +40,7 @@ export function BookkeepingPhilippinesArticle() {
           <img src="/featured/bookkeeping-virtual-assistant-philippines.png" alt="Bookkeeping virtual assistant reviewing organized financial records" width="1200" height="675" />
         <p className="article-deck">A Philippines-based bookkeeping assistant can clean records and prepare a close. The role works best when the owner draws a hard line between preparing the books and moving money, approving entries, or making tax choices.</p>
 
-        <aside className="article-banner article-banner-top"><div><span>Start with one clean record lane</span><p>Choose one account, one month, and one source folder. Write who prepares the work, who reviews it, and which choices stay with the owner.</p></div><a className="btn primary" href="/contact">Plan the role</a></aside>
+        <aside className="article-banner article-banner-top"><div><span>Start with one clean record lane</span><p>Choose one account, one month, and one source folder. Write who prepares the work, who reviews it, and which choices stay with the owner.</p></div><a className="btn primary" href="/contact-us">Plan the role</a></aside>
 
         <section>
           <h2>Define bookkeeping support before you hire</h2>
@@ -106,7 +106,7 @@ export function BookkeepingPhilippinesArticle() {
           <p className="method-note"><strong>Process note:</strong> This is a control pattern, not a measured result. The reviewer should return weak work with a reason and keep the saved correction beside the source record.</p>
         </section>
 
-        <aside className="article-banner article-banner-middle"><div><span>Need a bookkeeping work sample?</span><p>Share the record types, software, close steps, access limits, and reviewer rules. The staffing team can turn them into a clear Philippines hiring brief.</p></div><a className="btn secondary" href="/contact">Map the test</a></aside>
+        <aside className="article-banner article-banner-middle"><div><span>Need a bookkeeping work sample?</span><p>Share the record types, software, close steps, access limits, and reviewer rules. The staffing team can turn them into a clear Philippines hiring brief.</p></div><a className="btn secondary" href="/contact-us">Map the test</a></aside>
 
         <section>
           <h2>Limit access before the first live record</h2>
@@ -148,7 +148,7 @@ export function BookkeepingPhilippinesArticle() {
         <section>
           <h2>Helpful next steps</h2>
           <p>Use the <a href="/services/bookkeeping-assistants">bookkeeping assistant service guide</a> for a short role outline. The <a href="/services">Philippines staffing services page</a> shows other lanes when the job also includes operations, customer support, or sales admin.</p>
-          <p>The <a href="/research/hire-virtual-assistant-philippines-evidence-guide">Philippines hiring evidence guide</a> explains what national data can and cannot prove. When the records and controls are mapped, use the <a href="/contact">staffing intake</a> to share the tools, schedule, access limits, and reviewer plan.</p>
+          <p>The <a href="/research/hire-virtual-assistant-philippines-evidence-guide">Philippines hiring evidence guide</a> explains what national data can and cannot prove. When the records and controls are mapped, use the <a href="/contact-us">staffing intake</a> to share the tools, schedule, access limits, and reviewer plan.</p>
         </section>
 
         <section>
@@ -162,9 +162,9 @@ export function BookkeepingPhilippinesArticle() {
           <p>World Bank values were checked through the official indicator API on July 27, 2026. The NIST quote was checked on the official release page, and each Philippine law link points to the full act text.</p>
         </section>
 
-        <aside className="article-banner article-banner-bottom"><div><span>Turn the close into a hiring brief</span><p>Bring the record lanes, source folders, software, review steps, stop rules, and access plan. The staffing team can use them to look for a Philippines-based bookkeeping fit.</p></div><a className="btn primary" href="/contact">Send the brief</a></aside>
+        <aside className="article-banner article-banner-bottom"><div><span>Turn the close into a hiring brief</span><p>Bring the record lanes, source folders, software, review steps, stop rules, and access plan. The staffing team can use them to look for a Philippines-based bookkeeping fit.</p></div><a className="btn primary" href="/contact-us">Send the brief</a></aside>
       </article>
     </main>
-    <footer className="article-only-footer"><p>Virtual Assistant Provider helps businesses plan work for Philippines-based specialists.</p><nav aria-label="Article footer"><a href="/services">Services</a><a href="/blog">Blog</a><a href="/research">Research</a><a href="/privacy">Privacy</a><a href="/contact">Contact</a></nav></footer>
+    <footer className="article-only-footer"><p>Virtual Assistant Provider helps businesses plan work for Philippines-based specialists.</p><nav aria-label="Article footer"><a href="/services">Services</a><a href="/blog">Blog</a><a href="/research">Research</a><a href="/privacy">Privacy</a><a href="/contact-us">Contact</a></nav></footer>
   </>;
 }

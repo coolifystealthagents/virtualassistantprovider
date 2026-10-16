@@ -447,7 +447,7 @@ export let researchPosts: readonly ResearchPost[] = [
         ]
       },
       {
-        heading: 'Days 1–3: access and orientation',
+        heading: 'Days 1 - 3: access and orientation',
         paragraphs: [
           'Create a named account for the assistant instead of sharing an owner login. NIST defines least privilege as limiting users to the minimum resources and authorizations needed for their function.[3] Its current controls also call for reviewing and removing privileges when they are no longer needed.[4]',
           'Require multi-factor authentication and record who owns account recovery. CISA guidance prioritizes phishing-resistant MFA for privileged users and notes that centralized login can improve lifecycle management and auditability.[5]',
@@ -455,7 +455,7 @@ export let researchPosts: readonly ResearchPost[] = [
         ]
       },
       {
-        heading: 'Days 4–10: observe, rehearse, and correct',
+        heading: 'Days 4 - 10: observe, rehearse, and correct',
         paragraphs: [
           'Demonstrate one complete workflow while narrating the reason behind each decision. The assistant then repeats the task with the safe practice packet, records questions, and compares the result with the approved example.',
           'Score accuracy, completeness, tone, judgment, and documentation. Correct the process, not only the latest output: update the checklist when a missing rule causes a predictable error.',
@@ -463,7 +463,7 @@ export let researchPosts: readonly ResearchPost[] = [
         ]
       },
       {
-        heading: 'Days 11–20: supervised production',
+        heading: 'Days 11 - 20: supervised production',
         paragraphs: [
           'Open one low-risk live workflow and review every output before it reaches a customer, changes a system of record, or commits money. Keep refunds, bank activity, legal judgment, hiring decisions, and policy exceptions with the named owner.',
           'Use a short daily handoff: completed, next, blocked, and decision needed. The routine creates a visible queue without requiring constant meetings or screenshots.',
@@ -471,7 +471,7 @@ export let researchPosts: readonly ResearchPost[] = [
         ]
       },
       {
-        heading: 'Days 21–30: bounded ownership',
+        heading: 'Days 21 - 30: bounded ownership',
         paragraphs: [
           'Let the assistant own a defined queue while the manager samples completed work and reviews exceptions. Expand access only when the new responsibility requires it and the previous phase shows reliable execution.',
           'Measure outcomes that match the role: calendar conflict rate and briefing completeness for executive support; first-response time and quality review for customer support; record accuracy and exception notes for operations work.',
@@ -528,7 +528,7 @@ export let researchPosts: readonly ResearchPost[] = [
       { title: 'Philippines VA hiring evidence guide', href: '/research/hire-virtual-assistant-philippines-evidence-guide', description: 'Use country context, paid work samples, and access checks to choose a candidate or provider.' },
       { title: 'Philippines-based staffing services', href: '/services', description: 'Compare role lanes for executive, operations, customer support, sales, bookkeeping, and more.' },
       { title: 'Current public pricing', href: '/pricing', description: 'Review the site’s public Philippines-based tiers and confirm what each plan includes.' },
-      { title: 'Request a role plan', href: '/contact', description: 'Bring the tasks, hours, tools, and owner-only decisions you already know.' }
+      { title: 'Request a role plan', href: '/contact-us', description: 'Bring the tasks, hours, tools, and owner-only decisions you already know.' }
     ]
   }
 ];
@@ -753,7 +753,7 @@ const makePublishingResearchPost = (config: PublishingResearchConfig): ResearchP
     { title: 'Research library', href: '/research', description: 'Read the other source-led reports in the Virtual Assistant Provider research library.' },
     { title: 'Daily publishing method', href: '/research/daily-research-brief-routine', description: 'Use a narrow question, evidence record, review pass, and handoff note for each daily article.' },
     { title: 'Blog library', href: '/blog', description: 'Compare research reports with the site blog and keep new topics distinct.' },
-    { title: 'Request a role planning call', href: '/contact', description: 'Bring the recurring work, tools, review rules, and owner decisions for a Philippines-based role plan.' }
+    { title: 'Request a role planning call', href: '/contact-us', description: 'Bring the recurring work, tools, review rules, and owner decisions for a Philippines-based role plan.' }
   ]
 });
 
@@ -839,7 +839,7 @@ const makeServiceResearchPost = (config: ServiceResearchConfig): ResearchPost =>
     related: [
       ...(config.serviceHref && config.serviceLinkTitle && config.serviceLinkDescription ? [{ title: config.serviceLinkTitle, href: config.serviceHref, description: config.serviceLinkDescription }] : []),
       { title: 'Research library', href: '/research', description: 'Read the other source-led reports for Philippines-based support decisions.' },
-      { title: 'Plan a Philippines-based role', href: '/contact', description: 'Bring the recurring work, tools, review rules, and owner decisions for a role plan.' },
+      { title: 'Plan a Philippines-based role', href: '/contact-us', description: 'Bring the recurring work, tools, review rules, and owner decisions for a role plan.' },
       { title: 'Services', href: '/services', description: 'Review the support areas covered by Virtual Assistant Provider.' }
     ]
   };

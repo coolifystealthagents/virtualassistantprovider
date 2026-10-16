@@ -137,7 +137,7 @@ export const october2ResearchPosts: readonly ResearchPost[] = studies.map((study
     related: [
       { title: `${study.role} service guide`, href: `/services/${study.service}`, description: 'Review the service scope, common tasks, controls, and launch path.' },
       { title: 'Research library', href: '/research', description: 'Compare other source-led reports for Philippines-based staffing decisions.' },
-      { title: 'Plan a Philippines-based role', href: '/contact', description: 'Bring the tasks, tools, hours, access limits, and owner-only decisions for a role plan.' },
+      { title: 'Plan a Philippines-based role', href: '/contact-us', description: 'Bring the tasks, tools, hours, access limits, and owner-only decisions for a role plan.' },
     ],
   };
 }).map((post, index) => {
@@ -156,7 +156,7 @@ export const october2ResearchPosts: readonly ResearchPost[] = studies.map((study
     sections: post.sections.map((section, sectionIndex) => ({ ...section, heading: profiles.headings[sectionIndex], paragraphs: section.paragraphs.map((paragraph, paragraphIndex) => paragraph + (paragraphIndex === section.paragraphs.length - 1 ? ' For this case, the reader outcome is to ' + profiles.outcome + ', not to award a generic process score.' : '')) })),
     implications: post.implications.map((item, itemIndex) => ({ title: item.title + ': ' + profiles.lens, body: item.body + ' The immediate next check is to ' + profiles.next + '; priority ' + (itemIndex + 1) + ' reflects this report’s decision sequence.' })),
     methodology: post.methodology.map((item, itemIndex) => item + ' The ' + profiles.lens + ' analysis uses method note ' + (itemIndex + 1) + ' to support the question: ' + profiles.outcome + '.'),
-    faq: post.faq.map((item, itemIndex) => ({ question: item.question + ' — ' + profiles.lens + '?', answer: item.answer + ' In this study, use that answer to ' + profiles.next + ' (review point ' + (itemIndex + 1) + ').' })),
+    faq: post.faq.map((item, itemIndex) => ({ question: item.question + ' - ' + profiles.lens + '?', answer: item.answer + ' In this study, use that answer to ' + profiles.next + ' (review point ' + (itemIndex + 1) + ').' })),
     related: post.related.map((item) => ({ ...item, description: item.description + ' Use it after the ' + profiles.lens + ' evidence has been reviewed.' })),
   };
 });

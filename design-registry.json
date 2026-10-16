@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "updated": "2026-10-16",
+  "sites": [
+    {
+      "domain": "virtualassistantprovider.com",
+      "designFamily": "editorial staffing field guide",
+      "dominantFirstFoldComposition": "asymmetric role-planning split with illustrated workflow",
+      "sectionOrder": [
+        "offer and role-match hero",
+        "role lanes",
+        "provider model comparison",
+        "buyer scorecard",
+        "editorial guides",
+        "final role-planning CTA"
+      ],
+      "recurringMotifs": [
+        "warm paper backgrounds",
+        "navy decision surfaces",
+        "teal control cues",
+        "orange conversion actions",
+        "editorial serif display type"
+      ],
+      "ctaStyle": "rounded high-contrast action paired with a quieter evidence link",
+      "imageStrategy": "licensed workflow illustrations for planning concepts; official Stealth Agents assets only for parent-brand proof",
+      "mobileBehavior": "single compact sticky header, full-width menu panel, one-column reading flow, horizontally scrollable evidence tables",
+      "rationale": "The site is a practical Philippines staffing guide, so its visual system emphasizes role definition, controls, and readable evidence rather than a generic agency portfolio.",
+      "comparedWithRecentRecords": [],
+      "similarityDecision": "First registry record; no recent records were available for a similarity comparison."
+    }
+  ]
+}

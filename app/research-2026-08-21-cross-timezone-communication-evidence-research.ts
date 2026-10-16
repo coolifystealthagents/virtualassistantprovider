@@ -117,6 +117,6 @@ export const post: ResearchPost = {
     { title: 'Virtual assistant onboarding routine', href: '/research/virtual-assistant-onboarding-30-day-routine', description: 'A staged routine for access, observe, execute, and own.' },
     { title: 'Hire a virtual assistant in the Philippines', href: '/research/hire-virtual-assistant-philippines-evidence-guide', description: 'Country evidence and a paid work sample for hiring.' },
     { title: 'Services', href: '/services', description: 'Review the support areas covered by Virtual Assistant Provider.' },
-    { title: 'Plan a Philippines-based role', href: '/contact', description: 'Bring the tasks, hours, and tools for a role plan.' }
+    { title: 'Plan a Philippines-based role', href: '/contact-us', description: 'Bring the tasks, hours, and tools for a role plan.' }
   ]
 };

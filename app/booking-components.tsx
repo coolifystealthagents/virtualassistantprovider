@@ -2,9 +2,9 @@
 import { useState } from 'react';
 
 const testimonials = [
-  { name: "Chad Sublet", quote: "Lindsay has been incredible. She handles the tactical work, which has freed me up to focus on bigger-picture initiatives." },
-  { name: "Alex Behrens", quote: "They have made a real difference in our day-to-day operations and truly feel like part of our internal team." },
-  { name: "Lee Maasen", quote: "Stealth Agents provided me with a fantastic virtual assistant who has been an absolute asset." },
+  { name: "Chad Sublet", headline: "Freed to focus on bigger initiatives", quote: "Lindsay has been incredible. She handles the tactical work, which has freed me up to focus on bigger-picture initiatives." },
+  { name: "Alex Behrens", headline: "Part of our internal team", quote: "They have made a real difference in our day-to-day operations and truly feel like part of our internal team." },
+  { name: "Lee Maasen", headline: "An absolute asset", quote: "Stealth Agents provided me with a fantastic virtual assistant who has been an absolute asset." },
 ];
 
 export function TestimonialsRail({ contact = false }: { contact?: boolean }) {
@@ -24,6 +24,7 @@ export function TestimonialsRail({ contact = false }: { contact?: boolean }) {
           {repeated.map((review, index) => (
             <article className="sa-testimonial-card" key={`${review.name}-${index}`} aria-hidden={index >= testimonials.length ? true : undefined}>
               <div className="sa-testimonial-stars"><span aria-hidden="true">★★★★★</span><span className="sa-sr-only">5 out of 5 stars</span></div>
+              <h3>{review.headline}</h3>
               <blockquote>“{review.quote}”</blockquote>
               <p>- {review.name}</p>
             </article>

@@ -2,12 +2,12 @@
 
 SEO lead generation site for `virtualassistantprovider.com`. Built with Next.js, Docker, and the Hermes VA site factory playbook.
 
-## Placeholder swaps
+## Current conversion contracts
 
-- Connect `/contact` to CRM/Formspree/Staffing intake.
-- Add analytics ID.
-- Add real testimonials only after approval.
-- Add legal/privacy pages before paid traffic.
+- `/contact-us` submits to `/api/contact` and accepted leads continue to `/thank-you`.
+- ACR attribution uses the same-origin `/ingest/track` endpoint.
+- Approved testimonials and the official StealthAgents identity assets are checked into the site.
+- Privacy and terms routes are published and linked from the global footer.
 
 ## Daily research publishing
 

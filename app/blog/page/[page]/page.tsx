@@ -28,7 +28,7 @@ export async function generateMetadata({
   const number = requireBlogPage(page);
   const canonical = number === 1 ? "/blog" : `/blog/page/${number}`;
   return {
-    title: `Blog – Page ${number}`,
+    title: `Blog - Page ${number}`,
     description: "Guides for planning Philippines-based staffing.",
     alternates: { canonical },
   };

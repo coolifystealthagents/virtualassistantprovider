@@ -98,7 +98,7 @@ export const october12BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this control into a provider question",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the role and review path",
       "description": "Bring the provider discovery call inputs, owners, and unresolved assumptions to a role-planning conversation."
     }
@@ -201,7 +201,7 @@ export const october12BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this control into a provider question",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the role and review path",
       "description": "Bring the role brief assumption register inputs, owners, and unresolved assumptions to a role-planning conversation."
     }
@@ -304,7 +304,7 @@ export const october12BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this control into a provider question",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the role and review path",
       "description": "Bring the assistant shortlist evidence packet inputs, owners, and unresolved assumptions to a role-planning conversation."
     }
@@ -407,7 +407,7 @@ export const october12BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this control into a provider question",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the role and review path",
       "description": "Bring the virtual assistant replacement process inputs, owners, and unresolved assumptions to a role-planning conversation."
     }
@@ -510,7 +510,7 @@ export const october12BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this control into a provider question",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the role and review path",
       "description": "Bring the managed virtual assistant coaching inputs, owners, and unresolved assumptions to a role-planning conversation."
     }
@@ -613,7 +613,7 @@ export const october12BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this control into a provider question",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the role and review path",
       "description": "Bring the virtual assistant backup coverage inputs, owners, and unresolved assumptions to a role-planning conversation."
     }
@@ -716,7 +716,7 @@ export const october12BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this control into a provider question",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the role and review path",
       "description": "Bring the virtual assistant provider pricing comparison inputs, owners, and unresolved assumptions to a role-planning conversation."
     }
@@ -819,7 +819,7 @@ export const october12BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this control into a provider question",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the role and review path",
       "description": "Bring the virtual assistant trial task data inputs, owners, and unresolved assumptions to a role-planning conversation."
     }
@@ -922,7 +922,7 @@ export const october12BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this control into a provider question",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the role and review path",
       "description": "Bring the provider account manager weekly brief inputs, owners, and unresolved assumptions to a role-planning conversation."
     }
@@ -1025,7 +1025,7 @@ export const october12BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this control into a provider question",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the role and review path",
       "description": "Bring the provider incident and service credit log inputs, owners, and unresolved assumptions to a role-planning conversation."
     }
@@ -1128,7 +1128,7 @@ export const october12BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this control into a provider question",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the role and review path",
       "description": "Bring the multilingual virtual assistant support inputs, owners, and unresolved assumptions to a role-planning conversation."
     }
@@ -1231,7 +1231,7 @@ export const october12BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this control into a provider question",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Plan the role and review path",
       "description": "Bring the virtual assistant provider exit plan inputs, owners, and unresolved assumptions to a role-planning conversation."
     }

@@ -223,12 +223,12 @@ export const roles = services.map((service) => service.name);
 export const industries = ['real estate', 'healthcare offices', 'legal teams', 'ecommerce stores', 'coaches and agencies', 'home services'] as const;
 export const stats = [
   { label: 'Role scope', value: 'Scope first', note: 'the plan depends on the tasks, hours, tools, and skills involved' },
-  { label: 'Early review', value: '7-21 days', note: 'keep a close eye on the work while the assistant learns the role' },
-  { label: 'First handoff', value: '5-10 tasks', note: 'begin with a short list of recurring work instead of an all-purpose role' },
+  { label: 'Early review', value: 'Review closely', note: 'check the work frequently while the assistant learns the role' },
+  { label: 'First handoff', value: 'Start narrow', note: 'begin with a short list of recurring work instead of an all-purpose role' },
 ];
 
 export const providerCards = [
-  { name: 'Managed Philippines VA company', rating: 'Good fit for 20+ hours/week', note: 'Ask who trains the Filipino assistant, who checks quality, and how fast a Philippines-based replacement can start.' },
+  { name: 'Managed Philippines VA company', rating: 'Good fit for an ongoing role', note: 'Ask who trains the Filipino assistant, who checks quality, and how a Philippines-based replacement would be handled.' },
   { name: 'Filipino specialist team', rating: 'Good fit for support or CRM', note: 'Look for role-specific examples, saved replies, and a Philippines team manager who knows the tools.' },
   { name: 'Direct Filipino freelance VA', rating: 'Good fit for a small pilot', note: 'Lower overhead can help, but you own screening, backup, quality checks, and access cleanup.' },
 ];

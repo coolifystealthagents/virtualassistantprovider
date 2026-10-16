@@ -31,7 +31,7 @@ export function HealthcarePhilippinesArticle() {
   };
 
   return <>
-    <header className="article-only-nav"><a href="/" className="article-only-logo">Virtual Assistant Provider</a><nav aria-label="Article navigation"><a href="/">Home</a><a href="/services">Services</a><a href="/contact">Contact Us</a></nav></header>
+    <header className="article-only-nav"><a href="/" className="article-only-logo">Virtual Assistant Provider</a><nav aria-label="Article navigation"><a href="/">Home</a><a href="/services">Services</a><a href="/contact-us">Contact Us</a></nav></header>
     <main className="rich-article-shell"><JsonLd data={schema} />
       <article className="rich-evidence-article" data-article-marker="healthcare-philippines-v1">
         <span className="article-kicker">Philippines role guide</span>
@@ -39,7 +39,7 @@ export function HealthcarePhilippinesArticle() {
           <img src="/featured/healthcare-virtual-assistant-philippines.png" alt="Healthcare virtual assistant coordinating administrative tasks" width="1200" height="675" />
         <p className="article-deck">A Philippines-based healthcare virtual assistant can help a clinic clear repeat office work without making medical choices. The safest role has a narrow task list, named clinic owners, limited access, and a clear stop rule for anything urgent or unclear.</p>
 
-        <aside className="article-banner article-banner-top"><div><span>Start with one admin lane</span><p>Choose a repeat job such as appointment reminders or referral tracking. Write down the allowed steps, patient-data fields, stop reasons, and clinic reviewer before access opens.</p></div><a className="btn primary" href="/contact">Plan the role</a></aside>
+        <aside className="article-banner article-banner-top"><div><span>Start with one admin lane</span><p>Choose a repeat job such as appointment reminders or referral tracking. Write down the allowed steps, patient-data fields, stop reasons, and clinic reviewer before access opens.</p></div><a className="btn primary" href="/contact-us">Plan the role</a></aside>
 
         <section>
           <h2>Keep the role nonclinical</h2>
@@ -107,7 +107,7 @@ export function HealthcarePhilippinesArticle() {
           <p className="method-note"><strong>Process note:</strong> This is a suggested control path, not a measured result. The clinic must define identity checks, allowed fields, message rules, alert reasons, and the person who reviews each lane.</p>
         </section>
 
-        <aside className="article-banner article-banner-middle"><div><span>Need a safe work sample?</span><p>Bring one task list, blank forms, approved messages, and the clinic stop rules. The staffing team can shape them into a test that uses fake records.</p></div><a className="btn secondary" href="/contact">Map the test</a></aside>
+        <aside className="article-banner article-banner-middle"><div><span>Need a safe work sample?</span><p>Bring one task list, blank forms, approved messages, and the clinic stop rules. The staffing team can shape them into a test that uses fake records.</p></div><a className="btn secondary" href="/contact-us">Map the test</a></aside>
 
         <section>
           <h2>Decide who may see patient information</h2>
@@ -161,7 +161,7 @@ export function HealthcarePhilippinesArticle() {
         <section>
           <h2>Helpful next steps</h2>
           <p>Use the <a href="/services/healthcare-admin-assistants">healthcare admin assistant service guide</a> for a shorter role outline. The <a href="/services">Philippines staffing services page</a> shows other support lanes if the job also covers customer care, bookkeeping prep, or executive admin.</p>
-          <p>The <a href="/research/hire-virtual-assistant-philippines-evidence-guide">Philippines hiring evidence guide</a> explains what country data can and cannot tell you. When the lane, tools, hours, access, and clinic owners are clear, use the <a href="/contact">staffing intake</a> to share the plan.</p>
+          <p>The <a href="/research/hire-virtual-assistant-philippines-evidence-guide">Philippines hiring evidence guide</a> explains what country data can and cannot tell you. When the lane, tools, hours, access, and clinic owners are clear, use the <a href="/contact-us">staffing intake</a> to share the plan.</p>
         </section>
 
         <section>
@@ -175,9 +175,9 @@ export function HealthcarePhilippinesArticle() {
           <p>World Bank values and the API update date were checked on July 27, 2026. The direct quote was checked against the NIST release, while the other links point to the full government law or guidance.</p>
         </section>
 
-        <aside className="article-banner article-banner-bottom"><div><span>Turn the clinic queue into a role brief</span><p>Bring one admin lane, approved messages, stop reasons, access limits, and reviewer names. The staffing team can use them to look for a Philippines-based healthcare admin fit.</p></div><a className="btn primary" href="/contact">Send the brief</a></aside>
+        <aside className="article-banner article-banner-bottom"><div><span>Turn the clinic queue into a role brief</span><p>Bring one admin lane, approved messages, stop reasons, access limits, and reviewer names. The staffing team can use them to look for a Philippines-based healthcare admin fit.</p></div><a className="btn primary" href="/contact-us">Send the brief</a></aside>
       </article>
     </main>
-    <footer className="article-only-footer"><p>Virtual Assistant Provider helps businesses plan work for Philippines-based specialists.</p><nav aria-label="Article footer"><a href="/services">Services</a><a href="/blog">Blog</a><a href="/research">Research</a><a href="/privacy">Privacy</a><a href="/contact">Contact</a></nav></footer>
+    <footer className="article-only-footer"><p>Virtual Assistant Provider helps businesses plan work for Philippines-based specialists.</p><nav aria-label="Article footer"><a href="/services">Services</a><a href="/blog">Blog</a><a href="/research">Research</a><a href="/privacy">Privacy</a><a href="/contact-us">Contact</a></nav></footer>
   </>;
 }

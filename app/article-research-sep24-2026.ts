@@ -142,7 +142,7 @@ export const september24ResearchPosts: readonly ResearchPost[] = studies.map((st
     related: [
       { title: `${study.role} service guide`, href: `/services/${study.service}`, description: 'Review the service scope, common tasks, controls, and launch path.' },
       { title: 'Research library', href: '/research', description: 'Compare other source-led reports for Philippines-based staffing decisions.' },
-      { title: 'Plan a Philippines-based role', href: '/contact', description: 'Bring the tasks, tools, hours, access limits, and owner-only decisions for a role plan.' },
+      { title: 'Plan a Philippines-based role', href: '/contact-us', description: 'Bring the tasks, tools, hours, access limits, and owner-only decisions for a role plan.' },
     ],
   };
 });

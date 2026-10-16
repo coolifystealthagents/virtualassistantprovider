@@ -282,7 +282,7 @@ export const october9ResearchPosts: readonly ResearchPost[] = [
       },
       {
         "title": "Plan a provider-supported role",
-        "href": "/contact",
+        "href": "/contact-us",
         "description": "Bring tasks, tools, hours, access limits, and owner-only decisions."
       }
     ]
@@ -568,7 +568,7 @@ export const october9ResearchPosts: readonly ResearchPost[] = [
       },
       {
         "title": "Plan a provider-supported role",
-        "href": "/contact",
+        "href": "/contact-us",
         "description": "Bring tasks, tools, hours, access limits, and owner-only decisions."
       }
     ]
@@ -854,7 +854,7 @@ export const october9ResearchPosts: readonly ResearchPost[] = [
       },
       {
         "title": "Plan a provider-supported role",
-        "href": "/contact",
+        "href": "/contact-us",
         "description": "Bring tasks, tools, hours, access limits, and owner-only decisions."
       }
     ]
@@ -1140,7 +1140,7 @@ export const october9ResearchPosts: readonly ResearchPost[] = [
       },
       {
         "title": "Plan a provider-supported role",
-        "href": "/contact",
+        "href": "/contact-us",
         "description": "Bring tasks, tools, hours, access limits, and owner-only decisions."
       }
     ]
@@ -1426,7 +1426,7 @@ export const october9ResearchPosts: readonly ResearchPost[] = [
       },
       {
         "title": "Plan a provider-supported role",
-        "href": "/contact",
+        "href": "/contact-us",
         "description": "Bring tasks, tools, hours, access limits, and owner-only decisions."
       }
     ]

@@ -30,7 +30,7 @@ export function EcommercePhilippinesArticle() {
   };
 
   return <>
-    <header className="article-only-nav"><a href="/" className="article-only-logo">Virtual Assistant Provider</a><nav aria-label="Article navigation"><a href="/">Home</a><a href="/services">Services</a><a href="/contact">Contact Us</a></nav></header>
+    <header className="article-only-nav"><a href="/" className="article-only-logo">Virtual Assistant Provider</a><nav aria-label="Article navigation"><a href="/">Home</a><a href="/services">Services</a><a href="/contact-us">Contact Us</a></nav></header>
     <main className="rich-article-shell"><JsonLd data={schema} />
       <article className="rich-evidence-article" data-article-marker="ecommerce-philippines-v1">
         <span className="article-kicker">Philippines role guide</span>
@@ -38,7 +38,7 @@ export function EcommercePhilippinesArticle() {
           <img src="/featured/ecommerce-virtual-assistant-philippines.png" alt="Ecommerce virtual assistant coordinating store operations" width="1200" height="675" />
         <p className="article-deck">A Philippines-based ecommerce assistant can keep product, order, and customer records moving each day. The safest setup gives the assistant a small task lane while a store manager keeps money, policy, claims, and account control.</p>
 
-        <aside className="article-banner article-banner-top"><div><span>Start with one store queue</span><p>Choose one repeat job, such as product checks or order notes, and write the finish line. Add the stop reasons and name the manager who answers each exception.</p></div><a className="btn primary" href="/contact">Plan the role</a></aside>
+        <aside className="article-banner article-banner-top"><div><span>Start with one store queue</span><p>Choose one repeat job, such as product checks or order notes, and write the finish line. Add the stop reasons and name the manager who answers each exception.</p></div><a className="btn primary" href="/contact-us">Plan the role</a></aside>
 
         <section>
           <h2>Set a narrow store lane first</h2>
@@ -101,7 +101,7 @@ export function EcommercePhilippinesArticle() {
           <p className="method-note"><strong>Process note:</strong> This diagram is a control plan, not a measured result. The manager's answer becomes a new rule only after it is checked, written down, and shared with the people using the store queue.</p>
         </section>
 
-        <aside className="article-banner article-banner-middle"><div><span>Need an ecommerce work sample?</span><p>Share the store lanes, source records, common errors, message rules, and stop list. The staffing team can turn them into a clear Philippines hiring test.</p></div><a className="btn secondary" href="/contact">Map the test</a></aside>
+        <aside className="article-banner article-banner-middle"><div><span>Need an ecommerce work sample?</span><p>Share the store lanes, source records, common errors, message rules, and stop list. The staffing team can turn them into a clear Philippines hiring test.</p></div><a className="btn secondary" href="/contact-us">Map the test</a></aside>
 
         <section>
           <h2>Protect customer and order records</h2>
@@ -149,7 +149,7 @@ export function EcommercePhilippinesArticle() {
         <section>
           <h2>Helpful next steps</h2>
           <p>Use the <a href="/services/ecommerce-assistants">ecommerce assistant service guide</a> for a short role outline. The <a href="/blog/customer-service-virtual-assistant-philippines">customer service assistant guide</a> can help when the store role includes a busy customer inbox.</p>
-          <p>The <a href="/research/hire-virtual-assistant-philippines-evidence-guide">Philippines hiring evidence guide</a> explains what country data can and cannot prove. When the store lanes and controls are ready, use the <a href="/contact">staffing intake</a> to share the tools, hours, access limits, and review plan.</p>
+          <p>The <a href="/research/hire-virtual-assistant-philippines-evidence-guide">Philippines hiring evidence guide</a> explains what country data can and cannot prove. When the store lanes and controls are ready, use the <a href="/contact-us">staffing intake</a> to share the tools, hours, access limits, and review plan.</p>
         </section>
 
         <section>
@@ -163,9 +163,9 @@ export function EcommercePhilippinesArticle() {
           <p>World Bank values and the update date were checked through the official API on July 28, 2026. The NIST quote was checked on its official release page, and the law and order-rule links point to the full source text.</p>
         </section>
 
-        <aside className="article-banner article-banner-bottom"><div><span>Turn the store queue into a role brief</span><p>Bring the task lanes, source records, common errors, stop list, and access plan. The staffing team can use them to look for a Philippines-based ecommerce fit.</p></div><a className="btn primary" href="/contact">Send the brief</a></aside>
+        <aside className="article-banner article-banner-bottom"><div><span>Turn the store queue into a role brief</span><p>Bring the task lanes, source records, common errors, stop list, and access plan. The staffing team can use them to look for a Philippines-based ecommerce fit.</p></div><a className="btn primary" href="/contact-us">Send the brief</a></aside>
       </article>
     </main>
-    <footer className="article-only-footer"><p>Virtual Assistant Provider helps businesses plan work for Philippines-based specialists. Each role starts with clear tasks, owner controls, and review steps.</p><nav aria-label="Article footer"><a href="/services">Services</a><a href="/blog">Blog</a><a href="/research">Research</a><a href="/privacy">Privacy</a><a href="/contact">Contact</a></nav></footer>
+    <footer className="article-only-footer"><p>Virtual Assistant Provider helps businesses plan work for Philippines-based specialists. Each role starts with clear tasks, owner controls, and review steps.</p><nav aria-label="Article footer"><a href="/services">Services</a><a href="/blog">Blog</a><a href="/research">Research</a><a href="/privacy">Privacy</a><a href="/contact-us">Contact</a></nav></footer>
   </>;
 }

@@ -30,7 +30,7 @@ export function RecruitingPhilippinesArticle() {
   };
 
   return <>
-    <header className="article-only-nav"><a href="/" className="article-only-logo">Virtual Assistant Provider</a><nav aria-label="Article navigation"><a href="/">Home</a><a href="/services">Services</a><a href="/contact">Contact Us</a></nav></header>
+    <header className="article-only-nav"><a href="/" className="article-only-logo">Virtual Assistant Provider</a><nav aria-label="Article navigation"><a href="/">Home</a><a href="/services">Services</a><a href="/contact-us">Contact Us</a></nav></header>
     <main className="rich-article-shell"><JsonLd data={schema} />
       <article className="rich-evidence-article" data-article-marker="recruiting-philippines-v1">
         <span className="article-kicker">Philippines role guide</span>
@@ -38,7 +38,7 @@ export function RecruitingPhilippinesArticle() {
           <img src="/featured/recruiting-virtual-assistant-philippines.png" alt="Recruiting virtual assistant coordinating candidate records and interviews" width="1200" height="675" />
         <p className="article-deck">A Philippines-based recruiting assistant can keep a busy hiring queue neat and moving. The role works best when one person handles the repeat steps while a named manager keeps selection choices, sensitive records, and final approval.</p>
 
-        <aside className="article-banner article-banner-top"><div><span>Start with one open role</span><p>Write the must-have skills, the proof you will accept, the interview steps, and who makes each choice. A small, clear queue is easier to test than a company-wide hiring inbox.</p></div><a className="btn primary" href="/contact">Plan the role</a></aside>
+        <aside className="article-banner article-banner-top"><div><span>Start with one open role</span><p>Write the must-have skills, the proof you will accept, the interview steps, and who makes each choice. A small, clear queue is easier to test than a company-wide hiring inbox.</p></div><a className="btn primary" href="/contact-us">Plan the role</a></aside>
 
         <section>
           <h2>Give the assistant a clear hiring lane</h2>
@@ -101,7 +101,7 @@ export function RecruitingPhilippinesArticle() {
           <p className="method-note"><strong>Process note:</strong> This is a control plan, not a measured result. Every exception goes to a named manager, and the saved answer becomes a rule only after that manager approves it.</p>
         </section>
 
-        <aside className="article-banner article-banner-middle"><div><span>Need a recruiting work sample?</span><p>Share the job brief, tracker fields, message rules, interview steps, and stop list. The staffing team can turn them into a clear Philippines hiring test.</p></div><a className="btn secondary" href="/contact">Map the test</a></aside>
+        <aside className="article-banner article-banner-middle"><div><span>Need a recruiting work sample?</span><p>Share the job brief, tracker fields, message rules, interview steps, and stop list. The staffing team can turn them into a clear Philippines hiring test.</p></div><a className="btn secondary" href="/contact-us">Map the test</a></aside>
 
         <section>
           <h2>Protect applicant records from day one</h2>
@@ -150,7 +150,7 @@ export function RecruitingPhilippinesArticle() {
         <section>
           <h2>Helpful next steps</h2>
           <p>Use the <a href="/services/recruiting-assistants">recruiting assistant service guide</a> for a short role outline. The <a href="/services">Philippines staffing services page</a> shows other support lanes when the job also includes executive admin, customer care, or operations.</p>
-          <p>The <a href="/research/hire-virtual-assistant-philippines-evidence-guide">Philippines hiring evidence guide</a> explains what country data can and cannot prove. When the job and controls are ready, use the <a href="/contact">staffing intake</a> to share the tools, hours, interview steps, access limits, and review plan.</p>
+          <p>The <a href="/research/hire-virtual-assistant-philippines-evidence-guide">Philippines hiring evidence guide</a> explains what country data can and cannot prove. When the job and controls are ready, use the <a href="/contact-us">staffing intake</a> to share the tools, hours, interview steps, access limits, and review plan.</p>
         </section>
 
         <section>
@@ -164,9 +164,9 @@ export function RecruitingPhilippinesArticle() {
           <p>World Bank values and update dates were checked through the official API on July 27, 2026. The NIST quote was checked on its official release page, and the law and selection links point to the full source guidance.</p>
         </section>
 
-        <aside className="article-banner article-banner-bottom"><div><span>Turn the hiring queue into a role brief</span><p>Bring the job rules, tracker fields, interview steps, message samples, stop list, and access plan. The staffing team can use them to look for a Philippines-based recruiting fit.</p></div><a className="btn primary" href="/contact">Send the brief</a></aside>
+        <aside className="article-banner article-banner-bottom"><div><span>Turn the hiring queue into a role brief</span><p>Bring the job rules, tracker fields, interview steps, message samples, stop list, and access plan. The staffing team can use them to look for a Philippines-based recruiting fit.</p></div><a className="btn primary" href="/contact-us">Send the brief</a></aside>
       </article>
     </main>
-    <footer className="article-only-footer"><p>Virtual Assistant Provider helps businesses plan work for Philippines-based specialists.</p><nav aria-label="Article footer"><a href="/services">Services</a><a href="/blog">Blog</a><a href="/research">Research</a><a href="/privacy">Privacy</a><a href="/contact">Contact</a></nav></footer>
+    <footer className="article-only-footer"><p>Virtual Assistant Provider helps businesses plan work for Philippines-based specialists.</p><nav aria-label="Article footer"><a href="/services">Services</a><a href="/blog">Blog</a><a href="/research">Research</a><a href="/privacy">Privacy</a><a href="/contact-us">Contact</a></nav></footer>
   </>;
 }

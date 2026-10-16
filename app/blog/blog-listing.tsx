@@ -1,7 +1,8 @@
 import { FeaturedComparison } from "./FeaturedComparison";
 import { notFound } from "next/navigation";
 import { Header, Footer } from "../components";
-import { blogPosts } from "../data";
+import { blogPosts } from '../data';
+import { resolveArticleImage, articleImageAlt } from '../article-image';
 const PAGE_SIZE = 20;
 const formatDate = (date: string) => new Intl.DateTimeFormat("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" }).format(new Date(`${date}T00:00:00Z`));
 export function BlogListing({ page = 1 }: { page?: number }) {
@@ -26,11 +27,14 @@ export function BlogListing({ page = 1 }: { page?: number }) {
           <div className="container">
             <div className="fleet-card-grid">
               {posts.map((p) => (
-                <a className="fleet-card" href={`/blog/${p.slug}`} key={p.slug}>
-                  <h2>{p.title}</h2>
-                  <p>{p.excerpt}</p>
-                  {"published" in p && typeof p.published === "string" ? <time dateTime={p.published}>Published {formatDate(p.published)}</time> : null}
-                  <b>{p.minutes} min read</b>
+                <a className="fleet-card blog-list-card" href={`/blog/${p.slug}`} key={p.slug}>
+                  <img className="blog-card-image" src={resolveArticleImage(p)} alt={articleImageAlt(resolveArticleImage(p), p.title)} width="640" height="360" loading="lazy" />
+                  <div className="blog-card-copy">
+                    <h2>{p.title}</h2>
+                    <p>{p.excerpt}</p>
+                    {"published" in p && typeof p.published === "string" ? <time dateTime={p.published}>Published {formatDate(p.published)}</time> : null}
+                    <b>{p.minutes} min read</b>
+                  </div>
                 </a>
               ))}
             </div>

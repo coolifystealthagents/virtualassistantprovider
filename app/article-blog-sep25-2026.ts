@@ -111,7 +111,7 @@ export const september25BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Build the role before comparing candidates",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring the real task list, systems, hours, and approval boundaries. Virtual Assistant Provider can help turn them into a role brief for Philippines-based talent."
     }
@@ -227,7 +227,7 @@ export const september25BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Build the role before comparing candidates",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring the real task list, systems, hours, and approval boundaries. Virtual Assistant Provider can help turn them into a role brief for Philippines-based talent."
     }
@@ -343,7 +343,7 @@ export const september25BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Build the role before comparing candidates",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring the real task list, systems, hours, and approval boundaries. Virtual Assistant Provider can help turn them into a role brief for Philippines-based talent."
     }
@@ -459,7 +459,7 @@ export const september25BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Build the role before comparing candidates",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring the real task list, systems, hours, and approval boundaries. Virtual Assistant Provider can help turn them into a role brief for Philippines-based talent."
     }
@@ -575,7 +575,7 @@ export const september25BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Build the role before comparing candidates",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring the real task list, systems, hours, and approval boundaries. Virtual Assistant Provider can help turn them into a role brief for Philippines-based talent."
     }
@@ -691,7 +691,7 @@ export const september25BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Build the role before comparing candidates",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring the real task list, systems, hours, and approval boundaries. Virtual Assistant Provider can help turn them into a role brief for Philippines-based talent."
     }
@@ -807,7 +807,7 @@ export const september25BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Build the role before comparing candidates",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring the real task list, systems, hours, and approval boundaries. Virtual Assistant Provider can help turn them into a role brief for Philippines-based talent."
     }
@@ -923,7 +923,7 @@ export const september25BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Build the role before comparing candidates",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring the real task list, systems, hours, and approval boundaries. Virtual Assistant Provider can help turn them into a role brief for Philippines-based talent."
     }
@@ -1039,7 +1039,7 @@ export const september25BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Build the role before comparing candidates",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring the real task list, systems, hours, and approval boundaries. Virtual Assistant Provider can help turn them into a role brief for Philippines-based talent."
     }
@@ -1155,7 +1155,7 @@ export const september25BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Build the role before comparing candidates",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring the real task list, systems, hours, and approval boundaries. Virtual Assistant Provider can help turn them into a role brief for Philippines-based talent."
     }
@@ -1271,7 +1271,7 @@ export const september25BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Build the role before comparing candidates",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring the real task list, systems, hours, and approval boundaries. Virtual Assistant Provider can help turn them into a role brief for Philippines-based talent."
     }
@@ -1387,7 +1387,7 @@ export const september25BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Build the role before comparing candidates",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring the real task list, systems, hours, and approval boundaries. Virtual Assistant Provider can help turn them into a role brief for Philippines-based talent."
     }

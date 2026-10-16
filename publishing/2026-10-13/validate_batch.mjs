@@ -22,7 +22,7 @@ for(const post of blog){
  ok(!/(oct(?:ober)?\s*13|2026-10-13)/i.test(post.title),`dated Blog title ${post.slug}`);
  ok(post.sections.length>=7&&post.takeaways.length>=4&&post.sources.length>=4,`Blog structure ${post.slug}`);
  ok(post.sources.every(source=>source.url.startsWith('https://')),`Blog sources ${post.slug}`);
- ok(post.articleLinks.some(link=>link.href==='/blog')&&post.articleLinks.some(link=>link.href==='/research')&&post.nextAction.href==='/contact',`Blog related/action ${post.slug}`);
+ ok(post.articleLinks.some(link=>link.href==='/blog')&&post.articleLinks.some(link=>link.href==='/research')&&post.nextAction.href==='/contact-us',`Blog related/action ${post.slug}`);
  const text=post.sections.map(s=>s.body);ok(text.join(' ').split(/\s+/).length>=1300,`thin Blog ${post.slug}`);text.forEach(t=>add(post.slug,t));
  ok(post.featuredImage===`/featured/oct13-${post.slug}.png`,`Blog thumbnail mapping ${post.slug}`);
 }
@@ -37,8 +37,18 @@ for(const post of research){
 }
 
 const hashes=new Set(),paths=new Set();
+const sourceHash=file=>crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+const postWordCount=(post,section)=>{
+ const body=section==='Blog'?post.sections.map(s=>s.body).join(' '):post.sections.flatMap(s=>s.paragraphs).join(' ');
+ return body.split(/\s+/).filter(Boolean).length;
+};
 for(const article of manifest.articles){
  const post=all.find(p=>p.slug===article.slug);ok(Boolean(post)&&post.title===article.title,`manifest title ${article.slug}`);ok(article.publicationDate===DATE,`manifest date ${article.slug}`);
+ const expectedSource=article.section==='Blog'?'app/article-blog-oct13-2026.ts':'app/article-research-oct13-2026.ts';
+ ok(article.sourcePath===expectedSource,`manifest source path ${article.slug}`);
+ if(post){ok(article.wordCount===postWordCount(post,article.section),`manifest word count ${article.slug}`)}
+ if(fs.existsSync(article.sourcePath)){ok(article.sha256===sourceHash(article.sourcePath),`manifest source hash ${article.slug}`)}else{ok(false,`missing source ${article.slug}`)}
+ ok(article.thumbnailPath===`public/featured/oct13-${article.slug}.png`,`manifest thumbnail path ${article.slug}`);
  ok(!paths.has(article.thumbnailPath),`duplicate thumbnail path ${article.slug}`);paths.add(article.thumbnailPath);ok(fs.existsSync(article.thumbnailPath),`missing thumbnail ${article.slug}`);
  if(fs.existsSync(article.thumbnailPath)){const b=fs.readFileSync(article.thumbnailPath),h=crypto.createHash('sha256').update(b).digest('hex');ok(b.toString('ascii',1,4)==='PNG',`format ${article.slug}`);ok(b.readUInt32BE(16)===1200&&b.readUInt32BE(20)===675,`dimensions ${article.slug}`);ok(b.includes(Buffer.from(article.title)),`exact title metadata ${article.slug}`);ok(!hashes.has(h),`duplicate image bytes ${article.slug}`);hashes.add(h)}
  const absent=spawnSync('git',['cat-file','-e',`${BASE}:${article.thumbnailPath}`]);ok(absent.status!==0,`pre-existing thumbnail ${article.slug}`);

@@ -308,7 +308,7 @@ export const october12ResearchPosts: readonly ResearchPost[] = [
       },
       {
         "title": "Plan a provider brief",
-        "href": "/contact",
+        "href": "/contact-us",
         "description": "Bring the work, systems, hours, owners, and unresolved assumptions."
       }
     ]
@@ -621,7 +621,7 @@ export const october12ResearchPosts: readonly ResearchPost[] = [
       },
       {
         "title": "Plan a provider brief",
-        "href": "/contact",
+        "href": "/contact-us",
         "description": "Bring the work, systems, hours, owners, and unresolved assumptions."
       }
     ]
@@ -934,7 +934,7 @@ export const october12ResearchPosts: readonly ResearchPost[] = [
       },
       {
         "title": "Plan a provider brief",
-        "href": "/contact",
+        "href": "/contact-us",
         "description": "Bring the work, systems, hours, owners, and unresolved assumptions."
       }
     ]
@@ -1247,7 +1247,7 @@ export const october12ResearchPosts: readonly ResearchPost[] = [
       },
       {
         "title": "Plan a provider brief",
-        "href": "/contact",
+        "href": "/contact-us",
         "description": "Bring the work, systems, hours, owners, and unresolved assumptions."
       }
     ]
@@ -1256,8 +1256,8 @@ export const october12ResearchPosts: readonly ResearchPost[] = [
     "slug": "buyer-provider-governance-change-control",
     "featuredImage": "/featured/oct12-buyer-provider-governance-change-control.png",
     "primaryKeyword": "virtual assistant provider change control",
-    "title": "Buyer–Provider Governance: Studying Change-Control Reliability",
-    "metaTitle": "Buyer–Provider Governance: Studying Change-Control Reliability",
+    "title": "Buyer - Provider Governance: Studying Change-Control Reliability",
+    "metaTitle": "Buyer - Provider Governance: Studying Change-Control Reliability",
     "excerpt": "A reproducible buyer-side protocol asking do role, system, schedule, and authority changes reach the right owners before assistants act on them? It defines the population, unit, evidence, denominators, authority boundary, and limitations before results are known.",
     "published": "2026-10-12",
     "updated": "2026-10-12",
@@ -1334,14 +1334,14 @@ export const october12ResearchPosts: readonly ResearchPost[] = [
         "heading": "Research question and unit of analysis",
         "paragraphs": [
           "Do role, system, schedule, and authority changes reach the right owners before assistants act on them? The eligible population is eligible material service changes requested or detected during a declared provider-governance period. The observation unit is one change from request and impact assessment through approval, communication, implementation, verification, and closure. Freeze the decision purpose, period, systems, inclusion rules, and authority boundary before selecting records. This is a local operating study, not a certification or universal provider ranking.[1][6]",
-          "For Buyer–Provider Governance: Studying Change-Control Reliability, label each material value confirmed, inferred, conflicting, unavailable, or awaiting decision. Preserve the source state visible when the action occurred so later correction does not erase uncertainty, delay, or a prior failure."
+          "For Buyer - Provider Governance: Studying Change-Control Reliability, label each material value confirmed, inferred, conflicting, unavailable, or awaiting decision. Preserve the source state visible when the action occurred so later correction does not erase uncertainty, delay, or a prior failure."
         ]
       },
       {
         "heading": "Governance and authority boundary",
         "paragraphs": [
           "The analyst may collect records, apply the approved codebook, calculate defined measures, and prepare exceptions for virtual assistant provider change control. Buyer and provider owners retain employment, commercial, legal, security, privacy, customer, and risk decisions. NIST CSF 2.0 is used as a governance lens, not proof that a provider conforms.[1]",
-          "Every waiver in Buyer–Provider Governance: Studying Change-Control Reliability needs a reason, affected population, accountable owner, compensating control, expiry, and review date. Silence, a meeting note, or dashboard status does not transfer authority."
+          "Every waiver in Buyer - Provider Governance: Studying Change-Control Reliability needs a reason, affected population, accountable owner, compensating control, expiry, and review date. Silence, a meeting note, or dashboard status does not transfer authority."
         ]
       },
       {
@@ -1355,34 +1355,34 @@ export const october12ResearchPosts: readonly ResearchPost[] = [
         "heading": "Chronology and evidence reconstruction",
         "paragraphs": [
           "For each one change from request and impact assessment through approval, communication, implementation, verification, and closure, reconstruct request, source, rule version, actor, timestamp, preparation, review, approval, system event, correction, destination receipt, and acceptance. Retain conflicting artifacts and document which authority resolved them. A second reviewer should be able to reproduce the recorded state from protected evidence.",
-          "Separate active handling, provider wait, buyer-owner wait, external delay, system delay, and time outside the declared window in Buyer–Provider Governance: Studying Change-Control Reliability. Parallel intervals must not be added twice, and elapsed clock time must not be labeled labor without supporting events."
+          "Separate active handling, provider wait, buyer-owner wait, external delay, system delay, and time outside the declared window in Buyer - Provider Governance: Studying Change-Control Reliability. Parallel intervals must not be added twice, and elapsed clock time must not be labeled labor without supporting events."
         ]
       },
       {
         "heading": "Measures, denominators, and sensitivity",
         "paragraphs": [
           "Primary measures are approval completeness, implementation lead time, unauthorized change, failed verification, rollback, displaced work, and reopened decision. Every rate shows its numerator, denominator, population, exclusions, and observation window. Pair central measures with adverse cases and tail conditions; one average can hide rare failures or work displaced to another team.",
-          "Repeat Buyer–Provider Governance: Studying Change-Control Reliability calculations under plausible boundary choices. If treating a reopened item, outage, missing record, or owner delay differently changes the conclusion, present both readings. A definition-sensitive result should not be sold as a stable fact."
+          "Repeat Buyer - Provider Governance: Studying Change-Control Reliability calculations under plausible boundary choices. If treating a reopened item, outage, missing record, or owner delay differently changes the conclusion, present both readings. A definition-sensitive result should not be sold as a stable fact."
         ]
       },
       {
         "heading": "Independent review and accessibility",
         "paragraphs": [
           "Give a second reviewer the same protected subset, evidence, and definitions for virtual assistant provider change control without revealing the first classifications. Compare eligibility, source state, authority, time allocation, exception, and disposition. Calibration resolves ambiguous rules through the accountable owner rather than majority vote.",
-          "For Buyer–Provider Governance: Studying Change-Control Reliability, apply WCAG 2.2 accessibility criteria to review interfaces and artifacts.[8] Make its tables, labels, images, and evidence packets usable by intended reviewers; an inaccessible one change from request and impact assessment through approval, communication, implementation, verification, and closure record can prevent legitimate challenge and distort apparent agreement."
+          "For Buyer - Provider Governance: Studying Change-Control Reliability, apply WCAG 2.2 accessibility criteria to review interfaces and artifacts.[8] Make its tables, labels, images, and evidence packets usable by intended reviewers; an inaccessible one change from request and impact assessment through approval, communication, implementation, verification, and closure record can prevent legitimate challenge and distort apparent agreement."
         ]
       },
       {
         "heading": "Privacy, security, and retention",
         "paragraphs": [
-          "Collect only fields needed for Buyer–Provider Governance: Studying Change-Control Reliability. Replace identities with stable study keys when possible, restrict exports and screenshots, and define retention and deletion before observation. NIST SP 800-53, CISA’s Performance Goals, and Zero Trust Maturity Model provide control questions rather than certifications.[3][4][5]",
-          "Apply FTC information-protection guidance to Buyer–Provider Governance: Studying Change-Control Reliability source exports and working copies as well as production data.[7] At close, reconcile accounts, tokens, downloads, links, temporary files, and unresolved holds for eligible material service changes requested or detected during a declared provider-governance period, naming an owner for each exception."
+          "Collect only fields needed for Buyer - Provider Governance: Studying Change-Control Reliability. Replace identities with stable study keys when possible, restrict exports and screenshots, and define retention and deletion before observation. NIST SP 800-53, CISA’s Performance Goals, and Zero Trust Maturity Model provide control questions rather than certifications.[3][4][5]",
+          "Apply FTC information-protection guidance to Buyer - Provider Governance: Studying Change-Control Reliability source exports and working copies as well as production data.[7] At close, reconcile accounts, tokens, downloads, links, temporary files, and unresolved holds for eligible material service changes requested or detected during a declared provider-governance period, naming an owner for each exception."
         ]
       },
       {
         "heading": "Interpretation and limitations",
         "paragraphs": [
-          "Translate Buyer–Provider Governance: Studying Change-Control Reliability results into bounded options: clarify intake, change review, narrow scope, adjust access, add capacity, repair evidence, renegotiate a term, or run another sample. Pilot one approved change while preserving baseline definitions and watching for work displaced outside the measured process.",
+          "Translate Buyer - Provider Governance: Studying Change-Control Reliability results into bounded options: clarify intake, change review, narrow scope, adjust access, add capacity, repair evidence, renegotiate a term, or run another sample. Pilot one approved change while preserving baseline definitions and watching for work displaced outside the measured process.",
           "Observed change records describe the reviewed governance system; they do not prove causation or predict reliability under different leaders, tools, or demand. Findings also depend on local record accuracy, the stated period, scope, access, schedule, system, data class, customer promise, price, temporary change, and emergency change, reviewer judgment, and access to protected evidence. Put these constraints beside every conclusion and do not turn observed associations into guarantees."
         ]
       }
@@ -1459,7 +1459,7 @@ export const october12ResearchPosts: readonly ResearchPost[] = [
     "methodology": [
       "The protocol is descriptive. It freezes eligible material service changes requested or detected during a declared provider-governance period, one change from request and impact assessment through approval, communication, implementation, verification, and closure, and the codebook before outcomes are reviewed.",
       "Sources [1] through [8] provide authoritative context for governance, identity, controls, evidence reliability, information protection, and accessibility; none validates a provider or observed result.",
-      "Independent classification, explicit exclusions, sensitivity checks, and a preserved limitation log make Buyer–Provider Governance: Studying Change-Control Reliability reproducible within the declared local boundary."
+      "Independent classification, explicit exclusions, sensitivity checks, and a preserved limitation log make Buyer - Provider Governance: Studying Change-Control Reliability reproducible within the declared local boundary."
     ],
     "faq": [
       {
@@ -1560,7 +1560,7 @@ export const october12ResearchPosts: readonly ResearchPost[] = [
       },
       {
         "title": "Plan a provider brief",
-        "href": "/contact",
+        "href": "/contact-us",
         "description": "Bring the work, systems, hours, owners, and unresolved assumptions."
       }
     ]

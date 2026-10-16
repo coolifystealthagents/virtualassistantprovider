@@ -95,7 +95,7 @@ export const october9BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Plan a controlled provider engagement",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Discuss your role",
       "description": "Bring the tasks, tools, hours, access limits, review owner, and exceptions you expect."
     }
@@ -194,7 +194,7 @@ export const october9BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Plan a controlled provider engagement",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Discuss your role",
       "description": "Bring the tasks, tools, hours, access limits, review owner, and exceptions you expect."
     }
@@ -293,7 +293,7 @@ export const october9BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Plan a controlled provider engagement",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Discuss your role",
       "description": "Bring the tasks, tools, hours, access limits, review owner, and exceptions you expect."
     }
@@ -392,7 +392,7 @@ export const october9BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Plan a controlled provider engagement",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Discuss your role",
       "description": "Bring the tasks, tools, hours, access limits, review owner, and exceptions you expect."
     }
@@ -491,7 +491,7 @@ export const october9BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Plan a controlled provider engagement",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Discuss your role",
       "description": "Bring the tasks, tools, hours, access limits, review owner, and exceptions you expect."
     }
@@ -590,7 +590,7 @@ export const october9BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Plan a controlled provider engagement",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Discuss your role",
       "description": "Bring the tasks, tools, hours, access limits, review owner, and exceptions you expect."
     }
@@ -689,7 +689,7 @@ export const october9BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Plan a controlled provider engagement",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Discuss your role",
       "description": "Bring the tasks, tools, hours, access limits, review owner, and exceptions you expect."
     }
@@ -788,7 +788,7 @@ export const october9BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Plan a controlled provider engagement",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Discuss your role",
       "description": "Bring the tasks, tools, hours, access limits, review owner, and exceptions you expect."
     }
@@ -887,7 +887,7 @@ export const october9BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Plan a controlled provider engagement",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Discuss your role",
       "description": "Bring the tasks, tools, hours, access limits, review owner, and exceptions you expect."
     }
@@ -986,7 +986,7 @@ export const october9BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Plan a controlled provider engagement",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Discuss your role",
       "description": "Bring the tasks, tools, hours, access limits, review owner, and exceptions you expect."
     }
@@ -1085,7 +1085,7 @@ export const october9BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Plan a controlled provider engagement",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Discuss your role",
       "description": "Bring the tasks, tools, hours, access limits, review owner, and exceptions you expect."
     }
@@ -1184,7 +1184,7 @@ export const october9BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Plan a controlled provider engagement",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Discuss your role",
       "description": "Bring the tasks, tools, hours, access limits, review owner, and exceptions you expect."
     }

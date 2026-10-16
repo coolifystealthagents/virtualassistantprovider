@@ -101,7 +101,7 @@ function makePost(topic: August14Topic): ResearchPost {
     related: [
       { title: 'Research library', href: '/research', description: 'Read other source-led reports for planning support roles.' },
       { title: 'Services', href: '/services', description: 'Review the support areas covered by Virtual Assistant Provider.' },
-      { title: 'Role planning', href: '/contact', description: 'Bring the recurring work, tools, and review rules for a role plan.' },
+      { title: 'Role planning', href: '/contact-us', description: 'Bring the recurring work, tools, and review rules for a role plan.' },
     ],
   };
 }

@@ -118,7 +118,7 @@ The eight sections together must contain 1,050-1,300 substantive words. Each sec
         { label: 'virtual assistant escalation rules guide', href: '/blog/virtual-assistant-escalation-rules-philippines' },
         { label: 'NIST Cybersecurity Framework 2.0', href: sources[0].url, external: true },
       ],
-      nextAction: { heading: 'Turn this workflow into a bounded role', href: '/contact', label: 'Request a Philippines staffing plan', description: 'Bring your current examples, systems, volume, review owner, and decision boundaries. Virtual Assistant Provider can help turn them into a practical role brief for Philippines-based talent.' },
+      nextAction: { heading: 'Turn this workflow into a bounded role', href: '/contact-us', label: 'Request a Philippines staffing plan', description: 'Bring your current examples, systems, volume, review owner, and decision boundaries. Virtual Assistant Provider can help turn them into a practical role brief for Philippines-based talent.' },
       _family: family,
     });
     console.log(`${i + 1}/12 ${slug}: ${bodyWords} body words`);

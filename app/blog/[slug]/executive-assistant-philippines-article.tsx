@@ -31,7 +31,7 @@ export function ExecutiveAssistantPhilippinesArticle() {
   };
 
   return <>
-    <header className="article-only-nav"><a href="/" className="article-only-logo">Virtual Assistant Provider</a><nav aria-label="Article navigation"><a href="/">Home</a><a href="/services">Services</a><a href="/contact">Contact Us</a></nav></header>
+    <header className="article-only-nav"><a href="/" className="article-only-logo">Virtual Assistant Provider</a><nav aria-label="Article navigation"><a href="/">Home</a><a href="/services">Services</a><a href="/contact-us">Contact Us</a></nav></header>
     <main className="rich-article-shell"><JsonLd data={schema} />
       <article className="rich-evidence-article" data-article-marker="executive-assistant-philippines-v1">
         <span className="article-kicker">Philippines role guide</span>
@@ -39,7 +39,7 @@ export function ExecutiveAssistantPhilippinesArticle() {
           <img src="/featured/executive-assistant-philippines-hiring-guide.png" alt="Executive assistant organizing a leader's priorities and calendar" width="1200" height="675" />
         <p className="article-deck">A Philippines-based executive assistant can protect time, keep promises visible, and prepare the next step before a busy leader asks. The role works best when the assistant owns clear repeat tasks and knows which choices must go back to the executive.</p>
 
-        <aside className="article-banner article-banner-top"><div><span>Start with a real executive support brief</span><p>List the inbox, calendar, meeting, travel, and follow-up work that needs an owner. Add the hours, tools, examples, and decisions the assistant must never make alone.</p></div><a className="btn primary" href="/contact">Plan the role</a></aside>
+        <aside className="article-banner article-banner-top"><div><span>Start with a real executive support brief</span><p>List the inbox, calendar, meeting, travel, and follow-up work that needs an owner. Add the hours, tools, examples, and decisions the assistant must never make alone.</p></div><a className="btn primary" href="/contact-us">Plan the role</a></aside>
 
         <section>
           <h2>Define the job before you meet candidates</h2>
@@ -103,7 +103,7 @@ export function ExecutiveAssistantPhilippinesArticle() {
           <p className="method-note"><strong>Process note:</strong> This diagram is a suggested hiring sequence, not a measured result. Move to the next step only when the current work meets the written check and the manager is ready to open more access.</p>
         </section>
 
-        <aside className="article-banner article-banner-middle"><div><span>Need an executive assistant work sample?</span><p>Share the real inbox, calendar, meeting, travel, and follow-up tasks. The staffing team can turn them into a clear Philippines hiring brief with owner-only decisions marked.</p></div><a className="btn secondary" href="/contact">Map the sample</a></aside>
+        <aside className="article-banner article-banner-middle"><div><span>Need an executive assistant work sample?</span><p>Share the real inbox, calendar, meeting, travel, and follow-up tasks. The staffing team can turn them into a clear Philippines hiring brief with owner-only decisions marked.</p></div><a className="btn secondary" href="/contact-us">Map the sample</a></aside>
 
         <section>
           <h2>Set the schedule in plain terms</h2>
@@ -159,7 +159,7 @@ export function ExecutiveAssistantPhilippinesArticle() {
         <section>
           <h2>Helpful next steps</h2>
           <p>Read the <a href="/services/executive-assistant-staffing">executive assistant staffing guide</a> for the site’s role outline. The <a href="/services">Philippines staffing services page</a> shows other task lanes when the work belongs with operations, support, sales, or bookkeeping instead.</p>
-          <p>The <a href="/research/hire-virtual-assistant-philippines-evidence-guide">Philippines hiring evidence guide</a> explains what national data can and cannot prove. When the role is clear, use the <a href="/contact">staffing intake</a> to share the tasks, tools, hours, and decisions that must stay with the executive.</p>
+          <p>The <a href="/research/hire-virtual-assistant-philippines-evidence-guide">Philippines hiring evidence guide</a> explains what national data can and cannot prove. When the role is clear, use the <a href="/contact-us">staffing intake</a> to share the tasks, tools, hours, and decisions that must stay with the executive.</p>
         </section>
 
         <section>
@@ -173,9 +173,9 @@ export function ExecutiveAssistantPhilippinesArticle() {
           <p>World Bank values were checked through the official indicator API on July 27, 2026. The NIST quote was checked in the official July 2016 publication, and each law link points to the full act text.</p>
         </section>
 
-        <aside className="article-banner article-banner-bottom"><div><span>Turn the role into a hiring brief</span><p>Bring the repeat tasks, schedule, tools, examples, and owner-only choices. The staffing team can use those details to look for a Philippines-based executive assistant fit.</p></div><a className="btn primary" href="/contact">Send the brief</a></aside>
+        <aside className="article-banner article-banner-bottom"><div><span>Turn the role into a hiring brief</span><p>Bring the repeat tasks, schedule, tools, examples, and owner-only choices. The staffing team can use those details to look for a Philippines-based executive assistant fit.</p></div><a className="btn primary" href="/contact-us">Send the brief</a></aside>
       </article>
     </main>
-    <footer className="article-only-footer"><p>Virtual Assistant Provider helps businesses plan work for Philippines-based specialists.</p><nav aria-label="Article footer"><a href="/services">Services</a><a href="/blog">Blog</a><a href="/research">Research</a><a href="/privacy">Privacy</a><a href="/contact">Contact</a></nav></footer>
+    <footer className="article-only-footer"><p>Virtual Assistant Provider helps businesses plan work for Philippines-based specialists.</p><nav aria-label="Article footer"><a href="/services">Services</a><a href="/blog">Blog</a><a href="/research">Research</a><a href="/privacy">Privacy</a><a href="/contact-us">Contact</a></nav></footer>
   </>;
 }

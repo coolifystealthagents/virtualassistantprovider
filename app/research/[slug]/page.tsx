@@ -136,7 +136,7 @@ export default async function ResearchArticle({ params }: PageProps) {
                 <span>{post.sources.length} direct sources</span>
               </div>
               <div className="research-hero-actions">
-                <a className="btn primary" href="/contact">Plan a Philippines-based role</a>
+                <a className="btn primary" href="/contact-us">Plan a Philippines-based role</a>
                 <a className="research-text-link" href="#methodology">Read the method and limits</a>
               </div>
             </div>
@@ -255,7 +255,7 @@ export default async function ResearchArticle({ params }: PageProps) {
                 <h2>Turn the evidence into one clear role plan</h2>
                 <p>Send the tasks, hours, tools, and owner-only decisions you already know. We will help shape a Philippines-based staffing plan and a safe first-week review.</p>
               </div>
-              <a className="btn primary" href="/contact">Request a role planning call</a>
+              <a className="btn primary" href="/contact-us">Request a role planning call</a>
             </aside>
           </div>
         </article>

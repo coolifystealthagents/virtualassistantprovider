@@ -30,7 +30,7 @@ export function RealEstatePhilippinesArticle() {
   };
 
   return <>
-    <header className="article-only-nav"><a href="/" className="article-only-logo">Virtual Assistant Provider</a><nav aria-label="Article navigation"><a href="/">Home</a><a href="/services">Services</a><a href="/contact">Contact Us</a></nav></header>
+    <header className="article-only-nav"><a href="/" className="article-only-logo">Virtual Assistant Provider</a><nav aria-label="Article navigation"><a href="/">Home</a><a href="/services">Services</a><a href="/contact-us">Contact Us</a></nav></header>
     <main className="rich-article-shell"><JsonLd data={schema} />
       <article className="rich-evidence-article" data-article-marker="real-estate-va-philippines-v1">
         <span className="article-kicker">Philippines role guide</span>
@@ -38,7 +38,7 @@ export function RealEstatePhilippinesArticle() {
           <img src="/featured/real-estate-virtual-assistant-philippines.png" alt="Real estate virtual assistant organizing listing and transaction records" width="1200" height="675" />
         <p className="article-deck">A real estate virtual assistant in the Philippines can keep records, follow-ups, listing files, and transaction checklists moving. The role works best when the assistant owns repeat work while a licensed local professional keeps advice, negotiation, signatures, and final decisions.</p>
 
-        <aside className="article-banner article-banner-top"><div><span>Start with the job, not a vague title</span><p>Send the task list, tools, hours, and approval limits. A clear brief gives the staffing team something real to match.</p></div><a className="btn primary" href="/contact">Plan the role</a></aside>
+        <aside className="article-banner article-banner-top"><div><span>Start with the job, not a vague title</span><p>Send the task list, tools, hours, and approval limits. A clear brief gives the staffing team something real to match.</p></div><a className="btn primary" href="/contact-us">Plan the role</a></aside>
 
         <section>
           <h2>What this role should own</h2>
@@ -101,7 +101,7 @@ export function RealEstatePhilippinesArticle() {
           <p className="method-note"><strong>Process note:</strong> This is a planning sequence, not a measured claim. Move forward only after the current step meets the written quality check.</p>
         </section>
 
-        <aside className="article-banner article-banner-middle"><div><span>Need a work-sample brief?</span><p>Share the CRM, listing, showing, or transaction tasks you want tested. We can help turn them into a clear Philippines staffing request.</p></div><a className="btn secondary" href="/contact">Map the sample</a></aside>
+        <aside className="article-banner article-banner-middle"><div><span>Need a work-sample brief?</span><p>Share the CRM, listing, showing, or transaction tasks you want tested. We can help turn them into a clear Philippines staffing request.</p></div><a className="btn secondary" href="/contact-us">Map the sample</a></aside>
 
         <section>
           <h2>Protect client records and shared accounts</h2>
@@ -157,9 +157,9 @@ export function RealEstatePhilippinesArticle() {
           <p>World Bank values were checked through the official indicator API on July 25, 2026. Each value keeps its source year and unit, and national data is used only as country context.</p>
         </section>
 
-        <aside className="article-banner article-banner-bottom"><div><span>Turn the plan into a hiring brief</span><p>Bring the tasks, tools, hours, and owner-only decisions. The staffing team can use that detail to look for a Philippines-based fit.</p></div><a className="btn primary" href="/contact">Send the brief</a></aside>
+        <aside className="article-banner article-banner-bottom"><div><span>Turn the plan into a hiring brief</span><p>Bring the tasks, tools, hours, and owner-only decisions. The staffing team can use that detail to look for a Philippines-based fit.</p></div><a className="btn primary" href="/contact-us">Send the brief</a></aside>
       </article>
     </main>
-    <footer className="article-only-footer"><p>Virtual Assistant Provider helps businesses plan work for Philippines-based specialists.</p><nav aria-label="Article footer"><a href="/services">Services</a><a href="/blog">Blog</a><a href="/research">Research</a><a href="/privacy">Privacy</a><a href="/contact">Contact</a></nav></footer>
+    <footer className="article-only-footer"><p>Virtual Assistant Provider helps businesses plan work for Philippines-based specialists.</p><nav aria-label="Article footer"><a href="/services">Services</a><a href="/blog">Blog</a><a href="/research">Research</a><a href="/privacy">Privacy</a><a href="/contact-us">Contact</a></nav></footer>
   </>;
 }

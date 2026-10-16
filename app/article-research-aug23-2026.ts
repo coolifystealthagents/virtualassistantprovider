@@ -56,5 +56,5 @@ faq:[
 sources:ss,related:[
 {title:'Research library',href:'/research',description:'Browse source-led virtual assistant operations reports.'},
 {title:'Services',href:'/services',description:'Review role areas and owner decisions.'},
-{title:'Plan a role',href:'/contact',description:'Bring tasks, tools, examples, and decision limits.'}]};}
+{title:'Plan a role',href:'/contact-us',description:'Bring tasks, tools, examples, and decision limits.'}]};}
 export const august23ResearchPosts:readonly ResearchPost[]=ds.map(make);

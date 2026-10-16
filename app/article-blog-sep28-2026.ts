@@ -100,7 +100,7 @@ export const september28BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this workflow into a bounded role",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring your current examples, systems, volume, review owner, and decision boundaries. Virtual Assistant Provider can help turn them into a practical role brief for Philippines-based talent."
     }
@@ -204,7 +204,7 @@ export const september28BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this workflow into a bounded role",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring your current examples, systems, volume, review owner, and decision boundaries. Virtual Assistant Provider can help turn them into a practical role brief for Philippines-based talent."
     }
@@ -308,7 +308,7 @@ export const september28BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this workflow into a bounded role",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring your current examples, systems, volume, review owner, and decision boundaries. Virtual Assistant Provider can help turn them into a practical role brief for Philippines-based talent."
     }
@@ -412,7 +412,7 @@ export const september28BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this workflow into a bounded role",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring your current examples, systems, volume, review owner, and decision boundaries. Virtual Assistant Provider can help turn them into a practical role brief for Philippines-based talent."
     }
@@ -516,7 +516,7 @@ export const september28BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this workflow into a bounded role",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring your current examples, systems, volume, review owner, and decision boundaries. Virtual Assistant Provider can help turn them into a practical role brief for Philippines-based talent."
     }
@@ -620,7 +620,7 @@ export const september28BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this workflow into a bounded role",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring your current examples, systems, volume, review owner, and decision boundaries. Virtual Assistant Provider can help turn them into a practical role brief for Philippines-based talent."
     }
@@ -724,7 +724,7 @@ export const september28BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this workflow into a bounded role",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring your current examples, systems, volume, review owner, and decision boundaries. Virtual Assistant Provider can help turn them into a practical role brief for Philippines-based talent."
     }
@@ -828,7 +828,7 @@ export const september28BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this workflow into a bounded role",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring your current examples, systems, volume, review owner, and decision boundaries. Virtual Assistant Provider can help turn them into a practical role brief for Philippines-based talent."
     }
@@ -932,7 +932,7 @@ export const september28BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this workflow into a bounded role",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring your current examples, systems, volume, review owner, and decision boundaries. Virtual Assistant Provider can help turn them into a practical role brief for Philippines-based talent."
     }
@@ -1036,7 +1036,7 @@ export const september28BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this workflow into a bounded role",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring your current examples, systems, volume, review owner, and decision boundaries. Virtual Assistant Provider can help turn them into a practical role brief for Philippines-based talent."
     }
@@ -1140,7 +1140,7 @@ export const september28BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this workflow into a bounded role",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring your current examples, systems, volume, review owner, and decision boundaries. Virtual Assistant Provider can help turn them into a practical role brief for Philippines-based talent."
     }
@@ -1244,7 +1244,7 @@ export const september28BlogPosts: BlogPost[] = [
     ],
     "nextAction": {
       "heading": "Turn this workflow into a bounded role",
-      "href": "/contact",
+      "href": "/contact-us",
       "label": "Request a Philippines staffing plan",
       "description": "Bring your current examples, systems, volume, review owner, and decision boundaries. Virtual Assistant Provider can help turn them into a practical role brief for Philippines-based talent."
     }

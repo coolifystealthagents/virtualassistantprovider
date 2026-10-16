@@ -32,7 +32,7 @@ for(const p of blogs){
  ok(p.sources?.length>=4 && p.sources.every(s=>/^https:\/\//.test(s.url)),`${p.slug}: Blog needs 4 HTTPS sources`);
  ok(p.articleLinks?.some(x=>x.href==='/blog'),`${p.slug}: missing Blog related link`);
  ok(p.articleLinks?.some(x=>x.href==='/research'),`${p.slug}: missing Research related link`);
- ok(p.nextAction?.href==='/contact',`${p.slug}: missing next action`);
+ ok(p.nextAction?.href==='/contact-us',`${p.slug}: missing next action`);
 }
 for(const p of research){
  ok(p.sections?.length>=8,`${p.slug}: Research needs at least 8 sections`);

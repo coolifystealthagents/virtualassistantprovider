@@ -100,7 +100,7 @@ const makePost = (t: ReplacementTopic): ResearchPost => {
     related: [
       { title: 'Research library', href: '/research', description: 'Read other source-led reports for Philippines-based support decisions.' },
       { title: 'Services', href: '/services', description: 'Review the support lanes available for a documented role plan.' },
-      { title: 'Contact', href: '/contact', description: 'Share recurring work, tools, review rules, and owner decisions.' },
+      { title: 'Contact', href: '/contact-us', description: 'Share recurring work, tools, review rules, and owner decisions.' },
     ],
   };
 };

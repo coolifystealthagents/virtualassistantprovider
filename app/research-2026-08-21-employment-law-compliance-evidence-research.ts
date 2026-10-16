@@ -118,6 +118,6 @@ export const post: ResearchPost = {
     { title: 'Data privacy for virtual assistants', href: '/research/virtual-assistant-data-privacy-evidence-research', description: 'Access, encryption, and offboarding controls for handing data to an assistant.' },
     { title: 'Virtual assistant onboarding routine', href: '/research/virtual-assistant-onboarding-30-day-routine', description: 'A staged routine that starts with access limits and offboarding readiness.' },
     { title: 'Services', href: '/services', description: 'Review the support areas covered by Virtual Assistant Provider.' },
-    { title: 'Plan a Philippines-based role', href: '/contact', description: 'Bring the tasks, hours, and tools for a role plan.' }
+    { title: 'Plan a Philippines-based role', href: '/contact-us', description: 'Bring the tasks, hours, and tools for a role plan.' }
   ]
 };

@@ -59,10 +59,10 @@ test('the explicit manifest covers the complete live generic-image corpus and ev
   const genericSlugs = [...new Set(genericArticles.map((post) => post.slug))].sort();
   const manifestSlugs = Object.keys(articleImageManifest).sort();
 
-  assert.equal(exported.total, 607);
-  assert.equal(exported.generic, 416);
-  assert.equal(genericArticles.length, 416);
-  assert.equal(genericSlugs.length, 413);
+  assert.equal(exported.total, 675);
+  assert.equal(exported.generic, 426);
+  assert.equal(genericArticles.length, 426);
+  assert.equal(genericSlugs.length, 418);
   assert.deepEqual(manifestSlugs, genericSlugs);
   for (const post of genericArticles) {
     const choice = articleImageManifest[post.slug];
@@ -150,10 +150,114 @@ test('editorial article images expose useful alternative text', () => {
   );
 });
 
-test('sitemap includes every indexable core destination', () => {
+test('sitemap includes the canonical contact route and excludes funnel confirmation pages', () => {
   const sitemap = read('app/sitemap.xml/route.ts');
-  for (const path of ["'/pricing'", "'/contact'", "'/services'", "'/blog'", "'/research'"]) {
+  for (const path of ["'/pricing'", "'/contact-us'", "'/services'", "'/blog'", "'/research'"]) {
     assert.match(sitemap, new RegExp(path.replace('/', '\\/')));
+  }
+  assert.doesNotMatch(sitemap, /['"]\/contact['"]/);
+  assert.doesNotMatch(sitemap, /['"]\/thank-you['"]/);
+  assert.doesNotMatch(sitemap, /['"]\/thanks-whats-next['"]/);
+});
+
+test('contact journey has one canonical entry and all three required steps', async () => {
+  const redirects = await nextConfig.redirects();
+  assert.deepEqual(redirects.find(({ source }) => source === '/contact'), {
+    source: '/contact',
+    destination: '/contact-us',
+    permanent: true,
+  });
+
+  const contact = read('app/contact-us/page.tsx');
+  assert.match(contact, /contact-first-fold/);
+  assert.match(contact, /<StandardContactForm endpoint="\/api\/contact" encoding="form"/);
+  assert.match(contact, /TestimonialsRail contact/);
+  assert.match(contact, /\/brand\/stealth-agents-logo-black\.png/);
+  assert.match(contact, /\/brand\/stealth-agents-team-bacolod\.png/);
+  assert.match(contact, />Official team, Bacolod</);
+  assert.doesNotMatch(contact, /oncehub|scheduleonce/i);
+  assert.doesNotMatch(contact, /\["0[1-9]"/);
+
+  const thankYou = read('app/thank-you/page.tsx');
+  assert.match(thankYou, /go\.oncehub\.com\/StealthAgentsTeam/);
+  assert.match(thankYou, /href=\{bookingUrl\}/);
+  assert.doesNotMatch(thankYou, /Your request was received/i);
+  assert.ok(existsSync(join(root, 'app/thanks-whats-next/page.tsx')));
+  const finalStep = read('app/thanks-whats-next/page.tsx');
+  assert.match(finalStep, /Thanks.*what.*next|What happens next/is);
+  assert.match(finalStep, /If you completed the booking/);
+  assert.doesNotMatch(finalStep, />Meeting scheduled</);
+});
+
+test('global navigation uses exact labels and a keyboard-operable sticky mobile menu', () => {
+  const components = read('app/components.tsx');
+  const mobile = read('app/mobile-navigation.tsx');
+  assert.match(components, /className="nav fleet-nav sticky-site-header"/);
+  assert.match(components, /aria-label="Main navigation"/);
+  assert.match(components, /Skip to main content/);
+  assert.match(mobile, /aria-label="Mobile navigation"/);
+  assert.match(mobile, /aria-expanded=\{open\}/);
+  assert.match(mobile, /aria-controls="mobile-navigation-panel"/);
+  assert.match(mobile, /event\.key === 'Escape'/);
+  assert.match(mobile, /document\.body\.style\.overflow = 'hidden'/);
+  for (const item of ['Home', 'Services', 'Contact Us']) assert.match(components + mobile, new RegExp(`(?:label: '|>)${item}(?:'|<)`));
+  assert.doesNotMatch(components + mobile, /href="\/contact"/);
+  assert.match(components + mobile, /href: '\/contact-us'|href="\/contact-us"/);
+});
+
+test('contact form owns submission and global analytics does not intercept it', () => {
+  const form = read('app/contact-us/StandardContactForm.tsx');
+  assert.match(form, /phone: phone/);
+  assert.match(form, /trackLead/);
+  assert.match(form, /window\.location\.assign\("\/thank-you"\)/);
+  assert.match(form, /role="alert"/);
+  assert.match(form, /Submit and Choose a Meeting Time/);
+  assert.doesNotMatch(form, /Book a Free Consultation/);
+
+  const analytics = read('app/acr-client.tsx');
+  assert.doesNotMatch(analytics, /addEventListener\(['"]submit/);
+  assert.doesNotMatch(analytics, /alert\s*\(/);
+});
+
+test('public route configuration links directly to canonical contact-us', () => {
+  const banners = JSON.parse(read('app/blog-banner-profile.json'));
+  for (const [position, profiles] of Object.entries(banners.positions)) {
+    for (const profile of profiles) assert.equal(profile.href, '/contact-us', `${position}:${profile.id} must avoid the legacy contact redirect`);
+  }
+  for (const file of [
+    'publishing/2026-10-12/generate-content.mjs',
+    'publishing/2026-10-12/validate_batch.mjs',
+    'publishing/2026-10-13/generate_batch.py',
+    'publishing/2026-10-13/validate_batch.mjs',
+    'scripts/generate_sep28_blog.js',
+  ]) assert.doesNotMatch(read(file), /\/contact(?:[/?#"'`]|$)/, `${file} must not regenerate legacy contact links`);
+});
+
+test('punctuation and numbering normalization preserve readable content', () => {
+  const appSource = sourceFiles('app').map((path) => read(path)).join('\n');
+  assert.doesNotMatch(appSource, /[\u2013\u2014]| {2}- {2}/);
+  assert.doesNotMatch(appSource, /Alternative explanations-including|unavailability-must|can-and cannot-establish|verification-do not ship|digital-to/);
+  for (const file of ['app/page.tsx', 'app/services/page.tsx']) {
+    const source = read(file);
+    assert.doesNotMatch(source, /padStart\(2|number:'0[1-9]'|>0\{i\+1\}/, `${file} must not render decorative zero-padded labels`);
+  }
+});
+
+test('October 13 manifest validator checks source hashes and word counts', () => {
+  const validator = read('publishing/2026-10-13/validate_batch.mjs');
+  assert.match(validator, /manifest source hash/);
+  assert.match(validator, /manifest word count/);
+  assert.match(validator, /sourceHash/);
+  assert.match(validator, /postWordCount/);
+});
+
+test('release headers protect every route', async () => {
+  const rules = await nextConfig.headers();
+  const all = rules.find(({ source }) => source === '/(.*)');
+  assert.ok(all);
+  const headers = new Map(all.headers.map(({ key, value }) => [key.toLowerCase(), value]));
+  for (const name of ['content-security-policy', 'strict-transport-security', 'x-content-type-options', 'referrer-policy', 'permissions-policy']) {
+    assert.ok(headers.has(name), `${name} is required`);
   }
 });
 
@@ -163,7 +267,7 @@ test('audited core pages declare their intended canonical destination', () => {
     ['app/services/page.tsx', '/services'],
     ['app/blog/page.tsx', '/blog'],
     ['app/pricing/page.tsx', '/pricing'],
-    ['app/contact/page.tsx', '/contact'],
+    ['app/contact-us/page.tsx', '/contact-us'],
     ['app/privacy/page.tsx', '/privacy'],
     ['app/terms/page.tsx', '/terms'],
     ['app/cancellation-policy/page.tsx', '/cancellation-policy'],
@@ -172,7 +276,7 @@ test('audited core pages declare their intended canonical destination', () => {
   for (const [file, canonical] of expected) {
     const source = read(file);
     assert.match(source, /alternates\s*:\s*\{\s*canonical\s*:/, `${file} lacks canonical metadata`);
-    assert.ok(source.includes(`canonical:'${canonical}'`) || source.includes(`canonical: '${canonical}'`), `${file} must canonicalize to ${canonical}`);
+    assert.ok(source.includes(`canonical:'${canonical}'`) || source.includes(`canonical: '${canonical}'`) || source.includes(`canonical: "${canonical}"`), `${file} must canonicalize to ${canonical}`);
   }
 
   const cancellation = read('app/cancellation/page.tsx');
@@ -191,6 +295,52 @@ test('numbered blog pages publish self-referencing canonical metadata', () => {
   }
 });
 
+test('error state, favicon, article cards, and first-fold contact structure are explicit', () => {
+  const layout = read('app/layout.tsx');
+  const notFound = read('app/not-found.tsx');
+  const blog = read('app/blog/blog-listing.tsx');
+  const contact = read('app/contact-us/page.tsx');
+  const form = read('app/contact-us/StandardContactForm.tsx');
+  const css = read('app/globals.css');
+  assert.match(layout, /icons:\s*\{/);
+  assert.match(notFound, /robots:\s*\{\s*index:\s*false/);
+  assert.match(notFound, /Explore services/);
+  assert.match(notFound, /Contact Us/);
+  assert.match(blog, /blog-card-image/);
+  assert.match(blog, /resolveArticleImage/);
+  assert.match(contact, /contact-first-fold/);
+  for (const field of ['firstName', 'lastName', 'email', 'phoneLocal', 'companyName', 'website', 'companySize', 'positions', 'referral', 'message']) assert.match(form, new RegExp(`name=["']${field}["']`));
+  assert.match(css, /@keyframes sa-testimonial-slide/);
+  assert.match(css, /translateX/);
+  assert.match(css, /min-height:calc\(100svh - 76px\)/);
+});
+
+test('independent review corrections remain explicit', () => {
+  const form = read('app/contact-us/StandardContactForm.tsx');
+  const contact = read('app/contact-us/page.tsx');
+  const services = read('app/services/page.tsx');
+  const directory = read('app/blog/top-50-virtual-assistant-providers/page.tsx');
+  const booking = read('app/thank-you/page.tsx');
+  const contactRoute = read('app/api/contact/route.ts');
+  const css = read('app/globals.css');
+  const registry = read('design-registry.json');
+
+  for (const field of ['tier', 'privacy', 'source']) assert.match(form, new RegExp(`name=["']${field}["']`));
+  assert.match(form, /attempt < 20/);
+  assert.match(contact, /Powered by Stealth Agents\. Official team, Bacolod\./);
+  assert.match(services, /Explore every service guide/);
+  assert.match(services, /fleetServices\.map/);
+  assert.match(directory, /unranked-provider-directory/);
+  assert.match(directory, /alphabetical directory/i);
+  assert.doesNotMatch(directory, /stealth-agents-ranked-first|#1 Stealth Agents|best-hire-or-money-back/);
+  assert.match(booking, /href="\/thanks-whats-next"/);
+  assert.match(contactRoute, /text\(form,'countryCode'/);
+  assert.match(contactRoute, /Privacy consent: accepted/);
+  assert.match(css, /\.article-only-nav\{position:sticky/);
+  assert.match(css, /\.links,\.fleet-links\{display:none!important\}/);
+  assert.match(registry, /editorial staffing field guide/);
+});
+
 test('service pages use role-specific copy and role-specific illustrations', () => {
   const data = read('app/fleet-content.ts');
   const page = read('app/services/[slug]/page.tsx');
@@ -203,6 +353,11 @@ test('service pages use role-specific copy and role-specific illustrations', () 
     .map((match) => match[1])
     .filter((path) => !existsSync(join(root, 'public', path)));
   assert.deepEqual(missingHeroes, []);
-  assert.match(page, /src=\{s\.heroImage\}/);
-  assert.match(page, /alt=\{s\.heroImageAlt\}/);
+  assert.match(page, /src=\{service\.heroImage\}/);
+  assert.match(page, /alt=\{service\.heroImageAlt\}/);
+  const details = read('app/service-details.ts');
+  for (const section of ['whoFor', 'inputs', 'deliverables', 'scenario', 'faq', 'related']) assert.match(details, new RegExp(`${section}:`));
+  assert.match(page, /Quality controls/);
+  assert.match(page, /Launch workflow/);
+  assert.match(page, /Related services/);
 });
