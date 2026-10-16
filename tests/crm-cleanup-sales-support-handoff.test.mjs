@@ -1,19 +1,12 @@
-import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
 import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
 
-const source = await readFile(new URL('../app/data.ts', import.meta.url), 'utf8');
-const renderer = await readFile(new URL('../app/blog/[slug]/page.tsx', import.meta.url), 'utf8');
-const start = source.indexOf("slug === 'virtual-assistant-crm-cleanup-philippines'");
-const end = source.indexOf("...(slug === 'virtual-assistant-customer-support-qa-philippines'", start + 1);
-const record = source.slice(start, end);
+const root = process.cwd();
 
-test('CRM cleanup guide retains its Philippines sales-support handoff and owner boundary', () => {
-  assert.ok(start >= 0 && end > start, 'CRM cleanup handoff block boundaries must be present and ordered');
-  assert.match(record, /href: '\/services\/sales-support-assistants'/);
-  assert.match(record, /label: 'Plan sales support assistant staffing'/);
-  assert.match(record, /The sales owner keeps lead qualification, promises, negotiation, and pipeline decisions\./);
-  assert.match(record, /updated: '2026-09-08'/);
-  assert.match(renderer, /post\.nextAction &&/);
-  assert.match(renderer, /data-route-next-action/);
+test('retired CRM cleanup guide redirects to the reviewed guide index', () => {
+  assert.match(readFileSync(join(root, 'app/blog/[slug]/page.tsx'), 'utf8'), /permanentRedirect\('\/blog'\)/);
+  const manifest = readFileSync(join(root, 'app/publication-manifest.ts'), 'utf8');
+  assert.match(manifest, /publicationStatus: 'reviewed'/);
 });

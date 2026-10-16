@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
-import { getAug19Metadata, renderAug19Article } from '../../aug19-content';
-export const metadata: Metadata = getAug19Metadata('research','assistant-service-handoff-reliability-research');
-export default function Page(){return renderAug19Article('research','assistant-service-handoff-reliability-research')}
+import { permanentRedirect } from 'next/navigation';
+
+export default function RetiredEditorialPage() {
+  permanentRedirect('/research');
+}

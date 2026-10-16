@@ -1,9 +1,13 @@
-import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
 import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
 
-const source = await readFile(new URL('../app/blog/blog-listing.tsx', import.meta.url), 'utf8');
+const root = process.cwd();
 
-test('legacy comparison renders only after the final accepted blog page', () => {
-  assert.match(source, /page\s*===\s*total\s*\?\s*<FeaturedComparison\s*\/>\s*:\s*null/);
+test('retired comparison and numbered pagination redirect to the reviewed guide index', () => {
+  assert.match(readFileSync(join(root, 'app/blog/top-50-virtual-assistant-providers/page.tsx'), 'utf8'), /permanentRedirect\('\/blog'\)/);
+  assert.match(readFileSync(join(root, 'app/blog/page/[page]/page.tsx'), 'utf8'), /permanentRedirect\('\/blog'\)/);
+  const manifest = readFileSync(join(root, 'app/publication-manifest.ts'), 'utf8');
+  assert.match(manifest, /publicationStatus: 'reviewed'/);
 });

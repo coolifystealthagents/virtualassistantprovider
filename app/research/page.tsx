@@ -8,7 +8,7 @@ const formatDate = (date: string) => new Intl.DateTimeFormat('en-US', { month: '
 
 export const metadata: Metadata = {
   title: { absolute: 'Philippines virtual assistant research | Virtual Assistant Provider' },
-  description: 'Six reviewed, source-led reports for evaluating Philippines-based virtual assistant hiring, privacy, performance, communication, compliance, and complete cost.',
+  description: 'A reviewed, source-led report for evaluating Philippines-based virtual assistant hiring with clear evidence limits and candidate checks.',
   alternates: { canonical: `${baseUrl}/research` },
   openGraph: { title: 'Philippines virtual assistant research', description: 'A concise source-led library for safer staffing decisions.', url: `${baseUrl}/research`, type: 'website', images: ['/featured/hire-virtual-assistant-philippines-evidence-guide.png'] },
 };

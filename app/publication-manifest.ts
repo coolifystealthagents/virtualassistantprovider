@@ -76,7 +76,7 @@ export const publishedBlogPosts: readonly Publication[] = [
     description: 'Build an executive support role around calendar, inbox, travel, and follow-through with explicit privacy and decision boundaries.',
     published: '2026-07-25', updated: '2026-10-16', readingMinutes: 12,
     heroImage: '/featured/executive-assistant-philippines-hiring-guide.png', heroAlt: 'Executive assistant preparing calendar and meeting priorities', topic: 'Executive support',
-    relatedService: { href: '/services/executive-assistant-staffing', label: 'Executive assistant staffing' }, relatedResource: { href: '/research/virtual-assistant-cross-timezone-communication-evidence-research', label: 'Cross-timezone communication research' },
+    relatedService: { href: '/services/executive-assistant-staffing', label: 'Executive assistant staffing' }, relatedResource: { href: '/research/hire-virtual-assistant-philippines-evidence-guide', label: 'Philippines hiring evidence guide' },
     sources: [{ label: 'NIST access control guidance', href: 'https://csrc.nist.gov/projects/access-control' }, { label: 'CISA account security guidance', href: 'https://www.cisa.gov/secure-our-world/use-strong-passwords' }],
     sections: roleSections('executive assistant', 'calendar coordination, inbox triage, travel research, and meeting follow-through', 'commitments, spending, private correspondence, legal matters, and sensitive personnel choices'),
   }

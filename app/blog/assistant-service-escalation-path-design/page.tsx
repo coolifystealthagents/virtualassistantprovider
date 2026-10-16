@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
-import { getAug19Metadata, renderAug19Article } from '../../aug19-content';
-export const metadata: Metadata = getAug19Metadata('blog','assistant-service-escalation-path-design');
-export default function Page(){return renderAug19Article('blog','assistant-service-escalation-path-design')}
+import { permanentRedirect } from 'next/navigation';
+
+export default function RetiredEditorialPage() {
+  permanentRedirect('/blog');
+}

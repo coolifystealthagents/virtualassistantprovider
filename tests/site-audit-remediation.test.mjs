@@ -412,16 +412,12 @@ test('audited core pages declare their intended canonical destination', () => {
   assert.match(cancellation, /canonical\s*:\s*['"]\/cancellation-policy['"]/);
 });
 
-test('numbered blog pages publish self-referencing canonical metadata', () => {
+test('numbered blog pages are removed from publication and permanently redirect', () => {
   const source = read('app/blog/page/[page]/page.tsx');
   assert.match(source, /generateMetadata/);
-  assert.match(source, /page\/\$\{number\}/);
-  assert.match(source, /alternates\s*:\s*\{\s*canonical/);
-  assert.equal(parseBlogPage('1', 19), 1);
-  assert.equal(parseBlogPage('19', 19), 19);
-  for (const invalid of ['0', '-1', '01', '1.5', 'foo', '20', '999999999999999999999']) {
-    assert.equal(parseBlogPage(invalid, 19), null, `${invalid} must be rejected`);
-  }
+  assert.match(source, /index:\s*false/);
+  assert.match(source, /permanentRedirect\('\/blog'\)/);
+  assert.match(source, /generateStaticParams\(\)\s*\{\s*return \[\]/);
 });
 
 test('error state, favicon, article cards, and first-fold contact structure are explicit', () => {
@@ -435,12 +431,13 @@ test('error state, favicon, article cards, and first-fold contact structure are 
   assert.match(notFound, /robots:\s*\{\s*index:\s*false/);
   assert.match(notFound, /Explore services/);
   assert.match(notFound, /Contact Us/);
-  assert.match(blog, /blog-card-image/);
-  assert.match(blog, /resolveArticleImage/);
+  assert.match(blog, /publishedBlogPosts/);
+  assert.match(blog, /post\.heroImage/);
   assert.match(contact, /contact-first-fold/);
   for (const field of ['firstName', 'lastName', 'email', 'phoneLocal', 'companyName', 'website', 'companySize', 'positions', 'referral', 'message']) assert.match(form, new RegExp(`name=["']${field}["']`));
-  assert.match(css, /@keyframes sa-testimonial-slide/);
-  assert.match(css, /translateX/);
+  const shellCss = read('app/v3-shell.css');
+  assert.match(read('app/booking-components.tsx'), /track\.appendChild\(first\)/);
+  assert.match(read('app/booking-components.tsx'), /translate3d/);
   assert.match(css, /min-height:calc\(100svh - 76px\)/);
 });
 
@@ -457,23 +454,21 @@ test('independent review corrections remain explicit', () => {
   for (const field of ['tier', 'privacy', 'source']) assert.match(form, new RegExp(`name=["']${field}["']`));
   assert.match(form, /trackOrQueueAcrLead/);
   assert.match(contact, /Powered by Stealth Agents\. Official team, Bacolod\./);
-  assert.match(services, /Explore every service guide/);
+  assert.match(services, /Role selector/);
   assert.match(services, /fleetServices\.map/);
-  assert.match(directory, /unranked-provider-directory/);
-  assert.match(directory, /alphabetical directory/i);
-  assert.doesNotMatch(directory, /stealth-agents-ranked-first|#1 Stealth Agents|best-hire-or-money-back/);
+  assert.match(directory, /permanentRedirect\('\/blog'\)/);
   assert.doesNotMatch(booking, /href="\/thanks-whats-next"/);
   assert.match(contactRoute, /text\(form,'countryCode'/);
   assert.match(contactRoute, /Privacy consent: accepted/);
   assert.match(contactRoute, /PRODUCTION_ORIGINS/);
   assert.match(contactRoute, /https:\/\/virtualassistantprovider\.com/);
-  assert.doesNotMatch(contactRoute, /x-forwarded-host/);
+  assert.match(contactRoute, /request-origin/);
   const nextConfig = read('next.config.mjs');
   assert.match(nextConfig, /type:'host',value:'www\.virtualassistantprovider\.com'/);
   assert.match(nextConfig, /key:'x-forwarded-proto',value:'http'/);
-  assert.match(css, /\.article-only-nav\{position:sticky/);
-  assert.match(css, /\.links,\.fleet-links\{display:none!important\}/);
-  assert.match(registry, /editorial staffing field guide/);
+  assert.match(read('app/editorial/editorial.module.css'), /position:sticky/);
+  assert.match(read('app/mobile-navigation.tsx'), /aria-expanded=\{open\}/);
+  assert.match(registry, /Role boundary map connecting work, evidence, and owner decisions/);
 });
 
 test('service pages use role-specific copy and role-specific illustrations', () => {
@@ -493,6 +488,6 @@ test('service pages use role-specific copy and role-specific illustrations', () 
   const details = read('app/service-details.ts');
   for (const section of ['whoFor', 'inputs', 'deliverables', 'scenario', 'faq', 'related']) assert.match(details, new RegExp(`${section}:`));
   assert.match(page, /Quality controls/);
-  assert.match(page, /Launch workflow/);
-  assert.match(page, /Related services/);
+  assert.match(page, /Launch this role/);
+  assert.match(page, /Related service options/);
 });

@@ -42,18 +42,24 @@ test('mobile menu supplies the complete keyboard dialog contract', () => {
 
 test('contact has twelve exact first-party reviews in a control-free horizontal marquee', () => {
   const booking = read('app/booking-components.tsx');
+  const provenance = JSON.parse(read('app/review-provenance.json'));
   const contact = read('app/contact-us/page.tsx');
   const css = read('app/globals.css') + read('app/v3-shell.css');
+  assert.equal(provenance.source, 'https://stealthagents.com/');
+  assert.equal(provenance.reviews.length, 12);
+  assert.equal(new Set(provenance.reviews.map((review) => review.id)).size, 12);
+  assert.equal(new Set(provenance.reviews.map((review) => review.quote)).size, 12);
   for (const [name, quote] of reviews) {
-    assert.match(booking, new RegExp(name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
-    assert.ok(booking.includes(quote), `${name} quote must be exact`);
+    const review = provenance.reviews.find((item) => item.name === name);
+    assert.ok(review, `${name} must exist in provenance`);
+    assert.equal(review.quote, quote);
   }
-  assert.match(booking, /StealthAgents reviews/);
-  assert.match(booking, /https:\/\/stealthagents\.com\//);
-  assert.doesNotMatch(booking, /<button|play|pause|previous|next|pagination/i);
-  assert.match(booking, /aria-hidden=\{index >= reviews\.length/);
-  assert.match(css, /@keyframes v3-review-marquee/);
-  assert.match(css, /prefers-reduced-motion:reduce[\s\S]*\.v3-review-track[\s\S]*animation:none/);
+  assert.match(booking, /provenance\.collectionLabel/);
+  assert.match(booking, /provenance\.source/);
+  assert.doesNotMatch(booking, /<button|>Play<|>Pause<|>Previous<|>Next<|pagination/i);
+  assert.doesNotMatch(booking, /repeated|\.\.\.reviews/);
+  assert.match(booking, /track\.appendChild\(first\)/);
+  assert.match(css, /prefers-reduced-motion:reduce[\s\S]*\.v3-review-track/);
   assert.match(contact, /contact-first-fold[\s\S]*TestimonialsRail[\s\S]*StandardContactForm/);
 });
 
@@ -90,6 +96,14 @@ test('contact API performs a bounded read and validates forwarded origin safely'
   assert.match(route, /getTrustedRequestOrigin/);
   assert.match(route, /429/);
   assert.doesNotMatch(route, /process\.env\.[A-Z_]+[^\n]*Response|console\.(?:log|error)\([^\n]*process\.env/);
+});
+
+test('contact responsibility cards and mobile booking remain readable inside the viewport', () => {
+  const css = read('app/globals.css');
+  assert.match(css, /contact-boundary-grid h3\{[^}]*color:#102a43/);
+  assert.match(css, /contact-boundary-grid p\{[^}]*color:#425f76/);
+  assert.match(css, /sa-booking-grid\{grid-template-columns:minmax\(0,1fr\)/);
+  assert.match(css, /sa-booking-left,.sa-booking-calendar\{width:100%;min-width:0\}/);
 });
 
 test('canonical redirects cover protocol, hostname, and legacy contact', async () => {

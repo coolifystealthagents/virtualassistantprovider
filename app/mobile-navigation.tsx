@@ -12,6 +12,7 @@ export function MobileNavigation() {
   const [open, setOpen] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLElement>(null);
+  const restoreFocusRef = useRef(false);
 
   useEffect(() => {
     const desktop = window.matchMedia('(min-width: 801px)');
@@ -23,6 +24,13 @@ export function MobileNavigation() {
   }, []);
 
   useEffect(() => {
+    if (!open && restoreFocusRef.current) {
+      restoreFocusRef.current = false;
+      buttonRef.current?.focus();
+    }
+  }, [open]);
+
+  useEffect(() => {
     if (!open) return;
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
@@ -31,8 +39,8 @@ export function MobileNavigation() {
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
         event.preventDefault();
+        restoreFocusRef.current = true;
         setOpen(false);
-        requestAnimationFrame(() => buttonRef.current?.focus());
         return;
       }
       if (event.key !== 'Tab' || focusable.length === 0) return;
