@@ -1,13 +1,14 @@
 import { AcrClient } from './acr-client';
 import Script from 'next/script';
 import './globals.css';
+import './v3-shell.css';
 import type { Metadata } from 'next';
 import { site } from './data';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://virtualassistantprovider.com'),
   title: { default: 'Virtual Assistant Provider | Compare VA hiring options', template: '%s | Virtual Assistant Provider' },
-  description: 'Compare virtual assistant roles, providers, first tasks, onboarding steps, and questions to ask before you hire.',
+  description: 'Plan a clear virtual assistant role, compare support options, and define the ownership and review boundaries needed for a reliable handoff.',
   openGraph: { title: 'Virtual Assistant Provider', description: 'Guides for choosing a VA provider and planning the first handoff.', url: 'https://virtualassistantprovider.com', siteName: 'Virtual Assistant Provider', type: 'website' },
   icons: { icon: '/icon.svg', shortcut: '/icon.svg', apple: '/icon.svg' },
 };

@@ -9,9 +9,9 @@ export const metadata: Metadata = {
 
 export default function ThanksWhatsNextPage() {
   return <><Header /><main className="contact-complete-page"><section className="contact-release-shell contact-complete-card">
-    <p className="contact-kicker dark">Consultation next steps</p>
-    <h1>Thanks. Here is what happens next.</h1>
-    <p className="contact-release-lead">If you completed the booking, OnceHub will send a calendar confirmation with the meeting details. Bring the recurring tasks, tools, weekly volume, coverage hours, and approval rules you already know.</p>
+    <p className="contact-kicker dark">Booking confirmed</p>
+    <h1>Your consultation is booked.</h1>
+    <p className="contact-release-lead">Your time is reserved. You will receive a calendar confirmation with the meeting details. If you completed the booking on a shared device, check that the invitation reached the address you intended to use.</p>
     <ol>
       <li><strong>Check your calendar invitation.</strong> Confirm the date, time, and meeting link.</li>
       <li><strong>Gather a safe work sample.</strong> Use invented or redacted information rather than passwords or sensitive client records.</li>
