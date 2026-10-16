@@ -24,7 +24,6 @@ export default function ThankYouPage() {
         <h2 id="booking-calendar-title">Pick a time that works for you</h2>
         <p>If the scheduler does not load, <a href={bookingUrl} target="_blank" rel="noopener noreferrer">open the same booking calendar in a new tab</a>.</p>
         <iframe src={bookingUrl} id="SOI_StealthAgentsTeam" name="ScheduleOnceIframe" title="Schedule a meeting with Stealth Agents" scrolling="yes" frameBorder="0" height="850" width="100%" className="sa-oncehub-frame" referrerPolicy="strict-origin-when-cross-origin" />
-        <p className="sa-booking-confirmation-link">Booked successfully? <a href="/thanks-whats-next">Continue to your consultation next steps</a>.</p>
       </section>
     </div>
   </main><Footer /></>;

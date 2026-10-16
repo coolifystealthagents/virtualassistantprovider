@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState, type FormEvent } from "react";
+import { trackOrQueueAcrLead } from "../acr-lead-queue";
 
 type Props = { endpoint?: string; encoding?: "json" | "form" };
-type TrackerWindow = Window & { acrTracker?: { trackLead?: (payload: Record<string, unknown>) => void } };
 
 const companySizes = ["1-5", "5-10", "11-50", "51-250", "251-1k", "1k+"];
 const positions = ["Just 1 Position", "2-5 Positions", "6-10 Positions", "11-50 Positions", "51-100 Positions", "101-500 Positions", "501-1,000 Positions", "Over 1,000 Positions"];
@@ -54,7 +54,7 @@ export default function StandardContactForm({ endpoint = "/api/submit-lead", enc
       tier: String(data.get("tier") || ""),
       referral: String(data.get("referral") || ""), referral_source: String(data.get("referral") || ""), howTheyHeard: String(data.get("referral") || ""),
       referralSpecify: String(data.get("referralSpecify") || ""), needs: String(data.get("message") || ""), message: String(data.get("message") || ""),
-      privacy: String(data.get("privacy") || ""), source: String(data.get("referral") || "contact-form"), formId: "contactPageForm",
+      privacy: String(data.get("privacy") || ""), source: "contact-form", formId: "contactPageForm",
     };
     setSubmitting(true);
     setError("");
@@ -64,10 +64,7 @@ export default function StandardContactForm({ endpoint = "/api/submit-lead", enc
         : { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) };
       const response = await fetch(endpoint, request);
       if (!response.ok) throw new Error("Lead endpoint rejected the request");
-      for (let attempt = 0; attempt < 20 && !(window as TrackerWindow).acrTracker; attempt += 1) {
-        await new Promise((resolve) => window.setTimeout(resolve, 100));
-      }
-      try { (window as TrackerWindow).acrTracker?.trackLead?.(payload); } catch {}
+      trackOrQueueAcrLead(payload);
       window.location.assign("/thank-you");
     } catch {
       setError("We could not submit your request. Please try again.");
@@ -90,7 +87,7 @@ export default function StandardContactForm({ endpoint = "/api/submit-lead", enc
         <label>Positions to Fill *<select name="positions" required defaultValue=""><option value="" disabled>Select...</option>{positions.map((x) => <option key={x}>{x}</option>)}</select></label>
         <label>Preferred Support Tier *<select name="tier" required defaultValue=""><option value="" disabled>Select...</option><option>Executive Assistants</option><option>Senior Assistants</option><option>Not sure yet</option></select></label>
         <label>How Did You Hear About Us? *<select name="referral" required value={referral} onChange={(e) => setReferral(e.target.value)}><option value="" disabled>Select...</option>{referrals.map((x) => <option key={x}>{x}</option>)}</select></label>
-        <input type="hidden" name="source" value={referral} />
+        <input type="hidden" name="source" value="contact-form" />
         {referral === "Other" ? <label className="sa-full">Please Specify *<input name="referralSpecify" required /></label> : null}
         <label className="sa-full">What Does Your Team Need? *<textarea name="message" rows={2} required placeholder="Describe recurring tasks, tools, hours, approvals, and desired outcomes." /></label>
         <label className="sa-consent sa-full"><input type="checkbox" name="privacy" required /><span>I agree to the <a href="/privacy">Privacy Policy</a> and consent to being contacted about this request.</span></label>

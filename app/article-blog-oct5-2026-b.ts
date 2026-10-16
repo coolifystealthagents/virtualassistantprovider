@@ -39,13 +39,13 @@ Review disagreements. If the founder expects an immediate acknowledgment but the
 Start with a narrow set of repeatable messages. Sample sent work daily, then reduce review only when evidence supports it. Add authority gradually and revoke it when the role or risk changes. The matrix is a living control, not a one-time onboarding checklist.` },
       { heading: 'Use a weekly review to improve the rules', body: `A short weekly review should examine aged messages, escalations, returned drafts, mistaken classifications, and commitments awaiting the executive. Look for patterns rather than blaming individual judgment. Five repeated questions about scheduling may need a clearer calendar rule. Repeated uncertainty about customer credits may show that the assistant should only prepare evidence, not decide the outcome.
 
-Include a small permissions check in that review. Compare what the assistant actually needs for current message classes with mailbox delegation, shared-drive access, contact exports, and any sending aliases. Remove access that belongs to an earlier responsibility, and confirm that the executive can revoke delegated access without depending on the assistant.s device or password. When a role changes, update the authority matrix and the technical permissions together; changing only one leaves either unnecessary access or an impossible assignment.
+Include a small permissions check in that review. Compare what the assistant actually needs for current message classes with mailbox delegation, shared-drive access, contact exports, and any sending aliases. Remove access that belongs to an earlier responsibility, and confirm that the executive can revoke delegated access without depending on the assistant's device or password. When a role changes, update the authority matrix and the technical permissions together; changing only one leaves either unnecessary access or an impossible assignment.
 
 Measure what the design is meant to improve: important messages found on time, authorized responses completed, avoidable executive interruptions, unresolved commitments, and boundary incidents. Raw inbox-zero counts can reward premature archiving and say little about whether the right work happened. A healthy inbox can contain visible waiting items with named owners.
 
 The US Cybersecurity and Infrastructure Security Agency recommends strong account protections such as multifactor authentication in its [account security guidance](https://www.cisa.gov/secure-our-world/use-strong-passwords). The US National Archives also provides [email management guidance](https://www.archives.gov/records-mgmt/email-management) that is useful when defining official records and retention. Apply the rules appropriate to your contracts, location, and industry.
 
-If you need an operating design before handing over a founder mailbox, review our [executive assistant services](/services/executive-assistant-staffing) or [contact us](/contact) to map a bounded delegation workflow.` },
+If you need an operating design before handing over a founder mailbox, review our [executive assistant services](/services/executive-assistant-staffing) or [contact us](/contact-us) to map a bounded delegation workflow.` },
     ],
     faq: [
       { question: 'Should a virtual assistant answer every routine email?', answer: 'Only when the message class, facts, and requested action fall within a documented authority rule. Otherwise the assistant should prepare or escalate it.' },
@@ -103,7 +103,7 @@ Track repeated conflict codes, approval turnaround, customer recontacts, executi
 
 The US Federal Trade Commission maintains the [Mail, Internet, or Telephone Order Merchandise Rule](https://www.ftc.gov/legal-library/browse/rules/mail-internet-or-telephone-order-merchandise-rule), which is relevant to covered sellers' shipment and refund practices. Its [Protecting Personal Information guide](https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business) is also a useful baseline for limiting customer-data exposure. Obtain qualified advice for the rules that apply to your business.
 
-For help defining a support queue with explicit authority and escalation, explore our [customer service assistant services](/services/customer-service-assistant) or [contact us](/contact).` },
+For help defining a support queue with explicit authority and escalation, explore our [customer service assistant services](/services/customer-service-assistant) or [contact us](/contact-us).` },
     ],
     faq: [
       { question: 'Should a support assistant be allowed to issue refunds?', answer: 'Only within a documented policy, amount, system, and exception boundary. Other cases should be prepared with evidence for the named approver.' },
@@ -153,7 +153,7 @@ Name who can roll back and how. Reversal may mean restoring a previous import, e
 After release, verify actual customer pages and downstream feeds rather than accepting a successful import message as proof. Sample across product types and every changed field class. For time-sensitive promotions, check both start and end behavior.` },
       { heading: 'Review defects as signals about the control', body: `Track defects that reached customers, caught-before-release discrepancies, source conflicts, approval delay, rollback events, and repeat corrections. Edit volume is not a quality measure. An assistant who pauses a flawed batch may prevent more harm than one who completes thousands of rows quickly.
 
-After a rollback, compare the restored customer-facing output with the captured before-state instead of assuming that a successful import restored every relationship. Check a sample from the beginning, middle, and end of the batch, plus every item that failed during release. Confirm variant selection, media order, pricing, availability, identifiers, and any feed status that the change touched. Record which values restored automatically and which required a separate correction so the next rollback plan reflects the platform.s real behavior.
+After a rollback, compare the restored customer-facing output with the captured before-state instead of assuming that a successful import restored every relationship. Check a sample from the beginning, middle, and end of the batch, plus every item that failed during release. Confirm variant selection, media order, pricing, availability, identifiers, and any feed status that the change touched. Record which values restored automatically and which required a separate correction so the next rollback plan reflects the platform's real behavior.
 
 Separate correction speed from release pressure. If a promotion deadline approaches while a product source is disputed, publish only the independently verified portion or defer the affected items; do not let the marketing calendar turn an uncertain claim into an approved one. Name who can make that scope decision. The assistant should be able to pause a risky subset without being accused of blocking an otherwise safe catalog release.
 
@@ -161,7 +161,7 @@ When a defect occurs, ask whether the source was wrong, the mapping failed, the 
 
 The US Federal Trade Commission's [advertising and marketing guidance](https://www.ftc.gov/business-guidance/advertising-marketing) provides a useful starting point for truthful customer-facing claims. The US Consumer Product Safety Commission maintains [business education resources](https://www.cpsc.gov/Business--Manufacturing/Business-Education) for companies dealing with covered consumer products. These do not replace product-specific or local advice.
 
-If catalog upkeep is outgrowing informal messages, review our [ecommerce assistant services](/services/ecommerce-assistant) or [contact us](/contact) to define a controlled publishing lane.` },
+If catalog upkeep is outgrowing informal messages, review our [ecommerce assistant services](/services/ecommerce-assistant) or [contact us](/contact-us) to define a controlled publishing lane.` },
     ],
     faq: [
       { question: 'Which catalog changes need approval?', answer: 'Base approval on customer consequence. Price, claims, terms, safety text, and variant structure generally need tighter controls than routine formatting.' },

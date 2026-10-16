@@ -38,7 +38,7 @@ After approval, preserve the final evidence according to the organization’s re
 
 The following month, examine what arrived late, what reviewers returned, and what remained unexplained. Repair recurring intake and mapping problems rather than expanding the checklist indefinitely. The IRS [recordkeeping guidance for businesses](https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping) explains why records should support items reported, while the Federal Trade Commission’s [Protecting Personal Information guide](https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business) supports limiting retained data and access. Apply the accounting, tax, privacy, and retention requirements relevant to your organization.
 
-For help defining a bounded preparation lane with review kept in the right hands, see our [bookkeeping virtual assistant services](/services/bookkeeping-virtual-assistant-philippines) or [contact us](/contact).` },
+For help defining a bounded preparation lane with review kept in the right hands, see our [bookkeeping virtual assistant services](/services/bookkeeping-virtual-assistant-philippines) or [contact us](/contact-us).` },
     ],
     faq: [
       { question: 'Does ready for review mean every difference is zero?', answer: 'No. It means balances are supported and every difference is explained or clearly surfaced with evidence, an owner, and a requested decision.' },
@@ -87,7 +87,7 @@ If customers encountered incorrect information, route the cases to the responsib
 
 NIST’s [Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework) provides a general structure for governing, identifying, protecting, detecting, responding to, and recovering from operational risk. The Federal Trade Commission’s [Mail, Internet, or Telephone Order Merchandise Rule resources](https://www.ftc.gov/legal-library/browse/rules/mail-internet-or-telephone-order-merchandise-rule) are relevant when availability and shipment representations affect US orders. Apply platform terms and the consumer, tax, product, and advertising rules relevant to the catalog.
 
-For controlled catalog operations with escalation kept with the business owner, review our [ecommerce virtual assistant services](/services/ecommerce-virtual-assistant-philippines) or [contact us](/contact).` },
+For controlled catalog operations with escalation kept with the business owner, review our [ecommerce virtual assistant services](/services/ecommerce-virtual-assistant-philippines) or [contact us](/contact-us).` },
     ],
     faq: [
       { question: 'Is exporting the catalog enough for rollback?', answer: 'Not necessarily. Verify that the export contains stable identifiers, relationships, channel values, and every field the restore process needs, then test how blank and missing values behave.' },
@@ -138,7 +138,7 @@ Reconstruct a sample from the unedited source evidence during each audit. A revi
 
 The US Equal Employment Opportunity Commission’s [guidance on employment tests and selection procedures](https://www.eeoc.gov/laws/guidance/employment-tests-and-selection-procedures) explains that selection procedures must comply with federal anti-discrimination law. The Federal Trade Commission’s [Protecting Personal Information guide](https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business) supports retaining only needed information and limiting access. Obtain qualified advice for employment, privacy, record-access, and retention duties in the relevant jurisdictions.
 
-For a bounded recruiting administration lane with consequential decisions retained by the hiring team, see our [recruiting virtual assistant services](/services/recruiting-virtual-assistant-philippines) or [contact us](/contact).` },
+For a bounded recruiting administration lane with consequential decisions retained by the hiring team, see our [recruiting virtual assistant services](/services/recruiting-virtual-assistant-philippines) or [contact us](/contact-us).` },
     ],
     faq: [
       { question: 'Should duplicate candidate profiles always be merged?', answer: 'No. Verify identity, applications, consent, and system behavior first. One person may need linked but distinct application histories.' },

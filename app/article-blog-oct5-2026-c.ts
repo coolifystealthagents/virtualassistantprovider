@@ -44,7 +44,7 @@ Review the estimate after two weeks and again after a full operating cycle. Repl
 
 The [NIST glossary entry for least privilege](https://csrc.nist.gov/glossary/term/least_privilege) provides a useful access principle for setup, while the US Small Business Administration's [financial management guidance](https://www.sba.gov/business-guide/manage-your-business/manage-your-finances) offers a starting point for understanding and tracking business costs. Apply professional advice where accounting, employment, or security obligations require it.
 
-If the numbers support a controlled operations handoff, review our [operations assistant services](/services/operations-assistant) or [contact us](/contact) to define the workflow and its review boundary.` },
+If the numbers support a controlled operations handoff, review our [operations assistant services](/services/operations-assistant) or [contact us](/contact-us) to define the workflow and its review boundary.` },
     ],
     faq: [
       { question: 'How long should I measure a workflow before delegating it?', answer: 'Use at least one representative cycle and include a busy but plausible case. A weekly workflow often needs several observed weeks to expose exceptions.' },
@@ -102,7 +102,7 @@ Sample conflicts monthly. Look for recurring sources, fields, integrations, and 
 
 The US Federal Trade Commission's [Protecting Personal Information guide](https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business) advises businesses to keep only needed personal information and restrict access. NIST's [data integrity definition](https://csrc.nist.gov/glossary/term/data_integrity) describes data that has not been altered without authorization since creation, transmission, or storage. Use rules suited to your systems and obligations.
 
-For a controlled CRM correction lane with a named review owner, see our [sales support assistant services](/services/sales-support-assistant) or [contact us](/contact).` },
+For a controlled CRM correction lane with a named review owner, see our [sales support assistant services](/services/sales-support-assistant) or [contact us](/contact-us).` },
     ],
     faq: [
       { question: 'Should an assistant ever correct the source of truth directly?', answer: 'Yes, when written policy authorizes that field and evidence type. Consequential or ambiguous changes should go to the named owner with the original evidence preserved.' },

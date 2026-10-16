@@ -14,6 +14,15 @@ export function MobileNavigation() {
   const panelRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
+    const desktop = window.matchMedia('(min-width: 801px)');
+    const closeAtDesktop = (event: MediaQueryListEvent) => {
+      if (event.matches) setOpen(false);
+    };
+    desktop.addEventListener('change', closeAtDesktop);
+    return () => desktop.removeEventListener('change', closeAtDesktop);
+  }, []);
+
+  useEffect(() => {
     if (!open) return;
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';

@@ -8,6 +8,11 @@ import nextConfig from '../next.config.mjs';
 import { parseBlogPage } from '../app/blog/page-number.ts';
 import { articleImageAlt, resolveArticleImage } from '../app/article-image.ts';
 import { articleImageManifest } from '../app/article-image-manifest.mjs';
+import {
+  ACR_PENDING_LEAD_KEY,
+  flushPendingAcrLead,
+  trackOrQueueAcrLead,
+} from '../app/acr-lead-queue.ts';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const read = (path) => readFileSync(join(root, path), 'utf8');
@@ -181,6 +186,8 @@ test('contact journey has one canonical entry and all three required steps', asy
   const thankYou = read('app/thank-you/page.tsx');
   assert.match(thankYou, /go\.oncehub\.com\/StealthAgentsTeam/);
   assert.match(thankYou, /href=\{bookingUrl\}/);
+  assert.doesNotMatch(thankYou, /href=["']\/thanks-whats-next["']/);
+  assert.doesNotMatch(thankYou, /Booked successfully\?/);
   assert.doesNotMatch(thankYou, /Your request was received/i);
   assert.ok(existsSync(join(root, 'app/thanks-whats-next/page.tsx')));
   const finalStep = read('app/thanks-whats-next/page.tsx');
@@ -200,6 +207,8 @@ test('global navigation uses exact labels and a keyboard-operable sticky mobile 
   assert.match(mobile, /aria-controls="mobile-navigation-panel"/);
   assert.match(mobile, /event\.key === 'Escape'/);
   assert.match(mobile, /document\.body\.style\.overflow = 'hidden'/);
+  assert.match(mobile, /matchMedia\(['"]\(min-width:\s*801px\)['"]\)/);
+  assert.match(mobile, /addEventListener\(['"]change["'],\s*closeAtDesktop/);
   for (const item of ['Home', 'Services', 'Contact Us']) assert.match(components + mobile, new RegExp(`(?:label: '|>)${item}(?:'|<)`));
   assert.doesNotMatch(components + mobile, /href="\/contact"/);
   assert.match(components + mobile, /href: '\/contact-us'|href="\/contact-us"/);
@@ -208,15 +217,131 @@ test('global navigation uses exact labels and a keyboard-operable sticky mobile 
 test('contact form owns submission and global analytics does not intercept it', () => {
   const form = read('app/contact-us/StandardContactForm.tsx');
   assert.match(form, /phone: phone/);
-  assert.match(form, /trackLead/);
+  assert.match(form, /trackOrQueueAcrLead\(payload\)/);
+  const queue = read('app/acr-lead-queue.ts');
+  assert.match(queue, /sessionStorage\.setItem\(ACR_PENDING_LEAD_KEY/);
+  assert.match(queue, /sessionStorage\.removeItem\(ACR_PENDING_LEAD_KEY\)/);
+  assert.match(form, /source:\s*["']contact-form["']/);
   assert.match(form, /window\.location\.assign\("\/thank-you"\)/);
   assert.match(form, /role="alert"/);
   assert.match(form, /Submit and Choose a Meeting Time/);
   assert.doesNotMatch(form, /Book a Free Consultation/);
 
   const analytics = read('app/acr-client.tsx');
+  assert.match(analytics, /flushPendingAcrLead\(\)/);
   assert.doesNotMatch(analytics, /addEventListener\(['"]submit/);
   assert.doesNotMatch(analytics, /alert\s*\(/);
+
+  const layout = read('app/layout.tsx');
+  assert.doesNotMatch(layout, /funnel_booking_confirmed/);
+  assert.match(layout, /funnel_booking_next_steps_view/);
+});
+
+test('ACR lead queue preserves order and invokes each queued event at most once', () => {
+  const values = new Map();
+  const storage = {
+    getItem: (key) => values.get(key) ?? null,
+    setItem: (key, value) => values.set(key, value),
+    removeItem: (key) => values.delete(key),
+  };
+  const attempted = [];
+  const previousWindow = globalThis.window;
+  try {
+    globalThis.window = { sessionStorage: storage };
+    assert.equal(trackOrQueueAcrLead({ id: 'first' }), 'queued');
+    assert.equal(trackOrQueueAcrLead({ id: 'second' }), 'queued');
+    assert.deepEqual(JSON.parse(values.get(ACR_PENDING_LEAD_KEY)), [{ id: 'first' }, { id: 'second' }]);
+
+    globalThis.window.acrTracker = {
+      trackLead(payload) {
+        attempted.push(payload.id);
+        if (payload.id === 'first') throw new Error('ambiguous tracker failure');
+      },
+    };
+    assert.equal(flushPendingAcrLead(), 'sent');
+    assert.deepEqual(attempted, ['first', 'second']);
+    assert.equal(values.has(ACR_PENDING_LEAD_KEY), false);
+    assert.equal(flushPendingAcrLead(), 'empty');
+    assert.deepEqual(attempted, ['first', 'second']);
+  } finally {
+    if (previousWindow === undefined) delete globalThis.window;
+    else globalThis.window = previousWindow;
+  }
+});
+
+test('ACR lead queue contains malformed or unavailable storage failures', () => {
+  const previousWindow = globalThis.window;
+  try {
+    const values = new Map([[ACR_PENDING_LEAD_KEY, '{not-json']]);
+    globalThis.window = {
+      sessionStorage: {
+        getItem: (key) => values.get(key) ?? null,
+        setItem: (key, value) => values.set(key, value),
+        removeItem: (key) => values.delete(key),
+      },
+    };
+    assert.equal(flushPendingAcrLead(), 'empty');
+    assert.equal(values.has(ACR_PENDING_LEAD_KEY), false);
+
+    let attempts = 0;
+    globalThis.window = {
+      sessionStorage: {
+        getItem() { throw new Error('storage denied'); },
+        setItem() { throw new Error('storage denied'); },
+        removeItem() { throw new Error('storage denied'); },
+      },
+      acrTracker: { trackLead() { attempts += 1; throw new Error('tracker failed after invocation'); } },
+    };
+    assert.equal(trackOrQueueAcrLead({ id: 'privacy-mode' }), 'attempted');
+    assert.equal(attempts, 1);
+    assert.equal(flushPendingAcrLead(), 'waiting');
+  } finally {
+    if (previousWindow === undefined) delete globalThis.window;
+    else globalThis.window = previousWindow;
+  }
+});
+
+test('ACR lead queue retains work across intermittent read and drain failures', () => {
+  const previousWindow = globalThis.window;
+  try {
+    const values = new Map();
+    let reads = 0;
+    let failNextWrite = false;
+    const storage = {
+      getItem(key) {
+        reads += 1;
+        if (reads === 2) throw new Error('transient read failure');
+        return values.get(key) ?? null;
+      },
+      setItem(key, value) {
+        if (failNextWrite) {
+          failNextWrite = false;
+          throw new Error('transient write failure');
+        }
+        values.set(key, value);
+      },
+      removeItem: (key) => values.delete(key),
+    };
+    const attempted = [];
+    globalThis.window = { sessionStorage: storage };
+
+    assert.equal(trackOrQueueAcrLead({ id: 'retained' }), 'queued');
+    assert.deepEqual(JSON.parse(values.get(ACR_PENDING_LEAD_KEY)), [{ id: 'retained' }]);
+
+    values.set(ACR_PENDING_LEAD_KEY, JSON.stringify([{ id: 'retained' }, { id: 'second' }]));
+    globalThis.window.acrTracker = { trackLead: (payload) => attempted.push(payload.id) };
+    failNextWrite = true;
+    assert.equal(flushPendingAcrLead(), 'waiting');
+    assert.deepEqual(attempted, []);
+    assert.deepEqual(JSON.parse(values.get(ACR_PENDING_LEAD_KEY)), [{ id: 'retained' }, { id: 'second' }]);
+
+    assert.equal(flushPendingAcrLead(), 'sent');
+    assert.deepEqual(attempted, ['retained', 'second']);
+    assert.equal(values.has(ACR_PENDING_LEAD_KEY), false);
+  } finally {
+    if (previousWindow === undefined) delete globalThis.window;
+    else globalThis.window = previousWindow;
+  }
 });
 
 test('public route configuration links directly to canonical contact-us', () => {
@@ -231,12 +356,16 @@ test('public route configuration links directly to canonical contact-us', () => 
     'publishing/2026-10-13/validate_batch.mjs',
     'scripts/generate_sep28_blog.js',
   ]) assert.doesNotMatch(read(file), /\/contact(?:[/?#"'`]|$)/, `${file} must not regenerate legacy contact links`);
+  for (const file of sourceFiles('app')) {
+    assert.doesNotMatch(read(file), /(?:href|url|ctaLink|link):?\s*[=]?\s*["']\/contact["']|href=["']\/contact["']|\]\(\/contact\)/, `${file} must link directly to /contact-us`);
+  }
 });
 
 test('punctuation and numbering normalization preserve readable content', () => {
   const appSource = sourceFiles('app').map((path) => read(path)).join('\n');
   assert.doesNotMatch(appSource, /[\u2013\u2014]| {2}- {2}/);
   assert.doesNotMatch(appSource, /Alternative explanations-including|unavailability-must|can-and cannot-establish|verification-do not ship|digital-to/);
+  assert.doesNotMatch(appSource, /\b[A-Za-z]+\.(?:s|t|re|ve|ll|d|m)\b/, 'contractions and possessives must retain apostrophes');
   for (const file of ['app/page.tsx', 'app/services/page.tsx']) {
     const source = read(file);
     assert.doesNotMatch(source, /padStart\(2|number:'0[1-9]'|>0\{i\+1\}/, `${file} must not render decorative zero-padded labels`);
@@ -326,16 +455,22 @@ test('independent review corrections remain explicit', () => {
   const registry = read('design-registry.json');
 
   for (const field of ['tier', 'privacy', 'source']) assert.match(form, new RegExp(`name=["']${field}["']`));
-  assert.match(form, /attempt < 20/);
+  assert.match(form, /trackOrQueueAcrLead/);
   assert.match(contact, /Powered by Stealth Agents\. Official team, Bacolod\./);
   assert.match(services, /Explore every service guide/);
   assert.match(services, /fleetServices\.map/);
   assert.match(directory, /unranked-provider-directory/);
   assert.match(directory, /alphabetical directory/i);
   assert.doesNotMatch(directory, /stealth-agents-ranked-first|#1 Stealth Agents|best-hire-or-money-back/);
-  assert.match(booking, /href="\/thanks-whats-next"/);
+  assert.doesNotMatch(booking, /href="\/thanks-whats-next"/);
   assert.match(contactRoute, /text\(form,'countryCode'/);
   assert.match(contactRoute, /Privacy consent: accepted/);
+  assert.match(contactRoute, /PRODUCTION_ORIGINS/);
+  assert.match(contactRoute, /https:\/\/virtualassistantprovider\.com/);
+  assert.doesNotMatch(contactRoute, /x-forwarded-host/);
+  const nextConfig = read('next.config.mjs');
+  assert.match(nextConfig, /type:'host',value:'www\.virtualassistantprovider\.com'/);
+  assert.match(nextConfig, /key:'x-forwarded-proto',value:'http'/);
   assert.match(css, /\.article-only-nav\{position:sticky/);
   assert.match(css, /\.links,\.fleet-links\{display:none!important\}/);
   assert.match(registry, /editorial staffing field guide/);

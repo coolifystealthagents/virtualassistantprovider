@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import { flushPendingAcrLead } from './acr-lead-queue';
 
 function slug(value:string){return value.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,48)||'action'}
 
@@ -23,7 +24,22 @@ export function AcrClient(){
     labelCtas();
     const observer=new MutationObserver(labelCtas);
     observer.observe(document.documentElement,{childList:true,subtree:true});
-    return()=>observer.disconnect();
+
+    let retryTimer: number | undefined;
+    let stopTimer: number | undefined;
+    const flush = () => {
+      if (flushPendingAcrLead() !== 'waiting' && retryTimer) window.clearInterval(retryTimer);
+    };
+    const initial = flushPendingAcrLead();
+    if (initial === 'waiting') {
+      retryTimer = window.setInterval(flush, 100);
+      stopTimer = window.setTimeout(() => retryTimer && window.clearInterval(retryTimer), 30000);
+    }
+    return()=>{
+      observer.disconnect();
+      if (retryTimer) window.clearInterval(retryTimer);
+      if (stopTimer) window.clearTimeout(stopTimer);
+    };
   },[]);
   return null;
 }
