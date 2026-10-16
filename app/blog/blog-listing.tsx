@@ -1,61 +1,27 @@
-import { FeaturedComparison } from "./FeaturedComparison";
-import { notFound } from "next/navigation";
-import { Header, Footer } from "../components";
-import { blogPosts } from '../data';
-import { resolveArticleImage, articleImageAlt } from '../article-image';
-const PAGE_SIZE = 20;
-const formatDate = (date: string) => new Intl.DateTimeFormat("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" }).format(new Date(`${date}T00:00:00Z`));
+import { Header, Footer } from '../components';
+import { publishedBlogPosts } from '../publication-manifest';
+import styles from '../editorial/editorial.module.css';
+
+const formatDate = (date: string) => new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`));
+
 export function BlogListing({ page = 1 }: { page?: number }) {
-  const total = Math.max(1, Math.ceil(blogPosts.length / PAGE_SIZE));
-  if (page < 1 || page > total) notFound();
-  const posts = blogPosts.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+  if (page !== 1) return null;
   return (
     <>
       <Header />
-      <main className="fleet-main">
-        <section className="fleet-hero">
-          <div className="container">
-            <p className="eyebrow">Blog</p>
-            <h1>Practical guides for Philippines-based staffing</h1>
-            <p className="lead">
-              Browse role-planning, onboarding, access, and operating guides for
-              teams working with specialists in the Philippines.
-            </p>
-          </div>
+      <main className={styles.indexPage} id="main-content">
+        <section className={styles.indexHero}>
+          <div><p className={styles.topic}>Reviewed field guides</p><h1>Practical guides for Philippines-based staffing</h1><p>Use these editor-reviewed guides to define a role, test real work, limit access, and build a first-month review plan. The library is intentionally concise, with one strong guide for each distinct operating context.</p></div>
+          <img src="/featured/executive-assistant-philippines-hiring-guide.png" alt="Philippines-based assistant role planning guide" width="1200" height="675" />
         </section>
-        <section className="section">
-          <div className="container">
-            <div className="fleet-card-grid">
-              {posts.map((p) => (
-                <a className="fleet-card blog-list-card" href={`/blog/${p.slug}`} key={p.slug}>
-                  <img className="blog-card-image" src={resolveArticleImage(p)} alt={articleImageAlt(resolveArticleImage(p), p.title)} width="640" height="360" loading="lazy" />
-                  <div className="blog-card-copy">
-                    <h2>{p.title}</h2>
-                    <p>{p.excerpt}</p>
-                    {"published" in p && typeof p.published === "string" ? <time dateTime={p.published}>Published {formatDate(p.published)}</time> : null}
-                    <b>{p.minutes} min read</b>
-                  </div>
-                </a>
-              ))}
-            </div>
-            <nav className="pagination" aria-label="Blog pages">
-              {Array.from({ length: total }, (_, i) => i + 1).map((n) => (
-                <a
-                  className={n === page ? "active" : ""}
-                  aria-current={n === page ? "page" : undefined}
-                  href={n === 1 ? "/blog" : `/blog/page/${n}`}
-                  key={n}
-                >
-                  {n}
-                </a>
-              ))}
-            </nav>
-          </div>
+        <section className={styles.indexIntro} aria-labelledby="choose-guide"><h2 id="choose-guide">Choose by the work and the decisions that stay with you</h2><p>Start with the guide closest to the recurring queue, not a broad job title. Each article covers task scope, a safe work sample, access boundaries, review evidence, and provider questions. Keep financial, legal, clinical, employment, and customer-policy decisions with an accountable owner.</p></section>
+        <section className={styles.indexCards} aria-label="Published guides">
+          {publishedBlogPosts.map((post) => <article key={post.slug}><a href={`/blog/${post.slug}`}><img src={post.heroImage} alt={post.heroAlt} width="1200" height="675" loading="lazy" /><div><p>{post.topic}</p><h2>{post.title}</h2><span>Published <time dateTime={post.published}>{formatDate(post.published)}</time> · {post.readingMinutes} minute read</span><p>{post.description}</p></div></a></article>)}
         </section>
-        {page === total ? <FeaturedComparison /> : null}
+        <section className={styles.indexGuide}><div><h2>Use the same evidence for every option</h2><p>Write one role brief and one scorecard before speaking with providers. Compare the work sample, named reviewer, access model, complete cost, replacement terms, and offboarding process without relying on directory position or broad claims.</p><a href="/blog/top-50-virtual-assistant-providers">Open the unranked provider directory</a></div><div><h2>Ready to define the first task lane?</h2><p>Share the recurring outputs, tools, hours, access limits, and decisions that require your approval.</p><a href="/contact-us">Plan a Philippines-based role</a></div></section>
       </main>
       <Footer />
     </>
   );
 }
-export { PAGE_SIZE };
+export const PAGE_SIZE = 20;
