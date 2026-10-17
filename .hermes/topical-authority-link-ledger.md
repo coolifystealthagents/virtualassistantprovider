@@ -47,3 +47,9 @@ The October 2 research batch already supplies five route-local, service-led next
 | `/services/executive-assistant-staffing` | `/research/executive-travel-disruption-decision-log-study` | How can a disrupted trip be coordinated while the traveler keeps booking authority? | delivered locally | Preserve the single service guide link; the traveler or authorized owner chooses changes outside standing rules. |
 
 This is a source-only reconciliation. It records local artifact facts and does not assert deployment or public rollout.
+
+## 2026-10-17 active-inventory reconciliation
+
+The candidate rows above describe retired source routes. The current `publication-manifest.ts` exposes only `/research/hire-virtual-assistant-philippines-evidence-guide` and `/blog/executive-assistant-philippines-hiring-guide` as generated editorial routes; the prior source slugs are not static params or sitemap entries.
+
+A fresh production build selected the current artifacts by their exact canonical links. The blog H1 is `Executive assistant Philippines: a safe hiring guide` and its route-local `<main>` contains one `/services/executive-assistant-staffing` anchor. The research H1 is `Hire virtual assistant Philippines: an evidence guide for 2026` and its route-local `<main>` contains one `/services` anchor, not a role-specific service anchor. Treat the existing blog handoff as delivered and the broad research-directory link as intentionally non-candidate. Do not add or retarget a CTA until a generated research source has the same bounded role question as its existing service pillar.

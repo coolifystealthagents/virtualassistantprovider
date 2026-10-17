@@ -26,3 +26,9 @@ This ledger connects one existing research question to one existing Philippines-
 ## Artifact basis
 
 A fresh production build on 2026-09-28 confirmed that all seven source routes and all seven service routes have one canonical generated artifact and a sitemap location. The repository sitemap intentionally has no `<lastmod>`. Each source route's route-local `<main>` contained zero anchors for its matched service route.
+
+## 2026-10-17 active-inventory reconciliation
+
+This older candidate list belongs to the retired editorial corpus. It is preserved as historical planning evidence, not an implementation queue. The current manifest emits only `/research/hire-virtual-assistant-philippines-evidence-guide` for research and `/blog/executive-assistant-philippines-hiring-guide` for the related role guide; none of the seven listed research sources is generated or sitemap-listed now.
+
+Fresh production artifacts confirm that the executive guide has one route-local link to `/services/executive-assistant-staffing`. The active research guide has one route-local `/services` directory link and no role-specific research question, so it is not a valid substitute for any retired candidate. Keep the reader path as-is. Before a future contextual handoff, add an approved generated research source with a matching Philippines-only role question and repeat the source/target canonical, H1, `<main>` anchor-count, and sitemap checks.

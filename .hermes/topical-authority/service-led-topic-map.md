@@ -20,3 +20,9 @@ This is an internal editorial map for Virtual Assistant Provider. It uses only e
 ## Editorial order
 
 Start with the candidate that has the clearest route-level question and the strongest source-to-service boundary. Add no more than one contextual handoff in a release. Refresh the source route's real update date with the change, then prove the rendered marker, source and target H1s, canonical, Article date, and sitemap locations after a production build.
+
+## 2026-10-17 active-route reconciliation
+
+The earlier rows record retired research routes from the pre-curation content corpus. They are not eligible source pages now. The current publication manifest generates one research route, `/research/hire-virtual-assistant-philippines-evidence-guide`, and one blog route, `/blog/executive-assistant-philippines-hiring-guide`; it intentionally excludes the earlier candidate research slugs from static params and the sitemap.
+
+The current blog already has one route-local `/services/executive-assistant-staffing` link. The current research guide has one route-local `/services` link, which is a broad directory path rather than a service-pillar handoff. Do not replace it with a role-specific CTA: the guide is a general hiring-evidence page and does not answer a role-specific next question. A future service-led handoff requires a newly approved, generated research page with a matching role question, an existing target, and fresh route-local artifact proof.
