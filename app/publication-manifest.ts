@@ -69,7 +69,10 @@ const roleSections = (role: string, work: string, ownerDecisions: string): reado
   },
 ];
 
+import { oct22BlogPosts, oct22ResearchPosts } from './oct22-publications';
+
 export const publishedBlogPosts: readonly Publication[] = [
+  ...oct22BlogPosts,
   {
     publicationStatus: 'reviewed', kind: 'blog', slug: 'executive-assistant-philippines-hiring-guide',
     title: 'Executive assistant Philippines: a safe hiring guide',
@@ -91,6 +94,7 @@ const researchSections = (question: string, limits: string): readonly EditorialS
 ];
 
 export const publishedResearchPosts: readonly Publication[] = [
+  ...oct22ResearchPosts,
   {
     publicationStatus: 'reviewed', kind: 'research', slug: 'hire-virtual-assistant-philippines-evidence-guide', title: 'Hire virtual assistant Philippines: an evidence guide for 2026', description: 'Use country data, a paid work sample, and clear access rules to plan a Philippines-based virtual assistant hire without turning national signals into candidate claims.', published: '2026-07-22', updated: '2026-10-16', readingMinutes: 13,
     heroImage: '/featured/hire-virtual-assistant-philippines-evidence-guide.png', heroAlt: 'Evidence checklist for hiring a Philippines-based virtual assistant', topic: 'Hiring evidence', relatedService: { href: '/services', label: 'Explore staffing services' }, relatedResource: { href: '/blog/executive-assistant-philippines-hiring-guide', label: 'Executive assistant hiring guide' },

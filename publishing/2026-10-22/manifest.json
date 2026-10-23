@@ -1,0 +1,189 @@
+{
+  "site": "VirtualAssistantProvider.com",
+  "repository": "coolifystealthagents/virtualassistantprovider",
+  "branch": "main",
+  "publicationDate": "2026-10-22",
+  "visibleDate": "October 22, 2026",
+  "counts": {
+    "blog": 12,
+    "research": 5,
+    "total": 17,
+    "thumbnails": 17
+  },
+  "registryPaths": [
+    "app/publication-manifest.ts",
+    "app/oct22-publications.ts"
+  ],
+  "articles": [
+    {
+      "section": "Blog",
+      "title": "Build an Acceptance Register Before Scaling Assistant Work",
+      "slug": "assistant-acceptance-register",
+      "sourcePath": "app/oct22-publications.ts",
+      "thumbnailPath": "public/featured/oct22-assistant-acceptance-register.png",
+      "publicationDate": "2026-10-22",
+      "wordCount": 1299,
+      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+    },
+    {
+      "section": "Blog",
+      "title": "Run a Paid Assistant Work Sample Without Live Client Data",
+      "slug": "assistant-work-sample-privacy",
+      "sourcePath": "app/oct22-publications.ts",
+      "thumbnailPath": "public/featured/oct22-assistant-work-sample-privacy.png",
+      "publicationDate": "2026-10-22",
+      "wordCount": 1347,
+      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+    },
+    {
+      "section": "Blog",
+      "title": "Map Access Before a Provider Replaces an Assistant",
+      "slug": "provider-replacement-access-map",
+      "sourcePath": "app/oct22-publications.ts",
+      "thumbnailPath": "public/featured/oct22-provider-replacement-access-map.png",
+      "publicationDate": "2026-10-22",
+      "wordCount": 1323,
+      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+    },
+    {
+      "section": "Blog",
+      "title": "Write a Task Boundary Brief That an Assistant Can Apply",
+      "slug": "assistant-task-boundary-brief",
+      "sourcePath": "app/oct22-publications.ts",
+      "thumbnailPath": "public/featured/oct22-assistant-task-boundary-brief.png",
+      "publicationDate": "2026-10-22",
+      "wordCount": 1353,
+      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+    },
+    {
+      "section": "Blog",
+      "title": "Design a Provider Quality Sample That Can Be Reconstructed",
+      "slug": "provider-quality-sample-validity",
+      "sourcePath": "app/oct22-publications.ts",
+      "thumbnailPath": "public/featured/oct22-provider-quality-sample-validity.png",
+      "publicationDate": "2026-10-22",
+      "wordCount": 1329,
+      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+    },
+    {
+      "section": "Blog",
+      "title": "Capture an Assistant Escalation Receipt, Not Just a Transfer",
+      "slug": "assistant-escalation-receipt",
+      "sourcePath": "app/oct22-publications.ts",
+      "thumbnailPath": "public/featured/oct22-assistant-escalation-receipt.png",
+      "publicationDate": "2026-10-22",
+      "wordCount": 1305,
+      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+    },
+    {
+      "section": "Blog",
+      "title": "Reconcile Provider Invoices to Approved Role Scope",
+      "slug": "provider-invoice-scope-match",
+      "sourcePath": "app/oct22-publications.ts",
+      "thumbnailPath": "public/featured/oct22-provider-invoice-scope-match.png",
+      "publicationDate": "2026-10-22",
+      "wordCount": 1311,
+      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+    },
+    {
+      "section": "Blog",
+      "title": "Review Assistant Knowledge Articles Before They Go Stale",
+      "slug": "assistant-knowledge-freshness",
+      "sourcePath": "app/oct22-publications.ts",
+      "thumbnailPath": "public/featured/oct22-assistant-knowledge-freshness.png",
+      "publicationDate": "2026-10-22",
+      "wordCount": 1305,
+      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+    },
+    {
+      "section": "Blog",
+      "title": "Open Provider Access in the Right Order",
+      "slug": "provider-onboarding-access-order",
+      "sourcePath": "app/oct22-publications.ts",
+      "thumbnailPath": "public/featured/oct22-provider-onboarding-access-order.png",
+      "publicationDate": "2026-10-22",
+      "wordCount": 1311,
+      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+    },
+    {
+      "section": "Blog",
+      "title": "Test Assistant Backup Coverage With a Real Handoff",
+      "slug": "assistant-backup-coverage-test",
+      "sourcePath": "app/oct22-publications.ts",
+      "thumbnailPath": "public/featured/oct22-assistant-backup-coverage-test.png",
+      "publicationDate": "2026-10-22",
+      "wordCount": 1293,
+      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+    },
+    {
+      "section": "Blog",
+      "title": "Require a Data and Access Receipt at Provider Offboarding",
+      "slug": "provider-offboarding-data-receipt",
+      "sourcePath": "app/oct22-publications.ts",
+      "thumbnailPath": "public/featured/oct22-provider-offboarding-data-receipt.png",
+      "publicationDate": "2026-10-22",
+      "wordCount": 1317,
+      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+    },
+    {
+      "section": "Blog",
+      "title": "Review an Assistant Quality Reset Without Blaming the Worker",
+      "slug": "assistant-quality-reset-review",
+      "sourcePath": "app/oct22-publications.ts",
+      "thumbnailPath": "public/featured/oct22-assistant-quality-reset-review.png",
+      "publicationDate": "2026-10-22",
+      "wordCount": 1305,
+      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+    },
+    {
+      "section": "Research",
+      "title": "Assistant Acceptance Evidence Study",
+      "slug": "assistant-acceptance-evidence-study",
+      "sourcePath": "app/oct22-publications.ts",
+      "thumbnailPath": "public/featured/oct22-assistant-acceptance-evidence-study.png",
+      "publicationDate": "2026-10-22",
+      "wordCount": 1332,
+      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+    },
+    {
+      "section": "Research",
+      "title": "Provider Quality Sample Validity Study",
+      "slug": "provider-quality-sample-study",
+      "sourcePath": "app/oct22-publications.ts",
+      "thumbnailPath": "public/featured/oct22-provider-quality-sample-study.png",
+      "publicationDate": "2026-10-22",
+      "wordCount": 1304,
+      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+    },
+    {
+      "section": "Research",
+      "title": "Provider Access Latency Study",
+      "slug": "provider-access-latency-study",
+      "sourcePath": "app/oct22-publications.ts",
+      "thumbnailPath": "public/featured/oct22-provider-access-latency-study.png",
+      "publicationDate": "2026-10-22",
+      "wordCount": 1304,
+      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+    },
+    {
+      "section": "Research",
+      "title": "Provider Offboarding Receipt Study",
+      "slug": "provider-offboarding-receipt-study",
+      "sourcePath": "app/oct22-publications.ts",
+      "thumbnailPath": "public/featured/oct22-provider-offboarding-receipt-study.png",
+      "publicationDate": "2026-10-22",
+      "wordCount": 1290,
+      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+    },
+    {
+      "section": "Research",
+      "title": "Assistant Knowledge Freshness Study",
+      "slug": "assistant-knowledge-freshness-study",
+      "sourcePath": "app/oct22-publications.ts",
+      "thumbnailPath": "public/featured/oct22-assistant-knowledge-freshness-study.png",
+      "publicationDate": "2026-10-22",
+      "wordCount": 1325,
+      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+    }
+  ]
+}
