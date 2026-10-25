@@ -1,7 +1,9 @@
 {
   "site": "VirtualAssistantProvider.com",
+  "domain": "https://virtualassistantprovider.com",
   "repository": "coolifystealthagents/virtualassistantprovider",
   "branch": "main",
+  "baseSha": "e5690b4151e759c23c6b03dad54e61fde5ceea61",
   "publicationDate": "2026-10-22",
   "visibleDate": "October 22, 2026",
   "counts": {
@@ -19,171 +21,402 @@
       "section": "Blog",
       "title": "Build an Acceptance Register Before Scaling Assistant Work",
       "slug": "assistant-acceptance-register",
+      "route": "/blog/assistant-acceptance-register",
       "sourcePath": "app/oct22-publications.ts",
+      "sourceSha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d",
       "thumbnailPath": "public/featured/oct22-assistant-acceptance-register.png",
+      "thumbnailSha256": "8278e5213c1264ba1176671eeffc9bc0b424235a28863542b7328db256556d37",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
       "publicationDate": "2026-10-22",
-      "wordCount": 1299,
-      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+      "screenshots": {
+        "desktop-top": "qa/coverage-virtualassistantprovider/render/shots/assistant-acceptance-register-desktop-top.png",
+        "mobile-top": "qa/coverage-virtualassistantprovider/render/shots/assistant-acceptance-register-mobile-top.png",
+        "desktop-mid": "qa/coverage-virtualassistantprovider/render/shots/assistant-acceptance-register-desktop-mid.png",
+        "mobile-mid": "qa/coverage-virtualassistantprovider/render/shots/assistant-acceptance-register-mobile-mid.png",
+        "mobile-toc": "qa/coverage-virtualassistantprovider/render/shots/assistant-acceptance-register-mobile-toc.png"
+      }
     },
     {
       "section": "Blog",
       "title": "Run a Paid Assistant Work Sample Without Live Client Data",
       "slug": "assistant-work-sample-privacy",
+      "route": "/blog/assistant-work-sample-privacy",
       "sourcePath": "app/oct22-publications.ts",
+      "sourceSha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d",
       "thumbnailPath": "public/featured/oct22-assistant-work-sample-privacy.png",
+      "thumbnailSha256": "304cfd8df893063194b4aed6356a78b841cc8b40de15e3afc5e975c7d183b7fe",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
       "publicationDate": "2026-10-22",
-      "wordCount": 1347,
-      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+      "screenshots": {
+        "desktop-top": "qa/coverage-virtualassistantprovider/render/shots/assistant-work-sample-privacy-desktop-top.png",
+        "mobile-top": "qa/coverage-virtualassistantprovider/render/shots/assistant-work-sample-privacy-mobile-top.png",
+        "desktop-mid": "qa/coverage-virtualassistantprovider/render/shots/assistant-work-sample-privacy-desktop-mid.png",
+        "mobile-mid": "qa/coverage-virtualassistantprovider/render/shots/assistant-work-sample-privacy-mobile-mid.png",
+        "mobile-toc": "qa/coverage-virtualassistantprovider/render/shots/assistant-work-sample-privacy-mobile-toc.png"
+      }
     },
     {
       "section": "Blog",
       "title": "Map Access Before a Provider Replaces an Assistant",
       "slug": "provider-replacement-access-map",
+      "route": "/blog/provider-replacement-access-map",
       "sourcePath": "app/oct22-publications.ts",
+      "sourceSha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d",
       "thumbnailPath": "public/featured/oct22-provider-replacement-access-map.png",
+      "thumbnailSha256": "c6fdc74d12f2647182093872d737848dd468284a80ed429c2626912a85439d0b",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
       "publicationDate": "2026-10-22",
-      "wordCount": 1323,
-      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+      "screenshots": {
+        "desktop-top": "qa/coverage-virtualassistantprovider/render/shots/provider-replacement-access-map-desktop-top.png",
+        "mobile-top": "qa/coverage-virtualassistantprovider/render/shots/provider-replacement-access-map-mobile-top.png",
+        "desktop-mid": "qa/coverage-virtualassistantprovider/render/shots/provider-replacement-access-map-desktop-mid.png",
+        "mobile-mid": "qa/coverage-virtualassistantprovider/render/shots/provider-replacement-access-map-mobile-mid.png",
+        "mobile-toc": "qa/coverage-virtualassistantprovider/render/shots/provider-replacement-access-map-mobile-toc.png"
+      }
     },
     {
       "section": "Blog",
       "title": "Write a Task Boundary Brief That an Assistant Can Apply",
       "slug": "assistant-task-boundary-brief",
+      "route": "/blog/assistant-task-boundary-brief",
       "sourcePath": "app/oct22-publications.ts",
+      "sourceSha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d",
       "thumbnailPath": "public/featured/oct22-assistant-task-boundary-brief.png",
+      "thumbnailSha256": "2e2bbf6cd41234adc08fc5787e489fbff5e1b807851ebe3b4c18647b28ea65e6",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
       "publicationDate": "2026-10-22",
-      "wordCount": 1353,
-      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+      "screenshots": {
+        "desktop-top": "qa/coverage-virtualassistantprovider/render/shots/assistant-task-boundary-brief-desktop-top.png",
+        "mobile-top": "qa/coverage-virtualassistantprovider/render/shots/assistant-task-boundary-brief-mobile-top.png",
+        "desktop-mid": "qa/coverage-virtualassistantprovider/render/shots/assistant-task-boundary-brief-desktop-mid.png",
+        "mobile-mid": "qa/coverage-virtualassistantprovider/render/shots/assistant-task-boundary-brief-mobile-mid.png",
+        "mobile-toc": "qa/coverage-virtualassistantprovider/render/shots/assistant-task-boundary-brief-mobile-toc.png"
+      }
     },
     {
       "section": "Blog",
       "title": "Design a Provider Quality Sample That Can Be Reconstructed",
       "slug": "provider-quality-sample-validity",
+      "route": "/blog/provider-quality-sample-validity",
       "sourcePath": "app/oct22-publications.ts",
+      "sourceSha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d",
       "thumbnailPath": "public/featured/oct22-provider-quality-sample-validity.png",
+      "thumbnailSha256": "a1a4232ff1fabdb9ed7cf0812225b111d3cf91d0ac96f53fb7f316965e1ecb8d",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
       "publicationDate": "2026-10-22",
-      "wordCount": 1329,
-      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+      "screenshots": {
+        "desktop-top": "qa/coverage-virtualassistantprovider/render/shots/provider-quality-sample-validity-desktop-top.png",
+        "mobile-top": "qa/coverage-virtualassistantprovider/render/shots/provider-quality-sample-validity-mobile-top.png",
+        "desktop-mid": "qa/coverage-virtualassistantprovider/render/shots/provider-quality-sample-validity-desktop-mid.png",
+        "mobile-mid": "qa/coverage-virtualassistantprovider/render/shots/provider-quality-sample-validity-mobile-mid.png",
+        "mobile-toc": "qa/coverage-virtualassistantprovider/render/shots/provider-quality-sample-validity-mobile-toc.png"
+      }
     },
     {
       "section": "Blog",
       "title": "Capture an Assistant Escalation Receipt, Not Just a Transfer",
       "slug": "assistant-escalation-receipt",
+      "route": "/blog/assistant-escalation-receipt",
       "sourcePath": "app/oct22-publications.ts",
+      "sourceSha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d",
       "thumbnailPath": "public/featured/oct22-assistant-escalation-receipt.png",
+      "thumbnailSha256": "c3fde7dd8c8e59c2b85d0a8a1788803231ae628928ce3efa8d72472cf7078b12",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
       "publicationDate": "2026-10-22",
-      "wordCount": 1305,
-      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+      "screenshots": {
+        "desktop-top": "qa/coverage-virtualassistantprovider/render/shots/assistant-escalation-receipt-desktop-top.png",
+        "mobile-top": "qa/coverage-virtualassistantprovider/render/shots/assistant-escalation-receipt-mobile-top.png",
+        "desktop-mid": "qa/coverage-virtualassistantprovider/render/shots/assistant-escalation-receipt-desktop-mid.png",
+        "mobile-mid": "qa/coverage-virtualassistantprovider/render/shots/assistant-escalation-receipt-mobile-mid.png",
+        "mobile-toc": "qa/coverage-virtualassistantprovider/render/shots/assistant-escalation-receipt-mobile-toc.png"
+      }
     },
     {
       "section": "Blog",
       "title": "Reconcile Provider Invoices to Approved Role Scope",
       "slug": "provider-invoice-scope-match",
+      "route": "/blog/provider-invoice-scope-match",
       "sourcePath": "app/oct22-publications.ts",
+      "sourceSha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d",
       "thumbnailPath": "public/featured/oct22-provider-invoice-scope-match.png",
+      "thumbnailSha256": "e0f8d092595e6b425efc2f0599f1c88f9b971586fbbe371411ecfdc3f1b933c9",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
       "publicationDate": "2026-10-22",
-      "wordCount": 1311,
-      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+      "screenshots": {
+        "desktop-top": "qa/coverage-virtualassistantprovider/render/shots/provider-invoice-scope-match-desktop-top.png",
+        "mobile-top": "qa/coverage-virtualassistantprovider/render/shots/provider-invoice-scope-match-mobile-top.png",
+        "desktop-mid": "qa/coverage-virtualassistantprovider/render/shots/provider-invoice-scope-match-desktop-mid.png",
+        "mobile-mid": "qa/coverage-virtualassistantprovider/render/shots/provider-invoice-scope-match-mobile-mid.png",
+        "mobile-toc": "qa/coverage-virtualassistantprovider/render/shots/provider-invoice-scope-match-mobile-toc.png"
+      }
     },
     {
       "section": "Blog",
       "title": "Review Assistant Knowledge Articles Before They Go Stale",
       "slug": "assistant-knowledge-freshness",
+      "route": "/blog/assistant-knowledge-freshness",
       "sourcePath": "app/oct22-publications.ts",
+      "sourceSha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d",
       "thumbnailPath": "public/featured/oct22-assistant-knowledge-freshness.png",
+      "thumbnailSha256": "05333ff87ce2d7d2c8d0e0e91b2097ff5eb59c2da51a6f9446d0ee59e558983d",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
       "publicationDate": "2026-10-22",
-      "wordCount": 1305,
-      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+      "screenshots": {
+        "desktop-top": "qa/coverage-virtualassistantprovider/render/shots/assistant-knowledge-freshness-desktop-top.png",
+        "mobile-top": "qa/coverage-virtualassistantprovider/render/shots/assistant-knowledge-freshness-mobile-top.png",
+        "desktop-mid": "qa/coverage-virtualassistantprovider/render/shots/assistant-knowledge-freshness-desktop-mid.png",
+        "mobile-mid": "qa/coverage-virtualassistantprovider/render/shots/assistant-knowledge-freshness-mobile-mid.png",
+        "mobile-toc": "qa/coverage-virtualassistantprovider/render/shots/assistant-knowledge-freshness-mobile-toc.png"
+      }
     },
     {
       "section": "Blog",
       "title": "Open Provider Access in the Right Order",
       "slug": "provider-onboarding-access-order",
+      "route": "/blog/provider-onboarding-access-order",
       "sourcePath": "app/oct22-publications.ts",
+      "sourceSha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d",
       "thumbnailPath": "public/featured/oct22-provider-onboarding-access-order.png",
+      "thumbnailSha256": "1cd5390d3dbb91d44c426aa461967dc6aa0cf234221d73168c1f268c4e956c8a",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
       "publicationDate": "2026-10-22",
-      "wordCount": 1311,
-      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+      "screenshots": {
+        "desktop-top": "qa/coverage-virtualassistantprovider/render/shots/provider-onboarding-access-order-desktop-top.png",
+        "mobile-top": "qa/coverage-virtualassistantprovider/render/shots/provider-onboarding-access-order-mobile-top.png",
+        "desktop-mid": "qa/coverage-virtualassistantprovider/render/shots/provider-onboarding-access-order-desktop-mid.png",
+        "mobile-mid": "qa/coverage-virtualassistantprovider/render/shots/provider-onboarding-access-order-mobile-mid.png",
+        "mobile-toc": "qa/coverage-virtualassistantprovider/render/shots/provider-onboarding-access-order-mobile-toc.png"
+      }
     },
     {
       "section": "Blog",
       "title": "Test Assistant Backup Coverage With a Real Handoff",
       "slug": "assistant-backup-coverage-test",
+      "route": "/blog/assistant-backup-coverage-test",
       "sourcePath": "app/oct22-publications.ts",
+      "sourceSha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d",
       "thumbnailPath": "public/featured/oct22-assistant-backup-coverage-test.png",
+      "thumbnailSha256": "0488f6d8ffff5696afcf8d6a223e37cdbec8775edf6e42e863f7143294abe5c4",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
       "publicationDate": "2026-10-22",
-      "wordCount": 1293,
-      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+      "screenshots": {
+        "desktop-top": "qa/coverage-virtualassistantprovider/render/shots/assistant-backup-coverage-test-desktop-top.png",
+        "mobile-top": "qa/coverage-virtualassistantprovider/render/shots/assistant-backup-coverage-test-mobile-top.png",
+        "desktop-mid": "qa/coverage-virtualassistantprovider/render/shots/assistant-backup-coverage-test-desktop-mid.png",
+        "mobile-mid": "qa/coverage-virtualassistantprovider/render/shots/assistant-backup-coverage-test-mobile-mid.png",
+        "mobile-toc": "qa/coverage-virtualassistantprovider/render/shots/assistant-backup-coverage-test-mobile-toc.png"
+      }
     },
     {
       "section": "Blog",
       "title": "Require a Data and Access Receipt at Provider Offboarding",
       "slug": "provider-offboarding-data-receipt",
+      "route": "/blog/provider-offboarding-data-receipt",
       "sourcePath": "app/oct22-publications.ts",
+      "sourceSha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d",
       "thumbnailPath": "public/featured/oct22-provider-offboarding-data-receipt.png",
+      "thumbnailSha256": "0126c562505a8e2b6c0863827e0fefa8db7e6e947ac625efaa6be363a62ad39c",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
       "publicationDate": "2026-10-22",
-      "wordCount": 1317,
-      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+      "screenshots": {
+        "desktop-top": "qa/coverage-virtualassistantprovider/render/shots/provider-offboarding-data-receipt-desktop-top.png",
+        "mobile-top": "qa/coverage-virtualassistantprovider/render/shots/provider-offboarding-data-receipt-mobile-top.png",
+        "desktop-mid": "qa/coverage-virtualassistantprovider/render/shots/provider-offboarding-data-receipt-desktop-mid.png",
+        "mobile-mid": "qa/coverage-virtualassistantprovider/render/shots/provider-offboarding-data-receipt-mobile-mid.png",
+        "mobile-toc": "qa/coverage-virtualassistantprovider/render/shots/provider-offboarding-data-receipt-mobile-toc.png"
+      }
     },
     {
       "section": "Blog",
       "title": "Review an Assistant Quality Reset Without Blaming the Worker",
       "slug": "assistant-quality-reset-review",
+      "route": "/blog/assistant-quality-reset-review",
       "sourcePath": "app/oct22-publications.ts",
+      "sourceSha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d",
       "thumbnailPath": "public/featured/oct22-assistant-quality-reset-review.png",
+      "thumbnailSha256": "56855dcdd2f5f86146dde4224ceb1d03502f55973f37019bdd993fc5009e7807",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
       "publicationDate": "2026-10-22",
-      "wordCount": 1305,
-      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+      "screenshots": {
+        "desktop-top": "qa/coverage-virtualassistantprovider/render/shots/assistant-quality-reset-review-desktop-top.png",
+        "mobile-top": "qa/coverage-virtualassistantprovider/render/shots/assistant-quality-reset-review-mobile-top.png",
+        "desktop-mid": "qa/coverage-virtualassistantprovider/render/shots/assistant-quality-reset-review-desktop-mid.png",
+        "mobile-mid": "qa/coverage-virtualassistantprovider/render/shots/assistant-quality-reset-review-mobile-mid.png",
+        "mobile-toc": "qa/coverage-virtualassistantprovider/render/shots/assistant-quality-reset-review-mobile-toc.png"
+      }
     },
     {
       "section": "Research",
       "title": "Assistant Acceptance Evidence Study",
       "slug": "assistant-acceptance-evidence-study",
+      "route": "/research/assistant-acceptance-evidence-study",
       "sourcePath": "app/oct22-publications.ts",
+      "sourceSha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d",
       "thumbnailPath": "public/featured/oct22-assistant-acceptance-evidence-study.png",
+      "thumbnailSha256": "4d4dbc0326d9efef79cce9f7d4449bacd04887d6db488de9dc7d4a13f7f656c3",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
       "publicationDate": "2026-10-22",
-      "wordCount": 1332,
-      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+      "screenshots": {
+        "desktop-top": "qa/coverage-virtualassistantprovider/render/shots/assistant-acceptance-evidence-study-desktop-top.png",
+        "mobile-top": "qa/coverage-virtualassistantprovider/render/shots/assistant-acceptance-evidence-study-mobile-top.png",
+        "desktop-mid": "qa/coverage-virtualassistantprovider/render/shots/assistant-acceptance-evidence-study-desktop-mid.png",
+        "mobile-mid": "qa/coverage-virtualassistantprovider/render/shots/assistant-acceptance-evidence-study-mobile-mid.png",
+        "mobile-toc": "qa/coverage-virtualassistantprovider/render/shots/assistant-acceptance-evidence-study-mobile-toc.png"
+      }
     },
     {
       "section": "Research",
       "title": "Provider Quality Sample Validity Study",
       "slug": "provider-quality-sample-study",
+      "route": "/research/provider-quality-sample-study",
       "sourcePath": "app/oct22-publications.ts",
+      "sourceSha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d",
       "thumbnailPath": "public/featured/oct22-provider-quality-sample-study.png",
+      "thumbnailSha256": "4daf51a0e3a09fda8930e79d34b86508eecdd749b7d4be858e3f4969ab56fc45",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
       "publicationDate": "2026-10-22",
-      "wordCount": 1304,
-      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+      "screenshots": {
+        "desktop-top": "qa/coverage-virtualassistantprovider/render/shots/provider-quality-sample-study-desktop-top.png",
+        "mobile-top": "qa/coverage-virtualassistantprovider/render/shots/provider-quality-sample-study-mobile-top.png",
+        "desktop-mid": "qa/coverage-virtualassistantprovider/render/shots/provider-quality-sample-study-desktop-mid.png",
+        "mobile-mid": "qa/coverage-virtualassistantprovider/render/shots/provider-quality-sample-study-mobile-mid.png",
+        "mobile-toc": "qa/coverage-virtualassistantprovider/render/shots/provider-quality-sample-study-mobile-toc.png"
+      }
     },
     {
       "section": "Research",
       "title": "Provider Access Latency Study",
       "slug": "provider-access-latency-study",
+      "route": "/research/provider-access-latency-study",
       "sourcePath": "app/oct22-publications.ts",
+      "sourceSha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d",
       "thumbnailPath": "public/featured/oct22-provider-access-latency-study.png",
+      "thumbnailSha256": "d213bbdf2034d8a107790b392789874858c384f3acedacefaaf5b8730feab8f5",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
       "publicationDate": "2026-10-22",
-      "wordCount": 1304,
-      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+      "screenshots": {
+        "desktop-top": "qa/coverage-virtualassistantprovider/render/shots/provider-access-latency-study-desktop-top.png",
+        "mobile-top": "qa/coverage-virtualassistantprovider/render/shots/provider-access-latency-study-mobile-top.png",
+        "desktop-mid": "qa/coverage-virtualassistantprovider/render/shots/provider-access-latency-study-desktop-mid.png",
+        "mobile-mid": "qa/coverage-virtualassistantprovider/render/shots/provider-access-latency-study-mobile-mid.png",
+        "mobile-toc": "qa/coverage-virtualassistantprovider/render/shots/provider-access-latency-study-mobile-toc.png"
+      }
     },
     {
       "section": "Research",
       "title": "Provider Offboarding Receipt Study",
       "slug": "provider-offboarding-receipt-study",
+      "route": "/research/provider-offboarding-receipt-study",
       "sourcePath": "app/oct22-publications.ts",
+      "sourceSha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d",
       "thumbnailPath": "public/featured/oct22-provider-offboarding-receipt-study.png",
+      "thumbnailSha256": "6c9897832f6806dad6b5395a3cbfccef31b3386cdc2a350ac8ff780eaf9b3e96",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
       "publicationDate": "2026-10-22",
-      "wordCount": 1290,
-      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+      "screenshots": {
+        "desktop-top": "qa/coverage-virtualassistantprovider/render/shots/provider-offboarding-receipt-study-desktop-top.png",
+        "mobile-top": "qa/coverage-virtualassistantprovider/render/shots/provider-offboarding-receipt-study-mobile-top.png",
+        "desktop-mid": "qa/coverage-virtualassistantprovider/render/shots/provider-offboarding-receipt-study-desktop-mid.png",
+        "mobile-mid": "qa/coverage-virtualassistantprovider/render/shots/provider-offboarding-receipt-study-mobile-mid.png",
+        "mobile-toc": "qa/coverage-virtualassistantprovider/render/shots/provider-offboarding-receipt-study-mobile-toc.png"
+      }
     },
     {
       "section": "Research",
       "title": "Assistant Knowledge Freshness Study",
       "slug": "assistant-knowledge-freshness-study",
+      "route": "/research/assistant-knowledge-freshness-study",
       "sourcePath": "app/oct22-publications.ts",
+      "sourceSha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d",
       "thumbnailPath": "public/featured/oct22-assistant-knowledge-freshness-study.png",
+      "thumbnailSha256": "fd6031219fd230257883a2c6d4d63b567945bd5ce7cf1dd8d36e2067d863f3d9",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
       "publicationDate": "2026-10-22",
-      "wordCount": 1325,
-      "sha256": "c66deabb0058843b36201ad3bb4c71b0ec33a5e2853fcc0bd4be86e5b8b92d0d"
+      "screenshots": {
+        "desktop-top": "qa/coverage-virtualassistantprovider/render/shots/assistant-knowledge-freshness-study-desktop-top.png",
+        "mobile-top": "qa/coverage-virtualassistantprovider/render/shots/assistant-knowledge-freshness-study-mobile-top.png",
+        "desktop-mid": "qa/coverage-virtualassistantprovider/render/shots/assistant-knowledge-freshness-study-desktop-mid.png",
+        "mobile-mid": "qa/coverage-virtualassistantprovider/render/shots/assistant-knowledge-freshness-study-mobile-mid.png",
+        "mobile-toc": "qa/coverage-virtualassistantprovider/render/shots/assistant-knowledge-freshness-study-mobile-toc.png"
+      }
     }
-  ]
+  ],
+  "errors": [],
+  "generatedAt": "2026-10-25",
+  "coverageJob": "virtualassistantprovider|2026-10-22|render_evidence",
+  "checks": {
+    "contentCounts": "12 blog + 5 research",
+    "publicationDate": "2026-10-22",
+    "thumbnailSize": "1200x630",
+    "uniqueSlugs": true,
+    "uniqueTitles": true,
+    "contentHashes": "sha256 of shared publication registry and per-article thumbnails",
+    "thumbnailHashes": "sha256 recorded per article",
+    "build": "pass (npm run build through safe_build.sh)",
+    "renderedAudit": "17/17 articles pass desktop+mobile",
+    "visibleDate": "October 22, 2026 observed",
+    "timeDatetime": "2026-10-22 observed",
+    "desktopStickyToc": "pass",
+    "mobileStickyToc": "pass",
+    "horizontalOverflow": "0",
+    "missingAnchors": "none",
+    "brokenImages": "none",
+    "sources": "10 authoritative HTTPS sources in the publication registry"
+  },
+  "evidence": {
+    "helperArtifact": "helper-2/qa/coverage-virtualassistantprovider/render/qa.json",
+    "screenshots": "helper-2/qa/coverage-virtualassistantprovider/render/shots",
+    "note": "Evidence generated from local production server at baseSha before this manifest-only commit."
+  }
 }
