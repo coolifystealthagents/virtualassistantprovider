@@ -71,9 +71,12 @@ const roleSections = (role: string, work: string, ownerDecisions: string): reado
 
 import { oct22BlogPosts, oct22ResearchPosts } from './oct22-publications';
 import { oct25BlogPosts } from './oct25-blog-publications';
+import { oct26BlogPosts } from './oct26-blog-publications';
 import { oct25ResearchPosts } from './oct25-research-publications';
+import { oct26ResearchPosts } from './oct26-research-publications';
 
 export const publishedBlogPosts: readonly Publication[] = [
+  ...oct26BlogPosts,
   ...oct25BlogPosts,
   ...oct22BlogPosts,
   {
@@ -97,6 +100,7 @@ const researchSections = (question: string, limits: string): readonly EditorialS
 ];
 
 export const publishedResearchPosts: readonly Publication[] = [
+  ...oct26ResearchPosts,
   ...oct25ResearchPosts,
   ...oct22ResearchPosts,
   {
