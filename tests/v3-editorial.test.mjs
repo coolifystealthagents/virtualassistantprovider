@@ -58,6 +58,14 @@ test('shared article frame provides complete sticky and mobile navigation', () =
   assert.match(toc, /<details/);
 });
 
+test('blog listing thumbnails remain landscape at every viewport', () => {
+  const css = read('app/editorial/editorial.module.css');
+  assert.match(css, /\.indexCards a\{[^}]*grid-template-columns:1fr[^}]*grid-template-rows:auto 1fr/);
+  assert.match(css, /\.indexCards img\{[^}]*height:auto[^}]*min-height:0[^}]*aspect-ratio:16\/9/);
+  assert.doesNotMatch(css, /\.indexCards img\{[^}]*height:100%/);
+  assert.doesNotMatch(css, /@media\(max-width:900px\)\{[^}]*\.indexCards a\{[^}]*grid-template-columns:minmax/);
+});
+
 test('curated articles have distinct 1200 by 675 heroes, dates, descriptions and headings', () => {
   const manifest = read('app/publication-manifest.ts');
   const images = [...manifest.matchAll(/heroImage:\s*'([^']+)'/g)].map((m) => m[1]);
