@@ -42,7 +42,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
       {
         "heading": "Research question and scope",
         "paragraphs": [
-          "Do two reviewers put the same item in the same priority band using the written scoring rule? The scope is the operational record for virtual assistant placement and managed support, not the legal, financial, or clinical conclusion that may follow.",
+          "A protocol testing whether independent reviewers assign the same priority band to the same virtual assistant placement and managed support item. The virtualassistantprovider review should show the source, owner, next action, and exception reason for this do reviewers agree on work priority in virtual assistant placement and managed support? workflow before the item moves.",
           "In virtual assistant placement and managed support: The study is deliberately narrow. It reports what the record can show in a defined population and window. It does not claim an industry rate or a causal staffing effect."
         ]
       },
@@ -542,7 +542,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
       {
         "heading": "Research question and scope",
         "paragraphs": [
-          "How much delay comes from an upstream input, an internal owner, or a rework loop? The scope is the operational record for virtual assistant placement and managed support, not the legal, financial, or clinical conclusion that may follow.",
+          "A protocol separating upstream wait, owner wait, and rework in virtual assistant placement and managed support dependency chains. The virtualassistantprovider review should show the source, owner, next action, and exception reason for this where do dependencies add delay in virtual assistant placement and managed support? workflow before the item moves.",
           "In virtual assistant placement and managed support: The study is deliberately narrow. It reports what the record can show in a defined population and window. It does not claim an industry rate or a causal staffing effect."
         ]
       },
