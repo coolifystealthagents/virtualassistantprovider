@@ -7,10 +7,12 @@ import { site } from './data';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://virtualassistantprovider.com'),
+  applicationName: 'Virtual Assistant Provider',
   title: { default: 'Virtual Assistant Provider | Compare VA hiring options', template: '%s | Virtual Assistant Provider' },
   description: 'Plan a clear virtual assistant role, compare support options, and define the ownership and review boundaries needed for a reliable handoff.',
-  openGraph: { title: 'Virtual Assistant Provider', description: 'Guides for choosing a VA provider and planning the first handoff.', url: 'https://virtualassistantprovider.com', siteName: 'Virtual Assistant Provider', type: 'website' },
-  icons: { icon: '/icon.svg', shortcut: '/icon.svg', apple: '/icon.svg' },
+  openGraph: { title: 'Virtual Assistant Provider', description: 'Guides for choosing a VA provider and planning the first handoff.', url: 'https://virtualassistantprovider.com', siteName: 'Virtual Assistant Provider', type: 'website', images: [{ url: '/brand/virtual-assistant-provider-og.png', width: 1200, height: 630, alt: 'Virtual Assistant Provider, Philippines staffing built around real work' }] },
+  twitter: { card: 'summary_large_image', title: 'Virtual Assistant Provider', description: 'Guides for choosing a VA provider and planning the first handoff.', images: ['/brand/virtual-assistant-provider-og.png'] },
+  icons: { icon: [{ url: '/icon.svg', type: 'image/svg+xml' }], shortcut: '/icon.svg', apple: [{ url: '/brand/virtual-assistant-provider-apple-touch-icon.png', sizes: '180x180', type: 'image/png' }] },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -1,0 +1,20 @@
+{
+  "source": "https://stealthagents.com/",
+  "usage": "First-party StealthAgents portrait imported locally for the Virtual Assistant Provider homepage hero with explicit parent attribution.",
+  "assets": [
+    {
+      "path": "/brand/stealth-agents-filipina-assistant.webp",
+      "sourceUrl": "https://stealthagents.com/hero-agents-home.webp",
+      "width": 640,
+      "height": 720,
+      "sha256": "89a10c75bde4674a10feaaa7cb832bca7594dc7e17a802bbc794149774f3809e"
+    },
+    {
+      "path": "/brand/stealth-agents-filipina-assistant-384.webp",
+      "sourceUrl": "https://stealthagents.com/hero-agents-home-384.webp",
+      "width": 384,
+      "height": 432,
+      "sha256": "4c9be54ca815592e7886293ed93ed8e4adbcb4301405bc6c9b811624d68aedb1"
+    }
+  ]
+}

@@ -1,7 +1,8 @@
+import test from 'node:test';
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
-import test from 'node:test';
 
 const root = path.resolve(import.meta.dirname, '..');
 const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
@@ -47,6 +48,63 @@ test('homepage, service index, detail, and pricing use their page owned V3 syste
   assert.match(pricing, /pricingHero/);
   assert.match(pricing, /What the rate includes/i);
   assert.match(pricing, /Pricing questions/i);
+});
+
+test('homepage hero uses approved responsive portrait media and aligned identity metadata', () => {
+  const home = read('app/page.tsx');
+  const css = read('app/v3-pages.module.css');
+  const layout = read('app/layout.tsx');
+
+  assert.match(home, /<picture className=\{styles\.heroPortrait\}>/);
+  assert.match(home, /srcSet="\/brand\/stealth-agents-filipina-assistant-384\.webp 384w, \/brand\/stealth-agents-filipina-assistant\.webp 640w"/);
+  assert.match(home, /sizes="\(max-width: 800px\) calc\(100vw - 56px\), 452px"/);
+  assert.match(home, /src="\/brand\/stealth-agents-filipina-assistant\.webp"/);
+  assert.match(home, /width="640" height="720"/);
+  assert.match(home, /fetchPriority="high"/);
+  assert.match(home, /decoding="async"/);
+  assert.match(home, /alt="Filipina assistant holding a tablet in a professional workspace"/);
+  assert.match(home, /Virtual Assistant Provider is powered by StealthAgents/);
+  assert.doesNotMatch(home, /virtual-assistant-work-sample-philippines\.png/);
+
+  assert.match(css, /\.heroPortrait img\{[^}]*width:100%[^}]*height:auto[^}]*aspect-ratio:8\/9[^}]*object-fit:cover/);
+  assert.match(layout, /\/brand\/virtual-assistant-provider-og\.png/);
+  assert.match(layout, /\/brand\/virtual-assistant-provider-apple-touch-icon\.png/);
+  assert.match(layout, /twitter:\s*\{[^}]*card:\s*'summary_large_image'/);
+  assert.match(layout, /applicationName:\s*'Virtual Assistant Provider'/);
+  assert.match(layout, /width:\s*1200,\s*height:\s*630/);
+  assert.match(layout, /sizes:\s*'180x180',\s*type:\s*'image\/png'/);
+
+  for (const asset of [
+    'public/brand/stealth-agents-filipina-assistant.webp',
+    'public/brand/stealth-agents-filipina-assistant-384.webp',
+    'public/brand/virtual-assistant-provider-og.png',
+    'public/brand/virtual-assistant-provider-apple-touch-icon.png',
+  ]) assert.ok(fs.existsSync(path.join(root, asset)), `${asset} must exist`);
+
+  const provenance = JSON.parse(read('app/home-hero-provenance.json'));
+  assert.equal(provenance.source, 'https://stealthagents.com/');
+  assert.equal(provenance.assets.length, 2);
+  for (const asset of provenance.assets) {
+    assert.match(asset.sourceUrl, /^https:\/\/stealthagents\.com\/hero-agents-home/);
+    assert.match(asset.sha256, /^[a-f0-9]{64}$/);
+    const bytes = fs.readFileSync(path.join(root, 'public', asset.path));
+    assert.equal(createHash('sha256').update(bytes).digest('hex'), asset.sha256);
+    assert.equal(bytes.toString('ascii', 0, 4), 'RIFF');
+    assert.equal(bytes.toString('ascii', 8, 12), 'WEBP');
+    assert.equal(bytes.toString('ascii', 12, 16), 'VP8 ');
+    assert.deepEqual(
+      [bytes.readUInt16LE(26) & 0x3fff, bytes.readUInt16LE(28) & 0x3fff],
+      [asset.width, asset.height],
+    );
+  }
+
+  const pngSize = (asset) => {
+    const bytes = fs.readFileSync(path.join(root, asset));
+    assert.equal(bytes.toString('hex', 0, 8), '89504e470d0a1a0a');
+    return [bytes.readUInt32BE(16), bytes.readUInt32BE(20)];
+  };
+  assert.deepEqual(pngSize('public/brand/virtual-assistant-provider-og.png'), [1200, 630]);
+  assert.deepEqual(pngSize('public/brand/virtual-assistant-provider-apple-touch-icon.png'), [180, 180]);
 });
 
 test('all ten service records provide service specific long form depth', () => {
