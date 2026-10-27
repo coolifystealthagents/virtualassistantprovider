@@ -85,7 +85,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         "heading": "What the evidence can support",
         "paragraphs": [
           "The record can show field presence, source currency, named ownership, and where the virtual assistant placement and managed support record is thin. It can support a priority scoring guide, a reviewer calibration, an override log.",
-          "In the virtual assistant placement and managed support lane: It cannot promise an outcome, a regulator's view, or a causal result. The protocol does not judge whether the chosen priority produced the best business outcome."
+          "A protocol testing whether independent reviewers assign the same priority band to the same virtual assistant placement and managed support item. The virtualassistantprovider review should show the source, owner, next action, and exception reason for this do reviewers agree on work priority in virtual assistant placement and managed support? workflow before the item moves."
         ]
       },
       {
@@ -335,7 +335,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         "heading": "What the evidence can support",
         "paragraphs": [
           "The record can show field presence, source currency, named ownership, and where the virtual assistant placement and managed support record is thin. It can support a clock-start definition, a pause log, a weekly exception review.",
-          "In the virtual assistant placement and managed support lane: It cannot promise an outcome, a regulator's view, or a causal result. The protocol does not decide whether the service target itself was appropriate."
+          "A protocol measuring the gap between the defined clock event and the timestamp recorded in virtual assistant placement and managed support. The virtualassistantprovider review should show the source, owner, next action, and exception reason for this when does the service clock start in virtual assistant placement and managed support? workflow before the item moves."
         ]
       },
       {
@@ -585,7 +585,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         "heading": "What the evidence can support",
         "paragraphs": [
           "The record can show field presence, source currency, named ownership, and where the virtual assistant placement and managed support record is thin. It can support a dependency map, a confirmation target, a fallback rule.",
-          "In the virtual assistant placement and managed support lane: It cannot promise an outcome, a regulator's view, or a causal result. The protocol does not rank teams or prove that one staffing model is better."
+          "A protocol separating upstream wait, owner wait, and rework in virtual assistant placement and managed support dependency chains. The virtualassistantprovider review should show the source, owner, next action, and exception reason for this where do dependencies add delay in virtual assistant placement and managed support? workflow before the item moves."
         ]
       },
       {
@@ -835,7 +835,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         "heading": "What the evidence can support",
         "paragraphs": [
           "The record can show field presence, source currency, named ownership, and where the virtual assistant placement and managed support record is thin. It can support a rework reason code, a linked case record, a monthly rework review.",
-          "In the virtual assistant placement and managed support lane: It cannot promise an outcome, a regulator's view, or a causal result. The protocol does not evaluate individual performance or prove a causal staffing effect."
+          "A protocol measuring repeat effort caused by missing evidence, wrong scope, or a failed check in virtual assistant placement and managed support. The virtualassistantprovider review should show the source, owner, next action, and exception reason for this how much work is rework in virtual assistant placement and managed support? workflow before the item moves."
         ]
       },
       {
@@ -1085,7 +1085,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         "heading": "What the evidence can support",
         "paragraphs": [
           "The record can show field presence, source currency, named ownership, and where the virtual assistant placement and managed support record is thin. It can support a promise register, a verification rule, a weekly open-promise review.",
-          "In the virtual assistant placement and managed support lane: It cannot promise an outcome, a regulator's view, or a causal result. The protocol does not judge whether the original promise was commercially wise."
+          "A protocol comparing the promise date, the verified completion, and the reason for any gap in virtual assistant placement and managed support. The virtualassistantprovider review should show the source, owner, next action, and exception reason for this how often do customer promises hold in virtual assistant placement and managed support? workflow before the item moves."
         ]
       },
       {
