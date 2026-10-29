@@ -40,6 +40,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
     ],
     "sections": [
       {
+        "id": "section-1",
         "heading": "Research question and scope",
         "paragraphs": [
           "A protocol testing whether independent reviewers assign the same priority band to the same virtual assistant placement and managed support item. The virtualassistantprovider review should show the source, owner, next action, and exception reason for this do reviewers agree on work priority in virtual assistant placement and managed support? workflow before the item moves.",
@@ -47,6 +48,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-2",
         "heading": "Population and unit of analysis",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: Items open during a defined month, including duplicates, withdrawn items, and owner overrides.",
@@ -54,6 +56,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-3",
         "heading": "Definitions and measures",
         "paragraphs": [
           "At Virtual Assistant Provider: Predefine the start, stop, pause rule, and missing-evidence treatment. Measure agreement on priority band, override rate, aged high-impact items, time from scoring to owner decision.",
@@ -61,6 +64,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-4",
         "heading": "Evidence and data dictionary",
         "paragraphs": [
           "In virtual assistant placement and managed support: Each case needs the item and impact, the scoring rule, the deadline, the dependency, the reviewer note. Record the source, observation time, field, and reviewer.",
@@ -68,6 +72,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-5",
         "heading": "Sampling and collection",
         "paragraphs": [
           "For virtual assistant placement and managed support: Select cases from a frozen population with a written rule. Include ordinary, exception, reopened, and withdrawn items.",
@@ -75,6 +80,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-6",
         "heading": "Reviewer independence",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: Two reviewers classify the same cases before discussion. Compare first-pass judgments and group differences by evidence, definition, authority, or calculation.",
@@ -82,6 +88,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-7",
         "heading": "What the evidence can support",
         "paragraphs": [
           "The record can show field presence, source currency, named ownership, and where the virtual assistant placement and managed support record is thin. It can support a priority scoring guide, a reviewer calibration, an override log.",
@@ -89,6 +96,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-8",
         "heading": "Limitations and error",
         "paragraphs": [
           "In virtual assistant placement and managed support: A loud requester may bias the score. The scoring rule may allow two bands for the same facts. A sample of clean items may miss the overrides.",
@@ -96,6 +104,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-9",
         "heading": "Sensitivity and alternatives",
         "paragraphs": [
           "For virtual assistant placement and managed support: Rerun the count with a different pause rule and a different treatment of unresolved cases. If the direction changes, report the finding as fragile.",
@@ -103,6 +112,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-10",
         "heading": "Privacy, access, and retention",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: Collect the minimum fields. Use named accounts, role-based access, masked identifiers, and an approved location. Log access and set a disposal date.",
@@ -110,6 +120,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-11",
         "heading": "Operational use and reporting",
         "paragraphs": [
           "At Virtual Assistant Provider: Publish the case flow, definitions, counts, unresolved items, disagreement summary, and limits together. Separate observations, calculations, and owner judgments.",
@@ -117,6 +128,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-12",
         "heading": "Governance and stopping",
         "paragraphs": [
           "In virtual assistant placement and managed support: Name the protocol owner, data custodian, operational owner, and the reviewer who can pause the study. Pause on unauthorized disclosure or an unverifiable source.",
@@ -124,6 +136,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-13",
         "heading": "A calibration case",
         "paragraphs": [
           "For virtual assistant placement and managed support: Take one ordinary case, one exception, one withdrawn case, and one unresolved end-of-window case. Two reviewers reconstruct the evidence independently before discussion.",
@@ -131,6 +144,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-14",
         "heading": "Effort and practical constraints",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: With accessible files, the review fits a short cycle: define the population, pull and mask the sample, review, reconcile. The expensive step is finding evidence across systems.",
@@ -138,6 +152,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-15",
         "heading": "Reporting package",
         "paragraphs": [
           "At Virtual Assistant Provider: Publish the case flow, definitions, counts, unresolved items, disagreement summary, and limitations together. Label observations, calculations, and owner judgments.",
@@ -145,6 +160,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-16",
         "heading": "Interpreting a small sample",
         "paragraphs": [
           "In virtual assistant placement and managed support: A small review finds where the record breaks; it does not estimate a population rate. Report counts, fields checked, and unresolved items rather than a precise percentage.",
@@ -152,6 +168,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-17",
         "heading": "Reopening conditions",
         "paragraphs": [
           "For virtual assistant placement and managed support: Record what would reopen the conclusion: a system change, a new policy, a different client mix, or a material volume shift.",
@@ -159,6 +176,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-18",
         "heading": "A worked example of the record",
         "paragraphs": [
           "An item arrives with a source that is one version behind the current virtual assistant placement and managed support record. The reviewer flags the version, keeps the item open, and asks one question. No one rebuilds the case from memory.",
@@ -166,6 +184,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-19",
         "heading": "Common failure modes",
         "paragraphs": [
           "At Virtual Assistant Provider: The first failure is treating a status as evidence. The second is closing an item because the queue is long. The third is measuring activity without checking the record.",
@@ -173,6 +192,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-20",
         "heading": "What the result does not prove",
         "paragraphs": [
           "The result does not prove that the virtual assistant placement and managed support work was correct, that a customer will be satisfied, or that one staffing model is better. It describes the record and the process around it.",
@@ -180,6 +200,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-21",
         "heading": "A short review agenda",
         "paragraphs": [
           "For virtual assistant placement and managed support: Start with the items whose decision date has passed, then the items tied to a current revision, then the highest value items. End with a one-page summary for the owner.",
@@ -187,6 +208,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-22",
         "heading": "Data quality checks",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: Check identifiers, timestamps, impossible sequences, duplicates, and edits made after observation. Automated checks find inconsistencies; a reviewer interprets the meaning.",
@@ -194,6 +216,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-23",
         "heading": "A note on sampling",
         "paragraphs": [
           "At Virtual Assistant Provider: Sample by value and by change, not only by convenience. Include one item that was corrected, one that was escalated, and one that looked routine.",
@@ -201,6 +224,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-24",
         "heading": "A note on evidence ownership",
         "paragraphs": [
           "In virtual assistant placement and managed support: Name the person who can confirm each source and the person who can change the rule. A source without an owner is a link, not evidence.",
@@ -208,6 +232,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-25",
         "heading": "What would change the answer",
         "paragraphs": [
           "For virtual assistant placement and managed support: A new system, a policy change, a different client mix, or a material shift in volume can make the result stale. Record those triggers with the finding.",
@@ -215,6 +240,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-26",
         "heading": "Why this matters for Virtual Assistant Provider",
         "paragraphs": [
           "Virtual Assistant Provider supports businesses hiring virtual assistants with virtual assistant placement and managed support. A local protocol is useful only if it names the records this team can actually see and the decisions its owners can actually make.",
@@ -222,6 +248,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-27",
         "heading": "Writing the conclusion",
         "paragraphs": [
           "At Virtual Assistant Provider: State the question, population, window, measures, and the limits before the finding. A reader should be able to see which claims are supported and which are not.",
@@ -229,12 +256,14 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-28",
         "heading": "Related reading",
         "paragraphs": [
           "The operational control behind this protocol is described in [Prioritize a Backlog for virtual assistant placement and managed support With a Written Matrix](/blog/priority-matrix-control) and [Start the Service Clock for virtual assistant placement and managed support at the Right Event](/blog/service-clock-start-control). Public context is available in [DOL Recordkeeping Fact Sheet](https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping)."
         ]
       },
       {
+        "id": "section-29",
         "heading": "Governance and handoff",
         "paragraphs": [
           "For virtual assistant placement and managed support: Leave the protocol, codebook, sample file, and open items in one place. The next reviewer should not rebuild the method from memory.",
@@ -242,6 +271,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-30",
         "heading": "Sources",
         "paragraphs": [
           "GAO Standards for Internal Control: https://www.gao.gov/products/gao-14-704g",
@@ -290,6 +320,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
     ],
     "sections": [
       {
+        "id": "section-1",
         "heading": "Research question and scope",
         "paragraphs": [
           "How often does the recorded clock start match the defined triggering event? The scope is the operational record for virtual assistant placement and managed support, not the legal, financial, or clinical conclusion that may follow.",
@@ -297,6 +328,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-2",
         "heading": "Population and unit of analysis",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: Items opened or closed during a defined month, including pauses and resets.",
@@ -304,6 +336,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-3",
         "heading": "Definitions and measures",
         "paragraphs": [
           "At Virtual Assistant Provider: Predefine the start, stop, pause rule, and missing-evidence treatment. Measure clock-start agreement, pause rate, reset rate, days from event to recorded start.",
@@ -311,6 +344,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-4",
         "heading": "Evidence and data dictionary",
         "paragraphs": [
           "In virtual assistant placement and managed support: Each case needs the request record, the source timestamp, the service calendar, the pause note, the reset approval. Record the source, observation time, field, and reviewer.",
@@ -318,6 +352,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-5",
         "heading": "Sampling and collection",
         "paragraphs": [
           "For virtual assistant placement and managed support: Select cases from a frozen population with a written rule. Include ordinary, exception, reopened, and withdrawn items.",
@@ -325,6 +360,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-6",
         "heading": "Reviewer independence",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: Two reviewers classify the same cases before discussion. Compare first-pass judgments and group differences by evidence, definition, authority, or calculation.",
@@ -332,6 +368,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-7",
         "heading": "What the evidence can support",
         "paragraphs": [
           "The record can show field presence, source currency, named ownership, and where the virtual assistant placement and managed support record is thin. It can support a clock-start definition, a pause log, a weekly exception review.",
@@ -339,6 +376,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-8",
         "heading": "Limitations and error",
         "paragraphs": [
           "In virtual assistant placement and managed support: A system timestamp may record an open event rather than a complete request. A pause may be applied verbally and never logged. A holiday calendar can hide a late start.",
@@ -346,6 +384,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-9",
         "heading": "Sensitivity and alternatives",
         "paragraphs": [
           "For virtual assistant placement and managed support: Rerun the count with a different pause rule and a different treatment of unresolved cases. If the direction changes, report the finding as fragile.",
@@ -353,6 +392,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-10",
         "heading": "Privacy, access, and retention",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: Collect the minimum fields. Use named accounts, role-based access, masked identifiers, and an approved location. Log access and set a disposal date.",
@@ -360,6 +400,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-11",
         "heading": "Operational use and reporting",
         "paragraphs": [
           "At Virtual Assistant Provider: Publish the case flow, definitions, counts, unresolved items, disagreement summary, and limits together. Separate observations, calculations, and owner judgments.",
@@ -367,6 +408,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-12",
         "heading": "Governance and stopping",
         "paragraphs": [
           "In virtual assistant placement and managed support: Name the protocol owner, data custodian, operational owner, and the reviewer who can pause the study. Pause on unauthorized disclosure or an unverifiable source.",
@@ -374,6 +416,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-13",
         "heading": "A calibration case",
         "paragraphs": [
           "For virtual assistant placement and managed support: Take one ordinary case, one exception, one withdrawn case, and one unresolved end-of-window case. Two reviewers reconstruct the evidence independently before discussion.",
@@ -381,6 +424,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-14",
         "heading": "Effort and practical constraints",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: With accessible files, the review fits a short cycle: define the population, pull and mask the sample, review, reconcile. The expensive step is finding evidence across systems.",
@@ -388,6 +432,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-15",
         "heading": "Reporting package",
         "paragraphs": [
           "At Virtual Assistant Provider: Publish the case flow, definitions, counts, unresolved items, disagreement summary, and limitations together. Label observations, calculations, and owner judgments.",
@@ -395,6 +440,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-16",
         "heading": "Interpreting a small sample",
         "paragraphs": [
           "In virtual assistant placement and managed support: A small review finds where the record breaks; it does not estimate a population rate. Report counts, fields checked, and unresolved items rather than a precise percentage.",
@@ -402,6 +448,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-17",
         "heading": "Reopening conditions",
         "paragraphs": [
           "For virtual assistant placement and managed support: Record what would reopen the conclusion: a system change, a new policy, a different client mix, or a material volume shift.",
@@ -409,6 +456,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-18",
         "heading": "A worked example of the record",
         "paragraphs": [
           "An item arrives with a source that is one version behind the current virtual assistant placement and managed support record. The reviewer flags the version, keeps the item open, and asks one question. No one rebuilds the case from memory.",
@@ -416,6 +464,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-19",
         "heading": "Common failure modes",
         "paragraphs": [
           "At Virtual Assistant Provider: The first failure is treating a status as evidence. The second is closing an item because the queue is long. The third is measuring activity without checking the record.",
@@ -423,6 +472,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-20",
         "heading": "What the result does not prove",
         "paragraphs": [
           "The result does not prove that the virtual assistant placement and managed support work was correct, that a customer will be satisfied, or that one staffing model is better. It describes the record and the process around it.",
@@ -430,6 +480,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-21",
         "heading": "A short review agenda",
         "paragraphs": [
           "For virtual assistant placement and managed support: Start with the items whose decision date has passed, then the items tied to a current revision, then the highest value items. End with a one-page summary for the owner.",
@@ -437,6 +488,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-22",
         "heading": "Data quality checks",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: Check identifiers, timestamps, impossible sequences, duplicates, and edits made after observation. Automated checks find inconsistencies; a reviewer interprets the meaning.",
@@ -444,6 +496,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-23",
         "heading": "A note on sampling",
         "paragraphs": [
           "At Virtual Assistant Provider: Sample by value and by change, not only by convenience. Include one item that was corrected, one that was escalated, and one that looked routine.",
@@ -451,6 +504,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-24",
         "heading": "A note on evidence ownership",
         "paragraphs": [
           "In virtual assistant placement and managed support: Name the person who can confirm each source and the person who can change the rule. A source without an owner is a link, not evidence.",
@@ -458,6 +512,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-25",
         "heading": "What would change the answer",
         "paragraphs": [
           "For virtual assistant placement and managed support: A new system, a policy change, a different client mix, or a material shift in volume can make the result stale. Record those triggers with the finding.",
@@ -465,6 +520,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-26",
         "heading": "Why this matters for Virtual Assistant Provider",
         "paragraphs": [
           "Virtual Assistant Provider supports businesses hiring virtual assistants with virtual assistant placement and managed support. A local protocol is useful only if it names the records this team can actually see and the decisions its owners can actually make.",
@@ -472,6 +528,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-27",
         "heading": "Writing the conclusion",
         "paragraphs": [
           "At Virtual Assistant Provider: State the question, population, window, measures, and the limits before the finding. A reader should be able to see which claims are supported and which are not.",
@@ -479,12 +536,14 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-28",
         "heading": "Related reading",
         "paragraphs": [
           "The operational control behind this protocol is described in [Start the Service Clock for virtual assistant placement and managed support at the Right Event](/blog/service-clock-start-control) and [Confirm a virtual assistant placement and managed support Request in Writing Before Work Starts](/blog/requester-confirmation-control). Public context is available in [National Archives Records Management](https://www.archives.gov/records-mgmt)."
         ]
       },
       {
+        "id": "section-29",
         "heading": "Governance and handoff",
         "paragraphs": [
           "For virtual assistant placement and managed support: Leave the protocol, codebook, sample file, and open items in one place. The next reviewer should not rebuild the method from memory.",
@@ -492,6 +551,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-30",
         "heading": "Sources",
         "paragraphs": [
           "NIST Cybersecurity Framework: https://www.nist.gov/cyberframework",
@@ -540,6 +600,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
     ],
     "sections": [
       {
+        "id": "section-1",
         "heading": "Research question and scope",
         "paragraphs": [
           "A protocol separating upstream wait, owner wait, and rework in virtual assistant placement and managed support dependency chains. The virtualassistantprovider review should show the source, owner, next action, and exception reason for this where do dependencies add delay in virtual assistant placement and managed support? workflow before the item moves.",
@@ -547,6 +608,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-2",
         "heading": "Population and unit of analysis",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: Items with at least one external dependency during a defined quarter.",
@@ -554,6 +616,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-3",
         "heading": "Definitions and measures",
         "paragraphs": [
           "At Virtual Assistant Provider: Predefine the start, stop, pause rule, and missing-evidence treatment. Measure median days by wait reason, dependencies confirmed late, promises at risk, fallbacks used.",
@@ -561,6 +624,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-4",
         "heading": "Evidence and data dictionary",
         "paragraphs": [
           "In virtual assistant placement and managed support: Each case needs the dependency map, the owner assignment, the confirmation date, the promise date, the fallback record. Record the source, observation time, field, and reviewer.",
@@ -568,6 +632,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-5",
         "heading": "Sampling and collection",
         "paragraphs": [
           "For virtual assistant placement and managed support: Select cases from a frozen population with a written rule. Include ordinary, exception, reopened, and withdrawn items.",
@@ -575,6 +640,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-6",
         "heading": "Reviewer independence",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: Two reviewers classify the same cases before discussion. Compare first-pass judgments and group differences by evidence, definition, authority, or calculation.",
@@ -582,6 +648,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-7",
         "heading": "What the evidence can support",
         "paragraphs": [
           "The record can show field presence, source currency, named ownership, and where the virtual assistant placement and managed support record is thin. It can support a dependency map, a confirmation target, a fallback rule.",
@@ -589,6 +656,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-8",
         "heading": "Limitations and error",
         "paragraphs": [
           "In virtual assistant placement and managed support: A dependency may be confirmed verbally and not recorded. A late input can look like internal delay if the request date is missing. The sample may exclude the oldest unresolved items.",
@@ -596,6 +664,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-9",
         "heading": "Sensitivity and alternatives",
         "paragraphs": [
           "For virtual assistant placement and managed support: Rerun the count with a different pause rule and a different treatment of unresolved cases. If the direction changes, report the finding as fragile.",
@@ -603,6 +672,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-10",
         "heading": "Privacy, access, and retention",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: Collect the minimum fields. Use named accounts, role-based access, masked identifiers, and an approved location. Log access and set a disposal date.",
@@ -610,6 +680,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-11",
         "heading": "Operational use and reporting",
         "paragraphs": [
           "At Virtual Assistant Provider: Publish the case flow, definitions, counts, unresolved items, disagreement summary, and limits together. Separate observations, calculations, and owner judgments.",
@@ -617,6 +688,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-12",
         "heading": "Governance and stopping",
         "paragraphs": [
           "In virtual assistant placement and managed support: Name the protocol owner, data custodian, operational owner, and the reviewer who can pause the study. Pause on unauthorized disclosure or an unverifiable source.",
@@ -624,6 +696,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-13",
         "heading": "A calibration case",
         "paragraphs": [
           "For virtual assistant placement and managed support: Take one ordinary case, one exception, one withdrawn case, and one unresolved end-of-window case. Two reviewers reconstruct the evidence independently before discussion.",
@@ -631,6 +704,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-14",
         "heading": "Effort and practical constraints",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: With accessible files, the review fits a short cycle: define the population, pull and mask the sample, review, reconcile. The expensive step is finding evidence across systems.",
@@ -638,6 +712,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-15",
         "heading": "Reporting package",
         "paragraphs": [
           "At Virtual Assistant Provider: Publish the case flow, definitions, counts, unresolved items, disagreement summary, and limitations together. Label observations, calculations, and owner judgments.",
@@ -645,6 +720,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-16",
         "heading": "Interpreting a small sample",
         "paragraphs": [
           "In virtual assistant placement and managed support: A small review finds where the record breaks; it does not estimate a population rate. Report counts, fields checked, and unresolved items rather than a precise percentage.",
@@ -652,6 +728,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-17",
         "heading": "Reopening conditions",
         "paragraphs": [
           "For virtual assistant placement and managed support: Record what would reopen the conclusion: a system change, a new policy, a different client mix, or a material volume shift.",
@@ -659,6 +736,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-18",
         "heading": "A worked example of the record",
         "paragraphs": [
           "An item arrives with a source that is one version behind the current virtual assistant placement and managed support record. The reviewer flags the version, keeps the item open, and asks one question. No one rebuilds the case from memory.",
@@ -666,6 +744,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-19",
         "heading": "Common failure modes",
         "paragraphs": [
           "At Virtual Assistant Provider: The first failure is treating a status as evidence. The second is closing an item because the queue is long. The third is measuring activity without checking the record.",
@@ -673,6 +752,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-20",
         "heading": "What the result does not prove",
         "paragraphs": [
           "The result does not prove that the virtual assistant placement and managed support work was correct, that a customer will be satisfied, or that one staffing model is better. It describes the record and the process around it.",
@@ -680,6 +760,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-21",
         "heading": "A short review agenda",
         "paragraphs": [
           "For virtual assistant placement and managed support: Start with the items whose decision date has passed, then the items tied to a current revision, then the highest value items. End with a one-page summary for the owner.",
@@ -687,6 +768,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-22",
         "heading": "Data quality checks",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: Check identifiers, timestamps, impossible sequences, duplicates, and edits made after observation. Automated checks find inconsistencies; a reviewer interprets the meaning.",
@@ -694,6 +776,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-23",
         "heading": "A note on sampling",
         "paragraphs": [
           "At Virtual Assistant Provider: Sample by value and by change, not only by convenience. Include one item that was corrected, one that was escalated, and one that looked routine.",
@@ -701,6 +784,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-24",
         "heading": "A note on evidence ownership",
         "paragraphs": [
           "In virtual assistant placement and managed support: Name the person who can confirm each source and the person who can change the rule. A source without an owner is a link, not evidence.",
@@ -708,6 +792,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-25",
         "heading": "What would change the answer",
         "paragraphs": [
           "For virtual assistant placement and managed support: A new system, a policy change, a different client mix, or a material shift in volume can make the result stale. Record those triggers with the finding.",
@@ -715,6 +800,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-26",
         "heading": "Why this matters for Virtual Assistant Provider",
         "paragraphs": [
           "Virtual Assistant Provider supports businesses hiring virtual assistants with virtual assistant placement and managed support. A local protocol is useful only if it names the records this team can actually see and the decisions its owners can actually make.",
@@ -722,6 +808,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-27",
         "heading": "Writing the conclusion",
         "paragraphs": [
           "At Virtual Assistant Provider: State the question, population, window, measures, and the limits before the finding. A reader should be able to see which claims are supported and which are not.",
@@ -729,12 +816,14 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-28",
         "heading": "Related reading",
         "paragraphs": [
           "The operational control behind this protocol is described in [Confirm a virtual assistant placement and managed support Request in Writing Before Work Starts](/blog/requester-confirmation-control) and [Map Dependencies for virtual assistant placement and managed support Before Promising a Date](/blog/dependency-map-control). Public context is available in [GAO Standards for Internal Control](https://www.gao.gov/products/gao-14-704g)."
         ]
       },
       {
+        "id": "section-29",
         "heading": "Governance and handoff",
         "paragraphs": [
           "For virtual assistant placement and managed support: Leave the protocol, codebook, sample file, and open items in one place. The next reviewer should not rebuild the method from memory.",
@@ -742,6 +831,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-30",
         "heading": "Sources",
         "paragraphs": [
           "SBA Manage Your Business: https://www.sba.gov/business-guide/manage-your-business",
@@ -790,6 +880,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
     ],
     "sections": [
       {
+        "id": "section-1",
         "heading": "Research question and scope",
         "paragraphs": [
           "What share of handled items is rework, and which reason codes explain it? The scope is the operational record for virtual assistant placement and managed support, not the legal, financial, or clinical conclusion that may follow.",
@@ -797,6 +888,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-2",
         "heading": "Population and unit of analysis",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: Items handled during a defined month, including reopened and corrected cases.",
@@ -804,6 +896,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-3",
         "heading": "Definitions and measures",
         "paragraphs": [
           "At Virtual Assistant Provider: Predefine the start, stop, pause rule, and missing-evidence treatment. Measure rework share, rework by reason, days to correction, repeat rework after a change.",
@@ -811,6 +904,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-4",
         "heading": "Evidence and data dictionary",
         "paragraphs": [
           "In virtual assistant placement and managed support: Each case needs the original item, the rework note, the reason code, the correction, the rule change. Record the source, observation time, field, and reviewer.",
@@ -818,6 +912,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-5",
         "heading": "Sampling and collection",
         "paragraphs": [
           "For virtual assistant placement and managed support: Select cases from a frozen population with a written rule. Include ordinary, exception, reopened, and withdrawn items.",
@@ -825,6 +920,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-6",
         "heading": "Reviewer independence",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: Two reviewers classify the same cases before discussion. Compare first-pass judgments and group differences by evidence, definition, authority, or calculation.",
@@ -832,6 +928,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-7",
         "heading": "What the evidence can support",
         "paragraphs": [
           "The record can show field presence, source currency, named ownership, and where the virtual assistant placement and managed support record is thin. It can support a rework reason code, a linked case record, a monthly rework review.",
@@ -839,6 +936,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-8",
         "heading": "Limitations and error",
         "paragraphs": [
           "In virtual assistant placement and managed support: A new request may be mislabeled as rework. Self-reported time may be rounded. A short window may miss a monthly correction cycle.",
@@ -846,6 +944,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-9",
         "heading": "Sensitivity and alternatives",
         "paragraphs": [
           "For virtual assistant placement and managed support: Rerun the count with a different pause rule and a different treatment of unresolved cases. If the direction changes, report the finding as fragile.",
@@ -853,6 +952,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-10",
         "heading": "Privacy, access, and retention",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: Collect the minimum fields. Use named accounts, role-based access, masked identifiers, and an approved location. Log access and set a disposal date.",
@@ -860,6 +960,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-11",
         "heading": "Operational use and reporting",
         "paragraphs": [
           "At Virtual Assistant Provider: Publish the case flow, definitions, counts, unresolved items, disagreement summary, and limits together. Separate observations, calculations, and owner judgments.",
@@ -867,6 +968,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-12",
         "heading": "Governance and stopping",
         "paragraphs": [
           "In virtual assistant placement and managed support: Name the protocol owner, data custodian, operational owner, and the reviewer who can pause the study. Pause on unauthorized disclosure or an unverifiable source.",
@@ -874,6 +976,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-13",
         "heading": "A calibration case",
         "paragraphs": [
           "For virtual assistant placement and managed support: Take one ordinary case, one exception, one withdrawn case, and one unresolved end-of-window case. Two reviewers reconstruct the evidence independently before discussion.",
@@ -881,6 +984,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-14",
         "heading": "Effort and practical constraints",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: With accessible files, the review fits a short cycle: define the population, pull and mask the sample, review, reconcile. The expensive step is finding evidence across systems.",
@@ -888,6 +992,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-15",
         "heading": "Reporting package",
         "paragraphs": [
           "At Virtual Assistant Provider: Publish the case flow, definitions, counts, unresolved items, disagreement summary, and limitations together. Label observations, calculations, and owner judgments.",
@@ -895,6 +1000,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-16",
         "heading": "Interpreting a small sample",
         "paragraphs": [
           "In virtual assistant placement and managed support: A small review finds where the record breaks; it does not estimate a population rate. Report counts, fields checked, and unresolved items rather than a precise percentage.",
@@ -902,6 +1008,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-17",
         "heading": "Reopening conditions",
         "paragraphs": [
           "For virtual assistant placement and managed support: Record what would reopen the conclusion: a system change, a new policy, a different client mix, or a material volume shift.",
@@ -909,6 +1016,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-18",
         "heading": "A worked example of the record",
         "paragraphs": [
           "An item arrives with a source that is one version behind the current virtual assistant placement and managed support record. The reviewer flags the version, keeps the item open, and asks one question. No one rebuilds the case from memory.",
@@ -916,6 +1024,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-19",
         "heading": "Common failure modes",
         "paragraphs": [
           "At Virtual Assistant Provider: The first failure is treating a status as evidence. The second is closing an item because the queue is long. The third is measuring activity without checking the record.",
@@ -923,6 +1032,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-20",
         "heading": "What the result does not prove",
         "paragraphs": [
           "The result does not prove that the virtual assistant placement and managed support work was correct, that a customer will be satisfied, or that one staffing model is better. It describes the record and the process around it.",
@@ -930,6 +1040,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-21",
         "heading": "A short review agenda",
         "paragraphs": [
           "For virtual assistant placement and managed support: Start with the items whose decision date has passed, then the items tied to a current revision, then the highest value items. End with a one-page summary for the owner.",
@@ -937,6 +1048,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-22",
         "heading": "Data quality checks",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: Check identifiers, timestamps, impossible sequences, duplicates, and edits made after observation. Automated checks find inconsistencies; a reviewer interprets the meaning.",
@@ -944,6 +1056,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-23",
         "heading": "A note on sampling",
         "paragraphs": [
           "At Virtual Assistant Provider: Sample by value and by change, not only by convenience. Include one item that was corrected, one that was escalated, and one that looked routine.",
@@ -951,6 +1064,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-24",
         "heading": "A note on evidence ownership",
         "paragraphs": [
           "In virtual assistant placement and managed support: Name the person who can confirm each source and the person who can change the rule. A source without an owner is a link, not evidence.",
@@ -958,6 +1072,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-25",
         "heading": "What would change the answer",
         "paragraphs": [
           "For virtual assistant placement and managed support: A new system, a policy change, a different client mix, or a material shift in volume can make the result stale. Record those triggers with the finding.",
@@ -965,6 +1080,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-26",
         "heading": "Why this matters for Virtual Assistant Provider",
         "paragraphs": [
           "Virtual Assistant Provider supports businesses hiring virtual assistants with virtual assistant placement and managed support. A local protocol is useful only if it names the records this team can actually see and the decisions its owners can actually make.",
@@ -972,6 +1088,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-27",
         "heading": "Writing the conclusion",
         "paragraphs": [
           "At Virtual Assistant Provider: State the question, population, window, measures, and the limits before the finding. A reader should be able to see which claims are supported and which are not.",
@@ -979,12 +1096,14 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-28",
         "heading": "Related reading",
         "paragraphs": [
           "The operational control behind this protocol is described in [Map Dependencies for virtual assistant placement and managed support Before Promising a Date](/blog/dependency-map-control) and [Separate Rework From New Work in virtual assistant placement and managed support](/blog/rework-root-cause-control). Public context is available in [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)."
         ]
       },
       {
+        "id": "section-29",
         "heading": "Governance and handoff",
         "paragraphs": [
           "For virtual assistant placement and managed support: Leave the protocol, codebook, sample file, and open items in one place. The next reviewer should not rebuild the method from memory.",
@@ -992,6 +1111,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-30",
         "heading": "Sources",
         "paragraphs": [
           "DOL Recordkeeping Fact Sheet: https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping",
@@ -1040,6 +1160,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
     ],
     "sections": [
       {
+        "id": "section-1",
         "heading": "Research question and scope",
         "paragraphs": [
           "What share of recorded customer promises were verified by the promised date? The scope is the operational record for virtual assistant placement and managed support, not the legal, financial, or clinical conclusion that may follow.",
@@ -1047,6 +1168,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-2",
         "heading": "Population and unit of analysis",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: Promises made during a defined month, including changed, withdrawn, and late promises.",
@@ -1054,6 +1176,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-3",
         "heading": "Definitions and measures",
         "paragraphs": [
           "At Virtual Assistant Provider: Predefine the start, stop, pause rule, and missing-evidence treatment. Measure promise-kept rate, days late, conflicting promises, promises without an owner.",
@@ -1061,6 +1184,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-4",
         "heading": "Evidence and data dictionary",
         "paragraphs": [
           "In virtual assistant placement and managed support: Each case needs the promise entry, the owner, the evidence, the verification date, the change note. Record the source, observation time, field, and reviewer.",
@@ -1068,6 +1192,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-5",
         "heading": "Sampling and collection",
         "paragraphs": [
           "For virtual assistant placement and managed support: Select cases from a frozen population with a written rule. Include ordinary, exception, reopened, and withdrawn items.",
@@ -1075,6 +1200,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-6",
         "heading": "Reviewer independence",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: Two reviewers classify the same cases before discussion. Compare first-pass judgments and group differences by evidence, definition, authority, or calculation.",
@@ -1082,6 +1208,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-7",
         "heading": "What the evidence can support",
         "paragraphs": [
           "The record can show field presence, source currency, named ownership, and where the virtual assistant placement and managed support record is thin. It can support a promise register, a verification rule, a weekly open-promise review.",
@@ -1089,6 +1216,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-8",
         "heading": "Limitations and error",
         "paragraphs": [
           "In virtual assistant placement and managed support: A promise may be made in a call and recorded late. A message sent is not proof that the result was verified. A changed promise may be excluded unfairly.",
@@ -1096,6 +1224,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-9",
         "heading": "Sensitivity and alternatives",
         "paragraphs": [
           "For virtual assistant placement and managed support: Rerun the count with a different pause rule and a different treatment of unresolved cases. If the direction changes, report the finding as fragile.",
@@ -1103,6 +1232,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-10",
         "heading": "Privacy, access, and retention",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: Collect the minimum fields. Use named accounts, role-based access, masked identifiers, and an approved location. Log access and set a disposal date.",
@@ -1110,6 +1240,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-11",
         "heading": "Operational use and reporting",
         "paragraphs": [
           "At Virtual Assistant Provider: Publish the case flow, definitions, counts, unresolved items, disagreement summary, and limits together. Separate observations, calculations, and owner judgments.",
@@ -1117,6 +1248,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-12",
         "heading": "Governance and stopping",
         "paragraphs": [
           "In virtual assistant placement and managed support: Name the protocol owner, data custodian, operational owner, and the reviewer who can pause the study. Pause on unauthorized disclosure or an unverifiable source.",
@@ -1124,6 +1256,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-13",
         "heading": "A calibration case",
         "paragraphs": [
           "For virtual assistant placement and managed support: Take one ordinary case, one exception, one withdrawn case, and one unresolved end-of-window case. Two reviewers reconstruct the evidence independently before discussion.",
@@ -1131,6 +1264,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-14",
         "heading": "Effort and practical constraints",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: With accessible files, the review fits a short cycle: define the population, pull and mask the sample, review, reconcile. The expensive step is finding evidence across systems.",
@@ -1138,6 +1272,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-15",
         "heading": "Reporting package",
         "paragraphs": [
           "At Virtual Assistant Provider: Publish the case flow, definitions, counts, unresolved items, disagreement summary, and limitations together. Label observations, calculations, and owner judgments.",
@@ -1145,6 +1280,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-16",
         "heading": "Interpreting a small sample",
         "paragraphs": [
           "In virtual assistant placement and managed support: A small review finds where the record breaks; it does not estimate a population rate. Report counts, fields checked, and unresolved items rather than a precise percentage.",
@@ -1152,6 +1288,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-17",
         "heading": "Reopening conditions",
         "paragraphs": [
           "For virtual assistant placement and managed support: Record what would reopen the conclusion: a system change, a new policy, a different client mix, or a material volume shift.",
@@ -1159,6 +1296,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-18",
         "heading": "A worked example of the record",
         "paragraphs": [
           "An item arrives with a source that is one version behind the current virtual assistant placement and managed support record. The reviewer flags the version, keeps the item open, and asks one question. No one rebuilds the case from memory.",
@@ -1166,6 +1304,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-19",
         "heading": "Common failure modes",
         "paragraphs": [
           "At Virtual Assistant Provider: The first failure is treating a status as evidence. The second is closing an item because the queue is long. The third is measuring activity without checking the record.",
@@ -1173,6 +1312,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-20",
         "heading": "What the result does not prove",
         "paragraphs": [
           "The result does not prove that the virtual assistant placement and managed support work was correct, that a customer will be satisfied, or that one staffing model is better. It describes the record and the process around it.",
@@ -1180,6 +1320,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-21",
         "heading": "A short review agenda",
         "paragraphs": [
           "For virtual assistant placement and managed support: Start with the items whose decision date has passed, then the items tied to a current revision, then the highest value items. End with a one-page summary for the owner.",
@@ -1187,6 +1328,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-22",
         "heading": "Data quality checks",
         "paragraphs": [
           "In the virtual assistant placement and managed support lane: Check identifiers, timestamps, impossible sequences, duplicates, and edits made after observation. Automated checks find inconsistencies; a reviewer interprets the meaning.",
@@ -1194,6 +1336,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-23",
         "heading": "A note on sampling",
         "paragraphs": [
           "At Virtual Assistant Provider: Sample by value and by change, not only by convenience. Include one item that was corrected, one that was escalated, and one that looked routine.",
@@ -1201,6 +1344,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-24",
         "heading": "A note on evidence ownership",
         "paragraphs": [
           "In virtual assistant placement and managed support: Name the person who can confirm each source and the person who can change the rule. A source without an owner is a link, not evidence.",
@@ -1208,6 +1352,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-25",
         "heading": "What would change the answer",
         "paragraphs": [
           "For virtual assistant placement and managed support: A new system, a policy change, a different client mix, or a material shift in volume can make the result stale. Record those triggers with the finding.",
@@ -1215,6 +1360,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-26",
         "heading": "Why this matters for Virtual Assistant Provider",
         "paragraphs": [
           "Virtual Assistant Provider supports businesses hiring virtual assistants with virtual assistant placement and managed support. A local protocol is useful only if it names the records this team can actually see and the decisions its owners can actually make.",
@@ -1222,6 +1368,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-27",
         "heading": "Writing the conclusion",
         "paragraphs": [
           "At Virtual Assistant Provider: State the question, population, window, measures, and the limits before the finding. A reader should be able to see which claims are supported and which are not.",
@@ -1229,12 +1376,14 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-28",
         "heading": "Related reading",
         "paragraphs": [
           "The operational control behind this protocol is described in [Separate Rework From New Work in virtual assistant placement and managed support](/blog/rework-root-cause-control) and [Build a Coverage Bench for virtual assistant placement and managed support Without Hidden Overtime](/blog/coverage-bench-control). Public context is available in [SBA Manage Your Business](https://www.sba.gov/business-guide/manage-your-business)."
         ]
       },
       {
+        "id": "section-29",
         "heading": "Governance and handoff",
         "paragraphs": [
           "For virtual assistant placement and managed support: Leave the protocol, codebook, sample file, and open items in one place. The next reviewer should not rebuild the method from memory.",
@@ -1242,6 +1391,7 @@ export const oct27ResearchPosts: readonly Publication[] = [
         ]
       },
       {
+        "id": "section-30",
         "heading": "Sources",
         "paragraphs": [
           "National Archives Records Management: https://www.archives.gov/records-mgmt",
