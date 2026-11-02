@@ -1,0 +1,24 @@
+{
+ "date": "2026-11-02",
+ "blog": [
+  "virtualassistantprovider-va-queue-review-2026-11-02",
+  "virtualassistantprovider-timesheet-evidence-2026-11-02",
+  "virtualassistantprovider-access-boundary-2026-11-02",
+  "virtualassistantprovider-onboarding-checklist-2026-11-02",
+  "virtualassistantprovider-quality-sample-2026-11-02",
+  "virtualassistantprovider-backup-coverage-2026-11-02",
+  "virtualassistantprovider-document-handoff-2026-11-02",
+  "virtualassistantprovider-timezone-coverage-2026-11-02",
+  "virtualassistantprovider-client-update-2026-11-02",
+  "virtualassistantprovider-sop-review-2026-11-02",
+  "virtualassistantprovider-invoice-followup-2026-11-02",
+  "virtualassistantprovider-weekly-va-review-2026-11-02"
+ ],
+ "research": [
+  "virtualassistantprovider-research-timesheet-latency-2026-11-02",
+  "virtualassistantprovider-research-document-completeness-2026-11-02",
+  "virtualassistantprovider-research-quality-sample-rework-2026-11-02",
+  "virtualassistantprovider-research-backup-coverage-gap-2026-11-02",
+  "virtualassistantprovider-research-access-removal-lag-2026-11-02"
+ ]
+}

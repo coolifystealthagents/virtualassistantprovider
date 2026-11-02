@@ -73,11 +73,14 @@ import { oct22BlogPosts, oct22ResearchPosts } from './oct22-publications';
 import { oct25BlogPosts } from './oct25-blog-publications';
 import { oct26BlogPosts } from './oct26-blog-publications';
 import { oct27BlogPosts } from './oct27-blog-publications';
+import { nov02BlogPublications } from './nov02-publications';
+import { nov02ResearchPublications } from './nov02-research-publications';
 import { oct25ResearchPosts } from './oct25-research-publications';
 import { oct26ResearchPosts } from './oct26-research-publications';
 import { oct27ResearchPosts } from './oct27-research-publications';
 
 export const publishedBlogPosts: readonly Publication[] = [
+  ...nov02BlogPublications,
   ...oct27BlogPosts,
   ...oct26BlogPosts,
   ...oct25BlogPosts,
@@ -103,6 +106,7 @@ const researchSections = (question: string, limits: string): readonly EditorialS
 ];
 
 export const publishedResearchPosts: readonly Publication[] = [
+  ...nov02ResearchPublications,
   ...oct27ResearchPosts,
   ...oct26ResearchPosts,
   ...oct25ResearchPosts,

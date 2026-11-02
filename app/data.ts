@@ -540,6 +540,8 @@ const august11BlogPosts: BlogPost[] = [
 }));
 
 blogPosts.push(...august11BlogPosts, ...august12ReplacementBlogPosts, ...august13BlogPosts, ...august14BlogPosts, ...august17BlogPosts, ...august20BlogPosts, ...august21BlogPosts, ...august23BlogPosts, ...august31BlogPosts, ...september1BlogPosts, ...september2BlogPosts, ...september4BlogPosts, ...september7BlogPosts, ...september8BlogPosts, ...september9BlogPosts, ...september10BlogPosts, ...september11BlogPosts, ...september14BlogPosts, ...september22BlogPosts, ...september23BlogPosts, ...september24BlogPosts, ...september25BlogPosts, ...september28BlogPosts, ...october2BlogPosts, ...october5BlogPosts, ...october5BlogPostsB, ...october5BlogPostsC, ...october5BlogPostsD, ...october5BlogPostsE, ...october8BlogPosts, ...october9BlogPosts, ...october12BlogPosts);
+import { nov02BlogSummaries } from './nov02-publications';
+blogPosts.push(...nov02BlogSummaries);
 blogPosts.push(...october13BlogPosts);
 
 // Keep dated articles newest-first while preserving source order for equal dates.
