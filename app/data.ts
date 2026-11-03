@@ -248,7 +248,7 @@ export type BlogPost = {
   takeaways: string[];
   sections: { heading: string; body: string; bullets?: string[] }[];
   faq: { question: string; answer: string }[];
-  sources: { name: string; url: string; note: string }[];
+  sources: { name: string; url: string; note?: string }[];
   relatedServices: string[];
   published?: string;
   updated?: string;
