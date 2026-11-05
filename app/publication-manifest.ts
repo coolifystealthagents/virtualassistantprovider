@@ -15,6 +15,7 @@ export type Publication = {
   updated?: string;
   readingMinutes: number;
   heroImage: string;
+  thumbnail?: string;
   heroAlt: string;
   topic: string;
   relatedService: { href: string; label: string };
@@ -76,14 +77,17 @@ import { oct27BlogPosts } from './oct27-blog-publications';
 import { nov02BlogPublications } from './nov02-publications';
 import { nov04BlogPublications } from './nov04-publications';
 import { nov03BlogPublications } from './nov03-publications';
+import { nov05BlogPublications } from './blog-nov05-publications';
 import { nov02ResearchPublications } from './nov02-research-publications';
 import { nov04ResearchPublications } from './nov04-research-publications';
 import { nov03ResearchPublications } from './nov03-research-publications';
+import { nov05ResearchPublications } from './research-nov05-publications';
 import { oct25ResearchPosts } from './oct25-research-publications';
 import { oct26ResearchPosts } from './oct26-research-publications';
 import { oct27ResearchPosts } from './oct27-research-publications';
 
 export const publishedBlogPosts: readonly Publication[] = [
+  ...nov05BlogPublications,
   ...nov03BlogPublications,
   ...nov02BlogPublications,
   ...oct27BlogPosts,
@@ -111,6 +115,7 @@ const researchSections = (question: string, limits: string): readonly EditorialS
 ];
 
 export const publishedResearchPosts: readonly Publication[] = [
+  ...nov05ResearchPublications,
   ...nov03ResearchPublications,
   ...nov02ResearchPublications,
   ...oct27ResearchPosts,
