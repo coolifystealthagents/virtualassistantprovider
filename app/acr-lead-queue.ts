@@ -62,7 +62,7 @@ export function trackOrQueueAcrLead(payload: AcrLeadPayload): 'queued' | 'attemp
 
   if (typeof tracker?.trackLead !== 'function') return 'dropped';
   try {
-    tracker.trackLead(payload);
+    /* ACR captures the native submit event once. */
   } catch {
     // Treat invocation as at-most-once: the tracker may have sent before throwing.
   }
@@ -82,7 +82,7 @@ export function flushPendingAcrLead(): 'empty' | 'waiting' | 'sent' {
     if (!writeQueue(remaining)) return 'waiting';
 
     try {
-      tracker.trackLead(queue.items[index]);
+      /* ACR captures the native submit event once. */
     } catch {
       // Do not restore and retry: a tracker can throw after transmitting.
     }

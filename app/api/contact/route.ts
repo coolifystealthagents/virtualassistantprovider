@@ -113,5 +113,5 @@ export async function POST(request: NextRequest) {
     return errorPage(502);
   }
   void sendLeadFallbackToMattermost({ name, email, phone, business, message, companySize, positions, referral, pageUrl, userAgent: request.headers.get('user-agent') || '' });
-  return NextResponse.redirect(new URL('/thank-you?lead=accepted', getTrustedRequestOrigin(request)), 303);
+  if (request.headers.get('accept')?.includes('application/json')) return Response.json({ok:true,redirect:'/thank-you?lead=accepted'}, {headers:{'cache-control':'no-store'}});return NextResponse.redirect(new URL('/thank-you?lead=accepted', getTrustedRequestOrigin(request)), 303);
 }
