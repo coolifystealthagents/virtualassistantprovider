@@ -39,7 +39,7 @@ export function Footer() {
   return <footer className="footer legit-footer">
     <div className="footer-grid">
       <div className="footer-brand"><a className="footer-logo" href="/" aria-label="Virtual Assistant Provider home"><LogoMark /></a><p>{site.brand || 'Virtual Assistant Provider'} helps businesses scope Philippines-based support with explicit ownership, access, review, and escalation paths.</p><ParentAttribution footer /></div>
-      <div><h2>Explore</h2><div className="footer-links"><a href="/services">Services</a><a href="/pricing">Pricing</a><a href="/blog">Blog</a><a href="/research">Research</a></div></div>
+      <div><h2>Explore</h2><div className="footer-links"><a href="/services">Services</a><a href="/blog">Blog</a><a href="/research">Research</a></div></div>
       <div><h2>Company</h2><div className="footer-links"><a href="/about">About</a><a href="/contact-us">Contact Us</a><a href="/privacy">Privacy Policy</a><a href="/terms">Terms &amp; Conditions</a><a href="/cancellation-policy">Cancellation Policy</a></div></div>
     </div>
     <div className="footer-bottom"><span>© {year} {site.brand || 'Virtual Assistant Provider'}. All rights reserved.</span><span>{domain}</span></div>

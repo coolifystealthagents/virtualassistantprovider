@@ -33,8 +33,8 @@ export const fleetServices = [
     "slug": "executive-assistant-staffing",
     "title": "Executive Assistant Staffing",
     "summary": "Philippines-based executive support for calendar coordination, inbox triage, travel research, and follow-through, with commitments, spending, and sensitive judgment kept with the executive.",
-    "heroImage": "/featured/executive-assistant-calendar-delegation.png",
-    "heroImageAlt": "Executive calendar delegation workflow with scheduling rules and approval boundaries",
+    "heroImage": "/images/professional-services/executive-assistant-7693683.jpg",
+    "heroImageAlt": "Executive and assistant reviewing schedules and business records together on a laptop",
     "tasks": [
       "Triage inbox messages using approved labels and escalation rules",
       "Coordinate meetings, time zones, buffers, and attendee details",
@@ -56,8 +56,8 @@ export const fleetServices = [
     "slug": "operations-assistant-staffing",
     "title": "Operations Assistant Staffing",
     "summary": "Philippines-based operations support for recurring queues, project trackers, vendor follow-up, and SOP upkeep, while the operations owner retains priorities, process changes, and spending decisions.",
-    "heroImage": "/featured/operations-assistant-daily-workflow.png",
-    "heroImageAlt": "Operations assistant workflow showing queues, owners, blockers, and daily handoff",
+    "heroImage": "/images/professional-services/operations-assistant-7688454.jpg",
+    "heroImageAlt": "Operations team reviewing project charts and next actions around a shared table",
     "tasks": [
       "Update recurring work queues, owners, due dates, and dependencies",
       "Maintain project or service trackers from approved source systems",
@@ -79,8 +79,8 @@ export const fleetServices = [
     "slug": "customer-support-assistants",
     "title": "Customer Support Assistants",
     "summary": "Philippines-based customer support for approved ticket types, account questions, and status updates, with refunds, policy exceptions, and sensitive cases routed to a support manager.",
-    "heroImage": "/featured/customer-support-qa-workflow.png",
-    "heroImageAlt": "Customer support quality review workflow for routine tickets and escalations",
+    "heroImage": "/images/professional-services/customer-support-7709145.jpg",
+    "heroImageAlt": "Customer support professional handling a client conversation from an office workstation",
     "tasks": [
       "Answer repeat ticket types using current knowledge-base guidance",
       "Verify order, subscription, or appointment status in approved systems",
@@ -102,8 +102,8 @@ export const fleetServices = [
     "slug": "sales-support-assistants",
     "title": "Sales Support Assistants",
     "summary": "Philippines-based sales administration for CRM upkeep, approved follow-up, meeting coordination, and proposal preparation, while sales owners retain qualification, pricing, promises, and negotiation.",
-    "heroImage": "/featured/sales-support-crm-hygiene.png",
-    "heroImageAlt": "Sales support CRM workflow for source-backed updates and owner review",
+    "heroImage": "/images/professional-services/sales-support-7682103.jpg",
+    "heroImageAlt": "Sales support professional speaking with a prospect while colleagues review account notes",
     "tasks": [
       "Update CRM stages, notes, next actions, and required fields from source evidence",
       "Research or enrich contact records using approved sources",
@@ -125,8 +125,8 @@ export const fleetServices = [
     "slug": "bookkeeping-assistants",
     "title": "Bookkeeping Assistants",
     "summary": "Philippines-based bookkeeping preparation for source documents, transaction records, reconciliation support, and approved reminders, with payments, tax judgment, and final sign-off retained by accountable finance owners.",
-    "heroImage": "/featured/bookkeeping-assistant-control-checklist.png",
-    "heroImageAlt": "Bookkeeping preparation controls for source records, exceptions, and owner approval",
+    "heroImage": "/images/professional-services/bookkeeping-assistant-6694492.jpg",
+    "heroImageAlt": "Bookkeeping professional reviewing financial records with a calculator and laptop",
     "tasks": [
       "Collect, name, and organize invoices, receipts, statements, and supporting records",
       "Enter or propose transaction details using documented coding rules",
@@ -148,8 +148,8 @@ export const fleetServices = [
     "slug": "ecommerce-assistants",
     "title": "Ecommerce Assistants",
     "summary": "Philippines-based ecommerce support for product records, routine order checks, customer updates, and inventory exceptions, while store owners retain pricing, refunds, fraud decisions, and product claims.",
-    "heroImage": "/featured/ecommerce-order-exception-workflow.png",
-    "heroImageAlt": "Ecommerce order workflow separating routine updates from refund and fraud exceptions",
+    "heroImage": "/images/professional-services/ecommerce-assistant-6169635.jpg",
+    "heroImageAlt": "Ecommerce operations specialist reviewing orders beside prepared shipments",
     "tasks": [
       "Update product facts, variants, images, and availability from approved source records",
       "Check order status and coordinate routine fulfillment follow-up",
@@ -171,8 +171,8 @@ export const fleetServices = [
     "slug": "real-estate-assistants",
     "title": "Real Estate Assistants",
     "summary": "Philippines-based real estate administration for lead records, listing coordination, showing logistics, and transaction checklists, while licensed professionals retain advice, negotiation, eligibility, and contract decisions.",
-    "heroImage": "/featured/real-estate-assistant-lead-follow-up.png",
-    "heroImageAlt": "Real estate lead follow-up workflow with factual updates and licensed-agent escalation",
+    "heroImage": "/images/professional-services/real-estate-assistant-8292809.jpg",
+    "heroImageAlt": "Real estate professional reviewing property paperwork with a client",
     "tasks": [
       "Update lead records and send approved factual follow-up",
       "Maintain listing details and asset checklists from broker-approved sources",
@@ -194,8 +194,8 @@ export const fleetServices = [
     "slug": "healthcare-admin-assistants",
     "title": "Healthcare Admin Assistants",
     "summary": "Philippines-based nonclinical healthcare administration for scheduling, reminders, records coordination, and status follow-up, under the healthcare organization's privacy, access, and escalation rules.",
-    "heroImage": "/featured/healthcare-admin-assistant-scheduling.png",
-    "heroImageAlt": "Healthcare administrative scheduling workflow with access and escalation boundaries",
+    "heroImage": "/images/professional-services/healthcare-admin-6809657.jpg",
+    "heroImageAlt": "Healthcare administrator coordinating an appointment with a clinician and visitor",
     "tasks": [
       "Schedule or reschedule appointments using approved rules and visit types",
       "Send approved reminders and record patient responses",
@@ -217,8 +217,8 @@ export const fleetServices = [
     "slug": "marketing-assistants",
     "title": "Marketing Assistants",
     "summary": "Philippines-based marketing operations for content calendars, asset preparation, approved publishing, and reporting, while marketing owners retain strategy, claims, spend, and sensitive public responses.",
-    "heroImage": "/featured/marketing-assistant-content-calendar.png",
-    "heroImageAlt": "Marketing content calendar workflow with draft, review, and approval stages",
+    "heroImage": "/images/professional-services/marketing-assistant-12902905.jpg",
+    "heroImageAlt": "Marketing team planning campaign work and reviewing notes in a professional office",
     "tasks": [
       "Maintain campaign calendars, briefs, owners, assets, and approval status",
       "Prepare draft copy and creative variations from approved source material",
@@ -240,8 +240,8 @@ export const fleetServices = [
     "slug": "recruiting-assistants",
     "title": "Recruiting Assistants",
     "summary": "Philippines-based recruiting coordination for approved job posts, candidate records, sourcing support, and interview logistics, while employers retain evaluation, selection, offers, and sensitive personnel decisions.",
-    "heroImage": "/featured/recruiting-assistant-sourcing-workflow.png",
-    "heroImageAlt": "Recruiting sourcing workflow for candidate records, interview coordination, and manager review",
+    "heroImage": "/images/professional-services/recruiting-assistant-5668863.jpg",
+    "heroImageAlt": "Recruiter conducting a structured interview with a candidate in an office",
     "tasks": [
       "Publish approved job descriptions and maintain posting status",
       "Source candidates against written job-related criteria",
@@ -408,7 +408,7 @@ export let researchPosts: readonly ResearchPost[] = [
       { title: 'How to budget for a virtual assistant', href: '/blog', description: 'Build the whole-role budget before comparing hourly plans. Include tools, management time, and paid leave in the estimate.' },
       { title: 'Assistant onboarding checklist', href: '/blog', description: 'Turn the selected hire into a safe first-week launch. Set access limits and review points before live work begins.' },
       { title: 'Philippines-based staffing services', href: '/services', description: 'Compare role lanes for executive, operations, support, sales, bookkeeping, and more. All talent offered by the site is based in the Philippines.' },
-      { title: 'Current public pricing', href: '/pricing', description: 'Review the site’s $10, $15, and $18 per hour Philippines-based tiers. Check what each tier includes before choosing a plan.' }
+      { title: 'Discuss scope and rates', href: '/contact-us', description: 'Bring the role, schedule, systems, and review needs so the consultation can address fit, support, and current rates.' }
     ]
   },
   {
@@ -527,7 +527,7 @@ export let researchPosts: readonly ResearchPost[] = [
     related: [
       { title: 'Philippines VA hiring evidence guide', href: '/research/hire-virtual-assistant-philippines-evidence-guide', description: 'Use country context, paid work samples, and access checks to choose a candidate or provider.' },
       { title: 'Philippines-based staffing services', href: '/services', description: 'Compare role lanes for executive, operations, customer support, sales, bookkeeping, and more.' },
-      { title: 'Current public pricing', href: '/pricing', description: 'Review the site’s public Philippines-based tiers and confirm what each plan includes.' },
+      { title: 'Discuss scope and rates', href: '/contact-us', description: 'Confirm the role, support model, and current rate during a staffing consultation.' },
       { title: 'Request a role plan', href: '/contact-us', description: 'Bring the tasks, hours, tools, and owner-only decisions you already know.' }
     ]
   }

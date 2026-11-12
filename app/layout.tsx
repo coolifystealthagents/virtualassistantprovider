@@ -2,6 +2,7 @@ import { AcrClient } from './acr-client';
 import Script from 'next/script';
 import './globals.css';
 import './v3-shell.css';
+import './contact-release.css';
 import type { Metadata } from 'next';
 import { site } from './data';
 

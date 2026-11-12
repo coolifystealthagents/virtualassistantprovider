@@ -157,9 +157,10 @@ test('editorial article images expose useful alternative text', () => {
 
 test('sitemap includes the canonical contact route and excludes funnel confirmation pages', () => {
   const sitemap = read('app/sitemap.xml/route.ts');
-  for (const path of ["'/pricing'", "'/contact-us'", "'/services'", "'/blog'", "'/research'"]) {
+  for (const path of ["'/contact-us'", "'/services'", "'/blog'", "'/research'"]) {
     assert.match(sitemap, new RegExp(path.replace('/', '\\/')));
   }
+  assert.doesNotMatch(sitemap, /['"]\/pricing['"]/);
   assert.doesNotMatch(sitemap, /['"]\/contact['"]/);
   assert.doesNotMatch(sitemap, /['"]\/thank-you['"]/);
   assert.doesNotMatch(sitemap, /['"]\/thanks-whats-next['"]/);
@@ -169,6 +170,11 @@ test('contact journey has one canonical entry and all three required steps', asy
   const redirects = await nextConfig.redirects();
   assert.deepEqual(redirects.find(({ source }) => source === '/contact'), {
     source: '/contact',
+    destination: '/contact-us',
+    permanent: true,
+  });
+  assert.deepEqual(redirects.find(({ source }) => source === '/pricing'), {
+    source: '/pricing',
     destination: '/contact-us',
     permanent: true,
   });
@@ -395,7 +401,6 @@ test('audited core pages declare their intended canonical destination', () => {
     ['app/page.tsx', '/'],
     ['app/services/page.tsx', '/services'],
     ['app/blog/page.tsx', '/blog'],
-    ['app/pricing/page.tsx', '/pricing'],
     ['app/contact-us/page.tsx', '/contact-us'],
     ['app/privacy/page.tsx', '/privacy'],
     ['app/terms/page.tsx', '/terms'],
@@ -454,7 +459,7 @@ test('independent review corrections remain explicit', () => {
   for (const field of ['tier', 'privacy', 'source']) assert.match(form, new RegExp(`name=["']${field}["']`));
   assert.match(form, /trackOrQueueAcrLead/);
   assert.match(contact, /Powered by Stealth Agents\. Official team, Bacolod\./);
-  assert.match(services, /Role selector/);
+  assert.match(services, /Choose by operating need/);
   assert.match(services, /fleetServices\.map/);
   assert.match(directory, /permanentRedirect\('\/blog'\)/);
   assert.doesNotMatch(booking, /href="\/thanks-whats-next"/);
@@ -488,6 +493,6 @@ test('service pages use role-specific copy and role-specific illustrations', () 
   const details = read('app/service-details.ts');
   for (const section of ['whoFor', 'inputs', 'deliverables', 'scenario', 'faq', 'related']) assert.match(details, new RegExp(`${section}:`));
   assert.match(page, /Quality controls/);
-  assert.match(page, /Launch this role/);
-  assert.match(page, /Related service options/);
+  assert.match(page, /Launch one controlled queue/);
+  assert.match(page, /Related services/);
 });

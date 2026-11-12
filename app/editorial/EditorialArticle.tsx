@@ -1,4 +1,5 @@
 import { Footer, Header, JsonLd } from '../components';
+import Image from 'next/image';
 import type { Publication } from '../publication-manifest';
 import { ArticleToc, type TocItem } from './ArticleToc';
 import styles from './editorial.module.css';
@@ -44,7 +45,7 @@ export function EditorialArticle({ post, children, sectionContent = {} }: { post
             </div>
           </div>
           <figure className={styles.heroMedia}>
-            <img src={post.heroImage} alt={post.heroAlt} width="1200" height="675" />
+            <Image src={post.heroImage} alt={post.heroAlt} width={1200} height={675} sizes="(max-width: 900px) 100vw, 52vw" priority />
           </figure>
         </header>
 

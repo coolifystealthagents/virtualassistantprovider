@@ -15,6 +15,7 @@ const nextConfig = {
     {source:'/:path*',has:[{type:'header',key:'x-forwarded-proto',value:'http'}],destination:'https://virtualassistantprovider.com/:path*',permanent:true},
     {source:'/:path*',has:[{type:'header',key:'cf-visitor',value:'.*"scheme"\\s*:\\s*"http".*'}],destination:'https://virtualassistantprovider.com/:path*',permanent:true},
     {source:'/contact',destination:'/contact-us',permanent:true},
+    {source:'/pricing',destination:'/contact-us',permanent:true},
     {source:'/blog/virtual-assistant-hiring-guide-philippines',destination:'/research/hire-virtual-assistant-philippines-evidence-guide',permanent:true},
   ]},
   async headers(){return [{source:'/(.*)',headers:securityHeaders}]},

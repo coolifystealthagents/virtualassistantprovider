@@ -5,7 +5,7 @@ import test from 'node:test';
 
 const root = path.resolve(import.meta.dirname, '..');
 const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
-const pageFiles = ['app/page.tsx', 'app/services/page.tsx', 'app/services/[slug]/page.tsx', 'app/pricing/page.tsx', 'app/service-details.ts'];
+const pageFiles = ['app/page.tsx', 'app/services/page.tsx', 'app/services/[slug]/page.tsx', 'app/service-details.ts'];
 const axes = ['heroComposition', 'typeCharacter', 'paletteFamily', 'shapeGrammar', 'imageTreatment', 'sectionRhythm', 'navigationTreatment', 'motionSignature', 'density', 'signatureElement'];
 
 test('V3 design governance records the complete fingerprint and scored comparison', () => {
@@ -32,21 +32,18 @@ test('design read declares the mandated V3 settings and decisions', () => {
   for (const decision of ['theme', 'accent', 'shape', 'typography', 'image', 'motion']) assert.match(design, new RegExp(`${decision}.*:`, 'i'));
 });
 
-test('homepage, service index, detail, and pricing use their page owned V3 system', () => {
-  for (const file of pageFiles.slice(0, 4)) assert.match(read(file), /v3-pages\.module\.css/);
+test('homepage, service index, and detail use their page owned V3 system', () => {
+  for (const file of pageFiles.slice(0, 3)) assert.match(read(file), /v3-pages\.module\.css/);
   const home = read('app/page.tsx');
   assert.match(home, /Hire a Philippines based assistant for a defined workflow/);
   assert.doesNotMatch(home, /<p className=.*eyebrow[^>]*>[^<]*<\/p><h1/);
   assert.match(home, /priority/);
   const index = read('app/services/page.tsx');
   assert.match(index, /serviceIndexHero/);
-  assert.match(index, /role selector/i);
+  assert.match(index, /Choose by operating need/i);
   assert.match(index, /boundaries/i);
   assert.match(index, /frequently asked/i);
-  const pricing = read('app/pricing/page.tsx');
-  assert.match(pricing, /pricingHero/);
-  assert.match(pricing, /What the rate includes/i);
-  assert.match(pricing, /Pricing questions/i);
+  assert.ok(!fs.existsSync(path.join(root, 'app/pricing/page.tsx')), 'retired pricing page must not remain routable');
 });
 
 test('all ten service records provide service specific long form depth', () => {
@@ -58,7 +55,7 @@ test('all ten service records provide service specific long form depth', () => {
   }
   assert.ok(source.split(/\s+/).length > 6500, 'service detail corpus is not deep enough');
   const detailPage = read('app/services/[slug]/page.tsx');
-  for (const section of ['The operating problem', 'Work included', 'Quality controls', 'A realistic example', 'Launch this role', 'Related service']) assert.match(detailPage, new RegExp(section));
+  for (const section of ['Who this role is for', 'Capabilities tied to a finish line', 'Quality controls', 'A realistic operating example', 'Launch one controlled queue', 'Related service']) assert.match(detailPage, new RegExp(section));
 });
 
 test('owned commercial pages contain no forbidden punctuation or decorative labels', () => {
