@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Describe the recurring work, tools, schedule, and approval boundaries your Philippines-based virtual assistant should support.',
   alternates: { canonical: '/contact-us' },
   robots: { index: true, follow: true },
-  openGraph: { title: 'Contact Virtual Assistant Provider | Scope Your Role', description: 'Turn recurring work into a clear, accountable virtual assistant role.', url: canonical, type: 'website', images: ['/brand/stealth-agents-team-bacolod.png'] },
+  openGraph: { title: 'Contact Virtual Assistant Provider | Scope Your Role', description: 'Turn recurring work into a clear, accountable virtual assistant role.', url: canonical, type: 'website', images: ['/brand/stealth-agents-logo-black.png'] },
 };
 
 const faqs = [
@@ -31,7 +31,7 @@ export default function ContactUsPage() {
       <div className="contact-release-shell contact-first-grid">
         <div className="contact-first-copy">
           <p className="contact-kicker">A useful first conversation</p>
-          <h1 id="contact-title">Shape the role before you hire.</h1>
+          <h1 id="contact-title">Plan the right support for your business.</h1>
           <p className="contact-release-lead">Tell us what repeats, where work lives, and who approves it. We will use that context to discuss a practical support lane.</p>
           <ul className="contact-scope-labels" aria-label="Consultation scope"><li>Role clarity</li><li>Access boundaries</li><li>Review cadence</li></ul>
           <TestimonialsRail contact />
@@ -41,13 +41,12 @@ export default function ContactUsPage() {
     </section>
     <section className="contact-parent-proof" aria-labelledby="team-title">
       <div className="contact-release-shell contact-parent-grid">
-        <figure className="contact-parent-photo"><img src="/brand/stealth-agents-team-bacolod.png" width="600" height="197" alt="StealthAgents operations team together at the Bacolod office" /></figure>
+        <figure className="contact-parent-photo"><img src="/images/professional-services/services-team-coordination-8872202.jpg" width="1800" height="1125" alt="Colleagues coordinating client support tasks around a laptop" loading="lazy" /></figure>
         <div className="contact-parent-copy">
-          <p className="contact-kicker dark">The operating team</p>
-          <h2 id="team-title">Managed support backed by real people</h2>
-          <p>Virtual Assistant Provider helps you understand the role. StealthAgents supports delivery through candidate matching, managed operations, and an ongoing point of contact. Your team remains responsible for approvals, system permissions, policy, and regulated decisions.</p>
-          <div className="contact-parent-plate"><img src="/brand/stealth-agents-logo-black.png" width="149" height="50" alt="StealthAgents official logo" /><strong>Official team, Bacolod</strong></div>
-          <p className="contact-parent-legacy">Powered by Stealth Agents. Official team, Bacolod.</p>
+          <p className="contact-kicker dark">A clear delivery relationship</p>
+          <h2 id="team-title">People and process behind dependable support</h2>
+          <p>Stealth Agents supports candidate matching and managed operations. Your team keeps control of approvals, system permissions, policy, and regulated decisions.</p>
+          <div className="contact-parent-plate"><img src="/brand/stealth-agents-logo-black.png" width="149" height="50" alt="Stealth Agents" /></div>
         </div>
       </div>
     </section>

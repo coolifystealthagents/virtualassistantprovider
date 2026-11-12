@@ -67,9 +67,9 @@ test('contact parent section immediately follows first fold and constrains offic
   const contact = read('app/contact-us/page.tsx');
   const css = read('app/globals.css') + read('app/v3-shell.css');
   assert.match(contact, /<\/section>\s*<section className="contact-parent-proof"/);
-  assert.match(contact, /\/brand\/stealth-agents-team-bacolod\.png/);
+  assert.match(contact, /\/images\/professional-services\/services-team-coordination-8872202\.jpg/);
   assert.match(contact, /\/brand\/stealth-agents-logo-black\.png/);
-  assert.match(contact, />Official team, Bacolod</);
+  assert.doesNotMatch(contact, /Official team, Bacolod/);
   assert.match(css, /\.contact-parent-photo[^}]*max-width:400px/);
   assert.doesNotMatch(contact, /oncehub|scheduleonce/i);
 });

@@ -17,3 +17,4 @@ All photographs in `public/images/professional-services/` were downloaded from P
 | `healthcare-admin-6809657.jpg` | [Photo 6809657](https://www.pexels.com/photo/doctor-talking-to-a-patient-6809657/) | Mikhail Nilov |
 | `marketing-assistant-12902905.jpg` | [Photo 12902905](https://www.pexels.com/photo/three-people-at-office-while-planning-12902905/) | Mizuno K |
 | `recruiting-assistant-5668863.jpg` | [Photo 5668863](https://www.pexels.com/photo/professional-man-interviewing-an-applicant-5668863/) | Sora Shimazaki |
+| `home-executive-assistant-27086215.jpg` | [Photo 27086215](https://www.pexels.com/photo/professional-woman-working-at-laptop-in-office-27086215/) | Helena Lopes |

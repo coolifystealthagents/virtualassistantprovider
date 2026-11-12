@@ -184,8 +184,8 @@ test('contact journey has one canonical entry and all three required steps', asy
   assert.match(contact, /<StandardContactForm endpoint="\/api\/contact" encoding="form"/);
   assert.match(contact, /TestimonialsRail contact/);
   assert.match(contact, /\/brand\/stealth-agents-logo-black\.png/);
-  assert.match(contact, /\/brand\/stealth-agents-team-bacolod\.png/);
-  assert.match(contact, />Official team, Bacolod</);
+  assert.match(contact, /\/images\/professional-services\/services-team-coordination-8872202\.jpg/);
+  assert.doesNotMatch(contact, /Official team, Bacolod/);
   assert.doesNotMatch(contact, /oncehub|scheduleonce/i);
   assert.doesNotMatch(contact, /\["0[1-9]"/);
 
@@ -458,7 +458,8 @@ test('independent review corrections remain explicit', () => {
 
   for (const field of ['tier', 'privacy', 'source']) assert.match(form, new RegExp(`name=["']${field}["']`));
   assert.match(form, /trackOrQueueAcrLead/);
-  assert.match(contact, /Powered by Stealth Agents\. Official team, Bacolod\./);
+  assert.match(contact, /Stealth Agents supports candidate matching and managed operations/);
+  assert.doesNotMatch(contact, /Official team, Bacolod/);
   assert.match(services, /Choose by operating need/);
   assert.match(services, /fleetServices\.map/);
   assert.match(directory, /permanentRedirect\('\/blog'\)/);
