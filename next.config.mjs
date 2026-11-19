@@ -10,7 +10,7 @@ const securityHeaders = [
 
 const nextConfig = {
   async rewrites(){return [{source:'/favicon.ico',destination:'/icon.svg'}]},
-  async redirects(){return [
+  async redirects(){if(process.env.LOCAL_AUDIT==='1')return [];return [
     {source:'/:path*',has:[{type:'host',value:'www.virtualassistantprovider.com'}],destination:'https://virtualassistantprovider.com/:path*',permanent:true},
     {source:'/:path*',has:[{type:'header',key:'x-forwarded-proto',value:'http'}],destination:'https://virtualassistantprovider.com/:path*',permanent:true},
     {source:'/:path*',has:[{type:'header',key:'cf-visitor',value:'.*"scheme"\\s*:\\s*"http".*'}],destination:'https://virtualassistantprovider.com/:path*',permanent:true},
