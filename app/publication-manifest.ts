@@ -84,6 +84,7 @@ import { nov08BlogPublications } from './blog-nov08-publications';
 import { nov10BlogPublications } from './blog-nov10-publications';
 import { nov18BlogPublications } from './blog-nov18-publications';
 import { nov19BlogPublications } from './blog-nov19-publications';
+import { nov20BlogPublications } from './blog-nov20-publications';
 import { nov17BlogPublications } from './blog-nov17-publications';
 import { nov16BlogPublications } from './blog-nov16-publications';
 import { nov11BlogPublications } from './blog-nov11-publications';
@@ -98,6 +99,7 @@ import { nov08ResearchPublications } from './research-nov08-publications';
 import { nov10ResearchPublications } from './research-nov10-publications';
 import { nov18ResearchPublications } from './research-nov18-publications';
 import { nov19ResearchPublications } from './research-nov19-publications';
+import { nov20ResearchPublications } from './research-nov20-publications';
 import { nov17ResearchPublications } from './research-nov17-publications';
 import { nov16ResearchPublications } from './research-nov16-publications';
 import { nov11ResearchPublications } from './research-nov11-publications';
@@ -107,6 +109,7 @@ import { oct26ResearchPosts } from './oct26-research-publications';
 import { oct27ResearchPosts } from './oct27-research-publications';
 
 export const publishedBlogPosts: readonly Publication[] = [
+  ...nov20BlogPublications,
   ...nov19BlogPublications,
   ...nov18BlogPublications,
   ...nov17BlogPublications,
@@ -145,6 +148,7 @@ const researchSections = (question: string, limits: string): readonly EditorialS
 ];
 
 export const publishedResearchPosts: readonly Publication[] = [
+  ...nov20ResearchPublications,
   ...nov19ResearchPublications,
   ...nov18ResearchPublications,
   ...nov17ResearchPublications,
