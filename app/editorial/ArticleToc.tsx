@@ -1,15 +1,14 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import styles from './editorial.module.css';
 
 export type TocItem = { id: string; label: string; level: 2 | 3 };
 
 function TocLinks({ items, activeId }: { items: readonly TocItem[]; activeId: string }) {
   return (
-    <ol className={styles.tocList}>
+    <ol>
       {items.map((item) => (
-        <li className={item.level === 3 ? styles.tocChild : undefined} key={item.id}>
+        <li data-level={item.level} key={item.id}>
           <a href={`#${item.id}`} aria-current={activeId === item.id ? 'location' : undefined}>{item.label}</a>
         </li>
       ))}
@@ -36,15 +35,15 @@ export function ArticleToc({ items }: { items: readonly TocItem[] }) {
   }, [items]);
 
   return (
-    <>
-      <nav className={styles.desktopToc} aria-label="Table of contents">
+    <div className="va-art-toc">
+      <nav aria-label="Table of contents">
         <h2>On this page</h2>
         <TocLinks items={items} activeId={activeId} />
       </nav>
-      <details className={styles.mobileToc}>
+      <details className="va-art-toc-mobile">
         <summary>Table of contents</summary>
         <nav aria-label="Mobile table of contents"><TocLinks items={items} activeId={activeId} /></nav>
       </details>
-    </>
+    </div>
   );
 }

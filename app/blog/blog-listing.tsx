@@ -1,28 +1,79 @@
-import { Header, Footer } from '../components';
+import type { CSSProperties } from 'react';
 import Image from 'next/image';
+import { Header, Footer, PageHero } from '../components';
 import { publishedBlogPosts } from '../publication-manifest';
-import styles from '../editorial/editorial.module.css';
 
 const formatDate = (date: string) => new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`));
 
 export function BlogListing({ page = 1 }: { page?: number }) {
   if (page !== 1) return null;
+  const featured = publishedBlogPosts.find((post) => post.slug === 'executive-assistant-philippines-hiring-guide') ?? publishedBlogPosts[0];
+  const rest = publishedBlogPosts.filter((post) => post.slug !== featured.slug);
+
   return (
     <>
       <Header />
-      <main className={styles.indexPage} id="main-content">
-        <section className={styles.indexHero}>
-          <div><p className={styles.topic}>Reviewed field guides</p><h1>Practical guides for Philippines-based staffing</h1><p>Use these editor-reviewed guides to define a role, test real work, limit access, and build a first-month review plan. The library is intentionally concise, with one strong guide for each distinct operating context.</p></div>
-          <Image src="/featured/executive-assistant-philippines-hiring-guide.png" alt="Philippines-based assistant role planning guide" width={1200} height={675} sizes="(max-width: 900px) 100vw, 52vw" priority />
+      <main className="va-page" id="main-content">
+        <PageHero
+          eyebrow="Reviewed field guides"
+          title={<>Practical guides for Philippines-based staffing.</>}
+          lead="Define a role, test real work, limit access, and build a first-month review plan. One strong guide for each operating context."
+          crumbs={<><a href="/">Home</a><span>/</span><span>Blog</span></>}
+          actions={<a className="va-btn va-btn--ghost" href="/research">Browse the evidence library ↗</a>}
+          media={
+            <div className="va-guide-panel">
+              <div className="va-guide-panel-top"><span>Latest guides</span><span>{publishedBlogPosts.length} in the library</span></div>
+              <h2>{featured.title}</h2>
+              <p>{featured.description}</p>
+              <div className="va-guide-rows">
+                {publishedBlogPosts.slice(1, 4).map((post) => (
+                  <div className="va-guide-row" key={post.slug}><span>{post.readingMinutes} min</span><strong>{post.title}</strong><span>↗</span></div>
+                ))}
+              </div>
+            </div>
+          }
+        />
+
+        <section className="va-section">
+          <div className="va-container">
+            <div className="va-index-toolbar">
+              <span>One reviewed guide for each distinct operating context</span>
+              <span>{publishedBlogPosts.length} guides</span>
+            </div>
+
+            {featured ? (
+              <a className="va-feature" href={`/blog/${featured.slug}`} data-reveal>
+                <div className="va-feature-media"><Image src={featured.thumbnail ?? featured.heroImage} alt={featured.heroAlt} width={1200} height={675} sizes="(max-width: 760px) 100vw, 55vw" /></div>
+                <div className="va-feature-copy">
+                  <span className="va-post-meta">{featured.topic} · {featured.readingMinutes} min read</span>
+                  <h2>{featured.title}</h2>
+                  <p>{featured.description}</p>
+                  <span className="va-post-meta">Published {formatDate(featured.published)}</span>
+                  <span className="va-link" style={{ marginTop: 16 }}>Read the guide ↗</span>
+                </div>
+              </a>
+            ) : null}
+
+            <div className="va-posts">
+              {rest.map((post, index) => (
+                <a className="va-post-card" href={`/blog/${post.slug}`} key={post.slug} data-reveal style={{ '--va-delay': `${(index % 3) * 50}ms` } as CSSProperties}>
+                  <div className="va-post-media">
+                    <Image src={post.thumbnail ?? post.heroImage} alt={post.heroAlt} width={1200} height={675} sizes="(max-width: 760px) 100vw, 33vw" loading="lazy" />
+                    <span>{post.topic}</span>
+                  </div>
+                  <div className="va-post-body">
+                    <span className="va-post-meta">{post.readingMinutes} min read · {formatDate(post.published)}</span>
+                    <h3>{post.title}</h3>
+                    <p>{post.description}</p>
+                    <span className="va-link">Read the guide ↗</span>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
         </section>
-        <section className={styles.indexIntro} aria-labelledby="choose-guide"><h2 id="choose-guide">Choose by the work and the decisions that stay with you</h2><p>Start with the guide closest to the recurring queue, not a broad job title. Each article covers task scope, a safe work sample, access boundaries, review evidence, and provider questions. Keep financial, legal, clinical, employment, and customer-policy decisions with an accountable owner.</p></section>
-        <section className={styles.indexCards} aria-label="Published guides">
-          {publishedBlogPosts.map((post) => <article key={post.slug}><a href={`/blog/${post.slug}`}><Image src={post.thumbnail ?? post.heroImage} alt={post.heroAlt} width={1200} height={675} sizes="(max-width: 900px) 100vw, 50vw" loading="lazy" /><div><p>{post.topic}</p><h2>{post.title}</h2><span>Published <time dateTime={post.published}>{formatDate(post.published)}</time> · {post.readingMinutes} minute read</span><p>{post.description}</p></div></a></article>)}
-        </section>
-        <section className={styles.indexGuide}><div><h2>Use the same evidence for every option</h2><p>Write one role brief and one scorecard before speaking with providers. Compare the work sample, named reviewer, access model, complete cost, replacement terms, and offboarding process without relying on directory position or broad claims.</p><a href="/research">Review the evidence library</a></div><div><h2>Ready to define the first task lane?</h2><p>Share the recurring outputs, tools, hours, access limits, and decisions that require your approval.</p><a href="/contact-us">Plan a Philippines-based role</a></div></section>
       </main>
       <Footer />
     </>
   );
 }
-export const PAGE_SIZE = 20;

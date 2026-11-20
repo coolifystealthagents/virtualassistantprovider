@@ -11,14 +11,14 @@ export const metadata: Metadata = {
 };
 
 export default function ThankYouPage() {
-  return <><Header /><main className="sa-booking-page">
+  return <><Header /><main className="va-util sa-booking-page">
     <div className="container sa-booking-grid">
       <div className="sa-booking-left">
         <p className="sa-booking-kicker">Your request is in</p>
         <h1>Choose a time for your consultation.</h1>
         <p className="sa-booking-lead">Use the calendar to reserve a focused conversation about the work, tools, schedule, and boundaries in your role brief.</p>
         <img className="sa-booking-image" src="/thank-you-hero.png" alt="Stealth Agents team ready to help" width="619" height="402" />
-        <TestimonialsRail />
+        <div className="va-reviews"><TestimonialsRail /></div>
       </div>
       <section className="sa-booking-calendar" aria-labelledby="booking-calendar-title">
         <h2 id="booking-calendar-title">Pick a time that works for you</h2>

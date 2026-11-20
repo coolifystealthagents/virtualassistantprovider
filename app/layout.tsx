@@ -1,10 +1,17 @@
+import { Bricolage_Grotesque, DM_Sans, DM_Mono } from 'next/font/google';
 import { AcrClient } from './acr-client';
 import Script from 'next/script';
 import './globals.css';
 import './v3-shell.css';
 import './contact-release.css';
-import type { Metadata } from 'next';
+import './atelier.css';
+import OrbitMotion from './OrbitMotion';
+import type { Metadata, Viewport } from 'next';
 import { site } from './data';
+
+const display = Bricolage_Grotesque({ subsets: ['latin'], variable: '--font-display', display: 'swap' });
+const body = DM_Sans({ subsets: ['latin'], variable: '--font-body', display: 'swap' });
+const mono = DM_Mono({ subsets: ['latin'], weight: ['400', '500'], variable: '--font-mono', display: 'swap' });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://virtualassistantprovider.com'),
@@ -14,13 +21,28 @@ export const metadata: Metadata = {
   icons: { icon: '/icon.svg', shortcut: '/icon.svg', apple: '/icon.svg' },
 };
 
+export const viewport: Viewport = {
+  themeColor: '#f6f0e8',
+  colorScheme: 'light',
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <html lang="en"><body>{children}<AcrClient/><Script id="acr-tracker-config" strategy="beforeInteractive">{`window.ACR_TRACKER_CONFIG={siteId:'virtual-assistant-provider',endpoint:'/ingest/track',debug:false,funnelSteps:[{path:'/contact-us',step:1,label:'Form Page',event:'funnel_form_page'},{path:'/thank-you',step:2,label:'Form Submitted',event:'funnel_form_submitted'},{path:'/thanks-whats-next',step:3,label:'Next Steps Viewed',event:'funnel_booking_next_steps_view'}]};`}</Script><Script src="https://acrtracking.stealthagents.us/v1/tracker.js" strategy="afterInteractive"/>
-  <Script
-    id="databull-analytics"
-    src="https://databull.stealthagents.us/js/script.js"
-    data-website-id="dc_luvvx9fdd70jd2"
-    data-domain="virtualassistantprovider.com"
-    strategy="afterInteractive"
-  /></body></html>;
+  return (
+    <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
+      <body>
+        {children}
+        <OrbitMotion />
+        <AcrClient />
+        <Script id="acr-tracker-config" strategy="beforeInteractive">{`window.ACR_TRACKER_CONFIG={siteId:'virtual-assistant-provider',endpoint:'/ingest/track',debug:false,funnelSteps:[{path:'/contact-us',step:1,label:'Form Page',event:'funnel_form_page'},{path:'/thank-you',step:2,label:'Form Submitted',event:'funnel_form_submitted'},{path:'/thanks-whats-next',step:3,label:'Next Steps Viewed',event:'funnel_booking_next_steps_view'}]};`}</Script>
+        <Script src="https://acrtracking.stealthagents.us/v1/tracker.js" strategy="afterInteractive" />
+        <Script
+          id="databull-analytics"
+          src="https://databull.stealthagents.us/js/script.js"
+          data-website-id="dc_luvvx9fdd70jd2"
+          data-domain="virtualassistantprovider.com"
+          strategy="afterInteractive"
+        />
+      </body>
+    </html>
+  );
 }

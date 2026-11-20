@@ -1,8 +1,8 @@
+import type { CSSProperties } from 'react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import { Footer, Header } from '../components';
+import { Footer, Header, PageHero } from '../components';
 import { publishedResearchPosts } from '../publication-manifest';
-import styles from '../editorial/editorial.module.css';
 
 const baseUrl = 'https://virtualassistantprovider.com';
 const formatDate = (date: string) => new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`));
@@ -15,23 +15,81 @@ export const metadata: Metadata = {
 };
 
 export default function Research() {
-  const schema = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Philippines virtual assistant research', description: metadata.description, url: `${baseUrl}/research`, mainEntity: { '@type': 'ItemList', numberOfItems: publishedResearchPosts.length, itemListElement: publishedResearchPosts.map((post, index) => ({ '@type': 'ListItem', position: index + 1, name: post.title, url: `${baseUrl}/research/${post.slug}` })) } };
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Philippines virtual assistant research',
+    description: metadata.description,
+    url: `${baseUrl}/research`,
+    mainEntity: { '@type': 'ItemList', numberOfItems: publishedResearchPosts.length, itemListElement: publishedResearchPosts.map((post, index) => ({ '@type': 'ListItem', position: index + 1, url: `${baseUrl}/research/${post.slug}`, name: post.title })) },
+  };
+  const [featured, ...rest] = publishedResearchPosts;
+
   return (
     <>
       <Header />
-      <main className={styles.indexPage} id="main-content">
-        <section className={styles.indexHero}>
-          <div><p className={styles.topic}>Reviewed evidence library</p><h1>Research for planning Philippines-based teams</h1><p>These source-led reports help buyers frame hiring questions without turning broad statistics into promises about an individual. Each report shows how evidence should shape a work sample, access plan, contract question, or review decision.</p></div>
-          <Image src="/featured/hire-virtual-assistant-philippines-evidence-guide.png" alt="Evidence guide for Philippines-based virtual assistant hiring" width={1200} height={675} sizes="(max-width: 900px) 100vw, 52vw" priority />
+      <main className="va-page" id="main-content">
+        <PageHero
+          eyebrow="Reviewed evidence library"
+          title={<>Research for planning Philippines-based teams.</>}
+          lead="Source-led reports help buyers frame hiring questions without turning country statistics into promises about an individual."
+          crumbs={<><a href="/">Home</a><span>/</span><span>Research</span></>}
+          actions={<a className="va-btn va-btn--ghost" href="/blog">Read the practical guides ↗</a>}
+          media={
+            <div className="va-guide-panel">
+              <div className="va-guide-panel-top"><span>Latest report</span><span>{publishedResearchPosts.length} reports</span></div>
+              <h2>{featured.title}</h2>
+              <p>{featured.description}</p>
+              <div className="va-guide-rows">
+                {publishedResearchPosts.slice(1, 4).map((post) => (
+                  <div className="va-guide-row" key={post.slug}><span>{post.readingMinutes} min</span><strong>{post.title}</strong><span>↗</span></div>
+                ))}
+              </div>
+            </div>
+          }
+        />
+
+        <section className="va-section">
+          <div className="va-container">
+            <div className="va-index-toolbar">
+              <span>Each report shows how evidence should shape a bounded role</span>
+              <span>{publishedResearchPosts.length} reports</span>
+            </div>
+
+            {featured ? (
+              <a className="va-feature" href={`/research/${featured.slug}`} data-reveal>
+                <div className="va-feature-media"><Image src={featured.thumbnail ?? featured.heroImage} alt={featured.heroAlt} width={1200} height={675} sizes="(max-width: 760px) 100vw, 55vw" /></div>
+                <div className="va-feature-copy">
+                  <span className="va-post-meta">{featured.topic} · {featured.readingMinutes} min read</span>
+                  <h2>{featured.title}</h2>
+                  <p>{featured.description}</p>
+                  <span className="va-post-meta">Published {formatDate(featured.published)}</span>
+                  <span className="va-link" style={{ marginTop: 16 }}>Read the report ↗</span>
+                </div>
+              </a>
+            ) : null}
+
+            <div className="va-posts">
+              {rest.map((post, index) => (
+                <a className="va-post-card" href={`/research/${post.slug}`} key={post.slug} data-reveal style={{ '--va-delay': `${(index % 3) * 50}ms` } as CSSProperties}>
+                  <div className="va-post-media">
+                    <Image src={post.thumbnail ?? post.heroImage} alt={post.heroAlt} width={1200} height={675} sizes="(max-width: 760px) 100vw, 33vw" loading="lazy" />
+                    <span>{post.topic}</span>
+                  </div>
+                  <div className="va-post-body">
+                    <span className="va-post-meta">{post.readingMinutes} min read · {formatDate(post.published)}</span>
+                    <h3>{post.title}</h3>
+                    <p>{post.description}</p>
+                    <span className="va-link">Read the report ↗</span>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
         </section>
-        <section className={styles.indexIntro} aria-labelledby="read-research"><h2 id="read-research">Read for a decision, then verify the individual</h2><p>Country data and standards can clarify context, definitions, and risk controls. They cannot demonstrate one candidate's skill, home setup, reliability, or fit. Use each report to form better questions, then request direct evidence through a paid sample, references, a schedule test, and written operating terms.</p></section>
-        <section className={styles.indexCards} aria-label="Published research reports">
-          {publishedResearchPosts.map((post) => <article key={post.slug}><a href={`/research/${post.slug}`}><Image src={post.thumbnail ?? post.heroImage} alt={post.heroAlt} width={1200} height={675} sizes="(max-width: 900px) 100vw, 50vw" loading="lazy" /><div><p>{post.topic}</p><h2>{post.title}</h2><span>Published <time dateTime={post.published}>{formatDate(post.published)}</time> · {post.readingMinutes} minute read · {post.sources.length} direct sources</span><p>{post.description}</p></div></a></article>)}
-        </section>
-        <section className={styles.indexGuide}><div><h2>How to use the evidence responsibly</h2><p>Open the linked source, check its publisher, date, definition, period, and population, then state the limit beside the finding. If the evidence does not measure a candidate or provider, do not present it as candidate or provider proof.</p><a href="/research/hire-virtual-assistant-philippines-evidence-guide">Start with the hiring evidence guide</a></div><div><h2>Connect evidence to a scoped role</h2><p>Use the findings to define a sample, access control, review cadence, and owner boundary for the actual work.</p><a href="/contact-us">Request a role planning call</a></div></section>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       </main>
       <Footer />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     </>
   );
 }
