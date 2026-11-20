@@ -52,7 +52,7 @@ export function EditorialArticle({ post, children }: { post: Publication; childr
               </div>
             </div>
             <figure className="va-art-hero-media">
-              <Image src={post.heroImage} alt={post.heroAlt} width={1200} height={675} sizes="(max-width: 980px) 100vw, 44vw" priority />
+              <Image src={post.heroImage} alt={post.heroAlt} width={1200} height={675} sizes="(max-width: 980px) 100vw, 44vw" priority unoptimized={post.heroImage.endsWith('.svg')} />
             </figure>
           </div>
         </header>

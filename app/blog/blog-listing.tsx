@@ -43,7 +43,7 @@ export function BlogListing({ page = 1 }: { page?: number }) {
 
             {featured ? (
               <a className="va-feature" href={`/blog/${featured.slug}`} data-reveal>
-                <div className="va-feature-media"><Image src={featured.thumbnail ?? featured.heroImage} alt={featured.heroAlt} width={1200} height={675} sizes="(max-width: 760px) 100vw, 55vw" /></div>
+                <div className="va-feature-media"><Image src={featured.thumbnail ?? featured.heroImage} alt={featured.heroAlt} width={1200} height={675} sizes="(max-width: 760px) 100vw, 55vw" unoptimized={String(featured.thumbnail ?? featured.heroImage).endsWith('.svg')} /></div>
                 <div className="va-feature-copy">
                   <span className="va-post-meta">{featured.topic} · {featured.readingMinutes} min read</span>
                   <h2>{featured.title}</h2>
@@ -58,7 +58,7 @@ export function BlogListing({ page = 1 }: { page?: number }) {
               {rest.map((post, index) => (
                 <a className="va-post-card" href={`/blog/${post.slug}`} key={post.slug} data-reveal style={{ '--va-delay': `${(index % 3) * 50}ms` } as CSSProperties}>
                   <div className="va-post-media">
-                    <Image src={post.thumbnail ?? post.heroImage} alt={post.heroAlt} width={1200} height={675} sizes="(max-width: 760px) 100vw, 33vw" loading="lazy" />
+                    <Image src={post.thumbnail ?? post.heroImage} alt={post.heroAlt} width={1200} height={675} sizes="(max-width: 760px) 100vw, 33vw" loading="lazy" unoptimized={String(post.thumbnail ?? post.heroImage).endsWith('.svg')} />
                     <span>{post.topic}</span>
                   </div>
                   <div className="va-post-body">
