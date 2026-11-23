@@ -113,6 +113,7 @@ import { oct26ResearchPosts } from './oct26-research-publications';
 import { oct27ResearchPosts } from './oct27-research-publications';
 
 export const publishedBlogPosts: readonly Publication[] = [
+  ...nov22BlogPublications,
   ...nov21BlogPublications,
   ...nov20BlogPublications,
   ...nov19BlogPublications,
@@ -153,6 +154,7 @@ const researchSections = (question: string, limits: string): readonly EditorialS
 ];
 
 export const publishedResearchPosts: readonly Publication[] = [
+  ...nov22ResearchPublications,
   ...nov21ResearchPublications,
   ...nov20ResearchPublications,
   ...nov19ResearchPublications,
