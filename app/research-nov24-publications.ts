@@ -6,7 +6,7 @@ export const nov24ResearchPublications: readonly Publication[] = [
     "kind": "research",
     "slug": "replacement-request-coverage",
     "title": "Replacement request coverage",
-    "description": "A measurement protocol for replacement request coverage, with a frozen population, an evidence sample, and a dated review.",
+    "description": "A provider-side review protocol for replacement request coverage: how to freeze the population, sample active engagements, and report the limits of a small provider record set.",
     "published": "2026-11-24",
     "readingMinutes": 11,
     "heroImage": "/thumbnails/november-24/replacement-request-coverage.webp",
@@ -23,8 +23,8 @@ export const nov24ResearchPublications: readonly Publication[] = [
     },
     "sources": [
       {
-        "label": "S",
-        "href": "B"
+        "label": "U.S. Small Business Administration hire and manage employees",
+        "href": "https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees"
       },
       {
         "label": "U.S. Small Business Administration business guide",
@@ -115,7 +115,7 @@ export const nov24ResearchPublications: readonly Publication[] = [
     "kind": "research",
     "slug": "priority-change-coverage",
     "title": "Priority change coverage",
-    "description": "A measurement protocol for priority change coverage, with a frozen population, an evidence sample, and a dated review.",
+    "description": "A provider-side review protocol for priority change coverage: how to freeze the population, sample active engagements, and report the limits of a small provider record set.",
     "published": "2026-11-24",
     "readingMinutes": 11,
     "heroImage": "/thumbnails/november-24/priority-change-coverage.webp",
@@ -132,8 +132,8 @@ export const nov24ResearchPublications: readonly Publication[] = [
     },
     "sources": [
       {
-        "label": "G",
-        "href": "A"
+        "label": "GAO - internal control standards",
+        "href": "https://www.gao.gov/greenbook"
       },
       {
         "label": "U.S. Small Business Administration business guide",
@@ -224,7 +224,7 @@ export const nov24ResearchPublications: readonly Publication[] = [
     "kind": "research",
     "slug": "equipment-policy-coverage",
     "title": "Equipment policy coverage",
-    "description": "A measurement protocol for equipment policy coverage, with a frozen population, an evidence sample, and a dated review.",
+    "description": "A provider-side review protocol for equipment policy coverage: how to freeze the population, sample active engagements, and report the limits of a small provider record set.",
     "published": "2026-11-24",
     "readingMinutes": 11,
     "heroImage": "/thumbnails/november-24/equipment-policy-coverage.webp",
@@ -241,8 +241,8 @@ export const nov24ResearchPublications: readonly Publication[] = [
     },
     "sources": [
       {
-        "label": "N",
-        "href": "I"
+        "label": "NIST SP 800-53 Security and Privacy Controls",
+        "href": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
       },
       {
         "label": "U.S. Small Business Administration business guide",
@@ -333,7 +333,7 @@ export const nov24ResearchPublications: readonly Publication[] = [
     "kind": "research",
     "slug": "training-hour-invoice-coverage",
     "title": "Training hour invoice coverage",
-    "description": "A measurement protocol for training hour invoice coverage, with a frozen population, an evidence sample, and a dated review.",
+    "description": "A provider-side review protocol for training hour invoice coverage: how to freeze the population, sample active engagements, and report the limits of a small provider record set.",
     "published": "2026-11-24",
     "readingMinutes": 11,
     "heroImage": "/thumbnails/november-24/training-hour-invoice-coverage.webp",
@@ -350,8 +350,8 @@ export const nov24ResearchPublications: readonly Publication[] = [
     },
     "sources": [
       {
-        "label": "B",
-        "href": "A"
+        "label": "NIST Baldrige Excellence Framework",
+        "href": "https://www.nist.gov/baldrige"
       },
       {
         "label": "U.S. Small Business Administration business guide",
@@ -442,7 +442,7 @@ export const nov24ResearchPublications: readonly Publication[] = [
     "kind": "research",
     "slug": "escalation-waiver-coverage",
     "title": "Escalation waiver coverage",
-    "description": "A measurement protocol for escalation waiver coverage, with a frozen population, an evidence sample, and a dated review.",
+    "description": "A provider-side review protocol for escalation waiver coverage: how to freeze the population, sample active engagements, and report the limits of a small provider record set.",
     "published": "2026-11-24",
     "readingMinutes": 10,
     "heroImage": "/thumbnails/november-24/escalation-waiver-coverage.webp",
@@ -459,8 +459,8 @@ export const nov24ResearchPublications: readonly Publication[] = [
     },
     "sources": [
       {
-        "label": "N",
-        "href": "I"
+        "label": "NIST access control project",
+        "href": "https://csrc.nist.gov/projects/access-control"
       },
       {
         "label": "U.S. Small Business Administration business guide",
@@ -551,7 +551,7 @@ export const nov24ResearchPublications: readonly Publication[] = [
     "kind": "research",
     "slug": "backup-drill-coverage",
     "title": "Backup drill coverage",
-    "description": "A measurement protocol for backup drill coverage, with a frozen population, an evidence sample, and a dated review.",
+    "description": "A provider-side review protocol for backup drill coverage: how to freeze the population, sample active engagements, and report the limits of a small provider record set.",
     "published": "2026-11-24",
     "readingMinutes": 10,
     "heroImage": "/thumbnails/november-24/backup-drill-coverage.webp",
@@ -568,8 +568,8 @@ export const nov24ResearchPublications: readonly Publication[] = [
     },
     "sources": [
       {
-        "label": "C",
-        "href": "I"
+        "label": "CISA Cyber Essentials",
+        "href": "https://www.cisa.gov/cyber-essentials"
       },
       {
         "label": "U.S. Small Business Administration business guide",
@@ -660,7 +660,7 @@ export const nov24ResearchPublications: readonly Publication[] = [
     "kind": "research",
     "slug": "subcontractor-screening-coverage",
     "title": "Subcontractor screening coverage",
-    "description": "A measurement protocol for subcontractor screening coverage, with a frozen population, an evidence sample, and a dated review.",
+    "description": "A provider-side review protocol for subcontractor screening coverage: how to freeze the population, sample active engagements, and report the limits of a small provider record set.",
     "published": "2026-11-24",
     "readingMinutes": 10,
     "heroImage": "/thumbnails/november-24/subcontractor-screening-coverage.webp",
@@ -677,8 +677,8 @@ export const nov24ResearchPublications: readonly Publication[] = [
     },
     "sources": [
       {
-        "label": "E",
-        "href": "E"
+        "label": "U.S. Equal Employment Opportunity Commission",
+        "href": "https://www.eeoc.gov/employers"
       },
       {
         "label": "U.S. Small Business Administration business guide",

@@ -23,8 +23,8 @@ export const nov24BlogPublications: readonly Publication[] = [
     },
     "sources": [
       {
-        "label": "S",
-        "href": "B"
+        "label": "U.S. Small Business Administration hire and manage employees",
+        "href": "https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees"
       }
     ],
     "sections": [
@@ -124,8 +124,8 @@ export const nov24BlogPublications: readonly Publication[] = [
     },
     "sources": [
       {
-        "label": "G",
-        "href": "A"
+        "label": "GAO - internal control standards",
+        "href": "https://www.gao.gov/greenbook"
       }
     ],
     "sections": [
@@ -225,8 +225,8 @@ export const nov24BlogPublications: readonly Publication[] = [
     },
     "sources": [
       {
-        "label": "N",
-        "href": "I"
+        "label": "NIST SP 800-53 Security and Privacy Controls",
+        "href": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
       }
     ],
     "sections": [
@@ -326,8 +326,8 @@ export const nov24BlogPublications: readonly Publication[] = [
     },
     "sources": [
       {
-        "label": "B",
-        "href": "A"
+        "label": "NIST Baldrige Excellence Framework",
+        "href": "https://www.nist.gov/baldrige"
       }
     ],
     "sections": [
@@ -427,8 +427,8 @@ export const nov24BlogPublications: readonly Publication[] = [
     },
     "sources": [
       {
-        "label": "N",
-        "href": "I"
+        "label": "NIST access control project",
+        "href": "https://csrc.nist.gov/projects/access-control"
       }
     ],
     "sections": [
@@ -528,8 +528,8 @@ export const nov24BlogPublications: readonly Publication[] = [
     },
     "sources": [
       {
-        "label": "C",
-        "href": "I"
+        "label": "CISA Cyber Essentials",
+        "href": "https://www.cisa.gov/cyber-essentials"
       }
     ],
     "sections": [
@@ -629,8 +629,8 @@ export const nov24BlogPublications: readonly Publication[] = [
     },
     "sources": [
       {
-        "label": "E",
-        "href": "E"
+        "label": "U.S. Equal Employment Opportunity Commission",
+        "href": "https://www.eeoc.gov/employers"
       }
     ],
     "sections": [
@@ -730,8 +730,8 @@ export const nov24BlogPublications: readonly Publication[] = [
     },
     "sources": [
       {
-        "label": "B",
-        "href": "A"
+        "label": "NIST Baldrige Excellence Framework",
+        "href": "https://www.nist.gov/baldrige"
       }
     ],
     "sections": [
