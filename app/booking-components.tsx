@@ -42,16 +42,16 @@ export function TestimonialsRail({ contact = false }: { contact?: boolean }) {
 
     const pause = () => { paused = true; };
     const resume = () => { paused = false; previous = performance.now(); };
-    viewport.addEventListener('pointerenter', pause);
-    viewport.addEventListener('pointerleave', resume);
+    
+    
     viewport.addEventListener('focusin', pause);
     viewport.addEventListener('focusout', resume);
     frame = requestAnimationFrame(render);
 
     return () => {
       cancelAnimationFrame(frame);
-      viewport.removeEventListener('pointerenter', pause);
-      viewport.removeEventListener('pointerleave', resume);
+      
+      
       viewport.removeEventListener('focusin', pause);
       viewport.removeEventListener('focusout', resume);
       track.style.transform = '';

@@ -24,7 +24,7 @@ export function LogoMark() {
 
 export function Header() {
   return (
-    <header className="va-header">
+    <header data-site-header="sticky" className="va-header">
       <div className="va-nav-inner">
         <a className="va-brand" href="/" aria-label="Virtual Assistant Provider home"><LogoMark /></a>
         <nav className="va-nav" aria-label="Main navigation">
@@ -40,7 +40,7 @@ export function Header() {
 
 export function Footer() {
   return (
-    <footer className="va-footer">
+    <footer data-site-footer="true" className="va-footer">
       <div className="va-container va-footer-inner">
         <div className="va-footer-top">
           <div className="va-footer-brand">
@@ -60,7 +60,7 @@ export function Footer() {
           </div>
           <div>
             <h3>Explore</h3>
-            <div className="va-footer-links">
+            <div data-footer-menu="true" className="va-footer-links">
               <a href="/services">All services</a>
               <a href="/about">About</a>
               <a href="/blog">Blog</a>

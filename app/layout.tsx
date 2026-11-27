@@ -9,6 +9,8 @@ import OrbitMotion from './OrbitMotion';
 import type { Metadata, Viewport } from 'next';
 import { site } from './data';
 
+import "./site-chrome-fixes.css";
+
 const display = Bricolage_Grotesque({ subsets: ['latin'], variable: '--font-display', display: 'swap' });
 const body = DM_Sans({ subsets: ['latin'], variable: '--font-body', display: 'swap' });
 const mono = DM_Mono({ subsets: ['latin'], weight: ['400', '500'], variable: '--font-mono', display: 'swap' });
